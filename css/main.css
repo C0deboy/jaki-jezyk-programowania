@@ -26,11 +26,7 @@ header {
   position: relative;
   width: 100%;
   min-height: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
+  background-size: calc(100% + 50px);
   background-image: url('../img/header.jpg');
   text-align: center;
   color: white;
@@ -88,4 +84,23 @@ header .header-content .header-content-inner p {
 .btn-primary {
   background-color: #F05F40;
   border-color: #F05F40;
+}
+
+/* Typing Animation */
+
+.typing
+{
+    width: 30em;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 5s steps(50, end);
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
 }
