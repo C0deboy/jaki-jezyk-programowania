@@ -114,6 +114,8 @@ header .header-content .header-content-inner p {
   }
 }
 
+/* Laptop Styling */
+
 .laptop {
   width: 470px;
   height: 310px;
@@ -140,11 +142,12 @@ header .header-content .header-content-inner p {
   z-index: 1;
 }
 
+/* Terminal Window */
+
 .terminal-window {
   text-align: left;
   width: 446px;
-  height: 285px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  height: 286px;
 }
 
 .terminal-window header {
@@ -194,34 +197,6 @@ header .header-content .header-content-inner p {
   font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
   font-size: 11pt;
 }
-
-.minimized .terminal-window {
-  width: 100px;
-  height: 50px;
-  -webkit-transition:width 300ms ease-in-out, height 300ms ease-in-out;
-  -moz-transition:width 300ms ease-in-out, height 300ms ease-in-out;
-  -o-transition:width 300ms ease-in-out, height 300ms ease-in-out;
-  transition:width 300ms ease-in-out, height 300ms ease-in-out;
-
-}
-
-.minimized .terminal {
-  display: none;
-}
-
-.maximized .terminal-window {
-  width: 1000px;
-  height: 600px;
-  -webkit-transition:width 300ms ease-in-out, height 300ms ease-in-out;
-  -moz-transition:width 300ms ease-in-out, height 300ms ease-in-out;
-  -o-transition:width 300ms ease-in-out, height 300ms ease-in-out;
-  transition:width 300ms ease-in-out, height 300ms ease-in-out;
-}
-
-.maximized .terminal {
-  display: block;
-}
-
 
 .id {
   color: red;
