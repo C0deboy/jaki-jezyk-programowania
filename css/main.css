@@ -114,16 +114,15 @@ header .header-content .header-content-inner p {
   }
 }
 
-/* Laptop Styling */
-
 .laptop {
-  width: 470px;
+  width: 100%;
   height: 310px;
   background: black;
   border: 12px solid #e8ebf0;
   border-radius: 10px 10px 0 0;
   position: relative;
   margin: auto;
+  box-sizing: border-box;
 }
 
 
@@ -132,22 +131,22 @@ header .header-content .header-content-inner p {
 }
 
 .btm {
-  width: 592px;
+  width: 120%;
   height: 10px;
   bottom: -22px;
-  left: 50%;
-  margin-left: -296px;
+  margin-left: -10%;
   border-radius: 0 0 20px 20px;
   background: #f4f5f7;
   z-index: 1;
 }
-
-/* Terminal Window */
+.laptop-content{
+	width: 100%;
+}
 
 .terminal-window {
   text-align: left;
-  width: 446px;
-  height: 286px;
+  height: 285px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .terminal-window header {
@@ -176,7 +175,7 @@ header .header-content .header-content-inner p {
   background: #E75448;
 }
 
-.terminal-window section.terminal {
+.terminal-window div.terminal {
   color: white;
   font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
   font-size: 11pt;
@@ -198,17 +197,19 @@ header .header-content .header-content-inner p {
   font-size: 11pt;
 }
 
-.id {
+.root {
   color: red;
 }
 
 
 #howWorks {
   background-color: #3399ff;
+  height: 100vh;
 }
 
 #about-programming {
   background-color: #800000;
+  height: 100vh;
 }
 
 #about-us {
