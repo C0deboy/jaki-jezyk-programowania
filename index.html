@@ -24,25 +24,131 @@
 
 <body id="big-image">
 
-  <header id="big-image">
-      <div class="header-content">
-          <div class="header-content-inner">
+  <nav class="navbar-default navbar-fixed-top navbar-custom">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+              </button>
+              <a class="navbar-brand page-scroll" href="#page-top">Jaki język programowania?</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <a class="page-scroll" href="#intro">Początek</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#howWorks">Jak to działa?</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#about-programming">O programowaniu</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#about-us">O nas</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+</nav>
+
+<header id="intro">
+    <div class="header-content">
+        <div class="header-content-inner">
+          <div class="row">
+            <div class="col-md-7">
               <h1>Wybierz swój język programowania</h1>
               <hr>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet ex urna. Nulla dictum sit amet magna non viverra. Vivamus leo massa, vehicula a lacus non, bibendum mollis sem. Quisque pharetra elit eu velit porta posuere. Curabitur non dolor rhoncus, molestie justo ac, volutpat orci.</p>
-              <p class="element">
-              </p><br>
-              <a href="#" class="btn btn-primary btn-lg">Start</a>
           </div>
-      </div>
+          <div class="col-md-5">
+            <div class="laptop">
+          		<div class="content">
+
+          		</div>
+          	<div class="btm"></div>
+          </div>
+          </div>
+        </div>
+    </div>
 </header>
+
+<section id="howWorks">
+  <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>How it Works</h1>
+      <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
+          Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.
+          Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor.
+          Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, </p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="about-programming">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Intro to programming</h1>
+        <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
+            Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.
+            Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor.
+            Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit,
+        </p>
+      </div>
+    </div>
+  </div>
+  </section>
+
+<section id="about-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>About us, feedback</h1>
+        <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
+           Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.
+           Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor.
+           Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit,
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Gdzie</h3>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Jak</h3>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>O nas</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; My
+                    </div>
+                </div>
+            </div>
+        </div>
+</footer>
 
 <script>
 
   $(function(){
       $(".element").typed({
         strings: ["JavaScript", "PHP","Python","Java","C","HTML","C++", "Brainfuck"],
-        typeSpeed: 0,
+        typeSpeed: 100,
         loop:true,
       });
   });

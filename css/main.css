@@ -27,6 +27,28 @@ section {
   padding: 100px 0;
 }
 
+
+/* Navigation bar */
+
+.navbar-custom {
+  z-index: 3;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.navbar-custom .navbar-brand {
+  font-weight: 800;
+}
+.navbar-custom .navbar-header .navbar-toggle {
+  color: #777777;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.navbar-custom .nav li a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
 /* Header section */
 
 header {
@@ -92,41 +114,60 @@ header .header-content .header-content-inner p {
   }
 }
 
-.btn-lg {
-  width: 300px;
-  font-size: 50px;
-
+.laptop {
+  width: 470px;
+  height: 310px;
+  background: black;
+  border: 12px solid #e8ebf0;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  margin: auto;
 }
 
-.btn-primary {
-  background-color: #F05F40;
-  border-color: #F05F40;
+
+.laptop > div {
+  position: absolute;
 }
 
-/* Typing Animation */
-
-.element {
-  display: inline;
+.btm {
+  width: 592px;
+  height: 10px;
+  bottom: -22px;
+  left: 50%;
+  margin-left: -296px;
+  border-radius: 0 0 20px 20px;
+  background: #f4f5f7;
+  z-index: 1;
 }
 
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+#howWorks {
+  background-color: #3399ff;
 }
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+#about-programming {
+  background-color: #800000;
 }
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+#about-us {
+  background-color: #009900;
 }
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+/* Footer Section */
+
+footer {
+  color: white;
+}
+footer h3 {
+  margin-bottom: 30px;
+}
+footer .footer-above {
+  padding-top: 50px;
+  background-color: #2C3E50;
+}
+footer .footer-col {
+  margin-bottom: 50px;
+}
+footer .footer-below {
+  padding: 25px 0;
+  background-color: #233140;
 }
