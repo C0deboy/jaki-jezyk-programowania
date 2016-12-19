@@ -1,1 +1,1 @@
-# programming-bible
+# jaki-jezyk-programowania
