@@ -18,40 +18,38 @@
   <!-- JQuery -->
   <script src="js/jquery-3.1.1.js"></script>
 
+  <script src="js/typed.js"></script>
+
 </head>
 
-<body>
+<body id="big-image">
 
   <header id="big-image">
       <div class="header-content">
           <div class="header-content-inner">
-              <h1>Programming Bible</h1>
+              <h1>Wybierz swój język programowania</h1>
               <hr>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet ex urna. Nulla dictum sit amet magna non viverra. Vivamus leo massa, vehicula a lacus non, bibendum mollis sem. Quisque pharetra elit eu velit porta posuere. Curabitur non dolor rhoncus, molestie justo ac, volutpat orci.</p>
-              <p class="typing">Vivamus convallis nunc lorem, vel feugiat mauris feugiat sit amet.</p>
-              <a href="#" class="btn btn-primary btn-lg">Button 1</a>
-              <a href="#" class="btn btn-primary btn-lg">Button 2</a>
-
+              <p class="element">
+              </p><br>
+              <a href="#" class="btn btn-primary btn-lg">Start</a>
           </div>
       </div>
 </header>
 
-
 <script>
-$(document).ready(function() {
-var movement = 25;
-var height = movement / $(window).height();
-var width = movement / $(window).width();
-$("#big-image").mousemove(function(e){
-          var pageX = e.pageX - ($(window).width() / 2);
-          var pageY = e.pageY - ($(window).height() / 2);
-          var newX = width * pageX * -1 - 25;
-          var newY = height * pageY * -1 - 50;
-          $('#big-image').css("background-position", newX + "px     "+newY+"px");
-});
-});
+
+  $(function(){
+      $(".element").typed({
+        strings: ["First sentence.", "Second sentence."],
+        typeSpeed: 0,
+        loop:true,
+      });
+  });
 
 </script>
+
+
 
 </body>
 </html>

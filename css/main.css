@@ -2,7 +2,14 @@ html,
 body {
   height: 100%;
   width: 100%;
+
 }
+/*@media (max-width: 600px) {
+  header {
+    color: red;
+    background-image: url('../img/header2.jpg');
+  }
+}*/
 
 hr {
   border-color: #F05F40;
@@ -26,7 +33,11 @@ header {
   position: relative;
   width: 100%;
   min-height: auto;
-  background-size: calc(100% + 50px);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
   background-image: url('../img/header.jpg');
   text-align: center;
   color: white;
@@ -49,7 +60,7 @@ header .header-content .header-content-inner hr {
 }
 header .header-content .header-content-inner p {
   font-weight: 300;
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
   margin-bottom: 50px;
 }
@@ -65,20 +76,26 @@ header .header-content .header-content-inner p {
     transform: translateY(-50%);
     padding: 0 50px;
   }
-  header .header-content .header-content-inner {
+  header .header-content .header-content {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
-  header .header-content .header-content-inner h1 {
+  header .header-content .header-content h1 {
     font-size: 50px;
   }
-  header .header-content .header-content-inner p {
+  header .header-content .header-content p {
     font-size: 18px;
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.btn-lg {
+  width: 300px;
+  font-size: 50px;
+
 }
 
 .btn-primary {
@@ -88,19 +105,28 @@ header .header-content .header-content-inner p {
 
 /* Typing Animation */
 
-.typing
-{
-    width: 30em;
-    white-space:nowrap;
-    overflow:hidden;
-    -webkit-animation: type 5s steps(50, end);
-    animation: type 5s steps(50, end);
+.element {
+  display: inline;
 }
 
-@keyframes type{
-    from { width: 0; }
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
 }
-
-@-webkit-keyframes type{
-    from { width: 0; }
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
