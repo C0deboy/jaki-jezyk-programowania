@@ -144,6 +144,7 @@ header .header-content .header-content-inner p {
 
 .terminal-window {
   text-align: left;
+  margin-top: -1px;
   height: 288px;
 }
 
