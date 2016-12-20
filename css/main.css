@@ -4,12 +4,6 @@ body {
   width: 100%;
 
 }
-/*@media (max-width: 600px) {
-  header {
-    color: red;
-    background-image: url('../img/header2.jpg');
-  }
-}*/
 
 hr {
   border-color: #F05F40;
@@ -25,6 +19,10 @@ p {
 
 section {
   padding: 100px 0;
+}
+
+.custom-row {
+  height: 100
 }
 
 
@@ -118,7 +116,7 @@ header .header-content .header-content-inner p {
 /* Laptop Section */
 
 .laptop {
-  width: 80%;
+  width: 100%;
   height: 310px;
   background: black;
   border: 12px solid #e8ebf0;
@@ -133,11 +131,11 @@ header .header-content .header-content-inner p {
   position: absolute;
 }
 
-.btm {
-  width: 120%;
-  height: 10px;
+.keyboard {
+  width: 140%;
+  height: 15px;
   bottom: -22px;
-  margin-left: -10%;
+  margin-left: -20%;
   border-radius: 0 0 20px 20px;
   background: #f4f5f7;
   z-index: 1;
@@ -196,6 +194,20 @@ header .header-content .header-content-inner p {
 
 .root {
   color: red;
+}
+
+@media (max-width: 768px) {
+  .laptop {
+    width: 95%;
+    height: 210px;
+  }
+  .keyboard {
+    width: 140%;
+    margin-left: -20%;
+  }
+  .terminal-window {
+    height: 187px;
+  }
 }
 
 
