@@ -33,7 +33,3 @@ $('body').scrollspy({
   target: '.navbar-fixed-top',
   offset: 51
 });
-
-
-var cw = $('.laptop').height()*1.5;
-$('.laptop').css({'max-width':cw+'px'});
