@@ -34,6 +34,6 @@ $('body').scrollspy({
   offset: 51
 });
 
-<!-- Laptop auto width -->
+
 var cw = $('.laptop').height()*1.5;
 $('.laptop').css({'max-width':cw+'px'});
