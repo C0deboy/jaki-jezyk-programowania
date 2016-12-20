@@ -49,6 +49,7 @@ section {
   font-weight: 800;
   letter-spacing: 1px;
 }
+
 /* Header section */
 
 header {
@@ -114,6 +115,8 @@ header .header-content .header-content-inner p {
   }
 }
 
+/* Laptop Section */
+
 .laptop {
   width: 100%;
   height: 310px;
@@ -139,14 +142,16 @@ header .header-content .header-content-inner p {
   background: #f4f5f7;
   z-index: 1;
 }
+
 .laptop-content{
 	width: 100%;
 }
 
+/* Terminal Section */
+
 .terminal-window {
   text-align: left;
-  height: 285px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  height: 287px;
 }
 
 .terminal-window header {
@@ -189,17 +194,10 @@ header .header-content .header-content-inner p {
   overflow: auto;
 }
 
-.intro-question {
-  background-color: #30353A;
-  border: none;
-  color: white;
-  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
-  font-size: 11pt;
-}
-
 .root {
   color: red;
 }
+
 
 
 #howWorks {
