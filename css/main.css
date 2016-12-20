@@ -227,6 +227,13 @@ header .header-content .header-content-inner p {
 #about-us {
   background-color: #64706c;
   min-height: 45vh;
+  padding: 50px 0;
+}
+@media (max-width: 768px) {
+  #about-us {
+    background-color: #64706c;
+    min-height: 100vh;
+  }
 }
 
 /* Footer Section */
@@ -246,6 +253,7 @@ footer .footer-col {
   margin-bottom: 50px;
 }
 footer .footer-below {
-  padding: 25px 0;
+  min-height: 5vh;
+  padding: 1vh;
   background-color: #233140;
 }
