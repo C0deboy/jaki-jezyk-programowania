@@ -212,6 +212,22 @@ header .header-content .header-content-inner p {
   }
 }
 
+/* Buttons */
+
+.btn.btn-danger {
+    width: 80%;
+    color: ##F05F4;
+    background-color: #f06040;
+    background-image: linear-gradient(to bottom, #f06040, #f06040);
+    border-color: #f05f40 #f05f40 #f05f40;
+}
+.btn.btn-danger:hover {
+    width: 80%;
+    color: ##F05F4;
+    background-color: #f06040;
+    background-image: linear-gradient(to bottom, #f06040, #f06040);
+    border-color: #f05f40 #f05f40 #f05f40;
+}
 
 
 #howWorks {
