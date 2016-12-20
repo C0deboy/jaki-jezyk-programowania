@@ -127,14 +127,9 @@ header .header-content .header-content-inner p {
 }
 
 
-.laptop > div {
-  position: absolute;
-}
-
 .keyboard {
   width: 140%;
   height: 15px;
-  bottom: -22px;
   margin-left: -20%;
   border-radius: 0 0 20px 20px;
   background: #f4f5f7;
@@ -149,7 +144,7 @@ header .header-content .header-content-inner p {
 
 .terminal-window {
   text-align: left;
-  height: 287px;
+  height: 288px;
 }
 
 .terminal-window header {
