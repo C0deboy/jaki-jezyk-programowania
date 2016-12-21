@@ -32,8 +32,8 @@ $(".about-programming-btn").click(function() {
 scrollToElement('#about-programming', 600);
 });
 
-$(".about-us-btn").click(function() {
-scrollToElement('#about-us', 600);
+$(".about-project-btn").click(function() {
+scrollToElement('#about-project', 600);
 });
 
 $('body').scrollspy({
