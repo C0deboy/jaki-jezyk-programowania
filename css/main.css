@@ -6,7 +6,7 @@ body {
 }
 
 hr {
-  border-color: #F05F40;
+  border-color: #AA3939;
   border-width: 3px;
   max-width: 200px;
 }
@@ -29,6 +29,7 @@ a:hover {
 section {
   padding: 50px 0;
   text-align: center;
+  color: white;
 }
 
 .custom-row {
@@ -222,7 +223,7 @@ header .header-content .header-content-inner p {
 /* How Works Section */
 
 #howWorks {
-  background-color: #ede9ce;
+  background-color: #2F4073;
   min-height: 100vh;
 }
 
@@ -242,27 +243,27 @@ header .header-content .header-content-inner p {
     min-width: 30%;
     font-size: 32px;
     color: #F05F4;
-    background-color: #f06040;
-    background-image: linear-gradient(to bottom, #f06040, #f06040);
-    border-color: #f05f40 #f05f40 #f05f40;
+    background-color: #AA3939;
+    background-image: linear-gradient(to bottom, #AA3939, #AA3939);
+    border-color: #AA3939 #AA3939 #AA3939;
 }
 .btn.btn-danger:hover {
     min-width: 30%;
     color: #F05F4;
     font-size: 32px;
-    background-color: #f06040;
-    background-image: linear-gradient(to bottom, #f06040, #f06040);
-    border-color: #f05f40 #f05f40 #f05f40;
+    background-color: #762E55;
+    background-image: linear-gradient(to bottom, #762E55, #762E55);
+    border-color: #762E55 #762E55 #762E55;
 }
 
 #about-project {
-  background-color: #64706c;
+  background-color: #2a3967;
   min-height: 45vh;
   padding: 50px 0;
 }
 @media (max-width: 768px) {
   #about-project {
-    background-color: #64706c;
+    background-color: #2a3967;
     min-height: 100vh;
   }
 }
@@ -277,7 +278,7 @@ footer h3 {
 }
 footer .footer-above {
   padding-top: 50px;
-  background-color: #2C3E50;
+  background-color: #25335c;
   min-height: 45vh;
 }
 footer .footer-col {
@@ -286,5 +287,5 @@ footer .footer-col {
 footer .footer-below {
   min-height: 5vh;
   padding: 1vh;
-  background-color: #233140;
+  background-color: #1c2645;
 }
