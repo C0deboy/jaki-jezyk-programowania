@@ -17,8 +17,18 @@ p {
   margin-bottom: 20px;
 }
 
+a {
+  color: white;
+}
+
+a:hover {
+  color: #F05F40;
+  text-decoration: none;
+}
+
 section {
-  padding: 100px 0;
+  padding: 50px 0;
+  text-align: center;
 }
 
 .custom-row {
@@ -212,6 +222,7 @@ header .header-content .header-content-inner p {
 
 .btn.btn-danger {
     width: 80%;
+    height: 10vh;
     color: ##F05F4;
     background-color: #f06040;
     background-image: linear-gradient(to bottom, #f06040, #f06040);
