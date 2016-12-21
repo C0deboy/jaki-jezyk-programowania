@@ -1,6 +1,13 @@
 $(function(){
     $(".element").typed({
-      strings: ['JavaScript <br> function addition(a, b) {<br><span style="margin-left: 2em;"> return a + b;</span><br>}', 'PHP <br> function addition($a, $b) {<br><span style="margin-left: 2em;"> return $a + $b;</span><br>}','Python <br> def addition(a, b):<br><span style="margin-left: 2em;"> return a + b</span><br>','Java <br> public int addition(int a, int b) {<br><span style="margin-left: 2em;"> return a + b;</span><br>}','C<br> int addition(int a, int b) {<br><span style="margin-left: 2em;"> return a + b;</span><br>}','C++ <br> int addition(int a, int b) {<br><span style="margin-left: 2em;"> return a + b;</span><br>}'],
+      strings: [
+      'JavaScript <br> function addition(a, b) {<br><span style="margin-left: 2em;"> return a + b;</span><br>}',
+     'PHP <br> function addition($a, $b) {<br><span style="margin-left: 2em;"> return $a + $b;</span><br>}',
+     'Python <br> def addition(a, b):<br><span style="margin-left: 2em;"> return a + b</span><br>',
+     'Java <br> public int addition(int a, int b) {<br><span style="margin-left: 2em;"> return a + b;</span><br>}',
+     'C<br> int addition(int a, int b) {<br><span style="margin-left: 2em;"> return a + b;</span><br>}',
+     'C++ <br> int addition(int a, int b) {<br><span style="margin-left: 2em;"> return a + b;</span><br>}'
+      ],
       typeSpeed: 100,
       loop:true,
     });

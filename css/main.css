@@ -218,42 +218,50 @@ header .header-content .header-content-inner p {
   }
 }
 
-/* Buttons */
 
-.btn.btn-danger {
-    width: 80%;
-    height: 10vh;
-    color: ##F05F4;
-    background-color: #f06040;
-    background-image: linear-gradient(to bottom, #f06040, #f06040);
-    border-color: #f05f40 #f05f40 #f05f40;
-}
-.btn.btn-danger:hover {
-    width: 80%;
-    color: ##F05F4;
-    background-color: #f06040;
-    background-image: linear-gradient(to bottom, #f06040, #f06040);
-    border-color: #f05f40 #f05f40 #f05f40;
-}
-
+/* How Works Section */
 
 #howWorks {
   background-color: #ede9ce;
   min-height: 100vh;
 }
 
-#about-programming {
-  background-color: #c7ad88;
-  min-height: 100vh;
+#howWorks h1 {
+  padding-bottom: 5%;
 }
 
-#about-us {
+.sub-text {
+  opacity: 0.5;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+
+/* Buttons */
+
+.btn.btn-danger {
+    min-width: 30%;
+    font-size: 32px;
+    color: #F05F4;
+    background-color: #f06040;
+    background-image: linear-gradient(to bottom, #f06040, #f06040);
+    border-color: #f05f40 #f05f40 #f05f40;
+}
+.btn.btn-danger:hover {
+    min-width: 30%;
+    color: #F05F4;
+    font-size: 32px;
+    background-color: #f06040;
+    background-image: linear-gradient(to bottom, #f06040, #f06040);
+    border-color: #f05f40 #f05f40 #f05f40;
+}
+
+#about-project {
   background-color: #64706c;
   min-height: 45vh;
   padding: 50px 0;
 }
 @media (max-width: 768px) {
-  #about-us {
+  #about-project {
     background-color: #64706c;
     min-height: 100vh;
   }
