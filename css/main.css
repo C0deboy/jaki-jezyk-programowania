@@ -201,11 +201,10 @@ header .header-content .header-content-inner p {
 
 /* Terminal Highliting */
 
-div.terminal .nf { color: #a6e22e } /* Function Name */
-div.terminal .nv { color: #f8f8f2 } /* Variable */
-div.terminal .k { color: #66d9ef } /* Keyword */
-div.terminal .kt { color: #66d9ef } /* Keyword Type */
-div.terminal .l { color: #ae81ff }
+div.terminal .function-highlighter { color: #a6e22e } /* Function Name */
+div.terminal .keyword-highlighter { color: #66d9ef } /* Keyword */
+div.terminal .string-highlighter { color: #e6db74 } /* String */
+div.terminal .number-highlighter { color: #ae81ff } /* Number */
 
 /* Laptop Media Query */
 
