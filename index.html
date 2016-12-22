@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="pl">
 <head>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,13 +16,14 @@
   <!-- Main CSS -->
   <link rel="stylesheet" href="css/main.css">
 
-  <!-- Font awesome -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="css/font-awesome.min.css">
 
 </head>
 
-<body id="big-image">
+<body>
 
+  <!-- Navigation Bar -->
   <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
       <div class="container-fluid">
           <div class="navbar-header">
@@ -36,7 +38,7 @@
                       <a class="page-scroll intro-btn" href="#intro">Początek</a>
                   </li>
                   <li>
-                      <a class="page-scroll howWorks-btn" href="#howWorks">Jak to działa?</a>
+                      <a class="page-scroll how-works-btn" href="#how-works">Jak to działa?</a>
                   </li>
                   <li>
                       <a class="page-scroll about-project-btn" href="#about-project">O projekcie</a>
@@ -46,6 +48,7 @@
       </div>
 </nav>
 
+<!-- Header -->
 <header id="intro">
     <div class="header-content">
         <div class="header-content-inner">
@@ -53,10 +56,11 @@
             <div class="row custom-row">
               <div class="col-md-7">
                 <h1>Wybierz swój język programowania</h1>
-                <hr>
+                <hr class="star-primary">
                 <p><b>Chciałbyś nauczyć się programowania, ale nie wiesz od jakiego języka zacząć? Spróbujemy Ci w tym pomóc! Razem z nami poznasz, który z nich będzie dla Ciebie najbardziej odpowiedni oraz zyskasz możliwość ich porównania.</b></p>
             </div>
             <div class="col-md-5">
+              <!-- Laptop Section -->
               	<div class="laptop">
               		<div class="laptop-content">
                          <div class="terminal-window">
@@ -64,15 +68,13 @@
                               <div class="button red"></div>
                               <div class="button yellow"></div>
                               <div class="button green"></div>
-
                             </header>
                             <div class="terminal">
-                              <p class="prompt"><span class="root">root@10.0.0.1:~$ </span><span class="element"></span></p>
-
+                              <span class="element"></span></p>
                             </div>
-                          </div>
+                         </div>
               		</div>
-              	<div class="keyboard"></div>
+              	  <div class="keyboard"></div>
               	</div>
             </div>
           </div>
@@ -81,14 +83,13 @@
   </div>
 </header>
 
-
-<section id="howWorks">
+<!-- How This Website Works Section -->
+<section id="how-works">
   <div class="container">
   <div class="row">
     <div class="col-md-12">
       <h1>Jak to działa?</h1>
       <p>Przygotowaliśmy dla Ciebie [wstaw liczbę pytań] odpowiednio wyselekcjonowanych pytań, dzięki którym, jesteśmy gotowi stworzyć swoistą ścieżkę prowadzącą do wybranego języka programowania, idealnie pasującego do Twoich wymagań. Wszystko stworzone na zasadzie interaktywnej zabawy, by równocześnie zachęcić i pomóc początkującym programistom, jak i doradzić w wyborze języka bardziej zaawansowanym osobom, chcącym doświadczyć czegoś nowego. Spróbuj, a sam dowiesz się jaki język pasuje dla Ciebie najbardziej! </p>
-
       <p class="sub-text">Strona ta ma na celu tylko pomoc w wyborze języka, pamiętaj żeby ostatecznie podjąć decyzję podążając za głosem serca.</p>
     </div>
     <div class="container">
@@ -102,33 +103,36 @@
   </div>
 </section>
 
+<!-- Footer Section -->
 <footer class="text-center">
+  <!-- About Project -->
 	<div id="about-project">
 	  <div class="container">
 	    <div class="row">
 	      <div class="col-md-12 button-center">
 	        <h1>O projekcie</h1>
-	        <p>Jesteśmy grupą młodych programistów, którzy jak większość osób na początku swojej przygody z programowaniem staneli przed problemem wyboru języka. Dlatego postanowiliśmy ułatwić innym to zadanie i zapobiec powstawaniu lawiny kolejnych wątków na forach. Jeżeli podoba Ci się nasza inicjatywa, wspomóż nas!</p>
+	        <p>Jesteśmy grupą młodych programistów, którzy jak większość osób na początku swojej przygody z programowaniem stanęli przed problemem wyboru języka. Dlatego postanowiliśmy ułatwić innym to zadanie i zapobiec powstawaniu lawiny kolejnych wątków na forach. Jeżeli podoba Ci się nasza inicjatywa, wspomóż nas!</p>
 	      </div>
 	    </div>
-      <div class="row">
-        <h4>Twórcy</h4>
-        <div class="col-md-4">
-          <h5>W3ndige</h5>
-          <a href="https://www.rootnetsec.com/">Personal Blog</a>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>W3ndige</h3>
+            <a href="https://www.rootnetsec.com/">Personal Blog</a>
+          </div>
+          <div class="col-md-4">
+            <h3>NoMoExcuses</h3>
+            <a href="#">Not yet</a>
+          </div>
+          <div class="col-md-4">
+            <h3>Yodakasi</h3>
+            <a href="#">Coś</a>
+          </div>
         </div>
-        <div class="col-md-4">
-          <h5>W3ndige</h5>
-          <a href="https://www.rootnetsec.com/">Personal Blog</a>
-        </div>
-        <div class="col-md-4">
-          <h5>W3ndige</h5>
-          <a href="https://www.rootnetsec.com/">Personal Blog</a>
-        </div>
-      </div>
+    </div>
 	  </div>
 	</div>
-
+    <!-- Feedback -->
     <div class="footer-above">
         <div class="container">
             <div class="row">
@@ -156,11 +160,12 @@
         </div>
       </div>
     </div>
+    <!-- Copyright Footer -->
     <div class="footer-below">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    Copyright &copy; Jaki-Język-Programowania.pl 2017
+                    Copyright &copy; Jaki Język Programowania 2017
                 </div>
             </div>
         </div>
@@ -176,6 +181,7 @@
 <!-- TypedJS -->
 <script src="js/typed.js"></script>
 
+<!-- MainJS -->
 <script src="js/main.js"></script>
 
 </body>

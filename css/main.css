@@ -2,8 +2,8 @@ html,
 body {
   height: 100%;
   width: 100%;
-
 }
+
 
 hr {
   border-color: #AA3939;
@@ -199,9 +199,13 @@ header .header-content .header-content-inner p {
   overflow: auto;
 }
 
-.root {
-  color: red;
-}
+/* Terminal Highliting */
+
+div.terminal .nf { color: #a6e22e } /* Function Name */
+div.terminal .nv { color: #f8f8f2 } /* Variable */
+div.terminal .k { color: #66d9ef } /* Keyword */
+div.terminal .kt { color: #66d9ef } /* Keyword Type */
+div.terminal .l { color: #ae81ff }
 
 /* Laptop Media Query */
 
@@ -222,12 +226,12 @@ header .header-content .header-content-inner p {
 
 /* How Works Section */
 
-#howWorks {
-  background-color: #2F4073;
+#how-works {
+  background-color: #4188b8;
   min-height: 100vh;
 }
 
-#howWorks h1 {
+#how-works h1 {
   padding-bottom: 5%;
 }
 
@@ -255,6 +259,8 @@ header .header-content .header-content-inner p {
     background-image: linear-gradient(to bottom, #762E55, #762E55);
     border-color: #762E55 #762E55 #762E55;
 }
+
+/* About Section */
 
 #about-project {
   background-color: #2a3967;
