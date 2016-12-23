@@ -250,6 +250,21 @@ div.terminal .number-highlighter { color: #ae81ff } /* Number */
   padding-bottom: 5%;
 }
 
+/* Programming languages Section */
+
+#program-languages {
+  background-color: #2a3967;;
+  min-height: 100vh;
+}
+
+#program-languages h1 {
+  padding-bottom: 5%;
+}
+
+.language {
+  padding: 6%;
+}
+
 /* Buttons */
 
 .btn.btn-danger {

@@ -38,8 +38,8 @@ $(function(){
     scrollToElement('#how-works', 600);
     });
 
-    $(".about-programming-btn").click(function() {
-    scrollToElement('#about-programming', 600);
+    $(".program-languages-btn").click(function() {
+    scrollToElement('#program-languages', 600);
     });
 
     $(".about-project-btn").click(function() {
