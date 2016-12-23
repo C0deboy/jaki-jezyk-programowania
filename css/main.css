@@ -126,41 +126,80 @@ header .header-content .header-content-inner p {
 
 /* Laptop Section */
 
-.laptop {
+.laptop{
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.screen {
   width: 100%;
   height: 310px;
   background: black;
   border: 12px solid #e8ebf0;
   border-radius: 10px 10px 0 0;
-  position: relative;
-  margin: auto;
-  box-sizing: border-box;
 }
 
+.connector {
+  border-top: 5px solid #e8ebf0;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.keys{
+ height: 0;
+ width: 120%;
+ margin-left: -10%;
+ border-bottom: 70px solid #e8ebf0;
+ border-left: 3.7vw solid transparent;
+ border-right: 3.7vw solid transparent;
+}
 
 .keyboard {
-  width: 140%;
+  width: 120%;
   height: 15px;
-  margin-left: -20%;
+  margin-left: -10%;
   border-radius: 0 0 20px 20px;
   background: #f4f5f7;
-  z-index: 1;
+
 }
 
 .laptop-content{
 	width: 100%;
 }
 
+/* Laptop Media Query */
+
+@media (max-width: 1000px) {
+
+  .keyboard {
+    width: 80vw
+    margin-left: -5vw;
+  }
+  .keys{
+   height: 0;
+   width: 80vw
+   margin-left: -5vw;
+   border-bottom: 70px solid #e8ebf0;
+   border-left: 8vw solid transparent;
+   border-right: 8vw solid transparent;
+  }
+}
+
 /* Terminal Section */
 
-.terminal-window {
+.terminal {
+  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+  font-size: 11pt;
   text-align: left;
-  margin-top: -1px;
-  height: 288px;
+  background: #30353A;
+  padding: 10px;
+  width: 100%;
+  height: 258px;
 }
 
 .terminal-window header {
   background: #E0E8F0;
+  margin-top: -1px;
   height: 30px;
   padding-left: 10px;
 }
@@ -168,7 +207,6 @@ header .header-content .header-content-inner p {
 .terminal-window header .button {
   width: 12px;
   height: 12px;
-  margin: 10px 4px 0 0;
   display: inline-block;
   border-radius: 8px;
 }
@@ -185,42 +223,14 @@ header .header-content .header-content-inner p {
   background: #E75448;
 }
 
-.terminal-window div.terminal {
-  color: white;
-  font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
-  font-size: 11pt;
-  background: #30353A;
-  padding: 10px;
-  box-sizing: border-box;
-  position: absolute;
-  width: 100%;
-  top: 30px;
-  bottom: 0;
-  overflow: auto;
-}
-
 /* Terminal Highliting */
 
-div.terminal .function-highlighter { color: #a6e22e } /* Function Name */
-div.terminal .keyword-highlighter { color: #66d9ef } /* Keyword */
+div.terminal .function-name-highlighter { color: #a6e22e } /* Function Name */
+div.terminal .function-highlighter { color: #4ecdef } /* Function */
+div.terminal .keyword-highlighter { color: #f92656 } /* Keyword */
 div.terminal .string-highlighter { color: #e6db74 } /* String */
 div.terminal .number-highlighter { color: #ae81ff } /* Number */
 
-/* Laptop Media Query */
-
-@media (max-width: 768px) {
-  .laptop {
-    width: 95%;
-    height: 210px;
-  }
-  .keyboard {
-    width: 130%;
-    margin-left: -15%;
-  }
-  .terminal-window {
-    height: 187px;
-  }
-}
 
 
 /* How Works Section */
