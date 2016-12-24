@@ -152,6 +152,7 @@ header .header-content .header-content-inner p {
  border-bottom: 70px solid #e8ebf0;
  border-left: 3.7vw solid transparent;
  border-right: 3.7vw solid transparent;
+
 }
 
 .keyboard {
@@ -165,24 +166,6 @@ header .header-content .header-content-inner p {
 
 .laptop-content{
 	width: 100%;
-}
-
-/* Laptop Media Query */
-
-@media (max-width: 1000px) {
-
-  .keyboard {
-    width: 80vw
-    margin-left: -5vw;
-  }
-  .keys{
-   height: 0;
-   width: 80vw
-   margin-left: -5vw;
-   border-bottom: 70px solid #e8ebf0;
-   border-left: 8vw solid transparent;
-   border-right: 8vw solid transparent;
-  }
 }
 
 /* Terminal Section */
