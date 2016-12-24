@@ -58,7 +58,7 @@ $(function(){
     function laptop()  {
     var cw = $('.laptop').height()*1.2;
     $('.laptop').css({'max-width':cw+'px'});
-    var hej = $('.screen').width()/9.8;
+    var hej = $('.screen').width()/9.35;
     $('.keys').css({'border-left':hej+'px solid transparent'});
     $('.keys').css({'border-right':hej+'px solid transparent'});
     }
