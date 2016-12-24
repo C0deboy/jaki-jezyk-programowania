@@ -1,0 +1,120 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #4188b8;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.language-content {
+  margin: 5%;
+  background-color: #346c93;
+  text-align: center;
+  -webkit-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+}
+
+.language-content .language-name {
+  margin: 1vh auto 5vh auto;
+}
+
+.language-content .language-logo {
+  border-radius: 50%;
+	width: 200px;
+	height: 200px;
+  background-color: #3a7aa5;
+  margin: auto;
+  -webkit-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+}
+
+.language-content .language-start {
+  margin: 5%;
+}
+
+/* Lanugage Logo Animation */
+
+.language-logo-animation{
+	animation-name: language-logo-animation;
+	-webkit-animation-name: language-logo-animation;
+
+	animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+
+	transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%;
+
+	visibility: visible !important;
+}
+
+@keyframes language-logo-animation {
+	0% {
+		transform: rotate(0deg) scaleY(0.6);
+	}
+	20% {
+		transform: rotate(-2deg) scaleY(1.05);
+	}
+	35% {
+		transform: rotate(2deg) scaleY(1);
+	}
+	50% {
+		transform: rotate(-2deg);
+	}
+	65% {
+		transform: rotate(1deg);
+	}
+	80% {
+		transform: rotate(-1deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@-webkit-keyframes language-logo-animation {
+	0% {
+		-webkit-transform: rotate(0deg) scaleY(0.6);
+	}
+	20% {
+		-webkit-transform: rotate(-2deg) scaleY(1.05);
+	}
+	35% {
+		-webkit-transform: rotate(2deg) scaleY(1);
+	}
+	50% {
+		-webkit-transform: rotate(-2deg);
+	}
+	65% {
+		-webkit-transform: rotate(1deg);
+	}
+	80% {
+		-webkit-transform: rotate(-1deg);
+	}
+	100% {
+		-webkit-transform: rotate(0deg);
+	}
+}
