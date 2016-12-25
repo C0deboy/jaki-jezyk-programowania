@@ -162,31 +162,31 @@ header .header-content .header-content-inner p {
   -webkit-transform: perspective(200px) rotateX(10deg);
 }
 
-.key{
-  width: 23px;
+.key {
+  width: 4.7%;
   height:15px;
   background-color: #333;
   text-align: center;
   line-height:15px;
   border-radius:2px;
-  float:left; 
-  margin: 1px 0 0 3px;
+  float:left;
+  margin: 0.3% 0 0 0.6%;
   font-size: 5px;
 }
 
-.function{ width:19.6px; height:10px; }
+.function{ width:3.95%; }
 .dual { line-height: 7.5px; }
 .newrow {clear:both;}
-.backspace {width:30px;}
-.tab {width: 27px;  ;}
-.slash{width:26px; }
-.caps{width:32px;  }
-.enter{width:47px; }
-.shift-left{width: 40px; }
-.shift-right{width: 39px;}
-.ctrl-left{width: 25px;  }
-.ctrl-right{width: 27px; }
-.space{width:154px;}
+.backspace {width:5%;}
+.tab {width: 5%;  ;}
+.slash{width:5%; }
+.caps{width:7%;  }
+.enter{width:8%; }
+.shift-left{width: 7.5%; }
+.shift-right{width: 7.5%;}
+.ctrl-left{width: 5%;  }
+.ctrl-right{width: 5%; }
+.space{width:31%;}
 .enter2{}
 .plus{}
 
@@ -197,14 +197,14 @@ header .header-content .header-content-inner p {
 
 .mouse{
   background-color: #333;
-  width: 100px;
-  height: 50px;
+  width: 41%;
+  height: 40px;
   float: left;
   margin-top: 5px;
 }
 .click{
   background-color: #333;
-  width: 49.5px;
+  width: 20.3%;
   height: 10px;
   margin: 1px 1px 0 0;
   float: left;
