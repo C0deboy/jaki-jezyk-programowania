@@ -210,6 +210,7 @@ header .header-content .header-content-inner p {
 
 div.terminal .function-name-highlighter { color: #a6e22e } /* Function Name */
 div.terminal .function-highlighter { color: #4ecdef } /* Function */
+div.terminal .function-arg-highlighter { color: #f6971f } /* Function Arguments */
 div.terminal .keyword-highlighter { color: #f92656 } /* Keyword */
 div.terminal .string-highlighter { color: #e6db74 } /* String */
 div.terminal .number-highlighter { color: #ae81ff } /* Number */
