@@ -132,7 +132,7 @@ header .header-content .header-content-inner p {
 }
 
 .screen {
-  width: 100%;
+  width: 90%;
   height: 310px;
   background: black;
   border: 12px solid #e8ebf0;
@@ -142,21 +142,75 @@ header .header-content .header-content-inner p {
 .connector {
   border-top: 5px solid #e8ebf0;
   width: 60%;
-  margin-left: 20%;
+  margin-left: 15%;
+}
+
+.keyboard{
+ height: 0;
+ width: 110%;
+ margin-left: -10%;
+ border-bottom: 170px solid #e8ebf0;
+ border-left: 3.7vw solid transparent;
+ border-right: 3.7vw solid transparent;
 }
 
 .keys{
- height: 0;
- width: 120%;
- margin-left: -10%;
- border-bottom: 70px solid #e8ebf0;
- border-left: 3.7vw solid transparent;
- border-right: 3.7vw solid transparent;
-
+  width: 100%;
+  margin-top: 1%;
+  margin-left: 2%;
+  float: left;
+  -webkit-transform: perspective(200px) rotateX(10deg);
 }
 
-.keyboard {
-  width: 120%;
+.key{
+  width: 23px;
+  height:15px;
+  background-color: #333;
+  text-align: center;
+  line-height:15px;
+  border-radius:2px;
+  float:left; 
+  margin: 1px 0 0 3px;
+  font-size: 5px;
+}
+
+.function{ width:19.6px; height:10px; }
+.dual { line-height: 7.5px; }
+.newrow {clear:both;}
+.backspace {width:30px;}
+.tab {width: 27px;  ;}
+.slash{width:26px; }
+.caps{width:32px;  }
+.enter{width:47px; }
+.shift-left{width: 40px; }
+.shift-right{width: 39px;}
+.ctrl-left{width: 25px;  }
+.ctrl-right{width: 27px; }
+.space{width:154px;}
+.enter2{}
+.plus{}
+
+.touchpad{
+  width: 55%;
+  margin: 0 auto;
+}
+
+.mouse{
+  background-color: #333;
+  width: 100px;
+  height: 50px;
+  float: left;
+  margin-top: 5px;
+}
+.click{
+  background-color: #333;
+  width: 49.5px;
+  height: 10px;
+  margin: 1px 1px 0 0;
+  float: left;
+}
+.board {
+  width: 110%;
   height: 15px;
   margin-left: -10%;
   border-radius: 0 0 20px 20px;

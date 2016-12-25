@@ -56,13 +56,13 @@ $(function(){
     /* Laptop Responsivness sets width to the 1.5 height of the laptop*/
 
     function laptop()  {
-    var cw = $('.laptop').height()*1.2;
-    $('.laptop').css({'max-width':cw+'px'});
-    var hej = $('.screen').width()/9.35;
-    $('.keys').css({'border-left':hej+'px solid transparent'});
-    $('.keys').css({'border-right':hej+'px solid transparent'});
+      var cw = $('.laptop').height()*1.2;
+      $('.laptop').css({'max-width':cw+'px'});
+      var hej = $('.screen').width()/8.45;
+      $('.keyboard').css({'border-left':hej+'px solid transparent'});
+      $('.keyboard').css({'border-right':hej+'px solid transparent'});
     }
 
-    document.onload = laptop();
+    window.addEventListener("load", laptop);
     window.addEventListener("resize", laptop);
 });
