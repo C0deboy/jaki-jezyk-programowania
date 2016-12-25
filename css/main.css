@@ -156,7 +156,6 @@ header .header-content .header-content-inner p {
 
 .keys{
   width: 100%;
-  margin-top: 1%;
   margin-left: 2%;
   float: left;
   -webkit-transform: perspective(200px) rotateX(10deg);
@@ -164,18 +163,33 @@ header .header-content .header-content-inner p {
 
 .key {
   width: 4.7%;
-  height:15px;
+  height:16px;
   background-color: #333;
   text-align: center;
-  line-height:15px;
+  line-height:13px;
   border-radius:2px;
   float:left;
   margin: 0.3% 0 0 0.6%;
   font-size: 5px;
+  border-bottom: solid 4px black;
 }
 
-.function{ width:3.95%; }
-.dual { line-height: 7.5px; }
+@keyframes animateKey {
+	0% {border-bottom: solid 0px black;}
+	15% {border-bottom: solid 4px black;}
+	100% {border-bottom: solid 4px black;}
+}
+
+.pressKey {
+	animation-name: animateKey;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    background-color: #4d4d4d;
+}
+
+.function{ width:3.95%; height: 14px}
+.dual { line-height: 6px; }
 .newrow {clear:both;}
 .backspace {width:5%;}
 .tab {width: 5%;  ;}
@@ -201,6 +215,7 @@ header .header-content .header-content-inner p {
   height: 40px;
   float: left;
   margin-top: 5px;
+  border: solid 1px black;
 }
 .click{
   background-color: #333;
@@ -208,6 +223,7 @@ header .header-content .header-content-inner p {
   height: 10px;
   margin: 1px 1px 0 0;
   float: left;
+  border: solid 1px black;
 }
 .board {
   width: 110%;
