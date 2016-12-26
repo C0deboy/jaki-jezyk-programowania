@@ -72,8 +72,7 @@ header {
 }
 
 header .container-fluid {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding: 50px 5% 50px 5%;
 }
 
 @media (min-width: 768px) {
@@ -81,8 +80,8 @@ header .container-fluid {
     min-height: 100%;
   }
   header .container-fluid {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 5% 20px 5%;
+    
   }
 }
 
@@ -95,8 +94,9 @@ header .container-fluid {
 
 .screen {
   width: 90%;
+  margin-left: 5%;
   height: 310px;
-  background: black;
+  background: #30353A;
   border: 12px solid #e8ebf0;
   border-radius: 10px 10px 0 0;
 }
@@ -104,13 +104,13 @@ header .container-fluid {
 .connector {
   border-top: 5px solid #e8ebf0;
   width: 60%;
-  margin-left: 15%;
+  margin-left: 20%;
 }
 
 .keyboard{
  height: 0;
  width: 110%;
- margin-left: -10%;
+ margin-left: -5%;
  border-bottom: 170px solid #e8ebf0;
  border-left: 3.7vw solid transparent;
  border-right: 3.7vw solid transparent;
@@ -137,13 +137,13 @@ header .container-fluid {
 }
 
 @keyframes animateKey {
-	0% {border-bottom: solid 0px black;}
-	15% {border-bottom: solid 4px black;}
-	100% {border-bottom: solid 4px black;}
+  0% {border-bottom: solid 0px black;}
+  15% {border-bottom: solid 4px black;}
+  100% {border-bottom: solid 4px black;}
 }
 
 .pressKey {
-	animation-name: animateKey;
+  animation-name: animateKey;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-duration: 1s;
@@ -190,14 +190,14 @@ header .container-fluid {
 .board {
   width: 110%;
   height: 15px;
-  margin-left: -10%;
+  margin-left: -5%;
   border-radius: 0 0 20px 20px;
   background: #f4f5f7;
 
 }
 
 .laptop-content{
-	width: 100%;
+  width: 100%;
 }
 
 /* Terminal Section */
@@ -206,10 +206,9 @@ header .container-fluid {
   font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
   font-size: 11pt;
   text-align: left;
-  background: #30353A;
   padding: 10px;
   width: 100%;
-  height: 258px;
+  height: 100%;
 }
 
 .terminal-window header {

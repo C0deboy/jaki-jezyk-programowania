@@ -56,14 +56,17 @@ $(function(){
     /* Laptop Responsivness sets width to the 1.5 height of the laptop*/
 
     function laptop()  {
-      var cw = $('.laptop').height()*1.2;
-      $('.laptop').css({'max-width':cw+'px'});
-      var hej = $('.screen').width()/8.45;
-      $('.keyboard').css({'border-left':hej+'px solid transparent'});
-      $('.keyboard').css({'border-right':hej+'px solid transparent'});
+      var laptopWidth = $('.laptop').height()*1.2;
+      $('.laptop').css({'max-width':laptopWidth+'px'});
+      var screenHeight = $('.laptop').width();
+      $('.screen').css({'max-height':screenHeight+'px'});
+      var keyboardWidth = $('.screen').width()/8.45;
+      $('.keyboard').css({'border-left':keyboardWidth+'px solid transparent'});
+      $('.keyboard').css({'border-right':keyboardWidth+'px solid transparent'});
     }
 
-    window.addEventListener("load", laptop);
+    laptop();
+    //window.addEventListener("load", laptop);
     window.addEventListener("resize", laptop);
 
 
@@ -74,4 +77,5 @@ $(function(){
       setTimeout(function(){animatedKeys[randomKeyNum].classList.remove("pressKey");},350);
     }
     var pressKeyInt=setInterval(pressKey,300);
+    var pressKeyInt2=setInterval(pressKey,500);
 });
