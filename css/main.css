@@ -71,7 +71,7 @@ header {
   color: white;
 }
 
-header .container {
+header .container-fluid {
   padding-top: 100px;
   padding-bottom: 50px;
 }
@@ -80,7 +80,7 @@ header .container {
   header {
     min-height: 100%;
   }
-  header .container {
+  header .container-fluid {
     padding-top: 100px;
     padding-bottom: 100px;
   }
