@@ -66,12 +66,12 @@ $(function(){
     window.addEventListener("load", laptop);
     window.addEventListener("resize", laptop);
 
-    
+
     var animatedKeys = document.querySelectorAll(".typekey");
     function pressKey(){
       var randomKeyNum=Math.floor((Math.random() * 29));
       animatedKeys[randomKeyNum].classList.add("pressKey");
       setTimeout(function(){animatedKeys[randomKeyNum].classList.remove("pressKey");},350);
     }
-    var pressKeyInt=setInterval(pressKey,190);
+    var pressKeyInt=setInterval(pressKey,300);
 });
