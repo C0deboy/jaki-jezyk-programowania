@@ -71,10 +71,9 @@ $(function(){
     }
 
     laptop();
-    //window.addEventListener("load", laptop);
     window.addEventListener("resize", laptop);
 
-
+    /*Laptop animated keys*/
     var animatedKeys = document.querySelectorAll(".typekey");
     function pressKey(){
       var randomKeyNum=Math.floor((Math.random() * 29));
@@ -83,4 +82,21 @@ $(function(){
     }
     var pressKeyInt=setInterval(pressKey,300);
     var pressKeyInt2=setInterval(pressKey,500);
+
+    /*Rotating animations*/
+    $('.lang-link').click(function(event) {
+      event.preventDefault();
+      var href = this.href;
+      $('.lang').addClass('rotation');
+      setTimeout(function () {window.location = href; $('.lang').removeClass('rotation');},1000);
+    });
+
+    $('.start').click(function() {
+      console.log("poszło");
+      $('.play').addClass('rotation');
+      setTimeout(function () {window.location = "start.html";},1000);
+      
+    });
 });
+
+
