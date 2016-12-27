@@ -83,20 +83,24 @@ $(function(){
     var pressKeyInt=setInterval(pressKey,300);
     var pressKeyInt2=setInterval(pressKey,500);
 
+
+    /* Zoomed Animation */
+
+    $(".lang-link").hover(
+      function(){$(this).addClass("zoomed");},
+      function() {$(this).removeClass("zoomed");
+    })
+
     /*Rotating animations*/
     $('.lang-link').click(function(event) {
       event.preventDefault();
       var href = this.href;
-      $('.lang').addClass('rotation');
+      $(this).addClass('rotation');
       setTimeout(function () {window.location = href; $('.lang').removeClass('rotation');},1000);
     });
 
     $('.start').click(function() {
-      console.log("poszło");
       $('.play').addClass('rotation');
-      setTimeout(function () {window.location = "start.html";},1000);
-      
+      setTimeout(function () {window.location = "start.html";$('.play').removeClass('rotation');},750);
     });
-});
-
-
+  });

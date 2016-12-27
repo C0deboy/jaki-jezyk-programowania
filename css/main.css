@@ -2,7 +2,11 @@ html,
 body {
   height: 100%;
   width: 100%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143
 }
+
 
 
 hr {
@@ -24,10 +28,6 @@ a {
 a:hover{
   text-decoration: none;
   color: white;
-}
-
-.textsenter a:hover {
-  color: #F05F40;
 }
 
 section {
@@ -85,7 +85,7 @@ header .container-fluid {
   }
   header .container-fluid {
     padding: 100px 5% 20px 5%;
-    
+
   }
 }
 
@@ -272,19 +272,24 @@ div.terminal .number-highlighter { color: #ae81ff } /* Number */
 /* Programming languages Section */
 
 #program-languages {
-  background-color: #2a3967;;
+  background-color: #fff;;
   min-height: 100vh;
+  color: black;
+}
+
+#program-languages a {
+  color: #777;
 }
 
 #program-languages h1 {
-  padding-bottom: 5%;
+  padding-bottom: 2%;
+  color: #333333
 }
 
 .lang {
   padding: 2%;
   font-size: 2em;
   text-decoration: none;
-  color: white;
 }
 
 @media (max-width: 768px) {
@@ -293,7 +298,12 @@ div.terminal .number-highlighter { color: #ae81ff } /* Number */
   }
 }
 
-.lang:hover {
+.lang-link {
+  display: inline-block;
+
+}
+
+.zoomed {
   animation: zoomLang;
   animation-duration: 1s;
   animation-iteration-count: 1;
@@ -302,21 +312,18 @@ div.terminal .number-highlighter { color: #ae81ff } /* Number */
   cursor: pointer;
 }
 
-.lang-link:visited {
-  text-decoration: none;
-  color: white;
-}
-
 @keyframes zoomLang{
   from {transform: scale(1);}
   to {transform: scale(2);}
 }
 
-.rotation{
+
+.rotation {
   animation: rotate;
   animation-duration: 1s;
   animation-iteration-count: 1;
   animation-play-state: linear;
+  transform-origin: center;
 }
 
 @keyframes rotate{
