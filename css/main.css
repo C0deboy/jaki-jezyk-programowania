@@ -182,8 +182,8 @@ header .container-fluid {
 .ctrl-left{width: 5%;  }
 .ctrl-right{width: 5%; }
 .space{width:31%;}
-.enter2{transform-origin: top; transform: scale(1,2.1); border-bottom: solid 2px black; font-size: 3px}
-.plus{transform-origin: top; transform: scale(1,2.1); border-bottom: solid 2px black; font-size: 3px}
+.enter2{transform-origin: top; transform: scale(1,2); border-bottom: solid 2px black; font-size: 3px; height: 17.25px}
+.plus{transform-origin: top; transform: scale(1,2); border-bottom: solid 2px black; font-size: 3px; margin: 0.5% 0 0 0.6%;}
 
 .touchpad{
   width: 55%;
@@ -286,7 +286,6 @@ div.terminal .number-highlighter { color: #ae81ff } /* Number */
 #program-languages {
   background-color: #337ab7;
   min-height: 100vh;
-  color: black;
 }
 
 #program-languages h1 {
