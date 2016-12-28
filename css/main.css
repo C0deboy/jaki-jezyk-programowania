@@ -92,16 +92,22 @@ header .container-fluid {
 @media (min-width: 768px) {
   header {
     min-height: 100%;
+  }
+  header .container-fluid {
+    padding: 100px 5% 20px 5%;
+
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    min-height: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     background-position: center;
-    background-image: url('../img/header.png'), linear-gradient(#1e5799, #337ab7);
-  }
-  header .container-fluid {
-    padding: 100px 5% 20px 5%;
-
+    background-image: url('../img/header.png'), linear-gradient(#1e5799, #4696ca);
   }
 }
 
