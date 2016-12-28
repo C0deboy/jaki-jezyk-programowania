@@ -182,8 +182,8 @@ header .container-fluid {
 .ctrl-left{width: 5%;  }
 .ctrl-right{width: 5%; }
 .space{width:31%;}
-.enter2{transform-origin: top; transform: scale(1,2); border-bottom: solid 2px black; font-size: 3px}
-.plus{transform-origin: top; transform: scale(1,2); border-bottom: solid 2px black; font-size: 3px}
+.enter2{transform-origin: top; transform: scale(1,2.1); border-bottom: solid 2px black; font-size: 3px}
+.plus{transform-origin: top; transform: scale(1,2.1); border-bottom: solid 2px black; font-size: 3px}
 
 .touchpad{
   width: 55%;
@@ -300,13 +300,13 @@ div.terminal .number-highlighter { color: #ae81ff } /* Number */
 }
 
 .lang {
-  padding: 2%;
+  padding: 4%;
   font-size: 2em;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .lang {
-    padding: 4%;
+    padding: 2%;
   }
 }
 
@@ -314,40 +314,6 @@ div.terminal .number-highlighter { color: #ae81ff } /* Number */
   display: inline-block;
   color: white;
   text-decoration: none;
-}
-
-.lang-link:hover{
-  display: inline-block;
-  color: white;
-  text-decoration: none;
-}
-
-.zoomed {
-  animation: zoomLang;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-play-state: ease-out;
-  animation-fill-mode: forwards;
-  cursor: pointer;
-}
-
-@keyframes zoomLang{
-  from {transform: scale(1);}
-  to {transform: scale(2);}
-}
-
-
-.rotation {
-  animation: rotate;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-play-state: linear;
-  transform-origin: center;
-}
-
-@keyframes rotate{
-  0% {transform: rotate(0deg) scale(2);}
-  100% {transform: rotate(360deg) scale(2);}
 }
 
 /* Buttons */
@@ -373,9 +339,12 @@ div.terminal .number-highlighter { color: #ae81ff } /* Number */
 
 #about-project {
   background-color: #eeeeee;
-  min-height: 45vh;
+  min-height: 100vh;
+  color: black;
+  text-align: center;
 }
-@media (max-width: 768px) {
+
+@media (min-width: 768px) {
   #about-project {
     min-height: 100vh;
   }
@@ -411,13 +380,55 @@ ul.social-buttons li a {
 
 /* Footer Section */
 
-
-footer .footer-col {
-  margin-bottom: 4%;
-}
-footer .footer-below {
-  min-height: 5vh;
-  padding: 1vh;
+footer {
   background-color: #337ab7;
+  padding: 25px 0;
   color: white;
+  text-align: center;
+}
+footer p {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* Animations */
+
+.zoom {
+  animation: zoom;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-play-state: ease-out;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+@keyframes zoom{
+  from {transform: scale(1);}
+  to {transform: scale(2);}
+}
+
+.rotation {
+  animation: rotation;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-play-state: linear;
+  transform-origin: center;
+}
+
+@keyframes rotation{
+  1% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.zoomedRotation {
+  animation: zoomedRotation;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-play-state: linear;
+  transform-origin: center;
+}
+
+@keyframes zoomedRotation{
+  1% {transform: rotate(0deg) scale(2);}
+  100% {transform: rotate(360deg) scale(2);;}
 }

@@ -12,8 +12,6 @@ var languagesExamples = [
   'R<br><span class="function-name-highlighter">divide</span> <- <span class="function-highlighter">function</span>(<span class="function-arg-highlighter">a</span>, <span class="function-arg-highlighter">b</span>) {<br><span style="margin-left: 2em;"><span class="keyword-highlighter">if</span> (b <span class="keyword-highlighter">==</span> <span class="number-highlighter">0</span>)<span class="string-highlighter"> "Warning"</span></span><br><span style="margin-left: 2em;"><span class="keyword-highlighter">else </span>a <span class="keyword-highlighter">/</span> b</span><br>}<br><span class="function-name-highlighter">divide</span>(<span class="number-highlighter">15</span>, <span class="number-highlighter">5</span>)<br><span class="number-highlighter">3</span>'
 ];
 
-//C#, R
-
 $(function(){
     /* Typed function on terminal */
     $(".element").typed({
@@ -87,20 +85,20 @@ $(function(){
     /* Zoomed Animation */
 
     $(".lang-link").hover(
-      function(){$(this).addClass("zoomed");},
-      function() {$(this).removeClass("zoomed");
+      function(){$(this).addClass("zoom");},
+      function() {$(this).removeClass("zoom");
     })
 
     /*Rotating animations*/
     $('.lang-link').click(function(event) {
       event.preventDefault();
       var href = this.href;
-      $(this).addClass('rotation');
-      setTimeout(function () {window.location = href; $('.lang').removeClass('rotation');},1000);
+      $(this).addClass('zoomedRotation');
+      setTimeout(function () {window.location = href;},750);
     });
 
     $('.start').click(function() {
       $('.play').addClass('rotation');
-      setTimeout(function () {window.location = "start.html";$('.play').removeClass('rotation');},750);
+      setTimeout(function () {window.location = "start.html";},750);
     });
   });
