@@ -80,12 +80,7 @@ header {
   position: relative;
   width: 100%;
   min-height: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-  background-image: url('../img/header.png');
+  background: linear-gradient(to bottom, #1e5799 0%,#7db9e8 81%,#7db9e8 100%,#2989d8 100%,#7db9e8 100%,#207cca 100%);
   text-align: center;
   color: white;
 }
@@ -97,6 +92,12 @@ header .container-fluid {
 @media (min-width: 768px) {
   header {
     min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-image: url('../img/header.png'), linear-gradient(#1e5799, #337ab7);
   }
   header .container-fluid {
     padding: 100px 5% 20px 5%;
