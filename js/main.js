@@ -96,9 +96,10 @@ $(function(){
       $(this).addClass('zoomedRotation');
       setTimeout(function () {window.location = href;},750);
     });
-
     $('.start').click(function() {
-      $('.play').addClass('rotation');
-      setTimeout(function () {window.location = "start.html";},750);
+      $('.start').addClass('press');
+    });
+    $('.start').mouseup(function() {
+      setTimeout(function () {window.location = "start.html";},500);
     });
   });

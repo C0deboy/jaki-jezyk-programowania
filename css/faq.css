@@ -38,19 +38,78 @@ body {
   padding-top: 50px;
 }
 
-.faq-col{
-  padding: 0 3% 0 3%;
-}
-
 .answer {
-  background-color: #eeeeee;
+  background-color: #aaaaaa;
   display: none;
   padding: 4%;
-
-
+  border-top: dotted 3px #5C6263;
+  color: white;
+  clear: both;
+  width: 100%;
+  font-size: 16px;
 }
+
 .question {
   background-color: #eeeeee;
   padding: 4%;
   margin-top: 5%;
+  float: left;
+  width: 100%;
+  position: relative;
 }
+
+.question:hover {
+  cursor: pointer;
+  background-color: #e6e6e6;
+}
+
+.question h2 {
+font-size: 18px;
+display: block;
+float: left;
+width: 85%;
+font-weight: bold;
+margin-top: 10px;
+}
+
+.question .fa-arrow-down{
+  font-size: 24px;
+  color: #5C6263;
+  display: block;
+  width: 15%;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  margin-top: -0.5em;
+}
+
+.rotation {
+  animation: rotation;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+  animation-play-state: linear;
+  animation-fill-mode: forwards;
+  transform-origin: 25% 75%;
+}
+
+@keyframes rotation{
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(90deg);}
+}
+
+.rotationBack {
+  animation: rotationBack;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+  animation-play-state: linear;
+  animation-fill-mode: forwards;
+  transform-origin: 25% 75%;
+}
+
+@keyframes rotationBack{
+  0% {transform: rotate(90deg);}
+  100% {transform: rotate(0deg);}
+}
+
+
+

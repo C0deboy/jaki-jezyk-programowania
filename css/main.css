@@ -272,8 +272,6 @@ div.terminal .keyword-highlighter { color: #f92656 } /* Keyword */
 div.terminal .string-highlighter { color: #e6db74 } /* String */
 div.terminal .number-highlighter { color: #ae81ff } /* Number */
 
-
-
 /* How Works Section */
 
 #how-works {
@@ -326,19 +324,32 @@ div.terminal .number-highlighter { color: #ae81ff } /* Number */
 
 .btn.btn-danger {
     min-width: 30%;
-    font-size: 32px;
+    font-size: 50px;
     color: #F05F4;
     background-color: #AA3939;
     background-image: linear-gradient(to bottom, #AA3939, #AA3939);
-    border-color: #AA3939 #AA3939 #AA3939;
+    border-bottom: solid 10px black;
+    box-shadow: 0px 15px 23px -5px rgba(0,0,0,0.75);
+
 }
 .btn.btn-danger:hover {
-    min-width: 30%;
-    color: #F05F4;
-    font-size: 32px;
     background-color: #762E55;
     background-image: linear-gradient(to bottom, #762E55, #762E55);
-    border-color: #762E55 #762E55 #762E55;
+    border-bottom: solid 10px black;
+}
+
+.press {
+  animation: press;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-play-state: linear;
+}
+
+@keyframes press{
+  0% {border-bottom: solid 10px black;}
+  99.8% {box-shadow: 0px 0px 23px -5px rgba(0,0,0,0.75);}
+  99.9% {transform: translateY(10px);}
+  100% {border-bottom: solid 0px black;}
 }
 
 /* About Section */
@@ -418,12 +429,13 @@ footer p {
   animation-duration: 0.8s;
   animation-iteration-count: 1;
   animation-play-state: linear;
-  transform-origin: center;
 }
 
 @keyframes rotation{
+  0% {transform: scale(1.273,1);}
   1% {transform: rotate(0deg);}
-  100% {transform: rotate(360deg);}
+  9% {transform: rotate(360deg);}
+  100% {transform: scale(1.273,1);}
 }
 
 .zoomedRotation {
@@ -431,10 +443,10 @@ footer p {
   animation-duration: 0.8s;
   animation-iteration-count: 1;
   animation-play-state: linear;
-  transform-origin: center;
 }
 
 @keyframes zoomedRotation{
   1% {transform: rotate(0deg) scale(2);}
   100% {transform: rotate(360deg) scale(2);;}
 }
+
