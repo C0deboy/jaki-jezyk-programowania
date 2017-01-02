@@ -56,12 +56,12 @@ $(function(){
       offset: 51
     });
 
-    /* Laptop Responsivness sets width to the 1.5 height of the laptop*/
+    /* Laptop Responsivness*/
 
     function laptop()  {
       var laptopWidth = $('.laptop').height()*1.2;
       $('.laptop').css({'max-width':laptopWidth+'px'});
-      var screenHeight = $('.laptop').width();
+      var screenHeight = $('.laptop').width()/1.2;
       $('.screen').css({'max-height':screenHeight+'px'});
       var keyboardWidth = $('.screen').width()/8.45;
       $('.keyboard').css({'border-left':keyboardWidth+'px solid transparent'});
@@ -96,9 +96,18 @@ $(function(){
       $(this).addClass('zoomedRotation');
       setTimeout(function () {window.location = href;},750);
     });
-    $('.start').click(function() {
+    $('.start').click(function(event) {
+      event.preventDefault();
+    });
+
+    $('.start').mousedown(function() {
       $('.start').addClass('press');
     });
+
+    $('.start').mouseout(function() {
+      $('.start').removeClass('press');
+    });
+
     $('.start').mouseup(function() {
       setTimeout(function () {window.location = "start.html";},500);
     });
