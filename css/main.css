@@ -279,7 +279,7 @@ div.terminal .number-highlighter { color: #ae81ff } /* Number */
     border: none;
     border-radius: 15px;
     box-shadow: 0px 15px 23px -5px rgba(0,0,0,0.75), 0 8px #000;
-    margin: 5% 0 6% 0;
+    margin: 5% 0 7% 0;
 }
 
 @media (min-width: 768px) {
