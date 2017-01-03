@@ -22,6 +22,13 @@ p {
   margin-bottom: 20px;
 }
 
+
+
+hr {
+  border-color: #AA3939;
+  border-width: 3px;
+}
+
 .text-muted {
   opacity: 0.6;
 }
@@ -95,9 +102,28 @@ header .container-fluid {
   }
   header .container-fluid {
     padding: 100px 5% 20px 5%;
+  }
+  header .header-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:  flex;
+  }
 
+  header .header-row > .col-md-7 {
+  	 display: flex;
+  	 flex-direction: column;
+  }
+  header .background-image {
+    height: 100%;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    background-image: url(../img/R.png);
   }
 }
+
+
 
 /* Laptop Section */
 
@@ -352,6 +378,30 @@ div.terminal .number-highlighter { color: #ae81ff } /* Number */
   color: black;
   min-height: 100vh;
 }
+
+.about-link {
+  color: #AA3939;
+}
+
+.about-link:hover {
+  font-weight: bold;
+  color: #b24c4c;
+  text-decoration: none;
+}
+
+.about-link:active {
+  font-weight: bold;
+  color: #b24c4c;
+  text-decoration: none;
+}
+
+.about-link:visitied {
+  font-weight: bold;
+  color: #b24c4c;
+  text-decoration: none;
+}
+
+
 
 
 .team-member {
