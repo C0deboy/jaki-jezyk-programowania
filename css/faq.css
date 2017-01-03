@@ -1,7 +1,11 @@
 
-body {
-  background-color: #337ab7;
+html, body {
   color: black;
+}
+
+.faq {
+  background: linear-gradient(#1e5799, #337ab7);
+  padding-bottom: 3%;
 }
 
 .faq-title {
@@ -53,13 +57,18 @@ margin-top: 10px;
   margin-top: -0.5em;
 }
 
+footer {
+  background-color: #eeeeee;
+  color: black;
+}
+
 .rotation {
   animation: rotation;
   animation-duration: 0.6s;
   animation-iteration-count: 1;
   animation-play-state: linear;
   animation-fill-mode: forwards;
-  transform-origin: 25% 75%;
+  transform-origin: center;
 }
 
 @keyframes rotation{
@@ -73,7 +82,7 @@ margin-top: 10px;
   animation-iteration-count: 1;
   animation-play-state: linear;
   animation-fill-mode: forwards;
-  transform-origin: 25% 75%;
+  transform-origin: center;
 }
 
 @keyframes rotationBack{

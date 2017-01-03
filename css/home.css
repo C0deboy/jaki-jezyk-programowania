@@ -6,7 +6,7 @@ header {
   min-height: 100vh;
   width: 100%;
   min-height: auto;
-  background: linear-gradient(to bottom, #1e5799 0%,#7db9e8 81%,#7db9e8 100%,#2989d8 100%,#7db9e8 100%,#207cca 100%);
+  background: linear-gradient(#1e5799, #337ab7);
   text-align: center;
   color: white;
 }
@@ -34,17 +34,13 @@ header .container-fluid {
 
 @media (min-width: 768px) {
   header {
-    height: 100%;
+    min-height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   header .container-fluid {
     padding: 100px 5% 20px 5%;
-    height: 100%;
-  }
-  header .header-row {
-    height: 100%;
   }
 }
 
