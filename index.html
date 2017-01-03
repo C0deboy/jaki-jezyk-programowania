@@ -16,6 +16,10 @@
   <!-- Main CSS -->
   <link rel="stylesheet" href="css/main.css">
 
+  <!-- Home CSS -->
+  <link rel="stylesheet" href="css/home.css">
+
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="css/font-awesome.min.css">
 
@@ -271,7 +275,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="section-heading">O projekcie</h1><hr>
-                <p class="text-muted">Jesteśmy grupą młodych programistów, którzy jak większość osób na początku swojej przygody z programowaniem stanęli przed problemem wyboru języka. Dlatego postanowiliśmy ułatwić innym to zadanie i zapobiec powstawaniu lawiny kolejnych wątków na forach. Jeżeli podoba Ci się nasza inicjatywa, wspomóż nas!</p>
+                <p>Jesteśmy grupą młodych programistów, którzy jak większość osób na początku swojej przygody z programowaniem stanęli przed problemem wyboru języka. Dlatego postanowiliśmy ułatwić innym to zadanie i zapobiec powstawaniu lawiny kolejnych wątków na forach. Jeżeli podoba Ci się nasza inicjatywa, wspomóż nas!</p>
             </div>
         </div>
         <div class="row">
@@ -323,26 +327,35 @@
         <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <p class="text-muted">Masz jakieś uwagi czy zastrzeżenia? A może masz sugestię, którą chciałbyś się z nami podzielić? Czekamy na twoją opinię, która na pewno nas zmotywuje do dalszej pracy!</p>
+                <p>Masz jakieś uwagi czy zastrzeżenia? A może masz sugestię, którą chciałbyś się z nami podzielić? Czekamy na twoją opinię, która na pewno nas zmotywuje do dalszej pracy!</p>
               </div>
             </div>
             <div class="container">
               <div class="row">
                 <div class="col-md-4">
                     <h3>Napisz do nas! </h3>
-                    <h4><i class="glyphicon glyphicon-envelope"></i><a class="about-link"href="#"> Formularz kontaktowy</a></h4>
+                    <h4><i class="glyphicon glyphicon-envelope"></i><a class="about-link contact"> Formularz kontaktowy</a></h4>
                 </div>
                 <div class="col-md-4">
                     <h3>Sprawdź nas na Githubie!</h3>
-                    <h4><i class="fa fa-github"></i><a class="about-link"href="https://github.com/W3ndige/jaki-jezyk-programowania"> Repozytorium strony</a></h4>
+                    <h4><i class="fa fa-github"></i><a class="about-link" href="https://github.com/W3ndige/jaki-jezyk-programowania"> Repozytorium strony</a></h4>
                 </div>
                 <div class="col-md-4">
                   <h3>Wspomóż nas!</h3>
-                  <h4><i class="fa fa-cc-visa"></i><a class="about-link"href="#"> Wspomóż nas!</a></h4>
+                  <h4><i class="fa fa-cc-visa"></i><a class="about-link" href="#"> Wspomóż nas!</a></h4>
                 </div>
               </div>
             </div>
         </div>
+        <div class="emailForm">
+            <form method="post" action="contact.php">
+          	<i class="fa fa-times" aria-hidden="true"></i>
+			      <label>Twój email <input name="from" type="email" placeholder="email@gmail.com"></label>
+    		    <label>Temat <input name="subject" placeholder="Temat"></label><br>
+    		    <label>Treść</label> <textarea name="message" placeholder="Twoja wiadomość"></textarea>
+    		    <input name="submit" type="submit" value="Wyślij">
+    		</form>
+    </div>
 </section>
 
 <!-- Footer -->

@@ -1,11 +1,3 @@
-html,
-body {
-  height: 100%;
-  width: 100%;
-  background-color: #4188b8;
-  color: white;
-}
-
 h1,
 h2,
 h3,
@@ -16,12 +8,6 @@ h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
   letter-spacing: 2px;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
 }
 
 .language-content {

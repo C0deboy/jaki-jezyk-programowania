@@ -1,33 +1,3 @@
-html,
-body {
-  height: 100%;
-  width: 100%;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
-}
-
-/* Navigation bar */
-
-.navbar-custom {
-  z-index: 3;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-.navbar-custom .navbar-brand {
-  font-weight: 800;
-}
-.navbar-custom .navbar-header .navbar-toggle {
-  color: #777777;
-  font-weight: 800;
-  text-transform: uppercase;
-  font-size: 12px;
-}
-.navbar-custom .nav li a {
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
 
 body {
   background-color: #337ab7;
@@ -110,6 +80,3 @@ margin-top: 10px;
   0% {transform: rotate(90deg);}
   100% {transform: rotate(0deg);}
 }
-
-
-

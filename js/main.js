@@ -93,9 +93,10 @@ $(function(){
     $('.lang-link').click(function(event) {
       event.preventDefault();
       var href = this.href;
-      $(this).addClass('zoomedRotation');
+      $(this).addClass('zoomedclick');
       setTimeout(function () {window.location = href;},750);
     });
+
     $('.start').click(function(event) {
       event.preventDefault();
     });
@@ -110,5 +111,13 @@ $(function(){
 
     $('.start').mouseup(function() {
       setTimeout(function () {window.location = "start.html";},500);
+    });
+
+    $('.fa.fa-times').click(function () {
+      $('.emailForm').hide();
+    });
+
+    $('.contact').click(function () {
+      $('.emailForm').show();
     });
   });
