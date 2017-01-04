@@ -6,7 +6,7 @@ header {
   min-height: 100vh;
   width: 100%;
   min-height: auto;
-  background: linear-gradient(#1e5799, #337ab7);
+  background: linear-gradient(to bottom, #1e5799 0%,#7db9e8 81%,#7db9e8 100%,#2989d8 100%,#7db9e8 100%,#207cca 100%);
   text-align: center;
   color: white;
 }
@@ -15,32 +15,20 @@ header {
   font-size: 2.5em;
 }
 
+
 @media (min-width: 768px) {
   header {
-    min-height: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   header .container-fluid {
     padding: 100px 5% 20px 5%;
+    height: 100%;
   }
-}
-
-
-header .container-fluid {
-  padding: 50px 5% 50px 5%;
-}
-
-@media (min-width: 768px) {
-  header {
-    min-height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  header .container-fluid {
-    padding: 100px 5% 20px 5%;
+  header .header-row {
+    height: 100%;
   }
 }
 
@@ -53,8 +41,8 @@ header .container-fluid {
   }
 
   header .header-row > .col-md-7 {
-  	 display: flex;
-  	 flex-direction: column;
+     display: flex;
+     flex-direction: column;
   }
   header .background-image {
     height: 100%;
@@ -400,11 +388,13 @@ ul.social-buttons li a {
   position: absolute;
   left: 5%;
   width: 90%;
+  height: 60vh;
+  margin-top: -80vh;
   background-color:#fff;
   border:2px solid #ccc;
   border-radius:10px;
   padding:25px;
-  margin-top: 250px;
+  text-align: center;
 
 }
 
@@ -412,7 +402,8 @@ ul.social-buttons li a {
   .emailForm{
     width: 50%;
     left: 25%;
-    margin-top: 0px;
+    margin-top: -80vh;
+    height: 60vh;
   }
 }
 
@@ -431,7 +422,7 @@ ul.social-buttons li a {
   margin-bottom:25px;
   width: 100%;
   max-width: 100%;
-  min-height: 30vh;
+  min-height: 20vh;
 }
 .emailForm input {
   width: 100%;

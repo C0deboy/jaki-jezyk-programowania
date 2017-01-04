@@ -316,31 +316,62 @@
             </div>
         </div>
   </div>
-    <!-- Feedback -->
-        <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <p>Masz jakieś uwagi czy zastrzeżenia? A może masz sugestię, którą chciałbyś się z nami podzielić? Czekamy na twoją opinię, która na pewno nas zmotywuje do dalszej pracy!</p>
-              </div>
-            </div>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-4">
-                    <h3>Napisz do nas! </h3>
-                    <h4><i class="glyphicon glyphicon-envelope"></i><a class="about-link contact"> Formularz kontaktowy</a></h4>
-                </div>
-                <div class="col-md-4">
-                    <h3>Sprawdź nas na Githubie!</h3>
-                    <h4><i class="fa fa-github"></i><a class="about-link" href="https://github.com/W3ndige/jaki-jezyk-programowania"> Repozytorium strony</a></h4>
-                </div>
-                <div class="col-md-4">
-                  <h3>Wspomóż nas!</h3>
-                  <h4><i class="fa fa-cc-visa"></i><a class="about-link" href="#"> Wspomóż nas!</a></h4>
-                </div>
-              </div>
-            </div>
+<!-- Feedback -->
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>Masz jakieś uwagi czy zastrzeżenia? A może masz sugestię, którą chciałbyś się z nami podzielić? Czekamy na twoją opinię, która na pewno nas zmotywuje do dalszej pracy!</p>
         </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+              <h3>Napisz do nas! </h3>
+              <h4><i class="glyphicon glyphicon-envelope"></i><a class="about-link contact"> Formularz kontaktowy</a></h4>
+          </div>
+          <div class="col-md-4">
+              <h3>Sprawdź nas na Githubie!</h3>
+              <h4><i class="fa fa-github"></i><a class="about-link" href="https://github.com/W3ndige/jaki-jezyk-programowania"> Repozytorium strony</a></h4>
+          </div>
+          <div class="col-md-4">
+            <h3>Wspomóż nas!</h3>
+            <h4><i class="fa fa-cc-visa"></i><a class="about-link" href="#"> Wspomóż nas!</a></h4>
+          </div>
+        </div>
+      </div>
+  </div>
 </section>
+
+<div class="emailForm" action="">
+  <form method="post" >
+    <i class="fa fa-times" aria-hidden="true"></i>
+    <label>Twój email <input name="from" type="email" placeholder="email@gmail.com"></label>
+    <label>Temat <input name="subject" placeholder="Temat"></label><br>
+    <label>Treść</label> <textarea name="message" placeholder="Twoja wiadomość"></textarea>
+    <input name="submit" type="submit" value="Wyślij">
+  </form>
+  <?php
+    if( isset( $_POST['submit'])){
+      $ourEmail='kariqem@gmail.com';
+
+      $userEmail=$_POST['from'];
+
+      $header  = "From: $userEmail \r\n";
+      $header .= 'MIME-Version: 1.0'."\r\n";
+      $header .= 'Content-type: text/html; charset=UTF-8'."\r\n";
+      $header .= "Reply-To: $userEmail"."\r\n";
+      $header .= "X-Mailer: PHP/" . PHP_VERSION."\r\n";
+
+      $subject=$_POST['subject'];
+      $message=$_POST['message'];
+
+      $emailSent = mail($ourEmail,$subject,$message,$header);
+
+      if ($emailSent) echo "Wysłano";
+      else echo "Błąd";
+    }
+  ?>
+</div>
 
 <!-- Footer -->
 <footer>
