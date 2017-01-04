@@ -69,11 +69,19 @@ section {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+
 }
 
 .section-heading {
   font-size: 2em;
 }
+
+@media (max-width: 768px) {
+  .section-heading {
+    padding-top: 20%;
+  }
+}
+
 
 
 /* Buttons */

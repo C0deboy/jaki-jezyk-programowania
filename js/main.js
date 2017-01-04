@@ -82,9 +82,6 @@ $(function(){
     var pressKeyInt2=setInterval(pressKey,500);
 
 
-
-    /* Zoomed Animation */
-
     $('.start').mousedown(function() {
       $('.start').addClass('press');
     });
