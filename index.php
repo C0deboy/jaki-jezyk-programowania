@@ -261,16 +261,20 @@
   </div>
 </section>
 
+
 <!-- Footer Section -->
 <section id="about-project">
   <!-- About Project -->
-    <div class="container">
+
+      <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="section-heading">O projekcie</h1><hr>
                 <p>Jesteśmy grupą młodych programistów, którzy jak większość osób na początku swojej przygody z programowaniem stanęli przed problemem wyboru języka. Dlatego postanowiliśmy ułatwić innym to zadanie i zapobiec powstawaniu lawiny kolejnych wątków na forach. Jeżeli podoba Ci się nasza inicjatywa, wspomóż nas!</p>
             </div>
         </div>
+      </div>
+        <div class="container">
         <div class="row">
             <div class="col-sm-4">
                 <div class="team-member">
@@ -315,7 +319,8 @@
                 </div>
             </div>
         </div>
-  </div>
+      </div>
+
 <!-- Feedback -->
   <div class="container">
       <div class="row">
@@ -323,6 +328,7 @@
           <p>Masz jakieś uwagi czy zastrzeżenia? A może masz sugestię, którą chciałbyś się z nami podzielić? Czekamy na twoją opinię, która na pewno nas zmotywuje do dalszej pracy!</p>
         </div>
       </div>
+    </div>
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -339,7 +345,7 @@
           </div>
         </div>
       </div>
-  </div>
+
 </section>
 
 <div class="emailForm" action="">
