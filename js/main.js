@@ -82,24 +82,8 @@ $(function(){
     var pressKeyInt2=setInterval(pressKey,500);
 
 
+
     /* Zoomed Animation */
-
-    $(".lang-link").hover(
-      function(){$(this).addClass("zoom");},
-      function() {$(this).removeClass("zoom");
-    })
-
-    /*Rotating animations*/
-    $('.lang-link').click(function(event) {
-      event.preventDefault();
-      var href = this.href;
-      $(this).addClass('zoomedclick');
-      setTimeout(function () {window.location = href;},750);
-    });
-
-    $('.start').click(function(event) {
-      event.preventDefault();
-    });
 
     $('.start').mousedown(function() {
       $('.start').addClass('press');

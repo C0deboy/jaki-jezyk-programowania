@@ -60,7 +60,12 @@ hr {
 /* Sections */
 
 section {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -moz-box;
   display: flex;
+  display: -ms-flexbox;
   flex-direction: column;
   justify-content: center;
   text-align: center;

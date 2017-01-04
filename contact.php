@@ -1,5 +1,5 @@
 <?php
-	$ourEmail='ellucky4@gmail.com';
+	$ourEmail='kariqem@gmail.com';
 
 	$userEmail=$_POST['from'];
 
@@ -15,5 +15,5 @@
 	$emailSent = mail($ourEmail,$subject,$message,$header);
 
 	if ($emailSent) echo "Wysłano";
-	else echo "Błąd";	
+	else echo "Błąd";
 ?>

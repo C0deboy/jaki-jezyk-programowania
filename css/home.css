@@ -328,6 +328,10 @@ div.terminal .number-highlighter { color: #ae81ff } /* Number */
   text-decoration: none;
 }
 
+.lang-link:active {
+  transform: scale(0.9);
+}
+
 /* About Section */
 
 #about-project {
@@ -461,29 +465,3 @@ footer p {
 }
 
 /* Animations */
-
-.zoom {
-  animation: zoom;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-play-state: ease-out;
-  animation-fill-mode: forwards;
-  cursor: pointer;
-}
-
-@keyframes zoom{
-  from {transform: scale(1);}
-  to {transform: scale(2);}
-}
-
-.zoomedclick {
-  animation: zoomedclick;
-  animation-duration: 0.8s;
-  animation-iteration-count: 1;
-  animation-play-state: ease-out;
-}
-
-@keyframes zoomedclick{
-  from {transform: scale(2);}
-  to {transform: scale(1);}
-}
