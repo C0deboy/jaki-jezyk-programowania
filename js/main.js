@@ -114,7 +114,7 @@ $(function(){
 		    type     : "POST",
 		    url      : "emailform.php",
 		    success: function(ret) {
-		        $('.emailFormAlert').html('Wysłano!'+ret);
+		        $('.emailFormAlert').html('Wysłano!');
 		    },
 		    error: function(jqXHR, errorText, errorThrown) {
 		        $('.emailFormAlert').html('Coś poszło nie tak.');
