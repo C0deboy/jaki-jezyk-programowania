@@ -1,5 +1,5 @@
 $('.question').click(function () {
-  if (  $(this).next().is( ":hidden" ) ) {
+  if ($(this).next().is( ":hidden" ) ) {
      $(this).next().slideDown();
      $(this).find('.fa-arrow-down').addClass('rotation');
      $(this).find('.fa-arrow-down').removeClass('rotationBack');
