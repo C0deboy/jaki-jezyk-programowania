@@ -90,15 +90,35 @@ $(function(){
       $('.start').removeClass('press');
     });
 
+    $('.start').click(function(event) {
+    	event.preventDefault();
+	});
+
     $('.start').mouseup(function() {
       setTimeout(function () {window.location = "start.html";},500);
     });
 
     $('.fa.fa-times').click(function () {
-      $('.emailForm').hide();
+      $('.emailForm').fadeOut();
+      $('.emailFormAlert').html('');
     });
 
     $('.contact').click(function () {
-      $('.emailForm').show();
+      $('.emailForm').fadeIn();
+    });
+
+    $('.emailFormSubmit').click(function (event) {
+    	event.preventDefault();
+
+        $.ajax({
+		    type     : "POST",
+		    url      : "emailform.php",
+		    success: function(ret) {
+		        $('.emailFormAlert').html('Wysłano!'+ret);
+		    },
+		    error: function(jqXHR, errorText, errorThrown) {
+		        $('.emailFormAlert').html('Coś poszło nie tak.');
+		    }
+		});
     });
   });

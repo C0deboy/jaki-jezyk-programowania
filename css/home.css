@@ -315,13 +315,16 @@ div.terminal .number-highlighter { color: #ae81ff } /* Number */
 }
 
 #program-languages h1 {
-  padding-bottom: 2%;
   color: white
 }
 
 #program-languages a {
   color: white;
   text-decoration: none;
+}
+
+#program-languages p {
+  color: white;
 }
 
 .lang {
@@ -429,11 +432,12 @@ ul.social-buttons li a {
 
 .emailForm{
   display: none;
-  position: absolute;
-  left: 5%;
+  position: fixed;
   width: 90%;
-  height: 60vh;
-  margin-top: -80vh;
+  min-height: 75vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color:#fff;
   border:2px solid #ccc;
   border-radius:10px;
@@ -445,9 +449,6 @@ ul.social-buttons li a {
 @media (min-width: 768px){
   .emailForm{
     width: 50%;
-    left: 25%;
-    margin-top: -80vh;
-    height: 60vh;
   }
 }
 
@@ -465,9 +466,16 @@ ul.social-buttons li a {
   border:1px solid #ccc;
   margin-bottom:25px;
   width: 100%;
-  max-width: 100%;
-  min-height: 20vh;
+  height: 20vh;
+  resize: none;
 }
+
+@media (min-width: 768px){
+  .emailForm textarea{
+    height: 30vh;
+  }
+}
+
 .emailForm input {
   width: 100%;
   margin-top:5px;
@@ -484,6 +492,18 @@ ul.social-buttons li a {
 }
 .emailForm .fa.fa-times:hover {
   cursor: pointer;
+}
+
+.g-recaptcha {
+    display: inline-block;
+}
+
+@media (max-width: 375px){
+  .g-recaptcha {
+    display: inline-block;
+    transform: scale(0.77);
+    transform-origin: 0 0;
+  }
 }
 
 /* Footer Section */

@@ -78,11 +78,9 @@ section {
 
 @media (max-width: 768px) {
   .section-heading {
-    padding-top: 20%;
+    padding-top: 40px;
   }
 }
-
-
 
 /* Buttons */
 

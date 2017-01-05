@@ -19,6 +19,7 @@
   <!-- Home CSS -->
   <link rel="stylesheet" href="css/home.css">
 
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -29,7 +30,7 @@
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                   <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
               </button>
-              <a class="navbar-brand page-scroll" href="index.html">[LOGO]</a>
+              <a class="navbar-brand page-scroll" href="index.php">[LOGO]</a>
           </div>
           <div class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
@@ -221,7 +222,9 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="section-heading">Języki programowania</h1><hr>
+        <h1 class="section-heading">Języki programowania</h1>
+        <p class="text-muted">(Omawiane na naszej stronie)</p>
+        <hr>
       </div>
     </div>
   </div>
@@ -260,7 +263,6 @@
     </div>
   </div>
 </section>
-
 
 <!-- Footer Section -->
 <section id="about-project">
@@ -348,35 +350,16 @@
 
 </section>
 
-<div class="emailForm" action="">
-  <form method="post" >
+<div class="emailForm">
+  <form method="post" action="emailform.php" >
     <i class="fa fa-times" aria-hidden="true"></i>
     <label>Twój email <input name="from" type="email" placeholder="email@gmail.com"></label>
     <label>Temat <input name="subject" placeholder="Temat"></label><br>
     <label>Treść</label> <textarea name="message" placeholder="Twoja wiadomość"></textarea>
-    <input name="submit" type="submit" value="Wyślij">
+    <div class="g-recaptcha" data-sitekey="6LeNsBAUAAAAAKV2iBjiiM6P1wIUd7WuUVnUjZm-"></div><br>
+    <input class="emailFormSubmit" name="submit" type="submit" value="Wyślij">
+    <div class="emailFormAlert"></div>
   </form>
-  <?php
-    if( isset( $_POST['submit'])){
-      $ourEmail='kariqem@gmail.com';
-
-      $userEmail=$_POST['from'];
-
-      $header  = "From: $userEmail \r\n";
-      $header .= 'MIME-Version: 1.0'."\r\n";
-      $header .= 'Content-type: text/html; charset=UTF-8'."\r\n";
-      $header .= "Reply-To: $userEmail"."\r\n";
-      $header .= "X-Mailer: PHP/" . PHP_VERSION."\r\n";
-
-      $subject=$_POST['subject'];
-      $message=$_POST['message'];
-
-      $emailSent = mail($ourEmail,$subject,$message,$header);
-
-      if ($emailSent) echo "Wysłano";
-      else echo "Błąd";
-    }
-  ?>
 </div>
 
 <!-- Footer -->
