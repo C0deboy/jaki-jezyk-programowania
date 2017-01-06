@@ -1,7 +1,7 @@
 <?php
-  $ourEmail='kariqem@gmail.com';
+  $ourEmail='ellucky4@gmail.com';
 
-  $userEmail=$_POST['from'];
+  $userEmail=$_POST['userEmail'];
 
   $header  = "From: $userEmail \r\n";
   $header .= 'MIME-Version: 1.0'."\r\n";
@@ -12,5 +12,33 @@
   $subject=$_POST['subject'];
   $message=$_POST['message'];
 
-  $emailSent = mail($ourEmail,$subject,$message,$header);
+  $secretKey = '6Le23hAUAAAAAOdypdQtwN1NG4k4kSfVu7Ph4MsY';
+
+  $checkIfBot = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secretKey.'&response='.$_POST['g-recaptcha-response']);
+  $answer = json_decode($checkIfBot);
+
+  if($answer->success==false){
+    $response = json_encode(array( 
+        'text' => 'Potwierdź ze nie jesteś botem!'
+    ));
+    die($response);
+  }
+  
+  else {
+
+    $emailSent = mail($ourEmail,$subject,$message,$header);
+
+    if ($emailSent===true){
+      $response = json_encode(array( 
+          'text' => 'Wysłano!'
+      ));
+      die($response);
+    } 
+    else {
+      $response = json_encode(array( 
+          'text' => 'Coś poszło nie tak.'
+      ));
+      die($response);
+    }
+  }
 ?>

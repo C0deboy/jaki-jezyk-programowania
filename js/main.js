@@ -81,7 +81,7 @@ $(function(){
     var pressKeyInt=setInterval(pressKey,300);
     var pressKeyInt2=setInterval(pressKey,500);
 
-
+    /*Start animation*/
     $('.start').mousedown(function() {
       $('.start').addClass('press');
     });
@@ -98,6 +98,7 @@ $(function(){
       setTimeout(function () {window.location = "start.html";},500);
     });
 
+    /*Pop up email form*/
     $('.fa.fa-times').click(function () {
       $('.emailForm').fadeOut();
       $('.emailFormAlert').html('');
@@ -107,18 +108,21 @@ $(function(){
       $('.emailForm').fadeIn();
     });
 
+    /*Ajax post email form*/
     $('.emailFormSubmit').click(function (event) {
     	event.preventDefault();
 
-        $.ajax({
-		    type     : "POST",
-		    url      : "emailform.php",
-		    success: function(ret) {
-		        $('.emailFormAlert').html('Wysłano!');
-		    },
-		    error: function(jqXHR, errorText, errorThrown) {
-		        $('.emailFormAlert').html('Coś poszło nie tak.');
-		    }
-		});
+    	post_data = {
+	        'userEmail'   	      : $('input[name=from]').val(),
+	        'subject'			  : $('input[name=subject]').val(),
+	        'message'			  : $('textarea[name=message]').val(),
+	        'g-recaptcha-response': $("#g-recaptcha-response").val()
+        };
+
+		$.post('emailform.php', post_data, function(response){  
+        	$('.emailFormAlert').html(response.text);
+        	grecaptcha.reset();
+        }, 'json');
+
     });
   });

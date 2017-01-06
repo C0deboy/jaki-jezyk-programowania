@@ -350,17 +350,15 @@
 
 </section>
 
-<div class="emailForm">
-  <form method="post" action="emailform.php" >
-    <i class="fa fa-times" aria-hidden="true"></i>
-    <label>Twój email <input name="from" type="email" placeholder="email@gmail.com"></label>
-    <label>Temat <input name="subject" placeholder="Temat"></label><br>
-    <label>Treść</label> <textarea name="message" placeholder="Twoja wiadomość"></textarea>
-    <div class="g-recaptcha" data-sitekey="6LeNsBAUAAAAAKV2iBjiiM6P1wIUd7WuUVnUjZm-"></div><br>
-    <input class="emailFormSubmit" name="submit" type="submit" value="Wyślij">
-    <div class="emailFormAlert"></div>
-  </form>
-</div>
+<form class="emailForm" method="post" action="emailform.php" >
+  <i class="fa fa-times" aria-hidden="true"></i>
+  <label>Twój email <input name="from" type="email" placeholder="email@gmail.com"></label>
+  <label>Temat <input name="subject" placeholder="Temat"></label><br>
+  <label>Treść</label> <textarea name="message" placeholder="Twoja wiadomość"></textarea>
+  <div class="g-recaptcha" data-sitekey="6Le23hAUAAAAACgUi28LqPUcDT5oAPmRzrFP33XD"></div><br>
+  <input class="emailFormSubmit" name="submit" type="submit" value="Wyślij">
+  <div class="emailFormAlert"></div>
+</form>
 
 <!-- Footer -->
 <footer>
