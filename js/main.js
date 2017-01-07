@@ -102,6 +102,7 @@ $(function(){
     $('.fa.fa-times').click(function () {
       $('.emailForm').fadeOut();
       $('.emailFormAlert').html('');
+      grecaptcha.reset();
     });
 
     $('.contact').click(function () {
@@ -113,9 +114,9 @@ $(function(){
     	event.preventDefault();
 
     	post_data = {
-	        'userEmail'   	      : $('input[name=from]').val(),
-	        'subject'			  : $('input[name=subject]').val(),
-	        'message'			  : $('textarea[name=message]').val(),
+	        'userEmail'   	      : $('.emailForm input[name="from"]').val(),
+	        'subject'			  : $('.emailForm input[name="subject"]').val(),
+	        'message'			  : $('.emailForm textarea[name="message"]').val(),
 	        'g-recaptcha-response': $("#g-recaptcha-response").val()
         };
 

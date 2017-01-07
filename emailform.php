@@ -17,9 +17,27 @@
   $checkIfBot = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secretKey.'&response='.$_POST['g-recaptcha-response']);
   $answer = json_decode($checkIfBot);
 
-  if($answer->success==false){
+  if(!filter_var($userEmail, FILTER_VALIDATE_EMAIL)){
+    $response = json_encode(array(
+        'text' => 'Podaj poprawny email!'
+    ));
+    die($response);
+  }
+  else if ($subject==""){
+    $response = json_encode(array(
+        'text' => 'Wpisz jakiś temat!'
+    ));
+    die($response);
+  }
+  else if ($message==""){
+    $response = json_encode(array(
+        'text' => 'Pusta wiadomość? naah...'
+    ));
+    die($response);
+  }
+  else if($answer->success==false){
     $response = json_encode(array( 
-        'text' => 'Potwierdź ze nie jesteś botem!'
+        'text' => 'Potwierdź, że nie jesteś robotem!'
     ));
     die($response);
   }
@@ -30,7 +48,7 @@
 
     if ($emailSent===true){
       $response = json_encode(array( 
-          'text' => 'Wysłano!'
+          'text' => 'Wysłano. Dziękujemy!'
       ));
       die($response);
     } 
