@@ -5,15 +5,12 @@ html, body {
   background-attachment: fixed;
 }
 
-
 section {
-  padding: 5%
+  padding: 5%;
 }
 
-
-
-
 .language-content {
+  width: 100%;
   background-color: #346c93;
   text-align: center;
   -webkit-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
@@ -21,22 +18,27 @@ section {
   box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
 }
 
+.language-name {
+  display: inline-block;
+}
+
 .language-name h1 {
   position: relative;
-  width:300px;
   height:100px;
   line-height:100px;
-  margin: 20px auto;
+  margin: 20px;
+  padding-right: 10%;
+  padding-left: 10%;
   background: #AA3939;
   color: white;
-  text-shadow: 0 -1px 0 black;
+  text-shadow: 0 -2px 0 black;
   font-size:3em;
   text-align: center;
   -webkit-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
-
 }
+
 .language-name h1:before {
   content: '';
   position: absolute;
@@ -48,6 +50,7 @@ section {
   border-top: 50px solid #AA3939;
   border-bottom: 50px solid #AA3939;
 }
+
 
 .language-content .language-logo {
   border-radius: 50%;
@@ -64,75 +67,74 @@ section {
 
 /* Navigation Bar */
 
-.language-menu li {
- font-family: 'Noto Sans', sans-serif;
-	display: inline-block;
-	text-align: center;
-	margin: 30px 15px;
-	position: relative;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
+.lang-menu {
+  padding: 5%;
+  max-width: 100%;
 }
-.language-menu li:hover {
-	margin: 30px 20px;
+
+.box {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+  -ms-box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: #b3c833;
+  border: 1px;
+  color: #fff;
+  display: inline-block;
+  height: 36px;
+  line-height: 34px;
+  min-width: 40px;
+  padding: 0 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-transition: width 1s;
+  -moz-transition: width 1s;
+  transition: width 1s;
 }
-.language-menu li p  {
-	width: 100px;
-	height: 100px;
-	z-index: 9999;
-	position: absolute;
-	top: 35px;
-	font-weight: bold;
-	display: block;
+
+.box a {
+	color:#FFF;
 	text-decoration: none;
-	font-size: 20px;
-	color: #fff;
-	text-shadow: 0px 1px 1px rgba(0,0,0,0.4), 0px 4px 6px rgba(0,0,0,0.1), 0px 9px 11px rgba(0,0,0,0.1);
-	-webkit-transition: all 0.1s linear;
-	-moz-transition: all 0.1s linear;
-	-o-transition: all 0.1s linear;
-}
-.language-menu li div.language-item {
-	width: 100px;
-	height: 100px;
-	display: block;
-	-webkit-transition: all 0.2s ease;
-	-moz-transition: all 0.2s ease;
-	-o-transition: all 0.2s ease;
-	-webkit-border-top-left-radius: 100px;
-	-webkit-border-bottom-right-radius: 100px;
-	-moz-border-radius-topleft: 100px;
-	-moz-border-radius-bottomright: 100px;
-	border-top-left-radius: 100px;
-	border-bottom-right-radius: 100px;
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-}
-.language-menu li:hover div.language-item{
-	-webkit-border-top-left-radius: 80px;
-	-webkit-border-bottom-right-radius: 80px;
-	-moz-border-radius-topleft: 80px;
-	-moz-border-radius-bottomright: 80px;
-	border-top-left-radius: 80px;
-	border-bottom-right-radius: 80px;
-		-webkit-transform: rotate(225deg);
-	-moz-transform: rotate(225deg);
-	-o-transform: rotate(225deg);
+	text-align: center;
+	vertical-align: middle;
+	height:100%;
+	display:block;
+  padding-top: 20px;
 }
 
-
-.about-item{ background: #16A085; }
-.complication-item{ background: red; }
-.syntax-item{ background: yellow; }
-.examples-item{ background: green; }
-.money-item{ background: gold; }
-.summary-item{ background: lightblue; }
-
-.about-language{
-    display: block;
+.box span {
+    display:block;
+    position:relative;
+    top:100%;
+    text-align: center;
+    -webkit-transition: top 1s;
+    -moz-transition: top 1s;
+    transition: top 1s;
 }
+
+.box:hover span { top:10%;}
+
+.box:hover { top :100%; color: white; text-decoration: none}
+
+.about-lang-item { background: #16A085; }
+.complication-lang-menu { background: red; }
+.syntax-lang-menu { background: yellow; }
+.examples-lang-menu { background: green; }
+.money-lang-menu { background: gold; }
+.summary-lang-menu { background: lightblue; }
 
 .complication-language {
   display: none;
