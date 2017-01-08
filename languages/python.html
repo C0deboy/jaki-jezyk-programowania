@@ -26,14 +26,14 @@
 
 <body>
 <section>
-  <div class="container-fluid language-content">
-    <div class="header">
-      <div class="language-name">
-        <h1>Python</h1>
-      </div>
-      <div class="language-logo">
-        <img class="responsive-img" src="../img/python.png" alt="python">
-      </div>
+        <div class="container-fluid language-content">
+          <div class="lang-starter" id="about">
+          <img class="lang-starter-img img-circle img-responsive pull-right"  width="500" height="500" src="../img/python.png">
+          <h2 class="lang-starter-heading">Python
+            <span class="text-muted">Programming Language</span>
+          </h2>
+          <p class="lead">Python jest dynamicznym językiem programowania wysokiego poziomu opracowanym we wczesnych latach 90. przez Guido van Rossuma. Jego nazwa pochodzi od Monty Python'a, co miało oznaczać przyjemność oraz zabawę podczas korzystania z tego języka, bardzo ułatwiając naukę początkującym programistom. Charakteryzuje się łatwością pisania, czytelnym kodem, jak i bogatą biblioteką. </p>
+        </div>
       <div>
         <div class="container lang-menu">
           <a class="box about-lang-menu"><span>O języku</span></a>
@@ -44,13 +44,12 @@
           <a class="box summary-lang-menu"><span>Na koniec</span></a>
         </div>
       </div>
-    </div>
     <div class="about-language" >
       <div class="content-header">
         <h1>O języku</h1><hr>
       </div>
       <div class="context-text">
-        <p><b>Python</b> jest dynamicznym językiem programowania wysokiegi poziomu opracowanym we wczesnych latach 90. przez Guido van Rossuma. Jego nazwa pochodzi od Monty Python'a, co miało oznaczać przyjemność oraz zabawę podczas korzystania z tego języka, co bardzo ułatwia naukę początkującym programistom. Charakteryzuje się łatwością pisania, czytelnym kodem, jak i bogatą biblioteką, która pozwala na jego wszechstronne zastosowanie. Jedną z jego największych zalet, jest fakt, że przy o wiele mniejszym nakładzie pracy możemy osiągnać bardzo przybliżony efekt jak przy użyciu innych języków.  </p>
+        <p><b>Python</b> jest dynamicznym językiem programowania wysokiego poziomu opracowanym we wczesnych latach 90. przez Guido van Rossuma. Jego nazwa pochodzi od Monty Python'a, co miało oznaczać przyjemność oraz zabawę podczas korzystania z tego języka, bardzo ułatwiając naukę początkującym programistom. Charakteryzuje się łatwością pisania, czytelnym kodem, jak i bogatą biblioteką, która pozwala na jego wszechstronne zastosowanie. Jedną z jego największych zalet, jest fakt, że przy o wiele mniejszym nakładzie pracy możemy osiągnać bardzo przybliżony efekt jak przy użyciu innych języków.  </p>
       </div>
     </div>
     <div class="complication-language">
@@ -66,7 +65,8 @@
         <h1>Składnia</h1><hr>
       </div>
       <div class="context-text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum nulla lorem, non semper urna dignissim sed. Nulla dapibus tempor mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed tincidunt orci eget urna accumsan, eget faucibus magna consectetur. Morbi scelerisque, ipsum et rhoncus venenatis, est metus varius odio, non imperdiet nunc justo sit amet nisl. Sed vel urna a nulla ornare sagittis id semper tortor. Morbi mollis ullamcorper nibh ac bibendum. Curabitur et diam metus. Pellentesque nec erat feugiat, hendrerit dui vitae, vestibulum nulla. Integer mollis gravida ultrices. Donec aliquam nisl est, et cursus quam dictum in. Sed quis faucibus metus, eu vestibulum neque. Phasellus convallis porta malesuada. Cras non elit blandit, suscipit nisl convallis, venenatis metus. Nunc id varius nisi. Etiam dictum venenatis lorem ut tincidunt. Pellentesque habitant morbi tristique senectus. </p>
+        <p>Poniższy przykład przedstawia aplikację generujacą silne hasła - o dowolnej ilości znaków wybranych przez użytkowników, oraz losową ilością wielkich, małych liter, cyfr oraz znaków specjalnych.
+        </p>
         <pre><code class="language-python">
 import random
 import string
@@ -89,6 +89,7 @@ def main():
             password = generate(length)
             password_strong = check(password)
         print("[*] Your password has been generated: " + ''.join(password))
+
 def generate(length):
     password = ''.join(random.SystemRandom().choice(string.ascii_letters + string.punctuation + string.digits) for _ in range(length))
     return password
@@ -105,7 +106,7 @@ def check(password):
         return False
 
 if __name__ == '__main__':
-main()
+    main()
       </code></pre>
       </div>
     </div>
@@ -131,9 +132,13 @@ main()
       </div>
       <div class="context-text">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum nulla lorem, non semper urna dignissim sed. Nulla dapibus tempor mollis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed tincidunt orci eget urna accumsan, eget faucibus magna consectetur. Morbi scelerisque, ipsum et rhoncus venenatis, est metus varius odio, non imperdiet nunc justo sit amet nisl. Sed vel urna a nulla ornare sagittis id semper tortor. Morbi mollis ullamcorper nibh ac bibendum. Curabitur et diam metus. Pellentesque nec erat feugiat, hendrerit dui vitae, vestibulum nulla. Integer mollis gravida ultrices. Donec aliquam nisl est, et cursus quam dictum in. Sed quis faucibus metus, eu vestibulum neque. Phasellus convallis porta malesuada. Cras non elit blandit, suscipit nisl convallis, venenatis metus. Nunc id varius nisi. Etiam dictum venenatis lorem ut tincidunt. Pellentesque habitant morbi tristique senectus. </p>
+        <div class="chart" data-percent="100">
+      		<span class="percent"></span>
+      	</div>
       </div>
     </div>
   </div>
+      </div>
 </section>
 
 <!-- Footer -->
@@ -142,6 +147,7 @@ main()
         <p>Copyright &copy; Jaki Język Programowania 2017</p>
     </div>
 </footer>
+
 
 
 <!-- JQuery -->
@@ -158,6 +164,9 @@ main()
 
 <!-- Syntax JS -->
 <script src="../js/prism.js"></script>
+
+<!-- Charts -->
+<script src="../js/easypiechart.js"></script>
 
 </body>
 </html>

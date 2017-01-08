@@ -5,6 +5,13 @@ html, body {
   background-attachment: fixed;
 }
 
+@media (max-width: 768px) {
+  html, body {
+    font-size: 14px;
+  }
+}
+
+
 section {
   padding: 5%;
 }
@@ -18,52 +25,18 @@ section {
   box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
 }
 
-.language-name {
-  display: inline-block;
-}
-
-.language-name h1 {
-  position: relative;
-  height:100px;
-  line-height:100px;
-  margin: 20px;
-  padding-right: 10%;
-  padding-left: 10%;
-  background: #AA3939;
-  color: white;
-  text-shadow: 0 -2px 0 black;
-  font-size:3em;
-  text-align: center;
-  -webkit-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
-}
-
-.language-name h1:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -30px;
-  width: 0;
-  height: 0;
-  border-left: 30px solid transparent;
-  border-top: 50px solid #AA3939;
-  border-bottom: 50px solid #AA3939;
+.lang-starter {
+  padding: 1%;
 }
 
 
-.language-content .language-logo {
-  border-radius: 50%;
-	width: 200px;
-	height: 200px;
-  background-color: #3a7aa5;
-  margin: auto;
-  -webkit-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+.lang-starter-img.pull-right {
+    margin-left: 40px;
 }
 
-
+.lang-starter-heading {
+    font-size: 3em;
+}
 
 /* Navigation Bar */
 
@@ -103,6 +76,7 @@ section {
   -webkit-transition: width 1s;
   -moz-transition: width 1s;
   transition: width 1s;
+  margin-bottom: 50px;
 }
 
 .box a {
@@ -156,6 +130,30 @@ section {
   display: none;
 }
 
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.percent {
+  display: inline-block;
+  line-height: 110px;
+  z-index: 2;
+}
+.percent:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: .8em;
+}
 
 footer {
   background-color: #eeeeee;
