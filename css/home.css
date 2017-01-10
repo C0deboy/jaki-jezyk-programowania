@@ -344,7 +344,7 @@ div.terminal .number-highlighter { color: #ae81ff } /* Number */
   text-decoration: none;
 }
 
-.lang:hover {
+.lang-link:hover {
   animation: zoomLang;
   animation-duration: 1s;
   animation-iteration-count: 1;
@@ -353,18 +353,14 @@ div.terminal .number-highlighter { color: #ae81ff } /* Number */
   cursor: pointer;
 }
 
-.lang-link:visited {
-  text-decoration: none;
-  color: white;
-}
-
 @keyframes zoomLang{
   from {transform: scale(1);}
   to {transform: scale(2);}
 }
 
-.lang-link:active {
-  transform: scale(0.9);
+.lang-link:visited {
+  text-decoration: none;
+  color: white;
 }
 
 /* About Section */

@@ -19,7 +19,6 @@
   <!-- Home CSS -->
   <link rel="stylesheet" href="css/home.css">
 
-  <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -374,6 +373,9 @@
 
 <!-- BootstrapJS -->
 <script src="js/bootstrap.js"></script>
+
+<!-- Recaptcha API-->
+<script src='https://www.google.com/recaptcha/api.js'></script>
 
 <!-- TypedJS by http://www.mattboldt.com/ -->
 <script src="js/typed.js"></script>

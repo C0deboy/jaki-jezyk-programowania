@@ -120,7 +120,7 @@ $(function(){
 	        'g-recaptcha-response': $("#g-recaptcha-response").val()
         };
 
-		$.post('emailform.php', post_data, function(response){  
+		$.post('emailform.php', post_data, function(response){
         	$('.emailFormAlert').html(response.text);
         	grecaptcha.reset();
         }, 'json');

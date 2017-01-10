@@ -1,0 +1,71 @@
+html, body {
+  color: black;
+}
+
+.all {
+  min-height: calc(100vh - 88px);
+}
+
+.back {
+  display: none;
+}
+.questions p {
+  position: relative;
+  left: 25%;
+}
+
+.questions h1 {
+  font-size: 4em;
+  margin-bottom: 10%;
+
+}
+
+.questions img {
+  width: 70px;
+  height: 70px;
+}
+
+.ans {
+  background-color: #337ab7;
+  border-radius: 15px;
+  width: 50%;
+  color: white;
+}
+
+
+.que2 {
+  display: none;
+}
+
+.que3 {
+  display: none;
+}
+
+.slide_up {
+  animation: 2s slide_up;
+  display: block;
+}
+
+@keyframes slide_up {
+  from {transform: translateY(40vh);}
+  to {transform: translateY(0vh);};
+}
+
+.slide_out {
+  animation: 1s slide_out;
+  display: block;
+
+}
+@keyframes slide_out {
+  from {transform: translateY(0vh); opacity: 1;}
+  to {transform: translateY(-30vh); opacity: 0;};
+}
+
+.slide_in {
+  animation: 1s slide_in;
+  display: block;
+}
+@keyframes slide_in {
+  from {transform: translateY(-30vh); opacity: 0;}
+  to {transform: translateY(0vh); opacity: 1;};
+}
