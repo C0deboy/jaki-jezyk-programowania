@@ -11,7 +11,7 @@ html, body {
   }
 }
 
-h1 {
+.content-header h1 {
   margin: 0;
 }
 
@@ -90,7 +90,11 @@ section {
   padding: 1%;
 }
 
-.chart_square {
+.chart {
+  float: left
+}
+
+.chart-grade {
   width: 20px;
   height: 20px;
   margin: 5px;
@@ -145,7 +149,7 @@ section {
   .content-header{
     display:none;
   }
-  .about-language{
+  .examples-language{
     display: block;
   }
   .about-lang-menu{

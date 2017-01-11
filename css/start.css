@@ -23,13 +23,19 @@ html, body {
 .questions img {
   width: 70px;
   height: 70px;
+  cursor: pointer;
 }
 
-.ans {
+.ans p{
   background-color: #337ab7;
   border-radius: 15px;
   width: 50%;
   color: white;
+}
+
+.ans p:hover{
+  background-color: #5191f7;
+  cursor: pointer;
 }
 
 
