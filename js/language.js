@@ -82,24 +82,29 @@ $(function(){
   });
 
   //**Charts**//
-  function chart(grade, color) {
+
+  var chartGradecounter = 0;
+
+  function chart(grade, color, divtoputinClass) {
     var chartGradeClass;
     for (var i=0; i<grade; i++) {
-      chartGradeClass = '.chart-grade:eq(' + i + ')'; 
-      color = shadeColor(color, 0.1);
-      addGradeDiv(chartGradeClass, color, i);
+      chartGradeClass = '.chart-grade:eq(' + chartGradecounter + ')';
+      chartGradecounter++;
+      addGradeDiv(chartGradeClass, color, divtoputinClass, chartGradecounter);
+      color = shadeColor(color, -0.15); //Tego Marcin nie ruszaj! Najpierw ustawia kolor taki jaki dał użytkownik a potem dopiero go przyciemnia!
     }
-
-
   }
-  chart(6, '#0000ff');
+
 
   function shadeColor(color, percent) {
     var f=parseInt(color.slice(1),16),t=percent<0?0:255,p=percent<0?percent*-1:percent,R=f>>16,G=f>>8&0x00FF,B=f&0x0000FF;
     return "#"+(0x1000000+(Math.round((t-R)*p)+R)*0x10000+(Math.round((t-G)*p)+G)*0x100+(Math.round((t-B)*p)+B)).toString(16).slice(1);
   }
-  function addGradeDiv(klasa, color, i) {
-    window.setTimeout(function(){$(".chart").append("<div class='chart-grade'></div>");$( klasa ).css( "background-color", color );}, i * 200);
+
+  function addGradeDiv(klasa, color, divtoputinClass, i) {
+    window.setTimeout(function(){$(divtoputinClass).append("<div class='chart-grade'></div>");$( klasa ).css( "background-color", color );},  i * 200);
   }
-  
+  chart(6, '#3399ff', '.chart');
+  chart(5, '#ff0000', '.chart2');
+  chart(4, '#00ff00', '.chart3');
 });

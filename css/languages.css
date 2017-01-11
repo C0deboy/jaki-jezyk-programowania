@@ -90,15 +90,13 @@ section {
   padding: 1%;
 }
 
-.chart {
-  float: left
-}
 
 .chart-grade {
-  width: 20px;
-  height: 20px;
-  margin: 5px;
+  width: 2vh;
+  height: 2vh;
+  margin: 1vh;
   display: inline-block;
+  border-radius: 0.5vh;
 }
 
 .language-menu {
