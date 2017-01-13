@@ -4,12 +4,13 @@ html, body {
 
 .all {
   min-height: calc(100vh - 88px);
+  padding-top: 51px;
 }
 
 .back {
   display: none;
-  top: 6vh;
-  position: fixed;
+  top: 10%;
+  position: absolute;
   cursor: pointer;
 }
 .questions p {
@@ -49,17 +50,17 @@ html, body {
 .que3 {
   display: none;
 }
-/* uncomment for questions apearing animation
+
 .slide_up {
   animation: 2s slide_up;
   display: block;
 }
 
 @keyframes slide_up {
-  from {transform: translateY(40vh);}
+  from {transform: translateY(30vh);}
   to {transform: translateY(0vh);};
 }
-*/
+
 .slide_out {
   animation: 1s slide_out;
   display: block;

@@ -36,7 +36,7 @@ section {
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 769px and max-width: 1024px) {
   section {
     padding: 0% 6% 2% 6%;
   }
@@ -92,8 +92,8 @@ section {
 
 
 .chart-grade {
-  width: 2vh;
-  height: 2vh;
+  width: 2vw;
+  height: 2vw;
   margin: 1vh;
   display: inline-block;
   border-radius: 0.5vh;
