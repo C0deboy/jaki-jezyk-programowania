@@ -21,7 +21,12 @@ html, body {
 .questions h1 {
   font-size: 7vh;
   margin-bottom: 10%;
+}
 
+@media (max-width: 768px){
+  .questions h1 {
+    margin-top: 8vh;
+  }
 }
 
 .questions img {

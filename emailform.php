@@ -9,7 +9,7 @@
   $header .= "Reply-To: $userEmail"."\r\n";
   $header .= "X-Mailer: PHP/" . PHP_VERSION."\r\n";
 
-  $subject=$_POST['subject'];
+  $subject=htmlentities($_POST['subject']);
   $message=$_POST['message'];
 
   $secretKey = '6Le23hAUAAAAAOdypdQtwN1NG4k4kSfVu7Ph4MsY';

@@ -9,6 +9,9 @@ html, body {
   html, body {
     font-size: 14px;
   }
+  h1 {
+    padding: 10px;
+  }
 }
 
 .content-header h1 {
@@ -51,6 +54,24 @@ section {
   padding: 0;
 }
 
+.language-content .start-container {
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+.start-row {
+  display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.col-header {
+  display: flex;
+  flex-direction: column;
+}
+
 .language-content p {
   margin: 0px;
   padding: 10px;
@@ -62,8 +83,9 @@ section {
   -moz-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
   margin-top: 10px;
+  margin-left: 30%;
   border-radius: 50%;
-  width: 100%;
+  width:  40%;
   background-image: url(../img/python.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -89,15 +111,16 @@ section {
   text-align: center;
 }
 
-.chart{
-  display: inline-block;
-}
-
 .lang-starter p {
   display: inline-block;
   padding: 0;
   font-size: 4vw;
   min-width: 22vw;
+}
+
+.lang-starter-heading {
+    font-size: 4em;
+    margin-top: 10%;
 }
 
 @media (min-width: 768px){
@@ -107,13 +130,46 @@ section {
   }
 }
 
+.charts {
+  text-align: left;
+}
+
+.charts p {
+  display: inline-block;
+  min-width: 9vw;
+  margin-top: 5%;
+}
+
+.chart {
+  color: white;
+  display: inline-block;
+}
 
 .chart-grade {
-  width: 3vw;
-  height: 2vw;
+  width: 8vw;
+  height: 6vw;
   display: inline-block;
   border-radius: 0.5vh;
+  vertical-align: middle;
 }
+
+.chart-text {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100%;
+  font-size: 2vh;
+}
+
+@media (min-width: 768px){
+  .chart-text {
+    font-size: 4vh;
+  }
+  .chart-grade{
+    width: 3vw;
+    height: 2vw;
+  }
+}
+
 
 .language-menu {
   padding: 5% 0% 0% 0px;
@@ -171,12 +227,6 @@ section {
     border-bottom: solid 1px #005b8c;
   }
 }
-
-.lang-starter-heading {
-    font-size: 3em;
-}
-
-
 
 footer {
   background-color: #eeeeee;

@@ -70,11 +70,12 @@ header .container-fluid {
   	 flex-direction: column;
   }
   header .background-image {
-    height: 100%;
+    height: 28vw;
+    width: 100%;
     background-repeat:no-repeat;
     background-size:contain;
     background-position:center;
-    background-image: url(../img/R.png);
+    background-image: url(../img/background.png);
   }
 }
 

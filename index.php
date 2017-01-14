@@ -229,36 +229,30 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 col-md-6 lang"><a class="lang-link"href="languages/csharp.html">C#</a></div>
+      <div class="col-sm-6 col-md-6 lang"><a class="lang-link"href="languages/obj-c.html">Objective C</a></div>
       <div class="col-sm-6 col-md-6 lang"><a class="lang-link"href="languages/swift.html">Swift</a></div>
     </div>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-sm-4 col-md-4 lang"><a class="lang-link"href="languages/php.html">PHP</a></div>
+      <div class="col-sm-4 col-md-4 lang"><a class="lang-link"href="languages/scratch.html">Scratch</a></div>
       <div class="col-sm-4 col-md-4 lang"><a class="lang-link"href="languages/javascript.html">JavaScript</a></div>
       <div class="col-sm-4 col-md-4 lang"><a class="lang-link"href="languages/python.html">Python</a></div>
     </div>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-sm-3 col-md-3 lang"><a class="lang-link"href="languages/sql.html">SQL</a></div>
-      <div class="col-sm-3 col-md-3 lang"><a class="lang-link"href="languages/html.html">HTML</a></div>
       <div class="col-sm-3 col-md-3 lang"><a class="lang-link"href="languages/cpp.html">C++</a></div>
       <div class="col-sm-3 col-md-3 lang"><a class="lang-link"href="languages/java.html">Java</a></div>
+      <div class="col-sm-3 col-md-3 lang"><a class="lang-link"href="languages/ruby.html">Ruby</a></div>
+      <div class="col-sm-3 col-md-3 lang"><a class="lang-link"href="languages/csharp.html">C#</a></div>
     </div>
   </div>
   <div class="container">
     <div class="row">
       <div class="col-sm-4 col-md-4 lang"><a class="lang-link"href="languages/c.html">C</a></div>
-      <div class="col-sm-4 col-md-4 lang"><a class="lang-link"href="languages/css.html">CSS</a></div>
       <div class="col-sm-4 col-md-4 lang"><a class="lang-link"href="languages/r.html">R</a></div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-md-6 lang"><a class="lang-link"href="languages/obj-c.html">Objective C</a></div>
-      <div class="col-sm-6 col-md-6 lang"><a class="lang-link"href="languages/ruby.html">Ruby</a></div>
+      <div class="col-sm-4 col-md-4 lang"><a class="lang-link"href="languages/php.html">PHP</a></div>
     </div>
   </div>
 </section>
