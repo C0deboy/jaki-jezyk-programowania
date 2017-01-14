@@ -1,16 +1,17 @@
 $(function(){
-  var selected_section = '.examples-language';
+   var selected_section = '.examples-language';
   $('.examples-lang-menu').click(function () {
     if ($('.examples-language').is( ":hidden" ) ) {
       $('#content').css('display: none;')
       $(selected_section).slideUp();
       selected_section = '.examples-language';
-      $('.examples-language').slideDown();
+      $('.examples-language').delay(500).slideDown();
       $('.lang-menu-option').css('background-color','#3B94C4');
       $(this).css({'background-color':'#005B8C', 'border-bottom':'solid 1px #005b8c'});
     }
     else {
       $('.examples-language').slideUp();
+
     }
   });
 
@@ -18,13 +19,13 @@ $(function(){
   $('.complication-lang-menu').click(function () {
     if ($('.complication-language').is( ":hidden" ) ) {
       $(selected_section).slideUp();
-      $('.complication-language').slideDown();
+      $('.complication-language').delay(500).slideDown();
       $('.lang-menu-option').css('background-color','#3B94C4');
       selected_section = '.complication-language';
       $(this).css({'background-color':'#005B8C', 'border-bottom':'solid 1px #005b8c'});
     }
     else {
-      $('.complication-language').slideUp();
+      $('.complication-language').slideUp().hide();
     }
 
   });
@@ -32,33 +33,33 @@ $(function(){
   $('.scalability-lang-menu').click(function () {
     if ($('.scalability-language').is( ":hidden" ) ) {
       $(selected_section).slideUp();
-      $('.scalability-language').slideDown();
+      $('.scalability-language').delay(500).slideDown();
       $('.lang-menu-option').css('background-color','#3B94C4');
       selected_section = '.scalability-language';
       $(this).css({'background-color':'#005B8C', 'border-bottom':'solid 1px #005b8c'});
     }
     else {
-      $('.scalability-language').slideUp();
+      $('.scalability-language').slideUp().hide();
     }
   });
 
   $('.community-lang-menu').click(function () {
     if ($('.community-language').is( ":hidden" ) ) {
       $(selected_section).slideUp();
-      $('.community-language').slideDown();
+      $('.community-language').delay(500).slideDown();
       selected_section = '.community-language';
       $('.lang-menu-option').css('background-color','#3B94C4');
       $(this).css({'background-color':'#005B8C', 'border-bottom':'solid 1px #005b8c'});
     }
     else {
-      $('.community-language').slideUp();
+      $('.community-language').slideUp().hide();
     }
   });
 
   $('.money-lang-menu').click(function () {
     if ($('.money-language').is( ":hidden" ) ) {
       $(selected_section).slideUp();
-      $('.money-language').slideDown();
+      $('.money-language').delay(500).slideDown();
       selected_section = '.money-language';
       $('.lang-menu-option').css('background-color','#3B94C4');
       $(this).css({'background-color':'#005B8C', 'border-bottom':'solid 1px #005b8c'});
@@ -71,7 +72,7 @@ $(function(){
   $('.future-lang-menu').click(function () {
     if ($('.future-language').is( ":hidden" ) ) {
       $(selected_section).slideUp();
-      $('.future-language').slideDown();
+      $('.future-language').delay(500).slideDown();
       selected_section = '.future-language';
       $('.lang-menu-option').css('background-color','#3B94C4');
       $(this).css({'background-color':'#005B8C', 'border-bottom':'solid 1px #005b8c'});
@@ -83,16 +84,19 @@ $(function(){
 
   //**Charts**//
 
-  var chartGradecounter = 0;
+  var chartGradeCounter = 0;
 
-  function chart(grade, color, divtoputinClass) {
+  function chart(grade, color, chartCounter) {
     var chartGradeClass;
+    var divToPutInClass = '.chart:eq(' + chartCounter + ')';
     for (var i=0; i<grade; i++) {
-      chartGradeClass = '.chart-grade:eq(' + chartGradecounter + ')';
-      chartGradecounter++;
-      addGradeDiv(chartGradeClass, color, divtoputinClass, chartGradecounter);
-      color = shadeColor(color, -0.15); //Tego Marcin nie ruszaj! Najpierw ustawia kolor taki jaki dał użytkownik a potem dopiero go przyciemnia!
+      chartGradeClass = '.chart-grade:eq(' + chartGradeCounter + ')';
+      chartGradeCounter++;
+      if(chartGradeCounter==grade) window.setTimeout(function(){$(divToPutInClass).append('<p>'+grade+'</p>');},grade*250);//czemu tylko raz wykonane?
+      addGradeDiv(chartGradeClass, color, divToPutInClass, chartGradeCounter);
+      color = shadeColor(color, -0.15);
     }
+    
   }
 
 
@@ -101,10 +105,10 @@ $(function(){
     return "#"+(0x1000000+(Math.round((t-R)*p)+R)*0x10000+(Math.round((t-G)*p)+G)*0x100+(Math.round((t-B)*p)+B)).toString(16).slice(1);
   }
 
-  function addGradeDiv(klasa, color, divtoputinClass, i) {
-    window.setTimeout(function(){$(divtoputinClass).append("<div class='chart-grade'></div>");$( klasa ).css( "background-color", color );},  i * 200);
+  function addGradeDiv(klasa, color, divToPutInClass, i) {
+    window.setTimeout(function(){$(divToPutInClass).append("<div class='chart-grade'></div>");$( klasa ).css( "background-color", color );},  i * 200);
   }
-  chart(6, '#3399ff', '.chart');
-  chart(5, '#ff0000', '.chart2');
-  chart(4, '#00ff00', '.chart3');
+  chart(6, '#3399ff', 0);
+  chart(5, '#ff0000', 1);
+  chart(4, '#00ff00', 2);
 });

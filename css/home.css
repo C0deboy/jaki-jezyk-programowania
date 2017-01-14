@@ -509,18 +509,3 @@ ul.social-buttons li a {
   height: 20px;
   font-size: 1.1em;
 }
-
-/* Footer Section */
-
-footer {
-  background-color: #337ab7;
-  padding: 25px 0;
-  color: white;
-  text-align: center;
-}
-footer p {
-  font-size: 1.5em;
-  margin: 0;
-}
-
-/* Animations */

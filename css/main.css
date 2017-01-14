@@ -48,7 +48,7 @@ hr {
   color: #777777;
   font-weight: 800;
   text-transform: uppercase;
-  font-size: 0.9em;
+  font-size: 0.77em;
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
@@ -129,11 +129,11 @@ section {
 
 footer {
   background-color: #337ab7;
-  padding: 25px 0;
+  padding: 10px 0;
   color: white;
   text-align: center;
 }
 footer p {
-  font-size: 1.5em;
+  font-size: 3vh;
   margin: 0;
 }

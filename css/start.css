@@ -3,7 +3,7 @@ html, body {
 }
 
 .all {
-  min-height: calc(100vh - 88px);
+  min-height: calc(100vh - 7.25vh);
   padding-top: 51px;
 }
 
@@ -19,7 +19,7 @@ html, body {
 }
 
 .questions h1 {
-  font-size: 4em;
+  font-size: 7vh;
   margin-bottom: 10%;
 
 }
@@ -28,6 +28,7 @@ html, body {
   width: 70px;
   height: 70px;
   cursor: pointer;
+  margin-bottom: 5px;
 }
 
 .ans p{
