@@ -208,9 +208,9 @@
               <div class="col-lg-12">
                   <h1 class="section-heading">Jak to działa?</h1>
                   <hr>
-                  <p>Przygotowaliśmy dla Ciebie [wstaw liczbę pytań] odpowiednio wyselekcjonowanych pytań, dzięki którym, jesteśmy gotowi stworzyć swoistą ścieżkę prowadzącą do wybranego języka programowania, idealnie pasującego do Twoich wymagań. Wszystko stworzone na zasadzie interaktywnej zabawy, by równocześnie zachęcić i pomóc początkującym programistom, jak i doradzić w wyborze języka bardziej zaawansowanym osobom, chcącym doświadczyć czegoś nowego. Spróbuj, a sam dowiesz się jaki język pasuje dla Ciebie najbardziej! </p>
+                  <p>Przygotowaliśmy dla Ciebie [wstaw liczbę pytań] pytań, dzięki którym jesteśmy w stanie określić język programowania pasujący do Twoich wymagań. Projekt powstał, aby rozwiać wszelkie wątpliwości początkujących programistów, jak i doradzić w wyborze języka osobom chcącym doświadczyć czegoś nowego. Spróbuj, a sam dowiesz się jaki język pasuje dla Ciebie najbardziej! Jeśli masz dodatkowe pytania warto przejrzeć FAQ, gdzie zebraliśmy wiele fundamentalnych pytań! </p>
                   <a href="start.html" class="btn btn-danger btn-lg start"><i class="fa fa-play play" aria-hidden="true"></i> Start</a>
-                  <p class="text-muted">Strona ta ma na celu tylko pomoc w wyborze języka, pamiętaj żeby ostatecznie podjąć decyzję podążając za głosem serca &hearts;</p>
+                  <p class="text-muted">Strona ta ma na celu tylko pomoc w wyborze języka, pamiętaj, żeby ostatecznie podjąć decyzję podążając za głosem serca &hearts;</p>
               </div>
           </div>
       </div>
@@ -265,7 +265,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="section-heading">O projekcie</h1><hr>
-                <p>Jesteśmy grupą młodych programistów, którzy jak większość osób na początku swojej przygody z programowaniem stanęli przed problemem wyboru języka. Dlatego postanowiliśmy ułatwić innym to zadanie i zapobiec powstawaniu lawiny kolejnych wątków na forach. Jeżeli podoba Ci się nasza inicjatywa, wspomóż nas!</p>
+                <p>Jesteśmy grupą młodych programistów, którzy, jak większość osób na początku swojej przygody z programowaniem, stanęli przed problemem wyboru języka. Dlatego postanowiliśmy ułatwić innym to zadanie i zapobiec powstawaniu lawiny kolejnych wątków na forach. Jeżeli podoba Ci się nasza inicjatywa, wspomóż nas!</p>
             </div>
         </div>
       </div>
@@ -320,7 +320,7 @@
   <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <p>Masz jakieś uwagi czy zastrzeżenia? A może masz sugestię, którą chciałbyś się z nami podzielić? Czekamy na twoją opinię, która na pewno nas zmotywuje do dalszej pracy!</p>
+          <p>Masz jakieś uwagi czy zastrzeżenia? A może masz sugestię, którą chciałbyś się z nami podzielić? Czekamy na twoją opinię, która na pewno zmotywuje nas do dalszej pracy!</p>
         </div>
       </div>
     </div>
