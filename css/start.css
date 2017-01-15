@@ -63,7 +63,7 @@ html, body {
 }
 
 @keyframes slide_up {
-  from {transform: translateY(30vh);}
+  from {transform: translateY(25vh);}
   to {transform: translateY(0vh);};
 }
 

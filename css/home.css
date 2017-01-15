@@ -5,40 +5,9 @@ header {
   min-height: 100vh;
   width: 100%;
   min-height: auto;
-  background: linear-gradient(to bottom, #1e5799 0%,#7db9e8 81%,#7db9e8 100%,#2989d8 100%,#7db9e8 100%,#207cca 100%);
-  text-align: center;
-  color: white;
-}
-
-.header-heading {
-  font-size: 2.5em;
-}
-
-@media (min-width: 768px) {
-  .header-heading {
-    font-size: 3.5em;
-  }
-  .section-heading {
-    font-size: 3em;
-  }
-}
-
-
-
-/* Header Section */
-
-header {
-  position: relative;
-  min-height: 100vh;
-  width: 100%;
-  min-height: auto;
   background: linear-gradient(#1e5799, #337ab7);
   text-align: center;
   color: white;
-}
-
-.header-heading {
-  font-size: 2.5em;
 }
 
 header .container-fluid {
@@ -201,7 +170,8 @@ header .container-fluid {
 
 .terminal {
   font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
-  font-size: 0.9em;
+  /*font-size: 22px;*/
+  font-size: calc( 13px + (22 - 13) * ( (100vw - 320px) / ( 1920 - 320) ));
   text-align: left;
   padding: 10px;
   width: 100%;
@@ -210,40 +180,36 @@ header .container-fluid {
 
 
 @media (max-width: 375px) {
-  .terminal {
-    font-size: 0.6em;
-
-
-  }
   .screen {
     min-height: 200px;
   }
 }
 
 
-.terminal-window header {
+.terminal-window .terminal-header {
   background: #E0E8F0;
   margin-top: -1px;
   height: 30px;
   padding-left: 10px;
 }
 
-.terminal-window header .button {
+.terminal-window .terminal-header .button {
   width: 12px;
   height: 12px;
   display: inline-block;
   border-radius: 8px;
+  vertical-align: top;
 }
 
-.terminal-window header .button.green {
+.terminal-window .terminal-header .button.green {
   background: #3BB662;
 }
 
-.terminal-window header .button.yellow {
+.terminal-window .terminal-header .button.yellow {
   background: #E5C30F;
 }
 
-.terminal-window header .button.red {
+.terminal-window .terminal-header .button.red {
   background: #E75448;
 }
 

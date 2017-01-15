@@ -71,11 +71,11 @@
               	<div class="screen">
               		<div class="laptop-content">
                      <div class="terminal-window">
-                        <header>
+                        <div class="terminal-header">
                           <div class="button red"></div>
                           <div class="button yellow"></div>
                           <div class="button green"></div>
-                        </header>
+                        </div>
                         <div class="terminal">
                         	<span class="element"></span>
                     	</div>
