@@ -3,31 +3,29 @@ html, body {
 }
 
 .all {
-  min-height: calc(100vh - 7.25vh);
-  padding-top: 51px;
+  min-height: calc(100vh - 71px);
+  overflow: hidden;
 }
 
 .back {
-  display: none;
-  top: 10%;
+  visibility: hidden;
+  top: 60px;
   position: absolute;
   cursor: pointer;
 }
+
+
 .questions p {
   position: relative;
   left: 25%;
 }
 
 .questions h1 {
-  font-size: 7vh;
+  font-size: 2.5em;
   margin-bottom: 10%;
 }
 
-@media (max-width: 768px){
-  .questions h1 {
-    margin-top: 8vh;
-  }
-}
+
 
 .questions img {
   width: 70px;

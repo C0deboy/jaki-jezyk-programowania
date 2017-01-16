@@ -5,11 +5,11 @@ html, body {
 
 .faq {
   background: linear-gradient(#1e5799, #337ab7);
-  padding-bottom: 3%;
+  padding: 40px 0px 3% 0px;
 }
 
-.faq-title {
-  padding-top: 50px;
+.faq h1{
+  margin-top: 60px;
 }
 
 .answer {
