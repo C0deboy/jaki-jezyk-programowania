@@ -2,10 +2,17 @@ html, body {
   color: black;
 }
 
+
 .all {
   min-height: calc(100vh - 71px);
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  .all {
+    min-height: 700px;
+  }
+}
+
 
 .back {
   visibility: hidden;
@@ -20,8 +27,9 @@ html, body {
   left: 25%;
 }
 
+
 .questions h1 {
-  font-size: 2.5em;
+
   margin-bottom: 10%;
 }
 
@@ -47,12 +55,11 @@ html, body {
 }
 
 
-.que2 {
+.questions {
   display: none;
 }
-
-.que3 {
-  display: none;
+.que1 {
+  display: block;
 }
 
 .slide_up {

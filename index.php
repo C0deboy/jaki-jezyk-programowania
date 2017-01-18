@@ -63,7 +63,8 @@
                 <hr>
                 <p><b>Chciałbyś nauczyć się programowania, ale nie wiesz od jakiego języka zacząć? Spróbujemy Ci w tym pomóc! Razem z nami poznasz, który z nich będzie dla Ciebie najbardziej odpowiedni oraz zyskasz możliwość ich porównania.</b></p>
               </div>
-              <div class="background-image">
+              <div class="lets-go">
+                <p><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> Dalej <i class="fa fa-arrow-circle-down" aria-hidden="true"></i> </p>
               </div>
             </div>
             <div class="col-md-5">

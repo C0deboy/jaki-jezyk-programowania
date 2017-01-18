@@ -14,6 +14,16 @@ header .container-fluid {
   padding: 50px 5% 50px 5%;
 }
 
+header .lets-go {
+    margin-top: 100px;
+    font-size: 3em;
+    display: none;
+}
+
+header .lets-go:hover {
+    cursor: pointer;
+}
+
 @media (min-width: 768px) {
   header {
     min-height: 100%;
@@ -38,13 +48,9 @@ header .container-fluid {
   	 display: flex;
   	 flex-direction: column;
   }
-  header .background-image {
-    height: 28vw;
-    width: 100%;
-    background-repeat:no-repeat;
-    background-size:contain;
-    background-position:center;
-    background-image: url(../img/background.png);
+
+  header .lets-go {
+    display: block;
   }
 }
 

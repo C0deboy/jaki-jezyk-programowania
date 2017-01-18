@@ -41,6 +41,10 @@ $(function(){
     scrollToElement('#how-works', 600);
     });
 
+    $(".lets-go").click(function() {
+    scrollToElement('#how-works', 600);
+    });
+
     $(".program-languages-btn").click(function() {
     scrollToElement('#program-languages', 600);
     });
