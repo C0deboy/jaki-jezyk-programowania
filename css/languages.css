@@ -18,8 +18,13 @@ html, body {
   border-radius: 0;
 }
 
+.navbar {
+  margin-bottom: 0px;
+}
+
 section {
   padding: 0% 15% 5% 15%;
+  margin-top: 0px;
 }
 
 @media (max-width: 768px) {
@@ -39,7 +44,7 @@ section {
 
 .language-content {
   width: 100%;
-  background-color: #346c93;
+  background-color: #0f4268;
   -webkit-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
@@ -70,7 +75,7 @@ section {
 }
 
 .language-content .language-logo {
-  background-color: #005B8C;
+  background-color: #0d2d49;
   -webkit-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
@@ -129,6 +134,7 @@ section {
 .chart {
   color: white;
   display: inline-block;
+
 }
 
 .chart-grade {
@@ -167,3 +173,4 @@ footer {
   color: black;
   width:100%;
 }
+

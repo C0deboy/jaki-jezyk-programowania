@@ -9,9 +9,8 @@ $(function(){
     for (var i=1; i<=grade; i++) {
       chartGradeClass = '.chart-grade:eq(' + chartGradeCounter + ')';
       chartGradeCounter++;
-      //if(i==grade) window.setTimeout(function(){$(divToPutInClass).append('<p>'+grade+'</p>');},chartGradeCounter*210);
       addGradeDiv(chartGradeClass, color, divToPutInClass, chartGradeCounter, grade, i);
-      color = shadeColor(color, 0.15);
+      color = shadeColor(color, 0.08);
     }
 
   }
@@ -32,11 +31,19 @@ $(function(){
     }
   }
 
-  chart(6, '#c48f00', '.chart1_pyt');
-  chart(5, '#a01800', '.chart2_pyt');
-  chart(4, '#219e2d', '.chart3_pyt');
-  chart(1, '#3399ff', '.chart4_pyt');
-  chart(2, '#631362', '.chart5_pyt');
-  chart(3, '#8e830c', '.chart6_pyt');
+  /* Charts colors */
+  var dificultyColor = "#ad0101";
+  var performanceColor = "#28A630";
+  var popularityColor = "#e0e000";
+  var strengthColor = "#c96800";
+  var careerColor = "#0160ad";
+  var futureColor = "#890082";
+  /* Java charts */
+  chart(3, dificultyColor, '.difficulty-java');
+  chart(5, performanceColor, '.performance-java');
+  chart(6, popularityColor, '.popularity-java');
+  chart(5, strengthColor, '.strength-java');
+  chart(6, careerColor, '.career-java');
+  chart(6, futureColor, '.future-java');
 
 });
