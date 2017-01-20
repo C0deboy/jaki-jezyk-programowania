@@ -1,254 +1,256 @@
 $(function(){
-var iter = 1;
-var previousQuestionIter = new Array();
-var clasa = '.que' + iter;
+window.onunload = function(){};
+var queNumber = 1;
+var previousQueNumber = new Array();
+var queClass = '.que' + queNumber;
 
 var web = new Array(18);
-web[0] = {odpowiedz: 'odpA', nextQuestion: 2, actualQuestion: 1};
-web[1] = {odpowiedz: 'odpA', nextQuestion: 3, actualQuestion: 2};
-web[2] = {odpowiedz: 'odpC', nextQuestion: 5, actualQuestion: 2};
-web[3] = {odpowiedz: 'odpB', nextQuestion: 12, actualQuestion: 1};
-web[4] = {odpowiedz: 'odpC', nextQuestion: 5, actualQuestion: 12};
-web[5] = {odpowiedz: 'odpD', nextQuestion: 14, actualQuestion: 1};
-web[6] = {odpowiedz: 'odpB', nextQuestion: 5, actualQuestion: 14};
-web[7] = {odpowiedz: 'odpA', nextQuestion: '/languages/javascript.html', actualQuestion: 5};
-web[8] = {odpowiedz: 'odpB', nextQuestion: 6, actualQuestion: 5};
-web[9] = {odpowiedz: 'odpA', nextQuestion: 16, actualQuestion: 6};
-web[10] = {odpowiedz: 'odpA', nextQuestion: '/languages/c#.html', actualQuestion: 16};
-web[11] = {odpowiedz: 'odpB', nextQuestion: '/languages/java.html', actualQuestion: 16};
-web[12] = {odpowiedz: 'odpB', nextQuestion: 7, actualQuestion: 6};
-web[13] = {odpowiedz: 'odpC', nextQuestion: '/languages/PHP.html', actualQuestion: 6};
-web[14] = {odpowiedz: 'odpA', nextQuestion: 17, actualQuestion: 7};
-web[15] = {odpowiedz: 'odpA', nextQuestion: '/languages/python.html', actualQuestion: 17};
-web[16] = {odpowiedz: 'odpB', nextQuestion: '/languages/ruby.html', actualQuestion: 17};
-web[17] = {odpowiedz: 'odpB', nextQuestion: '/languages/PHP.html', actualQuestion: 7};
+web[0] = {answer: 'odpA', nextQuestion: 2, actualQuestion: 1};
+web[1] = {answer: 'odpA', nextQuestion: 3, actualQuestion: 2};
+web[2] = {answer: 'odpC', nextQuestion: 5, actualQuestion: 2};
+web[3] = {answer: 'odpB', nextQuestion: 12, actualQuestion: 1};
+web[4] = {answer: 'odpC', nextQuestion: 5, actualQuestion: 12};
+web[5] = {answer: 'odpD', nextQuestion: 14, actualQuestion: 1};
+web[6] = {answer: 'odpB', nextQuestion: 5, actualQuestion: 14};
+web[7] = {answer: 'odpA', nextQuestion: '/languages/javascript.html', actualQuestion: 5};
+web[8] = {answer: 'odpB', nextQuestion: 6, actualQuestion: 5};
+web[9] = {answer: 'odpA', nextQuestion: 16, actualQuestion: 6};
+web[10] = {answer: 'odpA', nextQuestion: '/languages/c#.html', actualQuestion: 16};
+web[11] = {answer: 'odpB', nextQuestion: '/languages/java.html', actualQuestion: 16};
+web[12] = {answer: 'odpB', nextQuestion: 7, actualQuestion: 6};
+web[13] = {answer: 'odpC', nextQuestion: '/languages/PHP.html', actualQuestion: 6};
+web[14] = {answer: 'odpA', nextQuestion: 17, actualQuestion: 7};
+web[15] = {answer: 'odpA', nextQuestion: '/languages/python.html', actualQuestion: 17};
+web[16] = {answer: 'odpB', nextQuestion: '/languages/ruby.html', actualQuestion: 17};
+web[17] = {answer: 'odpB', nextQuestion: '/languages/PHP.html', actualQuestion: 7};
 
-var mobilki = new Array(9);
-mobilki[0] = {odpowiedz: 'odpA', nextQuestion: 2, actualQuestion: 1};
-mobilki[1] = {odpowiedz: 'odpD', nextQuestion: 8, actualQuestion: 2};
-mobilki[2] = {odpowiedz: 'odpA', nextQuestion: 3, actualQuestion: 8};
-mobilki[3] = {odpowiedz: 'odpB', nextQuestion: 13, actualQuestion: 12};
-mobilki[4] = {odpowiedz: 'odpC', nextQuestion: 3, actualQuestion: 13};
-mobilki[5] = {odpowiedz: 'odpC', nextQuestion: 3, actualQuestion: 14};
-mobilki[6] = {odpowiedz: 'odpA', nextQuestion: '/languages/swift.html', actualQuestion: 3};
-mobilki[7] = {odpowiedz: 'odpB', nextQuestion: '/languages/java.html', actualQuestion: 3};
-mobilki[8] = {odpowiedz: 'odpC', nextQuestion: '/languages/c#.html', actualQuestion: 3};
+var mobile = new Array(9);
+mobile[0] = {answer: 'odpA', nextQuestion: 2, actualQuestion: 1};
+mobile[1] = {answer: 'odpD', nextQuestion: 8, actualQuestion: 2};
+mobile[2] = {answer: 'odpA', nextQuestion: 3, actualQuestion: 8};
+mobile[3] = {answer: 'odpB', nextQuestion: 13, actualQuestion: 12};
+mobile[4] = {answer: 'odpC', nextQuestion: 3, actualQuestion: 13};
+mobile[5] = {answer: 'odpC', nextQuestion: 3, actualQuestion: 14};
+mobile[6] = {answer: 'odpA', nextQuestion: '/languages/swift.html', actualQuestion: 3};
+mobile[7] = {answer: 'odpB', nextQuestion: '/languages/java.html', actualQuestion: 3};
+mobile[8] = {answer: 'odpC', nextQuestion: '/languages/c#.html', actualQuestion: 3};
 
-var gry = new Array(7);
-gry[0] = {odpowiedz: 'odpA', nextQuestion: 3, actualQuestion: 8};
-gry[1] = {odpowiedz: 'odpB', nextQuestion: 9, actualQuestion: 8};
-gry[2] = {odpowiedz: 'odpA', nextQuestion: '/languages/c#.html', actualQuestion: 9};
-gry[3] = {odpowiedz: 'odpB', nextQuestion: '/languages/c++.html', actualQuestion: 9};
-gry[4] = {odpowiedz: 'odpC', nextQuestion: 10, actualQuestion: 9};
-gry[5] = {odpowiedz: 'odpA', nextQuestion: '/languages/c++.html', actualQuestion: 10};
-gry[6] = {odpowiedz: 'odpB', nextQuestion: '/languages/c#.html', actualQuestion: 10};
+var games = new Array(7);
+games[0] = {answer: 'odpA', nextQuestion: 3, actualQuestion: 8};
+games[1] = {answer: 'odpB', nextQuestion: 9, actualQuestion: 8};
+games[2] = {answer: 'odpA', nextQuestion: '/languages/c#.html', actualQuestion: 9};
+games[3] = {answer: 'odpB', nextQuestion: '/languages/c++.html', actualQuestion: 9};
+games[4] = {answer: 'odpC', nextQuestion: 10, actualQuestion: 9};
+games[5] = {answer: 'odpA', nextQuestion: '/languages/c++.html', actualQuestion: 10};
+games[6] = {answer: 'odpB', nextQuestion: '/languages/c#.html', actualQuestion: 10};
 
-var korpo = new Array(7);
-korpo[0] = {odpowiedz: 'odpB', nextQuestion: 4, actualQuestion: 2};
-korpo[1] = {odpowiedz: 'odpA', nextQuestion: '/languages/c#.html', actualQuestion: 4};
-korpo[2] = {odpowiedz: 'odpB', nextQuestion: '/languages/swift.html', actualQuestion: 4};
-korpo[3] = {odpowiedz: 'odpC', nextQuestion: 18, actualQuestion: 4};
-korpo[4] = {odpowiedz: 'odpA', nextQuestion: '/languages/python.html', actualQuestion: 18};
-korpo[5] = {odpowiedz: 'odpB', nextQuestion: '/languages/PHP.html', actualQuestion: 18};
-korpo[6] = {odpowiedz: 'odpD', nextQuestion: '/languages/python.html', actualQuestion: 4};
+var corp = new Array(7);
+corp[0] = {answer: 'odpB', nextQuestion: 4, actualQuestion: 2};
+corp[1] = {answer: 'odpA', nextQuestion: '/languages/c#.html', actualQuestion: 4};
+corp[2] = {answer: 'odpB', nextQuestion: '/languages/swift.html', actualQuestion: 4};
+corp[3] = {answer: 'odpC', nextQuestion: 18, actualQuestion: 4};
+corp[4] = {answer: 'odpA', nextQuestion: '/languages/python.html', actualQuestion: 18};
+corp[5] = {answer: 'odpB', nextQuestion: '/languages/PHP.html', actualQuestion: 18};
+corp[6] = {answer: 'odpD', nextQuestion: '/languages/python.html', actualQuestion: 4};
 
-var malaGra = new Array(6);
-malaGra[0] = {odpowiedz: 'odpB', nextQuestion: 13, actualQuestion: 12};
-malaGra[1] = {odpowiedz: 'odpA', nextQuestion: '/languages/javascript.html', actualQuestion: 13};
-malaGra[2] = {odpowiedz: 'odpB', nextQuestion: 19, actualQuestion: 13};
-malaGra[3] = {odpowiedz: 'odpA', nextQuestion: '/languages/python.html', actualQuestion: 19};
-malaGra[4] = {odpowiedz: 'odpB', nextQuestion: '/languages/c#.html', actualQuestion: 19};
-malaGra[5] = {odpowiedz: 'odpC', nextQuestion: 3, actualQuestion: 13};
+var smallGame = new Array(6);
+smallGame[0] = {answer: 'odpB', nextQuestion: 13, actualQuestion: 12};
+smallGame[1] = {answer: 'odpA', nextQuestion: '/languages/javascript.html', actualQuestion: 13};
+smallGame[2] = {answer: 'odpB', nextQuestion: 19, actualQuestion: 13};
+smallGame[3] = {answer: 'odpA', nextQuestion: '/languages/python.html', actualQuestion: 19};
+smallGame[4] = {answer: 'odpB', nextQuestion: '/languages/c#.html', actualQuestion: 19};
+smallGame[5] = {answer: 'odpC', nextQuestion: 3, actualQuestion: 13};
 
-var oprogramowanie = new Array(5);
-oprogramowanie[0] = {odpowiedz: 'odpE', nextQuestion: 11, actualQuestion: 2};
-oprogramowanie[1] = {odpowiedz: 'odpA', nextQuestion: '/languages/swift.html', actualQuestion: 11};
-oprogramowanie[2] = {odpowiedz: 'odpB', nextQuestion: '/languages/c#.html', actualQuestion: 11};
-oprogramowanie[3] = {odpowiedz: 'odpC', nextQuestion: '/languages/java.html', actualQuestion: 11};
-oprogramowanie[4] = {odpowiedz: 'odpD', nextQuestion: '/languages/c.html', actualQuestion: 11};
+var software = new Array(5);
+software[0] = {answer: 'odpE', nextQuestion: 11, actualQuestion: 2};
+software[1] = {answer: 'odpA', nextQuestion: '/languages/swift.html', actualQuestion: 11};
+software[2] = {answer: 'odpB', nextQuestion: '/languages/c#.html', actualQuestion: 11};
+software[3] = {answer: 'odpC', nextQuestion: '/languages/java.html', actualQuestion: 11};
+software[4] = {answer: 'odpD', nextQuestion: '/languages/c.html', actualQuestion: 11};
 
-var skryptowanie = new Array(5);
-skryptowanie[0] = {odpowiedz: 'odpD', nextQuestion: 20, actualQuestion: 14};
-skryptowanie[1] = {odpowiedz: 'odpA', nextQuestion: '/languages/python.html', actualQuestion: 20};
-skryptowanie[2] = {odpowiedz: 'odpB', nextQuestion: '/languages/powershell.html', actualQuestion: 20};
-skryptowanie[3] = {odpowiedz: 'odpC', nextQuestion: '/languages/bash.html', actualQuestion: 20};
-skryptowanie[4] = {odpowiedz: 'odpD', nextQuestion: '/languages/ruby.html', actualQuestion: 20};
+var scripting = new Array(5);
+scripting[0] = {answer: 'odpD', nextQuestion: 20, actualQuestion: 14};
+scripting[1] = {answer: 'odpA', nextQuestion: '/languages/python.html', actualQuestion: 20};
+scripting[2] = {answer: 'odpB', nextQuestion: '/languages/powershell.html', actualQuestion: 20};
+scripting[3] = {answer: 'odpC', nextQuestion: '/languages/bash.html', actualQuestion: 20};
+scripting[4] = {answer: 'odpD', nextQuestion: '/languages/ruby.html', actualQuestion: 20};
 
-var analizowanieDanych = new Array(3);
-analizowanieDanych[0] = {odpowiedz: 'odpA', nextQuestion: 15, actualQuestion: 14};
-analizowanieDanych[1] = {odpowiedz: 'odpA', nextQuestion: '/languages/r.html', actualQuestion: 15};
-analizowanieDanych[2] = {odpowiedz: 'odpB', nextQuestion: '/languages/python.html', actualQuestion: 15};
+var dataAnalysis = new Array(3);
+dataAnalysis[0] = {answer: 'odpA', nextQuestion: 15, actualQuestion: 14};
+dataAnalysis[1] = {answer: 'odpA', nextQuestion: '/languages/r.html', actualQuestion: 15};
+dataAnalysis[2] = {answer: 'odpB', nextQuestion: '/languages/python.html', actualQuestion: 15};
 
-var zautomatyzowanie = new Array(3);
-zautomatyzowanie[0] = {odpowiedz: 'odpD', nextQuestion: 17, actualQuestion: 12};
-zautomatyzowanie[1] = {odpowiedz: 'odpC', nextQuestion: '/languages/python.html', actualQuestion: 17};
-zautomatyzowanie[2] = {odpowiedz: 'odpC', nextQuestion: '/languages/ruby.html', actualQuestion: 17};
+var automation = new Array(3);
+automation[0] = {answer: 'odpD', nextQuestion: 17, actualQuestion: 12};
+automation[1] = {answer: 'odpC', nextQuestion: '/languages/python.html', actualQuestion: 17};
+automation[2] = {answer: 'odpC', nextQuestion: '/languages/ruby.html', actualQuestion: 17};
 
-var tworzenieOs = new Array(2);
-tworzenieOs[0] = {odpowiedz: 'odpD', nextQuestion: 14, actualQuestion: 1};
-tworzenieOs[1] = {odpowiedz: 'odpE', nextQuestion: '/languages/c.html', actualQuestion: 14};
+var creatingOS = new Array(2);
+creatingOS[0] = {answer: 'odpD', nextQuestion: 14, actualQuestion: 1};
+creatingOS[1] = {answer: 'odpE', nextQuestion: '/languages/c.html', actualQuestion: 14};
 
-var uczenieMaszynowe = {odpowiedz: 'odpA', nextQuestion: '/languages/python.html', actualQuestion: 12};
+var machineLearning = {answer: 'odpA', nextQuestion: '/languages/python.html', actualQuestion: 12};
 
-var orogramowanieNiskoPoziom = {odpowiedz: 'odpE', nextQuestion: '/languages/c.html', actualQuestion: 12};
+var lowLevelSoftware = {answer: 'odpE', nextQuestion: '/languages/c.html', actualQuestion: 12};
 
-var dlaDzieci = {odpowiedz: 'odpC', nextQuestion: '/languages/scratch.html', actualQuestion: 1};
+var forKids = {answer: 'odpC', nextQuestion: '/languages/scratch.html', actualQuestion: 1};
 
 
   $('.ans').click(function() {
-    if($(clasa).hasClass( 'slide_in' )) $( clasa ).removeClass( 'slide_in' );
+    if($(queClass).hasClass( 'slide_in' )) $( queClass ).removeClass( 'slide_in' );
     if($(this).hasClass( 'slide_out' )) $( this ).removeClass( 'slide_out' );
-    if($(clasa).find(".ans").hasClass( 'slide_up' )) $(clasa).find(".ans").removeClass( 'slide_up' );
+    if($(queClass).find(".ans").hasClass( 'slide_up' )) $(queClass).find(".ans").removeClass( 'slide_up' );
 
     $( this ).addClass( 'slide_out' );
-    $( clasa ).fadeOut( "slow" );
-    if (iter==1) {
+    $( queClass ).fadeOut( "slow" );
+    if (queNumber==1) {
       $('.back').css("visibility", "visible");
     }
-    previousQuestionIter.push(iter);
+    previousQueNumber.push(queNumber);
     var id = $(this).attr('id');
 
 
-    for(var i=0; i<18; i++) {
-      if(web[i].actualQuestion == iter) {
-        if(web[i].odpowiedz == id) {
+    for(var i=0; i<web.length; i++) {
+      if(web[i].actualQuestion == queNumber) {
+        if(web[i].answer == id) {
           if(isNaN(web[i].nextQuestion)) window.location.href = web[i].nextQuestion;
-          iter = web[i].nextQuestion;
-          console.log(iter);
+          queNumber = web[i].nextQuestion;
           break;
         }
       }
     }
 
-    for(var i=0; i<9; i++) {
-      if(previousQuestionIter[previousQuestionIter.length - 1] != iter) break;
-      if(mobilki[i].actualQuestion == iter) {
-        if(mobilki[i].odpowiedz == id) {
-          if(isNaN(mobilki[i].nextQuestion)) window.location.href = mobilki[i].nextQuestion;
-          iter = mobilki[i].nextQuestion;
-          console.log(iter);
+    for(var i=0; i<mobile.length; i++) {
+      if(previousQueNumber[previousQueNumber.length - 1] != queNumber) break;
+      if(mobile[i].actualQuestion == queNumber) {
+        if(mobile[i].answer == id) {
+          if(isNaN(mobile[i].nextQuestion)) window.location.href = mobile[i].nextQuestion;
+          queNumber = mobile[i].nextQuestion;
         }
       }
     }
 
-    for(var i=0; i<7; i++) {
-      if(previousQuestionIter[previousQuestionIter.length - 1] != iter) break;
-      if(gry[i].actualQuestion == iter) {
-        if(gry[i].odpowiedz == id) {
-          if(isNaN(gry[i].nextQuestion)) window.location.href = gry[i].nextQuestion;
-          iter = gry[i].nextQuestion;
-          console.log(iter);
-        }
-      }
-      if(korpo[i].actualQuestion == iter) {
-        if(korpo[i].odpowiedz == id) {
-          if(isNaN(korpo[i].nextQuestion)) window.location.href = korpo[i].nextQuestion;
-          iter = korpo[i].nextQuestion;
-          console.log(iter);
+    for(var i=0; i<games.length; i++) {
+      if(previousQueNumber[previousQueNumber.length - 1] != queNumber) break;
+      if(games[i].actualQuestion == queNumber) {
+        if(games[i].answer == id) {
+          if(isNaN(games[i].nextQuestion)) window.location.href = games[i].nextQuestion;
+          queNumber = games[i].nextQuestion;
         }
       }
     }
 
-    for(var i=0; i<6; i++) {
-      if(previousQuestionIter[previousQuestionIter.length - 1] != iter) break;
-      if(malaGra[i].actualQuestion == iter) {
-        if(malaGra[i].odpowiedz == id) {
-          if(isNaN(malaGra[i].nextQuestion)) window.location.href = malaGra[i].nextQuestion;
-          iter = malaGra[i].nextQuestion;
-          console.log(iter);
+    for(var i=0; i<corp.length; i++) {
+      if(previousQueNumber[previousQueNumber.length - 1] != queNumber) break;
+      if(corp[i].actualQuestion == queNumber) {
+        if(corp[i].answer == id) {
+          if(isNaN(corp[i].nextQuestion)) window.location.href = corp[i].nextQuestion;
+          queNumber = corp[i].nextQuestion;
         }
       }
     }
 
-    for(var i=0; i<5; i++) {
-      if(previousQuestionIter[previousQuestionIter.length - 1] != iter) break;
-      if(oprogramowanie[i].actualQuestion == iter) {
-        if(oprogramowanie[i].odpowiedz == id) {
-          if(isNaN(oprogramowanie[i].nextQuestion)) window.location.href = oprogramowanie[i].nextQuestion;
-          iter = oprogramowanie[i].nextQuestion;
-          console.log(iter);
-        }
-      }
-      if(skryptowanie[i].actualQuestion == iter) {
-        if(skryptowanie[i].odpowiedz == id) {
-          if(isNaN(skryptowanie[i].nextQuestion)) window.location.href = skryptowanie[i].nextQuestion;
-          iter = skryptowanie[i].nextQuestion;
-          console.log(iter);
+    for(var i=0; i<smallGame.length; i++) {
+      if(previousQueNumber[previousQueNumber.length - 1] != queNumber) break;
+      if(smallGame[i].actualQuestion == queNumber) {
+        if(smallGame[i].answer == id) {
+          if(isNaN(smallGame[i].nextQuestion)) window.location.href = smallGame[i].nextQuestion;
+          queNumber = smallGame[i].nextQuestion;
         }
       }
     }
 
-    for(var i=0; i<3; i++) {
-      if(previousQuestionIter[previousQuestionIter.length - 1] != iter) break;
-      if(analizowanieDanych[i].actualQuestion == iter) {
-        if(analizowanieDanych[i].odpowiedz == id) {
-          if(isNaN(analizowanieDanych[i].nextQuestion)) window.location.href = analizowanieDanych[i].nextQuestion;
-          iter = analizowanieDanych[i].nextQuestion;
-          console.log(iter);
-        }
-      }
-      if(zautomatyzowanie[i].actualQuestion == iter) {
-        if(zautomatyzowanie[i].odpowiedz == id) {
-          if(isNaN(zautomatyzowanie[i].nextQuestion)) window.location.href = zautomatyzowanie[i].nextQuestion;
-          iter = zautomatyzowanie[i].nextQuestion;
-          console.log(iter);
+    for(var i=0; i<software.length; i++) {
+      if(previousQueNumber[previousQueNumber.length - 1] != queNumber) break;
+      if(software[i].actualQuestion == queNumber) {
+        if(software[i].answer == id) {
+          if(isNaN(software[i].nextQuestion)) window.location.href = software[i].nextQuestion;
+          queNumber = software[i].nextQuestion;
         }
       }
     }
 
-    for(var i=0; i<2; i++) {
-      if(previousQuestionIter[previousQuestionIter.length - 1] != iter) break;
-      if(tworzenieOs[i].actualQuestion == iter) {
-        if(tworzenieOs[i].odpowiedz == id) {
-          if(isNaN(tworzenieOs[i].nextQuestion)) window.location.href = tworzenieOs[i].nextQuestion;
-          iter = tworzenieOs[i].nextQuestion;
-          console.log(iter);
+    for(var i=0; i<scripting.length; i++) {
+      if(previousQueNumber[previousQueNumber.length - 1] != queNumber) break;
+      if(scripting[i].actualQuestion == queNumber) {
+        if(scripting[i].answer == id) {
+          if(isNaN(scripting[i].nextQuestion)) window.location.href = scripting[i].nextQuestion;
+          queNumber = scripting[i].nextQuestion;
         }
       }
     }
 
-    if(previousQuestionIter[previousQuestionIter.length - 1] == iter) {
-      if(uczenieMaszynowe.actualQuestion == iter) {
-        if(uczenieMaszynowe.odpowiedz == id) {
-          window.location.href = uczenieMaszynowe.nextQuestion;
+    for(var i=0; i<dataAnalysis.length; i++) {
+      if(previousQueNumber[previousQueNumber.length - 1] != queNumber) break;
+      if(dataAnalysis[i].actualQuestion == queNumber) {
+        if(dataAnalysis[i].answer == id) {
+          if(isNaN(dataAnalysis[i].nextQuestion)) window.location.href = dataAnalysis[i].nextQuestion;
+          queNumber = dataAnalysis[i].nextQuestion;
         }
       }
     }
 
-    if(previousQuestionIter[previousQuestionIter.length - 1] == iter) {
-      if(orogramowanieNiskoPoziom.actualQuestion == iter) {
-        if(orogramowanieNiskoPoziom.odpowiedz == id) {
-          window.location.href = orogramowanieNiskoPoziom.nextQuestion;
+    for(var i=0; i<automation.length; i++) {
+      if(previousQueNumber[previousQueNumber.length - 1] != queNumber) break;
+      if(automation[i].actualQuestion == queNumber) {
+        if(automation[i].answer == id) {
+          if(isNaN(automation[i].nextQuestion)) window.location.href = automation[i].nextQuestion;
+          queNumber = automation[i].nextQuestion;
+        }
+      }
+    }
+
+    for(var i=0; i<creatingOS.length; i++) {
+      if(previousQueNumber[previousQueNumber.length - 1] != queNumber) break;
+      if(creatingOS[i].actualQuestion == queNumber) {
+        if(creatingOS[i].answer == id) {
+          if(isNaN(creatingOS[i].nextQuestion)) window.location.href = creatingOS[i].nextQuestion;
+          queNumber = creatingOS[i].nextQuestion;
+        }
+      }
+    }
+
+    if(previousQueNumber[previousQueNumber.length - 1] == queNumber) {
+      if(machineLearning.actualQuestion == queNumber) {
+        if(machineLearning.answer == id) {
+          window.location.href = machineLearning.nextQuestion;
+        }
+      }
+    }
+
+    if(previousQueNumber[previousQueNumber.length - 1] == queNumber) {
+      if(lowLevelSoftware.actualQuestion == queNumber) {
+        if(lowLevelSoftware.answer == id) {
+          window.location.href = lowLevelSoftware.nextQuestion;
         }
       }
     }
 
 
 
-    if(previousQuestionIter[previousQuestionIter.length - 1] == iter) {
-      if(dlaDzieci.actualQuestion == iter) {
-        if(dlaDzieci.odpowiedz == id) {
-          window.location.href = dlaDzieci.nextQuestion;
+    if(previousQueNumber[previousQueNumber.length - 1] == queNumber) {
+      if(forKids.actualQuestion == queNumber) {
+        if(forKids.answer == id) {
+          window.location.href = forKids.nextQuestion;
         }
       }
     }
-
-    clasa = '.que' + iter;
-    window.setTimeout(function(){$(clasa).fadeIn( "slow" );$(clasa).find(".ans").show().addClass('slide_up');}, 1000);
-    if($(clasa).hasClass( 'slide_in' )) $( clasa ).removeClass( 'slide_in' );
+    queClass = '.que' + queNumber;
+    window.setTimeout(function(){$(queClass).fadeIn( "slow" );$(queClass).find(".ans").show().addClass('slide_up');}, 1000);
+    if($(queClass).hasClass( 'slide_in' )) $( queClass ).removeClass( 'slide_in' );
 
   });
 
   $('.back').click(function() {
     if($('.ans').hasClass( 'slide_out' )) $( '.ans' ).removeClass( 'slide_out' );
-    if($(clasa).find(".ans").hasClass( 'slide_up' )) $(clasa).find(".ans").removeClass( 'slide_up' );
+    if($(queClass).find(".ans").hasClass( 'slide_up' )) $(queClass).find(".ans").removeClass( 'slide_up' );
 
-    $( clasa ).fadeOut( "slow" );
-    clasa = '.que' + previousQuestionIter[previousQuestionIter.length - 1];
-    iter = previousQuestionIter[previousQuestionIter.length - 1];
-    previousQuestionIter.pop();
-    window.setTimeout(function(){$( clasa ).show().addClass( 'slide_in' );}, 1000);
-    if(iter==1) {
+    $( queClass ).fadeOut( "slow" );
+    queClass = '.que' + previousQueNumber[previousQueNumber.length - 1];
+    queNumber = previousQueNumber[previousQueNumber.length - 1];
+    previousQueNumber.pop();
+    window.setTimeout(function(){$( queClass ).show().addClass( 'slide_in' );}, 1000);
+    if(queNumber==1) {
       $('.back').css("visibility", "hidden");
     }
   });

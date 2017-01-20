@@ -90,6 +90,13 @@ section {
   width: 100%;
 }
 
+.up-to-date {
+  border: dotted 3px #5C6263;
+  background-color: #0d2d49;
+  box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+  color: #cdd2d8;
+}
+
 .content-header h1 {
   padding-top: 20px;
 }
