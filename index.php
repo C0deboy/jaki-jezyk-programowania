@@ -60,7 +60,7 @@
         <div class="row header-row">
             <div class="col-md-7">
               <div class="intro">
-                <h1>Wybierz swój język programowania</h1>
+                <h1 class="section-heading">Wybierz swój język programowania</h1>
                 <hr>
                 <p><b>Chciałbyś nauczyć się programowania, ale nie wiesz od jakiego języka zacząć? Spróbujemy Ci w tym pomóc! Razem z nami poznasz, który z nich będzie dla Ciebie najbardziej odpowiedni oraz zyskasz możliwość ich porównania.</b></p>
               </div>
@@ -205,7 +205,7 @@
 
 <!-- How This Website Works Section -->
 <section id="how-works">
-      <div class="container">
+      <div class="container-fluid">
           <div class="row">
               <div class="col-lg-12">
                   <h1 class="section-heading">Jak to działa?</h1>
@@ -229,32 +229,32 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid container-lang">
     <div class="row">
-      <div class="col-sm-6 col-md-6 lang"><a class="lang-link"href="languages/obj-c.html">Objective C</a></div>
-      <div class="col-sm-6 col-md-6 lang"><a class="lang-link"href="languages/swift.html">Swift</a></div>
+      <div class="col-sm-6 lang"><a class="lang-link"href="languages/obj-c.html">Objective C</a></div>
+      <div class="col-sm-6 lang"><a class="lang-link"href="languages/swift.html">Swift</a></div>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid container-lang">
     <div class="row">
-      <div class="col-sm-4 col-md-4 lang"><a class="lang-link"href="languages/scratch.html">Scratch</a></div>
-      <div class="col-sm-4 col-md-4 lang"><a class="lang-link"href="languages/javascript.html">JavaScript</a></div>
-      <div class="col-sm-4 col-md-4 lang"><a class="lang-link"href="languages/python.html">Python</a></div>
+      <div class="col-sm-4 lang"><a class="lang-link"href="languages/scratch.html">Scratch</a></div>
+      <div class="col-sm-4 lang"><a class="lang-link"href="languages/javascript.html">JavaScript</a></div>
+      <div class="col-sm-4 lang"><a class="lang-link"href="languages/python.html">Python</a></div>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid container-lang">
     <div class="row">
-      <div class="col-sm-3 col-md-3 lang"><a class="lang-link"href="languages/cpp.html">C++</a></div>
-      <div class="col-sm-3 col-md-3 lang"><a class="lang-link"href="languages/java.html">Java</a></div>
-      <div class="col-sm-3 col-md-3 lang"><a class="lang-link"href="languages/ruby.html">Ruby</a></div>
-      <div class="col-sm-3 col-md-3 lang"><a class="lang-link"href="languages/csharp.html">C#</a></div>
+      <div class="col-sm-3 lang"><a class="lang-link"href="languages/cpp.html">C++</a></div>
+      <div class="col-sm-3 lang"><a class="lang-link"href="languages/java.html">Java</a></div>
+      <div class="col-sm-3 lang"><a class="lang-link"href="languages/ruby.html">Ruby</a></div>
+      <div class="col-sm-3 lang"><a class="lang-link"href="languages/csharp.html">C#</a></div>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid container-lang">
     <div class="row">
-      <div class="col-sm-4 col-md-4 lang"><a class="lang-link"href="languages/c.html">C</a></div>
-      <div class="col-sm-4 col-md-4 lang"><a class="lang-link"href="languages/r.html">R</a></div>
-      <div class="col-sm-4 col-md-4 lang"><a class="lang-link"href="languages/php.html">PHP</a></div>
+      <div class="col-sm-4 lang"><a class="lang-link"href="languages/c.html">C</a></div>
+      <div class="col-sm-4 lang"><a class="lang-link"href="languages/r.html">R</a></div>
+      <div class="col-sm-4 lang"><a class="lang-link"href="languages/php.html">PHP</a></div>
     </div>
   </div>
 </section>
@@ -263,7 +263,7 @@
 <section id="about-project">
   <!-- About Project -->
 
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="section-heading">O projekcie</h1><hr>
@@ -271,7 +271,7 @@
             </div>
         </div>
       </div>
-        <div class="container">
+        <div class="container-fluid">
         <div class="row">
             <div class="col-sm-4">
                 <div class="team-member">
@@ -319,14 +319,14 @@
       </div>
 
 <!-- Feedback -->
-  <div class="container">
+  <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
           <p>Masz jakieś uwagi czy zastrzeżenia? A może masz sugestię, którą chciałbyś się z nami podzielić? Czekamy na twoją opinię, która na pewno zmotywuje nas do dalszej pracy!</p>
         </div>
       </div>
     </div>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-sm-4">
               <h3>Napisz do nas! </h3>

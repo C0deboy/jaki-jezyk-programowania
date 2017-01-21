@@ -172,8 +172,6 @@ header .lets-go:hover {
 
 /* Terminal Section */
 
-
-
 .terminal {
   font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
   /*font-size: 22px;*/
@@ -183,14 +181,6 @@ header .lets-go:hover {
   width: 100%;
   height: 100%;
 }
-
-
-@media (max-width: 375px) {
-  .screen {
-    min-height: 200px;
-  }
-}
-
 
 .terminal-window .terminal-header {
   background: #E0E8F0;
@@ -219,6 +209,30 @@ header .lets-go:hover {
   background: #E75448;
 }
 
+@media (max-width: 375px) {
+  .screen {
+    min-height: 240px;
+  }
+}
+
+@media (min-width: 2160px) {
+  .terminal {
+    font-size: calc( 35px + (50 - 35) * ( (100vw - 2160px) / ( 4096 - 2160) ));
+  }
+  .laptop {
+    height: calc(33vh + 260px);
+  }
+  .screen {
+      height: calc(18vh + 260px);
+      border: 20px solid #e8ebf0;
+  }
+  .keyboard{
+   border-bottom: 200px solid #e8ebf0;
+  }
+  .terminal-window .terminal-header {
+    height: 40px;
+  }
+}
 
 /* Terminal Highliting */
 
@@ -305,6 +319,11 @@ div.terminal .number-highlighter { color: #ae81ff } /* Number */
   font-size: 2em;
 }
 
+.container-lang {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 @media (min-width: 768px) {
   .lang {
     padding: 2%;
@@ -375,6 +394,7 @@ div.terminal .number-highlighter { color: #ae81ff } /* Number */
   margin-bottom: 0;
   text-transform: none;
   color: black;
+  white-space: nowrap;
 }
 
 .team-member a {

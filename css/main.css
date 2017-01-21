@@ -33,9 +33,10 @@ html, body {
 
 
 
-@media (min-width: 2560px) {
+@media (min-width: 2160px) {
   html,body {
     font-size: 30px;
+    font-size: calc( 35px + (50 - 35) * ( (100vw - 2160px) / ( 4096 - 2160) ));
   }
   .navbar-custom {
     font-size: 1.2em;
@@ -54,6 +55,22 @@ hr {
   border-color: #AA3939;
   border-width: 3px;
   width: 40%;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.35em;
+}
+
+h4 {
+  font-size: 1.08em;
 }
 
 .text-muted {
