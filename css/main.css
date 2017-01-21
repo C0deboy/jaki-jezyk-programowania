@@ -9,6 +9,28 @@ html, body {
     height: 100%;
 }
 
+.canary-version-alert {
+  position: fixed;
+  width: 100%;
+  margin-top: 50px;
+  font-size: 0.7em;
+  z-index: 5;
+  background-color: #AA3939;
+  color: white;
+  padding: 5px;
+}
+
+.canary-version-alert p{
+  margin-bottom: 0px;
+}
+.canary-version-alert i {
+  float: right;
+  padding: 10px;
+}
+.canary-version-alert i:hover {
+  cursor: pointer;
+}
+
 
 
 @media (min-width: 2560px) {
@@ -41,6 +63,7 @@ hr {
 /* navbar */
 .navbar-custom {
   z-index: 3;
+  font-size: 0.77em;
 }
 .navbar-custom .navbar-brand {
   font-weight: 800;
@@ -49,11 +72,9 @@ hr {
   color: #777777;
   font-weight: 800;
   text-transform: uppercase;
-  font-size: 0.77em;
 }
 .navbar-custom .nav li a {
   text-transform: uppercase;
-  font-size: 0.77em;
   font-weight: 800;
   letter-spacing: 1px;
 }

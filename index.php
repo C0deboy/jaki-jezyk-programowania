@@ -22,6 +22,7 @@
 </head>
 
 <body>
+<div class="canary-version-alert"> <i class="fa fa-times fa-3x close-alert" aria-hidden="true"></i><p>Projekt jest w fazie rozwoju. Cały czas pracujemy nad ulepszaniem strony i treści. Zachęcamy do zgłaszania błędów, nie aktualnych/niepoprawnych informacji czy sugestii mających na celu poprawę jakości strony. Dokładamy wszelkich starań, aby na stronie znajdowały się sprawdzone, rzetelne informacje, jednak nie wszystko jesteśmy w stanie zweryfikowąć, dlatego oddajemy projekt w fazie beta w wasze ręce i liczymy na odzew!</p></div>
 <!-- Navigation Bar -->
 <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
       <div class="container-fluid">

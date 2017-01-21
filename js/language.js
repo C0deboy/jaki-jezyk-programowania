@@ -1,4 +1,7 @@
 $(function(){
+  window.addEventListener("resize", function(){$('.language-logo').height($('.language-logo').width());});
+  $('.language-logo').height($('.language-logo').width());
+
   //**Charts**//
 
   var chartGradeCounter = 0;
@@ -38,6 +41,7 @@ $(function(){
   var strengthColor = "#c96800";
   var careerColor = "#0160ad";
   var futureColor = "#890082";
+  
   /* Java charts */
   chart(3, dificultyColor, '.difficulty-java');
   chart(5, performanceColor, '.performance-java');
@@ -45,5 +49,37 @@ $(function(){
   chart(5, strengthColor, '.strength-java');
   chart(6, careerColor, '.career-java');
   chart(6, futureColor, '.future-java');
+
+  /* c++ charts */
+  chart(6, dificultyColor, '.difficulty-cpp');
+  chart(6, performanceColor, '.performance-cpp');
+  chart(4, popularityColor, '.popularity-cpp');
+  chart(5, strengthColor, '.strength-cpp');
+  chart(4, careerColor, '.career-cpp');
+  chart(5, futureColor, '.future-cpp');
+
+  /* JavaScript charts */
+  chart(2, dificultyColor, '.difficulty-javascript');
+  chart(4, performanceColor, '.performance-javascript');
+  chart(6, popularityColor, '.popularity-javascript');
+  chart(5, strengthColor, '.strength-javascript');
+  chart(6, careerColor, '.career-javascript');
+  chart(6, futureColor, '.future-javascript');
+
+  /* PHP charts */
+  chart(3, dificultyColor, '.difficulty-php');
+  chart(5, performanceColor, '.performance-php');
+  chart(6, popularityColor, '.popularity-php');
+  chart(5, strengthColor, '.strength-php');
+  chart(6, careerColor, '.career-php');
+  chart(6, futureColor, '.future-php');
+
+  /* Python charts */
+  chart(1, dificultyColor, '.difficulty-python');
+  chart(4, performanceColor, '.performance-python');
+  chart(6, popularityColor, '.popularity-python');
+  chart(5, strengthColor, '.strength-python');
+  chart(5, careerColor, '.career-python');
+  chart(5, futureColor, '.future-python');
 
 });
