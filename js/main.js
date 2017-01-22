@@ -66,13 +66,18 @@ $(function(){
     /* Laptop Responsivness*/
 
     function laptop()  {
-      var laptopWidth = $('.laptop').height()*1.2;
-      $('.laptop').css({'max-width':laptopWidth+'px'});
-      var screenHeight = $('.laptop').width()/1.2;
-      $('.screen').css({'max-height':screenHeight+'px'});
+      var screenWidth = $('.screen').width();
+      $('.laptop').css({'height':screenWidth*1.1+'px'});
+      $('.screen').css({'height':screenWidth*0.6+'px'});
+      var keyboardHeight = $('.laptop').height()*0.3;
+      $('.keyboard').css({'border-bottom':keyboardHeight+'px solid #e8ebf0'});
       var keyboardWidth = $('.screen').width()/8.45;
       $('.keyboard').css({'border-left':keyboardWidth+'px solid transparent'});
       $('.keyboard').css({'border-right':keyboardWidth+'px solid transparent'});
+      var keysHeight = $('.keyboard').css("border-bottom-width");
+      $('.keys').css({'height':parseInt(keysHeight)*0.75+'px'});
+      var keysWidth = $('.keyboard').width()/3.5;
+      $('.keys').css({'-webkit-transform': 'perspective('+keysWidth+'px) rotateX(10deg)'});
     }
 
     laptop();

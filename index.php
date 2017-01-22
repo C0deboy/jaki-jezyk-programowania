@@ -7,6 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#4285f4">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#4285f4">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
 
   <title>Jaki najlepszy język programowania dla mnie?</title>
 
@@ -180,7 +186,7 @@
                     <div class="key ctrl-left newrow">Ctrl</div>
                     <div class="key">&hearts;</div>
                     <div class="key">Alt</div>
-                    <div class="key space"></div>
+                    <div class="key space">lolxd</div>
                     <div class="key">Alt</div>
                     <div class="key">&hearts;</div>
                     <div class="key ctrl-right">Ctrl</div>
@@ -192,7 +198,7 @@
                     <div class="touchpad">
                       <div class="mouse"></div>
                       <div class="click newrow"></div>
-                      <div class="click"></div>
+                      <div class="click click-right"></div>
                     </div>
                   </div>
                 </div>
@@ -205,7 +211,7 @@
 
 <!-- How This Website Works Section -->
 <section id="how-works">
-      <div class="container-fluid">
+      <div class="container">
           <div class="row">
               <div class="col-lg-12">
                   <h1 class="section-heading">Jak to działa?</h1>
@@ -229,20 +235,20 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid container-lang">
+  <div class="container">
     <div class="row">
       <div class="col-sm-6 lang"><a class="lang-link"href="languages/obj-c.html">Objective C</a></div>
       <div class="col-sm-6 lang"><a class="lang-link"href="languages/swift.html">Swift</a></div>
     </div>
   </div>
-  <div class="container-fluid container-lang">
+  <div class="container">
     <div class="row">
       <div class="col-sm-4 lang"><a class="lang-link"href="languages/scratch.html">Scratch</a></div>
       <div class="col-sm-4 lang"><a class="lang-link"href="languages/javascript.html">JavaScript</a></div>
       <div class="col-sm-4 lang"><a class="lang-link"href="languages/python.html">Python</a></div>
     </div>
   </div>
-  <div class="container-fluid container-lang">
+  <div class="container">
     <div class="row">
       <div class="col-sm-3 lang"><a class="lang-link"href="languages/cpp.html">C++</a></div>
       <div class="col-sm-3 lang"><a class="lang-link"href="languages/java.html">Java</a></div>
@@ -250,7 +256,7 @@
       <div class="col-sm-3 lang"><a class="lang-link"href="languages/csharp.html">C#</a></div>
     </div>
   </div>
-  <div class="container-fluid container-lang">
+  <div class="container">
     <div class="row">
       <div class="col-sm-4 lang"><a class="lang-link"href="languages/c.html">C</a></div>
       <div class="col-sm-4 lang"><a class="lang-link"href="languages/r.html">R</a></div>
@@ -263,7 +269,7 @@
 <section id="about-project">
   <!-- About Project -->
 
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="section-heading">O projekcie</h1><hr>
@@ -271,7 +277,7 @@
             </div>
         </div>
       </div>
-        <div class="container-fluid">
+        <div class="container">
         <div class="row">
             <div class="col-sm-4">
                 <div class="team-member">
@@ -319,14 +325,14 @@
       </div>
 
 <!-- Feedback -->
-  <div class="container-fluid">
+  <div class="container">
       <div class="row">
         <div class="col-md-12">
           <p>Masz jakieś uwagi czy zastrzeżenia? A może masz sugestię, którą chciałbyś się z nami podzielić? Czekamy na twoją opinię, która na pewno zmotywuje nas do dalszej pracy!</p>
         </div>
       </div>
     </div>
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
           <div class="col-sm-4">
               <h3>Napisz do nas! </h3>

@@ -31,21 +31,6 @@ html, body {
   cursor: pointer;
 }
 
-
-
-@media (min-width: 2160px) {
-  html,body {
-    font-size: 30px;
-    font-size: calc( 35px + (50 - 35) * ( (100vw - 2160px) / ( 4096 - 2160) ));
-  }
-  .navbar-custom {
-    font-size: 1.2em;
-  }
-  .page-scroll {
-    padding: 20px !important;
-  }
-}
-
 p {
   line-height: 1.5;
   margin-bottom: 20px;
@@ -94,6 +79,22 @@ h4 {
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 1px;
+}
+
+@media (min-width: 2160px) {
+  html,body {
+    font-size: 30px;
+    font-size: calc( 35px + (50 - 35) * ( (100vw - 2160px) / ( 4096 - 2160) ));
+  }
+  .navbar-custom {
+    font-size: 1em;
+  }
+  .page-scroll {
+    padding: 20px !important;
+  }
+  .container {
+    width: 65vw;
+  }
 }
 
 /* Sections */

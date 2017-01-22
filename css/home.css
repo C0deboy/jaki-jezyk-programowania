@@ -15,13 +15,13 @@ header .container-fluid {
 }
 
 header .lets-go {
-    margin-top: 100px;
-    font-size: 3em;
-    display: none;
+  margin: auto 0 auto 0;
+  font-size: 3em;
+  display: none;
 }
 
 header .lets-go:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -64,8 +64,8 @@ header .lets-go:hover {
 
 .screen {
   width: 90%;
+  min-height: 270px;
   margin-left: 5%;
-  height: 310px;
   background: #30353A;
   border: 12px solid #e8ebf0;
   border-radius: 10px 10px 0 0;
@@ -81,7 +81,7 @@ header .lets-go:hover {
  height: 0;
  width: 110%;
  margin-left: -5%;
- border-bottom: 170px solid #e8ebf0;
+
  border-left: 3.7vw solid transparent;
  border-right: 3.7vw solid transparent;
 }
@@ -90,16 +90,16 @@ header .lets-go:hover {
   width: 100%;
   margin-left: 2%;
   float: left;
-  -webkit-transform: perspective(200px) rotateX(10deg);
+  -webkit-transform: perspective(150px) rotateX(10deg);
 }
 
 .key {
   width: 4.7%;
-  height:16px;
+  height: 13%;
   background-color: #333;
   text-align: center;
-  line-height:13px;
-  border-radius:2px;
+  line-height: 220%;
+  border-radius: 2px;
   float:left;
   margin: 0.3% 0 0 0.6%;
   font-size: 0.3em;
@@ -120,7 +120,7 @@ header .lets-go:hover {
     background-color: #4d4d4d;
 }
 
-.function{ width:3.95%; height: 14px}
+.function{ width:3.95%; height: 12%}
 .dual { line-height: 6px; }
 .newrow {clear:both;}
 .backspace {width:5%;}
@@ -132,30 +132,36 @@ header .lets-go:hover {
 .shift-right{width: 7.5%;}
 .ctrl-left{width: 5%;  }
 .ctrl-right{width: 5%; }
-.space{width:31%;}
-.enter2{transform-origin: top; transform: scale(1,2); border-bottom: solid 2px black; font-size: 3px; height: 17.25px}
-.plus{transform-origin: top; transform: scale(1,2); border-bottom: solid 2px black; font-size: 3px; margin: 0.5% 0 0 0.6%;}
+.space{width:31%; color: #333;}
+.enter2{transform-origin: top; transform: scale(1,2.1); border-bottom: solid 2px black; font-size: 3px; }
+.plus{transform-origin: top; transform: scale(1,2.1); border-bottom: solid 2px black; font-size: 3px; }
 
 .touchpad {
-  width: 55%;
-  margin: 0 auto;
+  width: 22.5%;
+  margin-left: 30%;
+  height: 30%;
+  float: left;
+
 }
 
 .mouse{
   background-color: #333;
-  width: 41%;
-  height: 40px;
+  width: 100%;
+  height: 80%;
   float: left;
   margin-top: 5px;
   border: solid 1px black;
 }
 .click{
   background-color: #333;
-  width: 20.3%;
-  height: 10px;
-  margin: 1px 1px 0 0;
+  width: 49.5%;
+  height: 18%;
+  margin: 1% 1% 0 0;
   float: left;
   border: solid 1px black;
+}
+.click-right {
+  margin: 1% 0 0 0;
 }
 .board {
   width: 110%;
@@ -174,7 +180,7 @@ header .lets-go:hover {
 
 .terminal {
   font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
-  /*font-size: 22px;*/
+  /*font-size: 17px;*/
   font-size: calc( 13px + (22 - 13) * ( (100vw - 320px) / ( 1920 - 320) ));
   text-align: left;
   padding: 10px;
@@ -185,7 +191,7 @@ header .lets-go:hover {
 .terminal-window .terminal-header {
   background: #E0E8F0;
   margin-top: -1px;
-  height: 30px;
+  height: 20px;
   padding-left: 10px;
 }
 
@@ -208,27 +214,25 @@ header .lets-go:hover {
 .terminal-window .terminal-header .button.red {
   background: #E75448;
 }
-
-@media (max-width: 375px) {
-  .screen {
-    min-height: 240px;
+@media (max-width: 990px) {
+  .laptop {
+    max-width: 550px;
   }
 }
 
 @media (min-width: 2160px) {
   .terminal {
-    font-size: calc( 35px + (50 - 35) * ( (100vw - 2160px) / ( 4096 - 2160) ));
+    font-size: calc( 35px + (47 - 35) * ( (100vw - 2160px) / ( 4096 - 2160) ));
   }
-  .laptop {
-    height: calc(33vh + 260px);
-  }
+
   .screen {
-      height: calc(18vh + 260px);
       border: 20px solid #e8ebf0;
   }
+
   .keyboard{
    border-bottom: 200px solid #e8ebf0;
   }
+
   .terminal-window .terminal-header {
     height: 40px;
   }
@@ -394,7 +398,6 @@ div.terminal .number-highlighter { color: #ae81ff } /* Number */
   margin-bottom: 0;
   text-transform: none;
   color: black;
-  white-space: nowrap;
 }
 
 .team-member a {
