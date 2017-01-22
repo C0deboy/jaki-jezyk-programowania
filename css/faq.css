@@ -13,7 +13,7 @@ html, body {
 }
 
 .answer {
-  background-color: #aaaaaa;
+  background-color: #0d2d49;
   display: none;
   padding: 4%;
   border-top: dotted 3px #5C6263;
@@ -30,6 +30,10 @@ html, body {
   float: left;
   width: 100%;
   position: relative;
+}
+
+.answer p {
+  margin-bottom: 0px;
 }
 
 .question:hover {

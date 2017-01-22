@@ -82,4 +82,36 @@ $(function(){
   chart(5, careerColor, '.career-python');
   chart(5, futureColor, '.future-python');
 
+  /* C charts */
+  chart(3, dificultyColor, '.difficulty-c');
+  chart(6, performanceColor, '.performance-c');
+  chart(6, popularityColor, '.popularity-c');
+  chart(5, strengthColor, '.strength-c');
+  chart(5, careerColor, '.career-c');
+  chart(5, futureColor, '.future-c');
+
+  /* Ruby charts */
+  chart(1, dificultyColor, '.difficulty-ruby');
+  chart(3, performanceColor, '.performance-ruby');
+  chart(6, popularityColor, '.popularity-ruby');
+  chart(5, strengthColor, '.strength-ruby');
+  chart(6, careerColor, '.career-ruby');
+  chart(5, futureColor, '.future-ruby');
+
+  /* R charts */
+  chart(5, dificultyColor, '.difficulty-r');
+  chart(2, performanceColor, '.performance-r');
+  chart(4, popularityColor, '.popularity-r');
+  chart(1, strengthColor, '.strength-r');
+  chart(5, careerColor, '.career-r');
+  chart(5, futureColor, '.future-r');
+
+  /* Swift charts */
+  chart(1, dificultyColor, '.difficulty-swift');
+  chart(5, performanceColor, '.performance-swift');
+  chart(4, popularityColor, '.popularity-swift');
+  chart(3, strengthColor, '.strength-swift');
+  chart(4, careerColor, '.career-swift');
+  chart(6, futureColor, '.future-swift');
+
 });
