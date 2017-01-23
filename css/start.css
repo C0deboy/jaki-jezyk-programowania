@@ -17,6 +17,7 @@ html, body {
 .back {
   visibility: hidden;
   top: 60px;
+  left: 5px;
   position: absolute;
   cursor: pointer;
 }
@@ -28,17 +29,29 @@ html, body {
 
 
 .questions img {
-  width: 70px;
-  height: 70px;
+  width: 200px;
+  height: 200px;
   cursor: pointer;
   margin-bottom: 5px;
+}
+
+@media (max-width: 768px){
+  .questions img {
+  width: 80px;
+  height: 80px;
+  }
+}
+
+.ans {
+  padding: 0px 30px 0px 30px;
+  text-align: center;
 }
 
 .ans p{
   background-color: #337ab7;
   border-radius: 20px;
   color: white;
-  padding: 5% 0 5% 0;
+  padding: 5px 10px 5px 10px;
 }
 
 .ans p:hover{

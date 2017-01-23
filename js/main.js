@@ -14,7 +14,7 @@ var languagesExamples = [
 
 $(function(){
     /*Canary version info*/
-    $('.close-alert').on('click', function(){$('.canary-version-alert').hide();});
+    $('.close-alert').on('click', function(){$('.canary-version-alert').fadeOut();});
 
     /* Typed function on terminal */
     $(".element").typed({
