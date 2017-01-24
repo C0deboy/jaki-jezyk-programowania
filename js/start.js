@@ -41,8 +41,8 @@ games[1] = {answer: 'odpB', nextQuestion: 9, actualQuestion: 8};
 games[2] = {answer: 'odpA', nextQuestion: '/languages/c#.html', actualQuestion: 9};
 games[3] = {answer: 'odpB', nextQuestion: '/languages/c++.html', actualQuestion: 9};
 games[4] = {answer: 'odpC', nextQuestion: 10, actualQuestion: 9};
-games[5] = {answer: 'odpA', nextQuestion: '/languages/c++.html', actualQuestion: 10};
-games[6] = {answer: 'odpB', nextQuestion: '/languages/c#.html', actualQuestion: 10};
+games[5] = {answer: 'odpA', nextQuestion: '/languages/c#.html', actualQuestion: 10};
+games[6] = {answer: 'odpB', nextQuestion: '/languages/c++.html', actualQuestion: 10};
 
 var corp = new Array(7);
 corp[0] = {answer: 'odpB', nextQuestion: 4, actualQuestion: 2};
@@ -254,5 +254,17 @@ var forKids = {answer: 'odpC', nextQuestion: '/languages/scratch.html', actualQu
       $('.back').css("visibility", "hidden");
     }
   });
+
+  $('.ans img, .ans p').hover(
+  function() {
+    $(this).parent('.ans').children('img').addClass('jumpImg');
+    $(this).parent('.ans').children('p').css('background-color', '#4488f4');
+    $(this).parent('.ans').children('.shade').addClass('shadeImg');
+  }, function() {
+    $(this).parent('.ans').children('img').removeClass('jumpImg');
+    $(this).parent('.ans').children('p').css('background-color', '#337ab7');
+    $(this).parent('.ans').children('.shade').removeClass('shadeImg');
+  }
+);
 
 })

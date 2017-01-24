@@ -172,8 +172,15 @@ section {
 
 .context-text img {
   float: left;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
+}
+
+@media (min-width: 768px){
+  .context-text img {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 footer {
