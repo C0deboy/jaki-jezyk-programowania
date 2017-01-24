@@ -25,7 +25,7 @@
 <nav class="navbar navbar-default navbar-custom">
     <div class="container-fluid">
         <div class="navbar-left">
-          <a class="navbar-brand page-scroll" href="../index.php">[LOGO] <i class="fa fa-home" aria-hidden="true"></i></a>
+          <a class="navbar-brand page-scroll" href="../index.php"><img src="../img/logo.png" alt="logo"></a>
         </div>
     </div>
 </nav>
@@ -152,6 +152,20 @@
 
 <!-- MainJS -->
 <script src="../js/language.js"></script>
+
+<script>
+
+$(function() {
+  /* Java charts */
+  chart(3, dificultyColor, '.difficulty-java');
+  chart(5, performanceColor, '.performance-java');
+  chart(6, popularityColor, '.popularity-java');
+  chart(5, strengthColor, '.strength-java');
+  chart(6, careerColor, '.career-java');
+  chart(6, futureColor, '.future-java');
+});
+
+</script>
 
 </body>
 </html>

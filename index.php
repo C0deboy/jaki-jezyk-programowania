@@ -36,7 +36,7 @@
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                   <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
               </button>
-              <a class="navbar-brand page-scroll" href="index.php">[LOGO]</a>
+              <a class="navbar-brand page-scroll" href="index.php"><img src="img/logo.png" alt="logo"></a>
           </div>
           <div class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
@@ -237,7 +237,7 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 lang"><a class="lang-link"href="languages/obj-c.html">Objective C</a></div>
+      <div class="col-sm-6 lang"><a class="lang-link"href="languages/assembly.html">Assembly</a></div>
       <div class="col-sm-6 lang"><a class="lang-link"href="languages/swift.html">Swift</a></div>
     </div>
   </div>

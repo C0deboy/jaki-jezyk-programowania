@@ -67,8 +67,13 @@ h4 {
   z-index: 3;
   font-size: 0.77em;
 }
+
 .navbar-custom .navbar-brand {
-  font-weight: 800;
+  padding: 0px;
+}
+.navbar-custom .navbar-brand  > img{
+  height: 100%;
+  width: auto;
 }
 .navbar-custom .navbar-header .navbar-toggle {
   color: #777777;

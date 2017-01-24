@@ -25,7 +25,7 @@
 <nav class="navbar navbar-default navbar-custom">
     <div class="container-fluid">
         <div class="navbar-left">
-          <a class="navbar-brand page-scroll" href="../index.php">[LOGO] <i class="fa fa-home" aria-hidden="true"></i></a>
+          <a class="navbar-brand page-scroll" href="../index.php"><img src="../img/logo.png" alt="logo"></a>
         </div>
     </div>
 </nav>
@@ -73,7 +73,7 @@
         Windows NT, XP, Vista, 7
         Symbian OS
 
-        Do rozwoju programów język C++ używany jest w największych światowych korporacjach m.in: Adobe, Facebook, Amazon, Ericsson, HP, IBM, Intel. Wyszukiwarka Google została także napisana w tym języku, aby zapewnić prędkość jego działania przy milionie zapytań na sekundę. 
+        Do rozwoju programów język C++ używany jest w największych światowych korporacjach m.in: Adobe, Facebook, Amazon, Ericsson, HP, IBM, Intel. Wyszukiwarka Google została także napisana w tym języku, aby zapewnić prędkość jego działania przy milionie zapytań na sekundę.
 
         Jako bardzo szybki język C++ bardzo często staje się wyborem wśród producentów gier. Tytuły jak Doom 3, World of Warcraft oraz Counter Strike zostały napisane właśnie w tym języku. Twórcy Wiedźmina wybrali gotowy już silnik Aurora, wykorzystany wcześniej w grze „Neverwinter Nights”, a został także napisany w tym języku.</p>
       </div>
@@ -104,7 +104,7 @@
       </div>
       <div class="context-text">
       <img src="../img/community.png" alt="Społeczność">
-        <p>C++ zdecydowanie przoduje na StackOverflow jako z największą ilością odpowiedzi na pytania, których jest ponad 492,871 z 83.6% średnią odpowiedzi. Jest on także 6 najbardziej popularnym językiem w StackOverflow, z liczbą 69 tysięcy użytkowników. Mimo tego programiści C++ wydają się bardziej skryci, zwłascza na stronie MeetUp.com, gdzie zarejestrowanych jest 48,900 zainteresowancyh z liczbą 168 spotkań. 
+        <p>C++ zdecydowanie przoduje na StackOverflow jako z największą ilością odpowiedzi na pytania, których jest ponad 492,871 z 83.6% średnią odpowiedzi. Jest on także 6 najbardziej popularnym językiem w StackOverflow, z liczbą 69 tysięcy użytkowników. Mimo tego programiści C++ wydają się bardziej skryci, zwłascza na stronie MeetUp.com, gdzie zarejestrowanych jest 48,900 zainteresowancyh z liczbą 168 spotkań.
 
         Na GitHubie jest to natomiast 6 najbardziej popularny język, jako że jest on praktycznie zawsze wykorzystywany do tworzenia dużych, oraz złożonych gier AAA, oraz do programów graficznych. </p>
       </div>
@@ -116,7 +116,7 @@
       </div>
       <div class="context-text">
         <img src="../img/money.png" alt="Zarobki">
-        <p>Co drugi programista c/c++ otrzymuje pensję od 4 576 PLN do 9 100 PLN. 25% najgorzej wynagradzanych programistów c/c++ zarabia poniżej 4 576 PLN brutto. Na zarobki powyżej 9 100 PLN brutto może liczyć grupa 25% najlepiej opłacanych programistów c/c++. 
+        <p>Co drugi programista c/c++ otrzymuje pensję od 4 576 PLN do 9 100 PLN. 25% najgorzej wynagradzanych programistów c/c++ zarabia poniżej 4 576 PLN brutto. Na zarobki powyżej 9 100 PLN brutto może liczyć grupa 25% najlepiej opłacanych programistów c/c++.
 
         //Polska 6 500 PLN  Mediana miesięczna
         //USA $6696 Mediana miesięczna</p>
@@ -151,6 +151,20 @@
 
 <!-- MainJS -->
 <script src="../js/language.js"></script>
+
+<script>
+
+$(function() {
+  /* c++ charts */
+  chart(6, dificultyColor, '.difficulty-cpp');
+  chart(6, performanceColor, '.performance-cpp');
+  chart(4, popularityColor, '.popularity-cpp');
+  chart(5, strengthColor, '.strength-cpp');
+  chart(4, careerColor, '.career-cpp');
+  chart(5, futureColor, '.future-cpp');
+});
+
+</script>
 
 </body>
 </html>

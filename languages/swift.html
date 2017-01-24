@@ -25,7 +25,7 @@
 <nav class="navbar navbar-default navbar-custom">
     <div class="container-fluid">
         <div class="navbar-left">
-          <a class="navbar-brand page-scroll" href="../index.php">[LOGO] <i class="fa fa-home" aria-hidden="true"></i></a>
+          <a class="navbar-brand page-scroll" href="../index.php"><img src="../img/logo.png" alt="logo"></a>
         </div>
     </div>
 </nav>
@@ -136,6 +136,21 @@
 
 <!-- MainJS -->
 <script src="../js/language.js"></script>
+
+<script>
+
+$(function() {
+  /* Swift charts */
+  chart(1, dificultyColor, '.difficulty-swift');
+  chart(5, performanceColor, '.performance-swift');
+  chart(4, popularityColor, '.popularity-swift');
+  chart(3, strengthColor, '.strength-swift');
+  chart(4, careerColor, '.career-swift');
+  chart(6, futureColor, '.future-swift');
+
+});
+
+</script>
 
 </body>
 </html>

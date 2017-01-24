@@ -25,7 +25,7 @@
 <nav class="navbar navbar-default navbar-custom">
     <div class="container-fluid">
         <div class="navbar-left">
-          <a class="navbar-brand page-scroll" href="../index.php">[LOGO] <i class="fa fa-home" aria-hidden="true"></i></a>
+          <a class="navbar-brand page-scroll" href="../index.php"><img src="../img/logo.png" alt="logo"></a>
         </div>
     </div>
 </nav>
@@ -169,6 +169,20 @@
 
 <!-- MainJS -->
 <script src="../js/language.js"></script>
+
+<script>
+
+$(function() {
+  /* Ruby charts */
+  chart(1, dificultyColor, '.difficulty-ruby');
+  chart(3, performanceColor, '.performance-ruby');
+  chart(6, popularityColor, '.popularity-ruby');
+  chart(5, strengthColor, '.strength-ruby');
+  chart(6, careerColor, '.career-ruby');
+  chart(5, futureColor, '.future-ruby');
+});
+
+</script>
 
 </body>
 </html>

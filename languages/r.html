@@ -25,7 +25,7 @@
 <nav class="navbar navbar-default navbar-custom">
     <div class="container-fluid">
         <div class="navbar-left">
-          <a class="navbar-brand page-scroll" href="../index.php">[LOGO] <i class="fa fa-home" aria-hidden="true"></i></a>
+          <a class="navbar-brand page-scroll" href="../index.php"><img src="../img/logo.png" alt="logo"></a>
         </div>
     </div>
 </nav>
@@ -141,6 +141,20 @@ plot(histX, col="red")</pre></code>
 
 <!-- MainJS -->
 <script src="../js/language.js"></script>
+
+<script>
+
+$(function() {
+  /* R charts */
+  chart(5, dificultyColor, '.difficulty-r');
+  chart(2, performanceColor, '.performance-r');
+  chart(4, popularityColor, '.popularity-r');
+  chart(1, strengthColor, '.strength-r');
+  chart(5, careerColor, '.career-r');
+  chart(5, futureColor, '.future-r');
+});
+
+</script>
 
 </body>
 </html>

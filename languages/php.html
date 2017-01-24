@@ -25,7 +25,7 @@
 <nav class="navbar navbar-default navbar-custom">
     <div class="container-fluid">
         <div class="navbar-left">
-          <a class="navbar-brand page-scroll" href="../index.php">[LOGO] <i class="fa fa-home" aria-hidden="true"></i></a>
+          <a class="navbar-brand page-scroll" href="../index.php"><img src="../img/logo.png" alt="logo"></a>
         </div>
     </div>
 </nav>
@@ -139,6 +139,20 @@ Popularne strony/firmy, które wykorzystują PHP to WordPress, Wikipedia, Facebo
 
 <!-- MainJS -->
 <script src="../js/language.js"></script>
+
+<script>
+
+$(function() {
+  /* PHP charts */
+  chart(3, dificultyColor, '.difficulty-php');
+  chart(5, performanceColor, '.performance-php');
+  chart(6, popularityColor, '.popularity-php');
+  chart(5, strengthColor, '.strength-php');
+  chart(6, careerColor, '.career-php');
+  chart(6, futureColor, '.future-php');
+});
+
+</script>
 
 </body>
 </html>
