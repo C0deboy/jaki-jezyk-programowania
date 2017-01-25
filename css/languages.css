@@ -9,9 +9,9 @@ html, body {
   html, body {
     font-size: 14px;
   }
-  h1 {
+  /*h1 {
     padding: 10px;
-  }
+  }*/
 }
 
 .navbar-custom {
@@ -98,9 +98,9 @@ section {
   color: #cdd2d8;
 }
 
-.content-header h1 {
+.content-header  {
   padding-top: 20px;
-}
+} 
 
 .lang-starter {
   padding: 1%;
@@ -170,22 +170,20 @@ section {
   }
 }
 
-.context-text img {
-  float: left;
-  width: 90px;
-  height: 90px;
-}
-
-@media (min-width: 768px){
-  .context-text img {
-    width: 150px;
-    height: 150px;
+@media (max-width: 768px) {
+  .charts p {
+    min-width: 30vw;
   }
 }
+
+.content-header img {
+  width: 100px;
+  height:  100px;
+}
+
 
 footer {
   background-color: #eeeeee;
   color: black;
   width:100%;
 }
-

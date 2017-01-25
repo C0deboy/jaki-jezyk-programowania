@@ -69,11 +69,12 @@ h4 {
 }
 
 .navbar-custom .navbar-brand {
-  padding: 0px;
+  font-weight: 800;
 }
-.navbar-custom .navbar-brand  > img{
-  height: 100%;
-  width: auto;
+.navbar-custom .navbar-header .navbar-toggle {
+  color: #777777;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 .navbar-custom .navbar-header .navbar-toggle {
   color: #777777;

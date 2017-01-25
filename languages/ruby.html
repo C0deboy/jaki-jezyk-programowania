@@ -8,7 +8,14 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Ruby</title>
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#4285f4">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#4285f4">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
+
+  <title>Język Programowania Ruby</title>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="../css/bootstrap.css">
@@ -25,7 +32,7 @@
 <nav class="navbar navbar-default navbar-custom">
     <div class="container-fluid">
         <div class="navbar-left">
-          <a class="navbar-brand page-scroll" href="../index.php"><img src="../img/logo.png" alt="logo"></a>
+          <a class="navbar-brand page-scroll" href="../index.php">[LOGO] <i class="fa fa-home" aria-hidden="true"></i></a>
         </div>
     </div>
 </nav>
@@ -77,33 +84,7 @@
       </div>
       <div class="context-text">
         <img src="../img/complication.png" alt="">
-        <p>Ruby jest jednym z najprostszych języków. Posiada bardzo intuicyjną składnię, której nauka przychodzi bardzo szybko, nawet początkującym adeptom kodu. Porównajmy wypisanie "Hello World" przy użyciu kilku języków:</p>
-        <code><pre>
-          Ruby
-          puts "Hello World"
-
-          C++
-          #include <stdio> using namespace std int main { cout << "Hello, world!" << endl; return 0; }
-
-          Java
-          public class HelloWorld { public static void main(String [] args) { System.out.println("Hello World!"); }}
-
-          Assembly
-          section .data
-             msg     db      "Hello, world!",0xa
-             len     equ     $ - msg
-           section .text
-             global _start
-           _start:
-             mov     edx,len
-             mov     ecx,msg
-             mov     ebx,1
-             mov     eax,4
-             int     0x80
-           mov ebx,0
-             mov     eax,1
-             int     0x80
-        </pre></code>
+        <p>Ruby jest jednym z najprostszych języków. Posiada bardzo intuicyjną składnię, której nauka przychodzi bardzo szybko, nawet początkującym adeptom kodu, podobnie do Pythona</p>
         <p>Od razu widać, który język jest najprostszy. Ruby, jako dynamicznie pisany język posiada wiele możliwości na napisanie tego samego, a na dodatek czytanie go jest praktycznie identyczne z czytaniem instrukcji po angielsku. </p>
       </div>
     </div>
@@ -125,7 +106,7 @@
       </div>
       <div class="context-text">
       <img src="../img/popularity.png" alt="">
-        <p>W sieci dostępnych jest wiele stron zrzeszających zwolenników Ruby, gdzie doświadczeni programiści chętnie udzielają pomocy i porad nowym użytkownikom, co pozwala na często, szybkie rozwiązanie danego problemu. Ruby posiada ósmą społeczność na StackOverflow, z 175,281 pytaniami. Mimo że nie jest to dużo, społeczność ta jest druga pod względem częstotliwości odpowiedzi na pytania -  opisując problem masz bardzo dużą szansę na dostanie przydatnej odpowiedzi. Natomiast na stronie Meetup.com Ruby obecnie posiada 603,759 na całym świecie, z liczbą ponad 910 zarejestrowanych spotkań, zdecydowanie programista szukający grupy osób do nauki znajdzie coś dla siebie. </p>
+        <p>W sieci dostępnych jest wiele stron zrzeszających zwolenników Ruby, gdzie doświadczeni programiści chętnie udzielają pomocy i porad nowym użytkownikom, co pozwala na często, szybkie rozwiązanie danego problemu. Ruby posiada ósmą społeczność na StackOverflow, z 175,281 pytaniami. Mimo że nie jest to dużo, społeczność ta jest druga pod względem częstotliwości odpowiedzi na pytania -  opisując problem masz bardzo dużą szansę na dostanie przydatnej odpowiedzi. Natomiast na stronie Meetup.com Ruby obecnie posiada 603,759 na całym świecie, z liczbą ponad 910 zarejestrowanych spotkań, zdecydowanie programista szukający grupy osób do nauki znajdzie coś dla siebie. Dodatkowo jezyk ten jest w pierwszej 10 najbardziej popularnych języków programowania według rankingu TIOBE.  </p>
         <p>Na Githubie jest to 3 najczęściej tagowany język. Ogromna ilość różnych projektów, pozwala Ci na użycie ich jako "gemów" w swoim projekcie, jak i różnych narzędzi ułatwiających tworzenie aplikacji.</p>
       </div>
     </div>
@@ -136,11 +117,7 @@
       </div>
       <div class="context-text">
         <img src="../img/career.png" alt="">
-        <p>Miesięczne wynagrodzenie całkowite (mediana*) na tym stanowisku wynosi 6 656 PLN brutto. Co drugi programista ruby otrzymuje pensję od 4 333 PLN do 10 000 PLN. 25% najgorzej wynagradzanych programistów ruby zarabia poniżej 4 333 PLN brutto. Na zarobki powyżej 10 000 PLN brutto może liczyć grupa 25% najlepiej opłacanych programistów ruby. Za taką liczbę średniego wynagrodzenia możesz kupić chociażby 81 sekund lotu w kosmos lub 0.22 wycieczki dookoła świata.
-
-//USA Ruby on Rails 6731.5$
-//USA Ruby 6252.5$</p>
-
+        <p>Wdług wynagrodzenie.pl miesięczne wynagrodzenie na tym stanowisku wynosi 6 656 PLN brutto. 25% najgorzej wynagradzanych programistów ruby zarabia poniżej 4 333 PLN brutto, natomiast na zarobki powyżej 10 000 PLN brutto może liczyć grupa 25% najlepiej opłacanych programistów. Zarobki w Anglii, według Payscale.com oscylują w granicach 2828.5£ oraz 2750£ dla programistów Ruby on Rails. </p>
       </div>
     </div>
 
@@ -150,7 +127,7 @@
       </div>
       <div class="context-text">
         <img src="../img/future.png" alt="">
-        <p>Przez powstanie Node.js popularność platformy Ruby on Rails delikatnie spadł, jednak spowrotem się podnosi przez sposób w jakim się w nim programuje, oraz łatwość dla programisty co jest idealnym rozwiązaniem dla małych aplikacji. Ruby jest 10 najpopularniejszym językiem według rankingu TIOBE. Natomiast prace nad tym językiem są cały czas wykonywane, twórcy wypuszczają częstą ilość aktualizacji, rozwiązujących wiele wcześniejszych problemów.</p>
+        <p>Przez powstanie Node.js popularność platformy Ruby on Rails delikatnie spadł, jednak spowrotem się podnosi przez sposób w jakim się w nim programuje, oraz łatwość dla programisty co jest idealnym rozwiązaniem dla małych aplikacji. Natomiast prace nad tym językiem są cały czas wykonywane, twórcy wypuszczają częstą ilość aktualizacji, rozwiązujących wiele wcześniejszych problemów.</p>
       </div>
     </div>
   </div>

@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Chcesz zacząć przygodę z programowaniem, a nie wiesz jaki język programowania wybrać? Jaki język programowania pomoże ci wybrać ten, który najbardziej pasuje do twoich oczekiwań!">
+
   <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#4285f4">
   <!-- Windows Phone -->
@@ -36,7 +36,7 @@
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                   <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
               </button>
-              <a class="navbar-brand page-scroll" href="index.php"><img src="img/logo.png" alt="logo"></a>
+              <a class="navbar-brand page-scroll" href="index.php">[LOGO]</a>
           </div>
           <div class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
@@ -60,6 +60,7 @@
       </div>
 </nav>
 
+<!-- Header -->
 <!-- Header -->
 <header id="intro">
     <div class="container-fluid">
@@ -114,6 +115,7 @@
                     <div class="key function">End</div>
                     <div class="key function">PgUp</div>
                     <div class="key function">PgDn</div>
+                    <div class="margin newrow"></div>
                     <div class="key dual newrow">~<br>`</div>
                     <div class="key dual">!<br>1</div>
                     <div class="key dual">@<br>2</div>
@@ -132,6 +134,7 @@
                     <div class="key">/</div>
                     <div class="key">*</div>
                     <div class="key">-</div>
+                    <div class="margin newrow"></div>
                     <div class="key tab newrow">Tab</div>
                     <div class="key">Q</div>
                     <div class="key typekey">W</div>
@@ -150,6 +153,7 @@
                     <div class="key">8</div>
                     <div class="key">9</div>
                     <div class="key plus">+</div>
+                    <div class="margin newrow"></div>
                     <div class="key caps newrow">CapsLock</div>
                     <div class="key typekey">A</div>
                     <div class="key typekey">S</div>
@@ -166,6 +170,7 @@
                     <div class="key">4</div>
                     <div class="key">5</div>
                     <div class="key">6</div>
+                    <div class="margin newrow"></div>
                     <div class="key shift-left newrow">Shift</div>
                     <div class="key typekey">Z</div>
                     <div class="key">X</div>
@@ -183,6 +188,7 @@
                     <div class="key">2</div>
                     <div class="key">3</div>
                     <div class="key enter2">Enter</div>
+                    <div class="margin newrow"></div>
                     <div class="key ctrl-left newrow">Ctrl</div>
                     <div class="key">&hearts;</div>
                     <div class="key">Alt</div>
@@ -237,7 +243,7 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 lang"><a class="lang-link"href="languages/assembly.html">Assembly</a></div>
+      <div class="col-sm-6 lang"><a class="lang-link"href="languages/go.html">Go</a></div>
       <div class="col-sm-6 lang"><a class="lang-link"href="languages/swift.html">Swift</a></div>
     </div>
   </div>
