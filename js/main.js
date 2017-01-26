@@ -111,7 +111,7 @@ $(function(){
     });
 
     /*Pop up email form*/
-    $('.fa.fa-times').click(function () {
+    $('.close-form').click(function () {
       $('.emailForm').fadeOut();
       $('.emailFormAlert').html('');
       grecaptcha.reset();

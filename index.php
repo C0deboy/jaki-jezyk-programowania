@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Chcesz zacząć przygodę z programowaniem, a nie wiesz jaki język programowania wybrać? Jaki język programowania pomoże ci wybrać ten, który najbardziej pasuje do twoich oczekiwań!">
+  <meta name="description" content="Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jaki język wybrać/od jakiego rozpocząć naukę? Pomożemy Ci z tym!">
 
   <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#4285f4">
@@ -16,6 +16,8 @@
 
   <title>Jaki najlepszy język programowania dla mnie?</title>
 
+  <link rel="shortcut icon" href="img/logo.ico">
+  
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.css">
 
@@ -36,7 +38,7 @@
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                   <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
               </button>
-              <a class="navbar-brand page-scroll" href="index.php">[LOGO]</a>
+              <a class="navbar-brand page-scroll" href="index.php"><img src="img/logo.png" alt=""></a>
           </div>
           <div class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
@@ -243,7 +245,7 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 lang"><a class="lang-link"href="languages/go.html">Go</a></div>
+      <div class="col-sm-6 lang"><a class="lang-link"href="languages/assembly.html">Assembly</a></div>
       <div class="col-sm-6 lang"><a class="lang-link"href="languages/swift.html">Swift</a></div>
     </div>
   </div>
@@ -358,7 +360,7 @@
 </section>
 
 <form class="emailForm" method="post" action="emailform.php" >
-  <i class="fa fa-times" aria-hidden="true"></i>
+  <i class="fa fa-times close-form" aria-hidden="true"></i>
   <label>Twój email <input name="from" type="email" placeholder="email@gmail.com"></label>
   <label>Temat <input name="subject" placeholder="Temat"></label><br>
   <label>Treść</label> <textarea name="message" placeholder="Twoja wiadomość"></textarea>

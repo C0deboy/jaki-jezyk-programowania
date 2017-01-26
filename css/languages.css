@@ -36,7 +36,7 @@ section {
   }
 }
 
-@media (min-width: 769px and max-width: 1024px) {
+@media (min-width: 550px) and (max-width: 1024px) {
   section {
     padding: 0% 6% 2% 6%;
   }
@@ -128,59 +128,6 @@ section {
     min-width: 12vw;
   }
 }
-
-.charts {
-  text-align: left;
-}
-
-.charts p {
-  display: inline-block;
-  min-width: 9vw;
-  margin-top: 5%;
-}
-
-.chart {
-  color: white;
-  display: inline-block;
-
-}
-
-.chart-grade {
-  width: 8vw;
-  height: 6vw;
-  display: inline-block;
-  border-radius: 0.5vh;
-  vertical-align: middle;
-}
-
-.chart-text {
-  text-align: center;
-  vertical-align: middle;
-  line-height: 100%;
-  font-size: 2vh;
-}
-
-@media (min-width: 768px){
-  .chart-text {
-    font-size: 4vh;
-  }
-  .chart-grade{
-    width: 3vw;
-    height: 2vw;
-  }
-}
-
-@media (max-width: 768px) {
-  .charts p {
-    min-width: 30vw;
-  }
-}
-
-.content-header img {
-  width: 100px;
-  height:  100px;
-}
-
 
 footer {
   background-color: #eeeeee;

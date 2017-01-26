@@ -70,6 +70,12 @@ h4 {
 
 .navbar-custom .navbar-brand {
   font-weight: 800;
+  font-size: 1.4em;
+}
+.navbar-brand img{
+  margin-top: -8px;
+  height: 40px;
+  display: inline;
 }
 .navbar-custom .navbar-header .navbar-toggle {
   color: #777777;

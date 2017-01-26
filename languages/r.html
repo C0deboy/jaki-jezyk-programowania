@@ -17,6 +17,8 @@
 
   <title>Język Programowania R</title>
 
+  <link rel="shortcut icon" href="../img/logo.ico">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="../css/bootstrap.css">
 
@@ -32,7 +34,7 @@
 <nav class="navbar navbar-default navbar-custom">
     <div class="container-fluid">
         <div class="navbar-left">
-          <a class="navbar-brand page-scroll" href="../index.php"><img src="../img/logo.png" alt="logo"></a>
+          <a class="navbar-brand page-scroll" href="../index.php"><img src="../img/logo.png" alt="logo"> <i class="fa fa-home" aria-hidden="true"></i></a>
         </div>
     </div>
 </nav>
@@ -51,20 +53,6 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6 charts">
-            <p>Trudność</p><div class="chart difficulty-r"></div><br>
-            <p>Wydajność</p><div class="chart performance-r"></div><br>
-            <p>Popularność</p><div class="chart popularity-r"></div><br>
-          </div>
-          <div class="col-md-6 charts">
-            <p>Siła</p><div class="chart strength-r"></div><br>
-            <p>Kariera</p><div class="chart career-r"></div><br>
-            <p>Przyszłość</p><div class="chart future-r"></div><br>
-          </div>
-        </div>
-      </div>
     </div>
 
     <div class="examples-language" >
@@ -72,7 +60,6 @@
         <h1>Zastosowanie</h1><hr>
       </div>
       <div class="context-text">
-        <img src="../img/use.png" alt="">
         <p><b>R</b> (R Project for Statistical Computing) jest jednocześnie językiem programowania oraz środowiskiem obliczeniowym oraz graficznym działającym na licenji  GNU General Public License., dzięki czemu można go uruchomić na systemach jak Linux, Mac0S oraz Windows. Celem twórców było stworzenie platformy statystycznej służącej do prezentowania danych w nowy sposób, oraz tworzenia ciekawych wizualizacji, np. w postaci wykresów 3D. Dzięki swojemu statystycznemu przezaczeniu został zaadaptowany przez wiele firm, między innymi Facebook, który wykorzystuje R do analizy statystycznej aktualizacji statusów. Pozwala także na łatwe oblicznie równań matematycznych.</p>
 
       </div>
@@ -83,7 +70,6 @@
         <h1>Poziom skomplikowania</h1><hr>
       </div>
       <div class="context-text">
-        <img src="../img/complication.png" alt="">
         <p>Język R jest językiem, który bez wcześniejszego obeznania z programowaniem może sprawiać wiele problemów. Jednak mimo wszystko wizualizowanie danych jest o wiele łatwiejsze niż chociażby w Pythonie, głównie ze względu na ogrom już wbudowanych funkcji obsługujących operacje statystyczne, oraz samą specyfikę tego języka - przecież do tego został stworzony dltego długoterminowo język ten może się okazać łatwiejszy.</p>
       </div>
     </div>
@@ -93,7 +79,6 @@
         <h1>Wydajność</h1><hr>
       </div>
       <div class="context-text">
-        <img src="../img/performance.png" alt="">
         <p>R jako język, który nie został zaprojektowany by być szybki, nie powali nas jego prędkością, przez co przy wiekszej ilości danych analizowanie może być lekko problematyczne. Jednak nie powinna to być wada, w końcu został on stworzony do analizowania danych, a nie tworzenia szybkich aplikacji. Dodatkowo R wymaga bardzo dużej ilości zasobów komputera do pracy, zwłaszcza przy analizowaniu większej ilości danych. Gdy RAM nie wystarczy, jedynym rozwiązaniem jest użycie dysku twardego, co może dodatkowo bardziej spowolnić operacje na danych. </p>
       </div>
     </div>
@@ -102,8 +87,7 @@
       <div class="content-header">
         <h1>Popularność</h1><hr>
       </div>
-      <div class="context-text">
-      <img src="../img/popularity.png" alt="">
+      <div class="context-text"
         <p>R jest 18 językiem według indeksu TIOBE co w tym momencie plasuje go całkiem daleko, co wiąże się z tym, że społeczność tego jezyka jest znacznie mniejsza w stosunku do inncyh języków programowania, głównie ze względu na fakt, że R skupia w sobie osoby pracujące głównie na danych statystycznych. Jednak z liczbą 167,269 pytań na StackOverflow jest to jedenasty najbardziej obeserwowany język na tym portalu. Lepiej ma się Github, z liczbą ponad 199 000 projektów napisanych w tym jezyku. Mimo, że nawet nie zbliża się to do Pythona to repozytorium CRAN (Comprehensive R Archive Network) pozwala na zainstalowanie 7700+ pluginów do rozmaitych zadań statystycznych.  Natomiast na Meetup.com z liczbą 251,754 członków na całym świecie, oraz 385 spotkaniami język R plasuje się na ósmym miejscu. </p>
       </div>
     </div>
@@ -113,7 +97,6 @@
         <h1>Kariera</h1><hr>
       </div>
       <div class="context-text">
-        <img src="../img/career.png" alt="">
         <p>Mediana zarobków na stanowisku analityka systemowego wynosi 7300zł brutto, natomiast w Anglii według Payscale.com miesięczne zarobki na tym stanowisku wynoszą 2126.25£.</p>
       </div>
     </div>
@@ -123,7 +106,6 @@
         <h1>Przyszłość języka</h1><hr>
       </div>
       <div class="context-text">
-        <img src="../img/future.png" alt="">
         <p>Wraz z coraz większą ilośćią danych do analizowania R na pewno ma przed sobą świetlaną przyszłość. Na jego korzyść wskazuje także statystyki, pokazujące że zainteresowanie tym jezykiem wzrosło o 51.7%. </p>
       </div>
     </div>
@@ -147,20 +129,6 @@
 
 <!-- MainJS -->
 <script src="../js/language.js"></script>
-
-<script>
-
-$(function() {
-  /* R charts */
-  chart(5, dificultyColor, '.difficulty-r');
-  chart(2, performanceColor, '.performance-r');
-  chart(4, popularityColor, '.popularity-r');
-  chart(1, strengthColor, '.strength-r');
-  chart(5, careerColor, '.career-r');
-  chart(5, futureColor, '.future-r');
-});
-
-</script>
 
 </body>
 </html>
