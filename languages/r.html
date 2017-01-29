@@ -15,32 +15,48 @@
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
 
-  <title>Język Programowania R</title>
+  <title>Język R</title>
 
   <link rel="shortcut icon" href="../img/logo.ico">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main-min.css">
 
   <!-- Language CSS -->
-  <link rel="stylesheet" href="../css/languages.css">
+  <link rel="stylesheet" href="../css/languages-min.css">
 
 </head>
 
 <body>
-<nav class="navbar navbar-default navbar-custom">
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
     <div class="container-fluid">
-        <div class="navbar-left">
-          <a class="navbar-brand page-scroll" href="../index.php"><img src="../img/logo.png" alt="logo"> <i class="fa fa-home" aria-hidden="true"></i></a>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand page-scroll" href="../index.php"><img src="../img/logo.png" alt=""> <i class="fa fa-home" aria-hidden="true"></i></a>
         </div>
+        <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <a class="page-scroll use-btn" href="#use">Początek</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll performanc-btn" href="#performanc">Wydajność i popularność</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll money-btn" href="#money">Zarobki i przyszłość</a>
+                  </li>
+              </ul>
+          </div>
     </div>
 </nav>
 
 <section>
-  <div class="language-content">
+  <div id="use" class="language-content">
     <div class="start-container">
       <div class="container-fluid">
         <div class="row start-row">
@@ -70,16 +86,16 @@
         <h1>Poziom skomplikowania</h1><hr>
       </div>
       <div class="context-text">
-        <p>Język R jest językiem, który bez wcześniejszego obeznania z programowaniem może sprawiać wiele problemów. Jednak mimo wszystko wizualizowanie danych jest o wiele łatwiejsze niż chociażby w Pythonie, głównie ze względu na ogrom już wbudowanych funkcji obsługujących operacje statystyczne, oraz samą specyfikę tego języka - przecież do tego został stworzony dltego długoterminowo język ten może się okazać łatwiejszy.</p>
+        <p>Język R jest językiem, który bez wcześniejszego obeznania z programowaniem może sprawiać wiele problemów. Jednak mimo wszystko wizualizowanie danych jest o wiele łatwiejsze niż chociażby w Pythonie, głównie ze względu na ogrom już wbudowanych funkcji obsługujących operacje statystyczne, oraz samą specyfikę tego języka - przecież do tego został stworzony dlatego długoterminowo język ten może się okazać łatwiejszy.</p>
       </div>
     </div>
 
-    <div class="scalability-language">
+    <div id="performanc" class="scalability-language">
       <div class="content-header">
         <h1>Wydajność</h1><hr>
       </div>
       <div class="context-text">
-        <p>R jako język, który nie został zaprojektowany by być szybki, nie powali nas jego prędkością, przez co przy wiekszej ilości danych analizowanie może być lekko problematyczne. Jednak nie powinna to być wada, w końcu został on stworzony do analizowania danych, a nie tworzenia szybkich aplikacji. Dodatkowo R wymaga bardzo dużej ilości zasobów komputera do pracy, zwłaszcza przy analizowaniu większej ilości danych. Gdy RAM nie wystarczy, jedynym rozwiązaniem jest użycie dysku twardego, co może dodatkowo bardziej spowolnić operacje na danych. </p>
+        <p>R jako język, który nie został zaprojektowany by być szybki, nie powali nas swoją prędkością, przez co przy większej ilości danych analizowanie może być lekko problematyczne. Jednak nie powinna to być wada, w końcu został on stworzony do analizowania danych, a nie tworzenia szybkich aplikacji. Dodatkowo R wymaga bardzo dużej ilości zasobów komputera do pracy, zwłaszcza przy analizowaniu większej ilości danych. Gdy RAM nie wystarczy, jedynym rozwiązaniem jest użycie dysku twardego, co może dodatkowo bardziej spowolnić operacje na danych. </p>
       </div>
     </div>
 
@@ -88,16 +104,16 @@
         <h1>Popularność</h1><hr>
       </div>
       <div class="context-text"
-        <p>R jest 18 językiem według indeksu TIOBE co w tym momencie plasuje go całkiem daleko, co wiąże się z tym, że społeczność tego jezyka jest znacznie mniejsza w stosunku do inncyh języków programowania, głównie ze względu na fakt, że R skupia w sobie osoby pracujące głównie na danych statystycznych. Jednak z liczbą 167,269 pytań na StackOverflow jest to jedenasty najbardziej obeserwowany język na tym portalu. Lepiej ma się Github, z liczbą ponad 199 000 projektów napisanych w tym jezyku. Mimo, że nawet nie zbliża się to do Pythona to repozytorium CRAN (Comprehensive R Archive Network) pozwala na zainstalowanie 7700+ pluginów do rozmaitych zadań statystycznych.  Natomiast na Meetup.com z liczbą 251,754 członków na całym świecie, oraz 385 spotkaniami język R plasuje się na ósmym miejscu. </p>
+        <p>R jest 18 językiem według indeksu TIOBE co w tym momencie plasuje go całkiem daleko, co wiąże się z tym, że społeczność tego jezyka jest znacznie mniejsza w stosunku do innych języków programowania, głównie ze względu na fakt, że R skupia w sobie osoby pracujące głównie na danych statystycznych. Jednak z liczbą 167 269 pytań na StackOverflow jest to jedenasty najbardziej obeserwowany język na tym portalu. Lepiej ma się Github, z liczbą ponad 199 000 projektów napisanych w tym jezyku. Mimo, że nawet nie zbliża się to do Pythona to repozytorium CRAN (Comprehensive R Archive Network) pozwala na zainstalowanie 7 700+ pluginów do rozmaitych zadań statystycznych.  Natomiast na Meetup.com z liczbą 251 754 członków na całym świecie, oraz 385 spotkaniami język R plasuje się na ósmym miejscu. </p>
       </div>
     </div>
 
-    <div class="money-language">
+    <div id="money" class="money-language">
       <div class="content-header">
         <h1>Kariera</h1><hr>
       </div>
       <div class="context-text">
-        <p>Mediana zarobków na stanowisku analityka systemowego wynosi 7300zł brutto, natomiast w Anglii według Payscale.com miesięczne zarobki na tym stanowisku wynoszą 2126.25£.</p>
+        <p>Mediana zarobków na stanowisku analityka systemowego wynosi 7 300zł brutto, natomiast w Anglii według Payscale.com miesięczne zarobki na tym stanowisku wynoszą 2126.25£.</p>
       </div>
     </div>
 
@@ -130,5 +146,16 @@
 <!-- MainJS -->
 <script src="../js/language.js"></script>
 
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90973428-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>

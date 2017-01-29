@@ -20,13 +20,13 @@
   <link rel="shortcut icon" href="img/logo.ico">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main-min.css">
 
   <!-- Start CSS -->
-  <link rel="stylesheet" href="css/start.css">
+  <link rel="stylesheet" href="css/start-min.css">
 
 </head>
 <body>
@@ -73,7 +73,7 @@
           <div class="col-sm-3 ans" id="odpD">
               <img src="img/lernsthnew.png" alt="">
               <br><div class="shade"></div>
-              <p>Chcę nabyć nowe umiejętności, otwierające nowe scieżki</p>
+              <p>Chcę nabyć nowe umiejętności otwierające nowe scieżki</p>
           </div>
         </div>
       </div>
@@ -253,7 +253,7 @@
               <br><div class="shade"></div>
               <p>Tak</p>
           </div>
-          <a href="languages/php.html">
+          <a href="languages/php.html" target="_blank">
             <div class="col-sm-6 ans" id="odpB">
                 <img src="img/no.png" alt="">
                 <br><div class="shade"></div>
@@ -325,14 +325,14 @@
           <h1>Wolisz łatwiejszą naukę czy priorytetem jest wydajność/grafika?</h1>
         </div>
         <div class="answers">
-          <a href="languages/csharp.html">
+          <a href="languages/csharp.html" target="_blank">
             <div class="col-sm-6 ans" id="odpA">
                 <img src="img/easylerning.png" alt="">
                 <br><div class="shade"></div>
                 <p>Prostota</p>
             </div>
           </a>
-          <a href="languages/cpp.html">
+          <a href="languages/cpp.html" target="_blank">
             <div class="col-sm-6 ans" id="odpB">
                 <img src="img/graphics.png" alt="">
                 <br><div class="shade"></div>
@@ -466,13 +466,11 @@
                 <br><div class="shade"></div>
                 <p>Analizowanie danych</p>
             </div>
-          <a href="languages/python.html">
             <div class="col-sm-2 ans" id="odpB">
                 <img src="img/webdev.png" alt="">
                 <br><div class="shade"></div>
                 <p>Programowanie webowe</p>
             </div>
-          </a>
           <div class="col-sm-2 ans" id="odpC">
               <img src="img/mobiles.png" alt="">
               <br><div class="shade"></div>
@@ -528,14 +526,14 @@
           <h1>Wybierz z dwóch!</h1>
         </div>
         <div class="answers">
-          <a href="languages/python.html" target="_blank">
+          <a href="languages/csharp.html" target="_blank">
             <div class="col-sm-6 ans" id="odpA">
                 <img src="img/csharp.png" alt="">
                 <br><div class="shade"></div>
                 <p>C#</p>
             </div>
           </a>
-          <a href="languages/python.html" target="_blank">
+          <a href="languages/java.html" target="_blank">
             <div class="col-sm-6 ans" id="odpB">
                 <img src="img/java.png" alt="">
                 <br><div class="shade"></div>
@@ -551,21 +549,28 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 question-text">
-          <h1>Wybierz z dwóch!</h1>
+          <h1>Wybierz z trzech!</h1>
         </div>
         <div class="answers">
           <a href="languages/python.html" target="_blank">
-            <div class="col-sm-6 ans" id="odpA">
+            <div class="col-sm-4 ans" id="odpA">
                 <img src="img/python.png" alt="">
                 <br><div class="shade"></div>
                 <p>Python</p>
             </div>
           </a>
           <a href="languages/ruby.html" target="_blank">
-            <div class="col-sm-6 ans" id="odpB">
+            <div class="col-sm-4 ans" id="odpB">
                 <img src="img/ruby.png" alt="">
                 <br><div class="shade"></div>
                 <p>Ruby</p>
+            </div>
+          </a>
+          <a href="languages/javascript.html#nodejs" target="_blank">
+            <div class="col-sm-4 ans" id="odpB">
+                <img src="img/nodejs.png" alt="">
+                <br><div class="shade"></div>
+                <p>Node.js</p>
             </div>
           </a>
         </div>
@@ -695,5 +700,16 @@
 <!-- StartJS -->
 <script src="js/start.js"></script>
 
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90973428-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>

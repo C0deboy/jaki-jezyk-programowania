@@ -1,5 +1,6 @@
 
 $(function(){
+  
   $('.question').click(function () {
     if ($(this).next().is( ":hidden" ) ) {
        $(this).next().slideDown();
@@ -30,18 +31,18 @@ $(function(){
 
   $(".common-concerns-btn").click(function() {
   scrollToElement('#common-concerns', 600);
-  console.log("ldgsoakfdas")
   });
 
   $(".how-to-lern-btn").click(function() {
   scrollToElement('#how-to-lern', 600);
   });
 
-  $(".program-languages-btn").click(function() {
-  scrollToElement('#program-languages', 600);
+
+/* Highlight section */
+
+  $('body').scrollspy({
+    target: '.navbar-fixed-top',
+    offset: 51
   });
 
-  $(".about-project-btn").click(function() {
-  scrollToElement('#about-project', 600);
-  });
 });

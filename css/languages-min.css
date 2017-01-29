@@ -1,0 +1,149 @@
+html, body {
+  background: linear-gradient(#d4d7db, #d4d7db);
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  html, body {
+    font-size: 14px;
+  }
+}
+
+.navbar-custom {
+  border-radius: 0;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+section {
+  padding: 0% 15% 5% 15%;
+  margin-top: 0px;
+}
+
+@media (max-width: 768px) {
+  .navbar-custom {
+    margin-bottom: 0;
+  }
+  section {
+    padding: 0;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 1024px) {
+  section {
+    padding: 0% 6% 2% 6%;
+  }
+}
+
+.language-content {
+  width: 100%;
+  background-color: #0f4268;
+  -webkit-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+  padding: 0;
+  padding-bottom: 40px;
+}
+
+.language-content .start-container {
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+.start-row {
+  display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 60px;
+}
+
+.col-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.language-content p {
+  margin: 0px;
+  padding: 10px;
+}
+
+.language-content a {
+  color: #AA3939;
+}
+
+.language-content .language-logo {
+  background-color: #0d2d49;
+  -webkit-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+  margin-top: 10px;
+  border-radius: 50%;
+  width: 50%;
+  margin-left: 25%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.language-logo img{
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.up-to-date {
+  border: dotted 3px #5C6263;
+  background-color: #0d2d49;
+  box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+  color: #cdd2d8;
+}
+
+.content-header  {
+  padding-top: 40px;
+}
+
+.lang-starter {
+  padding: 1%;
+  text-align: left;
+}
+.lang-starter h2 {
+  text-align: center;
+}
+
+.context-text p{
+  text-align: left;
+  padding: 0px 5% 0px 5%;
+  text-indent: 5%;
+}
+
+#nodejs{
+  width: 260px;
+  height: 160px;
+  padding-top: 70px;
+  margin-bottom: 20px;
+}
+
+.lang-starter-heading {
+    font-size: 4em;
+    margin-top: 10%;
+}
+
+@media (min-width: 768px){
+  .lang-starter p {
+    font-size: 2vw;
+    min-width: 12vw;
+  }
+}
+
+footer {
+  background-color: #eeeeee;
+  color: black;
+  width:100%;
+}

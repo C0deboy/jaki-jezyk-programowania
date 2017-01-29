@@ -17,20 +17,23 @@
   <title>Jaki najlepszy język programowania dla mnie?</title>
 
   <link rel="shortcut icon" href="img/logo.ico">
-  
+
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main-min.css">
 
   <!-- Home CSS -->
-  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/home-min.css">
+
+  <!-- Recaptcha API-->
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 
 </head>
 
 <body>
-<div class="canary-version-alert"> <i class="fa fa-times fa-3x close-alert" aria-hidden="true"></i><p>Projekt jest w fazie rozwoju. Cały czas pracujemy nad ulepszaniem strony i treści. Zachęcamy do zgłaszania błędów, nie aktualnych/niepoprawnych informacji czy sugestii mających na celu poprawę jakości strony. Dokładamy wszelkich starań, aby na stronie znajdowały się sprawdzone, rzetelne informacje, jednak nie wszystko jesteśmy w stanie zweryfikowąć, dlatego oddajemy projekt w fazie beta w wasze ręce i liczymy na odzew!</p></div>
+<div class="canary-version-alert"> <i class="fa fa-times fa-3x close-alert" aria-hidden="true"></i><p>Projekt jest w fazie rozwoju. Cały czas pracujemy nad ulepszaniem strony i treści, a także będziemy dodawać i uzupełniać kontent. Zachęcamy do zgłaszania błędów, nieaktualnych/niepoprawnych informacji czy sugestii mających na celu poprawę jakości strony. Dokładamy wszelkich starań, aby na stronie znajdowały się sprawdzone, rzetelne informacje, jednak nie wszystko jesteśmy w stanie zweryfikowąć, dlatego oddajemy projekt w fazie beta w wasze ręce i liczymy na feedback!</p></div>
 <!-- Navigation Bar -->
 <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
       <div class="container-fluid">
@@ -38,7 +41,7 @@
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                   <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
               </button>
-              <a class="navbar-brand page-scroll" href="index.php"><img src="img/logo.png" alt=""></a>
+              <a class="navbar-brand page-scroll" href="index.php"><img src="img/logo.png" alt=""> </a>
           </div>
           <div class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
@@ -70,8 +73,8 @@
             <div class="col-md-7">
               <div class="intro">
                 <h1 class="section-heading">Wybierz swój język programowania</h1>
-                <hr>
-                <p><b>Chciałbyś nauczyć się programowania, ale nie wiesz od jakiego języka zacząć? Spróbujemy Ci w tym pomóc! Razem z nami poznasz, który z nich będzie dla Ciebie najbardziej odpowiedni oraz zyskasz możliwość ich porównania.</b></p>
+                <hr><br>
+                <p><b>Chciałbyś nauczyć się programowania, ale nie wiesz od jakiego języka zacząć? Spróbujemy Ci w tym pomóc! Razem z nami dowiesz się, który z nich będzie dla Ciebie najlepszy oraz zyskasz możliwość ich porównania.</b></p>
               </div>
               <div class="lets-go">
                 <p><i class="fa fa-arrow-circle-down" aria-hidden="true"></i> Dalej <i class="fa fa-arrow-circle-down" aria-hidden="true"></i> </p>
@@ -224,7 +227,7 @@
               <div class="col-lg-12">
                   <h1 class="section-heading">Jak to działa?</h1>
                   <hr>
-                  <p>Przygotowaliśmy dla Ciebie [wstaw liczbę pytań] pytań, dzięki którym jesteśmy w stanie określić język programowania pasujący do Twoich wymagań. Projekt powstał, aby rozwiać wszelkie wątpliwości początkujących programistów, jak i doradzić w wyborze języka osobom chcącym doświadczyć czegoś nowego. Spróbuj, a sam dowiesz się jaki język pasuje dla Ciebie najbardziej! Jeśli masz dodatkowe pytania warto przejrzeć FAQ, gdzie zebraliśmy wiele fundamentalnych pytań! </p>
+                  <p>Przygotowaliśmy dla Ciebie zbiór pytań, dzięki którym jesteśmy w stanie określić język programowania (lub więcej niż jeden) pasujący do Twoich wymagań. Projekt powstał, aby rozwiać wszelkie wątpliwości początkujących programistów, jak i doradzić w wyborze języka osobom chcącym doświadczyć czegoś nowego. Kliknij start, a sam dowiesz się jaki język pasuje dla Ciebie najbardziej! Jeśli masz dodatkowe pytania warto przejrzeć FAQ, gdzie zebraliśmy wiele fundamentalnych pytań! </p>
                   <a href="start.html" class="btn btn-danger btn-lg start"><i class="fa fa-play play" aria-hidden="true"></i> Start</a>
                   <p class="text-muted">Strona ta ma na celu tylko pomoc w wyborze języka, pamiętaj, żeby ostatecznie podjąć decyzję podążając za głosem serca &hearts;</p>
               </div>
@@ -281,7 +284,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="section-heading">O projekcie</h1><hr>
-                <p>Jesteśmy grupą młodych programistów, którzy, jak większość osób na początku swojej przygody z programowaniem, stanęli przed problemem wyboru języka. Dlatego postanowiliśmy ułatwić innym to zadanie i zapobiec powstawaniu lawiny kolejnych wątków na forach. Jeżeli podoba Ci się nasza inicjatywa, wspomóż nas!</p>
+                <p>Jesteśmy grupą młodych programistów, którzy, jak większość osób na początku swojej przygody z programowaniem, stanęli przed problemem wyboru języka. Dlatego postanowiliśmy ułatwić innym to zadanie i zapobiec powstawaniu lawiny kolejnych wątków na forach. Jeżeli podoba Ci się nasza inicjatywa, możesz nas wspomóc!</p>
             </div>
         </div>
       </div>
@@ -290,13 +293,11 @@
             <div class="col-sm-4">
                 <div class="team-member">
                     <h4>Karol Trociński</h4>
-                    <p class="text-muted">Wszystko</p>
+                    <p class="text-muted">Web Dev & Content</p>
                     <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-github"></i></a>
+                        <li><a href="https://github.com/W3ndige"><i class="fa fa-github"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-user-circle"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        <li><a href="https://www.rootnetsec.com"><i class="fa fa-user-circle"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -304,13 +305,11 @@
             <div class="col-sm-4">
                 <div class="team-member">
                     <h4>Marcin Lasota</h4>
-                    <p class="text-muted">Wszystko</p>
+                    <p class="text-muted">Web Dev & Content</p>
                     <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-github"></i></a>
+                        <li><a href="https://github.com/C0deboy"><i class="fa fa-github"></i></a>
                         </li>
                         <li><a href="#"><i class="fa fa-user-circle"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -318,13 +317,11 @@
             <div class="col-sm-4">
                 <div class="team-member">
                     <h4>Arkadiusz Bazak</h4>
-                    <p class="text-muted">Świr</p>
+                    <p class="text-muted">Web Dev & Content</p>
                     <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-github"></i></a>
+                        <li><a href="https://github.com/Yodakasi"><i class="fa fa-github"></i></a>
                         </li>
                         <li><a href="#"><i class="fa fa-user-circle"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -364,7 +361,7 @@
   <label>Twój email <input name="from" type="email" placeholder="email@gmail.com"></label>
   <label>Temat <input name="subject" placeholder="Temat"></label><br>
   <label>Treść</label> <textarea name="message" placeholder="Twoja wiadomość"></textarea>
-  <div class="g-recaptcha" data-sitekey="6Le23hAUAAAAACgUi28LqPUcDT5oAPmRzrFP33XD"></div><br>
+  <div class="g-recaptcha" data-sitekey="6LdQSRMUAAAAACqs1rH_N2Owo0LKK90aeT--G2eE"></div><br>
   <input class="emailFormSubmit" name="submit" type="submit" value="Wyślij">
   <div class="emailFormAlert"></div>
 </form>
@@ -384,13 +381,22 @@
 <!-- BootstrapJS -->
 <script src="js/bootstrap.js"></script>
 
-<!-- Recaptcha API-->
-<script src='https://www.google.com/recaptcha/api.js'></script>
-
 <!-- TypedJS by http://www.mattboldt.com/ -->
 <script src="js/typed.js"></script>
 
 <!-- MainJS -->
 <script src="js/main.js"></script>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90973428-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>

@@ -15,23 +15,23 @@
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
 
-  <title>Język Programowania Scratch</title>
+  <title>Język Scratch</title>
 
   <link rel="shortcut icon" href="../img/logo.ico">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main-min.css">
 
   <!-- Language CSS -->
-  <link rel="stylesheet" href="../css/languages.css">
+  <link rel="stylesheet" href="../css/languages-min.css">
 
 </head>
 
 <body>
-<nav class="navbar navbar-default navbar-custom">
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
     <div class="container-fluid">
         <div class="navbar-left">
           <a class="navbar-brand page-scroll" href="../index.php"><img src="../img/logo.png" alt=""> <i class="fa fa-home" aria-hidden="true"></i></a>
@@ -60,7 +60,7 @@
         <h1>Co to jest Scratch?</h1><hr>
       </div>
       <div class="context-text">
-        <p>Scratch to edukacyjny język obiektowy, stworzony jako środek do nauczania dzieci i młodzieży (od 8 lat wzwyż) podstaw programowania pozwalający na tworzenie własnych animacji, gier, piosenek oraz rozmaitych skryptów - wszystko zależne tylko od wyoobraźni. </p>
+        <p>Scratch to edukacyjny język obiektowy, stworzony jako środek do nauczania dzieci i młodzieży (od 8 lat wzwyż) podstaw programowania pozwalający na tworzenie własnych animacji, gier, piosenek oraz rozmaitych skryptów - wszystko zależne tylko od wyobraźni. </p>
 
         <p>Język ten powstał by pokonać stereotyp, że programowanie jest trudnym i nudnym zajęciem, dlatego Scratch, dzięki przyjaznemu interfejsowi dzieci oraz nastolatki mogą się przekonać jak wciągającą zabawą jest tworzenie własnych programów.  </p>
 
@@ -72,9 +72,9 @@
         <h1>Jak wygląda programowanie w Scratch?</h1><hr>
       </div>
       <div class="context-text">
-        <p>Programowanie odbywa się w sposób wizualny - elementy języka, które mogą reagować na zewnętrzne zdarzenia mają kształt puzzli a poprzez przeciąganie mogą być układane w określonym porządku. W ten sposób tworzy się kod przypisany określonemu obiektowi. Żeby stworzyć program w Scratch łączysz ze sobą bloki instrukcji tworząc odpowiednie kroki programu. Błędy składni nie istnieją w tym języku, ponieważ bloki są tak zaprojektowane, by tworzyły sensowny ciąg instrukcji. Natomiast różne typy danych są reprezentowane przez bloki o różnych kształtach zapewniająć ochronę przed złym dopasowaniem typów.</p>
+        <p>Programowanie odbywa się w sposób wizualny - elementy języka, które mogą reagować na zewnętrzne zdarzenia mają kształt puzzli, a poprzez przeciąganie mogą być układane w określonym porządku. W ten sposób tworzy się kod przypisany określonemu obiektowi. Żeby stworzyć program w Scratch łączysz ze sobą bloki instrukcji tworząc odpowiednie kroki programu. Błędy składni nie istnieją w tym języku, ponieważ bloki są tak zaprojektowane, by tworzyły sensowny ciąg instrukcji. Natomiast różne typy danych są reprezentowane przez bloki o różnych kształtach zapewniająć ochronę przed złym dopasowaniem typów.</p>
 
-        <p>Jeśli posiadasz dziecko, które chcesz wprawdzić w wspaniały świat programowanie Scratch będzie idealnym rozwiązaniem, które łączny pożyteczną naukę z przyjemną zabawą!</p>
+        <p>Jeśli posiadasz dziecko, które chcesz wprawdzić w wspaniały świat programowania. Scratch będzie idealnym rozwiązaniem łączącym pożyteczną naukę z przyjemną zabawą!</p>
 
         </p>
       </div>
@@ -100,6 +100,16 @@
 <!-- MainJS -->
 <script src="../js/language.js"></script>
 
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-90973428-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>

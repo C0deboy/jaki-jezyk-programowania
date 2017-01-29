@@ -1,59 +1,56 @@
 $(function(){
-window.onunload = function(){};
-var queNumber = 1;
-var previousQueNumber = new Array();
-var queClass = '.que' + queNumber;
-var lolxd = false;
+  window.onunload = function(){};
+  var queNumber = 1;
+  var previousQueNumber = new Array();
+  var queClass = '.que' + queNumber;
+  var lolxd = false;
 
-var web = new Array(11);
-web[0] = {answer: 'odpA', nextQuestion: 2, actualQuestion: 1};
-web[1] = {answer: 'odpA', nextQuestion: 3, actualQuestion: 2};
-web[2] = {answer: 'odpC', nextQuestion: 5, actualQuestion: 2};
-web[3] = {answer: 'odpB', nextQuestion: 12, actualQuestion: 1};
-web[4] = {answer: 'odpC', nextQuestion: 5, actualQuestion: 12};
-web[5] = {answer: 'odpD', nextQuestion: 14, actualQuestion: 1};
-web[6] = {answer: 'odpB', nextQuestion: 5, actualQuestion: 14};
-web[7] = {answer: 'odpB', nextQuestion: 6, actualQuestion: 5};
-web[8] = {answer: 'odpA', nextQuestion: 16, actualQuestion: 6};
-web[9] = {answer: 'odpB', nextQuestion: 7, actualQuestion: 6};
-web[10] = {answer: 'odpA', nextQuestion: 17, actualQuestion: 7};
+  var web = new Array(11);
+  web[0] = {answer: 'odpA', nextQuestion: 2, actualQuestion: 1};
+  web[1] = {answer: 'odpA', nextQuestion: 3, actualQuestion: 2};
+  web[2] = {answer: 'odpC', nextQuestion: 5, actualQuestion: 2};
+  web[3] = {answer: 'odpB', nextQuestion: 12, actualQuestion: 1};
+  web[4] = {answer: 'odpC', nextQuestion: 5, actualQuestion: 12};
+  web[5] = {answer: 'odpD', nextQuestion: 14, actualQuestion: 1};
+  web[6] = {answer: 'odpB', nextQuestion: 5, actualQuestion: 14};
+  web[7] = {answer: 'odpB', nextQuestion: 6, actualQuestion: 5};
+  web[8] = {answer: 'odpA', nextQuestion: 16, actualQuestion: 6};
+  web[9] = {answer: 'odpB', nextQuestion: 7, actualQuestion: 6};
+  web[10] = {answer: 'odpA', nextQuestion: 17, actualQuestion: 7};
 
-var mobile = new Array(6);
-mobile[0] = {answer: 'odpA', nextQuestion: 2, actualQuestion: 1};
-mobile[1] = {answer: 'odpD', nextQuestion: 8, actualQuestion: 2};
-mobile[2] = {answer: 'odpA', nextQuestion: 3, actualQuestion: 8};
-mobile[3] = {answer: 'odpB', nextQuestion: 13, actualQuestion: 12};
-mobile[4] = {answer: 'odpC', nextQuestion: 3, actualQuestion: 13};
-mobile[5] = {answer: 'odpC', nextQuestion: 3, actualQuestion: 14};
+  var mobile = new Array(6);
+  mobile[0] = {answer: 'odpA', nextQuestion: 2, actualQuestion: 1};
+  mobile[1] = {answer: 'odpD', nextQuestion: 8, actualQuestion: 2};
+  mobile[2] = {answer: 'odpA', nextQuestion: 3, actualQuestion: 8};
+  mobile[3] = {answer: 'odpB', nextQuestion: 13, actualQuestion: 12};
+  mobile[4] = {answer: 'odpC', nextQuestion: 3, actualQuestion: 13};
+  mobile[5] = {answer: 'odpC', nextQuestion: 3, actualQuestion: 14};
 
-var games = new Array(3);
-games[0] = {answer: 'odpA', nextQuestion: 3, actualQuestion: 8};
-games[1] = {answer: 'odpB', nextQuestion: 9, actualQuestion: 8};
-games[2] = {answer: 'odpC', nextQuestion: 10, actualQuestion: 9};
+  var games = new Array(3);
+  games[0] = {answer: 'odpA', nextQuestion: 3, actualQuestion: 8};
+  games[1] = {answer: 'odpB', nextQuestion: 9, actualQuestion: 8};
+  games[2] = {answer: 'odpC', nextQuestion: 10, actualQuestion: 9};
 
-var corp = new Array(2);
-corp[0] = {answer: 'odpB', nextQuestion: 4, actualQuestion: 2};
-corp[1] = {answer: 'odpC', nextQuestion: 18, actualQuestion: 4};
+  var corp = new Array(2);
+  corp[0] = {answer: 'odpB', nextQuestion: 4, actualQuestion: 2};
+  corp[1] = {answer: 'odpC', nextQuestion: 18, actualQuestion: 4};
 
-var smallGame = new Array(3);
-smallGame[0] = {answer: 'odpB', nextQuestion: 13, actualQuestion: 12};
-smallGame[1] = {answer: 'odpB', nextQuestion: 19, actualQuestion: 13};
-smallGame[2] = {answer: 'odpC', nextQuestion: 3, actualQuestion: 13};
+  var smallGame = new Array(3);
+  smallGame[0] = {answer: 'odpB', nextQuestion: 13, actualQuestion: 12};
+  smallGame[1] = {answer: 'odpB', nextQuestion: 19, actualQuestion: 13};
+  smallGame[2] = {answer: 'odpC', nextQuestion: 3, actualQuestion: 13};
 
-var software = {answer: 'odpE', nextQuestion: 11, actualQuestion: 2};
+  var software = {answer: 'odpE', nextQuestion: 11, actualQuestion: 2};
 
-var scripting = {answer: 'odpD', nextQuestion: 20, actualQuestion: 14};
+  var scripting = {answer: 'odpD', nextQuestion: 20, actualQuestion: 14};
 
-var dataAnalysis = {answer: 'odpA', nextQuestion: 15, actualQuestion: 14};
+  var dataAnalysis = {answer: 'odpA', nextQuestion: 15, actualQuestion: 14};
 
-var automation = {answer: 'odpD', nextQuestion: 17, actualQuestion: 12};
+  var automation = {answer: 'odpD', nextQuestion: 20, actualQuestion: 12};
 
-var creatingOS = {answer: 'odpD', nextQuestion: 14, actualQuestion: 1};
+  var creatingOS = {answer: 'odpD', nextQuestion: 14, actualQuestion: 1};
 
-var lowLevel = {answer: 'odpE', nextQuestion: 21, actualQuestion: 12};
-
-
-
+  var lowLevel = {answer: 'odpE', nextQuestion: 21, actualQuestion: 12};
 
   $('.ans img, .ans p').click(function() {
     if($(queClass).hasClass( 'slide_in' )) $( queClass ).removeClass( 'slide_in' );
@@ -185,15 +182,15 @@ var lowLevel = {answer: 'odpE', nextQuestion: 21, actualQuestion: 12};
   });
 
   $('.ans img, .ans p').hover(
-  function() {
-    $(this).parent('.ans').children('img').addClass('jumpImg');
-    $(this).parent('.ans').children('p').css('background-color', '#4488f4');
-    $(this).parent('.ans').children('.shade').addClass('shadeImg');
-  }, function() {
-    $(this).parent('.ans').children('img').removeClass('jumpImg');
-    $(this).parent('.ans').children('p').css('background-color', '#337ab7');
-    $(this).parent('.ans').children('.shade').removeClass('shadeImg');
-  }
-);
+    function() {
+      $(this).parent('.ans').children('img').addClass('jumpImg');
+      $(this).parent('.ans').children('p').css('background-color', '#4488f4');
+      $(this).parent('.ans').children('.shade').addClass('shadeImg');
+    }, function() {
+      $(this).parent('.ans').children('img').removeClass('jumpImg');
+      $(this).parent('.ans').children('p').css('background-color', '#337ab7');
+      $(this).parent('.ans').children('.shade').removeClass('shadeImg');
+    }
+  );
 
 })

@@ -15,27 +15,43 @@
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
 
-  <title>Język Programowania Assembly</title>
+  <title>Język Assembly</title>
 
   <link rel="shortcut icon" href="../img/logo.ico">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main-min.css">
 
   <!-- Language CSS -->
-  <link rel="stylesheet" href="../css/languages.css">
+  <link rel="stylesheet" href="../css/languages-min.css">
 
 </head>
 
 <body>
-<nav class="navbar navbar-default navbar-custom">
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
     <div class="container-fluid">
-        <div class="navbar-left">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+          </button>
           <a class="navbar-brand page-scroll" href="../index.php"><img src="../img/logo.png" alt=""> <i class="fa fa-home" aria-hidden="true"></i></a>
         </div>
+        <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <a class="page-scroll use-btn" href="#use">Początek</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll performanc-btn" href="#performanc">Wydajność i popularność</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll money-btn" href="#money">Zarobki i przyszłość</a>
+                  </li>
+              </ul>
+          </div>
     </div>
 </nav>
 
@@ -55,12 +71,12 @@
       </div>
     </div>
 
-    <div class="examples-language" >
+    <div id="use" class="examples-language" >
       <div class="content-header">
         <h1>Zastosowanie</h1><hr>
       </div>
       <div class="context-text">
-        <p>Assembly jest językiem niskiego poziomu, służacym do pisania kodu maszynowego dla  mikroprocesorów, oraz innych urządzeń opartych na procesorach. Służy on do pisania niektórych elementów systemów operacyjnych jak bootloader, elementy sterowników (jednak obecnie coraz częsciej używany jest do tego C), jak i mikroukładów. Dodatkowo często używa się go do inżynierii wstecznej (reverse engineering). Jest to dziedzina nauki zajmująca się znajdowaniem luk w różnych programach, jak i w elementach systemu, pozwalających na chociażby wykonanie swojego kodu, zyskanie uprawnień administratora itd. Osoba zajmujaca się tą dziedziną, musi rozumieć Assembly, ponieważ to w nim można odkryć luki programu napisanego w zupełnie innym języku. Służą do tego programy zwane deasembler, które pokazują działanie kodu maszynowego, zamienionego na język Assembly.</p>
+        <p>Assembly jest językiem niskiego poziomu, służącym do pisania kodu maszynowego dla  mikroprocesorów oraz innych urządzeń opartych na procesorach. Służy on do pisania niektórych elementów systemów operacyjnych jak bootloader, elementy sterowników (jednak obecnie coraz częsciej używany jest do tego C), jak i mikroukładów. Dodatkowo często używa się go do inżynierii wstecznej (reverse engineering). Jest to dziedzina nauki zajmująca się znajdowaniem luk w różnych programach, jak i w elementach systemu, pozwalających na chociażby wykonanie swojego kodu, zyskanie uprawnień administratora itd. Osoba zajmujaca się tą dziedziną, musi rozumieć Assembly, ponieważ to w nim można odkryć luki programu napisanego w zupełnie innym języku. Służą do tego programy zwane deasembler, które pokazują działanie kodu maszynowego, zamienionego na język Assembly.</p>
       </div>
     </div>
 
@@ -69,16 +85,16 @@
         <h1>Poziom skomplikowania</h1><hr>
       </div>
       <div class="context-text">
-        <p>Assembly jest bardzo trudnym jezykiem jeśli chodzi o start w programowania. Wymaga bardzo dobrej znajomości architektury komputera, umiejętnego zarządzania pamięcią oraz dostosowania się do danej architektury, ponieważ każda różni się składnią Assembly. Nie są to zawsze bardzo drastyczne różnice, jednak częstow wymaga dostosowania sie do platformy, na którą piszemy. Dodatkowo często mylące jest pojęcie Assembly oraz Assembler - Assembly to nazwa języka, natomias Assebler to program interpretujacy instrukcje w tym jezyku i zamienienie go na kod maszynowy.</p>
+        <p>Assembly jest bardzo trudnym jezykiem jeśli chodzi o start w programowania. Wymaga bardzo dobrej znajomości architektury komputera, umiejętnego zarządzania pamięcią oraz dostosowania się do danej architektury, ponieważ każda różni się składnią Assembly. Nie są to zawsze bardzo drastyczne różnice, jednak często wymaga dostosowania sie do platformy, na którą piszemy. Dodatkowo często mylące jest pojęcie Assembly oraz Assembler - Assembly to nazwa języka, natomiast Assebler to program interpretujący instrukcje w tym jezyku i zamienieniający go na kod maszynowy.</p>
       </div>
     </div>
 
-    <div class="scalability-language">
+    <div id="performanc" class="scalability-language">
       <div class="content-header">
         <h1>Wydajność</h1><hr>
       </div>
       <div class="context-text">
-        <p>Obecnie różnice w prędkości pomiędzy Assembly a C nie są zbyt wielkie. Obydwa języki potrafią wykonać kod w podobnej ilości czasu, jednak to zadanie, które mamy do wykonania decyduje o prędkości. Niektóre operacje są szybsze w Assembly a inne w C. Jednak język ten, w porównaniu z innymi językami wysokopoziomowymi jest o wiele szybszy. Dodatkowo by kod Assembly był wystarczająco szybki, programista musi mieć już duże doświadczenie w pisaniu w tym jezyku, początkujący może pisać kod z prędkością porównywalną z C/C++.
+        <p>Obecnie różnice w prędkości pomiędzy Assembly a C nie są zbyt wielkie. Obydwa języki potrafią wykonać kod w podobnej ilości czasu, jednak to zadanie, które mamy do wykonania decyduje o prędkości. Niektóre operacje są szybsze w Assembly, a inne w C. Jednak język ten, w porównaniu z innymi językami wysokopoziomowymi jest o wiele szybszy. Dodatkowo by kod Assembly był wystarczająco szybki, programista musi mieć już duże doświadczenie w pisaniu w tym jezyku, początkujący może pisać kod z prędkością porównywalną z C/C++.
         </p>
       </div>
     </div>
@@ -92,7 +108,7 @@
       </div>
     </div>
 
-    <div class="money-language">
+    <div id="money" class="money-language">
       <div class="content-header">
         <h1>Zarobki</h1><hr>
       </div>
@@ -106,7 +122,7 @@
         <h1>Przyszłość języka</h1><hr>
       </div>
       <div class="context-text">
-        <p>Trudno powiedzieć jak zachowa się przyszłość Assembly, z jednej strony jest to język, który jest jest jedyną opcją dla niektórych mikrokontrolerów, jednak z biegiem czasu może zostać wyparty przez języki takie jak C. Warto jednak poświęcić mu trochę czasu, ze względu na walory naukowe, które można wyciągnąć, a zwłaszcza naukę architektury procesorów. Może dlatego jest on językiem, który tak często jest uczony w trakcie studiów informatycznych?</p>
+        <p>Trudno powiedzieć jak zachowa się przyszłość Assembly, z jednej strony jest to język, który jest jedyną opcją dla niektórych mikrokontrolerów, jednak z biegiem czasu może zostać wyparty przez języki takie jak C. Warto jednak poświęcić mu trochę czasu, ze względu na walory naukowe, które można wyciągnąć, a zwłaszcza naukę architektury procesorów. Może dlatego jest on językiem, który tak często jest uczony w trakcie studiów informatycznych?</p>
       </div>
     </div>
   </div>
@@ -130,5 +146,16 @@
 <!-- MainJS -->
 <script src="../js/language.js"></script>
 
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90973428-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>

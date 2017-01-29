@@ -15,27 +15,43 @@
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
 
-  <title>Język Programowania C#</title>
+  <title>Język C#</title>
 
   <link rel="shortcut icon" href="../img/logo.ico">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/main-min.css">
 
   <!-- Language CSS -->
-  <link rel="stylesheet" href="../css/languages.css">
+  <link rel="stylesheet" href="../css/languages-min.css">
 
 </head>
 
 <body>
-<nav class="navbar navbar-default navbar-custom">
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
     <div class="container-fluid">
-        <div class="navbar-left">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+          </button>
           <a class="navbar-brand page-scroll" href="../index.php"><img src="../img/logo.png" alt=""> <i class="fa fa-home" aria-hidden="true"></i></a>
         </div>
+        <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <a class="page-scroll use-btn" href="#use">Początek</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll performanc-btn" href="#performanc">Wydajność i popularność</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll money-btn" href="#money">Zarobki i przyszłość</a>
+                  </li>
+              </ul>
+          </div>
     </div>
 </nav>
 
@@ -48,21 +64,21 @@
             <div class="language-logo"><img src="../img/csharp.png" alt="csharp"></div>
           </div>
           <div class="col-xs-12 col-md-6 col-header">
-              <h2 class="lang-starter-heading">C♯</h2><hr>
+              <h2 class="lang-starter-heading">C#</h2><hr>
               <div class="up-to-date">Dane aktualne na dzień 25.01.2017</div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="examples-language" >
+    <div id="use" class="examples-language" >
       <div class="content-header">
           <h1>Zastosowanie</h1><hr>
       </div>
       <div class="context-text">
-        <p>C♯ ("C sharp", zamiennie z C♯ stosuje się C#) jest wysoko poziomowym, zorientowanym obiektowo językiem programowania, który jest odpowiedzią Microsoftu na Jave. Pozwala on na zbudowanie rozmaitych programów
+        <p>C# ("C sharp", zamiennie z C# stosuje się C♯) jest wysoko poziomowym, zorientowanym obiektowo językiem programowania, który jest odpowiedzią Microsoftu na Jave. Pozwala on na zbudowanie rozmaitych programów
         poprzez platformę .NET Framework takich jak aplikacje usług internetowych XML, aplikacje klient-serwer, aplikacje baz danych, oprogramowanie i wiele więcej. Jednak C# najbardziej rozwija się pod kątem pisania aplikacji na Windows, dzięki czemu język ten jest najbardziej popularny wśród programistów piszących programy na systemy Microsoftu. </p>
-        <p>C♯ napędza między innymi silnik Unity, portal StackOverflow, Evernote czy gry takie jak Terraria, Magicka, Bastion. Platforma niezbędna do pisania w c# czyli .NET Framework obejmuje środowisko uruchomieniowe (które kompiluje kod źródłowy) oraz biblioteki klas (klasa pozwalana definiowanie i modyfikację obiektów, a gotowe bibliteki znacznie przyspieszają proces tworzenia programu). C♯ bez tej platformy nie mógłby istnieć. .NET Framework obsługuje także C++/CLI, F#, J#, Delphi 8 dla .NET, Visual Basic .NET.</p>
+        <p>C# napędza między innymi silnik Unity, portal StackOverflow, Evernote czy gry takie jak Terraria, Magicka, Bastion. Platforma niezbędna do pisania w C# czyli .NET Framework obejmuje środowisko uruchomieniowe (które kompiluje kod źródłowy) oraz biblioteki klas (klasa pozwalana definiowanie i modyfikację obiektów, a gotowe bibliteki znacznie przyspieszają proces tworzenia programu). C# bez tej platformy nie mógłby istnieć. .NET Framework obsługuje także C++/CLI, F#, J#, Delphi 8 dla .NET, Visual Basic .NET.</p>
       </div>
     </div>
 
@@ -71,18 +87,18 @@
         <h1>Poziom skomplikowania</h1><hr>
       </div>
       <div class="context-text">
-        <p>Dla osób które miały konakt z takimi językami jak C, C++ lub Java składnia będzie bardzo znajoma, a programiści którzy mieli kontakt z Javą nie będą mieli problemów z pisaniem programów zorientowanych obiektowo. Składnia C♯ jest uproszczoną wersją tej z C++, więc jeżeli programowanie obiektowe cię nie przeraża i chcesz pisać aplikacje głównie na system Windows to C♯ może być dobrym językiem na start.</p>
+        <p>Dla osób które miały konakt z takimi językami jak C, C++ lub Java składnia będzie bardzo znajoma, a programiści którzy mieli kontakt z Javą nie będą mieli problemów z pisaniem programów zorientowanych obiektowo. Składnia C# jest uproszczoną wersją tej z C++, więc jeżeli programowanie obiektowe cię nie przeraża i chcesz pisać aplikacje głównie na system Windows to C# może być dobrym językiem na start.</p>
       </div>
     </div>
 
-    <div class="scalability-language">
+    <div id="performanc" class="scalability-language">
       <div class="content-header">
         <h1>Wydajność</h1><hr>
       </div>
       <div class="context-text">
-        <p>C♯ podobnie jak Java jest językiem posiada kompilator JIT(Just in Time), jest także językiem silnie typowanym co oznacza że program zwróci błąd i zapobiegnie kompilacji, jeżeli przekazane dane nie będą się zgadzać z typem danych jakie zadeklarowaliśmy dla zmiennej w przeciwieństwie dla języka słabo typowanego, który nie wygeneruje błędu i
-        zwróci nieprzewidywany wynik. Kompilacja JIT znana także jako dynamiczna translacja, w której program jest kompilowany w trakcie jego działania co oznacza że program jest  przetwarzany i jednocześnie wykonywany bez czekania na skompilowanie całego kodu, JIT bada także, które części programu bardziej opłaca się skompilować i w takiej postaci
-        zostawić od tych gdzie translacja dynamiczna jest skuteczniejsza. Cechy te sprawiają że C♯ osiąga szybkość porównywalną z Javą.
+        <p>C# podobnie jak Java posiada kompilator JIT(Just in Time), jest także językiem silnie typowanym co oznacza że program zwróci błąd i zapobiegnie kompilacji, jeżeli przekazane dane nie będą się zgadzać z typem danych jakie zadeklarowaliśmy dla zmiennej, w przeciwieństwie do języka słabo typowanego, który nie wygeneruje błędu i
+        zwróci nieprzewidywany wynik. Kompilacja JIT znana także jako dynamiczna translacja, w której program jest kompilowany w trakcie jego działania, czyli program jest przetwarzany i jednocześnie wykonywany bez czekania na skompilowanie całego kodu, JIT bada także, które części programu bardziej opłaca się skompilować i w takiej postaci
+        zostawić od tych gdzie translacja dynamiczna jest skuteczniejsza. Cechy te sprawiają że C# osiąga szybkość porównywalną z Javą.
         </p>
       </div>
     </div>
@@ -92,17 +108,17 @@
         <h1>Popularność</h1><hr>
       </div>
       <div class="context-text"
-        <p>C♯ zajmuje 4 miejsce pod względem popularności według TIOBE index z 2% stratą do C++. Jest 3 na Stack Overflow z ponad 1 050 000 zapytaniami, jednak w społeczności Github nie cieszy się dużą popularnością zajmując 10 pozycję z ponad 300 000 repozytoriami.
-        Duża popularność silnika Unity (który może się pochwalić tym, że 34% najpopularniejszych gier mobilnych powstało w tym silniku oraz notowaniem ciągłych zysków w sektorze gier mobilnych i desktopowych) wpływa także pozytywnie na rozgłos C♯.</p>
+        <p>C# zajmuje 4 miejsce pod względem popularności według TIOBE index z 2% stratą do C++. Jest 3 na Stack Overflow z ponad 1 050 000 zapytaniami, jednak w społeczności Github nie cieszy się dużą popularnością, zajmując 10 pozycję z ponad 300 000 repozytoriami. Meetup.com podpowiada nam, że członków na całym świecie jest 259 615 z 691 spotkaniami.
+        Duża popularność silnika Unity (który może się pochwalić tym, że 34% najpopularniejszych gier mobilnych powstało w tym silniku oraz notowaniem ciągłych zysków w sektorze gier mobilnych i desktopowych) wpływa także pozytywnie na rozgłos C#.</p>
       </div>
     </div>
 
-    <div class="money-language">
+    <div id="money" class="money-language">
       <div class="content-header">
         <h1>Zarobki</h1><hr>
       </div>
       <div class="context-text">
-        <p>Według wynagrodzenia.pl miesięczne wynagrodzenie całkowite (mediana) programisty .NET (w którego pakiet wchodzi język C♯) stanowisku wynosi 6 000 PLN brutto. Co drugi programista .net otrzymuje pensję od 4 300 PLN do 8 176 PLN. 25% najgorzej wynagradzanych programistów .net zarabia poniżej 4 300 PLN brutto. Na zarobki powyżej 8 176 PLN brutto może liczyć grupa 25% najlepiej opłacanych programistów .net. Natomiast według Payscale.com zarobki w Anglii wynoszą 2 698.75£.</p>
+        <p>Według wynagrodzenia.pl miesięczne wynagrodzenie całkowite (mediana) programisty .NET (w którego pakiet wchodzi język C#) stanowisku wynosi 6 000 PLN brutto. Co drugi programista .net otrzymuje pensję od 4 300 PLN do 8 176 PLN. 25% najgorzej wynagradzanych programistów .net zarabia poniżej 4 300 PLN brutto. Na zarobki powyżej 8 176 PLN brutto może liczyć grupa 25% najlepiej opłacanych programistów .net. Natomiast według Payscale.com zarobki w Anglii wynoszą 2 698.75£.</p>
       </div>
     </div>
 
@@ -111,7 +127,7 @@
         <h1>Przyszłość języka</h1><hr>
       </div>
       <div class="context-text">
-        <p>Jako że Microsoft wydał C♯ aby tworzyć aplikacje na Windowsa nie zamierza kończyć dla niego wsparcia, w niedalekiej przyszłości planuje wydać wersje 7. Szybki rozwój Unity powoduje, że programiści C♯ mają ogromną szansę na osiągnięcie sukcesu w tworzeniu gier. Meetup.com podpowiada nam, że członków na całym świecie jest 259,615 z 691 spotkaniami. </p>
+        <p>Jako że Microsoft wydał C# aby tworzyć aplikacje na Windowsa nie zamierza kończyć dla niego wsparcia, w niedalekiej przyszłości planuje wydać wersje 7. Szybki rozwój Unity powoduje, że programiści C# mają ogromną szansę na osiągnięcie sukcesu w tworzeniu gier.</p>
       </div>
     </div>
   </div>
@@ -135,5 +151,16 @@
 <!-- MainJS -->
 <script src="../js/language.js"></script>
 
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90973428-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>
