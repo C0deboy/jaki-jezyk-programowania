@@ -2,21 +2,15 @@
 @import url('font-awesome.min.css');
 
 html, body {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: calc( 13px + (25 - 15) * ( (100vw - 320px) / ( 1920 - 320) ));
-    width: 100%;
-    height: 100%;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: calc( 13px + (25 - 15) * ( (100vw - 320px) / ( 1920 - 320) ));
+  width: 100%;
+  height: 100%;
 }
 
 p {
   line-height: 1.5;
   margin-bottom: 20px;
-}
-
-hr {
-  border-color: #AA3939;
-  border-width: 3px;
-  width: 40%;
 }
 
 h1 {
@@ -49,6 +43,7 @@ h4 {
   font-weight: 800;
   font-size: 1.4em;
 }
+
 .navbar-brand img{
   margin-top: -8px;
   height: 40px;
@@ -61,16 +56,18 @@ h4 {
   }
 }
 
-.navbar-custom .navbar-header .navbar-toggle {
+.navbar-custom .navbar-toggle {
   color: #777777;
   font-weight: 800;
   text-transform: uppercase;
 }
-.navbar-custom .navbar-header .navbar-toggle {
+
+.navbar-custom .navbar-toggle {
   color: #777777;
   font-weight: 800;
   text-transform: uppercase;
 }
+
 .navbar-custom .nav li a {
   text-transform: uppercase;
   font-weight: 800;
@@ -97,25 +94,48 @@ h4 {
 
 /* Sections */
 
-section {
-  display: -webkit-flex;
+.section {
   display: -webkit-box;
-  display: -moz-flex;
-  display: -moz-box;
-  display: flex;
   display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
 
+.header-heading {
+  font-size: 2em;
+  padding-bottom: 23px;
+  margin-bottom: 47px;
+  position: relative;
+}
+
+.header-heading:after,
+.section-heading:after {
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 3px;
+  background: #AA3939;
+  bottom: 0;
+  left: 30%;
+}
+
+.header-text {
+  font-weight: 600;
 }
 
 .section-heading {
   font-size: 2em;
+  padding-bottom: 23px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
 }
 
 @media (max-width: 768px) {
-  .section-heading {
+  .header-heading {
     padding-top: 40px;
   }
 
@@ -127,15 +147,13 @@ section {
 /* Buttons */
 
 .btn.btn-danger {
-    min-width: 30%;
-    font-size: 2.1em;
-    color: #F05F4;
-    background-color: #AA3939;
-    background-image: linear-gradient(to bottom, #AA3939, #AA3939);
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0px 15px 23px -5px rgba(0,0,0,0.75), 0 8px #000;
-    margin: 5% 0 7% 0;
+  min-width: 30%;
+  font-size: 2.1em;
+  background: #AA3939 linear-gradient(to bottom, #AA3939, #AA3939);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 15px 23px -5px rgba(0,0,0,0.75), 0 8px #000;
+  margin: 5% 0 7% 0;
 }
 
 @media (min-width: 768px) {
@@ -145,38 +163,60 @@ section {
 }
 
 .btn.btn-danger.start:hover {
-    background-color: #762E55;
-    background-image: linear-gradient(to bottom, #762E55, #762E55);
+  background: #762E55 linear-gradient(to bottom, #762E55, #762E55);
 }
 
 .press {
   animation: press, press2;
   animation-duration: 0.5s;
   animation-iteration-count: 1;
-  animation-play-state: linear;
+  animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
 
 
 @keyframes press{
-  0% {box-shadow: 0px 15px 23px -5px rgba(0,0,0,0.75), 0 8px #000;}
-  100% {box-shadow: 0px 0px 23px -5px rgba(0,0,0,0.75), 0 0px #000;}
+  0% {box-shadow: 0 15px 23px -5px rgba(0,0,0,0.75), 0 8px #000;}
+  100% {box-shadow: 0 0 23px -5px rgba(0,0,0,0.75), 0 0 #000;}
 }
+
 @keyframes press2{
-  0% {transform: translateY(0px);}
-  100%{transform: translateY(8px);};
+  0% {transform: translateY(0);}
+  100%{transform: translateY(8px);}
 }
 
 /* Footer Section */
 
-footer {
-  background-color: #337ab7;
+.site-footer {
+  background: #337ab7;
   padding: 10px 0;
   color: white;
   text-align: center;
-
 }
-footer p {
+
+.site-footer .copyright {
   font-size: 1em;
   margin: 0;
+}
+
+/* */
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.site-logo {
+  margin: 0;
+}
+
+.site-logo img{
+  height: 40px;
+  margin-top: -8px;
 }
