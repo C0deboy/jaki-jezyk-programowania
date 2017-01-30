@@ -35,17 +35,12 @@
 
 .canary-version-alert p {
   margin-bottom: 0;
-  width: 95%;
 }
 
 .canary-version-alert button {
-  position: absolute;
-  top: 0;
-  right: 0;
   background: none;
   border: 0;
-  float: left;
-  padding: 10px;
+  float: right;
 }
 
 .key,.keys {

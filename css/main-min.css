@@ -8,6 +8,10 @@ html, body {
   height: 100%;
 }
 
+section {
+  text-align: center;
+}
+
 p {
   line-height: 1.5;
   margin-bottom: 20px;
@@ -94,7 +98,7 @@ h4 {
 
 /* Sections */
 
-.section {
+.section, section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -187,14 +191,14 @@ h4 {
 
 /* Footer Section */
 
-.site-footer {
+.site-footer, footer {
   background: #337ab7;
   padding: 10px 0;
   color: white;
   text-align: center;
 }
 
-.site-footer .copyright {
+.site-footer .copyright, footer p {
   font-size: 1em;
   margin: 0;
 }

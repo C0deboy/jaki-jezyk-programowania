@@ -10,6 +10,19 @@ html, body {
 
 .faq h1{
   margin-top: 60px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.faq h1::after{
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 3px;
+  background: #AA3939;
+  bottom: 0;
+  left: 30%;
 }
 
 .answer {
@@ -21,6 +34,8 @@ html, body {
   clear: both;
   width: 100%;
   font-size: 1em;
+  text-align: left;
+  text-indent: 5%;
 }
 
 .question {
@@ -54,10 +69,9 @@ margin-top: 10px;
   font-size: 24px;
   color: #5C6263;
   display: block;
-  width: 15%;
   position: absolute;
   top: 50%;
-  right: 0px;
+  right: 5%;
   margin-top: -0.5em;
 }
 
