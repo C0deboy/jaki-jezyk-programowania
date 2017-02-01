@@ -231,7 +231,7 @@
     <i class="fa fa-times fa-3x close-alert" aria-hidden="true"></i>
   </button>
   <p>
-    Projekt jest w fazie rozwoju. Cały czas pracujemy nad ulepszaniem strony i treści, a także będziemy dodawać i uzupełniać kontent. Zachęcamy do zgłaszania błędów, nieaktualnych/niepoprawnych informacji czy sugestii mających na celu poprawę jakości strony. Dokładamy wszelkich starań, aby na stronie znajdowały się sprawdzone, rzetelne informacje, jednak nie wszystko jesteśmy w stanie zweryfikowąć, dlatego oddajemy projekt w fazie beta w wasze ręce i liczymy na feedback!
+    Projekt jest w fazie rozwoju. Cały czas pracujemy nad ulepszaniem strony i treści. AKTUALNE INFROMACJE MOGĄ BYĆ NIEPOPRAWNE. Zachęcamy do zgłaszania błędów, nieaktualnych/niepoprawnych informacji czy sugestii mających na celu poprawę jakośc strony. Dokładamy wszelkich starań, aby na stronie znalazły się sprawdzone, rzetelne informacje, jednak nie wszystko jesteśmy w stanie zweryfikowąć, dlatego oddajemy projekt w fazie beta w wasze ręce i liczymy na feedback!
   </p>
 </div>
 
@@ -241,7 +241,7 @@
       Jak to działa?
     </h2>
     <p>
-      Przygotowaliśmy dla Ciebie zbiór pytań, dzięki którym jesteśmy w stanie określić język programowania (lub więcej niż jeden) pasujący do Twoich wymagań. Następnie, dostaniesz o każdym z nich najważniejsze informacje. Projekt powstał, aby rozwiać wszelkie wątpliwości początkujących programistów, jak i doradzić w wyborze języka osobom chcącym doświadczyć czegoś nowego. Kliknij start, a sam dowiesz się jaki język pasuje dla Ciebie najbardziej! Jeśli masz dodatkowe pytania warto przejrzeć FAQ, gdzie zebraliśmy wiele fundamentalnych pytań!
+      Przygotowaliśmy dla Ciebie zbiór pytań, dzięki którym jesteśmy w stanie określić język programowania (lub więcej niż jeden) pasujący do Twoich celów/zainteresowań. Następnie, będziesz mógł przejrzeć najważniejsze informacje o każdym z nich i  je porównać. Kliknij start, a sam dowiesz się, jaki język pasuje dla Ciebie najbardziej! Jeśli masz dodatkowe pytania warto przejrzeć FAQ, gdzie zebraliśmy wiele fundamentalnych pytań!
     </p>
 
     <a href="start.html" class="btn btn-danger btn-lg start" aria-label="Sprawdź swój język programowania">
@@ -340,7 +340,8 @@
 <section id="o-projekcie" class="section about-project">
   <div class="container">
     <h2 class="section-heading">O projekcie</h2>
-    <p>Jesteśmy grupą młodych programistów, którzy, jak większość osób na początku swojej przygody z programowaniem, stanęli przed problemem wyboru języka. Dlatego postanowiliśmy ułatwić innym to zadanie i zapobiec powstawaniu lawiny kolejnych wątków na forach.</p>
+    <p>Projekt powstał, aby rozwiać wszelkie wątpliwości początkujących programistów, jak i pomóc w wyborze języka osobom chcącym doświadczyć czegoś nowego.</p>
+    <p>Jesteśmy grupą młodych programistów, którzy, jak większość osób na początku swojej przygody z programowaniem, stanęli przed problemem wyboru języka. Dlatego postanowiliśmy ułatwić innym to zadanie i zapobiec powstawaniu lawiny kolejnych wątków na forach. Aktualnie pracujemy nad projektem wraz ze społecznością z <a href="http://forum.pasja-informatyki.pl" target="_blank">Forum Pasja Informatyki</a> oraz <a href="https://4programmers.net" target="_blank">4programmers</a>, która czuwa nad jakoscią strony i zawartych na niej informacji.</p>
 
     <div class="row">
       <div class="col-sm-4">

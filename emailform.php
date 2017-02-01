@@ -12,7 +12,7 @@
   $subject=htmlentities($_POST['subject']);
   $message=$_POST['message'];
 
-  $secretKey = '6Le23hAUAAAAAOdypdQtwN1NG4k4kSfVu7Ph4MsY';//localhost
+  $secretKey = 'lmao';
 
   $checkIfBot = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secretKey.'&response='.$_POST['g-recaptcha-response']);
   $answer = json_decode($checkIfBot);
