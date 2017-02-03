@@ -42,13 +42,13 @@
         <div class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
                   <li>
-                      <a class="page-scroll use-btn" href="#use">Początek</a>
+                      <a class="page-scroll use-btn" href="#use">Zastosowanie</a>
                   </li>
                   <li>
-                      <a class="page-scroll performanc-btn" href="#performanc">Wydajność i popularność</a>
+                      <a class="page-scroll difficulty-btn" href="#difficulty">Trudność i Wydajność</a>
                   </li>
                   <li>
-                      <a class="page-scroll money-btn" href="#money">Zarobki i przyszłość</a>
+                      <a class="page-scroll popularity-btn" href="#popularity">Popularność i Przyszłość</a>
                   </li>
               </ul>
           </div>
@@ -76,46 +76,36 @@
         <h1>Zastosowanie</h1>
       </div>
       <div class="context-text">
-        <p>C jest jednym z najstarszych i najszerzej używanych strukturalnych języków programowania. Strukturalnym, czyli nie wspierającym programowania obiektowego (ang. object-oriented programming). Wiele innych języków takich jak: C++, Java, JavaScript, C#, PHP, Python, Swift, Go, Rust, pożyczyło od niego masę cech. C jest językiem ogólnego przeznaczenia. Najczęsciej używany do zadań niskiego poziomu, takich jak tworzenie oprogramowania dla systemów czy mikrokontrolerów. 
-        Może działać praktycznie na każdej architekturze sprzętowej pod warunkiem opracowania odpowiedniego kompilatora. C został użyty do zrobiena m.in.: jąder systemów operacyjnych takich jak Windows, Linux, Mac, iOS, Android Windows Phone, systemów bazodanowych, biblioteki programistycznej do tworzenia grafik - OpenGL czy popularnego programu graficznego Gimp. C jest lekki i wydajny, co sprawia że jest praktycznie w każdym systemie wbudowanym, od lodówek, mikrofalówek,  zegarków do radia włącznie. W samochodach też zapewne większość funkcji zaprogramowana jest w C. Na przykład wyświetlacz na desce rozdzielczej, czujniki, automatyczna skrzynia biegów, sterowanie klimatyzacją czy kontrola trakcji.</p>
+        <p>C jest jednym z najstarszych i najszerzej używanych strukturalnych języków programowania. Strukturalnym, czyli nie wspierającym programowania obiektowego (ang. object-oriented programming). Wiele innych języków takich jak: C++, Java, JavaScript, C#, PHP, Python, Swift, Go, Rust, pożyczyło od niego masę cech. C jest językiem ogólnego przeznaczenia. Najczęściej używany do zadań niskiego poziomu, takich jak tworzenie oprogramowania dla systemów czy mikrokontrolerów. 
+        Może działać praktycznie na każdej architekturze sprzętowej pod warunkiem opracowania odpowiedniego kompilatora. C został użyty do zrobienia m.in.: jąder (lub ich części) systemów operacyjnych takich jak Windows, Linux, Mac, iOS, Android Windows Phone, systemów bazodanowych, biblioteki programistycznej do tworzenia grafik - OpenGL czy popularnego programu graficznego Gimp. C jest lekki i wydajny, co sprawia że jest praktycznie w każdym systemie wbudowanym, od lodówek, mikrofalówek, zegarków do radia włącznie. W samochodach też zapewne większość funkcji zaprogramowana jest w C. Na przykład wyświetlacz na desce rozdzielczej, czujniki, automatyczna skrzynia biegów, sterowanie klimatyzacją czy kontrola trakcji.</p>
       </div>
     </div>
 
-    <div class="complication-language">
+    <div id="difficulty" class="complication-language">
       <div class="content-header">
         <h1>Poziom skomplikowania</h1>
       </div>
       <div class="context-text">
-        <p>C nie należy do najłatwiejszych do nauczenia. Trzeba dbać o zarządzanie pamięcią, które nie wybacza programiście błędów. Musisz zrozumieć, czym są wskaźniki, bez nich nie zdziałasz wiele. Większy nacisk trzeba kłaść też na debugowanie kodu, ponieważ niektóre błędy mogą powodować błędne nadpisanie niektórych bloków pamięci, przez co przyczyna problemu może być trudna do namierzenia(w innych językach wysokiego poziomu namierzenie takiego błędu znacznie ułatwia obsługa wyjątków). W skrócie język C zmusza nas do robienia rzeczy, które inne języki robią za nas. Chcąc pisać w C oprogramowanie systemowe, przydatna może się okazać dobra znajomość architektury komputera oraz podstaw systemów operacyjnych.</p>
+        <p>C nie należy do najłatwiejszych do nauczenia. Trzeba dbać o zarządzanie pamięcią, które nie wybacza programiście błędów. Musisz zrozumieć, czym są wskaźniki, bez nich nie zdziałasz wiele. Większy nacisk trzeba kłaść też na debugowanie kodu, ponieważ niektóre błędy mogą powodować niewłaściwe nadpisanie niektórych bloków pamięci, przez co przyczyna problemu może być trudna do namierzenia. W innych językach namierzenie takiego błędu znacznie ułatwia obsługa wyjątków, której C nie ma. To w twoim interesie jest zapobieganie powstawania błędów, oraz sprawdzanie wartości, które zwracają funkcje. W skrócie język C zmusza nas do robienia rzeczy, które inne języki robią za nas. Chcąc pisać w C oprogramowanie systemowe, przydatna może się okazać dobra znajomość architektury komputera oraz podstaw systemów operacyjnych.</p>
       </div>
     </div>
 
-    <div id="performanc" class="scalability-language">
+    <div class="scalability-language">
       <div class="content-header">
         <h1>Wydajność</h1>
       </div>
       <div class="context-text">
-        <p>C jest jednym z najszybszych i najwydajniejszych wysokopoziomowych języków programowania. Wynika to za faktu, że wśród nich jest "najbliżej" maszyny. Można by powiedzieć, że język C jest gdzieś pośrodku, gdyż jego poziom abstrakcji od sprzętu jest znacznie mniejszy niż w takich językach jak np. Java czy Python. Z drugiej strony bliżej sprzętu są Asamblery, a najbliżej są języki maszynowe. Nie posiada także funkcji, które wykonują i automatyzują prace za nas, pogarszając wydajność. Należą do nich m.in zarządzanie pamięcią, odśmiecanie pamięci czy dynamiczne typowanie. W przypadku konieczności dużej optymalizacji aplikacji dla danego sprzętu konkurencją staje się język asemblera. W większych projektach programiści sięgają często po obiektowy C++ (np. gry, CAD). W świecie oprogramowania biznesowego wykorzystywane są raczej technologie o szybszym procesie tworzenia aplikacji i mniejszym nacisku na wydajność (np. Java).
+        <p>C jest jednym z najszybszych i najwydajniejszych wysokopoziomowych języków programowania. Wynika to za faktu, że wśród nich jest "najbliżej" maszyny. Można by powiedzieć, że język C jest gdzieś pośrodku, gdyż jego poziom abstrakcji od sprzętu jest znacznie mniejszy niż w takich językach jak np. Java czy Python. Z drugiej strony bliżej sprzętu są Asamblery, a najbliżej są języki maszynowe. Nie posiada także funkcji, które wykonują i automatyzują prace za nas, pogarszając wydajność. Należą do nich m.in zarządzanie pamięcią, odśmiecanie pamięci czy dynamiczne typowanie. W przypadku konieczności dużej optymalizacji aplikacji dla danego sprzętu konkurencją staje się język asemblera. W większych projektach programiści sięgają często po obiektowy C++ (np. silniki gier, CAD). W świecie oprogramowania biznesowego wykorzystywane są raczej technologie o szybszym procesie tworzenia aplikacji i mniejszym nacisku na wydajność (np. Java czy Python).
         </p>
       </div>
     </div>
 
-    <div class="community-language">
+    <div id="popularity" class="community-language">
       <div class="content-header">
         <h1>Popularność</h1>
       </div>
       <div class="context-text">
         <p>C jest jednym z najpopularniejszych języków programowania, głownie, dlatego, że jest wszędzie dookoła Ciebie. Według rankingu TIOBE index jest na 2 pozycji. Z kolei według rankingu Spectrum na pozycji 1, po dwóch latach bycia za Java. Mimo swojej popularności na StockOverFlow jest dopiero 8 najczęściej tagowanym językiem, z ilością ok. 240.000 pytań, co nadal jest pokaźnym zbiorem problemów, które napotkasz podczas nauki. Na GitHubie znajduje się na 8 miejscu najczęściej tagowanych języków z liczba prawie 80 000 projektów, z których ok. 700 ma ponad 500 gwiazdek. Jednak programiści C nie są skorzy do organizowania spotkań bo według Meetup.com jest ich tylko 19 z liczbą 3 111 członków.</p>
-      </div>
-    </div>
-
-    <div id="money" class="money-language">
-      <div class="content-header">
-        <h1>Zarobki</h1>
-      </div>
-      <div class="context-text">
-        <p>Według wynagrodzenia.pl miesięczne wynagrodzenie całkowite (mediana) na tym stanowisku wynosi 6 500 PLN brutto. Co drugi programista C otrzymuje pensję od 4 576 PLN do 9 100 PLN. 25% najgorzej wynagradzanych programistów C zarabia poniżej 4 576 PLN brutto. Na zarobki powyżej 9 100 PLN brutto może liczyć grupa 25% najlepiej opłacanych programistów.
-        Natomiast spójrzmy jak wyglądają zarobki w Anglii - według payscale.com miesięcznie programista C zarabia tam  średnio 2584.5£.
       </div>
     </div>
 

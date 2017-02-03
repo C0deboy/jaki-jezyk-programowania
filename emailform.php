@@ -1,62 +1,54 @@
 <?php
-  $ourEmail='ellucky4@gmail.com';
+  require_once 'swiftmailer/lib/swift_required.php';
 
-  $userEmail=$_POST['userEmail'];
-
-  $header  = "From: $userEmail \r\n";
-  $header .= 'MIME-Version: 1.0'."\r\n";
-  $header .= 'Content-type: text/html; charset=UTF-8'."\r\n";
-  $header .= "Reply-To: $userEmail"."\r\n";
-  $header .= "X-Mailer: PHP/" . PHP_VERSION."\r\n";
-
-  $subject=htmlentities($_POST['subject']);
-  $message=$_POST['message'];
-
+  $userEmail=$_POST['userEmail'] ?? false;
+  $subject= filter_var($_POST['subject'], FILTER_SANITIZE_STRING) ?? false;
+  $message= filter_var($_POST['message'], FILTER_SANITIZE_STRING) ?? false;
+  
   $secretKey = 'lmao';
 
   $checkIfBot = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secretKey.'&response='.$_POST['g-recaptcha-response']);
   $answer = json_decode($checkIfBot);
 
   if(!filter_var($userEmail, FILTER_VALIDATE_EMAIL)){
-    $response = json_encode(array(
-        'text' => 'Podaj poprawny email!'
-    ));
-    die($response);
+    $alert = 'Podaj poprawny email!';
   }
-  else if ($subject==""){
-    $response = json_encode(array(
-        'text' => 'Wpisz jakiś temat!'
-    ));
-    die($response);
+  else if (empty($subject)){
+    $alert = 'Wpisz jakiś temat!';
   }
-  else if ($message==""){
-    $response = json_encode(array(
-        'text' => 'Pusta wiadomość? naah...'
-    ));
-    die($response);
+  else if (empty($message)){
+    $alert = 'Pusta wiadomość? naah...';
   }
   else if($answer->success==false){
-    $response = json_encode(array( 
-        'text' => 'Potwierdź, że nie jesteś robotem!'
-    ));
-    die($response);
+    $alert = 'Potwierdź, że nie jesteś robotem!';
   }
-  
   else {
+    $transport = Swift_SmtpTransport::newInstance('mail.jaki-jezyk-programowania.pl', 587)
+      ->setUsername('lmao')
+      ->setPassword('lmao')
+      ;
 
-    $emailSent = mail($ourEmail,$subject,$message,$header);
+    $mailer = Swift_Mailer::newInstance($transport);
 
-    if ($emailSent===true){
-      $response = json_encode(array( 
-          'text' => 'Wysłano. Dziękujemy!'
-      ));
-      die($response);
-    } 
+    $message = Swift_Message::newInstance($subject)
+    ->setFrom($userEmail)
+    ->setReplyTo($userEmail)
+    ->setTo('kontakt@jaki-jezyk-programowania.pl')
+    ->setBody($message)
+	  ;
+
+    $result = $mailer->send($message);
+
+    if ($result){
+      $alert = 'Wysłano. Dziękujemy!';
+    }
     else {
-      $response = json_encode(array( 
-          'text' => 'Coś poszło nie tak.'
-      ));
-      die($response);
+      $alert = 'Coś poszło nie tak.';
     }
   }
+
+  $response = json_encode(array(
+        'text' => $alert
+  ));
+  die($response);
 ?>

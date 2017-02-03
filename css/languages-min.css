@@ -88,6 +88,13 @@ section {
   margin-left: 25%;
 }
 
+@media (max-width: 768px){
+  .language-content .language-logo {
+    max-width: 200px;
+    margin: auto;
+  }
+}
+
 ul {
     list-style-type: none;
 }
@@ -132,7 +139,7 @@ ul {
 }
 
 .context-text p{
-  text-align: left;
+  text-align: justify;
   padding: 0px 5% 0px 5%;
   text-indent: 5%;
 }

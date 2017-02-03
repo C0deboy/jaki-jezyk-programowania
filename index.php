@@ -277,7 +277,7 @@
 
       <div class="row">
         <div role="listitem" class="col-sm-4 lang">
-          <a href="anguages/scratch.html" class="lang-link">
+          <a href="languages/scratch.html" class="lang-link">
             Scratch
           </a>
         </div>
@@ -341,78 +341,21 @@
   <div class="container">
     <h2 class="section-heading">O projekcie</h2>
     <p>Projekt powstał, aby rozwiać wszelkie wątpliwości początkujących programistów, jak i pomóc w wyborze języka osobom chcącym doświadczyć czegoś nowego.</p>
-    <p>Jesteśmy grupą młodych programistów, którzy, jak większość osób na początku swojej przygody z programowaniem, stanęli przed problemem wyboru języka. Dlatego postanowiliśmy ułatwić innym to zadanie i zapobiec powstawaniu lawiny kolejnych wątków na forach. Aktualnie pracujemy nad projektem wraz ze społecznością z <a href="http://forum.pasja-informatyki.pl" target="_blank">Forum Pasja Informatyki</a> oraz <a href="https://4programmers.net" target="_blank">4programmers</a>, która czuwa nad jakoscią strony i zawartych na niej informacji.</p>
+    <p>Jesteśmy grupą młodych programistów, którzy, jak większość osób na początku swojej przygody z programowaniem, stanęli przed problemem wyboru języka. Dlatego postanowiliśmy ułatwić innym to zadanie i zapobiec powstawaniu lawiny kolejnych wątków na forach.</p>
 
     <div class="row">
-      <div class="col-sm-4">
-        <div class="team-member">
-          <h3 class="name">
-            Karol Trociński
-          </h3>
-          <p class="text-muted">
-            Web Dev
-          </p>
-
-          <ul class="list-inline social-buttons">
-            <li>
-              <a href="https://github.com/W3ndige">
-                  <span class="visually-hidden">
-                    Github
-                  </span>
-                <i class="fa fa-github" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.rootnetsec.com">
-                  <span class="visually-hidden">
-                    Rootnetsec
-                  </span>
-                <i class="fa fa-user-circle" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-sm-4">
+      <div class="col-sm-12">
         <div class="team-member">
           <h3 class="name">
             Marcin Lasota
           </h3>
           <p class="text-muted">
-            Web Dev
+            Lone wolf
           </p>
 
           <ul class="list-inline social-buttons">
             <li>
               <a href="https://github.com/C0deboy">
-                  <span class="visually-hidden">
-                    Github
-                  </span>
-                <i class="fa fa-github" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                  <span class="visually-hidden">
-                    Nothing here :)
-                  </span>
-                <i class="fa fa-user-circle" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="team-member">
-          <h3 class="name">
-            Arkadiusz Bazak
-          </h3>
-          <p class="text-muted">
-            Web Dev
-          </p>
-          <ul class="list-inline social-buttons">
-            <li>
-              <a href="https://github.com/Yodakasi">
                   <span class="visually-hidden">
                     Github
                   </span>
@@ -450,7 +393,7 @@
         <h3>
           Sprawdź nas na Githubie!
         </h3>
-        <a href="https://github.com/W3ndige/jaki-jezyk-programowania" class="about-link">
+        <a href="https://github.com/C0deboy/jaki-jezyk-programowania" class="about-link">
           <i class="fa fa-github"></i>
           Repozytorium strony
         </a>
@@ -485,7 +428,7 @@
         Treść
       </label>
       <textarea name="message" id="inp-message" placeholder="Twoja wiadomość"></textarea>
-      <div class="g-recaptcha" data-sitekey="6LdQSRMUAAAAACqs1rH_N2Owo0LKK90aeT--G2eE"></div><br>
+      <div class="g-recaptcha" data-sitekey="6Lc9_xMUAAAAAFPVNhvDKb9lMXHGI4o7-zhqkTgL"></div><br>
       <input class="emailFormSubmit" name="submit" type="submit" value="Wyślij">
 
       <div class="emailFormAlert"></div>

@@ -16,12 +16,12 @@ $(function(){
     scrollToElement('#use', 600);
     });
 
-    $(".performanc-btn").click(function() {
-    scrollToElement('#performanc', 600);
+    $(".difficulty-btn").click(function() {
+    scrollToElement('#difficulty', 600);
     });
 
-    $(".money-btn").click(function() {
-    scrollToElement('#money', 600);
+    $(".popularity-btn").click(function() {
+    scrollToElement('#popularity', 600);
     });
 
     /* Highlight section */
