@@ -10,12 +10,14 @@
   <meta name="msapplication-navbutton-color" content="#4285f4">
   <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
 
-  <title>Jaki najlepszy język programowania dla mnie?</title>
+  <title>Jaki język programowania wybrać?</title>
 
   <link rel="shortcut icon" href="img/logo.ico">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main-min.css">
   <link rel="stylesheet" href="css/home-min.css">
+
+  <link rel="stylesheet" href="highlight/styles/monokai-sublime.css">
 
   <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
@@ -75,10 +77,12 @@
 
 <header id="intro" class="site-header container-fluid">
   <div class="row header-row">
-    <div class="col-md-7">
+    <div class="col-md-6 intro-text">
       <div class="intro">
         <h2 class="header-heading">Wybierz swój język programowania</h2>
-        <p class="header-text">Chciałbyś nauczyć się programowania, ale nie wiesz od jakiego języka zacząć? Spróbujemy Ci w tym pomóc! Razem z nami dowiesz się, który z nich będzie dla Ciebie najlepszy oraz zyskasz możliwość ich porównania.</p>
+        <p class="header-text">
+        Chciałbyś nauczyć się programowania, ale nie wiesz od jakiego języka zacząć? Ten projekt powstał, aby Ci w tym pomóc! Tutaj dowiesz się, który z nich będzie dla Ciebie najlepszy oraz zyskasz możliwość ich porównania.
+        </p>
       </div>
 
       <button type="button" class="lets-go" aria-hidden="true">
@@ -87,18 +91,18 @@
         <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
       </button>
     </div>
-    <div class="col-md-5" aria-hidden="true">
+    <div class="col-md-6" aria-hidden="true">
       <div class="laptop">
+        <div class="laptop-header">
+          <div class="button red"></div>
+          <div class="button yellow"></div>
+          <div class="button green"></div>
+        </div>
         <div class="screen">
           <div class="laptop-content">
             <div class="terminal-window">
-              <div class="terminal-header">
-                <div class="button red"></div>
-                <div class="button yellow"></div>
-                <div class="button green"></div>
-              </div>
               <div class="terminal">
-                <span class="element"></span>
+                <pre><code class="nohighlight"><span class="hljs-comment">//Przykładowa implementacja wyszukiwania binarnego</span><br><span class="element"></span></code></pre>
               </div>
             </div>
           </div>
@@ -147,7 +151,7 @@
             <div class="key">*</div>
             <div class="key">-</div>
             <div class="margin newrow"></div>
-            <div class="key tab newrow">Tab</div>
+            <div class="key typekey tab newrow">Tab</div>
             <div class="key">Q</div>
             <div class="key typekey">W</div>
             <div class="key typekey">E</div>
@@ -226,12 +230,239 @@
   </div>
 </header>
 
+<pre hidden><code class="language-javascript">//Javascript
+function binarySearch(A, x){
+  let start = 0;
+  let end = A.length-1;
+  while(start<=end) {
+    let middle = Math.floor( (start+end)/2 );
+    if (A[middle]===x) {
+      return "Znaleziono \""+x+"\" na pozycji "+(middle+1);
+    }
+    else {
+      if(A[middle] > x){
+        end = middle-1;
+      }
+      else{
+        start = middle+1;
+      }
+    } 
+  }
+  return "Nie znaleziono";
+  
+}
+
+let library = ["Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe","..."];
+/*Dla wyszukiwania binarnego
+tablica musi być posortowana rosnąco*/
+  
+console.log(binarySearch(library, "Illuminati"));
+//Znaleziono "Illuminati" na pozycji 4
+console.log(binarySearch(library, "Porn"));
+//Nie znaleziono
+</code>
+<code class="language-cpp">//C++
+#include &#60;iostream&#62;
+
+using namespace std;
+
+string binarySearch(string A[], string x){
+  int start = 0;
+  int end = sizeof(A)-1;
+  while(start<=end) {
+    int middle = (start+end)/2;
+    if (A[middle]==x) {
+      return "Znaleziono \""+x+"\" na pozycji "+to_string(middle+1);
+    }
+    else {
+      if(A[middle]>x){
+        end = middle-1;
+      }
+      else{
+        start = middle+1;
+      }
+    }
+  }
+  return "Nie znaleziono";
+}
+
+int main() {
+    string library[] = {"Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe","..."};
+    /*Dla wyszukiwania binarnego
+    tablica musi być posortowana rosnąco*/
+
+    cout << binarySearch(library, "Illuminati") << endl;
+    //Znaleziono "Illuminati" na pozycji 4
+    cout << binarySearch(library, "Porn") << endl;
+    //Nie znaleziono
+}
+</code>
+<code class="language-php">//PHP
+function binarySearch($A, $x){
+  $start = 0;
+  $end = sizeof($A)-1;
+  while($start<=$end) {
+    $middle = floor( ($start+$end)/2 );
+    if ($A[$middle]===$x) {
+      return "Znaleziono $x na pozycji ".($middle+1);
+    }
+    else {
+      if($A[$middle] > $x){
+        $end = $middle-1;
+      }
+      else{
+        $start = $middle+1;
+      }
+    } 
+  }
+  return "Nie znaleziono";
+  
+}
+
+$library = array("Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe","...");
+/*Dla wyszukiwania binarnego
+tablica musi być posortowana rosnąco*/
+  
+echo binarySearch($library, "Illuminati")."\n";
+//Znaleziono "Illuminati" na pozycji 4
+echo(binarySearch($library, "Porn")."\n");
+//Nie znaleziono
+</code>
+<code class="language-java">//Java
+public class BinearSearch {
+  public static String binarySearch(String[] A, String x){
+    int start = 0;
+    int end = A.length-1;
+    while(start<=end) {
+      int middle = (start+end)/2;
+      if (A[middle]==x) {
+        return "Znaleziono \""+x+"\" na pozycji "+(middle+1);
+      }
+      else {
+        if(A[middle].compareTo(x)>0){
+          end = middle-1;
+        }
+        else{
+          start = middle+1;
+        }
+      } 
+    }
+    return "Nie znaleziono";  
+  }
+  
+  public static void main(String[] args) {
+    String[] library = {"Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe","..."};
+    /*Dla wyszukiwania binarnego
+    tablica musi być posortowana rosnąco*/
+
+    System.out.println(binarySearch(library, "Illuminati"));
+    //Znaleziono "Illuminati" na pozycji 4
+    System.out.println(binarySearch(library, "Porn"));
+    //Nie znaleziono
+  }
+}
+</code>
+<code class="language-ruby">#Ruby
+def binarySearch(a, x)
+  start = 0
+  endI = a.length-1
+  while start<=endI 
+    middle = ((start+endI)/2).floor
+    if a[middle]==x
+      return "Znaleziono \""+x+"\" na pozycji "+(middle+1).to_s
+    else
+      if a[middle] > x 
+        endI = middle-1
+      else
+        start = middle+1
+      end
+    end
+  end
+  return "Nie znaleziono"
+end
+
+library = ["Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe","..."]
+#Dla wyszukiwania binarnego
+#tablica musi być posortowana rosnąco
+  
+puts(binarySearch(library, "Illuminati"))
+#Znaleziono "Illuminati" na pozycji 4
+puts(binarySearch(library, "Porn"))
+#Nie znaleziono
+</code>
+<code class="language-python">#Python
+def binarySearch(A, x):
+  start = 0
+  end = len(A)-1
+  while start<=end :
+    middle = (start+end)//2 
+    if A[middle]==x :
+      return "Znaleziono \""+x+"\" na pozycji "+str(middle+1)
+    else:
+      if A[middle] > x :
+        end = middle-1
+      else:
+        start = middle+1
+  return "Nie znaleziono"
+
+
+library = ["Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe","..."]
+#Dla wyszukiwania binarnego
+#tablica musi być posortowana rosnąco
+  
+print(binarySearch(library, "Illuminati"))
+#Znaleziono "Illuminati" na pozycji 4
+print(binarySearch(library, "Porn"))
+#Nie znaleziono
+</code>
+<code class="language-c">//C
+//in progress...
+</code>
+<code class="language-swift">//Swift
+func binarySearch(A: [String], x: String) -> String{
+  var start = 0;
+  var end = A.count-1;
+  while(start<=end) {
+    var middle = (start+end)/2;
+    if (A[middle]==x) {
+      return "Znaleziono \""+String(x)+"\" na pozycji "+String(middle+1);
+    }
+    else {
+      if(A[middle] > x){
+        end = middle-1;
+      }
+      else{
+        start = middle+1;
+      }
+    } 
+  }
+  return "Nie znaleziono";
+  
+}
+
+var library = ["Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe","..."];
+/*Dla wyszukiwania binarnego
+tablica musi być posortowana rosnąco*/
+  
+print(binarySearch(A: library, x: "Illuminati"));
+//Znaleziono "Illuminati" na pozycji 4
+print(binarySearch(A: library, x: "Porn"));
+//Nie znaleziono
+</code>
+<code class="language-csharp">//C♯
+//in progress...
+</code>
+<code class="language-r">#R
+#in progress...
+</code>
+</pre>
+
 <div class="canary-version-alert" id="project-state">
   <button type="button" id="close-project-state-btn" aria-label="Zamknij okno">
     <i class="fa fa-times fa-3x close-alert" aria-hidden="true"></i>
   </button>
   <p>
-    Projekt jest w fazie rozwoju. Cały czas pracujemy nad ulepszaniem strony i treści. AKTUALNE INFROMACJE MOGĄ BYĆ NIEPOPRAWNE. Zachęcamy do zgłaszania błędów, nieaktualnych/niepoprawnych informacji czy sugestii mających na celu poprawę jakośc strony. Dokładamy wszelkich starań, aby na stronie znalazły się sprawdzone, rzetelne informacje, jednak nie wszystko jesteśmy w stanie zweryfikowąć, dlatego oddajemy projekt w fazie beta w wasze ręce i liczymy na feedback!
+    Projekt jest w fazie rozwoju. Cały czas pracuję nad ulepszaniem strony i treści. AKTUALNE INFROMACJE MOGĄ BYĆ NIEPOPRAWNE. Zachęcam do zgłaszania błędów, nieaktualnych/niepoprawnych informacji czy sugestii mających na celu poprawę jakośc strony. Dokładam wszelkich starań, aby na stronie znalazły się sprawdzone, rzetelne informacje, jednak nie wszystko jestem w stanie sam zweryfikowąć, dlatego oddaję projekt w fazie beta w wasze ręce i liczę na feedback!
   </p>
 </div>
 
@@ -340,8 +571,7 @@
 <section id="o-projekcie" class="section about-project">
   <div class="container">
     <h2 class="section-heading">O projekcie</h2>
-    <p>Projekt powstał, aby rozwiać wszelkie wątpliwości początkujących programistów, jak i pomóc w wyborze języka osobom chcącym doświadczyć czegoś nowego.</p>
-    <p>Jesteśmy grupą młodych programistów, którzy, jak większość osób na początku swojej przygody z programowaniem, stanęli przed problemem wyboru języka. Dlatego postanowiliśmy ułatwić innym to zadanie i zapobiec powstawaniu lawiny kolejnych wątków na forach.</p>
+    <p>Każdy z nas na początku swojej przygody z programowaniem miał mnóstwo pytań, szczególnie dotyczących wyboru języka. Dlatego powstał ten projekt, aby ułatwić innym to zadanie i rozwiać wszelkie wątpliwości początkujących programistów, jak i zapobiec powstawaniu lawiny kolejnych tych samych wątków na forach.</p>
 
     <div class="row">
       <div class="col-sm-12">
@@ -350,7 +580,7 @@
             Marcin Lasota
           </h3>
           <p class="text-muted">
-            Lone wolf
+            Codeboy
           </p>
 
           <ul class="list-inline social-buttons">
@@ -376,13 +606,13 @@
     </div>
 
     <p class="row">
-      Masz jakieś uwagi czy zastrzeżenia? A może masz sugestię, którą chciałbyś się z nami podzielić? Czekamy na twoją opinię, która na pewno zmotywuje nas do dalszej pracy! Jeśli chcesz pomóc w rozwoju projektu skontaktuj się znami!
+      Masz jakieś uwagi czy zastrzeżenia? A może masz sugestię, którą chciałbyś się z mną podzielić? Czekam na twoją opinię, która na pewno zmotywuje mnie do dalszej pracy! Jeśli chcesz pomóc w rozwoju projektu skontaktuj się!
     </p>
 
     <div class="row">
       <div class="col-sm-4">
         <h3>
-          Napisz do nas!
+          Napisz do mnie!
         </h3>
         <button type="button" id="open-contact-btn" class="about-link">
           <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
@@ -391,7 +621,7 @@
       </div>
       <div class="col-sm-4">
         <h3>
-          Sprawdź nas na Githubie!
+          Sprawdź projekt na Githubie!
         </h3>
         <a href="https://github.com/C0deboy/jaki-jezyk-programowania" class="about-link">
           <i class="fa fa-github"></i>
@@ -400,7 +630,7 @@
       </div>
       <div class="col-sm-4">
         <h3>
-           Napisz do nas!
+           Napisz do mnie!
         </h3>
 	    <a href="mailto:kontakt@jaki-jezyk-programowania.plm" class="about-link">
 	    	<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
@@ -408,7 +638,7 @@
 	    </a>
       </div>
     </div>
-    <br><p>Nasz e-mail: kontakt@jaki-jezyk-programowania.pl</p>
+    <br><p>e-mail: kontakt@jaki-jezyk-programowania.pl</p>
   </div>
 </section>
 
@@ -450,6 +680,9 @@
 <script src="js/bootstrap.js"></script>
 <script src="js/typed.js"></script>
 <script src="js/main.js"></script>
+ <script src="highlight/highlight.pack.js"></script>
+ <script>hljs.initHighlightingOnLoad();</script>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

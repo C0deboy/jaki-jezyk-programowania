@@ -111,7 +111,8 @@ h4 {
 .header-heading {
   font-size: 2em;
   padding-bottom: 23px;
-  margin-bottom: 47px;
+  margin-top: -40px;
+  margin-bottom: 67px;
   position: relative;
 }
 
@@ -146,47 +147,6 @@ h4 {
   .navbar-custom .navbar-brand {
     font-size: 2em;
   }
-}
-
-/* Buttons */
-
-.btn.btn-danger {
-  min-width: 30%;
-  font-size: 2.1em;
-  background: #AA3939 linear-gradient(to bottom, #AA3939, #AA3939);
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 15px 23px -5px rgba(0,0,0,0.75), 0 8px #000;
-  margin: 5% 0 7% 0;
-}
-
-@media (min-width: 768px) {
-  .btn.btn-danger {
-    font-size: 3.1em;
-  }
-}
-
-.btn.btn-danger.start:hover {
-  background: #762E55 linear-gradient(to bottom, #762E55, #762E55);
-}
-
-.press {
-  animation: press, press2;
-  animation-duration: 0.5s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-
-
-@keyframes press{
-  0% {box-shadow: 0 15px 23px -5px rgba(0,0,0,0.75), 0 8px #000;}
-  100% {box-shadow: 0 0 23px -5px rgba(0,0,0,0.75), 0 0 #000;}
-}
-
-@keyframes press2{
-  0% {transform: translateY(0);}
-  100%{transform: translateY(8px);}
 }
 
 /* Footer Section */

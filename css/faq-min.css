@@ -57,12 +57,12 @@ html, body {
 }
 
 .question h2 {
-font-size: 1em;
-display: block;
-float: left;
-width: 85%;
-font-weight: bold;
-margin-top: 10px;
+  font-size: 1em;
+  display: block;
+  float: left;
+  width: 85%;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .question .fa-arrow-down{
