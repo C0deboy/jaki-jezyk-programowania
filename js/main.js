@@ -1,34 +1,61 @@
-/* languages examples showing up in terminal, laptop section */
-var languagesExamples = [
-  'JavaScript<br><span class="function-highlighter">function</span> <span class="function-name-highlighter">divide</span>(<span class="function-arg-highlighter">a</span>, <span class="function-arg-highlighter">b</span>) {<br><span style="margin-left: 2em;"> <span class="keyword-highlighter">if</span> (b <span class="keyword-highlighter"><span class="keyword-highlighter">==</span></span> <span class="number-highlighter">0</span>) <span class="keyword-highlighter">return</span> <span class="string-highlighter">"Warning"</span>;</span><br><span style="margin-left: 2em"><span class="keyword-highlighter">else return</span> a <span class="keyword-highlighter">/</span> b;</span> <br>}<br>console.<span class="function-highlighter">log</span>(<span class="function-name-highlighter">divide</span>(<span class="number-highlighter">15</span>, <span class="number-highlighter">5</span>));<br><span class="number-highlighter">3</span>',
-  'Python<br><span class="function-highlighter">def</span> <span class="function-name-highlighter">divide</span>(<span class="function-arg-highlighter">a</span>, <span class="function-arg-highlighter">b</span>): <br><span style="margin-left: 2em;"> <span class="keyword-highlighter">if</span> b <span class="keyword-highlighter">==</span> <span class="number-highlighter">0</span> <span class="keyword-highlighter">return</span> <span class="string-highlighter">"Warning"</span></span><br><span style="margin-left: 2em"><span class="keyword-highlighter">else return</span> a <span class="keyword-highlighter">/</span> b</span><br><span class="keyword-highlighter">print</span> <span class="function-name-highlighter">divide</span>(<span class="number-highlighter">15</span>, <span class="number-highlighter">5</span>)<br><span class="number-highlighter">3</span>',
-  'PHP<br><span class="function-highlighter">function</span> <span class="function-name-highlighter">divide</span>(<span class="function-arg-highlighter">$a</span>, <span class="function-arg-highlighter">$b</span>) {<br><span style="margin-left: 2em;"> <span class="keyword-highlighter">if</span> ($b <span class="keyword-highlighter">==</span> <span class="number-highlighter">0</span>) <span class="keyword-highlighter">return</span> <span class="string-highlighter">"Warning"</span>;</span><br><span style="margin-left: 2em"><span class="keyword-highlighter">else return</span> a <span class="keyword-highlighter">/</span> b;</span> <br>}<br><span class="keyword-highlighter">echo</span> divide(<span class="string-highlighter">15</span>, <span class="number-highlighter">5</span>);<br><span class="number-highlighter">3</span>',
-  'C++<br><span class="function-highlighter">int</span> <span class="function-name-highlighter">divide</span>(<span class="keyword-highlighter">int</span> <span class="function-arg-highlighter">a</span>, <span class="keyword-highlighter">int</span> <span class="function-arg-highlighter">b</span>) {<br><span style="margin-left: 2em;"> <span class="keyword-highlighter">if</span> (b <span class="keyword-highlighter">==</span> <span class="number-highlighter">0</span>) <span class="keyword-highlighter">return</span> <span class="string-highlighter">"Warning"</span>;</span><br><span style="margin-left: 2em"><span class="keyword-highlighter">else return</span> a <span class="keyword-highlighter">/</span> b;</span> <br>}<br><span class="keyword-highlighter">cout</span> << <span class="function-name-highlighter">divide</span>(<span class="number-highlighter">15</span>, <span class="number-highlighter">5</span>) << endl;<br><span class="number-highlighter">3</span>',
-  'Java<br>public <span class="function-highlighter">int</span> <span class="function-name-highlighter">divide</span>(<span class="keyword-highlighter">int</span> <span class="function-arg-highlighter">a</span>, <span class="keyword-highlighter">int</span> <span class="function-arg-highlighter">b</span>) {<br><span style="margin-left: 2em;"> <span class="keyword-highlighter">if</span> (b <span class="keyword-highlighter">==</span> <span class="number-highlighter">0</span>) <span class="keyword-highlighter">return</span> <span class="string-highlighter">"Warning";</span></span><br><span style="margin-left: 2em"><span class="keyword-highlighter">else return</span> a <span class="keyword-highlighter">/</span> b;</span> <br>}<br><span class="keyword-highlighter">System.out.print</span>(<span class="function-name-highlighter">divide</span>(<span class="number-highlighter">15</span>, <span class="number-highlighter">5</span>));<br><span class="number-highlighter">3</span>',
-  'Ruby<br><span class="function-highlighter">def</span> <span class="function-name-highlighter">divide</span>(<span class="function-arg-highlighter">a</span>, <span class="function-arg-highlighter">b</span>) <br><span style="margin-left: 2em;"> <span class="keyword-highlighter">if</span> b <span class="keyword-highlighter">==</span> <span class="number-highlighter">0</span> <span class="keyword-highlighter">return</span> <span class="string-highlighter">"Warning"</span></span><br><span style="margin-left: 2em"><span class="keyword-highlighter">else return</span> a <span class="keyword-highlighter">/</span> b</span><br>end<br><span class="keyword-highlighter">print</span> <span class="function-name-highlighter">divide</span>(<span class="number-highlighter">15</span>, <span class="number-highlighter">5</span>)<br><span class="number-highlighter">3</span>',
-  'C<br><span class="function-highlighter">int</span> <span class="function-name-highlighter">divide</span>(<span class="keyword-highlighter">int</span> <span class="function-arg-highlighter">a</span>, <span class="keyword-highlighter">int</span> <span class="function-arg-highlighter">b</span>) {<br><span style="margin-left: 2em;"> <span class="keyword-highlighter">if</span> (b <span class="keyword-highlighter">==</span> <span class="number-highlighter">0</span>) <span class="keyword-highlighter">return</span> <span class="string-highlighter">"Warning"</span>;</span><br><span style="margin-left: 2em"><span class="keyword-highlighter">else return</span> a <span class="keyword-highlighter">/</span> b;</span> <br>}<br><span class="keyword-highlighter">printf</span> (<span class="function-name-highlighter">divide</span>(<span class="number-highlighter">15</span>, <span class="number-highlighter">5</span>))<br><span class="number-highlighter">3</span>',
-  'Swift<br><span class="function-highlighter">funct</span> <span class="function-name-highlighter">divide</span>(<span class="function-arg-highlighter">a</span>: <span class="keyword-highlighter">Int</span>, <span class="function-arg-highlighter">b</span>: <span class="keyword-highlighter">Int</span>) -> <span class="keyword-highlighter">Int</span>{<br><span style="margin-left: 2em;"> <span class="keyword-highlighter">if</span> (b <span class="keyword-highlighter">==</span> <span class="number-highlighter">0</span>) <span class="keyword-highlighter">return</span> <span class="string-highlighter">"Warning"</span>;</span><br><span style="margin-left: 2em"><span class="keyword-highlighter">else return</span> a <span class="keyword-highlighter">/</span> b;</span> <br>}<br><span class="keyword-highlighter">print</span> (<span class="function-name-highlighter">divide</span>(<span class="number-highlighter">15</span>, <span class="number-highlighter">5</span>))<br><span class="number-highlighter">3</span>',
-  'C#<br>public <span class="function-highlighter">int</span> <span class="function-name-highlighter">divide</span>(<span class="keyword-highlighter">int</span> <span class="function-arg-highlighter">a</span>, <span class="keyword-highlighter">int</span> <span class="function-arg-highlighter">b</span>) {<br><span style="margin-left: 2em;"> <span class="keyword-highlighter">if</span> (b <span class="keyword-highlighter">==</span> <span class="number-highlighter">0</span>) <span class="keyword-highlighter">return</span> <span class="string-highlighter">"Warning";</span></span><br><span style="margin-left: 2em"><span class="keyword-highlighter">else return</span> a <span class="keyword-highlighter">/</span> b;</span> <br>}<br><span class="keyword-highlighter">Console.WriteLine</span>(<span class="function-name-highlighter">divide</span>(<span class="number-highlighter">15</span>, <span class="number-highlighter">5</span>));<br><span class="number-highlighter">3</span>',
-  'R<br><span class="function-name-highlighter">divide</span> <- <span class="function-highlighter">function</span>(<span class="function-arg-highlighter">a</span>, <span class="function-arg-highlighter">b</span>) {<br><span style="margin-left: 2em;"><span class="keyword-highlighter">if</span> (b <span class="keyword-highlighter">==</span> <span class="number-highlighter">0</span>)<span class="string-highlighter"> "Warning"</span></span><br><span style="margin-left: 2em;"><span class="keyword-highlighter">else </span>a <span class="keyword-highlighter">/</span> b</span><br>}<br><span class="function-name-highlighter">divide</span>(<span class="number-highlighter">15</span>, <span class="number-highlighter">5</span>)<br><span class="number-highlighter">3</span>'
-];
-
 $(function(){
+ var javascript = document.querySelector(".language-javascript").innerHTML;
+ var cpp = document.querySelector(".language-cpp").innerHTML;
+ var php = document.querySelector(".language-php").innerHTML;
+ var java = document.querySelector(".language-java").innerHTML;
+ var python = document.querySelector(".language-python").innerHTML;
+ var csharp = document.querySelector(".language-csharp").innerHTML;
+ var ruby = document.querySelector(".language-ruby").innerHTML;
+ var c = document.querySelector(".language-c").innerHTML;
+ var r = document.querySelector(".language-r").innerHTML;
+ var swift = document.querySelector(".language-swift").innerHTML;
+
+var languageExamples = [javascript, cpp, java, python, swift, ruby, c, r, csharp];
+var next = 1;
   /* Project state */
   $('#close-project-state-btn').on('click', function() {
     $('#project-state').fadeOut();
   });
 
   /* Typed function on terminal */
-  $(".element").typed({
-    strings: [
-      languagesExamples[0], languagesExamples[1], languagesExamples[2], languagesExamples[3], languagesExamples[4], languagesExamples[5], languagesExamples[6], languagesExamples[7], languagesExamples[8], languagesExamples[9],
-    ],
-    typeSpeed: 50,
-    loop: true,
-    backDelay: 1200,
-    backSpeed: -100,
-  });
+  function startTyping(language) {
+    
+    $(".element").typed({
+      strings: [
+        language
+      ],
+      typeSpeed: 1,
+      loop: false,
+      backSpeed: -100,
+      onStringTyped: function() {
+        clearInterval(pressKeyInt);
+        clearInterval(pressKeyInt2);
+        window.setTimeout(function() {clearInterval(scrollDownTerminal);}, 500);
+        $(".terminal code").append('<button class="nextExample-btn">nextExample();</button>');
+        $('.nextExample-btn').on('click', function() {
+          if(next==languageExamples.length) next=0;
+          startTyping(languageExamples[next++]);
+          $(".nextExample-btn").remove();
+          pressKeyInt=setInterval(pressKey,100);
+          pressKeyInt2=setInterval(pressKey,200);
+          scrollDownTerminal = setInterval(ScrollTerminal,500);
+        });
 
+      },
+    });
+  }
+  startTyping(javascript);
+
+  $('.screen').on('mousewheel DOMMouseScroll touchstart', function(){clearInterval(scrollDownTerminal);});
+
+  var scrollTerminal= document.querySelector('.screen');
+  function ScrollTerminal(){
+    if(scrollTerminal.scrollTop<(scrollTerminal.scrollHeight-scrollTerminal.offsetHeight+100)){
+      scrollTerminal.scrollTop=scrollTerminal.scrollHeight
+    }
+  }
+
+  var scrollDownTerminal = setInterval(ScrollTerminal,500);
   /* Scroll to element effect */
 
   var scrollToElement = function(el, ms){
@@ -59,6 +86,7 @@ $(function(){
     var screenWidth = $('.screen').width();
     $('.laptop').css({'height':screenWidth*1.1+'px'});
     $('.screen').css({'height':screenWidth*0.6+'px'});
+    $('.terminal').css('height','calc('+$('.screen').height()+'-20px)');
     var keyboardHeight = $('.laptop').height()*0.3;
     $('.keyboard').css({'border-bottom':keyboardHeight+'px solid #e8ebf0'});
     var keyboardWidth = $('.screen').width()/8.45;
@@ -68,6 +96,7 @@ $(function(){
     $('.keys').css({'height':parseInt(keysHeight)*0.75+'px'});
     var keysWidth = $('.keyboard').width()/3.5;
     $('.keys').css({'-webkit-transform': 'perspective('+keysWidth+'px) rotateX(10deg)'});
+    $('.laptop .laptop-header .button').width($('.laptop .laptop-header .button').height());
   }
 
   laptop();
@@ -80,8 +109,8 @@ $(function(){
     animatedKeys[randomKeyNum].classList.add("pressKey");
     setTimeout(function(){animatedKeys[randomKeyNum].classList.remove("pressKey");},350);
   }
-  var pressKeyInt=setInterval(pressKey,300);
-  var pressKeyInt2=setInterval(pressKey,500);
+  var pressKeyInt=setInterval(pressKey,100);
+  var pressKeyInt2=setInterval(pressKey,200);
 
   /*Start animation*/
   $('.start').mousedown(function() {

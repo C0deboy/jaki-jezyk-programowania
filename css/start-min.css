@@ -27,8 +27,8 @@ html, body {
 }
 
 .ans img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   cursor: pointer;
 }
 
@@ -36,6 +36,13 @@ html, body {
   .ans img {
   width: 80px;
   height: 80px;
+  }
+}
+
+@media (min-width: 2160px){
+  .ans img {
+  width: 200px;
+  height: 200px;
   }
 }
 
@@ -74,7 +81,6 @@ html, body {
 }
 
 .ans {
-  padding: 0px 30px 0px 30px;
   text-align: center;
 }
 

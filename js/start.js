@@ -52,6 +52,8 @@ $(function(){
 
   var lowLevel = {answer: 'odpE', nextQuestion: 21, actualQuestion: 12};
 
+  var fun = {answer: 'odpE', nextQuestion: 22, actualQuestion: 1};
+
   $('.ans img, .ans p').click(function() {
     if($(queClass).hasClass( 'slide_in' )) $( queClass ).removeClass( 'slide_in' );
     if($(this).parent('.ans').hasClass( 'slide_out' )) $( this ).parent('.ans').removeClass( 'slide_out' );
@@ -113,7 +115,7 @@ $(function(){
     }
 
 
-  if(previousQueNumber[previousQueNumber.length - 1] == queNumber) {
+    if(previousQueNumber[previousQueNumber.length - 1] == queNumber) {
       if(software.actualQuestion == queNumber) {
         if(software.answer == id) {
           queNumber = software.nextQuestion;
@@ -122,7 +124,7 @@ $(function(){
     }
 
 
-  if(previousQueNumber[previousQueNumber.length - 1] == queNumber) {
+    if(previousQueNumber[previousQueNumber.length - 1] == queNumber) {
       if(scripting.actualQuestion == queNumber) {
         if(scripting.answer == id) {
           queNumber = scripting.nextQuestion;
@@ -130,7 +132,7 @@ $(function(){
       }
     }
 
-  if(previousQueNumber[previousQueNumber.length - 1] == queNumber) {
+    if(previousQueNumber[previousQueNumber.length - 1] == queNumber) {
       if(dataAnalysis.actualQuestion == queNumber) {
         if(dataAnalysis.answer == id) {
           queNumber = dataAnalysis.nextQuestion;
@@ -138,7 +140,7 @@ $(function(){
       }
     }
 
-  if(previousQueNumber[previousQueNumber.length - 1] == queNumber) {
+    if(previousQueNumber[previousQueNumber.length - 1] == queNumber) {
       if(automation.actualQuestion == queNumber) {
         if(automation.answer == id) {
           queNumber = automation.nextQuestion;
@@ -146,17 +148,26 @@ $(function(){
       }
     }
 
-  if(previousQueNumber[previousQueNumber.length - 1] == queNumber) {
+    if(previousQueNumber[previousQueNumber.length - 1] == queNumber) {
       if(creatingOS.actualQuestion == queNumber) {
         if(creatingOS.answer == id) {
           queNumber = creatingOS.nextQuestion;
         }
       }
     }
-  if(previousQueNumber[previousQueNumber.length - 1] == queNumber) {
+
+    if(previousQueNumber[previousQueNumber.length - 1] == queNumber) {
       if(lowLevel.actualQuestion == queNumber) {
         if(lowLevel.answer == id) {
           queNumber = lowLevel.nextQuestion;
+        }
+      }
+    }
+
+    if(previousQueNumber[previousQueNumber.length - 1] == queNumber) {
+      if(fun.actualQuestion == queNumber) {
+        if(fun.answer == id) {
+          queNumber = fun.nextQuestion;
         }
       }
     }

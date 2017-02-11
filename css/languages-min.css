@@ -88,6 +88,13 @@ section {
   margin-left: 25%;
 }
 
+@media (max-width: 768px){
+  .language-content .language-logo {
+    max-width: 200px;
+    margin: auto;
+  }
+}
+
 ul {
     list-style-type: none;
 }
@@ -107,6 +114,20 @@ ul {
 
 .content-header  {
   padding-top: 40px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.lang-starter-heading::after,
+.content-header::after {
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 3px;
+  background: #AA3939;
+  bottom: 0;
+  left: 30%;
 }
 
 .lang-starter {
@@ -118,7 +139,7 @@ ul {
 }
 
 .context-text p{
-  text-align: left;
+  text-align: justify;
   padding: 0px 5% 0px 5%;
   text-indent: 5%;
 }
@@ -131,8 +152,11 @@ ul {
 }
 
 .lang-starter-heading {
-    font-size: 4em;
-    margin-top: 10%;
+  font-size: 4em;
+  margin-top: 10%;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px){
