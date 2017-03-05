@@ -1,17 +1,18 @@
 $(function(){
- var javascript = document.querySelector(".language-javascript").innerHTML;
- var cpp = document.querySelector(".language-cpp").innerHTML;
- var php = document.querySelector(".language-php").innerHTML;
- var java = document.querySelector(".language-java").innerHTML;
- var python = document.querySelector(".language-python").innerHTML;
- var csharp = document.querySelector(".language-csharp").innerHTML;
- var ruby = document.querySelector(".language-ruby").innerHTML;
- var c = document.querySelector(".language-c").innerHTML;
- var r = document.querySelector(".language-r").innerHTML;
- var swift = document.querySelector(".language-swift").innerHTML;
+  var javascript = document.querySelector(".language-javascript").innerHTML;
+  var cpp = document.querySelector(".language-cpp").innerHTML;
+  var php = document.querySelector(".language-php").innerHTML;
+  var java = document.querySelector(".language-java").innerHTML;
+  var python = document.querySelector(".language-python").innerHTML;
+  var csharp = document.querySelector(".language-csharp").innerHTML;
+  var ruby = document.querySelector(".language-ruby").innerHTML;
+  var c = document.querySelector(".language-c").innerHTML;
+  var r = document.querySelector(".language-r").innerHTML;
+  var swift = document.querySelector(".language-swift").innerHTML;
 
-var languageExamples = [javascript, cpp, java, python, swift, ruby, c, r, csharp];
-var next = 1;
+  var languageExamples = [javascript, cpp, java, python, swift, ruby, c, r, csharp];
+  var next = 0;
+
   /* Project state */
   $('#close-project-state-btn').on('click', function() {
     $('#project-state').fadeOut();
@@ -24,28 +25,60 @@ var next = 1;
       strings: [
         language
       ],
-      typeSpeed: 1,
+      typeSpeed: -1,
       loop: false,
       backSpeed: -100,
       onStringTyped: function() {
         clearInterval(pressKeyInt);
         clearInterval(pressKeyInt2);
-        window.setTimeout(function() {clearInterval(scrollDownTerminal);}, 500);
-        $(".terminal code").append('<button class="nextExample-btn">nextExample();</button>');
-        $('.nextExample-btn').on('click', function() {
-          if(next==languageExamples.length) next=0;
-          startTyping(languageExamples[next++]);
-          $(".nextExample-btn").remove();
-          pressKeyInt=setInterval(pressKey,100);
-          pressKeyInt2=setInterval(pressKey,200);
-          scrollDownTerminal = setInterval(ScrollTerminal,500);
-        });
-
+        clearInterval(scrollDownTerminal);
       },
     });
   }
   startTyping(javascript);
 
+  $('.nextExample-btn').on('click', function() {
+    changeExample("right");
+  });
+
+
+  $('.previousExample-btn').on('click', function() {
+    changeExample("left");
+  });
+
+  $(document).keydown(function(e) {
+    if(e.which==39){
+      changeExample("right");
+    }
+  });
+
+  $(document).keydown(function(event) {
+    if(event.which == 37){
+      changeExample("left");
+    }
+  });
+
+  function changeExample(direction) {
+    clearInterval(pressKeyInt);
+    clearInterval(pressKeyInt2);
+    clearInterval(scrollDownTerminal);
+    $('.down').remove();
+    if(direction=="left"){
+      next--;
+      if(next<=-1) next=languageExamples.length-1;
+    }
+    else {
+      next++;
+      if(next>=languageExamples.length) next=0;
+    }
+    if(next<=-1) next=languageExamples.length-1;
+    startTyping(languageExamples[next]);
+    pressKeyInt=setInterval(pressKey,100);
+    pressKeyInt2=setInterval(pressKey,200);
+    scrollDownTerminal = setInterval(ScrollTerminal,500);
+  }
+
+  /* Terminal autoscroll */
   $('.screen').on('mousewheel DOMMouseScroll touchstart', function(){clearInterval(scrollDownTerminal);});
 
   var scrollTerminal= document.querySelector('.screen');
@@ -56,6 +89,7 @@ var next = 1;
   }
 
   var scrollDownTerminal = setInterval(ScrollTerminal,500);
+
   /* Scroll to element effect */
 
   var scrollToElement = function(el, ms){

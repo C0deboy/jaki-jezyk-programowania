@@ -192,8 +192,14 @@
   line-height: 230%;
   border-radius: 2px;
   margin: 0 0 0 .6%;
-  font-size: .25em;
+  font-size: .28em;
   border-bottom: solid 2px #000;
+}
+
+@media (max-width: 768px){
+  .key{
+    font-size: .25em;
+  }
 }
 
 @keyframes animateKey {
@@ -330,11 +336,18 @@
     100% { opacity:1; }
 }
 
+.previousExample-btn,
 .nextExample-btn {
-  color: black; 
-  display: table;
-  margin: auto;
-  border-radius: 5px;
+  cursor: pointer;
+  background: #AA3939;
+  border: none;
+  border-bottom: solid 2px #000;
+}
+
+.previousExample-btn:hover,
+.nextExample-btn:hover {
+  background: #dd2c3e;
+  font-weight: 700;
 }
 
 .terminal {
@@ -480,6 +493,10 @@
   font-size: 2em;
 }
 
+.languages-list {
+  padding-top: 0vh;
+}
+
 .container-lang {
   margin-left: 0;
   margin-right: 0;
@@ -487,7 +504,10 @@
 
 @media (min-width: 768px) {
   .lang {
-    padding: 2%;
+    padding: 3%;
+  }
+    .languages-list {
+    padding-top: 8vh;
   }
 }
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jaki język wybrać/od jakiego rozpocząć naukę? Pomożemy Ci z tym!">
+  <meta name="description" content="Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jaki język wybrać/od jakiego rozpocząć naukę? Zajrzyj!">
 
   <meta name="theme-color" content="#4285f4">
   <meta name="msapplication-navbutton-color" content="#4285f4">
@@ -32,6 +32,7 @@
               Jaki język programowania
             </span>
           <img src="img/logo.png" alt="">
+
         </a>
       </h1>
 
@@ -70,6 +71,11 @@
             FAQ
           </a>
         </li>
+        <li>
+          <a class="page-scroll faq-btn" href="https://blog.jaki-jezyk-programowania.pl/">
+            Blog
+          </a>
+        </li>
       </ul>
     </nav>
   </div>
@@ -102,7 +108,10 @@
           <div class="laptop-content">
             <div class="terminal-window">
               <div class="terminal">
-                <pre><code class="nohighlight"><span class="hljs-comment">//Przykładowa implementacja wyszukiwania binarnego</span><br><span class="element"></span></code></pre>
+                <span class="hljs-comment">//Przykładowa implementacja wyszukiwania binarnego<br>//Użyj strzałek, aby zmienić język</span><br>
+                <pre><code class="nohighlight"><span class="element"></span>
+                  </code>
+                </pre>
               </div>
             </div>
           </div>
@@ -212,9 +221,9 @@
             <div class="key">Alt</div>
             <div class="key">&hearts;</div>
             <div class="key ctrl-right">Ctrl</div>
-            <div class="key">&lt;</div>
+            <button class="key previousExample-btn" aria-label="Poprzedni przykład">&lt;</button>
             <div class="key">v</div>
-            <div class="key">></div>
+            <button class="key nextExample-btn" aria-label="Następny przykład">></button>
             <div class="key">0</div>
             <div class="key">,</div>
             <div class="touchpad">
@@ -237,7 +246,7 @@ function binarySearch(A, x){
   while(start<=end) {
     let middle = Math.floor( (start+end)/2 );
     if (A[middle]===x) {
-      return "Znaleziono \""+x+"\" na pozycji "+(middle+1);
+      return middle;
     }
     else {
       if(A[middle] > x){
@@ -248,31 +257,30 @@ function binarySearch(A, x){
       }
     } 
   }
-  return "Nie znaleziono";
-  
+  return -1;
 }
 
 let library = ["Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe","..."];
 /*Dla wyszukiwania binarnego
 tablica musi być posortowana rosnąco*/
+
+let x = "Illuminati";
+let foundXAt = binarySearch(library, x);
   
-console.log(binarySearch(library, "Illuminati"));
-//Znaleziono "Illuminati" na pozycji 4
-console.log(binarySearch(library, "Porn"));
-//Nie znaleziono
+console.log("Znaleziono \""+x+"\" na pozycji "+foundXAt);
+//Znaleziono "Illuminati" na pozycji 3
 </code>
 <code class="language-cpp">//C++
 #include &#60;iostream&#62;
-
 using namespace std;
 
-string binarySearch(string A[], string x){
+int binarySearch(string A[], string x){
   int start = 0;
   int end = sizeof(A)-1;
   while(start<=end) {
     int middle = (start+end)/2;
     if (A[middle]==x) {
-      return "Znaleziono \""+x+"\" na pozycji "+to_string(middle+1);
+      return middle;
     }
     else {
       if(A[middle]>x){
@@ -283,18 +291,19 @@ string binarySearch(string A[], string x){
       }
     }
   }
-  return "Nie znaleziono";
+  return -1;
 }
 
 int main() {
-    string library[] = {"Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe","..."};
-    /*Dla wyszukiwania binarnego
-    tablica musi być posortowana rosnąco*/
+  string library[] = {"Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe","..."};
+  /*Dla wyszukiwania binarnego
+  tablica musi być posortowana rosnąco*/
+  
+  string x = "Illuminati";
+  int foundXat = binarySearch(library, x);
 
-    cout << binarySearch(library, "Illuminati") << endl;
-    //Znaleziono "Illuminati" na pozycji 4
-    cout << binarySearch(library, "Porn") << endl;
-    //Nie znaleziono
+  cout << "Znaleziono \""+x+"\" na pozycji "+to_string(foundXat)<< endl;
+  //Znaleziono "Illuminati" na pozycji 3
 }
 </code>
 <code class="language-php">//PHP
@@ -416,7 +425,41 @@ print(binarySearch(library, "Porn"))
 #Nie znaleziono
 </code>
 <code class="language-c">//C
-//in progress...
+#include <stdio.h>
+
+void binarySearch(char *A[], char *x, int Asize){
+  int start = 0;
+  int end = Asize-1;
+  while(start<=end) {
+    int middle = (start+end)/2;
+
+    if (strcmp(A[middle], x) == 0) {
+      printf("Znaleziono \"%s\" na pozycji %d \n",x,middle+1);
+      return 0;
+    }
+    else if(strcmp(A[middle], x) > 0){
+      end = middle-1;
+
+    }
+    else{
+      start = middle+1;
+
+    }
+  }
+  printf("Nie znaleziono\n");
+}
+
+int main(void) {
+  char *A[6] = {"...","Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe"};
+  /*Dla wyszukiwania binarnego
+  tablica musi być posortowana rosnąco*/
+  int arrSize = sizeof(A)/sizeof(A[0]);
+  char x[] = "Illuminati";
+  binarySearch(A, x, arrSize);
+  //Znaleziono "Illuminati" na pozycji 4
+  binarySearch(A, "Porn", arrSize);
+  //Nie znaleziono
+}
 </code>
 <code class="language-swift">//Swift
 func binarySearch(A: [String], x: String) -> String{
@@ -450,10 +493,71 @@ print(binarySearch(A: library, x: "Porn"));
 //Nie znaleziono
 </code>
 <code class="language-csharp">//C♯
-//in progress...
+using System;
+class MainClass {
+  public static String binarySearch(String[] A, String x){
+    int start = 0;
+    int end = A.Length-1;
+    while(start<=end) {
+      int middle = (start+end)/2;
+      if (A[middle]==x) {
+        return "Znaleziono \""+x+"\" na pozycji "+(middle+1);
+      }
+      else {
+        if(A[middle].CompareTo(x)>0){
+          end = middle-1;
+        }
+        else{
+          start = middle+1;
+        }
+      } 
+    }
+    return "Nie znaleziono";  
+  }
+  
+  public static void Main(String[] args) {
+    String[] library = {"Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe","..."};
+    /*Dla wyszukiwania binarnego
+    tablica musi być posortowana rosnąco*/
+
+    Console.WriteLine(binarySearch(library, "Illuminati"));
+    //Znaleziono "Illuminati" na pozycji 4
+    Console.WriteLine(binarySearch(library, "Porn"));
+    //Nie znaleziono
+  }
+}
+      
 </code>
 <code class="language-r">#R
-#in progress...
+binarySearch <- function (A, x){
+  start <- 0;
+  end <- length(A);
+  while(start<=end) {
+    middle <- floor( (start+end)/2 );
+    if (A[middle]==x) {
+      return(paste("Znaleziono",x,"na pozycji ",middle));
+    }
+    else {
+      if(A[middle] > x){
+        end = middle-1;
+      }
+      else{
+        start = middle+1;
+      }
+    } 
+  }
+  return("Nie znaleziono");
+  
+}
+
+library <- c("Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe","...");
+#Dla wyszukiwania binarnego
+#tablica musi być posortowana rosnąco
+  
+print(binarySearch(library, "Illuminati"));
+#Znaleziono "Illuminati" na pozycji 4
+print(binarySearch(library, "Algorytmy"));
+#Nie znaleziono
 </code>
 </pre>
 
@@ -472,7 +576,7 @@ print(binarySearch(A: library, x: "Porn"));
       Jak to działa?
     </h2>
     <p>
-      Przygotowaliśmy dla Ciebie zbiór pytań, dzięki którym jesteśmy w stanie określić język programowania (lub więcej niż jeden) pasujący do Twoich celów/zainteresowań. Następnie, będziesz mógł przejrzeć najważniejsze informacje o każdym z nich i  je porównać. Kliknij start, a sam dowiesz się, jaki język pasuje dla Ciebie najbardziej! Jeśli masz dodatkowe pytania warto przejrzeć FAQ, gdzie zebraliśmy wiele fundamentalnych pytań!
+      Na podstawie Twoich odpowiedzi na pytania zostanie określony język programowania (lub więcej niż jeden) pasujący do Twoich celów/zainteresowań. Następnie, będziesz mógł przejrzeć najważniejsze informacje o każdym z nich i  je porównać. Kliknij start, a sam dowiesz się, jaki język pasuje dla Ciebie najbardziej! Jeśli masz dodatkowe pytania warto przejrzeć FAQ, gdzie zebraliśmy wiele fundamentalnych pytań!
     </p>
 
     <a href="start.html" class="btn btn-danger btn-lg start" aria-label="Sprawdź swój język programowania">
@@ -489,27 +593,14 @@ print(binarySearch(A: library, x: "Porn"));
   <div class="container">
     <h2 class="section-heading">
       Języki programowania
-      <small class="text-muted">(Omawiane na naszej stronie)</small>
+      <small class="text-muted">(Omawiane na tej stronie)</small>
     </h2>
 
-    <div role="list">
-      <div class="row">
-        <div role="listitem" class="col-sm-6 lang">
-          <a href="languages/assembly.html" class="lang-link">
-            Assembly
-          </a>
-        </div>
-        <div role="listitem" class="col-sm-6 lang">
-          <a href="languages/swift.html" class="lang-link">
-            Swift
-          </a>
-        </div>
-      </div>
-
+    <div class="languages-list" role="list">
       <div class="row">
         <div role="listitem" class="col-sm-4 lang">
-          <a href="languages/scratch.html" class="lang-link">
-            Scratch
+          <a href="languages/c.html" class="lang-link">
+            C
           </a>
         </div>
         <div role="listitem" class="col-sm-4 lang">
@@ -518,8 +609,8 @@ print(binarySearch(A: library, x: "Porn"));
           </a>
         </div>
         <div role="listitem" class="col-sm-4 lang">
-          <a href="languages/python.html" class="lang-link">
-            Python
+          <a href="languages/r.html" class="lang-link">
+            R
           </a>
         </div>
       </div>
@@ -549,13 +640,13 @@ print(binarySearch(A: library, x: "Porn"));
 
       <div class="row">
         <div role="listitem" class="col-sm-4 lang">
-          <a href="languages/c.html" class="lang-link">
-            C
+          <a href="languages/swift.html" class="lang-link">
+            Swift
           </a>
         </div>
         <div role="listitem" class="col-sm-4 lang">
-          <a href="languages/r.html" class="lang-link">
-            R
+          <a href="languages/python.html" class="lang-link">
+            Python
           </a>
         </div>
         <div role="listitem" class="col-sm-4 lang">
@@ -593,9 +684,9 @@ print(binarySearch(A: library, x: "Porn"));
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://blog.jaki-jezyk-programowania.pl/about/">
                   <span class="visually-hidden">
-                    Nothing here :)
+                    O mnie
                   </span>
                 <i class="fa fa-user-circle" aria-hidden="true"></i>
               </a>
