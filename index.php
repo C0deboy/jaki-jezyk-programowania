@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jaki język wybrać/od jakiego rozpocząć naukę? Zajrzyj!">
 
-  <meta name="theme-color" content="#4285f4">
-  <meta name="msapplication-navbutton-color" content="#4285f4">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
+  <meta name="theme-color" content="##09455d">
+  <meta name="msapplication-navbutton-color" content="##09455d">
+  <meta name="apple-mobile-web-app-status-bar-style" content="##09455d">
 
   <title>Jaki język programowania wybrać?</title>
 
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main-min.css">
   <link rel="stylesheet" href="css/home-min.css">
+  <link rel="stylesheet" href="css/tlite.css">
 
   <link rel="stylesheet" href="highlight/styles/monokai-sublime.css">
 
@@ -52,11 +53,6 @@
           </a>
         </li>
         <li>
-          <a class="page-scroll how-works-btn" href="#jak-to-dziala">
-            Jak to działa?
-          </a>
-        </li>
-        <li>
           <a class="page-scroll program-languages-btn" href="#języki-programowania">
             Języki
           </a>
@@ -81,6 +77,15 @@
   </div>
 </div>
 
+<div class="canary-version-alert" id="project-state">
+  <button type="button" id="close-project-state-btn" title="Zamknij ostrzeżenie">
+    <i class="fa fa-times fa-3x close-alert" aria-hidden="true"></i>
+  </button>
+  <p>
+    Projekt jest w fazie rozwoju. Cały czas pracuję nad ulepszaniem strony i treści. AKTUALNE INFROMACJE MOGĄ BYĆ NIEPOPRAWNE. Zachęcam do zgłaszania błędów, nieaktualnych/niepoprawnych informacji czy sugestii mających na celu poprawę jakośc strony. Dokładam wszelkich starań, aby na stronie znalazły się sprawdzone, rzetelne informacje, jednak nie wszystko jestem w stanie sam zweryfikowąć, dlatego oddaję projekt w fazie beta w wasze ręce i liczę na feedback!
+  </p>
+</div>
+
 <header id="intro" class="site-header container-fluid">
   <div class="row header-row">
     <div class="col-md-6 intro-text">
@@ -91,11 +96,12 @@
         </p>
       </div>
 
-      <button type="button" class="lets-go" aria-hidden="true">
-        <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-        Dalej
-        <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
-      </button>
+      <p class="how-works-info tip" tabindex="0" title="Na podstawie Twoich odpowiedzi na pytania zostanie określony język programowania (lub więcej niż jeden) pasujący do Twoich celów/zainteresowań. Następnie, będziesz mógł przejrzeć najważniejsze informacje o każdym z nich i  je porównać. Kliknij start, a sam dowiesz się, jaki język pasuje dla Ciebie najbardziej! Jeśli masz dodatkowe pytania warto przejrzeć FAQ, gdzie zebraliśmy wiele fundamentalnych pytań!">Jak to działa?</p>
+
+      <a href="start.html" class="btn btn-danger btn-lg start">
+        <i class="fa fa-play play" aria-hidden="true"></i> Start
+      </a>
+
     </div>
     <div class="col-md-6" aria-hidden="true">
       <div class="laptop">
@@ -217,13 +223,13 @@
             <div class="key ctrl-left newrow">Ctrl</div>
             <div class="key">&hearts;</div>
             <div class="key">Alt</div>
-            <div class="key space">lolxd</div>
+            <div class="key typekey space">lolxd</div>
             <div class="key">Alt</div>
             <div class="key">&hearts;</div>
             <div class="key ctrl-right">Ctrl</div>
-            <button class="key previousExample-btn" aria-label="Poprzedni przykład">&lt;</button>
+            <button class="key previousExample-btn" title="Poprzedni przykład">&lt;</button>
             <div class="key">v</div>
-            <button class="key nextExample-btn" aria-label="Następny przykład">></button>
+            <button class="key nextExample-btn" title="Następny przykład">></button>
             <div class="key">0</div>
             <div class="key">,</div>
             <div class="touchpad">
@@ -237,7 +243,196 @@
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="col-md-12">
+      <p class="text-muted">
+        Strona ta ma na celu tylko pomoc w wyborze języka, pamiętaj, żeby ostatecznie podjąć decyzję podążając za głosem serca &hearts;
+      </p>
+    </div>
+  </div>
 </header>
+
+<section id="języki-programowania" class="section program-languages">
+  <div class="container">
+    <h2 class="section-heading">
+      Języki programowania
+      <small class="text-muted">(Omawiane na tej stronie)</small>
+    </h2>
+
+    <div class="languages-list" role="list">
+      <div class="row">
+      
+        <div role="listitem" class="col-sm-4 lang">
+          
+          <a href="languages/c.html" class="lang-link tip" title="C">
+            <img src="img/c.png" alt="Logo języka C">
+          </a>
+          
+        </div>
+
+        <div role="listitem" class="col-sm-4 lang">
+          <a href="languages/javascript.html" class="lang-link tip" title="Javascript">
+            <img src="img/javascript.png" alt="Logo języka Javascript">
+          </a>
+        </div>
+        <div role="listitem" class="col-sm-4 lang">
+          <a href="languages/r.html" class="lang-link tip" title="R">
+            <img src="img/r.png" alt="Logo języka R">
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div role="listitem" class="col-sm-3 lang">
+          <a href="languages/cpp.html" class="lang-link tip" title="C++">
+            <img src="img/cpp.png" alt="Logo języka C++">
+          </a>
+        </div>
+        <div role="listitem" class="col-sm-3 lang tip">
+          <a href="languages/java.html" class="lang-link tip" title="Java">
+            <img src="img/java.png" alt="Logo języka Java">
+          </a>
+        </div>
+        <div role="listitem" class="col-sm-3 lang tip">
+          <a href="languages/ruby.html" class="lang-link tip" title="Ruby">
+            <img src="img/ruby.png" alt="Logo języka Ruby">
+          </a>
+        </div>
+        <div role="listitem" class="col-sm-3 lang">
+          <a href="languages/csharp.html" class="lang-link tip" title="C#">
+            <img src="img/csharp.png" alt="Logo języka C#">
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div role="listitem" class="col-sm-4 lang">
+          <a href="languages/swift.html" class="lang-link tip" title="Swift">
+            <img src="img/swift.png" alt="Logo języka Swift">
+          </a>
+        </div>
+        <div role="listitem" class="col-sm-4 lang">
+          <a href="languages/python.html" class="lang-link tip" title="Python">
+            <img src="img/python.png" alt="Logo języka Python">
+          </a>
+        </div>
+        <div role="listitem" class="col-sm-4 lang">
+          <a href="languages/php.html" class="lang-link tip" title="PHP">
+            <img src="img/php.png" alt="Logo języka PHP">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="o-projekcie" class="section about-project">
+  <div class="container">
+    <h2 class="section-heading">O projekcie</h2>
+    <p>Każdy z nas na początku swojej przygody z programowaniem miał mnóstwo pytań, szczególnie dotyczących wyboru języka. Dlatego powstał ten projekt, aby ułatwić innym to zadanie i rozwiać wszelkie wątpliwości początkujących programistów, jak i zapobiec powstawaniu lawiny kolejnych tych samych wątków na forach.</p>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="team-member">
+          <h3 class="name">
+            Marcin Lasota
+          </h3>
+          <p class="text-muted">
+            Codeboy
+          </p>
+
+          <ul class="list-inline social-buttons">
+            <li>
+              <a href="https://github.com/C0deboy">
+                  <span class="visually-hidden">
+                    Github
+                  </span>
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://blog.jaki-jezyk-programowania.pl/about/">
+                  <span class="visually-hidden">
+                    O mnie
+                  </span>
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <p class="row">
+      Masz jakieś uwagi czy zastrzeżenia? A może masz sugestię, którą chciałbyś się z mną podzielić? Czekam na twoją opinię, która na pewno zmotywuje mnie do dalszej pracy! Jeśli chcesz pomóc w rozwoju projektu skontaktuj się!
+    </p>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>
+          Napisz do mnie!
+        </h3>
+        <button type="button" id="open-contact-btn" class="about-link">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          Formularz kontaktowy
+        </button>
+      </div>
+      <div class="col-sm-4">
+        <h3>
+          Sprawdź projekt na Githubie!
+        </h3>
+        <a href="https://github.com/C0deboy/jaki-jezyk-programowania" class="about-link">
+          <i class="fa fa-github"></i>
+          Repozytorium strony
+        </a>
+      </div>
+      <div class="col-sm-4">
+        <h3>
+           Napisz do mnie!
+        </h3>
+	    <a href="mailto:kontakt@jaki-jezyk-programowania.pl" class="about-link">
+	    	<i class="fa fa-envelope-o" aria-hidden="true"></i>
+	    	Program pocztowy
+	    </a>
+      </div>
+    </div>
+    <br><p>e-mail: kontakt@jaki-jezyk-programowania.pl</p>
+  </div>
+</section>
+
+<div id="contact" class="contact" role="dialog" aria-hidden="true">
+  <div role="document" class="contact-content">
+    <h2 class="visually-hidden">Kontakt</h2>
+    <form class="emailForm" method="POST" action="emailform.php">
+      <label>
+        Twój email
+        <input name="from" type="email" placeholder="przykład@przykład.pl" required>
+      </label>
+      <label>
+        Temat
+        <input name="subject" placeholder="Temat" required>
+      </label><br>
+      <label for="inp-message">
+        Treść
+      </label>
+      <textarea name="message" id="inp-message" placeholder="Twoja wiadomość" required></textarea>
+      <div class="g-recaptcha" data-sitekey="6Lc9_xMUAAAAAFPVNhvDKb9lMXHGI4o7-zhqkTgL"></div>
+      <button class="emailFormSubmit" name="submit" type="submit">Wyślij</button>
+
+      <div class="emailFormAlert" aria-live="polite"></div>
+    </form>
+
+    <button type="button" id="close-contact-btn" class="close-btn" title="Zamknij formularz kontaktowy">
+      <i class="fa fa-times close-form" aria-hidden="true"></i>
+    </button>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <small class="copyright">
+    Copyright &copy; Jaki Język Programowania 2017
+  </small>
+</footer>
 
 <pre hidden><code class="language-javascript">//Javascript
 function binarySearch(A, x){
@@ -561,218 +756,17 @@ print(binarySearch(library, "Algorytmy"));
 </code>
 </pre>
 
-<div class="canary-version-alert" id="project-state">
-  <button type="button" id="close-project-state-btn" aria-label="Zamknij okno">
-    <i class="fa fa-times fa-3x close-alert" aria-hidden="true"></i>
-  </button>
-  <p>
-    Projekt jest w fazie rozwoju. Cały czas pracuję nad ulepszaniem strony i treści. AKTUALNE INFROMACJE MOGĄ BYĆ NIEPOPRAWNE. Zachęcam do zgłaszania błędów, nieaktualnych/niepoprawnych informacji czy sugestii mających na celu poprawę jakośc strony. Dokładam wszelkich starań, aby na stronie znalazły się sprawdzone, rzetelne informacje, jednak nie wszystko jestem w stanie sam zweryfikowąć, dlatego oddaję projekt w fazie beta w wasze ręce i liczę na feedback!
-  </p>
-</div>
-
-<section id="jak-to-dziala" class="section">
-  <div class="container">
-    <h2 class="section-heading section-heading--mini">
-      Jak to działa?
-    </h2>
-    <p>
-      Na podstawie Twoich odpowiedzi na pytania zostanie określony język programowania (lub więcej niż jeden) pasujący do Twoich celów/zainteresowań. Następnie, będziesz mógł przejrzeć najważniejsze informacje o każdym z nich i  je porównać. Kliknij start, a sam dowiesz się, jaki język pasuje dla Ciebie najbardziej! Jeśli masz dodatkowe pytania warto przejrzeć FAQ, gdzie zebraliśmy wiele fundamentalnych pytań!
-    </p>
-
-    <a href="start.html" class="btn btn-danger btn-lg start" aria-label="Sprawdź swój język programowania">
-      <i class="fa fa-play play" aria-hidden="true"></i>
-      Start
-    </a>
-    <p class="text-muted">
-      Strona ta ma na celu tylko pomoc w wyborze języka, pamiętaj, żeby ostatecznie podjąć decyzję podążając za głosem serca &hearts;
-    </p>
-  </div>
-</section>
-
-<section id="języki-programowania" class="section program-languages">
-  <div class="container">
-    <h2 class="section-heading">
-      Języki programowania
-      <small class="text-muted">(Omawiane na tej stronie)</small>
-    </h2>
-
-    <div class="languages-list" role="list">
-      <div class="row">
-        <div role="listitem" class="col-sm-4 lang">
-          <a href="languages/c.html" class="lang-link">
-            C
-          </a>
-        </div>
-        <div role="listitem" class="col-sm-4 lang">
-          <a href="languages/javascript.html" class="lang-link">
-            JavaScript
-          </a>
-        </div>
-        <div role="listitem" class="col-sm-4 lang">
-          <a href="languages/r.html" class="lang-link">
-            R
-          </a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div role="listitem" class="col-sm-3 lang">
-          <a href="languages/cpp.html" class="lang-link">
-            C++
-          </a>
-        </div>
-        <div role="listitem" class="col-sm-3 lang">
-          <a href="languages/java.html" class="lang-link">
-            Java
-          </a>
-        </div>
-        <div role="listitem" class="col-sm-3 lang">
-          <a href="languages/ruby.html" class="lang-link">
-            Ruby
-          </a>
-        </div>
-        <div role="listitem" class="col-sm-3 lang">
-          <a href="languages/csharp.html" class="lang-link">
-            C#
-          </a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div role="listitem" class="col-sm-4 lang">
-          <a href="languages/swift.html" class="lang-link">
-            Swift
-          </a>
-        </div>
-        <div role="listitem" class="col-sm-4 lang">
-          <a href="languages/python.html" class="lang-link">
-            Python
-          </a>
-        </div>
-        <div role="listitem" class="col-sm-4 lang">
-          <a href="languages/php.html" class="lang-link">
-            PHP
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="o-projekcie" class="section about-project">
-  <div class="container">
-    <h2 class="section-heading">O projekcie</h2>
-    <p>Każdy z nas na początku swojej przygody z programowaniem miał mnóstwo pytań, szczególnie dotyczących wyboru języka. Dlatego powstał ten projekt, aby ułatwić innym to zadanie i rozwiać wszelkie wątpliwości początkujących programistów, jak i zapobiec powstawaniu lawiny kolejnych tych samych wątków na forach.</p>
-
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="team-member">
-          <h3 class="name">
-            Marcin Lasota
-          </h3>
-          <p class="text-muted">
-            Codeboy
-          </p>
-
-          <ul class="list-inline social-buttons">
-            <li>
-              <a href="https://github.com/C0deboy">
-                  <span class="visually-hidden">
-                    Github
-                  </span>
-                <i class="fa fa-github" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://blog.jaki-jezyk-programowania.pl/about/">
-                  <span class="visually-hidden">
-                    O mnie
-                  </span>
-                <i class="fa fa-user-circle" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <p class="row">
-      Masz jakieś uwagi czy zastrzeżenia? A może masz sugestię, którą chciałbyś się z mną podzielić? Czekam na twoją opinię, która na pewno zmotywuje mnie do dalszej pracy! Jeśli chcesz pomóc w rozwoju projektu skontaktuj się!
-    </p>
-
-    <div class="row">
-      <div class="col-sm-4">
-        <h3>
-          Napisz do mnie!
-        </h3>
-        <button type="button" id="open-contact-btn" class="about-link">
-          <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
-          Formularz kontaktowy
-        </button>
-      </div>
-      <div class="col-sm-4">
-        <h3>
-          Sprawdź projekt na Githubie!
-        </h3>
-        <a href="https://github.com/C0deboy/jaki-jezyk-programowania" class="about-link">
-          <i class="fa fa-github"></i>
-          Repozytorium strony
-        </a>
-      </div>
-      <div class="col-sm-4">
-        <h3>
-           Napisz do mnie!
-        </h3>
-	    <a href="mailto:kontakt@jaki-jezyk-programowania.plm" class="about-link">
-	    	<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
-	    	Program pocztowy
-	    </a>
-      </div>
-    </div>
-    <br><p>e-mail: kontakt@jaki-jezyk-programowania.pl</p>
-  </div>
-</section>
-
-<div id="contact" class="contact" role="dialog" aria-hidden="true">
-  <div role="document" class="contact-content">
-    <h2 class="visually-hidden">Kontakt</h2>
-    <form class="emailForm" method="post" action="emailform.php">
-      <label>
-        Twój email
-        <input name="from" type="email" placeholder="email@gmail.com">
-      </label>
-      <label>
-        Temat
-        <input name="subject" placeholder="Temat">
-      </label><br>
-      <label for="inp-message">
-        Treść
-      </label>
-      <textarea name="message" id="inp-message" placeholder="Twoja wiadomość"></textarea>
-      <div class="g-recaptcha" data-sitekey="6Lc9_xMUAAAAAFPVNhvDKb9lMXHGI4o7-zhqkTgL"></div><br>
-      <input class="emailFormSubmit" name="submit" type="submit" value="Wyślij">
-
-      <div class="emailFormAlert"></div>
-    </form>
-
-    <button type="button" id="close-contact-btn" class="close-btn" title="Zamknij formularz kontaktowy">
-      <i class="fa fa-times close-form" aria-hidden="true"></i>
-    </button>
-  </div>
-</div>
-
-<footer class="site-footer">
-  <small class="copyright">
-    Copyright &copy; Jaki Język Programowania 2017
-  </small>
-</footer>
-
 <script src="js/jquery-3.1.1.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/typed.js"></script>
 <script src="js/main.js"></script>
- <script src="highlight/highlight.pack.js"></script>
- <script>hljs.initHighlightingOnLoad();</script>
+<script src="highlight/highlight.pack.js"></script>
+<script src="js/tlite.js"></script>
+<script src="js/emailform.js"></script>
+<script>
+hljs.initHighlightingOnLoad();
+tlite(el => el.classList.contains('tip'));
+</script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

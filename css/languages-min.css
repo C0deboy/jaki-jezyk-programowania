@@ -1,5 +1,5 @@
 html, body {
-  background: linear-gradient(#d4d7db, #d4d7db);
+  background: linear-gradient(#f8f8f8, #d6d6d6);
   color: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -42,7 +42,7 @@ section {
 
 .language-content {
   width: 100%;
-  background-color: #0f4268;
+  background-color: #0a455e;
   -webkit-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
@@ -79,10 +79,10 @@ section {
 }
 
 .language-content .language-logo {
-  background-color: #0d2d49;
+  background: linear-gradient(to right bottom, #076187, #0a455e);
   -webkit-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 33px -10px rgba(0,0,0,0.75);
   margin-top: 10px;
   border-radius: 50%;
   width: 50%;
@@ -107,10 +107,9 @@ ul {
 }
 
 .up-to-date {
-  border: dotted 3px #5C6263;
-  background-color: #0d2d49;
-  box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
-  color: #cdd2d8;
+  box-shadow: 0 2px 8px 0px rgb(25, 25, 25);
+  color: #3b3b3b;
+  background: linear-gradient(#f8f8f8, #bbbbbb);
 }
 
 .content-header  {
@@ -118,17 +117,6 @@ ul {
   padding-bottom: 10px;
   margin-bottom: 20px;
   position: relative;
-}
-
-.lang-starter-heading::after,
-.content-header::after {
-  content: '';
-  position: absolute;
-  width: 40%;
-  height: 3px;
-  background: #AA3939;
-  bottom: 0;
-  left: 30%;
 }
 
 .lang-starter {
@@ -165,10 +153,4 @@ ul {
     font-size: 2vw;
     min-width: 12vw;
   }
-}
-
-footer {
-  background-color: #eeeeee;
-  color: black;
-  width:100%;
 }

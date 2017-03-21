@@ -5,7 +5,8 @@ html, body {
   font-family: 'Ubuntu', sans-serif;
   font-size: calc( 13px + (25 - 15) * ( (100vw - 320px) / ( 1920 - 320) ));
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  color: #fff;
 }
 
 section {
@@ -112,19 +113,23 @@ h4 {
   font-size: 2em;
   padding-bottom: 23px;
   margin-top: -40px;
-  margin-bottom: 67px;
+  margin-bottom: 30px;
   position: relative;
 }
 
-.header-heading:after,
-.section-heading:after {
+.faq h1::after,
+.lang-starter-heading::after,
+.content-header::after,
+.header-heading::after,
+.section-heading::after {
   content: '';
   position: absolute;
-  width: 40%;
-  height: 3px;
-  background: #AA3939;
+  width: 60%;
+  height: 1px;
+  background: #f94646;
   bottom: 0;
-  left: 30%;
+  left: 20%;
+  box-shadow: 0 0 3px 1px #f34545;
 }
 
 .header-text {
@@ -152,7 +157,7 @@ h4 {
 /* Footer Section */
 
 .site-footer, footer {
-  background: #337ab7;
+  background: #0a455e;
   padding: 10px 0;
   color: white;
   text-align: center;

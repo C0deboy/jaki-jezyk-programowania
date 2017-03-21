@@ -1,5 +1,6 @@
 html, body {
   color: black;
+  background: linear-gradient(#f8f8f8, #d6d6d6);
 }
 
 
@@ -12,7 +13,6 @@ html, body {
     min-height: 700px;
   }
 }
-
 
 .back {
   visibility: hidden;
@@ -57,7 +57,7 @@ html, body {
 
 .shade {
   display: inline-block;
-  background-color: #4a4b4c;
+  background-color: rgb(65, 65, 65);
   border-radius: 60%;
   height: 20px;
   width: 200px;
@@ -84,8 +84,13 @@ html, body {
   text-align: center;
 }
 
+.ans:active,
+.ans:hover{
+  outline: 0;
+}
+
 .ans p{
-  background-color: #337ab7;
+  background-color: #0a455e;
   border-radius: 20px;
   color: white;
   cursor: pointer;

@@ -103,10 +103,6 @@ $(function(){
     scrollToElement($(this).attr('href'), 600);
   });
 
-  $('.lets-go').on('click', function() {
-    scrollToElement($('#jak-to-dziala'), 600);
-  });
-
   /* Highlight section */
 
   $('body').scrollspy({
@@ -118,10 +114,9 @@ $(function(){
 
   function laptop()  {
     var screenWidth = $('.screen').width();
-    $('.laptop').css({'height':screenWidth*1.1+'px'});
     $('.screen').css({'height':screenWidth*0.6+'px'});
     $('.terminal').css('height','calc('+$('.screen').height()+'-20px)');
-    var keyboardHeight = $('.laptop').height()*0.3;
+    var keyboardHeight = $('.screen').height()*0.6;
     $('.keyboard').css({'border-bottom':keyboardHeight+'px solid #e8ebf0'});
     var keyboardWidth = $('.screen').width()/8.45;
     $('.keyboard').css({'border-left':keyboardWidth+'px solid transparent'});
@@ -147,7 +142,7 @@ $(function(){
   var pressKeyInt2=setInterval(pressKey,200);
 
   /*Start animation*/
-  $('.start').mousedown(function() {
+  $('.start').on("click mousedown", function() {
     $('.start').addClass('press');
   });
 
@@ -155,11 +150,8 @@ $(function(){
     $('.start').removeClass('press');
   });
 
-  $('.start').click(function(event) {
-    event.preventDefault();
-  });
-
-  $('.start').mouseup(function(event) {
+  $('.start').on("click", function(event) {
+    event.preventDefault()
     var mouseButton = event.which;
     var link = 'start.html';
 
@@ -167,56 +159,7 @@ $(function(){
 
     setTimeout(function() {
       window.location = link;
-    }, 500);
-  });
-
-  /*Pop up email form*/
-  function toggleContactModal(state) {
-    if (typeof state !== 'boolean') return TypeError('State must be a boolean');
-
-    var modal = $('#contact');
-    var modalContent = modal.find('.contact-content');
-
-    if (state === true) {
-      modal.fadeIn();
-      modal.attr('aria-hidden', 'false');
-      modalContent.attr('tabindex', '0');
-      modalContent.focus();
-    }
-    else {
-      modal.fadeOut();
-      modal.attr('aria-hidden', 'true');
-      modalContent.attr('tabindex', '-1');
-      $('body').focus();
-    }
-  }
-
-  $('#close-contact-btn').click(function () {
-    toggleContactModal(false);
-
-    $('.emailFormAlert').html('');
-    grecaptcha.reset();
-  });
-
-  $('#open-contact-btn').click(function () {
-    toggleContactModal(true);
-  });
-
-  /*Ajax post email form*/
-  $('.emailFormSubmit').click(function (event) {
-    event.preventDefault();
-
-    post_data = {
-      'userEmail'   	      : $('.emailForm input[name="from"]').val(),
-      'subject'			  : $('.emailForm input[name="subject"]').val(),
-      'message'			  : $('.emailForm textarea[name="message"]').val(),
-      'g-recaptcha-response': $("#g-recaptcha-response").val()
-    };
-
-    $.post('emailform.php', post_data, function(response){
-      $('.emailFormAlert').html(response.text);
-      grecaptcha.reset();
-    }, 'json');
-
+    }, 300);
   });
 });
+

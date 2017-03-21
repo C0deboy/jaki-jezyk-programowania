@@ -1,10 +1,5 @@
-
-html, body {
-  color: black;
-}
-
 .faq {
-  background: linear-gradient(#1e5799, #337ab7);
+  background: linear-gradient(#09455d,#144667);
   padding: 40px 0px 3% 0px;
 }
 
@@ -15,36 +10,31 @@ html, body {
   position: relative;
 }
 
-.faq h1::after{
-  content: '';
-  position: absolute;
-  width: 40%;
-  height: 3px;
-  background: #AA3939;
-  bottom: 0;
-  left: 30%;
-}
-
 .answer {
-  background-color: #0d2d49;
+  background-color: #032f46;
   display: none;
   padding: 4%;
-  border-top: dotted 3px #5C6263;
+  border-top: solid 3px #000000;
   color: white;
   clear: both;
   width: 100%;
   font-size: .8em;
   text-align: justify;
   text-indent: 5%;
+  box-shadow: 0 0 15px black;
 }
 
 .question {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
   background-color: #eeeeee;
   padding: 4%;
   margin-top: 5%;
   float: left;
   width: 100%;
   position: relative;
+  color: black;
+  box-shadow: 0px 2px 15px 0px #161616;
 }
 
 .answer p {

@@ -50,9 +50,7 @@ $(function(){
 
   var creatingOS = {answer: 'odpD', nextQuestion: 14, actualQuestion: 1};
 
-  var lowLevel = {answer: 'odpE', nextQuestion: 21, actualQuestion: 12};
-
-  var fun = {answer: 'odpE', nextQuestion: 22, actualQuestion: 1};
+  var fun = {answer: 'odpE', nextQuestion: 21, actualQuestion: 1};
 
   $('.ans img, .ans p').click(function() {
     if($(queClass).hasClass( 'slide_in' )) $( queClass ).removeClass( 'slide_in' );
@@ -192,16 +190,17 @@ $(function(){
     }
   });
 
+  var previousColor;
   $('.ans img, .ans p').hover(
     function() {
+      previousColor = $(this).parent('.ans').children('p').css('background-color');
       $(this).parent('.ans').children('img').addClass('jumpImg');
-      $(this).parent('.ans').children('p').css('background-color', '#4488f4');
+      $(this).parent('.ans').children('p').css('background-color', '#0a5677');
       $(this).parent('.ans').children('.shade').addClass('shadeImg');
     }, function() {
       $(this).parent('.ans').children('img').removeClass('jumpImg');
-      $(this).parent('.ans').children('p').css('background-color', '#337ab7');
+      $(this).parent('.ans').children('p').css('background-color', previousColor);
       $(this).parent('.ans').children('.shade').removeClass('shadeImg');
     }
   );
-
 })
