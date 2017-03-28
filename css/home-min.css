@@ -9,7 +9,9 @@
 }
 
 .canary-version-alert {
-  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   left: 0;
   top: 50px;
@@ -552,7 +554,7 @@ header .text-muted,
   background: #222222;
   border-radius: 5px;
   color: #ffffff;
-  font-size: 1.08em;
+  font-size: 1.07em;
   display: inline-block;
   margin: 10px auto 10px auto;
   text-align: center;
@@ -616,7 +618,7 @@ header .text-muted,
   border: 2px solid #ccc;
   border-radius: 10px;
   padding: 25px 25px 5px 25px;
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
   box-shadow: 0 0 13px 0px #000;
 }
@@ -668,7 +670,7 @@ header .text-muted,
 
 @media (max-height: 670px) {
   .contact {
-    padding-top:5px;
+    padding-top: 5px;
   }
 
   .emailForm textarea {
@@ -745,4 +747,15 @@ header .text-muted,
 .contact .close-btn:hover {
   cursor: pointer;
   outline: none;
+}
+
+@media (max-height: 465px){
+  .contact {
+    height: 85vh;
+    margin-top: 40px;
+    overflow: auto;
+  }
+  .emailForm textarea {
+    height: 20vh;
+  }
 }

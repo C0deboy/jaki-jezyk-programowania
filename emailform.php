@@ -1,15 +1,14 @@
 <?php
   require_once 'swiftmailer/lib/swift_required.php';
   $config = require_once 'emailconfig.php';
+  $secretKey = $config['secretKey'];
 
   $userEmail= $_POST['userEmail'];
   $subject= filter_var($_POST['subject'], FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
   $message= filter_var($_POST['message'], FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
-  
-  $secretKey = $config['secretKey'];
 
   $checkIfBot = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secretKey.'&response='.$_POST['g-recaptcha-response']);
-  $answer = json_decode($checkIfBot);
+  $recaptcha = json_decode($checkIfBot);
 
   if(!filter_var($userEmail, FILTER_VALIDATE_EMAIL)){
     $alert = 'Podaj poprawny email!';
@@ -20,11 +19,11 @@
   else if (empty($message)){
     $alert = 'Pusta wiadomość? Napisz coś!';
   }
-  else if($answer->success==false){
+  else if($recaptcha->success===false){
     $alert = 'Potwierdź, że nie jesteś robotem!';
   }
   else {
-    $transport = Swift_SmtpTransport::newInstance($config['serverName'], $config['port'])
+    $transport = Swift_SmtpTransport::newInstance($config['mailServer'], $config['port'])
       ->setUsername($config['username'])
       ->setPassword($config['password'])
       ;
@@ -38,9 +37,9 @@
     ->setBody($message)
     ;
 
-    $result = $mailer->send($message);
+    $emailSent = $mailer->send($message);
 
-    if ($result){
+    if ($emailSent){
       $alert = 'Wysłano. Dzięki za wiadomość!';
     }
     else {
@@ -52,5 +51,5 @@
         'text' => $alert
   ));
 
-  die($response);
+  exit($response);
 ?>

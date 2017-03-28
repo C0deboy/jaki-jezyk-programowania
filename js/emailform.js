@@ -45,8 +45,37 @@ $(function(){
     formAlert.innerHTML='<i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>';
     event.preventDefault();
 
-    const isValid = validateEmailForm();
     const recaptchaResponse = document.getElementById("g-recaptcha-response");
+
+    function validateEmailForm(){
+      if(userEmail.validity.valid===false){
+        markWrongInput(userEmail,"Podaj poprawny email!");
+      }
+      else if (subject.validity.valueMissing){
+        markWrongInput(subject,"Wpisz jakiś temat!");
+      }
+      else if (message.validity.valueMissing){
+        markWrongInput(message,"Pusta wiadomość? Napisz coś!");
+      }
+      else if (grecaptcha.getResponse().length === 0){
+        recaptcha.classList.add('shake');
+        recaptcha.addEventListener("mouseover", function (){this.classList.remove('shake')});
+        formAlert.innerHTML="Potwierdź, że nie jesteś robotem!";
+      }
+      else return true;
+    
+    }
+
+    function markWrongInput(wrongElement,alert){
+      formAlert.innerHTML=alert;
+      wrongElement.classList.add('wrongInput');
+      wrongElement.addEventListener("focus", function (){
+        this.classList.remove('wrongInput');
+        formAlert.innerHTML='';
+      });
+    }
+
+    const isValid = true;
 
     if(isValid===true){
 
@@ -60,7 +89,7 @@ $(function(){
           'message' : message.value,
           'g-recaptcha-response' : recaptchaResponse.value
         }
-      })
+      });
 
       sendEmail.fail(function(error) {
         formAlert.innerHTML='Coś poszło nie tak :( '+error.responseText;
@@ -68,34 +97,9 @@ $(function(){
 
       sendEmail.done(function(response){
         formAlert.innerHTML=response.text;
-      })
+      });
     }
 
-    function validateEmailForm(){
-      if(userEmail.validity.valid===false){
-        markWrongInput(userEmail,"Podaj poprawny email!");
-      }
-      else if (subject.validity.valueMissing){
-        markWrongInput(subject,"Wpisz jakiś temat!");
-      }
-      else if (message.validity.valueMissing){
-        markWrongInput(message,"Pusta wiadomość? Napisz coś!");
-      }
-      else if (grecaptcha.getResponse().length === 0){
-        recaptcha.classList.remove('shake');
-        recaptcha.classList.add('shake');
-        recaptcha.addEventListener("click", function (){this.classList.remove('shake')});
-        formAlert.innerHTML="Potwierdź, że nie jesteś robotem!";
-      }
-      else return true;
-    
-    }
-
-    function markWrongInput(wrongElement,alert){
-      formAlert.innerHTML=alert;
-      wrongElement.classList.add('wrongInput');
-      wrongElement.addEventListener("focus", function (){this.classList.remove('wrongInput')});
-    }
   });
 });
 

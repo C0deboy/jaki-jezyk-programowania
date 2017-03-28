@@ -155,14 +155,6 @@ $(function(){
     }
 
     if(previousQueNumber[previousQueNumber.length - 1] == queNumber) {
-      if(lowLevel.actualQuestion == queNumber) {
-        if(lowLevel.answer == id) {
-          queNumber = lowLevel.nextQuestion;
-        }
-      }
-    }
-
-    if(previousQueNumber[previousQueNumber.length - 1] == queNumber) {
       if(fun.actualQuestion == queNumber) {
         if(fun.answer == id) {
           queNumber = fun.nextQuestion;
@@ -203,4 +195,5 @@ $(function(){
       $(this).parent('.ans').children('.shade').removeClass('shadeImg');
     }
   );
-})
+});
+
