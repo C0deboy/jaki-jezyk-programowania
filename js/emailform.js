@@ -6,8 +6,8 @@ $(function(){
   const message = document.getElementsByName('message')[0];
   const recaptcha = document.querySelector(".g-recaptcha");
   const formAlert = document.querySelector(".emailFormAlert");
+
   const contactForm = $('#contact');
-  const contactFormContent = contactForm.find('.contact-content');
 
   function toggleContactForm(state) {
     if (typeof state !== 'boolean') return TypeError('State must be a boolean');
@@ -15,30 +15,52 @@ $(function(){
     if (state === true) {
       contactForm.fadeIn();
       contactForm.attr('aria-hidden', 'false');
-      contactFormContent.attr('tabindex', '0');
-      contactFormContent.focus();
+      firstInput.focus();
     }
     else {
       contactForm.fadeOut();
       contactForm.attr('aria-hidden', 'true');
-      contactFormContent.attr('tabindex', '-1');
-      $('body').focus();
+      userEmail.value='';
+      subject.value='';
+      message.value='';
+      formAlert.innerHTML='';
+      grecaptcha.reset();
+      openContactBtn.focus();
     }
   }
 
-  $('#close-contact-btn').click(function () {
-    toggleContactForm(false);
-    userEmail.value='';
-    subject.value='';
-    message.value='';
-    formAlert.innerHTML='';
-    grecaptcha.reset();
-  });
+  const closeContactBtn = $('#close-contact-btn');
+  const openContactBtn = $('#open-contact-btn');
 
-  $('#open-contact-btn').click(function () {
+  openContactBtn.click(function () {
     toggleContactForm(true);
   });
 
+  closeContactBtn.click(function () {
+    toggleContactForm(false);
+  });
+
+  const firstInput = $('input[name="from"]');
+
+  closeContactBtn.on('keydown', function (e) {
+   if ((e.which === 9 && !e.shiftKey)) {//tab
+       e.preventDefault();
+       firstInput.focus();
+   }
+  });
+
+  firstInput.on('keydown', function (e) {
+      if ((e.which === 9 && e.shiftKey)) {//tab
+          e.preventDefault();
+          closeContactBtn.focus();
+      }
+  });
+
+  contactForm.on('keydown', function (e) {
+      if ((e.which === 27)) {//esc
+          toggleContactForm(false);
+      }
+  });
   
 
   $('.emailFormSubmit').click(function (event) {
@@ -47,35 +69,7 @@ $(function(){
 
     const recaptchaResponse = document.getElementById("g-recaptcha-response");
 
-    function validateEmailForm(){
-      if(userEmail.validity.valid===false){
-        markWrongInput(userEmail,"Podaj poprawny email!");
-      }
-      else if (subject.validity.valueMissing){
-        markWrongInput(subject,"Wpisz jakiś temat!");
-      }
-      else if (message.validity.valueMissing){
-        markWrongInput(message,"Pusta wiadomość? Napisz coś!");
-      }
-      else if (grecaptcha.getResponse().length === 0){
-        recaptcha.classList.add('shake');
-        recaptcha.addEventListener("mouseover", function (){this.classList.remove('shake')});
-        formAlert.innerHTML="Potwierdź, że nie jesteś robotem!";
-      }
-      else return true;
-    
-    }
-
-    function markWrongInput(wrongElement,alert){
-      formAlert.innerHTML=alert;
-      wrongElement.classList.add('wrongInput');
-      wrongElement.addEventListener("focus", function (){
-        this.classList.remove('wrongInput');
-        formAlert.innerHTML='';
-      });
-    }
-
-    const isValid = true;
+    const isValid = validateEmailForm();
 
     if(isValid===true){
 
@@ -101,5 +95,32 @@ $(function(){
     }
 
   });
+
+  function validateEmailForm(){
+    if(userEmail.validity.valid===false){
+      markWrongInput(userEmail,"Podaj poprawny email!");
+    }
+    else if (subject.validity.valueMissing){
+      markWrongInput(subject,"Wpisz jakiś temat!");
+    }
+    else if (message.validity.valueMissing){
+      markWrongInput(message,"Pusta wiadomość? Napisz coś!");
+    }
+    else if (grecaptcha.getResponse().length === 0){
+      recaptcha.classList.add('shake');
+      recaptcha.addEventListener("mouseover", function (){this.classList.remove('shake')});
+      formAlert.innerHTML="Potwierdź, że nie jesteś robotem!";
+    }
+    else return true;
+  }
+
+  function markWrongInput(wrongElement,alert){
+    formAlert.innerHTML=alert;
+    wrongElement.classList.add('wrongInput');
+    wrongElement.addEventListener("focus", function (){
+      this.classList.remove('wrongInput');
+      formAlert.innerHTML='';
+    });
+  }
 });
 

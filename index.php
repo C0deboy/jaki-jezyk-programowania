@@ -400,32 +400,29 @@
   </div>
 </section>
 
-<div id="contact" class="contact" role="dialog" aria-hidden="true">
-  <div role="document" class="contact-content">
-    <h2 class="visually-hidden">Kontakt</h2>
-    <form class="emailForm" method="POST" action="emailform.php">
-      <label>
-        Twój email
-        <input name="from" type="email" placeholder="przykład@przykład.pl" required>
-      </label>
-      <label>
-        Temat
-        <input name="subject" placeholder="Temat" required>
-      </label><br>
-      <label for="inp-message">
-        Treść
-      </label>
-      <textarea name="message" id="inp-message" placeholder="Twoja wiadomość" required></textarea>
-      <div class="g-recaptcha" data-sitekey="6Lc9_xMUAAAAAFPVNhvDKb9lMXHGI4o7-zhqkTgL"></div>
-      <button class="emailFormSubmit" name="submit" type="submit">Wyślij</button>
+<div id="contact" class="contact" role="dialog" aria-label="Formularz kontaktowy" aria-hidden="true">
+  <form class="emailForm" method="POST" action="emailform.php">
+    <label>
+      Twój email
+      <input name="from" type="email" placeholder="Wpisz tu twój email" aria-required="true" required>
+    </label>
+    <label>
+      Temat
+      <input name="subject" placeholder="Wpisz tu temat wiadomości" aria-required="true" required>
+    </label><br>
+    <label for="inp-message">
+      Treść
+    </label>
+    <textarea name="message" id="inp-message" placeholder="Wpisz tu twoją wiadomość" aria-required="true" required></textarea>
+    <div class="g-recaptcha" data-sitekey="6Lc9_xMUAAAAAFPVNhvDKb9lMXHGI4o7-zhqkTgL"></div>
+    <button class="emailFormSubmit" name="submit" type="submit">Wyślij</button>
 
-      <div class="emailFormAlert" aria-live="polite"></div>
-    </form>
+    <div class="emailFormAlert" aria-live="polite"></div>
+  </form>
 
-    <button type="button" id="close-contact-btn" class="close-btn" title="Zamknij formularz kontaktowy">
-      <i class="fa fa-times close-form" aria-hidden="true"></i>
-    </button>
-  </div>
+  <button type="button" id="close-contact-btn" class="close-btn" title="Zamknij formularz kontaktowy">
+    <i class="fa fa-times close-form" aria-hidden="true"></i>
+  </button>
 </div>
 
 <footer class="site-footer">
@@ -755,14 +752,13 @@ print(binarySearch(library, "Algorytmy"));
 #Nie znaleziono
 </code>
 </pre>
-
 <script src="js/jquery-3.1.1.js"></script>
+<script src="js/emailform.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/typed.js"></script>
 <script src="js/main.js"></script>
 <script src="highlight/highlight.pack.js"></script>
 <script src="js/tlite.js"></script>
-<script src="js/emailform.js"></script>
 <script>
 hljs.initHighlightingOnLoad();
 tlite(el => el.classList.contains('tip'));
