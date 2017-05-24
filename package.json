@@ -1,0 +1,48 @@
+{
+  "name": "jaki-jezyk-programowania",
+  "version": "1.0.0",
+  "description": "Website that helps choose a programming language for begginers.",
+  "main": "",
+  "scripts": {
+    "build": "webpack",
+    "build:w": "webpack --watch",
+    "build:p": "webpack -p",
+    "serve": "webpack-dev-server",
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C0deboy/jaki-jezyk-programowania.git"
+  },
+  "keywords": [
+    "programing",
+    "languages"
+  ],
+  "author": "Codeboy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/C0deboy/jaki-jezyk-programowania/issues"
+  },
+  "homepage": "https://github.com/C0deboy/jaki-jezyk-programowania#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "style-loader": "^0.17.0",
+    "uglifyjs-webpack-plugin": "^0.4.3",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "highlight.js": "^9.11.0",
+    "jquery": "^3.2.1",
+    "mattboldt.typed.js": "^1.1.4"
+  }
+}

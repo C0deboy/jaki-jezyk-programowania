@@ -1,0 +1,6 @@
+{
+    "require": {
+        "swiftmailer/swiftmailer": "^5.4",
+        "respect/validation": "^1.1"
+    }
+}
