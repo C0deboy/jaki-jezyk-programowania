@@ -759,6 +759,7 @@ print(binarySearch(library, "Algorytmy"));
 <script src="dist/home.bundle.js"></script>
 <script src="dist/global.bundle.js"></script>
 <script src="highlight/highlight.pack.js"></script>
+<script src="emailform/js/emailform.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
