@@ -21,7 +21,7 @@ $(() => {
   const formAlert = document.querySelector('.emailFormAlert');
 
   function toggleContactForm(state) {
-    if (typeof state !== 'boolean') return TypeError('State must be a boolean');
+    if (typeof state !== 'boolean') throw new TypeError('State must be a boolean');
 
     if (state === true) {
       contactForm.fadeIn();
