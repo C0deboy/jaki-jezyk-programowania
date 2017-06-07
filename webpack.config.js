@@ -11,7 +11,7 @@ module.exports = {
     'language.js': './js/language.js',
     'start.js': './js/start.js',
     'faq.css': './css/faq.css',
-    'language.css': './css/languages.css',
+    'language.css': './css/language.css',
     'start.css': './css/start.css',
   },
   output: {
