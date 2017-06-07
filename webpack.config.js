@@ -7,6 +7,12 @@ module.exports = {
     'home.bundle.css': './css/home/merge.css',
     'global.bundle.js': './js/global/merge.js',
     'global.bundle.css': './css/global/merge.css',
+    'faq.js': './js/faq.js',
+    'language.js': './js/language.js',
+    'start.js': './js/start.js',
+    'faq.css': './css/faq.css',
+    'language.css': './css/languages.css',
+    'start.css': './css/start.css',
   },
   output: {
     path: path.join(__dirname, 'dist'),

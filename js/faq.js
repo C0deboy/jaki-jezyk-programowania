@@ -1,19 +1,19 @@
 $(() => {
-  $('.question').click(function openAnswer() {
-    if ($(this).next().is(':hidden')) {
-      $(this).next().slideDown();
-      $(this).find('.fa-arrow-down').addClass('rotation');
-      $(this).find('.fa-arrow-down').removeClass('rotationBack');
-    } else {
-      $(this).next().slideUp();
-      $(this).find('.fa-arrow-down').addClass('rotationBack');
-      $(this).find('.fa-arrow-down').removeClass('rotation');
-    }
-  });
+  function toggleAnswer() {
+    const answer = $(this).next();
+    const arrow = $(this).find('.fa-arrow-down');
 
-  $('.answer').click(function closeAnswer() {
-    $(this).slideUp();
-    $(this).find('.fa-arrow-down').addClass('rotationBack');
-    $(this).find('.fa-arrow-down').removeClass('rotation');
-  });
-});
+    if (answer.is(':hidden')) {
+      answer.slideDown();
+      arrow.addClass('rotation');
+      arrow.removeClass('rotationBack');
+    } else {
+      answer.slideUp();
+      arrow.addClass('rotationBack');
+      arrow.removeClass('rotation');
+    }
+  }
+  const question = $('.question');
+  question.on('click', toggleAnswer);
+  question.on('keypress', toggleAnswer);
+})();

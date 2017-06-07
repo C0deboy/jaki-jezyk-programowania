@@ -1,6 +1,4 @@
 $(() => {
-    /* Scroll to element effect */
-
   const scrollToElement = (el, ms) => {
     const speed = ms || 600;
     $('html,body').animate({
@@ -12,11 +10,9 @@ $(() => {
     scrollToElement($(this).attr('href'), 600);
   });
 
-    // Navigation Scripts to Show Header on Scroll-Up
-  jQuery(document).ready(($) => {
+  $(document).ready(($) => {
     const MQL = 1170;
 
-        // primary navigation slide-in effect
     if ($(window).width() > MQL) {
       const navbarCustom = $('.navbar-custom');
       const headerHeight = navbarCustom.height();
@@ -24,16 +20,13 @@ $(() => {
         previousTop: 0,
       }, function dynamicNavbar() {
         const currentTop = $(window).scrollTop();
-            // check if user is scrolling up
         if (currentTop < this.previousTop) {
-                // if scrolling up...
           if (currentTop > 0 && navbarCustom.hasClass('is-fixed')) {
             navbarCustom.addClass('is-visible');
           } else {
             navbarCustom.removeClass('is-visible is-fixed');
           }
         } else {
-                // if scrolling down...
           navbarCustom.removeClass('is-visible');
           if (currentTop > headerHeight && !navbarCustom.hasClass('is-fixed')) navbarCustom.addClass('is-fixed');
         }
@@ -41,8 +34,6 @@ $(() => {
       });
     }
   });
-
-    /* Highlight section */
 
   $('body').scrollspy({
     target: '.navbar-fixed-top',

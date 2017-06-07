@@ -1,4 +1,4 @@
 .idea
-node_modules/
-/js/lightAriaTooltips.js
-settings.php
+node_modules
+emailform/settings.php
+slownik-programisty.html

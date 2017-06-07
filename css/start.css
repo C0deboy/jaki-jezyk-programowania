@@ -5,7 +5,7 @@ html, body {
 
 
 .all {
-  min-height: calc(100vh - 51px);
+  min-height: calc(100vh - 50px);
   overflow: hidden;
 }
 @media (max-width: 768px) {
@@ -20,6 +20,7 @@ html, body {
   left: 5px;
   position: absolute;
   cursor: pointer;
+  z-index: 999;
 }
 
 .questions h1 {
