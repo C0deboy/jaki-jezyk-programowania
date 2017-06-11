@@ -11,14 +11,15 @@
     tooltip.style.left = (centerEl - tooltipWidth / 2) + 'px';
   }
 
-  function toggleTooltip(e) {
+  function toggleTooltip(e, state) {
+    if (typeof state !== 'boolean') throw new TypeError('State must be a boolean');
     let el = e.target;
     while (el.classList.contains('tip') === false) {
       el = el.parentElement;
     }
     const tooltipId = el.getAttribute('aria-describedby');
     const tooltip = document.getElementById(tooltipId);
-    if (tooltip.classList.contains('fadeIn') === false) {
+    if (state === true) {
       positionTooltip(el, tooltip);
       tooltip.classList.add('fadeIn');
     } else {
@@ -32,10 +33,10 @@
     element.setAttribute('tabindex', '0');
     element.setAttribute('aria-describedby', 'tooltip' + tipId);
     element.setAttribute('aria-live', 'true');
-    element.addEventListener('mouseover', toggleTooltip);
-    element.addEventListener('focus', toggleTooltip);
-    element.addEventListener('mouseout', toggleTooltip);
-    element.addEventListener('blur', toggleTooltip);
+    element.addEventListener('mouseover', (e) => toggleTooltip(e, true));
+    element.addEventListener('focus', (e) => toggleTooltip(e, true));
+    element.addEventListener('mouseout', (e) => toggleTooltip(e, false));
+    element.addEventListener('blur', (e) => toggleTooltip(e, false));
   }
 
   function prepareTooltip(text) {

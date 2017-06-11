@@ -37,6 +37,7 @@
 
 .tip{
 	text-decoration: underline;
+	color: inherit;
 }
 
 .tip:hover {

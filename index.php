@@ -99,6 +99,12 @@
         <i class="fa fa-play play" aria-hidden="true"></i> Start
       </a>
 
+      <p>Przygotowałem ankietę dotyczącą wyboru języka / technologii do danego zastosowania. Daj znać co ty zaproponowałbyś początkującym programistom!</p>
+      <button id="ankieta" class="about-link" style="font-size: 1.2em;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ankieta</button>
+      <div class="survey-dialog">
+        <iframe class="survey" src="https://docs.google.com/forms/d/e/1FAIpQLScdtXZd_Y_4oQyOtlhYpmDID48ejeK2w-CEuO0IL53wC4dQxQ/viewform?embedded=true" >Ładuję...</iframe>
+        <button id="close-survey-btn" class="close-survey-btn" aria-label="Zamknij ankietę" title="Zamknij ankietę"> <i class="fa fa-times"></i></button>
+      </div>
     </div>
     <div class="col-md-6" aria-hidden="true">
       <div class="laptop">
