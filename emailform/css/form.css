@@ -1,7 +1,7 @@
 .contact {
   display: none;
   position: fixed;
-  width: 80%;
+  width: 97%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -13,9 +13,16 @@
   box-shadow: 0 0 13px 0 #000;
   font-size: calc(13px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
   font-family: Ubuntu, sans-serif;
+  z-index: 999;
 }
 
 @media (min-width: 768px) {
+  .contact {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
   .contact {
     width: 45%;
   }
