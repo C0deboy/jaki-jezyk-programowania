@@ -1,4 +1,4 @@
-@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '../../libs/bootstrap.min.css';
 @import "main.css";
 @import "tooltips.css";
 @import "navbar.css";
