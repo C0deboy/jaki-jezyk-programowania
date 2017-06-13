@@ -101,7 +101,7 @@
 
       <p>Przygotowałem ankietę dotyczącą wyboru języka / technologii do danego zastosowania. Daj znać co ty zaproponowałbyś początkującym programistom!</p>
       <button id="ankieta" class="about-link" style="font-size: 1.2em;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ankieta</button>
-      <div class="survey-dialog">
+      <div class="survey-dialog" role="dialog" aria-label="Ankieta">
         <iframe class="survey" src="https://docs.google.com/forms/d/e/1FAIpQLScdtXZd_Y_4oQyOtlhYpmDID48ejeK2w-CEuO0IL53wC4dQxQ/viewform?embedded=true" >Ładuję...</iframe>
         <button id="close-survey-btn" class="close-survey-btn" aria-label="Zamknij ankietę" title="Zamknij ankietę"> <i class="fa fa-times"></i></button>
       </div>
@@ -407,7 +407,7 @@
     <form class="emailForm" method="POST" action="emailform/ajaxsend.php">
         <label class="beside" aria-live="polite">
             Twój email
-            <input class="form-data" name="userEmail" type="email" placeholder="Wpisz tu twój email" required>
+            <input class="form-data" name="email" type="email" placeholder="Wpisz tu twój email" required>
         </label>
         <label class="beside" aria-live="polite">
             Temat
@@ -765,7 +765,6 @@ print(binarySearch(library, "Algorytmy"));
 <script src="dist/home.bundle.js"></script>
 <script src="dist/global.bundle.js"></script>
 <script src="highlight/highlight.pack.js"></script>
-<script src="emailform/js/emailform.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

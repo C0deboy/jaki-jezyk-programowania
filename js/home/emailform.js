@@ -93,28 +93,19 @@ $(() => {
 
       const sendEmail = $.ajax({
         type: 'POST',
-        url: 'emailform/ajaxsend.php',
+        url: '//formspree.io/lasota.marcinm@gmail.com',
         dataType: 'json',
         data: formData,
       });
 
       sendEmail.fail((error) => {
         console.log(error);
-
-        for (const el in error.responseJSON.errors) {
-          if (el === 'recaptcha') {
-            markWrongInput(recaptcha, error.responseJSON.errors[el]);
-          } else {
-            markWrongInput(formDataElements[el], error.responseJSON.errors[el]);
-          }
-        }
-
         formAlert.innerHTML = customErrors.errorsInForm;
       });
 
       sendEmail.done((response) => {
         console.log(response);
-        formAlert.innerHTML = response.status;
+        formAlert.innerHTML = 'Wysłano! Dzięki za wiadomość!';
       });
     } else {
       formAlert.innerHTML = customErrors.errorsInForm;
