@@ -51,7 +51,12 @@ $(() => {
     toggleContactForm(false);
   });
 
-  const firstInput = $('input[name="from"]');
+  const firstInput = $('.form-data:first');
+
+  if (document.location.hash === '#contact') {
+    openContactBtn.focus();
+    openContactBtn.click();
+  }
 
   closeContactBtn.on('keydown', (e) => {
     if ((e.which === 9 && !e.shiftKey)) { // tab
