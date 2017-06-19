@@ -1,6 +1,5 @@
 $(() => {
-    /* Laptop Responsivness*/
-  function laptop() {
+  function responsiveLaptop() {
     const screen = $('.screen');
     const keyboard = $('.keyboard');
     const keys = $('.keys');
@@ -21,6 +20,6 @@ $(() => {
     button.width(button.height());
   }
 
-  laptop();
-  window.addEventListener('resize', laptop);
+  responsiveLaptop();
+  window.addEventListener('resize', responsiveLaptop);
 });
