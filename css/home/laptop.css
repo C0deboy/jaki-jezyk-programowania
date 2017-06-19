@@ -186,7 +186,6 @@
 
 .space {
   width: 31%;
-  color: #333;
 }
 
 .enter2, .plus {
@@ -258,20 +257,37 @@
 }
 
 .previousExample-btn,
-.nextExample-btn {
+.nextExample-btn{
   cursor: pointer;
   background: #bb2929;
   border: none;
   border-bottom: solid 2px #000;
   font-size: 0.4em;
-  line-height: 50%;
+  line-height: 100%;
   font-weight: 700;
   text-indent: -1px;
 }
 
 .previousExample-btn:hover,
-.nextExample-btn:hover {
+.nextExample-btn:hover,
+.skip:hover{
   background: #ff5454;
+}
+
+.skip {
+  cursor: pointer;
+  background: #bb2929;
+  border: none;
+  border-bottom: solid 2px #000;
+  font-weight: 700;
+  line-height: initial;
+  font-size: 0.4em;
+}
+
+@media (max-width: 768px) {
+  .skip {
+    font-size: 0.35em;
+  }
 }
 
 .terminal {

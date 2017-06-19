@@ -29,7 +29,7 @@ $(() => {
   const scrollTerminal = document.querySelector('.screen');
 
   function ScrollTerminal() {
-// eslint-disable-next-line max-len
+  // eslint-disable-next-line max-len
     if (scrollTerminal.scrollTop < ((scrollTerminal.scrollHeight - scrollTerminal.offsetHeight) + 100)) {
       scrollTerminal.scrollTop = scrollTerminal.scrollHeight;
     }
@@ -41,7 +41,6 @@ $(() => {
     clearInterval(scrollDownTerminal);
   });
 
-    /* Typed function on terminal */
   function startTyping(language) {
     $('.element').typed({
       strings: [
@@ -59,7 +58,6 @@ $(() => {
   }
 
   startTyping(javascript);
-    /* Laptop animated keys*/
 
   function changeExample(direction) {
     clearInterval(pressKeyInt);
@@ -67,7 +65,7 @@ $(() => {
     clearInterval(scrollDownTerminal);
     $('.down').remove();
     if (direction === 'left') {
-      next += 1;
+      next -= 1;
       if (next <= -1) next = languageExamples.length - 1;
     } else {
       next += 1;
@@ -79,6 +77,21 @@ $(() => {
     pressKeyInt2 = setInterval(pressKey, 200);
     scrollDownTerminal = setInterval(ScrollTerminal, 500);
   }
+
+  function skipTyping() {
+    startTyping('');
+    document.querySelector('.element').innerHTML = languageExamples[next];
+  }
+  document.querySelector('.skip').addEventListener('click', () => {
+    skipTyping();
+  });
+
+  $('.laptop').keydown((e) => {
+    if (e.which === 32) {
+      e.preventDefault();
+      skipTyping();
+    }
+  });
 
   $('.nextExample-btn').on('click', () => {
     changeExample('right');
