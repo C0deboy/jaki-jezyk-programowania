@@ -53,12 +53,8 @@ $(() => {
   const wholeAnsBtn = $('.ans img, .ans p');
 
   wholeAnsBtn.click(function () {
-    if ($(queClass).hasClass('slide_in')) { $(queClass).removeClass('slide_in'); }
-    if ($(this).parent('.ans').hasClass('slide_out')) { $(this).parent('.ans').removeClass('slide_out'); }
-    if ($(queClass).find('.ans').hasClass('slide_up')) { $(queClass).find('.ans').removeClass('slide_up'); }
-    if ($(this).parent().parent().attr('target')) return 0;
     $(this).parent('.ans').addClass('slide_out');
-    $(queClass).fadeOut('slow');
+    $(queClass).fadeOut();
 
 
     if (queNumber === 1) {
@@ -164,38 +160,40 @@ $(() => {
 
     queClass = '.que' + queNumber;
     window.setTimeout(() => {
-      $(queClass).fadeIn('slow'); $(queClass).find('.ans').show().addClass('slide_up');
-    }, 1000);
-    if ($(queClass).hasClass('slide_in')) $(queClass).removeClass('slide_in');
+      $(queClass).fadeIn();
+      $(queClass).find('.ans').fadeIn();
+    }, 700);
   });
 
   let previousColor;
+
   wholeAnsBtn.hover(
     function markAnswer() {
-      previousColor = $(this).parent('.ans').children('p').css('background-color');
-      $(this).parent('.ans').children('img').addClass('jumpImg');
-      $(this).parent('.ans').children('p').css('background-color', '#0a5677');
-      $(this).parent('.ans').children('.shade').addClass('shadeImg');
+      const thisParentAns = $(this).parent('.ans');
+      previousColor = thisParentAns.children('p').css('background-color');
+      thisParentAns.children('img').addClass('jumpImg');
+      thisParentAns.children('p').css('background-color', '#0a5677');
+      thisParentAns.children('.shade').addClass('shadeImg');
     },
     function unmarkAnswer() {
-      $(this).parent('.ans').children('img').removeClass('jumpImg');
-      $(this).parent('.ans').children('p').css('background-color', previousColor);
-      $(this).parent('.ans').children('.shade').removeClass('shadeImg');
+      const thisParentAns = $(this).parent('.ans');
+      thisParentAns.children('img').removeClass('jumpImg');
+      thisParentAns.children('p').css('background-color', previousColor);
+      thisParentAns.children('.shade').removeClass('shadeImg');
     },
   );
   const answer = $('.ans');
 
   $('.back').click(() => {
     if (answer.hasClass('slide_out')) answer.removeClass('slide_out');
-    if ($(queClass).find('.ans').hasClass('slide_up')) $(queClass).find('.ans').removeClass('slide_up');
 
-    $(queClass).fadeOut('slow');
+    $(queClass).fadeOut();
     queClass = '.que' + previousQueNumber[previousQueNumber.length - 1];
     queNumber = previousQueNumber[previousQueNumber.length - 1];
     previousQueNumber.pop();
     window.setTimeout(() => {
-      $(queClass).show().addClass('slide_in');
-    }, 1000);
+      $(queClass).fadeIn();
+    }, 500);
     if (queNumber === 1) {
       $('.back').css('visibility', 'hidden');
     }
