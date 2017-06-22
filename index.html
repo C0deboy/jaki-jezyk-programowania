@@ -400,12 +400,12 @@
 	    </a>
       </div>
     </div>
-    <br><p>e-mail: kontakt@jaki-jezyk-programowania.pl</p>
+    <br><p>e-mail: lasota.marcinm@gmail.com</p>
   </div>
 </section>
 
 <div id="contact" class="contact" role="dialog" aria-label="Formularz kontaktowy" aria-hidden="true">
-    <form class="emailForm" method="POST" action="emailform/ajaxsend.php">
+    <form class="emailForm" method="POST" action="https://formspree.io/lasota.marcinm@gmail.com">
         <label class="beside" aria-live="polite">
             Twój email
             <input class="form-data" name="email" type="email" placeholder="Wpisz tu twój email" required>
@@ -442,324 +442,300 @@
 </footer>
 
 <pre hidden><code class="language-javascript">//Javascript
-function binarySearch(A, x){
+function binarySearch(A, x) {
   let start = 0;
-  let end = A.length-1;
-  while(start<=end) {
-    let middle = Math.floor( (start+end)/2 );
-    if (A[middle]===x) {
+  let end = A.length - 1;
+  while (start <= end) {
+    const middle = Math.floor((start + end) / 2);
+    if (A[middle] === x) {
       return middle;
     }
-    else {
-      if(A[middle] > x){
-        end = middle-1;
-      }
-      else{
-        start = middle+1;
-      }
+    if (A[middle] > x) {
+      end = middle - 1;
+    } else {
+      start = middle + 1;
     }
   }
   return -1;
 }
 
-let library = ["Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe","..."];
-/*Dla wyszukiwania binarnego
-tablica musi być posortowana rosnąco*/
+const library = ['Algorytmy', 'Czysty kod', 'Harry Potter', 'Illuminati', 'Wzorce projektowe', '...'];
+/* Dla wyszukiwania binarnego
+ tablica musi być posortowana rosnąco */
 
-let x = "Illuminati";
-let foundXAt = binarySearch(library, x);
-  
-console.log("Znaleziono \""+x+"\" na pozycji "+foundXAt);
-//Znaleziono "Illuminati" na pozycji 3
+const x = 'Illuminati';
+const foundXAt = binarySearch(library, x);
+
+console.log('Znaleziono "' + x + '" na pozycji ' + foundXAt);
+// Znaleziono "Illuminati" na pozycji 3
 </code>
 <code class="language-cpp">//C++
 #include &#60;iostream&#62;
 using namespace std;
 
-int binarySearch(string A[], string x){
+int binarySearch(string A[], string x) {
   int start = 0;
-  int end = sizeof(A)-1;
-  while(start<=end) {
-    int middle = (start+end)/2;
-    if (A[middle]==x) {
+  int end = sizeof(A) - 1;
+  while (start <= end) {
+    int middle = (start + end) / 2;
+    if (A[middle] == x) {
       return middle;
     }
-    else {
-      if(A[middle]>x){
-        end = middle-1;
-      }
-      else{
-        start = middle+1;
-      }
+    if (A[middle] > x) {
+      end = middle - 1;
+    } else {
+      start = middle + 1;
     }
   }
   return -1;
 }
 
 int main() {
-  string library[] = {"Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe","..."};
-  /*Dla wyszukiwania binarnego
-  tablica musi być posortowana rosnąco*/
+  string library[] = {"Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce projektowe", "..."};
+  /* Dla wyszukiwania binarnego
+  tablica musi być posortowana rosnąco */
   
   string x = "Illuminati";
   int foundXat = binarySearch(library, x);
 
-  cout << "Znaleziono \""+x+"\" na pozycji "+to_string(foundXat)<< endl;
-  //Znaleziono "Illuminati" na pozycji 3
+  cout << "Znaleziono \"" + x + "\" na pozycji " + to_string(foundXat)<< endl;
+  // Znaleziono "Illuminati" na pozycji 3
 }
 </code>
 <code class="language-php">//PHP
-function binarySearch($A, $x){
+function binarySearch($A, $x) {
   $start = 0;
-  $end = sizeof($A)-1;
-  while($start<=$end) {
-    $middle = floor( ($start+$end)/2 );
-    if ($A[$middle]===$x) {
-      return "Znaleziono $x na pozycji ".($middle+1);
+  $end = sizeof($A) - 1;
+  while ($start <= $end) {
+    $middle = floor(($start + $end) / 2);
+    if ($A[$middle] === $x) {
+      return $middle;
     }
-    else {
-      if($A[$middle] > $x){
-        $end = $middle-1;
-      }
-      else{
-        $start = $middle+1;
-      }
+    if ($A[$middle] > $x) {
+      $end = $middle - 1;
+    } else {
+      $start = $middle + 1;
     }
   }
-  return "Nie znaleziono";
-  
+  return -1;
 }
 
-$library = array("Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe","...");
-/*Dla wyszukiwania binarnego
-tablica musi być posortowana rosnąco*/
+$library = array("Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce projektowe", "...");
+/* Dla wyszukiwania binarnego
+tablica musi być posortowana rosnąco */
+
+$x = "Illuminati";
+$foundXAt = binarySearch($library, $x);
   
-echo binarySearch($library, "Illuminati")."\n";
-//Znaleziono "Illuminati" na pozycji 4
-echo(binarySearch($library, "Porn")."\n");
-//Nie znaleziono
+echo "Znaleziono \" $x \" na pozycji $foundXAt";
+//Znaleziono "Illuminati" na pozycji 3
 </code>
 <code class="language-java">//Java
-public class BinearSearch {
-  public static String binarySearch(String[] A, String x){
+public class BinarySearch {
+  public static int binarySearch(String[] A, String x) {
     int start = 0;
-    int end = A.length-1;
-    while(start<=end) {
-      int middle = (start+end)/2;
-      if (A[middle]==x) {
-        return "Znaleziono \""+x+"\" na pozycji "+(middle+1);
+    int end = A.length - 1;
+    while (start <= end) {
+      int middle = (start + end) / 2;
+      if (A[middle].equals(x)) {
+        return middle;
       }
-      else {
-        if(A[middle].compareTo(x)>0){
-          end = middle-1;
-        }
-        else{
-          start = middle+1;
-        }
+      if(A[middle].compareTo(x) > 0) {
+        end = middle-1;
+      } else {
+        start = middle+1;
       }
     }
-    return "Nie znaleziono";
+    return -1;
   }
-  
-  public static void main(String[] args) {
-    String[] library = {"Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe","..."};
-    /*Dla wyszukiwania binarnego
-    tablica musi być posortowana rosnąco*/
 
-    System.out.println(binarySearch(library, "Illuminati"));
-    //Znaleziono "Illuminati" na pozycji 4
-    System.out.println(binarySearch(library, "Porn"));
-    //Nie znaleziono
+  public static void main(String[] args) {
+    String[] library = {"Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce projektowe", "..."};
+    /* Dla wyszukiwania binarnego
+    tablica musi być posortowana rosnąco */
+
+    String x = "Illuminati";
+    int foundXAt = binarySearch(library, x);
+
+    System.out.println("Znaleziono \"" + x + "\" na pozycji " + foundXAt);
+    // Znaleziono "Illuminati" na pozycji 3
   }
 }
 </code>
 <code class="language-ruby">#Ruby
 def binarySearch(a, x)
-  start = 0
-  endI = a.length-1
-  while start<=endI 
-    middle = ((start+endI)/2).floor
-    if a[middle]==x
-      return "Znaleziono \""+x+"\" na pozycji "+(middle+1).to_s
+  startAt = 0
+  endAt = a.length - 1
+  while startAt <= endAt
+    middle = ((startAt + endAt) / 2).floor
+    if a[middle] == x
+      return middle
     else
       if a[middle] > x
-        endI = middle-1
+        endAt = middle - 1
       else
-        start = middle+1
+        startAt = middle + 1
       end
     end
   end
-  return "Nie znaleziono"
+  return -1
 end
 
-library = ["Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe","..."]
-#Dla wyszukiwania binarnego
-#tablica musi być posortowana rosnąco
-  
-puts(binarySearch(library, "Illuminati"))
-#Znaleziono "Illuminati" na pozycji 4
-puts(binarySearch(library, "Porn"))
-#Nie znaleziono
+library = ["Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce projektowe", "..."]
+# Dla wyszukiwania binarnego
+# tablica musi być posortowana rosnąco
+
+x = "Illuminati";
+foundXAt = binarySearch(library, x);
+puts("Znaleziono \"" + x + "\" na pozycji " + foundXAt.to_s)
+# Znaleziono "Illuminati" na pozycji 3
 </code>
 <code class="language-python">#Python
-def binarySearch(A, x):
+def binarySearch(A, x) :
   start = 0
-  end = len(A)-1
-  while start<=end :
-    middle = (start+end)//2
-    if A[middle]==x :
-      return "Znaleziono \""+x+"\" na pozycji "+str(middle+1)
+  end = len(A) - 1
+  while start <= end :
+    middle = (start+end) // 2
+    if A[middle] == x :
+      return middle
+    if A[middle] > x :
+      end = middle - 1
     else:
-      if A[middle] > x :
-        end = middle-1
-      else:
-        start = middle+1
-  return "Nie znaleziono"
+      start = middle + 1
+  return -1
 
+library = ["Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce projektowe", "..."]
+# Dla wyszukiwania binarnego
+# tablica musi być posortowana rosnąco
 
-library = ["Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe","..."]
-#Dla wyszukiwania binarnego
-#tablica musi być posortowana rosnąco
-  
-print(binarySearch(library, "Illuminati"))
-#Znaleziono "Illuminati" na pozycji 4
-print(binarySearch(library, "Porn"))
-#Nie znaleziono
+x = "Illuminati"
+foundXAt = binarySearch(library, x)
+
+print("Znaleziono \"" + x + "\" na pozycji " + str(foundXAt))
+# Znaleziono "Illuminati" na pozycji 3
 </code>
 <code class="language-c">//C
 #include &#60;stdio.h&#62;
 
-void binarySearch(char *A[], char *x, int Asize){
+int binarySearch(char *A[], char *x, int Asize){
   int start = 0;
-  int end = Asize-1;
-  while(start<=end) {
-    int middle = (start+end)/2;
-
+  int end = Asize - 1;
+  while(start <= end) {
+    int middle = (start + end) / 2;
     if (strcmp(A[middle], x) == 0) {
-      printf("Znaleziono \"%s\" na pozycji %d \n",x,middle+1);
-      return 0;
+      return middle;
     }
-    else if(strcmp(A[middle], x) > 0){
-      end = middle-1;
+    if (strcmp(A[middle], x) > 0) {
+      end = middle - 1;
 
-    }
-    else{
-      start = middle+1;
+    } else {
+      start = middle + 1;
 
     }
   }
-  printf("Nie znaleziono\n");
+  return -1;
 }
 
 int main(void) {
-  char *A[6] = {"...","Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe"};
-  /*Dla wyszukiwania binarnego
-  tablica musi być posortowana rosnąco*/
-  int arrSize = sizeof(A)/sizeof(A[0]);
+  char *A[6] = {"Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce projektowe", "..."};
+  /* Dla wyszukiwania binarnego
+  tablica musi być posortowana rosnąco */
+
+  int arrSize = sizeof(A) / sizeof(A[0]);
   char x[] = "Illuminati";
-  binarySearch(A, x, arrSize);
-  //Znaleziono "Illuminati" na pozycji 4
-  binarySearch(A, "Porn", arrSize);
-  //Nie znaleziono
+  int foundXAt = binarySearch(A, x, arrSize);
+
+  printf("Znaleziono \"%s\" na pozycji %d \n", x, foundXAt);
+  // Znaleziono "Illuminati" na pozycji 3
 }
 </code>
 <code class="language-swift">//Swift
-func binarySearch(A: [String], x: String) -> String{
+func binarySearch(A: [String], x: String) -> Int {
   var start = 0;
-  var end = A.count-1;
-  while(start<=end) {
-    var middle = (start+end)/2;
-    if (A[middle]==x) {
-      return "Znaleziono \""+String(x)+"\" na pozycji "+String(middle+1);
+  var end = A.count - 1;
+  while (start<=end) {
+    var middle = (start+end) / 2;
+    if (A[middle] == x) {
+      return middle;
     }
-    else {
-      if(A[middle] > x){
-        end = middle-1;
-      }
-      else{
-        start = middle+1;
-      }
+    if (A[middle] > x) {
+      end = middle - 1;
+    } else {
+      start = middle + 1;
     }
   }
-  return "Nie znaleziono";
-  
+  return -1;
+
 }
 
-var library = ["Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe","..."];
-/*Dla wyszukiwania binarnego
-tablica musi być posortowana rosnąco*/
-  
-print(binarySearch(A: library, x: "Illuminati"));
-//Znaleziono "Illuminati" na pozycji 4
-print(binarySearch(A: library, x: "Porn"));
-//Nie znaleziono
+var library = ["Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce projektowe", "..."];
+/* Dla wyszukiwania binarnego
+tablica musi być posortowana rosnąco */
+
+var x = "Illuminati";
+var foundXAt = binarySearch(A: library, x: x);
+print("Znaleziono \"" + String(x) + "\" na pozycji " + String(foundXAt));
+// Znaleziono "Illuminati" na pozycji 3
 </code>
 <code class="language-csharp">//C♯
 using System;
 class MainClass {
-  public static String binarySearch(String[] A, String x){
+  public static int binarySearch(String[] A, String x){
     int start = 0;
-    int end = A.Length-1;
-    while(start<=end) {
-      int middle = (start+end)/2;
-      if (A[middle]==x) {
-        return "Znaleziono \""+x+"\" na pozycji "+(middle+1);
+    int end = A.Length - 1;
+    while(start <= end) {
+      int middle = (start+end) / 2;
+      if (A[middle] == x) {
+        return middle;
       }
-      else {
-        if(A[middle].CompareTo(x)>0){
-          end = middle-1;
-        }
-        else{
-          start = middle+1;
-        }
+      if(A[middle].CompareTo(x) > 0){
+        end = middle - 1;
+      } else {
+        start = middle + 1;
       }
     }
-    return "Nie znaleziono";
+    return -1;
   }
-  
-  public static void Main(String[] args) {
-    String[] library = {"Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe","..."};
-    /*Dla wyszukiwania binarnego
-    tablica musi być posortowana rosnąco*/
 
-    Console.WriteLine(binarySearch(library, "Illuminati"));
-    //Znaleziono "Illuminati" na pozycji 4
-    Console.WriteLine(binarySearch(library, "Porn"));
-    //Nie znaleziono
+  public static void Main(String[] args) {
+    String[] library = {"Algorytmy", "Czysty kod" ,"Harry Potter" , "Illuminati", "Wzorce projektowe", "..."};
+    /* Dla wyszukiwania binarnego
+    tablica musi być posortowana rosnąco */
+
+    String x = "Illuminati";
+    int foundXAt = binarySearch(library, x);
+
+    Console.WriteLine("Znaleziono \"" + x + "\" na pozycji " + foundXAt);
+    // Znaleziono "Illuminati" na pozycji 3
   }
 }
-
 </code>
 <code class="language-r">#R
 binarySearch <- function (A, x){
   start <- 0;
-  end <- length(A);
-  while(start<=end) {
-    middle <- floor( (start+end)/2 );
-    if (A[middle]==x) {
-      return(paste("Znaleziono",x,"na pozycji ",middle));
+  end <- length(A) - 1;
+  while (start <= end) {
+    middle <- floor((start+end) / 2);
+    if (A[middle] == x) {
+      return(middle);
     }
-    else {
-      if(A[middle] > x){
-        end = middle-1;
-      }
-      else{
-        start = middle+1;
-      }
+    if(A[middle] > x){
+      end = middle - 1;
+    }
+    else{
+      start = middle + 1;
     }
   }
-  return("Nie znaleziono");
-  
+  return -1;
 }
 
-library <- c("Algorytmy","Czysty kod","Harry Potter","Illuminati","Wzorce projektowe","...");
-#Dla wyszukiwania binarnego
-#tablica musi być posortowana rosnąco
-  
-print(binarySearch(library, "Illuminati"));
-#Znaleziono "Illuminati" na pozycji 4
-print(binarySearch(library, "Algorytmy"));
-#Nie znaleziono
+library <- c("Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce projektowe", "...");
+# Dla wyszukiwania binarnego
+# tablica musi być posortowana rosnąco
+x = "Illuminati";
+foundXAt = binarySearch(library, x);
+print(paste("Znaleziono ", x, " na pozycji ", foundXAt));
+# Znaleziono "Illuminati" na pozycji 4
 </code>
 </pre>
 
