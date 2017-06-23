@@ -130,11 +130,8 @@ ul {
   text-indent: 5%;
 }
 
-#nodejs{
-  width: 260px;
-  height: 160px;
-  padding-top: 70px;
-  margin-bottom: 20px;
+.context-text img{
+  margin: 25px 0;
 }
 
 .lang-starter-heading {

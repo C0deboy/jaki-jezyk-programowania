@@ -30,9 +30,8 @@
 	z-index: -1;
 	position: absolute;
 	transform: rotate(45deg);
-	margin: -9px 0;
-	left: 50%;
-	margin-left: -7.5px;
+  left: 50%;
+  margin: -9px 0 -9px -7.5px;
 }
 
 .tip{
