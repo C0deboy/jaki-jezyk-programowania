@@ -168,5 +168,4 @@ $(() => {
 
 window.recaptchaClearErr = () => {
   document.querySelector('.g-recaptcha').focus();
-}
-
+};
