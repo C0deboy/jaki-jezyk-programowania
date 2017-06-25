@@ -101,7 +101,6 @@
 .keys {
   width: 100%;
   margin-left: 2%;
-  z-index: 0;
   -webkit-transform: perspective(150px) rotateX(10deg);
   -moz-transform: perspective(150px) rotateX(10deg);
   -ms-transform: perspective(150px) rotateX(10deg);
