@@ -29,6 +29,10 @@
 	height: 15px;
 	z-index: -1;
 	position: absolute;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
   left: 50%;
   margin: -9px 0 -9px -7.5px;
