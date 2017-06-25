@@ -1,114 +1,116 @@
-const javascript = document.querySelector('.language-javascript').innerHTML;
-const cpp = document.querySelector('.language-cpp').innerHTML;
-const php = document.querySelector('.language-php').innerHTML;
-const java = document.querySelector('.language-java').innerHTML;
-const python = document.querySelector('.language-python').innerHTML;
-const csharp = document.querySelector('.language-csharp').innerHTML;
-const ruby = document.querySelector('.language-ruby').innerHTML;
-const c = document.querySelector('.language-c').innerHTML;
-const r = document.querySelector('.language-r').innerHTML;
-const swift = document.querySelector('.language-swift').innerHTML;
+$(() => {
+  const javascript = document.querySelector('.language-javascript').innerHTML;
+  const cpp = document.querySelector('.language-cpp').innerHTML;
+  const php = document.querySelector('.language-php').innerHTML;
+  const java = document.querySelector('.language-java').innerHTML;
+  const python = document.querySelector('.language-python').innerHTML;
+  const csharp = document.querySelector('.language-csharp').innerHTML;
+  const ruby = document.querySelector('.language-ruby').innerHTML;
+  const c = document.querySelector('.language-c').innerHTML;
+  const r = document.querySelector('.language-r').innerHTML;
+  const swift = document.querySelector('.language-swift').innerHTML;
 
-const languageExamples = [javascript, cpp, java, python, php, swift, ruby, c, r, csharp];
-let next = 0;
+  const languageExamples = [javascript, cpp, java, python, php, swift, ruby, c, r, csharp];
+  let next = 0;
 
-const animatedKeys = document.querySelectorAll('.typekey');
+  const animatedKeys = document.querySelectorAll('.typekey');
 
-function pressKey() {
-  const randomKeyNum = Math.floor((Math.random() * 29));
-  animatedKeys[randomKeyNum].classList.add('pressKey');
-  setTimeout(() => {
-    animatedKeys[randomKeyNum].classList.remove('pressKey');
-  }, 350);
-}
-
-let pressKeyInt = setInterval(pressKey, 100);
-let pressKeyInt2 = setInterval(pressKey, 200);
-
-const scrollTerminal = document.querySelector('.screen');
-
-function ScrollTerminal() {
-// eslint-disable-next-line max-len
-  if (scrollTerminal.scrollTop < ((scrollTerminal.scrollHeight - scrollTerminal.offsetHeight) + 100)) {
-    scrollTerminal.scrollTop = scrollTerminal.scrollHeight;
+  function pressKey() {
+    const randomKeyNum = Math.floor((Math.random() * 29));
+    animatedKeys[randomKeyNum].classList.add('pressKey');
+    setTimeout(() => {
+      animatedKeys[randomKeyNum].classList.remove('pressKey');
+    }, 350);
   }
-}
 
-let scrollDownTerminal = setInterval(ScrollTerminal, 500);
+  let pressKeyInt = setInterval(pressKey, 100);
+  let pressKeyInt2 = setInterval(pressKey, 200);
 
-$('.screen').on('mousewheel DOMMouseScroll touchstart', () => {
-  clearInterval(scrollDownTerminal);
-});
+  const scrollTerminal = document.querySelector('.screen');
 
-function startTyping(language) {
-  $('.element').typed({
-    strings: [
-      language,
-    ],
-    typeSpeed: -1,
-    loop: false,
-    backSpeed: -100,
-    onStringTyped() {
-      clearInterval(pressKeyInt);
-      clearInterval(pressKeyInt2);
-      clearInterval(scrollDownTerminal);
-    },
+  function ScrollTerminal() {
+  // eslint-disable-next-line max-len
+    if (scrollTerminal.scrollTop < ((scrollTerminal.scrollHeight - scrollTerminal.offsetHeight) + 100)) {
+      scrollTerminal.scrollTop = scrollTerminal.scrollHeight;
+    }
+  }
+
+  let scrollDownTerminal = setInterval(ScrollTerminal, 500);
+
+  $('.screen').on('mousewheel DOMMouseScroll touchstart', () => {
+    clearInterval(scrollDownTerminal);
   });
-}
 
-startTyping(javascript);
+  function startTyping(language) {
+    $('.element').typed({
+      strings: [
+        language,
+      ],
+      typeSpeed: -1,
+      loop: false,
+      backSpeed: -100,
+      onStringTyped() {
+        clearInterval(pressKeyInt);
+        clearInterval(pressKeyInt2);
+        clearInterval(scrollDownTerminal);
+      },
+    });
+  }
 
-function changeExample(direction) {
-  clearInterval(pressKeyInt);
-  clearInterval(pressKeyInt2);
-  clearInterval(scrollDownTerminal);
-  $('.down').remove();
-  if (direction === 'left') {
-    next -= 1;
+  startTyping(javascript);
+
+  function changeExample(direction) {
+    clearInterval(pressKeyInt);
+    clearInterval(pressKeyInt2);
+    clearInterval(scrollDownTerminal);
+    $('.down').remove();
+    if (direction === 'left') {
+      next -= 1;
+      if (next <= -1) next = languageExamples.length - 1;
+    } else {
+      next += 1;
+      if (next >= languageExamples.length) next = 0;
+    }
     if (next <= -1) next = languageExamples.length - 1;
-  } else {
-    next += 1;
-    if (next >= languageExamples.length) next = 0;
+    startTyping(languageExamples[next]);
+    pressKeyInt = setInterval(pressKey, 100);
+    pressKeyInt2 = setInterval(pressKey, 200);
+    scrollDownTerminal = setInterval(ScrollTerminal, 500);
   }
-  if (next <= -1) next = languageExamples.length - 1;
-  startTyping(languageExamples[next]);
-  pressKeyInt = setInterval(pressKey, 100);
-  pressKeyInt2 = setInterval(pressKey, 200);
-  scrollDownTerminal = setInterval(ScrollTerminal, 500);
-}
 
-function skipTyping() {
-  startTyping('');
-  document.querySelector('.element').innerHTML = languageExamples[next];
-}
-document.querySelector('.skip').addEventListener('click', () => {
-  skipTyping();
-});
-
-$('.laptop').keydown((e) => {
-  if (e.which === 32) {
-    e.preventDefault();
+  function skipTyping() {
+    startTyping('');
+    document.querySelector('.element').innerHTML = languageExamples[next];
+  }
+  document.querySelector('.skip').addEventListener('click', () => {
     skipTyping();
-  }
-});
+  });
 
-$('.nextExample-btn').on('click', () => {
-  changeExample('right');
-});
+  $('.laptop').keydown((e) => {
+    if (e.which === 32) {
+      e.preventDefault();
+      skipTyping();
+    }
+  });
 
-
-$('.previousExample-btn').on('click', () => {
-  changeExample('left');
-});
-
-$(document).keydown((e) => {
-  if (e.which === 39) {
+  $('.nextExample-btn').on('click', () => {
     changeExample('right');
-  }
-});
+  });
 
-$(document).keydown((event) => {
-  if (event.which === 37) {
+
+  $('.previousExample-btn').on('click', () => {
     changeExample('left');
-  }
+  });
+
+  $(document).keydown((e) => {
+    if (e.which === 39) {
+      changeExample('right');
+    }
+  });
+
+  $(document).keydown((event) => {
+    if (event.which === 37) {
+      changeExample('left');
+    }
+  });
 });
