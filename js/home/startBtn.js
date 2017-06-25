@@ -1,23 +1,21 @@
-$(() => {
-  const startBtn = $('.start');
+const startBtn = $('.start');
 
-  startBtn.on('click mousedown', () => {
-    startBtn.addClass('press');
-  });
+startBtn.on('click mousedown', () => {
+  startBtn.addClass('press');
+});
 
-  startBtn.mouseout(() => {
-    startBtn.removeClass('press');
-  });
+startBtn.mouseout(() => {
+  startBtn.removeClass('press');
+});
 
-  startBtn.on('click', (event) => {
-    event.preventDefault();
-    const mouseButton = event.which;
-    const link = 'start.html';
+startBtn.on('click', (event) => {
+  event.preventDefault();
+  const mouseButton = event.which;
+  const link = 'start.html';
 
-    if (mouseButton === 3) return;
+  if (mouseButton === 3) return;
 
-    setTimeout(() => {
-      window.location = link;
-    }, 300);
-  });
+  setTimeout(() => {
+    window.location = link;
+  }, 300);
 });
