@@ -6,6 +6,7 @@ html, body {
   width: 100%;
   min-height: 100%;
   color: #fff;
+  background: -webkit-linear-gradient(#05729e,#05729f);
   background: linear-gradient(#05729e,#05729f);
 }
 
@@ -45,9 +46,12 @@ h4 {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
+  -webkit-justify-content: center;
   justify-content: center;
   text-align: center;
+  padding-top: 80px;
 }
 
 .header-heading {

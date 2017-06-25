@@ -101,7 +101,12 @@
 .keys {
   width: 100%;
   margin-left: 2%;
+  z-index: 0;
   -webkit-transform: perspective(150px) rotateX(10deg);
+  -moz-transform: perspective(150px) rotateX(10deg);
+  -ms-transform: perspective(150px) rotateX(10deg);
+  -o-transform: perspective(150px) rotateX(10deg);
+  transform: perspective(150px) rotateX(10deg);
 }
 
 .margin {
@@ -189,7 +194,15 @@
 }
 
 .enter2, .plus {
+  -webkit-transform-origin: top;
+  -moz-transform-origin: top;
+  -ms-transform-origin: top;
+  -o-transform-origin: top;
   transform-origin: top;
+  -webkit-transform: scale(1, 2.15);
+  -moz-transform: scale(1, 2.15);
+  -ms-transform: scale(1, 2.15);
+  -o-transform: scale(1, 2.15);
   transform: scale(1, 2.15);
   border-bottom: solid 1px #000;
   font-size: .15em;
@@ -310,9 +323,17 @@
   left: 0;
   right: 0;
   height: 35px;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  margin: auto;
 }
 
 .laptop .laptop-header .button {
