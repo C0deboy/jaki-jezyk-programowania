@@ -5,10 +5,10 @@
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) translateZ(1000px);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%) translateZ(1000px);
+  -ms-transform: translate(-50%, -50%) translateZ(1000px);
+  -o-transform: translate(-50%, -50%) translateZ(1000px);
+  transform: translate(-50%, -50%) translateZ(1000px);
   background-color: #fafafa;
   border: 2px solid #ccc;
   border-radius: 10px;
