@@ -1,0 +1,32 @@
+.canary-version-alert {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50px;
+  z-index: 999;
+  font-size: .7em;
+  background-color: #ba2828;
+  color: #fff;
+  padding: 5px;
+}
+
+@media (min-width: 2160px) {
+  .canary-version-alert {
+    margin-top: 60px;
+  }
+}
+
+.canary-version-alert p {
+  margin-bottom: 0;
+}
+
+.canary-version-alert button {
+  background: none;
+  border: 0;
+  float: right;
+}
+
+#close-project-state-btn:hover {
+  cursor: pointer;
+  outline: none;
+}

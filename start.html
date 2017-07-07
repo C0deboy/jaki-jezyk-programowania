@@ -8,37 +8,26 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#4285f4">
-  <!-- Windows Phone -->
   <meta name="msapplication-navbutton-color" content="#4285f4">
-  <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
 
   <title>Wybierz swój język programowania!</title>
 
   <link rel="shortcut icon" href="img/logo.ico">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="css/main-min.css">
-
-  <!-- Start CSS -->
-  <link rel="stylesheet" href="css/start-min.css">
+  <link rel="stylesheet" href="dist/global.bundle.css">
+  <link rel="stylesheet" href="dist/start.css">
 
 </head>
 <body>
-<!-- Navigation Bar -->
-<nav class="navbar navbar-default navbar-custom">
-      <div class="container-fluid">
-              <div class="home">
-                  <a class="navbar-brand page-scroll" href="index.php"><img src="img/logo.png" alt=""> <i class="fa fa-home" aria-hidden="true"></i></a>
-              </div>
-          </div>
 
-      </div>
+<nav class="navbar navbar-default navbar-custom">
+    <div class="container-fluid">
+        <div class="home">
+            <a class="navbar-brand page-scroll" href="./"><img src="img/logo.png" alt=""> <i class="fa fa-home" aria-hidden="true"></i></a>
+        </div>
+    </div>
 </nav>
 
 <section class="all">
@@ -52,29 +41,29 @@
           <h1>Dlaczego chcesz się uczyć programować?</h1>
         </div>
         <a href="languages/scratch.html">
-            <div class="col-sm-2 ans" id="odpC">
+            <div class="col-sm-2 ans" data-answer="odpC">
                 <img src="img/forkids.png" alt="">
                 <br><div class="shade"></div>
                 <p>Chcę zainteresować tym moje dzieci</p>
             </div>
           </a>
         <div class="answers">
-          <div class="col-sm-3 ans" id="odpA">
+          <div class="col-sm-3 ans" data-answer="odpA">
               <img src="img/prodev.png" alt="">
               <br><div class="shade"></div>
               <p>Chcę zostać profesjonalnym programistą</p>
           </div>
-          <div class="col-sm-2 ans" id="odpB">
+          <div class="col-sm-2 ans" data-answer="odpB">
               <img src="img/startup.png" alt="">
               <br><div class="shade"></div>
               <p>Chcę stworzyć własny projekt</p>
           </div>
-          <div class="col-sm-2 ans" id="odpE">
+          <div class="col-sm-2 ans" data-answer="odpE">
                 <img src="img/fun.png" alt="">
                 <br><div class="shade"></div>
                 <p>Nie wiem... słyszałem, że to fajne :D</p>
             </div>
-          <div class="col-sm-3 ans" id="odpD">
+          <div class="col-sm-3 ans" data-answer="odpD">
               <img src="img/lernsthnew.png" alt="">
               <br><div class="shade"></div>
               <p>Chcę nabyć nowe umiejętności otwierające nowe możliwości</p>
@@ -91,27 +80,27 @@
           <h1>Co chcesz programować?</h1>
         </div>
         <div class="answers">
-          <div class="col-sm-3 ans" id="odpA">
+          <div class="col-sm-3 ans" data-answer="odpA">
               <img src="img/mobiles.png" alt="">
               <br><div class="shade"></div>
               <p>Chcę programować aplikacje mobilne</p>
           </div>
-          <div class="col-sm-2 ans" id="odpC">
+          <div class="col-sm-2 ans" data-answer="odpC">
               <img src="img/webdev.png" alt="">
               <br><div class="shade"></div>
               <p>Interesują mnie aplikacje webowe</p>
           </div>
-          <div class="col-sm-2 ans" id="odpD">
+          <div class="col-sm-2 ans" data-answer="odpD">
               <img src="img/games.png" alt="">
               <br><div class="shade"></div>
               <p>Kocham gry, i chciałbym je tworzyć</p>
           </div>
-          <div class="col-sm-2 ans" id="odpE">
+          <div class="col-sm-2 ans" data-answer="odpE">
               <img src="img/software.png" alt="">
               <br><div class="shade"></div>
               <p>Tylko i wyłącznie software</p>
           </div>
-          <div class="col-sm-3 ans" id="odpB">
+          <div class="col-sm-3 ans" data-answer="odpB">
               <img src="img/corpo.png" alt="">
               <br><div class="shade"></div>
               <p>Moim marzeniem jest praca dla dużych korporacji</p>
@@ -129,21 +118,21 @@
         </div>
         <div class="answers">
           <a href="languages/swift.html">
-            <div class="col-sm-4 ans" id="odpA">
+            <div class="col-sm-4 ans" data-answer="odpA">
                 <img src="img/apple.png" alt="">
                 <br><div class="shade"></div>
                 <p>IOS</p>
             </div>
           </a>
           <a href="languages/java.html">
-            <div class="col-sm-4 ans" id="odpB">
+            <div class="col-sm-4 ans" data-answer="odpB">
                 <img src="img/android.png" alt="">
                 <br><div class="shade"></div>
                 <p>Android</p>
             </div>
           </a>
           <a href="languages/csharp.html">
-            <div class="col-sm-4 ans" id="odpC">
+            <div class="col-sm-4 ans" data-answer="odpC">
                 <img src="img/windows.png" alt="">
                 <br><div class="shade"></div>
                 <p>Windows</p>
@@ -162,26 +151,26 @@
         </div>
         <div class="answers">
           <a href="languages/csharp.html">
-            <div class="col-sm-3 ans" id="odpA">
+            <div class="col-sm-3 ans" data-answer="odpA">
                 <img src="img/microsoft.png" alt="">
                 <br><div class="shade"></div>
                 <p>Microsoft</p>
             </div>
           </a>
           <a href="languages/swift.html">
-            <div class="col-sm-3 ans" id="odpB">
+            <div class="col-sm-3 ans" data-answer="odpB">
                 <img src="img/apple.png" alt="">
                 <br><div class="shade"></div>
                 <p>Apple</p>
             </div>
           </a>
-          <div class="col-sm-3 ans" id="odpC">
+          <div class="col-sm-3 ans" data-answer="odpC">
               <img src="img/facebook.png" alt="">
               <br><div class="shade"></div>
               <p>Facebook</p>
           </div>
           <a href="languages/python.html">
-            <div class="col-sm-3 ans" id="odpD">
+            <div class="col-sm-3 ans" data-answer="odpD">
                 <img src="img/google.png" alt="">
                 <br><div class="shade"></div>
                 <p>Google</p>
@@ -200,13 +189,13 @@
         </div>
         <div class="answers">
           <a href="languages/javascript.html">
-            <div class="col-sm-6 ans" id="odpA">
+            <div class="col-sm-6 ans" data-answer="odpA">
                 <img src="img/frontend.png" alt="">
                 <br><div class="shade"></div>
                 <p>Front End</p>
             </div>
           </a>
-          <div class="col-sm-6 ans" id="odpB">
+          <div class="col-sm-6 ans" data-answer="odpB">
               <img src="img/backend.png" alt="">
               <br><div class="shade"></div>
               <p>Back End</p>
@@ -223,18 +212,18 @@
           <h1>Jaka praca bardziej ci pasuje?</h1>
         </div>
         <div class="answers">
-          <div class="col-sm-4 ans" id="odpA">
+          <div class="col-sm-4 ans" data-answer="odpA">
               <img src="img/corpo.png" alt="">
               <br><div class="shade"></div>
               <p>W międzynarodowej korporacji</p>
           </div>
-          <div class="col-sm-4 ans" id="odpB">
+          <div class="col-sm-4 ans" data-answer="odpB">
               <img src="img/startup.png" alt="">
               <br><div class="shade"></div>
               <p>Przy interesującym startupie</p>
           </div>
           <a href="languages/php.html">
-            <div class="col-sm-4 ans" id="odpC">
+            <div class="col-sm-4 ans" data-answer="odpC">
                 <img src="img/smallbuissness.png" alt="">
                 <br><div class="shade"></div>
                 <p>Wolę małe biznesy</p>
@@ -252,13 +241,13 @@
           <h1>Wolisz coś nowego?</h1>
         </div>
         <div class="answers">
-          <div class="col-sm-6 ans" id="odpA">
+          <div class="col-sm-6 ans" data-answer="odpA">
               <img src="img/no.png" alt="">
               <br><div class="shade"></div>
               <p>Nie, wolę coś sprawdzonego</p>
           </div>
           <a href="languages/javascript.html#nodejs" target="_blank">
-            <div class="col-sm-6 ans" id="odpB">
+            <div class="col-sm-6 ans" data-answer="odpB">
                 <img src="img/yes.png" alt="">
                 <br><div class="shade"></div>
                 <p>Tak</p>
@@ -276,12 +265,12 @@
           <h1>Na jaką platformę?</h1>
         </div>
         <div class="answers">
-          <div class="col-sm-6 ans" id="odpA">
+          <div class="col-sm-6 ans" data-answer="odpA">
               <img src="img/mobiles.png" alt="">
               <br><div class="shade"></div>
               <p>Mobilne</p>
           </div>
-          <div class="col-sm-6 ans" id="odpB">
+          <div class="col-sm-6 ans" data-answer="odpB">
               <img src="img/pc.png" alt="">
               <br><div class="shade"></div>
               <p>PC</p>
@@ -299,20 +288,20 @@
         </div>
         <div class="answers">
           <a href="languages/csharp.html" target="_blank">
-            <div class="col-sm-4 ans" id="odpA">
+            <div class="col-sm-4 ans" data-answer="odpA">
                 <img src="img/indie.png" alt="">
                 <br><div class="shade"></div>
                 <p>Gry Indie</p>
             </div>
           </a>
           <a href="languages/cpp.html" target="_blank">
-            <div class="col-sm-4 ans" id="odpB">
+            <div class="col-sm-4 ans" data-answer="odpB">
                 <img src="img/aaa.png" alt="">
                 <br><div class="shade"></div>
                 <p>Tytuły AAA</p>
             </div>
           </a>
-          <div class="col-sm-4 ans" id="odpC">
+          <div class="col-sm-4 ans" data-answer="odpC">
               <img src="img/undecided.png" alt="">
               <br><div class="shade"></div>
               <p>Nie jestem pewien...</p>
@@ -330,14 +319,14 @@
         </div>
         <div class="answers">
           <a href="languages/csharp.html" target="_blank">
-            <div class="col-sm-6 ans" id="odpA">
+            <div class="col-sm-6 ans" data-answer="odpA">
                 <img src="img/easylerning.png" alt="">
                 <br><div class="shade"></div>
                 <p>Prostota</p>
             </div>
           </a>
           <a href="languages/cpp.html" target="_blank">
-            <div class="col-sm-6 ans" id="odpB">
+            <div class="col-sm-6 ans" data-answer="odpB">
                 <img src="img/graphics.png" alt="">
                 <br><div class="shade"></div>
                 <p>Wydajność/grafika</p>
@@ -356,28 +345,28 @@
         </div>
         <div class="answers">
           <a href="languages/swift.html">
-            <div class="col-sm-3 ans" id="odpA">
+            <div class="col-sm-3 ans" data-answer="odpA">
                 <img src="img/apple.png" alt="">
                 <br><div class="shade"></div>
                 <p>Mac</p>
             </div>
           </a>
           <a href="languages/csharp.html">
-            <div class="col-sm-3 ans" id="odpB">
+            <div class="col-sm-3 ans" data-answer="odpB">
                 <img src="img/windows.png" alt="">
                 <br><div class="shade"></div>
                 <p>Windows</p>
             </div>
           </a>
           <a href="languages/java.html">
-            <div class="col-sm-3 ans" id="odpC">
+            <div class="col-sm-3 ans" data-answer="odpC">
                 <img src="img/crossplatform.png" alt="">
                 <br><div class="shade"></div>
                 <p>Wieloplatformowe</p>
             </div>
           </a>
           <a href="languages/c.html">
-            <div class="col-sm-3 ans" id="odpD">
+            <div class="col-sm-3 ans" data-answer="odpD">
                 <img src="img/linux.png" alt="">
                 <br><div class="shade"></div>
                 <p>Linux</p>
@@ -395,30 +384,30 @@
           <h1>Który temat interesuje Cię najbardziej?</h1>
         </div>
         <div class="answers">
-          <div class="col-sm-3 ans" id="odpD">
+          <div class="col-sm-3 ans" data-answer="odpD">
               <img src="img/automatization.png" alt="">
               <br><div class="shade"></div>
               <p>Automatyzowanie czynności</p>
           </div>
           <a href="languages/python.html">
-            <div class="col-sm-2 ans" id="odpA">
+            <div class="col-sm-2 ans" data-answer="odpA">
                 <img src="img/brain.png" alt="">
                 <br><div class="shade"></div>
                 <p>Proste AI</p>
             </div>
           </a>
-          <div class="col-sm-2 ans" id="odpB">
+          <div class="col-sm-2 ans" data-answer="odpB">
               <img src="img/games.png" alt="">
               <br><div class="shade"></div>
               <p>Tworzenie prostych gier</p>
           </div>
-          <div class="col-sm-2 ans" id="odpC">
+          <div class="col-sm-2 ans" data-answer="odpC">
               <img src="img/webdev.png" alt="">
               <br><div class="shade"></div>
               <p>Aplikacje webowe</p>
           </div>
           <a href="languages/c.html">
-            <div class="col-sm-3 ans" id="odpE">
+            <div class="col-sm-3 ans" data-answer="odpE">
                 <img src="img/lowlevel.png" alt="">
                 <br><div class="shade"></div>
                 <p>Programowanie niskopoziomowe</p>
@@ -437,21 +426,21 @@
         </div>
         <div class="answers">
           <a href="languages/javascript.html">
-            <div class="col-sm-4 ans" id="odpA">
+            <div class="col-sm-4 ans" data-answer="odpA">
                 <img src="img/webdev2.png" alt="">
                 <br><div class="shade"></div>
                 <p>Chciałbym stworzyć grę na przeglądarke!</p>
             </div>
           </a>
-          <div class="col-sm-4 ans" id="odpB">
+          <div class="col-sm-4 ans" data-answer="odpB">
               <img src="img/pc.png" alt="">
               <br><div class="shade"></div>
               <p>Myślę o grze desktopowej!</p>
           </div>
-          <div class="col-sm-4 ans" id="odpC">
+          <div class="col-sm-4 ans" data-answer="odpC">
               <img src="img/mobiles.png" alt="">
               <br><div class="shade"></div>
-              <p>Chciałbym sworzyć grę na urzedzenia mobilne!</p>
+              <p>Chciałbym stworzyć grę na urządzenia mobilne!</p>
           </div>
         </div>
       </div>
@@ -467,28 +456,28 @@
           <h1>Co Cię interesuje?</h1>
         </div>
         <div class="answers">
-            <div class="col-sm-3 ans" id="odpA">
+            <div class="col-sm-3 ans" data-answer="odpA">
                 <img src="img/dataanalysis.png" alt="">
                 <br><div class="shade"></div>
                 <p>Analizowanie danych</p>
             </div>
-            <div class="col-sm-2 ans" id="odpB">
+            <div class="col-sm-2 ans" data-answer="odpB">
                 <img src="img/webdev.png" alt="">
                 <br><div class="shade"></div>
                 <p>Programowanie webowe</p>
             </div>
-          <div class="col-sm-2 ans" id="odpC">
+          <div class="col-sm-2 ans" data-answer="odpC">
               <img src="img/mobiles.png" alt="">
               <br><div class="shade"></div>
               <p>Programowanie aplikacji mobilnych</p>
           </div>
-          <div class="col-sm-2 ans" id="odpD">
+          <div class="col-sm-2 ans" data-answer="odpD">
               <img src="img/scripts.png" alt="">
               <br><div class="shade"></div>
               <p>Tworzenie skryptów</p>
           </div>
           <a href="languages/c.html">
-            <div class="col-sm-3 ans" id="odpE">
+            <div class="col-sm-3 ans" data-answer="odpE">
                 <img src="img/software.png" alt="">
                 <br><div class="shade"></div>
                 <p>Tworzenie oprogramowania</p>
@@ -507,14 +496,14 @@
         </div>
         <div class="answers">
           <a href="languages/r.html" target="_blank">
-            <div class="col-sm-6 ans" id="odpA">
+            <div class="col-sm-6 ans" data-answer="odpA">
                 <img src="img/statistics.png" alt="">
                 <br><div class="shade"></div>
                 <p>Możliwość pracy statystycznej</p>
             </div>
           </a>
           <a href="languages/python.html" target="_blank">
-            <div class="col-sm-6 ans" id="odpB">
+            <div class="col-sm-6 ans" data-answer="odpB">
                 <img src="img/easylerning.png" alt="">
                 <br><div class="shade"></div>
                 <p>Prostotę nauki</p>
@@ -533,14 +522,14 @@
         </div>
         <div class="answers">
           <a href="languages/csharp.html" target="_blank">
-            <div class="col-sm-6 ans" id="odpA">
+            <div class="col-sm-6 ans" data-answer="odpA">
                 <img src="img/csharp.png" alt="">
                 <br><div class="shade"></div>
                 <p>C#</p>
             </div>
           </a>
           <a href="languages/java.html" target="_blank">
-            <div class="col-sm-6 ans" id="odpB">
+            <div class="col-sm-6 ans" data-answer="odpB">
                 <img src="img/java.png" alt="">
                 <br><div class="shade"></div>
                 <p>Java</p>
@@ -559,21 +548,21 @@
         </div>
         <div class="answers">
           <a href="languages/python.html" target="_blank">
-            <div class="col-sm-4 ans" id="odpA">
+            <div class="col-sm-4 ans" data-answer="odpA">
                 <img src="img/python.png" alt="">
                 <br><div class="shade"></div>
                 <p>Python</p>
             </div>
           </a>
           <a href="languages/ruby.html" target="_blank">
-            <div class="col-sm-4 ans" id="odpB">
+            <div class="col-sm-4 ans" data-answer="odpB">
                 <img src="img/ruby.png" alt="">
                 <br><div class="shade"></div>
                 <p>Ruby</p>
             </div>
           </a>
           <a href="languages/php.html" target="_blank">
-            <div class="col-sm-4 ans" id="odpB">
+            <div class="col-sm-4 ans" data-answer="odpB">
                 <img src="img/php.png" alt="">
                 <br><div class="shade"></div>
                 <p>PHP</p>
@@ -591,15 +580,15 @@
           <h1>Wybierz z dwóch!</h1>
         </div>
         <div class="answers">
-          <a href="languages/python.html" target="_blank" id="lol">
-            <div class="col-sm-6 ans" id="odpA">
+          <a href="languages/python.html" target="_blank">
+            <div class="col-sm-6 ans" data-answer="odpA">
                 <img src="img/python.png" alt="">
                 <br><div class="shade"></div>
                 <p>Python</p>
             </div>
           </a>
-          <a href="languages/php.html" target="_blank" id="lol">
-            <div class="col-sm-6 ans" id="odpB">
+          <a href="languages/php.html" target="_blank">
+            <div class="col-sm-6 ans" data-answer="odpB">
                 <img src="img/php.png" alt="">
                 <br><div class="shade"></div>
                 <p>PHP</p>
@@ -618,14 +607,14 @@
         </div>
         <div class="answers">
           <a href="languages/java.html" target="_blank">
-            <div class="col-sm-6 ans" id="odpA">
+            <div class="col-sm-6 ans" data-answer="odpA">
                 <img src="img/java.png" alt="">
                 <br><div class="shade"></div>
                 <p>Java</p>
             </div>
           </a>
           <a href="languages/csharp.html" target="_blank">
-            <div class="col-sm-6 ans" id="odpB">
+            <div class="col-sm-6 ans" data-answer="odpB">
                 <img src="img/csharp.png" alt="">
                 <br><div class="shade"></div>
                 <p>C#</p>
@@ -644,14 +633,14 @@
         </div>
         <div class="answers">
           <a href="languages/python.html" target="_blank">
-            <div class="col-sm-6 ans" id="odpA">
+            <div class="col-sm-6 ans" data-answer="odpA">
                 <img src="img/python.png" alt="">
                 <br><div class="shade"></div>
                 <p>Python</p>
             </div>
           </a>
           <a href="languages/ruby.html" target="_blank">
-            <div class="col-sm-6 ans" id="odpD">
+            <div class="col-sm-6 ans" data-answer="odpD">
                 <img src="img/ruby.png" alt="">
                 <br><div class="shade"></div>
                 <p>Ruby</p>
@@ -670,7 +659,7 @@
         </div>
         <div class="answers">
           <a href="languages/python.html" target="_blank">
-            <div class="col-sm-5 ans" id="odpA">
+            <div class="col-sm-5 ans" data-answer="odpA">
                 <img src="img/python.png" alt="">
                 <br><div class="shade"></div>
                 <p>Python</p>
@@ -680,7 +669,7 @@
             <h1>Lub</h1>
           </div>
           <a href="languages/java.html" target="_blank">
-            <div class="col-sm-5 ans" id="odpD">
+            <div class="col-sm-5 ans" data-answer="odpD">
                 <img src="img/java.png" alt="">
                 <br><div class="shade"></div>
                 <p>Java</p>
@@ -692,33 +681,16 @@
   </div>
 
 </section>
-<!-- Footer -->
+
 <footer>
     <div class="container">
         <p>Copyright &copy; Jaki Język Programowania 2017</p>
     </div>
 </footer>
 
+<script src="libs/jquery.min.js"></script>
+<script src="dist/global.bundle.js"></script>
+<script src="dist/start.js"></script>
 
-<!-- JQuery -->
-<script src="js/jquery-3.1.1.js"></script>
-
-<!-- BootstrapJS -->
-<script src="js/bootstrap.js"></script>
-
-<!-- StartJS -->
-<script src="js/start.js"></script>
-
-<!-- Google Analytics -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-90973428-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 </body>
 </html>

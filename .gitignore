@@ -1,2 +1,4 @@
-emailconfig.php
-node_modules/
+.idea
+node_modules
+slownik-programisty.html
+npm-debug.log

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+html, body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: calc( 13px + (25 - 15) * ( (100vw - 320px) / ( 1920 - 320) ));
+  width: 100%;
+  min-height: 100%;
+  color: #fff;
+  background: -webkit-linear-gradient(#05729e,#05729f);
+  background: linear-gradient(#05729e,#05729f);
+}
+
+section {
+  text-align: center;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.35em;
+}
+
+h4 {
+  font-size: 1.08em;
+}
+
+.text-muted {
+  opacity: 0.6;
+}
+
+/* Sections */
+
+.section, section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.header-heading {
+  font-size: 2em;
+  padding-bottom: 23px;
+  margin-top: -40px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.faq h1::after,
+.lang-starter-heading::after,
+.content-header::after,
+.header-heading::after,
+.section-heading::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 1px;
+  background: #f94646;
+  bottom: 0;
+  left: 20%;
+  box-shadow: 0 0 3px 1px #f34545;
+}
+
+.header-text {
+  font-weight: 600;
+}
+
+.section-heading {
+  font-size: 2em;
+  padding-bottom: 23px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .header-heading {
+    padding-top: 40px;
+  }
+
+  .navbar-custom .navbar-brand {
+    font-size: 2em;
+  }
+}
+
+/* Footer Section */
+
+.site-footer, footer {
+  background: #0a455e;
+  padding: 10px 0;
+  color: white;
+  text-align: center;
+}
+
+.site-footer .copyright, footer p {
+  font-size: 1em;
+  margin: 0;
+}
+
+/* */
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.site-logo {
+  margin: 0;
+}
+
+.site-logo img{
+  height: 40px;
+  margin-top: -8px;
+}
