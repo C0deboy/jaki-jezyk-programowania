@@ -1,0 +1,209 @@
+.contact {
+  display: none;
+  position: fixed;
+  width: 97%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) translateZ(1000px);
+  -moz-transform: translate(-50%, -50%) translateZ(1000px);
+  -ms-transform: translate(-50%, -50%) translateZ(1000px);
+  -o-transform: translate(-50%, -50%) translateZ(1000px);
+  transform: translate(-50%, -50%) translateZ(1000px);
+  background-color: #fafafa;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 40px 25px 0 25px;
+  text-align: center;
+  box-shadow: 0 0 13px 0 #000;
+  font-size: calc(13px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
+  font-family: Ubuntu, sans-serif;
+  z-index: 999;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact {
+    width: 45%;
+  }
+}
+
+.contact .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  background: none;
+  border: 0;
+  color: dimgrey;
+  font-size: 1.2em;
+}
+
+.emailForm label {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  margin: 0 0 30px;
+  color: #555;
+}
+
+
+.emailForm label.beside {
+  float: left;
+  width: 50%;
+}
+
+.emailForm textarea {
+  display: block;
+  padding: 5px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  width: 97%;
+  margin: 0;
+  height: 20vh;
+  resize: none;
+  color: #555;
+  font-size: 1.1em;
+}
+
+@media (min-width: 768px) {
+  .emailForm textarea {
+    height: 30vh;
+  }
+}
+
+@media (max-height: 670px) {
+  .emailForm textarea {
+    height: 15vh;
+  }
+}
+
+.emailForm input {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-size: 1.1em;
+}
+
+@media (min-width: 500px) {
+  .emailForm input {
+    width: 97%;
+  }
+}
+
+.emailForm .error {
+  position: absolute;
+  margin: 0;
+  display: block;
+  animation: 1s slideTop;
+  z-index: -1;
+  border-top: 0 !important;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  max-width: 80%;
+  font-size: 0.8em;
+}
+
+.emailForm label.beside .error {
+  max-width: 42%;
+}
+
+@media (max-width: 500px) {
+  .emailForm input[type="text"],
+  .emailForm input[type="email"] {
+    display: block;
+  }
+
+  .emailForm label.beside {
+    clear: both;
+    width: 100%;
+  }
+
+  .emailForm label.beside .error {
+    max-width: 80%;
+  }
+}
+
+.emailForm button[type=submit] {
+  width: 40%;
+  cursor: pointer;
+  margin-top: 25px;
+  color: #555;
+  font-size: 1.1em;
+}
+
+.g-recaptcha {
+  margin: 20px 2px 0 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.recaptcha-label {
+  width: 306px;
+  margin: auto !important;
+  max-width: none;
+}
+
+@media (max-width: 375px) {
+  .recaptcha-label {
+    transform: scale(0.9);
+    margin-left: -8% !important;
+  }
+}
+
+.emailFormAlert {
+  color: #ec3945;
+  margin: 15px 0 0;
+  height: 50px;
+  font-size: 1em;
+  overflow: auto;
+}
+
+.emailFormAlert .fa {
+  color: #555;
+}
+
+.wrongInput {
+  background: rgb(255, 107, 98);
+  border: solid 1px #d80000;
+  color: white;
+}
+
+.shake {
+  animation: 1s slideTop;
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.contact .close-btn:hover {
+  cursor: pointer;
+  outline: none;
+}
+
+@media (max-height: 465px) {
+  .contact {
+    height: 85vh;
+    margin-top: 40px;
+    overflow: auto;
+  }
+
+  .emailForm textarea {
+    height: 20vh;
+  }
+}
