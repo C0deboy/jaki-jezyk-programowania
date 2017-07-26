@@ -1,5 +1,6 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -9,10 +10,10 @@ module.exports = {
     'global.bundle.css': './css/global/merge.css',
     'faq.js': './js/faq.js',
     'language.js': './js/language.js',
-    'start.js': './js/start.js',
+    'wizard.js': './js/wizard/wizard.js',
     'faq.css': './css/faq.css',
     'language.css': './css/language.css',
-    'start.css': './css/start.css',
+    'wizard.css': './css/wizard.css',
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -43,6 +44,11 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin('[name]'),
+    new BrowserSyncPlugin({
+      host: 'localhost',
+      port: 8080,
+      server: { baseDir: path.resolve(__dirname, '') },
+    }),
   ],
   devServer: {
     contentBase: path.resolve(__dirname, ''),
