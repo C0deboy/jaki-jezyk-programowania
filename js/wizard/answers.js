@@ -46,6 +46,9 @@ class Answers {
 
   addMessage(text, container = 'p') {
     const message = document.createElement(container);
+    if (text = 'lub') {
+      message.classList.add('or');
+    }
     message.innerHTML = text;
     this.container.appendChild(message);
   }
