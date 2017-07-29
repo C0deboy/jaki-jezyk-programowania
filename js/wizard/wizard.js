@@ -2,6 +2,7 @@ import Question from './question';
 import Answers from './answers';
 import wizardData from './wizardData';
 import Guide from './guide';
+import ImageLoader from './imageLoader';
 
 const question = new Question();
 const answers = new Answers();
@@ -9,7 +10,8 @@ const answers = new Answers();
 const firstQuestion = 'whyProgramming';
 const previousQuestions = [firstQuestion];
 
-load(firstQuestion);
+const imageLoader = new ImageLoader();
+imageLoader.load(() => load(firstQuestion));
 
 function clickedAnswer() {
   if (previousQuestions.length !== 0) {
@@ -33,7 +35,6 @@ function load(next) {
   answers.clear();
 
   if (next instanceof Guide) {
-    console.log(next);
     question.set('Sugestia:');
     answers.addMessage('Zacznij z:');
 
@@ -84,7 +85,7 @@ $(document).on('keydown', (e) => {
 });
 
 $('.again-btn').on('click', () => load(firstQuestion));
-console.log($('.again-btn'));
+
 $(document).on('keydown', (e) => {
   if ((e.which === 27)) { // esc
     load(firstQuestion);
