@@ -1,4 +1,4 @@
-import {functionClickedAnswer} from './wizard';
+import { functionClickedAnswer } from './wizard';
 
 class Answers {
   constructor(guide) {
@@ -46,7 +46,7 @@ class Answers {
 
   addMessage(text, container = 'p') {
     const message = document.createElement(container);
-    if (text = 'lub') {
+    if (text === 'lub') {
       message.classList.add('or');
     }
     message.innerHTML = text;
@@ -56,7 +56,7 @@ class Answers {
   clear() {
     const answers = this.container.children;
 
-    for (let i = answers.length; i--; ) {
+    for (let i = answers.length; i--;) {
       answers[i].classList.add('fadeOut');
       answers[i].style.display = 'none';
       answers[i].remove();
