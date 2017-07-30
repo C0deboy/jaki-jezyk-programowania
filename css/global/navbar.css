@@ -1,5 +1,5 @@
 .navbar-custom {
-  z-index: 3;
+  z-index: 999;
   font-size: 0.77em;
   position: absolute;
   top: 0;

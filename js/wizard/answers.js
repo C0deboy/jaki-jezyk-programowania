@@ -13,11 +13,14 @@ class Answers {
   }
 
   add(answer, imgName, next) {
-    const answerElement = document.createElement('div');
+    const answerElement = document.createElement('button');
     answerElement.classList.add('answer');
     answerElement.next = next;
     answerElement.addEventListener('mouseover', markAnswer);
+    answerElement.addEventListener('focus', markAnswer);
     answerElement.addEventListener('mouseout', unmarkAnswer);
+    answerElement.addEventListener('blur', unmarkAnswer);
+    answerElement.setAttribute('tabindex','0');
 
     const img = document.createElement('img');
     img.setAttribute('src', 'img/' + imgName.toLowerCase().replace(/\s/g, ''));
