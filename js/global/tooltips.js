@@ -32,15 +32,15 @@ function makeElementAlive(element) {
   element.setAttribute('tabindex', '0');
   element.setAttribute('aria-describedby', 'tooltip' + tipId);
   element.setAttribute('aria-live', 'true');
-  element.addEventListener('mouseover', (e) => toggleTooltip(e, true));
-  element.addEventListener('focus', (e) => toggleTooltip(e, true));
-  element.addEventListener('mouseout', (e) => toggleTooltip(e, false));
-  element.addEventListener('blur', (e) => toggleTooltip(e, false));
+  element.addEventListener('mouseover', e => toggleTooltip(e, true));
+  element.addEventListener('focus', e => toggleTooltip(e, true));
+  element.addEventListener('mouseout', e => toggleTooltip(e, false));
+  element.addEventListener('blur', e => toggleTooltip(e, false));
 }
 
 function prepareTooltip(text) {
   const tooltip = document.createElement('span');
-  tooltip.textContent = text;
+  tooltip.innerHTML = text;
   tooltip.setAttribute('id', 'tooltip' + tipId);
   tooltip.setAttribute('role', 'tooltip');
   tooltip.classList.add('lightAriaTooltips');
@@ -60,7 +60,7 @@ function createTooltipsOver(el) {
 
 const elementsWithTip = document.querySelectorAll('.tip');
 
-elementsWithTip.forEach( (element) => {
+elementsWithTip.forEach((element) => {
   createTooltipsOver(element);
   makeElementAlive(element);
   tipId++;

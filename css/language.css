@@ -94,6 +94,8 @@ ul {
   color: #3b3b3b;
   background: -webkit-linear-gradient(#f8f8f8, #bbbbbb);
   background: linear-gradient(#f8f8f8, #bbbbbb);
+  display: inline-block;
+  padding: 0 15px;
 }
 
 .content-header  {
