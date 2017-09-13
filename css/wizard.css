@@ -30,13 +30,18 @@ html, body {
 }
 
 .return-btn,
-.again-btn {
-  display: inline-block;
-  position: absolute;
-  background: 0;
-  border: none;
-  cursor: pointer;
-  font-size: 1.3em;
+ .again-btn {
+   display: inline-block;
+   position: absolute;
+   background: 0;
+   border: none;
+   cursor: pointer;
+   font-size: 1.3em;
+ }
+
+.return-btn:hover,
+.again-btn:hover {
+  outline: 0;
 }
 
 .return-btn {

@@ -43,6 +43,14 @@
 	color: inherit;
 }
 
+.tip.clickable:before{
+	content: "";
+	padding: 25px 100px 0;
+	margin-left: -200px;
+	position: relative;
+	left: 160px;
+}
+
 .tip:hover {
 	outline: none;
 }
