@@ -1,13 +1,7 @@
 .canary-version-alert {
   position: absolute;
-  width: 100%;
   left: 0;
   top: 50px;
-  z-index: 999;
-  font-size: .7em;
-  background-color: #ba2828;
-  color: #fff;
-  padding: 5px;
 }
 
 @media (min-width: 2160px) {
@@ -16,17 +10,41 @@
   }
 }
 
-.canary-version-alert p {
-  margin-bottom: 0;
+.canary-version-alert,
+.cookies-info {
+  width: 100%;
+  z-index: 999;
+  font-size: .7em;
+  background-color: #ba2828;
+  color: #fff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
 }
 
-.canary-version-alert button {
-  background: none;
+.cookies-info {
+  position: fixed;
+  bottom: 0;
+  background: #467399;
+ }
+
+.cookies-info p,
+.canary-version-alert p{
+  margin: 0;
+  padding: 5px;
+  width: 100%;
+}
+.canary-version-alert button,
+.close-cookies-info {
+  background: 0;
   border: 0;
-  float: right;
+  cursor: pointer;
+  padding: 5px 10px;
 }
 
-#close-project-state-btn:hover {
+#close-project-state-btn:hover,
+.close-cookies-info:hover {
   cursor: pointer;
   outline: none;
 }
