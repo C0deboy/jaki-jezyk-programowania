@@ -13,25 +13,25 @@
 
   <title>Jaki język programowania wybrać?</title>
 
-  <link rel="shortcut icon" href="img/logo.ico">
+  <link rel="shortcut icon" href="/img/logo/logo.ico">
 
-  <link rel="stylesheet" href="dist/global.bundle.css">
-  <link rel="stylesheet" href="dist/home.bundle.css">
+  <link rel="stylesheet" href="/dist/global.bundle.css">
+  <link rel="stylesheet" href="/dist/home.bundle.css">
 
   <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
+
 <div class="navbar navbar-default navbar-fixed-top navbar-custom">
   <div class="container-fluid">
     <div class="navbar-header">
       <h1 class="navbar-brand site-logo">
-        <a href="./">
+        <a href="/">
             <span class="visually-hidden">
               Jaki język programowania
             </span>
-          <img src="img/logo.png" alt="">
-
+          <img src="img/logo/logo.png" alt="Logo strony">
         </a>
       </h1>
 
@@ -51,8 +51,8 @@
           </a>
         </li>
         <li>
-          <a class="page-scroll program-languages-btn" href="#języki-programowania">
-            Języki
+          <a class="page-scroll program-languages-btn" href="#technologie">
+            Technologie
           </a>
         </li>
         <li>
@@ -61,13 +61,18 @@
           </a>
         </li>
         <li>
-          <a class="page-scroll faq-btn" href="faq.html">
+          <a class="page-scroll faq-btn" href="/ksiazki/">
+            Książki
+          </a>
+        </li>
+        <li>
+          <a class="page-scroll faq-btn" href="/faq/">
             FAQ
           </a>
         </li>
         <li>
           <a class="page-scroll faq-btn" href="https://blog.jaki-jezyk-programowania.pl/">
-            Blog
+            Mój blog
           </a>
         </li>
       </ul>
@@ -87,11 +92,11 @@
     <div class="col-md-6 intro-text">
       <div class="intro">
         <h2 class="header-heading">Wybierz język programowania</h2>
-        <p class="header-text">Nie wiesz jaki język programowania wybrać? Ten projekt powstał, aby Ci w tym pomóc! Tutaj dowiesz się, który z nich będzie odpowiedni dla danego zastosowania oraz zyskasz możliwość ich porównania.</p>
+        <p class="header-text">Nie wiesz jaki język programowania wybrać? Ten projekt powstał, aby Ci w tym pomóc! Tutaj dowiesz się, który z nich będzie odpowiedni dla danego zastosowania, w co brnąć dalej gdy opanujesz podstawy oraz zobaczysz wybrane książki do nauki danej technologii.</p>
       </div>
-      <p class="tip clickable" data-tip="Na podstawie Twoich odpowiedzi na pytania zostanie określony język programowania (lub więcej niż jeden) odpowiedni do Twoich celów. Będziesz mógł przejrzeć najważniejsze informacje o każdym z nich i je porównać. Jeśli masz dodatkowe pytania warto przejrzeć FAQ, gdzie zebrałem kilka fundamentalnych pytań lub możesz napisać do mnie poprzez <a href=?#contact>formularz kontaktowy</a>!">Jak to działa?</p>
+      <p class="tip clickable" data-tip="Na podstawie Twoich odpowiedzi na pytania zostanie określony język programowania (lub więcej niż jeden) odpowiedni do Twoich celów. Będziesz mógł przejrzeć najważniejsze informacje o każdym z nich i je porównać. Jeśli masz dodatkowe pytania warto przejrzeć FAQ, gdzie zebrałem kilka fundamentalnych pytań lub możesz napisać do mnie poprzez <a href=?#formularz-kontaktowy>formularz kontaktowy</a>!">Jak to działa?</p>
 
-      <a href="start.html" class="btn btn-danger btn-lg start">
+      <a href="/start/" class="btn btn-danger btn-lg start">
         <i class="fa fa-play play" aria-hidden="true"></i> Start
       </a>
       <!--118-->
@@ -246,37 +251,48 @@
   <div class="row">
     <div class="col-md-12">
       <p class="text-muted">
-        Strona ta ma na celu tylko pomoc w wyborze języka, pamiętaj, żeby ostatecznie podjąć decyzję podążając za głosem serca &hearts;
+        Made with lots of <i class="fa fa-coffee" aria-hidden="true"></i> + lots of <i class="fa fa-heart" aria-hidden="true"></i> + lots of <i class="fa fa-clock-o" aria-hidden="true"></i>
       </p>
     </div>
   </div>
 </header>
 
-<section id="języki-programowania" class="section program-languages">
+<section id="technologie" class="section program-languages">
   <div class="container">
     <h2 class="section-heading">
-      Języki programowania
+      Technologie
       <small class="text-muted">(Omawiane na tej stronie)</small>
     </h2>
 
     <div class="languages-list" role="list">
       <div class="row">
-
         <div role="listitem" class="col-sm-4 lang">
-
-          <a href="technologies/c.html" class="lang-link">
+          <a href="technologie/c" class="lang-link">
             <img class="tip" src="img/c.png" alt="Logo języka C" data-tip="C">
           </a>
-
         </div>
 
         <div role="listitem" class="col-sm-4 lang">
-          <a href="technologies/javascript.html" class="lang-link"  >
+          <a href="technologie/javascript" class="lang-link"  >
             <img class="tip" src="img/javascript.png" alt="Logo języka Javascript" data-tip="Javascript">
           </a>
+
+          <a href="technologie/node.js" class="sub lang-link">
+            <img class="tip" src="img/node.js.png" alt="Logo Node.js" data-tip="Node.js">
+          </a>
+          <a href="technologie/angular" class="sub lang-link">
+            <img class="tip" src="img/angular.png" alt="Logo Angular" data-tip="Angular">
+          </a>
+          <a href="technologie/react" class="sub lang-link">
+            <img class="tip" src="img/react.png" alt="Logo React" data-tip="React">
+          </a>
+          <a href="technologie/phaser" class="sub lang-link">
+            <img class="tip" src="img/phaser.png" alt="Logo Phaser" data-tip="Phaser">
+          </a>
         </div>
+
         <div role="listitem" class="col-sm-4 lang">
-          <a href="technologies/r.html" class="lang-link" >
+          <a href="technologie/r" class="lang-link" >
             <img class="tip" src="img/r.png" alt="Logo języka R" data-tip="R">
           </a>
         </div>
@@ -284,41 +300,98 @@
 
       <div class="row">
         <div role="listitem" class="col-sm-3 lang">
-          <a href="technologies/c++.html" class="lang-link" >
+          <a href="technologie/c++" class="lang-link" >
             <img class="tip" src="img/c++.png" alt="Logo języka C++" data-tip="C++">
           </a>
+
+          <a href="technologie/unrealengine4" class="sub lang-link">
+            <img class="tip" src="img/unrealengine4.png" alt="Logo Unreal Engine 4" data-tip="Unreal Engine 4">
+          </a>
         </div>
+
         <div role="listitem" class="col-sm-3 lang">
-          <a href="technologies/java.html" class="lang-link">
+          <a href="technologie/java" class="lang-link">
             <img class="tip" src="img/java.png" alt="Logo języka Java" data-tip="Java">
           </a>
-        </div>
-        <div role="listitem" class="col-sm-3 lang">
-          <a href="technologies/ruby.html" class="lang-link" >
-            <img class="tip" src="img/ruby.png" alt="Logo języka Ruby" data-tip="Ruby">
+
+          <a href="technologie/libgdx" class="sub lang-link">
+            <img class="tip" src="img/libgdx.png" alt="Logo LibGDX" data-tip="LibGDX">
+          </a>
+          <a href="technologie/spring" class="sub lang-link">
+            <img class="tip" src="img/spring.png" alt="Logo Spring" data-tip="Spring">
           </a>
         </div>
+
         <div role="listitem" class="col-sm-3 lang">
-          <a href="technologies/c♯.html" class="lang-link" >
-            <img class="tip" src="img/c♯.png" alt="Logo języka C#" data-tip="C#">
+          <a href="technologie/ruby" class="lang-link" >
+            <img class="tip" src="img/ruby.png" alt="Logo języka Ruby" data-tip="Ruby">
+          </a>
+
+          <a href="technologie/rubyonrails" class="sub lang-link">
+            <img class="tip" src="img/rubyonrails.png" alt="Logo Ruby on Rails" data-tip="Ruby on Rails">
+          </a>
+        </div>
+
+        <div role="listitem" class="col-sm-3 lang">
+          <a href="technologie/csharp" class="lang-link" >
+            <img class="tip" src="img/csharp.png" alt="Logo języka C#" data-tip="C#">
+          </a>
+
+          <a href="technologie/unity" class="sub lang-link">
+            <img class="tip" src="img/unity.png" alt="Logo Unity" data-tip="Unity">
+          </a>
+          <a href="technologie/asp.net" class="sub lang-link">
+            <img class="tip" src="img/asp.net.png" alt="Logo ASP.NET" data-tip="ASP.NET">
           </a>
         </div>
       </div>
 
       <div class="row">
         <div role="listitem" class="col-sm-4 lang">
-          <a href="technologies/swift.html" class="lang-link">
+          <a href="technologie/swift" class="lang-link">
             <img class="tip" src="img/swift.png" alt="Logo języka Swift" data-tip="Swift">
           </a>
         </div>
+
         <div role="listitem" class="col-sm-4 lang">
-          <a href="technologies/python.html" class="lang-link">
+          <a href="technologie/python" class="lang-link">
             <img class="tip" src="img/python.png" alt="Logo języka Python" data-tip="Python">
           </a>
+
+          <a href="technologie/django" class="sub lang-link">
+            <img class="tip" src="img/django.png" alt="Logo Django" data-tip="Django">
+          </a>
         </div>
+
         <div role="listitem" class="col-sm-4 lang">
-          <a href="technologies/php.html" class="lang-link">
+          <a href="technologie/php" class="lang-link">
             <img class="tip" src="img/php.png" alt="Logo języka PHP" data-tip="PHP">
+          </a>
+
+          <a href="technologie/symfony" class="sub lang-link">
+            <img class="tip" src="img/symfony.png" alt="Logo Symfony" data-tip="Symfony">
+          </a>
+          <a href="technologie/wordpress" class="sub lang-link">
+            <img class="tip" src="img/wordpress.png" alt="Logo WordPress" data-tip="WordPress">
+          </a>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div role="listitem" class="col-sm-12 lang">
+          <a href="technologie/scratch" class="sub lang-link">
+            <img class="tip" src="img/scratch.png" alt="Logo Scratch" data-tip="Scratch">
+          </a>
+          <a href="technologie/sql" class="sub lang-link">
+            <img class="tip" src="img/sql.png" alt="Logo SQL" data-tip="SQL">
+          </a>
+          <a href="technologie/html&css" class="sub lang-link">
+            <img class="tip" src="img/html&css.png" alt="Logo HTML i CSS" data-tip="HTML i CSS">
+          </a>
+          <a href="technologie/jekyll" class="sub lang-link">
+            <img class="tip" src="img/jekyll-light.png" alt="Logo Jekyll" data-tip="Jekyll">
           </a>
         </div>
       </div>
@@ -333,6 +406,7 @@
 
     <div class="row">
       <div class="col-sm-12">
+        <p>Autor:</p>
         <div class="team-member">
           <h3 class="name">
             Marcin Lasota
@@ -400,15 +474,14 @@
         </h3>
 	    <a href="mailto:kontakt@jaki-jezyk-programowania.pl" class="about-link">
 	    	<i class="fa fa-envelope-o" aria-hidden="true"></i>
-	    	Twój program pocztowy
+        lasota.marcinm@gmail.com
 	    </a>
       </div>
     </div>
-    <br><p>e-mail: lasota.marcinm@gmail.com</p>
   </div>
 </section>
 
-<div id="contact" class="contact" role="dialog" aria-label="Formularz kontaktowy" aria-hidden="true">
+<div id="formularz-kontaktowy" class="contact" role="dialog" aria-label="Formularz kontaktowy" aria-hidden="true">
     <form class="emailForm" method="POST" action="https://formspree.io/lasota.marcinm@gmail.com">
         <label class="beside" aria-live="polite">
             Twój email
@@ -748,10 +821,10 @@ print(paste("Znaleziono ", x, " na pozycji ", foundXAt));
 </code>
 </pre>
 
-<script src="libs/jquery.min.js"></script>
-<script src="dist/global.bundle.js"></script>
-<script src="highlight/highlight.pack.js"></script>
+<script src="/libs/jquery.min.js"></script>
+<script src="/dist/global.bundle.js"></script>
+<script src="/highlight/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<script src="dist/home.bundle.js"></script>
+<script src="/dist/home.bundle.js"></script>
 </body>
 </html>

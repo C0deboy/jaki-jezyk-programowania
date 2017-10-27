@@ -1,4 +1,4 @@
 const requireAll = require.context('./', true, /\.js$/);
-requireAll.keys().forEach(function(filename)  {
+requireAll.keys().forEach((filename) => {
   requireAll(filename);
 });

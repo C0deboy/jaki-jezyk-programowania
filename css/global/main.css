@@ -65,7 +65,8 @@ h4 {
 .lang-starter-heading::after,
 .content-header::after,
 .header-heading::after,
-.section-heading::after {
+.section-heading::after,
+.language-content h1::after {
   content: '';
   position: absolute;
   width: 60%;

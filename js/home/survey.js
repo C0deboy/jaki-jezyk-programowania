@@ -2,13 +2,13 @@ const surveyBtn = $('#ankieta');
 const survey = $('.survey-dialog');
 const surveyCloseBtn = $('.close-survey-btn');
 
-function showSurvey(){
+function showSurvey() {
   survey.fadeIn();
   survey.focus();
   survey.attr('aria-hidden', 'false');
 }
 
-function closeSurvey(){
+function closeSurvey() {
   survey.fadeOut();
   surveyBtn.focus();
   survey.attr('aria-hidden', 'true');

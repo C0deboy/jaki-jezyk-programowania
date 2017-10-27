@@ -11,7 +11,7 @@ const imagesNames = [
   'corpo.png',
   'crossplatform.png',
   'css3.png',
-  'c♯.png',
+  'csharp.png',
   'dataanalysis.png',
   'databases.png',
   'django.png',

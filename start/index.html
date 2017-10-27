@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="theme-color" content="#0376a5">
+  <meta name="msapplication-navbutton-color" content="#0376a5">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#0376a5">
+
+  <title>Wybierz swój język programowania!</title>
+
+  <link rel="shortcut icon" href="/img/logo/logo.ico">
+
+  <link rel="stylesheet" href="/dist/global.bundle.css">
+  <link rel="stylesheet" href="/dist/wizard.css">
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <h1 class="navbar-brand site-logo">
+        <a href="/">
+            <span class="visually-hidden">
+              Jaki język programowania
+            </span>
+          <img src="/img/logo/logo.png" alt="Logo strony">
+        </a>
+      </h1>
+
+      <button type="button" id="navbar-toggle-btn" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav" aria-expanded="false" aria-controls="site-nav">
+        Menu
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <nav id="site-nav" class="collapse navbar-collapse">
+      <h2 class="visually-hidden">Nawigacja</h2>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a class="page-scroll program-languages-btn" href="/#technologie">
+            Technologie
+          </a>
+        </li>
+        <li>
+          <a class="page-scroll faq-btn" href="/ksiazki/">
+            Książki
+          </a>
+        </li>
+        <li>
+          <a class="page-scroll faq-btn" href="/faq/">
+            FAQ
+          </a>
+        </li>
+        <li>
+          <a class="page-scroll faq-btn" href="https://blog.jaki-jezyk-programowania.pl/">
+            Mój blog
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<section class="all">
+  <button class="return-btn">
+    <div class="wizard-btn">
+      <i class="fa fa-undo" aria-hidden="true"></i> Cofnij
+    </div><br>
+    <small class="wizard-btn key-name">[Backspace]</small>
+  </button>
+
+  <div class="container-fluid">
+    <div class="row">
+      <h1 class="question"></h1>
+      <div class="answers"></div>
+    </div>
+  </div>
+
+  <button class="again-btn">
+    <div class="wizard-btn">
+      <i class="fa fa-refresh" aria-hidden="true"></i> Od początku
+    </div><br>
+    <small class="wizard-btn key-name">[Esc]</small>
+  </button>
+</section>
+
+<footer>
+    <div class="container">
+        <p>Copyright &copy; Jaki Język Programowania 2017</p>
+    </div>
+</footer>
+
+<script src="/libs/jquery.min.js"></script>
+<script src="/dist/global.bundle.js"></script>
+<script src="/dist/wizard.js"></script>
+
+</body>
+</html>

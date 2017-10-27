@@ -1,0 +1,9 @@
+
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+gems: [rouge]
+exclude: [Gemfile, Gemfile.lock]

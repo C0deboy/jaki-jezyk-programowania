@@ -1,13 +1,8 @@
-import Question from './question';
-import Answers from './answers';
-import wizardData from './wizardData';
-import Guide from './guide';
-import ImageLoader from './imageLoader';
+import ImageLoader from './ImageLoader';
+import { NextQuestion } from './wizardData';
 
-const question = new Question();
-const answers = new Answers();
 
-const firstQuestion = 'whyProgramming';
+const firstQuestion = new NextQuestion('whyProgramming');
 const previousQuestions = [firstQuestion];
 
 const imageLoader = new ImageLoader();
@@ -15,16 +10,10 @@ imageLoader.load(() => load(firstQuestion));
 
 const returnBtn = $('.return-btn');
 
-function clickedAnswer() {
-  if (previousQuestions.length !== 0) {
-    returnBtn.css('visibility', 'visible');
-  }
-
+function loadNextQuestionAndRememberPrevious() {
   const next = this.next;
 
-  if (next) {
-    previousQuestions.push(next);
-  }
+  previousQuestions.push(next);
 
   load(next);
 }
@@ -32,34 +21,11 @@ function clickedAnswer() {
 function load(next) {
   if (previousQuestions.length === 1) {
     returnBtn.css('visibility', 'hidden');
+  } else {
+    returnBtn.css('visibility', 'visible');
   }
 
-  answers.clear();
-
-  if (next instanceof Guide) {
-    question.set('Sugestia:');
-    answers.addMessage('Zacznij z:');
-
-    next.guides.forEach((guide, i) => {
-      if (i > 0) { answers.addMessage('lub', 'span'); }
-
-      const guides = new Answers(true);
-
-      guide.forEach((technology, j) => {
-        if (j % 2 === 0 && j !== 0) { guides.addMessage('lub', 'span'); }
-
-        if (j === 1) { guides.addMessage('Później:<br><i class="then fa fa-long-arrow-down fa-4x" aria-hidden="true"></i>', 'p'); }
-
-        guides.add(technology, technology + '.png', false);
-      });
-    });
-  } else if (typeof next === 'string') {
-    question.set(wizardData[next].question);
-
-    wizardData[next].answers.forEach((ans) => {
-      answers.add(ans.text, ans.img, ans.next);
-    });
-  }
+  next.show();
 }
 
 function loadPreviousQuestion() {
@@ -91,5 +57,5 @@ $(document).on('keydown', (e) => {
   }
 });
 
-export { clickedAnswer as functionClickedAnswer };
+export { loadNextQuestionAndRememberPrevious };
 

@@ -9,6 +9,7 @@
   ],
   "rules": {
     "prefer-template": 0,
-    "no-plusplus": 0
+    "no-plusplus": 0,
+    "no-use-before-define":"off"
   }
 }

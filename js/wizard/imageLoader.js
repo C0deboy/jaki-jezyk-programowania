@@ -5,7 +5,7 @@ class ImageLoader {
     window.addEventListener('load', LoadingCompleteHandler);
     imagePaths.forEach((imageName) => {
       const preload = new Image();
-      preload.src = 'img/' + imageName;
+      preload.src = '/img/' + imageName;
     });
     document.addEventListener('DOMContentLoaded', loadingImages);
   }

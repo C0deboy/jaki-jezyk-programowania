@@ -1,17 +1,16 @@
 if (window.NodeList && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = function (callback, argument) {
     argument = argument || window;
-    for (var i = 0; i < this.length; i++) {
+    for (let i = 0; i < this.length; i++) {
       callback.call(argument, this[i], i, this);
     }
   };
 }
 
 if (!Array.prototype.forEach) {
-
-  Array.prototype.forEach = function(callback/*, thisArg*/) {
-
-    var T, k;
+  Array.prototype.forEach = function (callback/* , thisArg */) {
+    let T,
+      k;
 
     if (this == null) {
       throw new TypeError('this is null or not defined');
@@ -19,12 +18,12 @@ if (!Array.prototype.forEach) {
 
     // 1. Let O be the result of calling toObject() passing the
     // |this| value as the argument.
-    var O = Object(this);
+    const O = Object(this);
 
     // 2. Let lenValue be the result of calling the Get() internal
     // method of O with the argument "length".
     // 3. Let len be toUint32(lenValue).
-    var len = O.length >>> 0;
+    const len = O.length >>> 0;
 
     // 4. If isCallable(callback) is false, throw a TypeError exception.
     // See: http://es5.github.com/#x9.11
@@ -43,7 +42,6 @@ if (!Array.prototype.forEach) {
 
     // 7. Repeat while k < len.
     while (k < len) {
-
       var kValue;
 
       // a. Let Pk be ToString(k).
@@ -53,7 +51,6 @@ if (!Array.prototype.forEach) {
       //    This step can be combined with c.
       // c. If kPresent is true, then
       if (k in O) {
-
         // i. Let kValue be the result of calling the Get internal
         // method of O with argument Pk.
         kValue = O[k];

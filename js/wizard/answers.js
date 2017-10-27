@@ -1,54 +1,41 @@
-import { functionClickedAnswer } from './wizard';
+import { loadNextQuestionAndRememberPrevious } from './wizard';
+import AnswerElementBuilder from './AnswerElementBuilder';
+
+const answersContainer = document.querySelectorAll('.answers')[0];
 
 class Answers {
-  constructor(guide) {
-    this.container = document.querySelectorAll('.answers')[0];
-    if (guide) {
-      const answersContainer = this.container;
-      const guideContainer = document.createElement('div');
-      guideContainer.classList.add('guide-container');
-      answersContainer.append(guideContainer);
-      this.container = guideContainer;
-    }
+  constructor() {
+    this.container = answersContainer;
   }
 
-  add(answer, imgName, next) {
-    const answerElement = document.createElement('button');
-    answerElement.classList.add('answer');
-    answerElement.next = next;
-    answerElement.addEventListener('mouseover', markAnswer);
-    answerElement.addEventListener('focus', markAnswer);
-    answerElement.addEventListener('mouseout', unmarkAnswer);
-    answerElement.addEventListener('blur', unmarkAnswer);
-    answerElement.setAttribute('tabindex','0');
+  createWrapperForGuide() {
+    const guideContainer = document.createElement('div');
+    guideContainer.classList.add('guide-container');
+    answersContainer.append(guideContainer);
+    this.container = guideContainer;
+  }
 
-    const img = document.createElement('img');
-    img.setAttribute('src', 'img/' + imgName.toLowerCase().replace(/\s/g, ''));
-    img.setAttribute('alt', '');
-    answerElement.appendChild(img);
+  add(answer, imgName, nextQuestionReference) {
+    const answerBuilder = new AnswerElementBuilder();
 
-    const shade = document.createElement('div');
-    shade.classList.add('shade');
-    answerElement.appendChild(shade);
+    answerBuilder.appendImage(imgName);
 
-    const text = document.createElement('p');
-    text.innerText = answer;
-    answerElement.appendChild(text);
+    answerBuilder.appendShade();
 
-    if (next !== false) {
-      this.container.appendChild(answerElement);
-      answerElement.addEventListener('click', functionClickedAnswer);
+    answerBuilder.appendAnswerText(answer);
+
+    if (nextQuestionReference !== null) {
+      answerBuilder.setNextAnswerReference(nextQuestionReference);
+      answerBuilder.onClick(loadNextQuestionAndRememberPrevious);
     } else {
-      const linkElement = document.createElement('a');
-      linkElement.setAttribute('href', 'technologies/' + answer.toLowerCase().replace(/\s/g, '') + '.html');
-      linkElement.setAttribute('target', '_blank');
-      linkElement.appendChild(answerElement);
-      this.container.appendChild(linkElement);
+      answerBuilder.makeItLinkToTechnology(answer);
     }
+
+    this.container.appendChild(answerBuilder.getAnswerElement());
   }
 
-  addMessage(text, container = 'p') {
-    const message = document.createElement(container);
+  addMessage(text) {
+    const message = document.createElement('p');
     if (text === 'lub') {
       message.classList.add('or');
     }
@@ -57,29 +44,18 @@ class Answers {
   }
 
   clear() {
-    const answers = this.container.children;
+    const answersToBeRemoved = this.container.children;
 
-    for (let i = answers.length; i--;) {
-      answers[i].classList.add('fadeOut');
-      answers[i].style.display = 'none';
-      answers[i].remove();
+    for (let i = answersToBeRemoved.length; i--;) {
+      answersToBeRemoved[i].classList.add('fadeOut');
+      answersToBeRemoved[i].style.display = 'none';
+      answersToBeRemoved[i].remove();
     }
   }
-}
 
-let previousColor;
-
-function markAnswer() {
-  previousColor = $(this).children('p').css('background-color');
-  $(this).children('img').addClass('jumpImg');
-  $(this).children('p').css('background-color', '#0a5677');
-  $(this).children('.shade').addClass('shadeImg');
-}
-
-function unmarkAnswer() {
-  $(this).children('img').removeClass('jumpImg');
-  $(this).children('p').css('background-color', previousColor);
-  $(this).children('.shade').removeClass('shadeImg');
+  endGuideWrapper() {
+    this.container = answersContainer;
+  }
 }
 
 export default Answers;

@@ -1,0 +1,20 @@
+{% if page.comments %}
+{% if jekyll.environment == "production" %}
+<div id="disqus_thread"></div>
+<script>
+
+var disqus_config = function () {
+this.page.url = "https://blog.jaki-jezyk-programowania.pl{{ page.url }}";
+this.page.identifier = "{{ page.id }}";
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://jaki-jezyk-programowania.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Włacz JavaScript w twojej przeglądarce, aby zobaczyć <a href="https://disqus.com/?ref_noscript"> komentarze by Disqus.</a></noscript>
+{% endif %}
+{% endif %}

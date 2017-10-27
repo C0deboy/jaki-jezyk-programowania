@@ -1,0 +1,48 @@
+---
+layout:     technology
+title-full:      Język programowania Ruby
+image:		ruby.png
+---
+
+# Zastosowanie
+
+**Ruby** to interpretowany, w pełni obiektowy język programowania. Jako język o bardzo prostej składni jest często stosowany do pisania tak zwanych jednolinijkowców, skryptów, przetwarzania tekstu oraz prototypowania nowych aplikacji. Jego zaletą jest ogromna ilość frameworków webowych oraz aplikacji napisanych w tym języku. Warto wspomnieć tu o Jekyllu i Ruby on Rails.
+
+**Jekyll** to generator stron statycznych napisany właśnie w Ruby. Pozwala nam na proste tworzenie blogów lub stron za pomocą wcześniej utworzonych szablonów HTML oraz CSS i wygenerowanie gotowych plików (w tym statycznych stron), które pozostaje tylko wrzucić na serwer. Rozwiązuję on problem wielu podobnych statycznych stron - gdy chcemy wprowadzić zmianę musimy zrobić to manualnie na każdej z nich. Pisząc w Jekyllu tworzymy szablon raz i możemy go wykorzystywać na innych stronach nieskończoną ilość razy.
+
+Warto wspomnieć, że wspiera go Github Pages - serwis Githuba pozwalający na darmowe hostowanie twojej strony/bloga. Na GH Pages twój projekt w Jekyllu zostanie automatycznie wykryty i zbuildowany, więc wystarczy, że wrzucisz pliki źródłowe Jekylla i włączysz GH Pages.
+
+**Ruby on Rails** jest frameworkiem służącym do tworzenia aplikacji internetowych napisanym w języku Ruby. Zostały zaprojektowany tak, aby programista mógł stworzyć funkcjonującą aplikację w jak najkrótszym czasie, co za tym idzie, pisząc jak najmniej kodu. Rails działa według założeń swojego twórcy, David'a Heinemeier Hansson: "Ruby jest przede wszystkim językiem do pisania pięknego kodu, który czyni programistów szczęśliwymi. Biorąc to pod uwagę, Rails jest próbą połączenia piękna i produktywności.". Ruby on Rails posiada jedną z największych społeczności, która bardzo chętnie dzieli się swoimi dokonaniami i wiedzą, ponadto możemy znaleźć wiele źródeł pozwalających na szybką naukę. Ruby posiada wiele zalet, m. in. w przejrzysty sposób współpracuje z różnymi bazami danych, nie wymagając przy okazji zmiany kodu przez programistę. Strony stworzone w tym frameworku nie należą do demonów szybkości, co jest ceną za wygodę pracy oraz szybkość tworzenia aplikacji. Jednak w swoich zastosowaniach spełnia się znakomicie.
+
+# Poziom skomplikowania
+
+Ruby jest jednym z najprostszych języków. Posiada bardzo intuicyjną składnię, której nauka przychodzi bardzo szybko, nawet początkującym adeptom kodu, podobnie do Pythona.
+
+Czytanie kodu Ruby jest praktycznie identyczne z czytaniem instrukcji po angielsku. Nie znajdziemy definicji typów, a składnia w porównaniu z językami takimi jak Java czy C++ jest maksymalnie uproszczona. Ruby to język wysokopoziomowy, więc nie musimy dbać o niskopoziomowe detale, takie jak zarządzanie pamięcią - robi to za nas garbage collector.
+
+# Popularność
+
+W sieci dostępnych jest wiele stron zrzeszających zwolenników Ruby, gdzie doświadczeni programiści chętnie udzielają pomocy i porad nowym użytkownikom, co pozwala na często, szybkie rozwiązanie danego problemu. Jednak na listach popularności języków nie jest zbyt wysoko. Według rankingu TIOBE jest na 10 pozycji - podnosząc się o dwa miejsca w stosunku do ubiegłego roku. Z kolei ranking Spektrum stawia go aż na 12 miejscu. Ruby posiada ósmą co do wielkości społeczność na StackOverflow, z 175 281 pytaniami. Mimo, że nie jest to dużo, społeczność ta jest druga pod względem częstotliwości odpowiedzi na pytania. Natomiast na stronie Meetup.com Ruby obecnie posiada 603 759 na całym świecie, z liczbą ponad 910 zarejestrowanych spotkań.
+
+Na Githubie jest to 3 najczęściej tagowany język. Ogromna ilość różnych projektów, pozwala Ci na użycie ich jako "gemów" w swoim projekcie, jak i różnych narzędzi ułatwiających tworzenie aplikacji.
+
+# Przyszłość języka
+
+Przez powstanie Node.js popularność platformy Ruby on Rails delikatnie spadła, jednak przez sposób, w jakim się w nim programuje oraz łatwość tworzenia aplikacji nie zostanie łatwo wyparta przez długi czas. Ruby jest cały czas rozwijany, twórcy wypuszczają często aktualizacje, rozwiązujące wiele wcześniejszych problemów. Jego ostatnia wersja 2.4.x została wydana w 2016 roku, a kolejna wersja jest planowana na koniec 2017.
+
+# Najlepsze książki do nauki {{ page.title }}
+## od wydawnictwa [Helion](http://helion.pl/view/9102Q):
+
+{: class="promotions-link"}
+[Zobacz aktualne promocje](http://helion.pl/page/9102Q/promocje)
+
+
+Ruby ma wyjątkowo mało polskich, aktualnych książek. Można rozważyć tylko te 2 pozycje:
+
+<div class="book">
+    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=rubprp&nr=9102Q&size=181&utf8=1"></script>
+</div>
+
+<div class="book">
+    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=a_03cd&nr=9102Q&size=181&utf8=1"></script>
+</div>

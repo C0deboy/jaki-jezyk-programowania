@@ -10,8 +10,9 @@ startBtn.mouseout(() => {
 
 startBtn.on('click', (event) => {
   event.preventDefault();
+
   const mouseButton = event.which;
-  const link = 'start.html';
+  const link = startBtn.attr('href');
 
   if (mouseButton === 3) return;
 

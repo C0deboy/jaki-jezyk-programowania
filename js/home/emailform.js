@@ -17,7 +17,7 @@ const customErrors = {
   recaptcha: 'Potwierdź, że nie jesteś robotem!',
 };
 
-const contactForm = $('#contact');
+const contactForm = $('#formularz-kontaktowy');
 const formAlert = document.querySelector('.emailFormAlert');
 
 function toggleContactForm(state) {
@@ -53,7 +53,7 @@ closeContactBtn.click(() => {
 
 const firstInput = $('.form-data:first');
 
-if (document.location.hash === '#contact') {
+if (document.location.hash === '#formularz-kontaktowy') {
   openContactBtn.focus();
   openContactBtn.click();
 }

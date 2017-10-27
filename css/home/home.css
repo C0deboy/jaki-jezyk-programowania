@@ -1,6 +1,11 @@
+hr {
+  border-color: rgba(42, 144, 180, 0.31);
+}
+
 .key,
 .site-header {
   text-align: center;
+  flex-direction: row;
 }
 
 .key,
@@ -12,6 +17,10 @@ header .text-muted,
 .about-project .text-muted{
   color: white;
   font-size: .8em;
+}
+
+header .text-muted a {
+  color: #ff0a00;
 }
 
 .key,.keys {
@@ -165,7 +174,7 @@ header .text-muted,
 }
 
 .lang-link {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   -webkit-transition: -webkit-transform .5s ease-out;
   -moz-transition: transform .5s ease-out;
@@ -194,6 +203,15 @@ header .text-muted,
 .lang-link:hover {
   cursor: pointer;
   outline: none;
+}
+
+.sub.lang-link {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.lang .sub.lang-link img {
+  height: 60px;
 }
 
 .about-project {

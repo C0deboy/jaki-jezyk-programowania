@@ -12,8 +12,19 @@ html, body {
 }
 
 section {
-  padding: 0 15% 5% 15%;
-  margin-top: 0;
+  min-height: calc(100vh - 49px);
+  padding: 0px 16% 60px;
+  margin: 0;
+}
+
+.language-content {
+  width: 100%;
+  background-color: #0a455e;
+  -webkit-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+  padding: 0 5% 40px;
+  margin-top: 50px;
 }
 
 @media (max-width: 768px) {
@@ -31,32 +42,16 @@ section {
   }
 }
 
-.language-content {
-  width: 100%;
-  background-color: #0a455e;
-  -webkit-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
-  padding: 0 0 40px;
-}
-
 .language-content .start-container {
-  padding-right: 2px;
-  padding-left: 2px;
+  padding: 0 2px 25px;
 }
 
 .start-row {
   margin-top: 60px;
 }
 
-
-.language-content p {
-  margin: 0;
-  padding: 10px;
-}
-
 .language-content a {
-  color: #AA3939;
+  color: #03A9F4;
 }
 
 .language-content .language-logo {
@@ -78,8 +73,8 @@ section {
   }
 }
 
-ul {
-    list-style-type: none;
+.language-content ul {
+     text-align: left;
 }
 
 .language-logo img{
@@ -98,9 +93,9 @@ ul {
   padding: 0 15px;
 }
 
-.content-header  {
-  padding-top: 40px;
-  padding-bottom: 10px;
+.language-content h1 {
+  padding-top: 30px;
+  padding-bottom: 20px;
   margin-bottom: 20px;
   position: relative;
 }
@@ -113,14 +108,14 @@ ul {
   text-align: center;
 }
 
-.context-text p{
+.language-content p {
   text-align: justify;
-  padding: 0 5% 0 5%;
-  text-indent: 5%;
+  text-indent: 15px;
 }
 
-.context-text img{
-  margin: 25px 0;
+.language-content p img {
+  margin: auto;
+  display: block;
 }
 
 .lang-starter-heading {
@@ -136,4 +131,169 @@ ul {
     font-size: 2vw;
     min-width: 12vw;
   }
+}
+
+.book {
+  display: inline-block;
+  text-align: center;
+  padding: 15px;
+  width: 300px;
+  vertical-align: top;
+}
+
+.book img {
+  margin: 10px auto;
+}
+
+.book a {
+  background: #222222;
+  border-radius: 5px;
+  color: #ffffff;
+  display: inline-block;
+  margin: 10px auto 10px auto;
+  text-align: center;
+  border: 0;
+  padding: 5px 5px;
+  text-indent: 0;
+}
+
+.book p {
+  text-align: center;
+  text-indent: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.book .helion-ksiazkasm3 {
+  font-size: .7em;
+}
+
+.book-section p {
+  text-align: center;
+}
+
+.language-content hr {
+  border: 1px solid rgba(255, 255, 255, 0.17);
+}
+
+.official-page {
+  background: #464646;
+  display: inline-block;
+  color: black;
+  padding: 10px 20px 10px 10px;
+  border-radius: 2px;
+  margin-top: 20px;
+  border: solid 1px #777777;
+}
+
+.official-page a {
+  text-decoration: none;
+}
+
+.official-page:hover {
+  background: rgba(9,27,34,0.69);
+  cursor: pointer;
+}
+
+.book-categories {
+  margin: 25px 0;
+  display: inline-block;
+  float: left;
+}
+
+.book-of-a-day {
+  display: inline-block;
+  background: #103f57;
+  -webkit-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
+  margin: 0 0 50px 0;
+  max-width: 90vw;
+}
+
+.top-books {
+  text-align: left;
+}
+
+.promotions-link {
+  background: #22303a;
+  margin: 15px auto 0;
+  padding: 5px 15px;
+  display: block;
+  width: max-content;
+}
+
+
+/* Technologies duplicate */
+
+.program-languages {
+  min-height: 100vh;
+  background: -webkit-linear-gradient(#144667,#1b476e);
+  background: linear-gradient(#144667,#1b476e);
+}
+
+.program-languages .section-heading small {
+  display: block;
+  margin: 15px 0 5px 0;
+  font-size: calc( 13px + (25 - 15) * ( (100vw - 320px) / ( 1920 - 320) ));
+}
+
+.program-languages a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.program-languages ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lang {
+  padding: 4%;
+}
+
+.lang-link {
+  display: block;
+  text-decoration: none;
+  -webkit-transition: -webkit-transform .5s ease-out;
+  -moz-transition: transform .5s ease-out;
+  -ms-transition: transform .5s ease-out;
+  -o-transition: transform .5s ease-out;
+  transition: transform .5s ease-out;
+}
+
+.lang-link:active {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.lang-link:hover,
+.lang-link:focus{
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+.lang-link:hover {
+  cursor: pointer;
+  outline: none;
+}
+
+.lang img {
+  height: 100px;
+}
+
+.sub.lang-link {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.lang .sub.lang-link img {
+  height: 60px;
 }

@@ -1,0 +1,177 @@
+---
+layout:     default
+title-full: "Książki, które każdy powinien przeczytać"
+---
+
+# Książki warte polecenia
+## od wydawnictwa [Helion](http://helion.pl/view/9102Q):
+
+{: class="promotions-link"}
+[Zobacz aktualne promocje](http://helion.pl/page/9102Q/promocje)
+
+<br>
+
+### Książki, które może przeczytać każdy, bez względu na używaną technologię:
+
+<br>
+
+
+
+<div class="book-categories">
+
+{% markdown %}
+[Cała lista](/ksiazki/ksiazki-ktore-moze-przeczytac-kazdy-bez-wzgledu-na-technologie) lub według kategorii:
+
+- [Dla najmłodszych](/ksiazki/najlepsze-ksiazki-do-rozpoczecia-nauki-programowania-dla-dziecka)
+- [Język angielski](/ksiazki/ksiazka-jezyk-angielski-dla-programistow)
+- [Git](/ksiazki/ksiazka-system-kontroli-wersji-git)
+- [Czysty kod i agile](/ksiazki/najlepsze-ksiazki-o-czystym-kodzie-i-agile)
+- [Refaktoryzacja](/ksiazki/najlepsze-ksiazki-o-refaktoryzacji)
+- [Wzorce projektowe](/ksiazki/najlepsze-ksiazki-o-wzorcach-projektowych)
+- [Algorytmy](/ksiazki/najlepsze-ksiazki-o-algorytmach)
+- [Testowanie](/ksiazki/najlepsze-ksiazki-o-testowaniu-oprogramowania)
+- [Projektowanie gier](/ksiazki/najlepsze-ksiazki-o-projektowaniu-gier)
+- [Bezpieczeństwo](/ksiazki/najlepsze-ksiazki-o-bezpieczenstwie-systemow)
+- [Domain-driven design](/ksiazki/najlepsze-ksiazki-o-domain-driven-design)
+- [Start-upy i e-biznes](/ksiazki/najlepsze-ksiazki-o-start-upach-i-e-biznesie)
+- [Produktywność i samodyscyplina](/ksiazki/najlepsze-ksiazki-o-produktywnosci-i-samodyscyplinie)
+- [Blogowanie](/ksiazki/ksiazki-ktore-pomoga-pisac-lepszego-bloga)
+- [Nie programistyczne](/ksiazki/ksiazki-nie-programistyczne)
+{% endmarkdown %}
+
+</div>
+
+<div class="book book-of-a-day">
+    <p>Promocja dnia</p>
+    <script src="http://helion.pl/plugins/new/promocja-sm.phi?nr=9102Q&size=125&utf8=1"></script>
+</div>
+
+
+
+### Książki, według danej technologii:
+
+<div class="languages-list" role="list">
+  <div class="row">
+    <div role="listitem" class="col-sm-4 lang">
+      <a href="/technologie/c#najlepsze-książki-do-nauki-c" class="lang-link">
+        <img class="tip" src="/img/c.png" alt="Logo języka C" data-tip="C">
+      </a>
+    </div>
+
+    <div role="listitem" class="col-sm-4 lang">
+      <a href="/technologie/javascript#najlepsze-książki-do-nauki-javascript" class="lang-link"  >
+        <img class="tip" src="/img/javascript.png" alt="Logo języka Javascript" data-tip="Javascript">
+      </a>
+
+      <a href="/technologie/node.js/#najlepsze-książki-do-nauki-nodejs" class="sub lang-link">
+        <img class="tip" src="/img/node.js.png" alt="Logo Node.js" data-tip="Node.js">
+      </a>
+      <a href="/technologie/angular/#najlepsze-książki-do-nauki-angular" class="sub lang-link">
+        <img class="tip" src="/img/angular.png" alt="Logo Angular" data-tip="Angular">
+      </a>
+      <a href="/technologie/react/#najlepsze-książki-do-nauki-react" class="sub lang-link">
+        <img class="tip" src="/img/react.png" alt="Logo React" data-tip="React">
+      </a>
+    </div>
+
+    <div role="listitem" class="col-sm-4 lang">
+      <a href="/technologie/r#najlepsze-książki-do-nauki-r" class="lang-link" >
+        <img class="tip" src="/img/r.png" alt="Logo języka R" data-tip="R">
+      </a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div role="listitem" class="col-sm-3 lang">
+      <a href="/technologie/c++#najlepsze-książki-do-nauki-c" class="lang-link" >
+        <img class="tip" src="/img/c++.png" alt="Logo języka C++" data-tip="C++">
+      </a>
+
+      <a href="/technologie/unrealengine4/#najlepsze-książki-do-nauki-unreal-engine-4" class="sub lang-link">
+        <img class="tip" src="/img/unrealengine4.png" alt="Logo Unreal Engine 4" data-tip="Unreal Engine 4">
+      </a>
+    </div>
+
+    <div role="listitem" class="col-sm-3 lang">
+      <a href="/technologie/java#najlepsze-książki-do-nauki-java" class="lang-link">
+        <img class="tip" src="/img/java.png" alt="Logo języka Java" data-tip="Java">
+      </a>
+
+      <a href="/technologie/spring/#najlepsze-książki-do-nauki-spring" class="sub lang-link">
+        <img class="tip" src="/img/spring.png" alt="Logo Spring" data-tip="Spring">
+      </a>
+    </div>
+
+    <div role="listitem" class="col-sm-3 lang">
+      <a href="/technologie/ruby#najlepsze-książki-do-nauki-ruby" class="lang-link" >
+        <img class="tip" src="/img/ruby.png" alt="Logo języka Ruby" data-tip="Ruby">
+      </a>
+
+      <a href="/technologie/rubyonrails/#najlepsze-książki-do-nauki-ruby-on-rails" class="sub lang-link">
+        <img class="tip" src="/img/rubyonrails.png" alt="Logo Ruby on Rails" data-tip="Ruby on Rails">
+      </a>
+    </div>
+
+    <div role="listitem" class="col-sm-3 lang">
+      <a href="/technologie/csharp#najlepsze-książki-do-nauki-c#" class="lang-link" >
+        <img class="tip" src="/img/csharp.png" alt="Logo języka C#" data-tip="C#">
+      </a>
+
+      <a href="/technologie/unity/#najlepsze-książki-do-nauki-unity" class="sub lang-link">
+        <img class="tip" src="/img/unity.png" alt="Logo Unity" data-tip="Unity">
+      </a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div role="listitem" class="col-sm-4 lang">
+      <a href="/technologie/swift#najlepsze-książki-do-nauki-swift" class="lang-link">
+        <img class="tip" src="/img/swift.png" alt="Logo języka Swift" data-tip="Swift">
+      </a>
+    </div>
+
+    <div role="listitem" class="col-sm-4 lang">
+      <a href="/technologie/python#najlepsze-książki-do-nauki-python" class="lang-link">
+        <img class="tip" src="/img/python.png" alt="Logo języka Python" data-tip="Python">
+      </a>
+
+      <a href="/technologie/django/#najlepsze-książki-do-nauki-django" class="sub lang-link">
+        <img class="tip" src="/img/django.png" alt="Logo Django" data-tip="Django">
+      </a>
+    </div>
+
+    <div role="listitem" class="col-sm-4 lang">
+      <a href="/technologie/php#najlepsze-książki-do-nauki-php" class="lang-link">
+        <img class="tip" src="/img/php.png" alt="Logo języka PHP" data-tip="PHP">
+      </a>
+
+      <a href="/technologie/wordpress/#najlepsze-książki-do-nauki-wordpress" class="sub lang-link">
+        <img class="tip" src="/img/wordpress.png" alt="Logo WordPress" data-tip="WordPress">
+      </a>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div role="listitem" class="col-sm-12 lang">
+      <a href="/technologie/scratch/#najlepsze-książki-do-rozpoczęcia-nauki-dla-dziecka" class="sub lang-link">
+        <img class="tip" src="/img/scratch.png" alt="Logo Scratch" data-tip="Scratch">
+      </a>
+      <a href="/technologie/sql/#najlepsze-książki-do-nauki-sql" class="sub lang-link">
+        <img class="tip" src="/img/sql.png" alt="Logo SQL" data-tip="SQL">
+      </a>
+      <a href="/technologie/html&css/#najlepsze-książki-do-nauki-html-i-css" class="sub lang-link">
+        <img class="tip" src="/img/html&css.png" alt="Logo HTML i CSS" data-tip="HTML i CSS">
+      </a>
+    </div>
+  </div>
+</div>
+
+# Top 20 najlepiej sprzedających się ksiązek
+
+<div class="top-books">
+<script
+src="http://helion.pl/plugins/new/top.phi?ile=20i&nr=9102Q&utf8=1">
+</script>
+</div>
