@@ -6,7 +6,7 @@ title:      Unreal Engine 4
 {: .official-page}
 [Przeczytaj o {{ page.title }} na oficjalnej stronie](https://www.unrealengine.com/what-is-unreal-engine-4)
 
-Unreal Engine 4 jest to silnik gry, wyprodukowany przez firmę Epic Games. Bazuje na jęsyku [C++](/technologie/c++)
+Unreal Engine 4 jest to silnik gry, wyprodukowany przez firmę Epic Games. Bazuje na języku [C++](/technologie/c++)
 
 Jądro silnika zostało napisane w języku C++, a jego twórcy zaimplementowali w nim mechanizmy wspomagające wieloplatformowość. Ze względu na to oraz wysoki poziom technologiczny (16 lat rozwoju) wielu deweloperów gier chętnie go wykorzystuje.
 

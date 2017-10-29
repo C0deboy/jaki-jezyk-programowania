@@ -22,7 +22,7 @@ Można zauważyć, że C++ jest często polecanym językiem na początek, na zas
 
 # Popularność
 
-Według indeksu TIOBE C++ jest 3 najbardziej popularnym językiem programowania. Z kolei ranking Spectrum plasuje go na 4 pozycji lekko odstając za Pythonem, C, Javą i C++, Na Stack OverFlow znajduję się na 6 pozycji z ilością 495 827 zadanych pytań. Również na GitHubie jest na 6 pozycji najczęściej tagowanych języków z liczbą ponad 365 000 repozytoriów, z czego około 700 ma więcej niż 500 gwiazdek. Jeśli chodzi o organizowane spotkania to w porównaniu z innymi językami jest ich znacznie mniej. Według MeetUp.com zarejestrowanych jest 48 900 zainteresowanych z liczbą tylko 168 spotkań na całym świecie.
+Według indeksu TIOBE C++ jest 3 najbardziej popularnym językiem programowania. Z kolei ranking Spectrum plasuje go na 4 pozycji delikatnie odstając za Pythonem, C i Javą. Na Stack OverFlow znajduję się na 6 pozycji z ilością 495 827 zadanych pytań. Również na GitHubie jest na 6 pozycji najczęściej tagowanych języków z liczbą ponad 365 000 repozytoriów, z czego około 700 ma więcej niż 500 gwiazdek. Jeśli chodzi o organizowane spotkania to w porównaniu z innymi językami jest ich znacznie mniej. Według MeetUp.com zarejestrowanych jest 48 900 zainteresowanych z liczbą tylko 168 spotkań na całym świecie.
 
 # Przyszłość języka
 

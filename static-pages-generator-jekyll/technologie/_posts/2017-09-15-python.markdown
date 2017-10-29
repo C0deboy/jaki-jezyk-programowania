@@ -1,7 +1,7 @@
 ---
 layout:     technology
 title-full:      Język programowania Python
-image:		Python.png
+image:		python.png
 ---
 
 # Zastosowanie
@@ -18,7 +18,7 @@ Istnieją biblioteki, które są kompilowane do innych języków, co diametralni
 
 # Poziom trudności
 
-Python został stworzony tak, aby był łatwy do zrozumienia i przyjazny dla początkujących. Kod Pythona można czytać jak zwykły tekst po angielsku. Jego składnia jest przejrzysta i zwięzła, jednak duże znaczenie ma formatowanie kodu i białe znaki. Jest to cecha wyróżniająca go spośród innych języków, ponieważ używa wcięć lub angielskich słów tam, gdzie inne korzystają ze znaków interpunkcyjnych i posiada zdecydowanie mniej konstrukcji składniowych. Python to język dynamicznie typowany, czyli nie ma potrzeby ustawiania typu dla zmiennych, a zarządzaniem pamięcią zajmuję się za nas garbage collection. Są to spore ułatwienia dla początkujących, przez co mogą skupić się na nauce właściwego programowania, jednak nieprawidłowo wcięty kod może być mylący, gdyż czytający go programista i kompilator mogą go różnie zinterpretować. Często polecany dla osób, które chcą rozpocząć przygodę z programowaniem.
+Python został stworzony tak, aby był łatwy do zrozumienia i przyjazny dla początkujących. Kod Pythona można czytać jak zwykły tekst po angielsku. Jego składnia jest przejrzysta i zwięzła, jednak duże znaczenie ma formatowanie kodu i białe znaki. Jest to cecha wyróżniająca go spośród innych języków, ponieważ używa wcięć lub angielskich słów tam, gdzie inne korzystają ze znaków interpunkcyjnych i posiada zdecydowanie mniej konstrukcji składniowych. Python to język dynamicznie typowany, czyli nie ma potrzeby ustawiania typu dla zmiennych, a zarządzaniem pamięcią zajmuję się za nas garbage collector. Są to spore ułatwienia dla początkujących, przez co mogą skupić się na nauce właściwego programowania, jednak nieprawidłowo wcięty kod może być mylący, gdyż czytający go programista i kompilator mogą go różnie zinterpretować. Często polecany dla osób, które chcą rozpocząć przygodę z programowaniem.
 
 # Popularność
 

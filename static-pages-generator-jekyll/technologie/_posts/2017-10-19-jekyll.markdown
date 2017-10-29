@@ -19,7 +19,7 @@ Można o nim myśleć jak o opartym na plikach CMS (System zarządzania treści�
 
 Jekyll sparsuje otrzymane pliki i wyrzuci nam całą strukturę statycznych plików, które są gotowe na wrzucenie na serwer. Jest to nieco odmienne podejście do tworzenia stron. Tu całość generujemy u siebie na komputerze, a na serwerze trzymamy gotowe, statyczne pliki.
 
-[Mój blog](https://blog.jaki-jezyk-programowania.pl/) jest oparty na Jekyllu. Napisałem również [wpis](https://blog.jaki-jezyk-programowania.pl/dajsiepoznac2017/jekyll/2017/03/04/instalacja-jekyll/) oraz kilka kolejnych (zobacz tag [Jekyll](https://blog.jaki-jezyk-programowania.pl/archive/#jekyll)), które pomogą Ci ruszyć z własnym blogiem.
+[Mój blog](https://devcave.pl/) jest oparty na Jekyllu. Napisałem również [wpis](https://devcave.pl/dajsiepoznac2017/jekyll/2017/03/04/instalacja-jekyll/) oraz kilka kolejnych (zobacz tag [Jekyll](https://devcave.pl/archive/#jekyll)), które pomogą Ci ruszyć z własnym blogiem.
 
 # Książki, które pomogą pisać lepszego bloga:
 ## od wydawnictwa [Helion](http://helion.pl/view/9102Q):

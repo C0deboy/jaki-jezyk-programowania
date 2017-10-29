@@ -50,10 +50,6 @@ oraz desktopowe:
     <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=unippg&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
-<div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=prgun3&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
 Projektowanie gier:
 
 <div class="book">
