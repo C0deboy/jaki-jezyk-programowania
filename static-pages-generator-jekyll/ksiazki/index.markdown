@@ -22,12 +22,19 @@ title-full: "Książki, które każdy powinien przeczytać"
 {% markdown %}
 [Cała lista](/ksiazki/ksiazki-ktore-moze-przeczytac-kazdy-bez-wzgledu-na-technologie) lub według kategorii:
 
-- [Dla najmłodszych](/ksiazki/najlepsze-ksiazki-do-rozpoczecia-nauki-programowania-dla-dziecka)
-- [Język angielski](/ksiazki/ksiazka-jezyk-angielski-dla-programistow)
+{: .list-header}
+Must read:
+
 - [Git](/ksiazki/ksiazka-system-kontroli-wersji-git)
 - [Czysty kod i agile](/ksiazki/najlepsze-ksiazki-o-czystym-kodzie-i-agile)
 - [Refaktoryzacja](/ksiazki/najlepsze-ksiazki-o-refaktoryzacji)
 - [Wzorce projektowe](/ksiazki/najlepsze-ksiazki-o-wzorcach-projektowych)
+
+{: .list-header}
+Inne:
+
+- [Dla najmłodszych](/ksiazki/najlepsze-ksiazki-do-rozpoczecia-nauki-programowania-dla-dziecka)
+- [Język angielski](/ksiazki/ksiazka-jezyk-angielski-dla-programistow)
 - [Algorytmy](/ksiazki/najlepsze-ksiazki-o-algorytmach)
 - [Testowanie](/ksiazki/najlepsze-ksiazki-o-testowaniu-oprogramowania)
 - [Projektowanie gier](/ksiazki/najlepsze-ksiazki-o-projektowaniu-gier)

@@ -296,3 +296,7 @@ section {
 .lang .sub.lang-link img {
   height: 60px;
 }
+
+.list-header {
+  margin: 0;
+}
