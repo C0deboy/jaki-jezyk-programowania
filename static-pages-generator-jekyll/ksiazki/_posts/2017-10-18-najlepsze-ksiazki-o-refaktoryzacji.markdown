@@ -1,9 +1,9 @@
 ---
 layout:     default
-title-full: "Najlepsze książki o bezpieczeństwie systemów"
+title-full: "Najlepsze książki o refaktoryzacji"
 ---
 
-# Najlepsze książki o bezpieczeństwie systemów
+# Najlepsze książki o refaktoryzacji
 ## od wydawnictwa [Helion](http://helion.pl/view/9102Q):
 
 {: class="promotions-link"}

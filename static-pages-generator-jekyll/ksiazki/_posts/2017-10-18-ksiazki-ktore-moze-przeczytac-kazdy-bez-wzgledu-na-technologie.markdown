@@ -99,14 +99,6 @@ Agile:
 ## O projektowaniu gier
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=grywal&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=grymeg&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
     <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=prgpo2&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
@@ -166,14 +158,14 @@ Agile:
     <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=jowozr&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
-## Start-up i e-biznes:
+## Marketgin i e-biznes
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=melean&nr=9102Q&size=181&utf8=1"></script>
+    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=grywal&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=pispri&nr=9102Q&size=181&utf8=1"></script>
+    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=grymeg&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
@@ -182,6 +174,20 @@ Agile:
 
 <div class="book">
     <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=praebi&nr=9102Q&size=181&utf8=1"></script>
+</div>
+
+<div class="book">
+    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=bibcop&nr=9102Q&size=181&utf8=1"></script>
+</div>
+
+## Start-up:
+
+<div class="book">
+    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=melean&nr=9102Q&size=181&utf8=1"></script>
+</div>
+
+<div class="book">
+    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=pispri&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
@@ -230,10 +236,6 @@ Agile:
 
 <div class="book">
     <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=magslo&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=bibcop&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 ## Nie programistyczne:

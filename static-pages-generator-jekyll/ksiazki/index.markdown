@@ -13,10 +13,6 @@ title-full: "Książki, które każdy powinien przeczytać"
 
 ### Książki, które może przeczytać każdy, bez względu na używaną technologię:
 
-<br>
-
-
-
 <div class="book-categories">
 
 {% markdown %}
@@ -40,7 +36,8 @@ Inne:
 - [Projektowanie gier](/ksiazki/najlepsze-ksiazki-o-projektowaniu-gier)
 - [Bezpieczeństwo](/ksiazki/najlepsze-ksiazki-o-bezpieczenstwie-systemow)
 - [Domain-driven design](/ksiazki/najlepsze-ksiazki-o-domain-driven-design)
-- [Start-upy i e-biznes](/ksiazki/najlepsze-ksiazki-o-start-upach-i-e-biznesie)
+- [Marketing i e-biznes](/ksiazki/najlepsze-ksiazki-o-marketingu-i-e-biznesie)
+- [Start-upy](/ksiazki/najlepsze-ksiazki-o-start-upach)
 - [Produktywność i samodyscyplina](/ksiazki/najlepsze-ksiazki-o-produktywnosci-i-samodyscyplinie)
 - [Blogowanie](/ksiazki/ksiazki-ktore-pomoga-pisac-lepszego-bloga)
 - [Nie programistyczne](/ksiazki/ksiazki-nie-programistyczne)

@@ -206,7 +206,7 @@ section {
   -webkit-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
   box-shadow: 10px 10px 33px -15px rgba(0,0,0,0.75);
-  margin: 0 0 50px 0;
+  margin: 50px 0;
   max-width: 90vw;
 }
 
