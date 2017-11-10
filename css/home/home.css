@@ -17,6 +17,7 @@ header .text-muted,
 .about-project .text-muted{
   color: white;
   font-size: .8em;
+  text-shadow: 0px 0px 10px black;
 }
 
 header .text-muted a {
@@ -32,8 +33,6 @@ header .text-muted a {
   width: 100%;
   color: #fff;
   padding: 100px 5% 20px;
-  background: -webkit-linear-gradient(#0376a5,#144667);
-  background: linear-gradient(#0376a5,#144667);
 }
 
 @media (min-width: 768px) {
@@ -80,8 +79,19 @@ header .text-muted a {
   background: -webkit-linear-gradient(to bottom,#de3e3e,#981313);
   background: #AA3939 linear-gradient(to bottom,#de3e3e,#981313);
   border-radius: 5px;
-  box-shadow: 0 10px 15px 2px rgba(0,0,0,.75), 0 6px 0 0 #000;
+  box-shadow: 0 2px 6px 0 black;
   margin: 15px auto 40px;
+}
+
+.btn.btn-danger.start:hover,
+.btn.btn-danger.start:focus{
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px 0 black;
+}
+
+.btn.btn-danger.start:active {
+  transform: translateY(+1px);
+  box-shadow: 0 2px 6px 0 black;
 }
 
 .program-languages .section-heading,
@@ -90,158 +100,9 @@ header .text-muted a {
   color: #fff;
 }
 
-.btn.btn-danger.start:hover,
-.btn.btn-danger.start:focus{
-  background: -webkit-linear-gradient(to bottom,#981313,#de3e3e);
-  background: #AA3939 linear-gradient(to bottom,#981313,#de3e3e);
-}
-
-.press {
-  animation: press,press2;
-  animation-duration: .3s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-
-@keyframes press {
-  0% {
-     box-shadow: 0 10px 15px 2px rgba(0,0,0,.75), 0 6px 0 0 #000;
-  }
-
-  100% {
-    box-shadow: 0 0 23px -5px rgba(0,0,0,.75),0 0 #000;
-  }
-}
-
-@keyframes press2 {
-  0% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(6px);
-  }
-}
-
-.program-languages {
-  min-height: 100vh;
-  background: -webkit-linear-gradient(#144667,#1b476e);
-  background: linear-gradient(#144667,#1b476e);
-}
-
-.program-languages .section-heading small {
-  display: block;
-  margin: 15px 0 5px 0;
-  font-size: calc( 13px + (25 - 15) * ( (100vw - 320px) / ( 1920 - 320) ));
-}
-
-.program-languages a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.program-languages ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.lang {
-  padding: 4%;
-}
-
-.lang img {
-  height: 100px;
-}
-
-.languages-list {
-  padding-top: 0;
-}
-
-.container-lang {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-@media (min-width: 768px) {
-  .lang {
-    padding: 2.5%;
-  }
-    .languages-list {
-    padding-top: 8vh;
-  }
-}
-
-.lang-link {
-  display: block;
-  text-decoration: none;
-  -webkit-transition: -webkit-transform .5s ease-out;
-  -moz-transition: transform .5s ease-out;
-  -ms-transition: transform .5s ease-out;
-  -o-transition: transform .5s ease-out;
-  transition: transform .5s ease-out;
-}
-
-.lang-link:active {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-.lang-link:hover,
-.lang-link:focus{
-  -webkit-transform: scale(1.4);
-  -moz-transform: scale(1.4);
-  -ms-transform: scale(1.4);
-  -o-transform: scale(1.4);
-  transform: scale(1.4);
-}
-
-.lang-link:hover {
-  cursor: pointer;
-  outline: none;
-}
-
-.sub.lang-link {
-  display: inline-block;
-  padding: 0 5px;
-}
-
-.lang .sub.lang-link img {
-  height: 60px;
-}
-
 .about-project {
   min-height: 100vh;
-  background: -webkit-linear-gradient(#1b476e,#05729f);
-  background: linear-gradient(#1b476e,#05729f);
-}
-
-.about-link {
-  background: #222222;
-  border-radius: 5px;
-  color: #ffffff;
-  font-size: 1.07em;
-  display: inline-block;
-  margin: 10px auto 10px auto;
-  text-align: center;
-  border: 0;
-  padding: 0 5px;
-}
-
-.about-link i {
-  color: white;
-}
-
-.about-link:active,
-.about-link:hover,
-.about-link:focus{
-  font-weight: 700;
-  text-decoration: none;
-  color: #d32429;
+  padding: 0 0 20px 0;
 }
 
 .team-member {
@@ -260,14 +121,7 @@ header .text-muted a {
 }
 
 .social-buttons a {
-  display: block;
-  background-color: #222;
-  height: 40px;
-  width: 40px;
-  border-radius: 100%;
   font-size: 1.2em;
-  line-height: 40px;
-  color: #fff;
   -webkit-transition: background .2s linear, -webkit-transform .2s linear;
   -moz-transition: background .2s linear, transform .2s linear;
   -ms-transition: background .2s linear, transform .2s linear;
@@ -277,10 +131,9 @@ header .text-muted a {
 
 .social-buttons a:hover,
 .social-buttons a:focus {
-  background: #000;
-  -webkit-transform: scale(1.35);
-  -moz-transform: scale(1.35);
-  -ms-transform: scale(1.35);
-  -o-transform: scale(1.35);
-  transform: scale(1.35);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
 }

@@ -18,6 +18,7 @@
   <link rel="shortcut icon" href="/img/logo/logo.ico">
   <link rel="stylesheet" href="/dist/global.bundle.css">
   <link rel="stylesheet" href="/dist/language.css">
+  <link rel="stylesheet" href="/dist/technologies.css">
 
 </head>
 
@@ -44,12 +45,17 @@
 
 <h3 id="książki-które-może-przeczytać-każdy-bez-względu-na-używaną-technologię">Książki, które może przeczytać każdy, bez względu na używaną technologię:</h3>
 
-<div class="book-categories">
+<div class="row recommended-books-list">
+<div class="book-categories col-lg-7 col-sm-12">
 
 
 <p><a href="/ksiazki/ksiazki-ktore-moze-przeczytac-kazdy-bez-wzgledu-na-technologie">Cała lista</a> lub według kategorii:</p>
 
+
+<div class="col-md-6 col-sm-6">
+
 <p class="list-header">Must read:</p>
+
 
 <ul>
   <li><a href="/ksiazki/ksiazka-system-kontroli-wersji-git">Git</a></li>
@@ -58,7 +64,14 @@
   <li><a href="/ksiazki/najlepsze-ksiazki-o-wzorcach-projektowych">Wzorce projektowe</a></li>
 </ul>
 
+
+
+</div>
+
+<div class="col-md-6 col-sm-6">
+
 <p class="list-header">Inne:</p>
+
 
 <ul>
   <li><a href="/ksiazki/najlepsze-ksiazki-do-rozpoczecia-nauki-programowania-dla-dziecka">Dla najmłodszych</a></li>
@@ -76,11 +89,17 @@
 </ul>
 
 
+
+</div>
 </div>
 
+<div class="col-lg-4 col-sm-12">
 <div class="book book-of-a-day">
     <p>Promocja dnia</p>
     <script src="http://helion.pl/plugins/new/promocja-sm.phi?nr=9102Q&amp;size=125&amp;utf8=1"></script>
+</div>
+</div>
+
 </div>
 
 <h3 id="książki-według-danej-technologii">Książki, według danej technologii:</h3>
@@ -189,14 +208,14 @@
   <hr />
 
   <div class="row">
-    <div role="listitem" class="col-sm-12 lang">
-      <a href="/technologie/scratch/#najlepsze-książki-do-rozpoczęcia-nauki-dla-dziecka" class="sub lang-link">
+    <div role="listitem" class="col-sm-12 lang other-technologies">
+      <a href="/technologie/scratch/#najlepsze-książki-do-rozpoczęcia-nauki-dla-dziecka" class="other lang-link">
         <img class="tip" src="/img/scratch.png" alt="Logo Scratch" data-tip="Scratch" />
       </a>
-      <a href="/technologie/sql/#najlepsze-książki-do-nauki-sql" class="sub lang-link">
+      <a href="/technologie/sql/#najlepsze-książki-do-nauki-sql" class="other lang-link">
         <img class="tip" src="/img/sql.png" alt="Logo SQL" data-tip="SQL" />
       </a>
-      <a href="/technologie/html&amp;css/#najlepsze-książki-do-nauki-html-i-css" class="sub lang-link">
+      <a href="/technologie/html&amp;css/#najlepsze-książki-do-nauki-html-i-css" class="other lang-link">
         <img class="tip" src="/img/html&amp;css.png" alt="Logo HTML i CSS" data-tip="HTML i CSS" />
       </a>
     </div>
@@ -210,6 +229,9 @@
 </script>
 </div>
 
+<script src="/dist/extendTechnologies.js"></script>
+
+
 
     	</div>
     	
@@ -221,9 +243,9 @@
     </div>
 </footer>
 
+<script src="/dist/changeLinkNameHelionPlugin.js"></script>
 <script src="/libs/jquery.min.js"></script>
 <script src="/dist/global.bundle.js"></script>
-<script src="/dist/language.js"></script>
 
 </body>
 

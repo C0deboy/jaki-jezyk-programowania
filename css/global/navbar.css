@@ -17,11 +17,13 @@
   transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  box-shadow: 0 0 4px 0 black;
 }
 
 .navbar-custom .navbar-brand {
   font-weight: 800;
   font-size: 25px;
+  padding: 15px 5px 15px;
 }
 
 .navbar-brand img{
@@ -67,16 +69,24 @@
   /* when the user scrolls down, we hide the header right above the viewport */
   position: fixed;
   top: -52px;
-  background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0.8;
   -webkit-transition: -webkit-transform 0.3s;
   -moz-transition: -moz-transform 0.3s;
   transition: transform 0.3s;
   border-bottom: 1px solid #eee;
 }
 
+.navbar-custom.is-fixed:hover {
+  opacity: 1;
+}
+
 .navbar-custom.is-fixed .navbar-brand,
 .navbar-custom.is-fixed .nav li a {
   color: #626262;
+}
+
+.navbar-right {
+  text-align: right;
 }
 
 .navbar-custom.is-fixed .navbar-brand:hover,
@@ -92,4 +102,8 @@
   -ms-transform: translate3d(0, 52px, 0);
   -o-transform: translate3d(0, 52px, 0);
   transform: translate3d(0, 52px, 0);
+}
+
+.site-logo {
+  margin: 0;
 }

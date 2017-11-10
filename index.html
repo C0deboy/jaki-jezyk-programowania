@@ -80,32 +80,20 @@
   </div>
 </div>
 
-<div class="canary-version-alert" id="project-state">
-  <p>Projekt jest w fazie rozwoju. Cały czas pracuję nad ulepszaniem strony i treści. Zachęcam do zgłaszania błędów, nieaktualnych/niepoprawnych informacji czy sugestii mających na celu poprawę jakości strony.</p>
-  <button type="button" id="close-project-state-btn" title="Zamknij ostrzeżenie">
-    <i class="fa fa-times fa-2x close-alert" aria-hidden="true"></i>
-  </button>
-</div>
-
 <header id="intro" class="site-header container-fluid">
   <div class="row header-row">
     <div class="col-md-6 intro-text">
       <div class="intro">
-        <h2 class="header-heading">Wybierz język programowania</h2>
-        <p class="header-text">Nie wiesz jaki język programowania wybrać? Ten projekt powstał, aby Ci w tym pomóc! Tutaj dowiesz się, który z nich będzie odpowiedni dla danego zastosowania, w co brnąć dalej gdy opanujesz podstawy oraz zobaczysz wybrane książki do nauki danej technologii.</p>
+        <h1 class="header-heading">Zastanawiasz się jaki język programowania wybrać?</h1>
+        <p class="header-text">Kliknij start, a szybko wybierzesz coś dla siebie. Między innymi dowiesz się, który z nich będzie odpowiedni dla danego zastosowania, w co brnąć dalej, gdy opanujesz podstawy oraz zobaczysz wybrane książki do nauki danej technologii.</p>
+
+        <p>Jeśli masz dodatkowe pytania, warto przejrzeć <a class="page-scroll faq-btn" href="/faq/">FAQ</a>, gdzie zebrałem kilka fundamentalnych pytań, lub napisz do mnie.</p>
       </div>
-      <p class="tip clickable" data-tip="Na podstawie Twoich odpowiedzi na pytania zostanie określony język programowania (lub więcej niż jeden) odpowiedni do Twoich celów. Będziesz mógł przejrzeć najważniejsze informacje o każdym z nich i je porównać. Jeśli masz dodatkowe pytania warto przejrzeć FAQ, gdzie zebrałem kilka fundamentalnych pytań lub możesz napisać do mnie poprzez <a href=?#formularz-kontaktowy>formularz kontaktowy</a>!">Jak to działa?</p>
+      <p class="tip clickable" data-tip="Na podstawie Twoich odpowiedzi na pytania zostanie określony język programowania (lub więcej niż jeden) odpowiedni do Twoich celów. Będziesz mógł przejrzeć najważniejsze informacje o każdym z nich i je porównać. ">Jak to działa?</p>
 
       <a href="/start/" class="btn btn-danger btn-lg start">
         <i class="fa fa-play play" aria-hidden="true"></i> Start
       </a>
-      <!--118-->
-      <p>Przygotowałem ankietę dotyczącą wyboru języka / technologii do danego zastosowania. Daj znać co ty zaproponowałbyś początkującym programistom!</p>
-      <button id="ankieta" class="about-link" style="font-size: 1.2em;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ankieta</button>
-      <div class="survey-dialog" role="dialog" aria-label="Ankieta">
-        <iframe class="survey" src="https://docs.google.com/forms/d/e/1FAIpQLScdtXZd_Y_4oQyOtlhYpmDID48ejeK2w-CEuO0IL53wC4dQxQ/viewform?embedded=true" >Ładuję...</iframe>
-        <button id="close-survey-btn" class="close-survey-btn" aria-label="Zamknij ankietę" title="Zamknij ankietę"> <i class="fa fa-times"></i></button>
-      </div>
     </div>
     <div class="col-md-6" aria-hidden="true">
       <div class="laptop">
@@ -228,13 +216,13 @@
             <div class="key ctrl-left newrow">Ctrl</div>
             <div class="key">&hearts;</div>
             <div class="key">Alt</div>
-            <button class="key typekey space skip">Przyśpiesz &nbsp;<i class="fa fa-fast-forward" aria-hidden="true"></i></button>
+            <button class="key typekey space skip red-btn">Przyśpiesz &nbsp;<i class="fa fa-fast-forward" aria-hidden="true"></i></button>
             <div class="key">Alt</div>
             <div class="key">&hearts;</div>
             <div class="key ctrl-right">Ctrl</div>
-            <button class="key previousExample-btn" title="Poprzedni przykład">&lt;</button>
+            <button class="key previousExample-btn red-btn" title="Poprzedni przykład">&lt;</button>
             <div class="key">v</div>
-            <button class="key nextExample-btn" title="Następny przykład">></button>
+            <button class="key nextExample-btn red-btn" title="Następny przykład">></button>
             <div class="key">0</div>
             <div class="key">,</div>
             <div class="touchpad">
@@ -266,13 +254,13 @@
 
     <div class="languages-list" role="list">
       <div class="row">
-        <div role="listitem" class="col-sm-4 lang">
+        <div role="listitem" class="col-md-4 col-sm-3 lang">
           <a href="technologie/c" class="lang-link">
             <img class="tip" src="img/c.png" alt="Logo języka C" data-tip="C">
           </a>
         </div>
 
-        <div role="listitem" class="col-sm-4 lang">
+        <div role="listitem" class="col-md-4 col-sm-6 lang">
           <a href="technologie/javascript" class="lang-link"  >
             <img class="tip" src="img/javascript.png" alt="Logo języka Javascript" data-tip="Javascript">
           </a>
@@ -291,7 +279,7 @@
           </a>
         </div>
 
-        <div role="listitem" class="col-sm-4 lang">
+        <div role="listitem" class="col-md-4 col-sm-3 lang">
           <a href="technologie/r" class="lang-link" >
             <img class="tip" src="img/r.png" alt="Logo języka R" data-tip="R">
           </a>
@@ -364,7 +352,7 @@
         </div>
 
         <div role="listitem" class="col-sm-4 lang">
-          <a href="technologie/php" class="lang-link">
+          <a href="#" class="lang-link">
             <img class="tip" src="img/php.png" alt="Logo języka PHP" data-tip="PHP">
           </a>
 
@@ -380,18 +368,18 @@
       <hr>
 
       <div class="row">
-        <div role="listitem" class="col-sm-12 lang">
-          <a href="technologie/scratch" class="sub lang-link">
+        <div role="listitem" class="col-sm-12 lang other-technologies">
+          <a href="technologie/scratch" class="other lang-link">
             <img class="tip" src="img/scratch.png" alt="Logo Scratch" data-tip="Scratch">
           </a>
-          <a href="technologie/sql" class="sub lang-link">
+          <a href="technologie/sql" class="other lang-link">
             <img class="tip" src="img/sql.png" alt="Logo SQL" data-tip="SQL">
           </a>
-          <a href="technologie/html&css" class="sub lang-link">
+          <a href="technologie/html&css" class="other lang-link">
             <img class="tip" src="img/html&css.png" alt="Logo HTML i CSS" data-tip="HTML i CSS">
           </a>
-          <a href="technologie/jekyll" class="sub lang-link">
-            <img class="tip" src="img/jekyll-light.png" alt="Logo Jekyll" data-tip="Jekyll">
+          <a href="technologie/jekyll" class="other lang-link">
+            <img class="tip" src="img/jekyll.png" alt="Logo Jekyll" data-tip="Jekyll">
           </a>
         </div>
       </div>
@@ -402,8 +390,7 @@
 <section id="o-projekcie" class="section about-project">
   <div class="container">
     <h2 class="section-heading">O projekcie</h2>
-    <p>Wybór języka programowania to odwieczny problem, szczególnie początkujących programistów. Dlatego powstał ten projekt, aby ułatwić innym to zadanie oraz zredukować liczbę kolejnych, tych samych wątków na forach.</p>
-
+    <p>Wybór języka programowania/technologii to odwieczny problem, szczególnie początkujących programistów. Dlatego powstał ten projekt, aby ułatwić innym to zadanie (przynajmniej te oczywiste przypadki) oraz zredukować liczbę kolejnych, tych samych wątków na forach.</p>
     <div class="row">
       <div class="col-sm-12">
         <p>Autor:</p>
@@ -417,7 +404,7 @@
 
           <ul class="list-inline social-buttons">
             <li class="tip" data-tip="Github">
-              <a href="https://github.com/C0deboy">
+              <a class="main-btn" href="https://github.com/C0deboy">
                   <span class="visually-hidden">
                     Github
                   </span>
@@ -425,7 +412,7 @@
               </a>
             </li>
             <li class="tip" data-tip="O mnie">
-              <a href="https://devcave.pl/about/">
+              <a class="main-btn" href="https://devcave.pl/o-mnie/">
                   <span class="visually-hidden">
                     O mnie
                   </span>
@@ -433,7 +420,7 @@
               </a>
             </li>
             <li class="tip" data-tip="LinkedIn">
-              <a href="https://www.linkedin.com/in/marcin-lasota/">
+              <a class="main-btn" href="https://www.linkedin.com/in/marcin-lasota/">
                   <span class="visually-hidden">
                     LinkedIn
                   </span>
@@ -445,16 +432,24 @@
       </div>
     </div>
 
-    <p class="row">
-      Masz jakieś uwagi czy zastrzeżenia? A może masz sugestię, którą chciałbyś się z mną podzielić? Czekam na twoją opinię, która na pewno zmotywuje mnie do dalszej pracy! Jeśli chcesz pomóc w rozwoju projektu skontaktuj się!
-    </p>
+    <div class="row">
+      <!--118-->
+      <p>Przygotowałem ankietę dotyczącą wyboru języka / technologii do danego zastosowania. Daj znać co ty zaproponowałbyś początkującym programistom!</p>
+      <button id="ankieta" class="main-btn"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ankieta</button>
+      <div class="survey-dialog" role="dialog" aria-label="Ankieta">
+        <iframe class="survey" src="https://docs.google.com/forms/d/e/1FAIpQLScdtXZd_Y_4oQyOtlhYpmDID48ejeK2w-CEuO0IL53wC4dQxQ/viewform?embedded=true" >Ładuję...</iframe>
+        <button id="close-survey-btn" class="close-survey-btn" aria-label="Zamknij ankietę" title="Zamknij ankietę"> <i class="fa fa-times"></i></button>
+      </div>
+
+      <p>Masz jakieś uwagi czy zastrzeżenia? A może masz sugestię, którą chciałbyś się z mną podzielić? Czekam na twoją opinię, która na pewno zmotywuje mnie do dalszej pracy! Jeśli chcesz pomóc w rozwoju projektu skontaktuj się!</p>
+    </div>
 
     <div class="row">
       <div class="col-sm-4">
         <h3>
           Napisz do mnie!
         </h3>
-        <button type="button" id="open-contact-btn" class="about-link">
+        <button type="button" id="open-contact-btn" class="main-btn">
           <i class="fa fa-envelope-o" aria-hidden="true"></i>
           Formularz kontaktowy
         </button>
@@ -463,7 +458,7 @@
         <h3>
           Sprawdź projekt na Githubie!
         </h3>
-        <a href="https://github.com/C0deboy/jaki-jezyk-programowania" class="about-link">
+        <a href="https://github.com/C0deboy/jaki-jezyk-programowania" class="main-btn">
           <i class="fa fa-github"></i>
           Repozytorium strony
         </a>
@@ -472,7 +467,7 @@
         <h3>
            Napisz do mnie!
         </h3>
-	    <a href="mailto:lasota.marcinm@gmail.com" class="about-link">
+	    <a href="mailto:lasota.marcinm@gmail.com" class="main-btn">
 	    	<i class="fa fa-envelope-o" aria-hidden="true"></i>
         lasota.marcinm@gmail.com
 	    </a>
@@ -483,16 +478,16 @@
 
 <div id="formularz-kontaktowy" class="contact" role="dialog" aria-label="Formularz kontaktowy" aria-hidden="true">
     <form class="emailForm" method="POST" action="https://formspree.io/lasota.marcinm@gmail.com">
-        <label class="beside" aria-live="polite">
+        <label class="half" aria-live="polite">
             Twój email
             <input class="form-data" name="email" type="email" placeholder="Wpisz tu twój email" required>
         </label>
-        <label class="beside" aria-live="polite">
+        <label class="half" aria-live="polite">
             Temat
             <input class="form-data" name="_subject" placeholder="Wpisz tu temat wiadomości" minlength="4" maxlength="78"
                    required>
         </label>
-        <label style="clear:both;" aria-live="polite">
+        <label aria-live="polite">
             Wiadomość
             <textarea class="form-data" name="message" placeholder="Wpisz tu twoją wiadomość" minlength="4"
                       maxlength="6000" required></textarea>
@@ -501,7 +496,7 @@
             <div class="g-recaptcha" tabindex="-1" data-sitekey="6Lc9_xMUAAAAAFPVNhvDKb9lMXHGI4o7-zhqkTgL"
                  data-callback="recaptchaClearErr"></div>
         </label>
-        <button class="emailFormSubmit" name="submit" type="submit">Wyślij</button>
+        <button class="emailFormSubmit main-btn" name="submit" type="submit">Wyślij</button>
 
         <div class="emailFormAlert" aria-live="polite"></div>
     </form>

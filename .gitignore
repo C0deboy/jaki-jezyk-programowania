@@ -1,4 +1,4 @@
 .idea
 node_modules
-slownik-programisty.html
 npm-debug.log
+/jekyll-templates/_site/

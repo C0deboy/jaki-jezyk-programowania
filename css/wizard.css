@@ -5,25 +5,15 @@ html, body {
 
 
 .all {
-  min-height: calc(100vh - 51px);
-  overflow: hidden;
+  min-height: 100vh;
   padding-top: 80px;
-}
-
-.wizard-btn {
-  background: #343442;
-  display: inline-block;
-  border: solid 1px;
-  border-radius: 5px;
-  color: #47b4ff;
-  padding: 0 5px;
 }
 
 .key-name {
   font-size: .5em;
-  padding: 1px;
+  padding: 2px 5px;
   vertical-align: top;
-  margin-top: -8px;
+  margin-top: -10px;
   z-index: 0;
   border: none;
   border-top-right-radius: 0;
@@ -120,10 +110,6 @@ html, body {
 @keyframes shadeImg {
   50% {transform: scale(1.2);}
   51% {opacity: 0.8;}
-}
-
-.answers {
-  width: 100vw;
 }
 
 .answers .or {

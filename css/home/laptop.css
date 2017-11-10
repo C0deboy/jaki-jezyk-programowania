@@ -271,7 +271,6 @@
 .previousExample-btn,
 .nextExample-btn{
   cursor: pointer;
-  background: #bb2929;
   border: none;
   border-bottom: solid 2px #000;
   font-size: 0.4em;
@@ -280,20 +279,29 @@
   text-indent: -1px;
 }
 
-.previousExample-btn:hover,
-.nextExample-btn:hover,
-.skip:hover{
-  background: #ff5454;
-}
-
 .skip {
   cursor: pointer;
-  background: #bb2929;
   border: none;
   border-bottom: solid 2px #000;
   font-weight: 700;
   line-height: initial;
   font-size: 0.4em;
+}
+
+.red-btn {
+  background: -webkit-linear-gradient(to bottom,#de3e3e,#981313);
+  background: #AA3939 linear-gradient(to bottom,#de3e3e,#981313);
+  box-shadow: 0 1px 4px 0 black;
+}
+
+.red-btn:hover,
+.red-btn:focus {
+  background: -webkit-linear-gradient(to bottom,#de3e3e,#981313);
+  background: #AA3939 linear-gradient(to bottom,#de3e3e,#981313);
+}
+
+.red-btn:active {
+  border-bottom: none;
 }
 
 @media (max-width: 768px) {
@@ -304,7 +312,7 @@
 
 .terminal {
   font-family: Menlo, Monaco, Consolas, "Courier New", Courier, sans-serif;
-  font-size: calc(9px + (22 - 11) * ((100vw - 990px) / (1920 - 990)));
+  font-size: calc(5px + (22 - 11) * ((100vw - 990px) / (1920 - 990)));
   text-align: left;
   padding: 0 0 0 8px;
 }

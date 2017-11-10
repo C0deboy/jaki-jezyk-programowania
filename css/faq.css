@@ -64,11 +64,6 @@
   margin-top: -0.5em;
 }
 
-footer {
-  background-color: #eeeeee;
-  color: black;
-}
-
 .rotation {
   animation: rotation;
   animation-duration: 0.6s;

@@ -21,6 +21,7 @@ function dynamicNavbar() {
     }
   } else {
     navbarCustom.removeClass('is-visible');
+    $('.navbar-collapse').removeClass('in');
     if (currentTop > headerHeight && !navbarCustom.hasClass('is-fixed')) navbarCustom.addClass('is-fixed');
   }
   this.previousTop = currentTop;

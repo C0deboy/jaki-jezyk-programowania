@@ -123,15 +123,15 @@ function validateEmailForm() {
     const fieldName = formDataElements[el].parentElement.innerText;
 
     if (formDataElements[el].validity.valueMissing === true) {
-      markWrongInput(formDataElements[el], customErrors.empty(fieldName));
+      markWrongInput(formDataElements[el], customErrors.empty(fieldName.toLowerCase()));
     } else if (formDataElements[el].validity.tooShort === true) {
       const min = formDataElements[el].getAttribute('minlength');
-      markWrongInput(formDataElements[el], customErrors.tooShort(fieldName, min));
+      markWrongInput(formDataElements[el], customErrors.tooShort(fieldName.toLowerCase(), min));
     } else if (formDataElements[el].validity.tooLong === true) {
       const max = formDataElements[el].getAttribute('maxlength');
-      markWrongInput(formDataElements[el], customErrors.tooLong(fieldName, max));
+      markWrongInput(formDataElements[el], customErrors.tooLong(fieldName.toLowerCase(), max));
     } else if (formDataElements[el].validity.typeMismatch === true) {
-      markWrongInput(formDataElements[el], customErrors.type(fieldName));
+      markWrongInput(formDataElements[el], customErrors.type(fieldName.toLowerCase()));
     }
     if (formDataElements[el].validity.valid === false) {
       valid = false;

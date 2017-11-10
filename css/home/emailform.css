@@ -14,15 +14,14 @@
   border-radius: 10px;
   padding: 40px 25px 0 25px;
   text-align: center;
-  box-shadow: 0 0 13px 0 #000;
-  font-size: calc(13px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
-  font-family: Ubuntu, sans-serif;
+  box-shadow: 0 0 0px 100vw rgba(0, 0, 0, 0.55), 0 0 13px 1px black;
+  font-size: calc(16px + (25 - 20) * ((100vw - 320px)/ (1920 - 320)));
   z-index: 999;
 }
 
 @media (min-width: 768px) {
   .contact {
-    width: 45%;
+    width: 65%;
   }
 }
 
@@ -45,16 +44,20 @@
 .emailForm label {
   display: block;
   font-weight: 700;
-  text-transform: uppercase;
-  font-size: 0.8em;
   margin: 0 0 30px;
   color: #555;
 }
 
+.emailForm label.half {
+   display: inline-block;
+   width: 49.4%;
+ }
 
-.emailForm label.beside {
-  float: left;
-  width: 50%;
+@media (max-width: 1200px) {
+  .emailForm label.half {
+    display: block;
+    width: 100%;
+  }
 }
 
 .emailForm textarea {
@@ -63,17 +66,16 @@
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-  width: 97%;
+  width: 100%;
   margin: 0;
   height: 20vh;
   resize: none;
   color: #555;
-  font-size: 1.1em;
 }
 
 @media (min-width: 768px) {
   .emailForm textarea {
-    height: 30vh;
+    height: 25vh;
   }
 }
 
@@ -90,30 +92,22 @@
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-  font-size: 1.1em;
-}
-
-@media (min-width: 500px) {
-  .emailForm input {
-    width: 97%;
-  }
 }
 
 .emailForm .error {
+  background: rgb(255, 107, 98);
   position: absolute;
   margin: 0;
   display: block;
-  animation: 1s slideTop;
+  animation: .5s slideTop;
   z-index: -1;
   border-top: 0 !important;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
   max-width: 80%;
+  padding: 0 5px;
+  color: white;
   font-size: 0.8em;
-}
-
-.emailForm label.beside .error {
-  max-width: 42%;
 }
 
 @media (max-width: 500px) {
@@ -121,27 +115,17 @@
   .emailForm input[type="email"] {
     display: block;
   }
-
-  .emailForm label.beside {
-    clear: both;
-    width: 100%;
-  }
-
-  .emailForm label.beside .error {
-    max-width: 80%;
-  }
 }
 
 .emailForm button[type=submit] {
   width: 40%;
   cursor: pointer;
-  margin-top: 25px;
-  color: #555;
+  margin-top: 35px;
   font-size: 1.1em;
 }
 
 .g-recaptcha {
-  margin: 20px 2px 0 0;
+  margin: 35px 2px 0 0;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -154,17 +138,19 @@
 }
 
 @media (max-width: 375px) {
-  .recaptcha-label {
-    transform: scale(0.9);
-    margin-left: -8% !important;
+  .recaptcha-label{
+    margin-left: calc((100% - 306px)/2)!important;
+    transform:scale(0.9);
+    -webkit-transform:scale(0.9);
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
   }
 }
 
 .emailFormAlert {
   color: #ec3945;
-  margin: 15px 0 0;
+  padding: 6px 0px;
   height: 50px;
-  font-size: 1em;
   overflow: auto;
 }
 
@@ -173,13 +159,7 @@
 }
 
 .wrongInput {
-  background: rgb(255, 107, 98);
   border: solid 1px #d80000;
-  color: white;
-}
-
-.shake {
-  animation: 1s slideTop;
 }
 
 @keyframes slideTop {
