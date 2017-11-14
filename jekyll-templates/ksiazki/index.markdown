@@ -59,7 +59,7 @@ title-full: "Książki, które każdy powinien przeczytać"
 </div>
 </div>
 
-<div class="col-lg-4 col-sm-12">
+<div class="col-lg-5 col-sm-12">
 <div class="book book-of-a-day">
     <p>Promocja dnia</p>
     <script src="http://helion.pl/plugins/new/promocja-sm.phi?nr=9102Q&size=125&utf8=1"></script>

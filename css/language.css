@@ -232,3 +232,37 @@ section {
   margin: 0;
   text-align: left !important;
 }
+
+.popularity,
+.github,
+.stackoverflow,
+.meetup {
+  padding: 2px 5px 6px 5px;
+  text-align: justify;
+  display: block;
+  line-height: 1.4;
+}
+.popularity:before,
+.github:before,
+.stackoverflow:before,
+.meetup:before {
+  font-family: FontAwesome;
+  padding: 0px 8px 0px 5px;
+}
+
+.popularity::before{
+    content: "\F201";
+    font-size: 2em;
+}
+.github::before{
+    content: "\F09B";
+    font-size: 2em;
+}
+.stackoverflow::before{
+    content: "\F16C";
+    font-size: 2em;
+}
+.meetup::before{
+    content: "\F2E0";
+    font-size: 2em;
+}
