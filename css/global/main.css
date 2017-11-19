@@ -158,6 +158,7 @@ h4 {
   border: 0;
   padding: 3px 10px;
   box-shadow: 0 1px 4px 0 black;
+  cursor: pointer;
 }
 
 .main-btn i {

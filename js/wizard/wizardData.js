@@ -9,17 +9,17 @@ const wizardData = {
       new Answer('Chciałbym tym zainteresować moje dzieci', 'forkids.png', new Guide('Scratch -> Python or Javascript')),
       new Answer('Chciałbym zostać programistą', 'prodev.png', new NextQuestion('whichField')),
       new Answer('Mam pomysł na projekt', 'startup.png', new NextQuestion('whatToCreate')),
-      new Answer('Nie wiem, słyszałem, że to fajne. Wybierz coś dla mnie!', 'fun.png', new Guide('Python', 'Javascript')),
+      new Answer('Nie wiem, słyszałem, że to fajne. Wybierz coś dla mnie', 'fun.png', new Guide('Python', 'Javascript')),
     ],
   },
   whatToCreate: {
     question: 'Co chciałbyś zrobić?',
     answers: [
-      new Answer('Aplikację mobilną!', 'mobile.png', new NextQuestion('whichMobilePlatform')),
-      new Answer('Grę!', 'games.png', new NextQuestion('whichPlatformForGame')),
-      new Answer('Aplikację desktopową!', 'webdev.png', new NextQuestion('whichDesktopPlatform')),
-      new Answer('Prostą stronę internetową!', 'webdev2.png', new Guide('HTML-&-CSS -> Javascript')),
-      new Answer('Założyć bloga!', 'webdev2.png', new Guide('Jekyll', 'Wordpress')),
+      new Answer('Aplikację mobilną', 'mobile.png', new NextQuestion('whichMobilePlatform')),
+      new Answer('Grę', 'games.png', new NextQuestion('whichPlatformForGame')),
+      new Answer('Aplikację desktopową', 'webdev.png', new NextQuestion('whichDesktopPlatform')),
+      new Answer('Prostą stronę internetową', 'webdev2.png', new Guide('HTML-&-CSS -> Javascript')),
+      new Answer('Założyć bloga', 'webdev2.png', new Guide('Jekyll', 'Wordpress')),
     ],
   },
   whichField: {

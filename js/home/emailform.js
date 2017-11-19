@@ -9,12 +9,12 @@ inputs.forEach((el) => {
 const recaptcha = document.querySelector('.g-recaptcha');
 
 const customErrors = {
-  tooShort: (fieldName, min) => 'Pole ' + fieldName + ' musi zawierać co najmniej ' + min + ' znaki!',
-  tooLong: (fieldName, max) => 'Pole ' + fieldName + ' może zawierać co najwyżej ' + max + ' znaków!',
-  empty: fieldName => 'Pole ' + fieldName + ' nie może być puste!',
-  type: fieldName => 'Pole ' + fieldName + ' jest niepoprawne!',
-  errorsInForm: 'W formularzu występują błędy!',
-  recaptcha: 'Potwierdź, że nie jesteś robotem!',
+  tooShort: (fieldName, min) => 'Pole ' + fieldName + ' musi zawierać co najmniej ' + min + ' znaki.',
+  tooLong: (fieldName, max) => 'Pole ' + fieldName + ' może zawierać co najwyżej ' + max + ' znaków.',
+  empty: fieldName => 'Pole ' + fieldName + ' nie może być puste.',
+  type: fieldName => 'Pole ' + fieldName + ' jest niepoprawne.',
+  errorsInForm: 'W formularzu występują błędy.',
+  recaptcha: 'Potwierdź, że nie jesteś robotem.',
 };
 
 const contactForm = $('#formularz-kontaktowy');
@@ -98,7 +98,7 @@ $('.emailFormSubmit').click((event) => {
 
     const sendEmail = $.ajax({
       type: 'POST',
-      url: '//formspree.io/lasota.marcinm@gmail.com',
+      url: document.querySelector('.emailForm').getAttribute('action'),
       dataType: 'json',
       data: formData,
     });
@@ -150,8 +150,8 @@ function markWrongInput(wrongElement, alert) {
   }
 
   const errorMessageEl = document.createElement('p');
-  errorMessageEl.classList.add('error');
-  errorMessageEl.classList.add('wrongInput');
+  errorMessageEl.classList.add('error', 'wrongInput');
+  errorMessageEl.setAttribute('role', 'alert');
   errorMessageEl.textContent = alert;
 
   wrongElement.parentElement.append(errorMessageEl);

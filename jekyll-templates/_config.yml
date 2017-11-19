@@ -5,5 +5,5 @@ baseurl: ""
 markdown: kramdown
 highlighter: rouge
 permalink: /:categories/:title/
-gems: [rouge]
+gems: [rouge, jekyll-last-modified-at]
 exclude: [Gemfile, Gemfile.lock]

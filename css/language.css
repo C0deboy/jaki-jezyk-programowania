@@ -70,8 +70,29 @@ section {
   }
 }
 
-.language-content ul {
+.language-content ul, .language-content ol {
   text-align: left;
+}
+
+.language-content table {
+   margin: auto;
+ }
+
+.language-content table td {
+  text-align: left;
+  background: #01213a4a;
+  box-shadow: 0 0 1px 0 #000000ab;
+  padding: 0 10px;
+}
+
+.language-content table tr:hover {
+  background: #01213a44;
+  cursor: pointer;
+}
+
+.language-content table td:last-of-type,
+.language-content table td:first-of-type {
+  text-align: right;
 }
 
 .language-logo img {
@@ -222,7 +243,7 @@ section {
 
 .promotions-link {
   background: #22303a;
-  margin: 15px auto 0;
+  margin: 15px auto 25px;
   padding: 5px 15px;
   display: block;
   width: max-content;
@@ -237,32 +258,27 @@ section {
 .github,
 .stackoverflow,
 .meetup {
-  padding: 2px 5px 6px 5px;
   text-align: justify;
-  display: block;
   line-height: 1.4;
-}
-.popularity:before,
-.github:before,
-.stackoverflow:before,
-.meetup:before {
-  font-family: FontAwesome;
-  padding: 0px 8px 0px 5px;
+  display: flex;
 }
 
-.popularity::before{
-    content: "\F201";
-    font-size: 2em;
+.popularity a,
+.github a,
+.stackoverflow a,
+.meetup a {
+  display: inline;
 }
-.github::before{
-    content: "\F09B";
-    font-size: 2em;
+
+.popularity .fa,
+.github .fa,
+.stackoverflow .fa,
+.meetup .fa {
+  display: inline-block;
+  width: 50px;
+  flex-shrink: 0;
 }
-.stackoverflow::before{
-    content: "\F16C";
-    font-size: 2em;
-}
-.meetup::before{
-    content: "\F2E0";
-    font-size: 2em;
+
+.language-content h4 {
+  margin: 0 0 20px 0;
 }

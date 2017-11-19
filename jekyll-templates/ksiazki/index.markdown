@@ -9,8 +9,6 @@ title-full: "Książki, które każdy powinien przeczytać"
 {: class="promotions-link"}
 [Zobacz aktualne promocje](http://helion.pl/page/9102Q/promocje)
 
-<br>
-
 ### Książki, które może przeczytać każdy, bez względu na używaną technologię:
 
 <div class="row recommended-books-list">

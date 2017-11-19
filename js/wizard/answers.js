@@ -1,6 +1,14 @@
 import { loadNextQuestionAndRememberPrevious } from './wizard';
 import AnswerElementBuilder from './AnswerElementBuilder';
 
+if (!('remove' in Element.prototype)) {
+  Element.prototype.remove = function() {
+    if (this.parentNode) {
+      this.parentNode.removeChild(this);
+    }
+  };
+}
+
 const answersContainer = document.querySelectorAll('.answers')[0];
 
 class Answers {
@@ -20,14 +28,13 @@ class Answers {
 
     answerBuilder.appendImage(imgName);
 
-    answerBuilder.appendShade();
-
-    answerBuilder.appendAnswerText(answer);
-
     if (nextQuestionReference !== null) {
+      answerBuilder.appendShade();
+      answerBuilder.appendAnswerText(answer);
       answerBuilder.setNextAnswerReference(nextQuestionReference);
       answerBuilder.onClick(loadNextQuestionAndRememberPrevious);
     } else {
+      answerBuilder.appendAnswerText(answer);
       answerBuilder.makeItLinkToTechnology(answer);
     }
 

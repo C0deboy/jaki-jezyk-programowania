@@ -39,7 +39,6 @@
 }
 
 .tip{
-	text-decoration: underline;
 	color: inherit;
 }
 
@@ -53,4 +52,14 @@
 
 .tip:hover {
 	outline: none;
+}
+
+.tip .fa-commenting-o {
+	animation: 1s jumping infinite ease-out;
+}
+
+@keyframes jumping {
+	0% {transform: translateY(-3px)}
+	50% {transform: translateY(0px)}
+	100% {transform: translateY(-3px)}
 }

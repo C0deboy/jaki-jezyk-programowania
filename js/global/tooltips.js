@@ -18,11 +18,18 @@ function toggleTooltip(e, state) {
   }
   const tooltipId = el.getAttribute('aria-describedby');
   const tooltip = document.getElementById(tooltipId);
+  const tipIcon = el.querySelector('.fa-commenting-o');
   if (state === true) {
     positionTooltip(el, tooltip);
     tooltip.classList.add('fadeIn');
+    if(tipIcon){
+      tipIcon.style.opacity = '0';
+    }
   } else {
     tooltip.classList.remove('fadeIn');
+    if(tipIcon){
+      tipIcon.style.opacity = '1';
+    }
   }
 }
 
