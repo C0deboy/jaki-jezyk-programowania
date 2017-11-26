@@ -43,18 +43,18 @@ Czytanie kodu Ruby jest praktycznie identyczne z czytaniem instrukcji po angiels
 Przez powstanie Node.js popularność platformy Ruby on Rails delikatnie spadła, jednak przez sposób, w jakim się w nim programuje oraz łatwość tworzenia aplikacji nie zostanie łatwo wyparta przez długi czas. Ruby jest cały czas rozwijany, twórcy wypuszczają często aktualizacje, rozwiązujące wiele wcześniejszych problemów. Jego ostatnia wersja 2.4.x została wydana w 2016 roku, a kolejna wersja jest planowana na koniec 2017.
 
 # Najlepsze książki do nauki {{ page.title }}
-## od wydawnictwa [Helion](http://helion.pl/view/9102Q):
+## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
 {: class="promotions-link"}
-[Zobacz aktualne promocje](http://helion.pl/page/9102Q/promocje)
+[Zobacz aktualne promocje](https://helion.pl/page/9102Q/promocje)
 
 
 Ruby ma wyjątkowo mało polskich, aktualnych książek. Można rozważyć tylko te 2 pozycje:
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=rubprp&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=rubprp&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=a_03cd&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=a_03cd&nr=9102Q&size=181&utf8=1"></script>
 </div>

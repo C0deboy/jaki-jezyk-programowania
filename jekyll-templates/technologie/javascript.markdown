@@ -12,7 +12,7 @@ Przy tworzeniu stron internetowych, oprócz samego języka Javascript, niezbędn
 
 # Zastosowanie
 
-**Javascript** to dynamicznie typowany język wysokiego poziomu. Najczęściej jest używany przy tworzeniu stron WWW, zapewniając interaktywność stron oraz obsługę zdarzeń, walidacji formularzy czy budowanie elementów nawigacyjnych. Takie wykorzystanie języka JavaScript ułatwia zastosowanie biblioteki, takiej jak [jQuery](http://jquery.com/). Warto przy tym zauważyć, że używanie biblioteki nie powinno zastępować sensownej znajomości samego języka.
+**Javascript** to dynamicznie typowany język wysokiego poziomu. Najczęściej jest używany przy tworzeniu stron WWW, zapewniając interaktywność stron oraz obsługę zdarzeń, walidacji formularzy czy budowanie elementów nawigacyjnych. Takie wykorzystanie języka JavaScript ułatwia zastosowanie biblioteki, takiej jak [jQuery](https://jquery.com/). Warto przy tym zauważyć, że używanie biblioteki nie powinno zastępować sensownej znajomości samego języka.
 
 Dzięki platformom, takim jak [Electron.js](https://electron.atom.io/) czy [nw.js](https://nwjs.io/), możliwe jest tworzenie pełnoprawnych, wieloplatformowych aplikacji/gier przy użyciu wyłącznie technologii sieciowych (HTML, CSS, JS...) dzięki połączeniu platformy Node.js oraz silnika [przeglądarki Chromium](https://www.chromium.org/).
 
@@ -51,79 +51,79 @@ JavaScript to "must know" jeśli chodzi o programowanie webowe. Stąd jego popul
 JavaScript jest jednym z najpopularniejszych języków programowania oraz jest stale rozwijany. W najbliższym czasie się to nie zmieni, wręcz przeciwnie. Jego ostatnia wersja wersja wyszła w 2017 roku. Głównie dzięki coraz to nowszych frameworkom i narzędziom poszerzających jego możliwości i zastosowanie. Szczególnie obiecująco zapowiada się node.js. JavaScript to bezpieczny wybór.
 
 # Najlepsze książki do nauki {{ page.title }}
-## od wydawnictwa [Helion](http://helion.pl/view/9102Q):
+## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
 {: class="promotions-link"}
-[Zobacz aktualne promocje](http://helion.pl/page/9102Q/promocje)
+[Zobacz aktualne promocje](https://helion.pl/page/9102Q/promocje)
 
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=jsqwdk&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jsqwdk&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=ecmasc&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=ecmasc&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=jascpz&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jascpz&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=efprjs&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=efprjs&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=jscmoc&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jscmoc&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=prjsrg&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=prjsrg&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
 </div>
 
 Oraz cała seria:
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=tjndro&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=tjndro&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=tajnjs&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=tajnjs&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=tajejs&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=tajejs&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=tjsasy&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=tjsasy&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=tjtypy&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=tjtypy&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=tjszak&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=tjszak&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
 </div>
 
 JQuery
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=bjqswp&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=bjqswp&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=jquer3&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jquer3&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 O OOP i wzorcach projektowych:
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=jascwz&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jascwz&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=misjsp&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=misjsp&nr=9102Q&size=181&dodaj=0&utf8=1"></script>
 </div>
 

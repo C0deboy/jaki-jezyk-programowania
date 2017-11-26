@@ -15,30 +15,30 @@ WordPress posiada ogromną bazę wtyczek rozszerzających funkcjonalność twój
 WordPress w styczniu 2017 roku był wykorzystywany przez 27.5% z 10 milionów najpopularniejszych stron co czyni go najpopularniejszym systemem zarządzania treścią (zarówno zwykłe strony jak i blogi)..
 
 # Najlepsze książki do nauki {{ page.title }}
-## od wydawnictwa [Helion](http://helion.pl/view/9102Q):
+## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
 {: class="promotions-link"}
-[Zobacz aktualne promocje](http://helion.pl/page/9102Q/promocje)
+[Zobacz aktualne promocje](https://helion.pl/page/9102Q/promocje)
 
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=wopr4i&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=wopr4i&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=jowozr&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jowozr&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 Książki, które pomogą pisać lepszego bloga:
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=jazabl&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jazabl&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=prblog&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=prblog&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=magslo&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=magslo&nr=9102Q&size=181&utf8=1"></script>
 </div>

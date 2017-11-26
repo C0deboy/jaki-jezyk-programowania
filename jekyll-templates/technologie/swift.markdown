@@ -41,24 +41,24 @@ Swift zajmuje się za nas także zarządzaniem pamięcią, co ułatwia sprawę p
 Swift dopiero się rozwija, ale udaje mu się wyprzeć Objective-C. Dlatego zapotrzebowanie na programistów Swift będzie się z roku na rok zwiększać. Swift jest jednym z najszybciej rozwijającym się języków. Jego przyszłość głównie zależy od Apple, która wydaję się całkiem przejrzysta. Ma wszystko to co nowoczesny język programowania powinien mieć i ma potencjał na konkurowanie z najlepszymi..
 
 # Najlepsze książki do nauki {{ page.title }}
-## od wydawnictwa [Helion](http://helion.pl/view/9102Q):
+## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
 {: class="promotions-link"}
-[Zobacz aktualne promocje](http://helion.pl/page/9102Q/promocje)
+[Zobacz aktualne promocje](https://helion.pl/page/9102Q/promocje)
 
 
 Swift jest jeszcze nieco młody - nie ma dużo książek do wyboru. Aktualna i dobra pozycja to:
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=pswfdp&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=pswfdp&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 Po za tym dostępne są jeszcze dwie:
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=swifpk&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=swifpk&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=pjswif&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=pjswif&nr=9102Q&size=181&utf8=1"></script>
 </div>

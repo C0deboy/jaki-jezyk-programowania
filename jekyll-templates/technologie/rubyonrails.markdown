@@ -5,7 +5,7 @@ date:       18.11.2017
 ---
 
 {: .official-page}
-[Przeczytaj o {{ page.title }} na oficjalnej stronie](http://rubyonrails.org/)
+[Przeczytaj o {{ page.title }} na oficjalnej stronie](https://rubyonrails.org/)
 
 **Ruby on Rails** to w pełni wyposażony framework do tworzenia aplikacji internetowych w języku [Ruby](/technologie/ruby) opartych o model MVC (Model-View-Controller). Znacznie uprzyjemnia, ułatwia i przyspiesza proces tworzenia aplikacji i daje Ci niemal wszystko czego potrzebujesz.
 
@@ -23,10 +23,10 @@ Aplikacje zbudowane na Railsach:
 - SoundCloud
 
 # Najlepsze książki do nauki {{ page.title }}
-## od wydawnictwa [Helion](http://helion.pl/view/9102Q):
+## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
 {: class="promotions-link"}
-[Zobacz aktualne promocje](http://helion.pl/page/9102Q/promocje)
+[Zobacz aktualne promocje](https://helion.pl/page/9102Q/promocje)
 
 
 <br>
@@ -34,5 +34,5 @@ Aplikacje zbudowane na Railsach:
 Z polskich książek jest niewielki wybór, mamy tylko jedną pozycję:
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=rrtwww&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=rrtwww&nr=9102Q&size=181&utf8=1"></script>
 </div>

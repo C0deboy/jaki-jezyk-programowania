@@ -21,68 +21,68 @@ Znaczniki HTML są budulcem, za pomocą których tworzy się strukturę strony i
 CSS służy do stylowania strony napisanej w HTML. To w nim zdefiniujemy kolory, efekty, położenie, sposób wyświetlania a nawet animacje poszczególnych elementów. CSS został stworzony w celu odseparowania struktury dokumentu HTML od formy jego prezentacji. Separacja ta zwiększa zakres dostępności witryny, zmniejsza zawiłość kodu oraz ułatwia wprowadzanie zmian w strukturze dokumentu.
 
 Do znacznego ułatwienia i przyspieszenia edytowania stylów używane są preprocesory oraz frameworki:
-* **Framework CSS** to zbiór gotowych stylów, który ułatwia i znacznie przyspiesza budowanie stron. Jednym z najbardziej popularnych jest [Bootstrap](http://getbootstrap.com/). Dzięki niemu tworzenie responsywnych stron jest dużo prostsze. Bootstrap zawiera także gotowe szablony dla typografii, formularzy, przycisków nawigacji oraz innych elementów interfejsu.
-* **Preprocesory** , takie jak [Less.js](http://lesscss.org/) czy [Sass](http://sass-lang.com/), wprowadzają do CSS-a elementy znane z języków programowania, czyli między innymi funkcje, instrukcje warunkowe czy pętle. Oczywiście taki kod wygenerowany przez preprocesor nie mógłby zostać poprawnie wczytany i zinterpretowany przez przeglądarkę, zatem musi zostać najpierw zamieniony ( *przetranspilowany* ) na wynikowy kod CSS.
+* **Framework CSS** to zbiór gotowych stylów, który ułatwia i znacznie przyspiesza budowanie stron. Jednym z najbardziej popularnych jest [Bootstrap](https://getbootstrap.com/). Dzięki niemu tworzenie responsywnych stron jest dużo prostsze. Bootstrap zawiera także gotowe szablony dla typografii, formularzy, przycisków nawigacji oraz innych elementów interfejsu.
+* **Preprocesory** , takie jak [Less.js](https://lesscss.org/) czy [Sass](https://sass-lang.com/), wprowadzają do CSS-a elementy znane z języków programowania, czyli między innymi funkcje, instrukcje warunkowe czy pętle. Oczywiście taki kod wygenerowany przez preprocesor nie mógłby zostać poprawnie wczytany i zinterpretowany przez przeglądarkę, zatem musi zostać najpierw zamieniony ( *przetranspilowany* ) na wynikowy kod CSS.
 
 # Najlepsze książki do nauki {{ page.title }}
-## od wydawnictwa [Helion](http://helion.pl/view/9102Q):
+## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
 {: class="promotions-link"}
-[Zobacz aktualne promocje](http://helion.pl/page/9102Q/promocje)
+[Zobacz aktualne promocje](https://helion.pl/page/9102Q/promocje)
 
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=htcsww&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=htcsww&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=cssnp4&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=cssnp4&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=htm5n2&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=htm5n2&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 Do nauki Bootstrap:
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=boot24&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=boot24&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=bootst&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=bootst&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=bootgr&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=bootgr&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=bootpp&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=bootpp&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 Sass i less:
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=sasspp&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=sasspp&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=lesspp&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=lesspp&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 Pozycjonowanie stron (SEO):
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=nagoog&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=nagoog&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=seowit&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=seowit&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=seodka&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=seodka&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 

@@ -45,55 +45,55 @@ Popularność Pythona rośnie z każdym rokiem do tego stopnia, że jest niemal 
 Python jest obecnie w czołówce najbardziej opłacalnych oraz najbardziej pożądanych języków. Wraz ze wzrostem big data, rośnie zapotrzebowanie na programistów Pythona, którzy są coraz częściej zatrudniani jako data scientist. Jako projekt open source jest cały czas aktywnie dopracowywany, by sprostać coraz to nowszym wymaganiom. Ostatnia jego wersja została wydana pod koniec 2016 roku. Rozwój uczenia maszynowego (machine learning), które jest witalną częścią rozwoju sztucznej inteligencji, jak i zarówno rosnąca ilość big data dobrze wróżą przyszłości tego języka.
 
 # Najlepsze książki do nauki {{ page.title }}
-## od wydawnictwa [Helion](http://helion.pl/view/9102Q):
+## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
 {: class="promotions-link"}
-[Zobacz aktualne promocje](http://helion.pl/page/9102Q/promocje)
+[Zobacz aktualne promocje](https://helion.pl/page/9102Q/promocje)
 
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=pytdk3&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=pytdk3&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=autopy&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=autopy&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=pythip&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=pythip&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=cwpyth&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=cwpyth&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=zaprpy&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=zaprpy&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 Data science i machine lerning (nauka o danych i uczenie maszynowe):
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=pypod2&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=pypod2&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=zaaucz&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=zaaucz&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 Robotyka:
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=naropy&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=naropy&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 Bardziej zaawansowane:
 
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=prprpe&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=prprpe&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=tddwpr&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=tddwpr&nr=9102Q&size=181&utf8=1"></script>
 </div>

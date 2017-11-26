@@ -43,36 +43,36 @@ Meetupy C są kategoryzowane razem z językiem C++. Mimo to widać, że w porów
 Język C nie wydaje się mieć daty przydatności do użycia. Język powstał ponad 40 lat temu, a w rankingach popularności nadal jest w czołówce. Jego ostatnia wersja wyszła juz dosyć dawno, bo pod koniec 2011 roku. Fakt, że wiele dzisiejszych języków jest lepszych od C w niektórych dziedzinach, nie oznacza, że są lepsze od niego w każdej. C nadal jest niedoścignionym językiem wysokopoziomowym jeżeli priorytetem jest wydajność. W dzisiejszych czasach stawia się na języki wspierające programowanie obiektowe i te w których proces programowania jest szybszy, więc C nie jest dobrym wyborem dla ogólnego zastosowania. Jednak jeśli masz konkretny powód, warto uczyć się języka C, gdyż nadal jest on wykorzystywany w specyficznych obszarach, a wiedza którą zdobędziesz ucząc się C na pewno się nie zmarnuje, zwłaszcza jeśli planujesz naukę C++.
 
 # Najlepsze książki do nauki {{ page.title }}
-## od wydawnictwa [Helion](http://helion.pl/view/9102Q):
+## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
 {: class="promotions-link"}
-[Zobacz aktualne promocje](http://helion.pl/page/9102Q/promocje)
+[Zobacz aktualne promocje](https://helion.pl/page/9102Q/promocje)
 
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=jcszp6&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jcszp6&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=jansic&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jansic&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 Mikrokontrolery:
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=jcmika&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jcmika&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=jcmikr&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jcmikr&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 Inne:
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=zaprcn&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=zaprcn&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=cruszg&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=cruszg&nr=9102Q&size=181&utf8=1"></script>
 </div>

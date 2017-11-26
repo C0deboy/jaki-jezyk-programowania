@@ -35,22 +35,22 @@ W rankingach popularności R jest całkiem daleko, a wiąże się z tym, że spo
 Popularność w dziedzinach analizowania danych, statystyki, data science czy big data stale wzrasta, co dobrze wróży przyszłości języka R. Na jego korzyść wskazują także statystyki, pokazujące że zainteresowanie tym językiem w ubiegłych latach wzrosło o 51.7%.
 
 # Najlepsze książki do nauki {{ page.title }}
-## od wydawnictwa [Helion](http://helion.pl/view/9102Q):
+## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
 {: class="promotions-link"}
-[Zobacz aktualne promocje](http://helion.pl/page/9102Q/promocje)
+[Zobacz aktualne promocje](https://helion.pl/page/9102Q/promocje)
 
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=anasta&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=anasta&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=umapro&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=umapro&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 Data science (nauka o danych) (większość przykładów w arkuszu kalkulacyjnym):
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=mianda&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=mianda&nr=9102Q&size=181&utf8=1"></script>
 </div>

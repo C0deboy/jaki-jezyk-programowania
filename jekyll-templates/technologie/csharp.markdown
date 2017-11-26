@@ -45,20 +45,20 @@ Duża popularność silnika Unity (który może się pochwalić tym, że 34% naj
 **C#** jest cały czas rozwijany przez Microsoft, który nie zamierza kończyć dla niego wsparcia. Ostatnia wersja została wydana w 2015 roku, a w niedalekiej przyszłości dostaniemy wersje 7. Silnik Unity nadal jest rozwijany i ulepszany, więc jest to dobry wybór dla osób zainteresowanych tworzeniem gier. Dodatkowym plusem jest to, że umożliwia pisanie oprogramowania na platformy VR (Virtual Reality), a ta technologia staję się coraz bardziej popularna. Na stronie Unity można zobaczyć szacowane dane, które mówią, że 90% gier VR na Samsung Gear, a 53% na Oculus Rift zostało stworzonych z Unity.
 
 <h1 id="najlepsze-książki-do-nauki-c#"> Najlepsze książki do nauki {{ page.title }} </h1>
-## od wydawnictwa [Helion](http://helion.pl/view/9102Q):
+## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
 {: class="promotions-link"}
-[Zobacz aktualne promocje](http://helion.pl/page/9102Q/promocje)
+[Zobacz aktualne promocje](https://helion.pl/page/9102Q/promocje)
 
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=cshpk3&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=cshpk3&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=c6pig6&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=c6pig6&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=cshru3&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=cshru3&nr=9102Q&size=181&utf8=1"></script>
 </div>

@@ -45,38 +45,38 @@ Meetupy C++ są kategoryzowane razem z językiem C. Mimo to widać, że w porów
 Lata świetności C++ z 2003 roku już dawno minęły, jednak wraz z rozwojem technologii VR (Virtual Reality), w której C++ jest przodującym językiem, wraca on do swojej świetności. Dodatkowo mimo krytyki poziomu skomplikowania, jest on cały czas aktywnie ulepszany, przez co nie zostanie wypchnięty przez inne języki jeszcze przez długi czas. Ostatnia jego wersja wyszła w 2014 roku, a nowa jest zapowiedziana na rok 2017.
 
 # Najlepsze książki do nauki {{ page.title }}
-## od wydawnictwa [Helion](http://helion.pl/view/9102Q):
+## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
 {: class="promotions-link"}
-[Zobacz aktualne promocje](http://helion.pl/page/9102Q/promocje)
+[Zobacz aktualne promocje](https://helion.pl/page/9102Q/promocje)
 
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=cppri6&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=cppri6&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=jcppkw&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jcppkw&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=cppppo&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=cppppo&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 Oraz najnowszy następca popularnej Symfonii C++
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=ocpp11&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=ocpp11&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 Najlepsza książka o wzorcach projektowych z przykładami w C++:
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=wzoelv&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=wzoelv&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 Inne warte uwagi:
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=cpbsp2&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=cpbsp2&nr=9102Q&size=181&utf8=1"></script>
 </div>

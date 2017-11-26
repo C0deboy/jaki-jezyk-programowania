@@ -3,5 +3,5 @@ document.querySelectorAll('.helion-ksiazkasm4 a:first-of-type').forEach((link) =
 });
 
 document.querySelectorAll('.helion-ksiazkasm4 a').forEach((link) => {
-  link.classList.add('button-jjp')
+  link.classList.add('main-btn');
 });

@@ -24,20 +24,20 @@ Jekyll sparsuje otrzymane pliki i wyrzuci nam całą strukturę statycznych plik
 [Mój blog](https://devcave.pl/) jest oparty na Jekyllu. Napisałem również [wpis](https://devcave.pl/dajsiepoznac2017/jekyll/2017/03/04/instalacja-jekyll/) oraz kilka kolejnych (zobacz tag [Jekyll](https://devcave.pl/archive/#jekyll)), które pomogą Ci ruszyć z własnym blogiem.
 
 # Książki, które pomogą pisać lepszego bloga:
-## od wydawnictwa [Helion](http://helion.pl/view/9102Q):
+## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
 {: class="promotions-link"}
-[Zobacz aktualne promocje](http://helion.pl/page/9102Q/promocje)
+[Zobacz aktualne promocje](https://helion.pl/page/9102Q/promocje)
 
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=jazabl&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jazabl&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=prblog&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=prblog&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
 <div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=magslo&nr=9102Q&size=181&utf8=1"></script>
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=magslo&nr=9102Q&size=181&utf8=1"></script>
 </div>
