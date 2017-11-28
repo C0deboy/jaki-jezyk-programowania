@@ -17,9 +17,13 @@ Jekyll jest to narzędzie napisane w języku Ruby (nie musimy znać Rubiego), kt
 - Pliki z treścią - wpisy (np. w formacie markdown) oraz normalne podstrony (w html), które później łączą się z szablonami
 - Pliki nieparsowane - takie jak CSS czy obrazki
 
-Można o nim myśleć jak o opartym na plikach CMS (System zarządzania treścią). Nie potrzebujemy żadnej bazy danych. A blog możemy opublikować za darmo z pomocą [GitHub Pages](https://pages.github.com/)
+Jekyll rozwiązuję problem wielu podobnych statycznych stron - gdy chcemy wprowadzić zmianę musimy zrobić to manualnie na każdej z nich. Pisząc w Jekyllu tworzymy szablon raz i możemy go wykorzystywać na innych stronach nieskończoną ilość razy.
+
+Można o nim myśleć jak o opartym na plikach CMS (System zarządzania treścią). Nie potrzebujemy żadnej bazy danych.
 
 Jekyll sparsuje otrzymane pliki i wyrzuci nam całą strukturę statycznych plików, które są gotowe na wrzucenie na serwer. Jest to nieco odmienne podejście do tworzenia stron. Tu całość generujemy u siebie na komputerze, a na serwerze trzymamy gotowe, statyczne pliki.
+ 
+Warto wspomnieć, że wspiera go [GitHub Pages](https://pages.github.com/) - serwis Githuba pozwalający na darmowe hostowanie twojej strony/bloga. Na GH Pages twój projekt w Jekyllu zostanie automatycznie wykryty i zbuildowany, więc wystarczy, że wrzucisz pliki źródłowe Jekylla i włączysz GH Pages.
 
 [Mój blog](https://devcave.pl/) jest oparty na Jekyllu. Napisałem również [wpis](https://devcave.pl/dajsiepoznac2017/jekyll/2017/03/04/instalacja-jekyll/) oraz kilka kolejnych (zobacz tag [Jekyll](https://devcave.pl/archive/#jekyll)), które pomogą Ci ruszyć z własnym blogiem.
 

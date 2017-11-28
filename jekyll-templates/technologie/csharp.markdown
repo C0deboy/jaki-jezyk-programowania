@@ -2,7 +2,7 @@
 layout:     technology
 title-full: Język programowania C# - zastosowanie, przyszłość, polecane książki
 title:      C#
-image:		csharp.png
+image:    csharp.png
 date:       18.11.2017
 ---
 
@@ -14,7 +14,7 @@ date:       18.11.2017
 
 **C#** był stworzony i jest najczęściej stosowany do pisania aplikacji na systemy Windows. Ale odkąd .NET framework trafił na systemy Linux i Mac możliwe jest tworzenie natywnego oprogramowania w tym języku praktycznie na każdą platformę.
 
-Ponadto, **C#** używany jest do tworzenie aplikacji webowych po stronie serwera za pomocą frameworka ASP.NET. Dzięki narzędziom takim jak Xamarin, możliwe jest tworzenie wieloplatformowych aplikacji mobilnych. Co więcej, **C#** wykorzystywany jest w popularnym silniku Unity, za pomocą, którego można tworzyć gry na PC, konsole, urządzenia mobilne czy strony internetowe, a nawet platformy VR (Virtual Reality). W unity powstał m.in Rust
+Ponadto, **C#** używany jest do tworzenie aplikacji webowych po stronie serwera za pomocą frameworka ASP.NET. Dzięki narzędziom takim jak Xamarin, możliwe jest tworzenie wieloplatformowych aplikacji mobilnych. Co więcej, **C#** wykorzystywany jest w popularnym silniku [Unity](/technologie/unity/), za pomocą, którego można tworzyć gry na PC, konsole, urządzenia mobilne czy strony internetowe, a nawet platformy VR (Virtual Reality).
 
 Jest to zatem wieloplatformowy język programowania wykorzystywany w wielu dziedzinach.
 
@@ -24,7 +24,7 @@ Jest to zatem wieloplatformowy język programowania wykorzystywany w wielu dzied
 
 # Poziom skomplikowania
 
-**C#** jest relatywnie łatwy do nauki. Dla osób które miały kontakt z takimi językami jak Java, składnia będzie bardzo znajoma. Semantyka jest nieco przyjaźniejsza od tej w C++. Podobnie jak w Javie nie musimy też zarządzać pamięcią i proces tworzenia oprogramowania jest dużo szybszy. Jest także językiem silnie typowanym co oznacza, że każda zmienna musi mieć zadeklarowany przechowywany typ danych, a program zwróci błąd i zapobiegnie kompilacji, jeżeli będzie się coś nie zgadzać, w przeciwieństwie do języka słabo typowanego, który nie wygeneruje błędu i zwróci nieprzewidywany wynik. Wadą tego rozwiązania jest tylko to, że musimy zadeklarować więcej informacji dla programu, ale dzięki temu jest bardziej jednoznaczny i łatwiej wychwycić błędy.
+**C#** jest relatywnie łatwy do nauki. Dla osób, które miały kontakt z takimi językami jak Java, składnia będzie bardzo znajoma. Semantyka jest nieco przyjaźniejsza od tej w C++. Podobnie jak w Javie nie musimy też zarządzać pamięcią i proces tworzenia oprogramowania jest dużo szybszy. Jest także językiem silnie typowanym, co oznacza, że każda zmienna musi mieć zadeklarowany przechowywany typ danych, a program zwróci błąd i zapobiegnie kompilacji, jeżeli będzie się coś nie zgadzać, w przeciwieństwie do języka słabo typowanego, który nie wygeneruje błędu i zwróci nieprzewidywany wynik. Wadą tego rozwiązania jest tylko to, że musimy zadeklarować więcej informacji dla programu, ale dzięki temu jest bardziej jednoznaczny i łatwiej wychwycić błędy.
 
 # Popularność
 
@@ -42,7 +42,7 @@ Duża popularność silnika Unity (który może się pochwalić tym, że 34% naj
 
 # Przyszłość języka
 
-**C#** jest cały czas rozwijany przez Microsoft, który nie zamierza kończyć dla niego wsparcia. Ostatnia wersja została wydana w 2015 roku, a w niedalekiej przyszłości dostaniemy wersje 7. Silnik Unity nadal jest rozwijany i ulepszany, więc jest to dobry wybór dla osób zainteresowanych tworzeniem gier. Dodatkowym plusem jest to, że umożliwia pisanie oprogramowania na platformy VR (Virtual Reality), a ta technologia staję się coraz bardziej popularna. Na stronie Unity można zobaczyć szacowane dane, które mówią, że 90% gier VR na Samsung Gear, a 53% na Oculus Rift zostało stworzonych z Unity.
+**C#** jest cały czas rozwijany przez Microsoft, który nie zamierza kończyć dla niego wsparcia. Ostatnia wersja 7.1 została wydana 14 sierpnia 2017 roku. Silnik Unity nadal jest rozwijany i ulepszany, więc jest to dobry wybór dla osób zainteresowanych tworzeniem gier. Dodatkowym plusem jest to, że umożliwia pisanie oprogramowania na platformy VR (Virtual Reality), a ta technologia staję się coraz bardziej popularna. Na stronie Unity można zobaczyć szacowane dane, które mówią, że 90% gier VR na Samsung Gear, a 53% na Oculus Rift zostało stworzonych w Unity.
 
 <h1 id="najlepsze-książki-do-nauki-c#"> Najlepsze książki do nauki {{ page.title }} </h1>
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):

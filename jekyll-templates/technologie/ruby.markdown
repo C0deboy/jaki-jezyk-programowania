@@ -10,13 +10,7 @@ date:       18.11.2017
 
 {% assign stats = site.data.statistics.Ruby %}
 
-**Ruby** to interpretowany, w pełni obiektowy język programowania. Jako język o bardzo prostej składni jest często stosowany do pisania tak zwanych jednolinijkowców, skryptów, przetwarzania tekstu oraz prototypowania nowych aplikacji. Jego zaletą jest ogromna ilość frameworków webowych oraz aplikacji napisanych w tym języku. Warto wspomnieć tu o Jekyllu i Ruby on Rails.
-
-**Jekyll** to generator stron statycznych napisany właśnie w Ruby. Pozwala nam na proste tworzenie blogów lub stron za pomocą wcześniej utworzonych szablonów HTML oraz CSS i wygenerowanie gotowych plików (w tym statycznych stron), które pozostaje tylko wrzucić na serwer. Rozwiązuję on problem wielu podobnych statycznych stron - gdy chcemy wprowadzić zmianę musimy zrobić to manualnie na każdej z nich. Pisząc w Jekyllu tworzymy szablon raz i możemy go wykorzystywać na innych stronach nieskończoną ilość razy.
-
-Warto wspomnieć, że wspiera go Github Pages - serwis Githuba pozwalający na darmowe hostowanie twojej strony/bloga. Na GH Pages twój projekt w Jekyllu zostanie automatycznie wykryty i zbuildowany, więc wystarczy, że wrzucisz pliki źródłowe Jekylla i włączysz GH Pages.
-
-**Ruby on Rails** jest frameworkiem służącym do tworzenia aplikacji internetowych napisanym w języku Ruby. Zostały zaprojektowany tak, aby programista mógł stworzyć funkcjonującą aplikację w jak najkrótszym czasie, co za tym idzie, pisząc jak najmniej kodu. Rails działa według założeń swojego twórcy, David'a Heinemeier Hansson: "Ruby jest przede wszystkim językiem do pisania pięknego kodu, który czyni programistów szczęśliwymi. Biorąc to pod uwagę, Rails jest próbą połączenia piękna i produktywności.". Ruby on Rails posiada jedną z największych społeczności, która bardzo chętnie dzieli się swoimi dokonaniami i wiedzą, ponadto możemy znaleźć wiele źródeł pozwalających na szybką naukę. Ruby posiada wiele zalet, m. in. w przejrzysty sposób współpracuje z różnymi bazami danych, nie wymagając przy okazji zmiany kodu przez programistę. Strony stworzone w tym frameworku nie należą do demonów szybkości, co jest ceną za wygodę pracy oraz szybkość tworzenia aplikacji. Jednak w swoich zastosowaniach spełnia się znakomicie.
+**Ruby** to interpretowany, w pełni obiektowy język programowania. Jako język o bardzo prostej składni jest często stosowany do pisania tak zwanych jednolinijkowców, skryptów, przetwarzania tekstu oraz prototypowania nowych aplikacji. Jego zaletą jest ogromna ilość frameworków webowych oraz aplikacji napisanych w tym języku. Warto wspomnieć tu o [Jekyllu](/technologie/jekyll) i [Ruby on Rails](/technologie/rubyonrails).
 
 {% include language/top10github.html %}
 
@@ -40,7 +34,7 @@ Czytanie kodu Ruby jest praktycznie identyczne z czytaniem instrukcji po angiels
 
 # Przyszłość języka
 
-Przez powstanie Node.js popularność platformy Ruby on Rails delikatnie spadła, jednak przez sposób, w jakim się w nim programuje oraz łatwość tworzenia aplikacji nie zostanie łatwo wyparta przez długi czas. Ruby jest cały czas rozwijany, twórcy wypuszczają często aktualizacje, rozwiązujące wiele wcześniejszych problemów. Jego ostatnia wersja 2.4.x została wydana w 2016 roku, a kolejna wersja jest planowana na koniec 2017.
+Przez powstanie Node.js popularność platformy Ruby on Rails delikatnie spadła, również o samym Ruby coraz mniej słychać, co widać w rankingach popularności. Mimo to Ruby ma się nadal całkiem dobrze. Używa go wciąż masa ludzi i jest cały czas rozwijany, twórcy wypuszczają często aktualizacje, rozwiązujące wiele wcześniejszych problemów. Jego ostatnia wersja 2.4.2 została wydana 14 września 2017 roku.
 
 # Najlepsze książki do nauki {{ page.title }}
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):

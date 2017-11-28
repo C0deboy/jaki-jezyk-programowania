@@ -83,14 +83,6 @@ Programiści Javy mają duże zapotrzebowanie na rynku ze względu na jej popula
     <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=javkp9&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
-
-Jeśli wolisz bardziej przyjazną formę, m.in. więcej obrazków, to możesz wybrać:
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=javrg2&nr=9102Q&size=181&utf8=1"></script>
-</div>
-(Jednak jest to już dosyć stara pozycja, pokrywająca Javę 5)
-
 Po bardziej zaawansowane rzeczy sięgnij tutaj:
 
 <div class="book">

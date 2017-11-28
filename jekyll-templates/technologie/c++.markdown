@@ -10,9 +10,9 @@ date:       18.11.2017
 
 # Zastosowanie
 
-C++ to język ogólnego zastosowania. Programy w C++ mogą być napisane tak, aby były wieloplatformowe bez żadnym modyfikacji, ale tylko, gdy trzymamy się odpowiednich zasad. Niektóre właściwości/biblioteki są dla specyficznych systemów.
+C++ to język ogólnego zastosowania. Programy w C++ mogą być napisane tak, aby były wieloplatformowe bez żadnych modyfikacji, ale tylko, gdy trzymamy się odpowiednich zasad. Niektóre właściwości/biblioteki są dla specyficznych systemów.
 
-Został stworzony głównie do programowania systemowego oraz dużych i z ograniczonymi zasobami systemów wbudowanych. W C++ napisane zostały systemy operacyjne (lub ich części) takie jak Apple OS X,IBM OS/400, Windows NT, XP, Vista, 7. Jednak zastosowanie C++ jest dużo szersze, głównie tam gdzie stawia się na wydajność oprogramowania, od aplikacji desktopowych(m.in. produkty Adobe np. Photoshop, Acrobat czy pakiety biurowe Office) przez serwery (m.in. e-commerce np. Amazon, Ebay; wyszukiwarki np. Chrome; baz danych SQL np. MongoDB) po silniki gier AAA lub ich części (np. CryEngine, Unity, Unreal Engine).
+Został stworzony głównie do programowania systemowego oraz dużych i z ograniczonymi zasobami systemów wbudowanych. W C++ napisane zostały systemy operacyjne (lub ich części) takie jak Apple OS X,IBM OS/400, Windows NT, XP, Vista, 7. Jednak zastosowanie C++ jest dużo szersze, głównie tam gdzie stawia się na wydajność oprogramowania, od aplikacji desktopowych(m.in. produkty Adobe np. Photoshop, Acrobat czy pakiety biurowe Office) przez serwery (m.in. e-commerce np. Amazon, Ebay; wyszukiwarki np. Chrome; baz danych np. MongoDB) po silniki gier AAA lub ich części (np. CryEngine, Unity, Unreal Engine).
 
 C++ używany jest w największych światowych korporacjach m.in: Adobe, Facebook, Amazon, Ericsson, HP, IBM, Intel.
 
@@ -42,7 +42,7 @@ Meetupy C++ są kategoryzowane razem z językiem C. Mimo to widać, że w porów
 
 # Przyszłość języka
 
-Lata świetności C++ z 2003 roku już dawno minęły, jednak wraz z rozwojem technologii VR (Virtual Reality), w której C++ jest przodującym językiem, wraca on do swojej świetności. Dodatkowo mimo krytyki poziomu skomplikowania, jest on cały czas aktywnie ulepszany, przez co nie zostanie wypchnięty przez inne języki jeszcze przez długi czas. Ostatnia jego wersja wyszła w 2014 roku, a nowa jest zapowiedziana na rok 2017.
+Lata świetności C++ z 2003 roku już dawno minęły, jednak wraz z rozwojem technologii VR (Virtual Reality), w której C++ jest przodującym językiem, wraca on do swojej świetności. C++ jest co jakiś czas nadal ulepszany mimo, że powstał w 1985 roku. Jego zastosowanie jest nadal szerokie, a tam gdzie liczy się wydajność jest niezastąpiony wśród języków wysokopoziomowych i nie zapowiada się żeby się to zmieniło w najbliższym czasie. Ostatnia jego wersja wyszła w 2014 roku, a nowa jest zapowiedziana na rok 2017.
 
 # Najlepsze książki do nauki {{ page.title }}
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):

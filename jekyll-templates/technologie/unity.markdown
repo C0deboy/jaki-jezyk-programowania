@@ -55,14 +55,6 @@ oraz desktopowe:
 Projektowanie gier:
 
 <div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=grywal&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=grymeg&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
     <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=prgpo2&nr=9102Q&size=181&utf8=1"></script>
 </div>
 

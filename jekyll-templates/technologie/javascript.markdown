@@ -1,7 +1,7 @@
 ---
 layout:     technology
-title-full: Język programowania Javascript - zastosowanie, przyszłość, polecane książki
-title:      Javascript
+title-full: Język programowania JavaScript - zastosowanie, przyszłość, polecane książki
+title:      JavaScript
 image:		javascript.png
 date:       18.11.2017
 ---
@@ -12,11 +12,11 @@ Przy tworzeniu stron internetowych, oprócz samego języka Javascript, niezbędn
 
 # Zastosowanie
 
-**Javascript** to dynamicznie typowany język wysokiego poziomu. Najczęściej jest używany przy tworzeniu stron WWW, zapewniając interaktywność stron oraz obsługę zdarzeń, walidacji formularzy czy budowanie elementów nawigacyjnych. Takie wykorzystanie języka JavaScript ułatwia zastosowanie biblioteki, takiej jak [jQuery](https://jquery.com/). Warto przy tym zauważyć, że używanie biblioteki nie powinno zastępować sensownej znajomości samego języka.
+**JavaScript** to dynamicznie typowany język wysokiego poziomu. Najczęściej jest używany przy tworzeniu stron WWW, zapewniając interaktywność stron oraz obsługę zdarzeń, walidacji formularzy czy budowanie elementów nawigacyjnych. Takie wykorzystanie języka JavaScript ułatwia zastosowanie biblioteki, takiej jak [jQuery](https://jquery.com/). Warto przy tym zauważyć, że używanie biblioteki nie powinno zastępować sensownej znajomości samego języka.
 
 Dzięki platformom, takim jak [Electron.js](https://electron.atom.io/) czy [nw.js](https://nwjs.io/), możliwe jest tworzenie pełnoprawnych, wieloplatformowych aplikacji/gier przy użyciu wyłącznie technologii sieciowych (HTML, CSS, JS...) dzięki połączeniu platformy Node.js oraz silnika [przeglądarki Chromium](https://www.chromium.org/).
 
-**Javascript** można używać również po stronie serwera (backend) dzięki [Node.js](/technologie/node.js)
+**JavaScript** można używać również po stronie serwera (backend) dzięki [Node.js](/technologie/node.js)
 
 {% include language/top10github.html %}
 
@@ -36,8 +36,6 @@ Podsumowując, nauka języka JavaScript jest dość łatwa, jednak pełne opanow
 
 <h4>Dane aktualne na dzień: {{ site.data.statistics.date | date: "%d.%m.%Y"  }}</h4>
 
-JavaScript to "must know" jeśli chodzi o programowanie webowe. Stąd jego popularność.
-
 {% include language/popularity.html %}
 
 {% include language/stackOverflow.html %}
@@ -48,7 +46,7 @@ JavaScript to "must know" jeśli chodzi o programowanie webowe. Stąd jego popul
 
 # Przyszłość języka
 
-JavaScript jest jednym z najpopularniejszych języków programowania oraz jest stale rozwijany. W najbliższym czasie się to nie zmieni, wręcz przeciwnie. Jego ostatnia wersja wersja wyszła w 2017 roku. Głównie dzięki coraz to nowszych frameworkom i narzędziom poszerzających jego możliwości i zastosowanie. Szczególnie obiecująco zapowiada się node.js. JavaScript to bezpieczny wybór.
+JavaScript to "must know" jeśli chodzi o programowanie webowe i w najbliższym czasie to się nie zmieni. Jest to bardzo dynamicznie rozwijający się język programowania, szczególnie ze względu na co chwilę pojawiające się nowe biblioteki i frameworki poszerzające jego możliwości i zastosowanie. Ciężko za nim nadążyć. 2 lata w przypadku JavaScript to wieki. Jego ostatnia wersja ECMAScript 2017 wyszła w czerwcu 2017 roku. JavaScript to uniwersalny wybór i często jest nawet w stacku technologicznym backendowca.
 
 # Najlepsze książki do nauki {{ page.title }}
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
