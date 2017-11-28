@@ -10,20 +10,24 @@ date:       18.11.2017
 
 # Zastosowanie
 
-**Java** to obiektowy, wysokopoziomowy język programowania ogólnego zastosowania, który jest łatwo przenośny, gdyż jest interpretowany przez wieloplatformową maszynę wirtualną Javy (Java Virtual Machine). Dlatego powstał slogan „Napisz raz, uruchom wszędzie!". Oczywiście jest to uzależnione od obecności JVM i ograniczone. **Java** jest przenośna w dziedzinach, które nie są związane z tworzeniem interfejsu użytkownika, interakcją z systemem operacyjnym albo sprzętem.
+**Java** to wysokopoziomowy język programowania ogólnego zastosowania. Jest w pełni obiektowa, z wyjątkiem kilku typów prostych. Java jest łatwo przenośna, gdyż jest interpretowana przez wieloplatformową maszynę wirtualną Javy (Java Virtual Machine). Dlatego Java reklamuje się sloganem „Napisz raz, uruchom wszędzie!". Oczywiście jest to uzależnione od obecności JVM i ograniczone. **Java** jest przenośna w dziedzinach, które nie są związane z tworzeniem interfejsu użytkownika, interakcją z systemem operacyjnym albo sprzętem.
 
-**Java** jest najczęściej używana do tworzenia backendowych aplikacji stron internetowych, ale też do tworzenia oprogramowania czy gier. Nadaje się do pisania zarówno małych jak i większych projektów. Jest preferowanym językiem w korporacjach i dużych firmach. Często wykorzystywana w systemach bankowych. Ponadto, system operacyjny Android działa w środowisku Javy, co umożliwia także tworzenie aplikacji lub gier na Androida.
+**Java** jest najczęściej używana w backendowych systemach aplikacji internetowych. Czyli jest odpowiedzialna za wszystko, co działa "pod spodem". Można też jej użyć do tworzenia oprogramowania desktopowego czy gier (Zobacz [LibGDX](https://jaki-jezyk-programowania.pl/technologie/libgdx/)).
+Ponadto, system operacyjny Android działa w środowisku Javy, co umożliwia także tworzenie aplikacji lub gier na Androida.
+
+Nadaje się do pisania zarówno małych jak i większych projektów. Jest preferowanym językiem w korporacjach i dużych firmach. Często wykorzystywana w systemach bankowych.
+
+Co więcej, Java może być nawet używana w systemach wbudowanych, dzięki [Oracle Java Embedded](http://www.oracle.com/technetwork/java/embedded/overview/index.html). Typowe przykłady to karty SIM, telefony VOIP, odtwarzacze dysków Blu-ray, zestawy telewizyjne, mierniki poboru energii elektrycznej, ciepła czy wody, urządzenia do monitorowania stanu zdrowia, przemysłowe systemy sterujące i niezliczona ilość innych urządzeń.
 
 Javie zarzucano, że jest dużo wolniejsza niż języki natywnie kompilowane, jak np. C++. Jednak odnosi się to do starszych wersji. Obecnie wydajność Javy została poprawiona tak, że może konkurować z językami, które wcześniej były uważane za dużo szybsze. Głównie dzięki kompilatorowi JIT (Just in time), który potrafi optymalizować pod kątem szybkości te części kodu, które są najczęściej używane oraz poprawionym mechanizmom, takim jak odśmiecanie pamięci (ang. garbage collecting).
 
-Popularne aplikacje napisane w Javie to
+W Javie został napisany m.in sławny Minecraft, a z popularnych aplikacji można wymienić:
 - Gmail
-- Minecraft
 - OpenOffice
 - Eclipse
 - NetBeans
 
-Do najbardziej znanych stron napędzanych przez Javę należą
+Do najbardziej znanych stron, które mają "pod spodem" Jave, należą
 - LinkedIn.com
 - Netflix.com
 - Amazon.com
@@ -32,13 +36,17 @@ Do najbardziej znanych stron napędzanych przez Javę należą
 
 # Poziom skomplikowania
 
-**Java** została zaprojektowana tak, aby była przyjazna dla początkujących, tym samym łatwiejsza niż C++. Składnia Javy jest podobna do składni języka C++ czy C, ale ma mniej niskopoziomowych funkcji. **Java** posiada także wiele wbudowanych bibliotek z gotowymi rozwiązaniami, podczas gdy w niektórych językach musimy je znaleźć, wybrać i dołączyć na własną rękę. Jest to pewne ułatwienie na początku nauki, gdy **Java** robi to za nas. Jednak później nie ma to większego znaczenia. W Javie jest ich po prostu więcej domyślnie, jednak nie są idealne, gdyż ze względu na kompatybilność wsteczną niektóre rozwiązania są przestarzałe.
+**Java** została zaprojektowana tak, aby była przyjazna dla początkujących, tym samym łatwiejsza niż C++. Składnia Javy jest podobna do składni języka C++, ale ma mniej niskopoziomowych funkcji. **Java** posiada także wiele wbudowanych bibliotek z gotowymi rozwiązaniami, podczas gdy w niektórych językach musimy je znaleźć, wybrać i dołączyć na własną rękę. Jest to pewne ułatwienie na początku nauki, bo **Java** robi to za nas. Jednak później nie ma to większego znaczenia. W Javie jest ich po prostu więcej domyślnie. Jednak nie wszystkie są idealne, gdyż ze względu na kompatybilność wsteczną niektóre rozwiązania są przestarzałe.
 
-**Java** jest językiem statycznie typowanym, co oznacza, że składnia i zgodność typów zostanie sprawdzona w celu znalezienia błędów zanim zostanie wykonany program, więc łatwiej je namierzyć. Javę cechuję także silne typowanie, to znaczy, że wyrażenia mają ustalony typ danych, który nie może zostać zmieniony w czasie działania programu. Zapobiega to powstawaniu dziwnych i niespodziewanych błędów, więc kod jest łatwiejszy w utrzymaniu.
+**Java** jest językiem statycznie typowanym, co oznacza, że składnia i zgodność typów zostanie sprawdzona w celu znalezienia błędów zanim zostanie wykonany program, dzięki temu łatwiej je namierzyć. Javę cechuję także silne typowanie, to znaczy, że wyrażenia mają ustalony typ danych, który nie może zostać zmieniony w czasie działania programu. Zapobiega to powstawaniu dziwnych i niespodziewanych błędów, więc kod jest łatwiejszy w utrzymaniu.
 
-**Java** zajmuję się za Ciebie sprzętowymi detalami takimi jak np. zarządzanie pamięcią (Garbage Collection), więc nie musisz się nad tym skupiać.
+**Java**, jak większość wysokopoziomowych języków programowania, zajmuję się za Ciebie sprzętowymi detalami takimi jak np. zarządzanie pamięcią (Garbage Collection), więc nie musisz się na tym skupiać.
 
-Często można spotkać opinię, że **Java** jest rozwlekła, to znaczy, że trzeba napisać dużo więcej kodu niż w przypadku innych języków (szczególnie skryptowych), aby dostać podobną aplikacje. Często pokazywane na przykładzie wyświetlenia napisu "Hello World". Jednak takie porównanie nie ma większego sensu i nie można tego traktować jako wadę, ponieważ przez swoją "rozwlekłość"" jest bardziej jednoznaczna i łatwiejsza w debugowaniu.
+Często można spotkać opinię, że **Java** jest rozwlekła, to znaczy, że trzeba napisać dużo więcej kodu niż w przypadku innych języków (szczególnie skryptowych), aby dostać podobną aplikacje. Często pokazywane na przykładzie wyświetlenia napisu "Hello World" (W Javie, żeby dało się uruchomić taką instrukcję musi być do tego klasa, metoda main oraz System.out.print("Hello World"), podczas gdy np. w Pythonie wystarczy print("Hello World")). Jednak takie porównanie nie ma większego sensu i nie można tego traktować jako wadę, ponieważ przez swoją "rozwlekłość"" jest bardziej jednoznaczna i łatwiejsza w debugowaniu.
+
+Poza tym, od Javy 9 do takiego szybkiego prototypowania i robienia małych kawałków kodów (np. wykonujących jakieś obliczenia do zadania czy po prostu testowanie nowych funkcji) powstało narzędzie Jshell.
+
+Języki skryptowe i szybkie rozwiązania są dobre do prototypowania. Gdy tworzony jest duży projekt i ważne jest jego późniejsze utrzymywanie, "rozwlekłość" języka jest na plus.
 
 # Popularność
 
@@ -54,7 +62,7 @@ Często można spotkać opinię, że **Java** jest rozwlekła, to znaczy, że tr
 
 # Przyszłość języka
 
-Programiści Javy mają duże zapotrzebowanie na rynku ze względu na jej popularność. Jest jednym z najbardziej opłacalnych oraz najbardziej pożądanych języków. **Java** cały czas jest rozwijana i ulepszana, aby utrzymać się w topce na rynku. Ostatnia wersja **Java** SE 8 została wydana w 2014 roku, a nowa wersja planowana jest na rok 2017. Mimo to, że często krytykowano ten język i wiele języków próbowało zastąpić Jave, wyszła z tego zwycięsko. W kolejnych latach **Java** raczej nigdzie się nie wybiera, będzie kontynuować swoją dominacje.
+Programiści Javy mają duże zapotrzebowanie na rynku ze względu na jej popularność. Jest jednym z najbardziej opłacalnych oraz najbardziej pożądanych języków. **Java** cały czas jest rozwijana i ulepszana, aby utrzymać się na rynku. Ostatnia wersja **Java** SE 9 została wydana 21 września 2017 roku, a niecały miesiąc później poleciała pierwsza łatka 9.0.1. Pokazuje to, że Java nadal prężnie się rozwija, mimo, że powstała w 1995 roku. Często krytykowano ten język i wiele języków próbowało zastąpić Jave, jednak wyszła z tego zwycięsko. W kolejnych latach **Java** raczej nigdzie się nie wybiera i będzie kontynuować swoją dominacje.
 
 # Najlepsze książki do nauki {{ page.title }}
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
