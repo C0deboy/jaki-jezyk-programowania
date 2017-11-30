@@ -9,7 +9,7 @@ window.addEventListener('touchstart', function onFirstHover() {
   window.removeEventListener('touchstart', onFirstHover, false);
 }, false);
 
-function showSubTechnologeis(subs, lang) {
+function showSubTechnologeis(subs) {
   if (subs.length !== 0) {
     subs.forEach((sub) => {
       sub.classList.add('backToPosition');
@@ -28,7 +28,7 @@ function hideSubTechnologeis(subs, lang) {
       sub.classList.remove('backToPosition');
     });
   }
-  if(window.DOUBLE_CLICK_ENABLED){
+  if (window.DOUBLE_CLICK_ENABLED) {
     lang.querySelectorAll('.lang-link').forEach((link) => {
       link.addEventListener('click', disablelink);
     });
