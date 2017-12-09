@@ -8,7 +8,7 @@ date:       18.11.2017
 
 {% assign stats = site.data.statistics.JavaScript %}
 
-Przy tworzeniu stron internetowych, oprócz samego języka Javascript, niezbędne jest [zrozumienie kodu HTML oraz podstaw CSS-a](2017-07-07-html&css.markdown).
+Przy tworzeniu stron internetowych, oprócz samego języka Javascript, niezbędne jest [zrozumienie kodu HTML oraz podstaw CSS-a](/technologie/html&css).
 
 # Zastosowanie
 

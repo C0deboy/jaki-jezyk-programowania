@@ -17,6 +17,12 @@ section {
   margin: 0;
 }
 
+@media (min-width: 1700px){
+  section {
+    padding: 0 20% 60px;
+  }
+}
+
 .language-content {
   width: 100%;
   background-color: #0a455e;
@@ -24,7 +30,7 @@ section {
   -moz-box-shadow: 10px 10px 33px -15px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 33px -15px rgba(0, 0, 0, 0.75);
   padding: 0 5% 40px;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -59,8 +65,34 @@ section {
   box-shadow: 10px 10px 33px -10px rgba(0, 0, 0, 0.75);
   margin-top: 10px;
   border-radius: 50%;
-  width: 50%;
-  margin-left: 25%;
+  width: 250px;
+  margin: auto;
+  animation: language-logo-animation 2s ease-in-out;
+  transform-origin: 50% 100%;
+}
+
+@keyframes language-logo-animation {
+  0% {
+    transform: rotate(0deg) scaleY(0.6);
+  }
+  20% {
+    transform: rotate(-2deg) scaleY(1.05);
+  }
+  35% {
+    transform: rotate(2deg) scaleY(1);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  65% {
+    transform: rotate(1deg);
+  }
+  80% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 @media (max-width: 768px) {
@@ -75,8 +107,8 @@ section {
 }
 
 .language-content table {
-   margin: auto;
- }
+  margin: auto;
+}
 
 .language-content table td {
   text-align: left;
