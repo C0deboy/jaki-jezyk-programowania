@@ -81,6 +81,10 @@ Data science i machine lerning (nauka o danych i uczenie maszynowe):
     <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=zaaucz&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
+<div class="book">
+    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=pythum&nr=9102Q&size=181&utf8=1"></script>
+</div>
+
 Robotyka:
 
 <div class="book">

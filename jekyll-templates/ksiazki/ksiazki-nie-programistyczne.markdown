@@ -29,3 +29,7 @@ title-full: "Najlepsze książki nie programistyczne"
 <div class="book">
     <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=duhsie&nr=9102Q&size=181&utf8=1"></script>
 </div>
+
+<div class="book">
+    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=oddodn&nr=9102Q&size=181&utf8=1"></script>
+</div>
