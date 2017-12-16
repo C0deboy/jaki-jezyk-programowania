@@ -7,7 +7,6 @@ if (getCookie(cookiesAcceptedCookieName) === '1') {
 
 $('.close-cookies-info').on('click', () => {
   $('.cookies-info').fadeOut();
-  console.log(getCookie(cookiesAcceptedCookieName));
   setCookie(cookiesAcceptedCookieName, '1', 30);
 });
 
@@ -16,11 +15,11 @@ function setCookie(nae, value, days) {
   if (days) {
     const data = new Date();
     data.setTime(data.getTime() + (days * 24 * 60 * 60 * 1000));
-    expires = '; expires=' + data.toGMTString();
+    expires = '; expires=' + data.toUTCString();
   } else {
     expires = '';
   }
-  document.cookie = name + '=' + value + expires + '; path=/';
+  document.cookie = cookiesAcceptedCookieName + '=' + value + expires + '; path=/';
 }
 
 function getCookie(name) {
@@ -34,4 +33,5 @@ function getCookie(name) {
       }
     }
   }
+  return undefined;
 }
