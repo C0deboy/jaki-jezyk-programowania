@@ -25,8 +25,7 @@ Popularne aplikacje, które wykorzystują Angular:
 # Najlepsze książki do nauki {{ page.title }}
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
-{: class="promotions-link"}
-[Zobacz aktualne promocje](https://helion.pl/page/9102Q/promocje)
+{% include promotion.html %}
 
 <div class="book">
     <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=ang2ty&nr=9102Q&size=181&utf8=1"></script>

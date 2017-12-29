@@ -6,9 +6,7 @@ title-full: "Najlepsze książki o algorytmach"
 # Najlepsze książki o algorytmach:
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
-{: class="promotions-link"}
-[Zobacz aktualne promocje](https://helion.pl/page/9102Q/promocje)
-
+{% include promotion.html %}
 
 <br>
 

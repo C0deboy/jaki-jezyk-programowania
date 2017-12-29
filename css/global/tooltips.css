@@ -5,7 +5,7 @@
 	background: #e8ebf0;
 	color: #333;
 	font-size: 0.9em;
-	box-shadow: 0 0.5rem 3rem -0.5rem black;
+	box-shadow: 0 2px 4px 0 black;
 	z-index: 1000;
 	text-align: center;
 	min-width: 100px;
@@ -40,14 +40,6 @@
 
 .tip{
 	color: inherit;
-}
-
-.tip.clickable:before{
-	content: "";
-	padding: 25px 100px 0;
-	margin-left: -200px;
-	position: relative;
-	left: 160px;
 }
 
 .tip:hover {

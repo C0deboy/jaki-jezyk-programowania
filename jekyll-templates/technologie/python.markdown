@@ -42,14 +42,12 @@ Popularność Pythona rośnie z każdym rokiem do tego stopnia, że jest niemal 
 
 # Przyszłość języka
 
-Python jest obecnie w czołówce najbardziej opłacalnych oraz najbardziej pożądanych języków. Wraz ze wzrostem big data, rośnie zapotrzebowanie na programistów Pythona, którzy są coraz częściej zatrudniani jako data scientist. Jako projekt open source jest cały czas aktywnie dopracowywany, by sprostać coraz to nowszym wymaganiom. Ostatnia jego wersja została wydana 10 października 2017 roku. Rozwój uczenia maszynowego (machine learning), które jest witalną częścią rozwoju sztucznej inteligencji, jak i zarówno rosnąca ilość big data dobrze wróżą przyszłości tego języka.
+Python jest obecnie w czołówce najbardziej opłacalnych oraz najbardziej pożądanych języków. Wraz ze wzrostem big data, rośnie zapotrzebowanie na programistów Pythona, którzy są coraz częściej zatrudniani jako data scientist. Jako projekt open source jest cały czas aktywnie dopracowywany, by sprostać coraz to nowszym wymaganiom. Ostatnia jego wersja 3.6.4 została wydana 19 grudnia 2017 roku. Rozwój uczenia maszynowego (machine learning), które jest witalną częścią rozwoju sztucznej inteligencji, jak i zarówno rosnąca ilość big data dobrze wróżą przyszłości tego języka.
 
 # Najlepsze książki do nauki {{ page.title }}
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
-{: class="promotions-link"}
-[Zobacz aktualne promocje](https://helion.pl/page/9102Q/promocje)
-
+{% include promotion.html %}
 
 <div class="book">
     <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=pytdk3&nr=9102Q&size=181&utf8=1"></script>

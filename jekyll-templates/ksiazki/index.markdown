@@ -6,8 +6,7 @@ title-full: "Książki, które każdy powinien przeczytać"
 # Książki warte polecenia
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
-{: class="promotions-link"}
-[Zobacz aktualne promocje](https://helion.pl/page/9102Q/promocje)
+{% include promotion.html %}
 
 ### Książki, które może przeczytać każdy, bez względu na używaną technologię:
 

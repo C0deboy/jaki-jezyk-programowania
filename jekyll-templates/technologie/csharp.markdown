@@ -47,9 +47,7 @@ Duża popularność silnika Unity (który może się pochwalić tym, że 34% naj
 <h1 id="najlepsze-książki-do-nauki-c#"> Najlepsze książki do nauki {{ page.title }} </h1>
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
-{: class="promotions-link"}
-[Zobacz aktualne promocje](https://helion.pl/page/9102Q/promocje)
-
+{% include promotion.html %}
 
 <div class="book">
     <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=cshpk3&nr=9102Q&size=181&utf8=1"></script>

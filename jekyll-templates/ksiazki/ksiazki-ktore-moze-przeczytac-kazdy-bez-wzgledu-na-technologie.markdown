@@ -6,9 +6,7 @@ title-full: "Uniwersalne książki dla programistów"
 # Najlepsze książki dla programistów
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
-{: class="promotions-link"}
-[Zobacz aktualne promocje](https://helion.pl/page/9102Q/promocje)
-
+{% include promotion.html %}
 
 <br>
 

@@ -81,7 +81,7 @@
 }
 
 .navbar-custom.is-fixed .navbar-brand,
-.navbar-custom.is-fixed .nav li a {
+.navbar-custom.is-fixed .nav li > a {
   color: #626262;
 }
 
@@ -106,4 +106,45 @@
 
 .site-logo {
   margin: 0;
+}
+
+.promotion-sign {
+  position: absolute;
+  font-size: .8em;
+  display: inline-block;
+  top: 0;
+  color: black;
+  background: #f8f8f8;
+  border-radius: 5px;
+  padding: 4px;
+  opacity: 1;
+  animation: .5s popup ease-out forwards;
+  animation-delay: .5s;
+  box-shadow: 0 2px 4px 0 black;
+  z-index: 2;
+  margin-left: 25px;
+}
+
+.promotion-sign:before {
+  content: '';
+  display: block;
+  height: 12px;
+  z-index: -1;
+  transform: skew(0deg,-38deg);
+  width: 19px;
+  background: #f8f8f8;
+  position: absolute;
+  right: 5px;
+  top: 0;
+}
+
+@media (max-width: 768px){
+  .promotion-sign {
+    right: 0;
+  }
+}
+
+@keyframes popup {
+  0% {transform: translateY(0px) scale3d(.2,.2,1);}
+  100% {transform: translateY(65px) scale3d(1,1,1);}
 }

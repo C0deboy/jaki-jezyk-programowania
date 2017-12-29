@@ -46,9 +46,7 @@ PHP jest dosyć starym językiem, ale jego popularność nie spada i się na to 
 # Najlepsze książki do nauki {{ page.title }}
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
-{: class="promotions-link"}
-[Zobacz aktualne promocje](https://helion.pl/page/9102Q/promocje)
-
+{% include promotion.html %}
 
 <div class="book">
     <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=php7pk&nr=9102Q&size=181&utf8=1"></script>

@@ -43,9 +43,7 @@ Swift dopiero się rozwija, ale udaje mu się wyprzeć Objective-C. Dlatego zapo
 # Najlepsze książki do nauki {{ page.title }}
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
-{: class="promotions-link"}
-[Zobacz aktualne promocje](https://helion.pl/page/9102Q/promocje)
-
+{% include promotion.html %}
 
 Swift jest jeszcze nieco młody - nie ma dużo książek do wyboru. Aktualna i dobra pozycja to:
 

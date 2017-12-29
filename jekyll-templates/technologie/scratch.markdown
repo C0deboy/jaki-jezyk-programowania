@@ -27,9 +27,7 @@ Jeśli uważasz, że twoje dziecko może zacząć zabawę już z prawdziwymi ję
 # Najlepsze książki do rozpoczęcia nauki dla dziecka
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
-{: class="promotions-link"}
-[Zobacz aktualne promocje](https://helion.pl/page/9102Q/promocje)
-
+{% include promotion.html %}
 
 Scratch:
 
