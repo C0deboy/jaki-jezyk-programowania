@@ -12,7 +12,6 @@ module.exports = {
     'wizard.js': './js/wizard/wizard.js',
     'faq.css': './css/faq.css',
     'extendTechnologies.js': './js/extendTechnologies.js',
-    'changeLinkNameHelionPlugin.js': './js/modifyHelionPlugin.js',
     'technologies-list.css': './css/technologies-list.css',
     'language.css': './css/language.css',
     'wizard.css': './css/wizard.css',

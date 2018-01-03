@@ -33,7 +33,7 @@ if (date >= promotionStart && date <= promotionEnd) {
 
 function positionPromotionSign(booksBtn, promotionSign) {
   const booksBtnRect = booksBtn.getBoundingClientRect();
-  const left = booksBtnRect.left - promotionSign.offsetWidth + booksBtnRect.width / 2;
+  const left = (booksBtnRect.left - promotionSign.offsetWidth) + + (booksBtnRect.width / 4);
 
   if (document.documentElement.clientWidth <= 768) {
     promotionSign.style.right = '25px';
