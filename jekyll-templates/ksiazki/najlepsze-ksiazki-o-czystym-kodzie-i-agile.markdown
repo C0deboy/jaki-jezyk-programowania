@@ -24,6 +24,10 @@ Klasyki:
     <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=pragpv&nr=9102Q&size=181&utf8=1"></script>
 </div>
 
+<div class="book">
+    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=mckkod&nr=9102Q&size=181&utf8=1"></script>
+</div>
+
 Inne:
 
 <div class="book">

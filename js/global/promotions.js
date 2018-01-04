@@ -1,10 +1,10 @@
 const date = new Date();
 
-const promotionStart = new Date('2018-01-02');
-const promotionEnd = new Date('2018-01-03');
-const promotionNumber = 4269;
-const href = new URL('http://ebookpoint.pl/page/9102Q/promocja/' + promotionNumber + '/informatyka');
-const promotionAd = `Dziś duża <a href="${href}" target="_blank">promocja</a> w ${href.hostname}. Zobacz książki, które warto kupić.`;
+const promotionStart = new Date('2018-01-04');
+const promotionEnd = new Date('2018-01-07');
+const promotionNumber = 4301;
+const href = new URL('http://helion.pl/page/9102Q/promocja/' + promotionNumber);
+const promotionAd = `Do końca tygodnia jest <a href="${href}" target="_blank">promocja</a>  -30% na książki w ${href.hostname}. Zobacz książki, które warto kupić.`;
 
 date.setHours(0, 0, 0, 0);
 promotionEnd.setHours(0, 0, 0, 0);
@@ -61,7 +61,7 @@ document.querySelectorAll('.helion-ksiazkasm4 a:first-of-type').forEach((link) =
 
   const nextLink = link.parentElement.querySelector('a:last-of-type');
 
-  if(window.promotion) {
+  if(window.promotion && href.hostname === 'ebookpoint.pl') {
     host = href.hostname;
     nextLink.hostname = 'helion.pl';
     nextLink.innerText = 'Wersja papierowa';

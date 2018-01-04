@@ -112,10 +112,3 @@ Dotyczące testowania i refaktoryzacji:
 <div class="book">
     <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=refukv&nr=9102Q&size=181&utf8=1"></script>
 </div>
-
-
-Klasyki, które warto przeczytać:
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=thij4v&nr=9102Q&size=181&utf8=1"></script>
-</div>
