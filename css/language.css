@@ -267,6 +267,22 @@ section {
 
 .top-books {
   text-align: left;
+  margin-top: 35px;
+}
+
+.top-books .position {
+  position: absolute;
+  color: #f94546;
+  font-size: 1.8em;
+  text-shadow: 0 2px 8px black;
+  margin: -10px 0 0 -25px;
+  background: #222222;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  border: 0;
+  padding: 0px 5px;
+  box-shadow: 0 1px 4px 0 black;
 }
 
 .promotions-link {
