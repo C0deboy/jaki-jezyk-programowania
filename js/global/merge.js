@@ -4,3 +4,5 @@ require('./parentElementAppendPolyfill');
 require('./nav');
 require('./ganalitics');
 require('./tooltips');
+
+require('../extendTechnologies');
