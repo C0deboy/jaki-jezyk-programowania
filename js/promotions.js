@@ -1,9 +1,9 @@
 const promotion = {
-  start: new Date('2018-01-24'),
-  end: new Date('2018-01-30'),
-  number: 4363,
-  discount: '40%',
-  host: 'ebookpoint.pl',
+  start: new Date('2018-02-05'),
+  end: new Date('2018-02-07'),
+  number: 4408,
+  discount: '30%',
+  host: 'helion.pl',
   img: true,
 };
 
@@ -11,7 +11,7 @@ const customMessage = '';
 
 const promotionURL = new URL(`http://${promotion.host}/page/9102Q/promocja/${promotion.number}`);
 
-let promotionAdText = `Na ${promotionURL.hostname} jest <a href="${promotionURL}" target="_blank">promocja</a> ${promotion.discount} na ebooki. Zobacz książki, które warto kupić.`;
+let promotionAdText = `Na ${promotionURL.hostname} jest <a href="${promotionURL}" target="_blank">promocja</a> ${promotion.discount} w kategorii Hacking. Zobacz książki, które warto kupić.`;
 
 if (isPromotionActive()) {
   if (customMessage !== '') {
