@@ -1,17 +1,16 @@
 const promotion = {
-  start: new Date('2018-02-05'),
-  end: new Date('2018-02-07'),
-  number: 4408,
-  discount: '30%',
+  start: new Date('2018-02-13'),
+  end: new Date('2018-02-15'),
+  number: 4459,
+  discount: '2 za 1',
   host: 'helion.pl',
   img: true,
 };
 
 const customMessage = '';
+const promotionURL = new URL(`http://${promotion.host}/page/9102Q/kategorie/promocja-2za1`);// promocja/${promotion.number}`);
 
-const promotionURL = new URL(`http://${promotion.host}/page/9102Q/promocja/${promotion.number}`);
-
-let promotionAdText = `Na ${promotionURL.hostname} jest <a href="${promotionURL}" target="_blank">promocja</a> ${promotion.discount} w kategorii Hacking. Zobacz książki, które warto kupić.`;
+let promotionAdText = `Na ${promotionURL.hostname} jest <a href="${promotionURL}" target="_blank">promocja</a> ${promotion.discount}. Zobacz książki, które warto kupić.`;
 
 if (isPromotionActive()) {
   if (customMessage !== '') {
