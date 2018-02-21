@@ -1,16 +1,16 @@
 const promotion = {
-  start: new Date('2018-02-13'),
-  end: new Date('2018-02-16'),
-  number: 4459,
-  discount: '2 za 1',
+  start: new Date('2018-02-21'),
+  end: new Date('2018-02-21'),
+  number: 4490,
+  discount: '-30% (-50% ebooki) na książki w kategorii Java',
   host: 'helion.pl',
   img: true,
 };
 
 const customMessage = '';
-const promotionURL = new URL(`http://${promotion.host}/page/9102Q/kategorie/promocja-2za1`);// promocja/${promotion.number}`);
+const promotionURL = new URL(`http://${promotion.host}/page/9102Q/promocja/${promotion.number}`);
 
-let promotionAdText = `Na ${promotionURL.hostname} jest <a href="${promotionURL}" target="_blank">promocja</a> ${promotion.discount}. Zobacz książki, które warto kupić.`;
+let promotionAdText = `Na ${promotionURL.hostname} jest <a href="${promotionURL}" target="_blank">promocja</a> ${promotion.discount}. Tylko dziś! Zobacz książki, które warto kupić.`;
 
 if (isPromotionActive()) {
   if (customMessage !== '') {
