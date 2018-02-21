@@ -74,7 +74,7 @@ function createPromotionAd() {
     }
     promotionLink.innerHTML = 'Promocja ' + to;
     if (promotion.img) {
-      promotionLink.innerHTML += '<br> <img src="/img/promotions/promotion.png"/>';
+      promotionLink.innerHTML += '<br> <img src="/promocje/promotion.png"/>';
     }
   }
   changeBookLinksHost();
@@ -121,7 +121,7 @@ function addImagesForTopList() {
       const position = document.createElement('span');
       position.innerText = '#' + positionNum++;
       position.classList.add('position');
-      img.src = `https://static01.helion.com.pl/global/okladki/181x236/${bookId}.jpg`
+      img.src = `https://static01.helion.com.pl/global/okladki/181x236/${bookId}.jpg`;
       book.classList.add('book');
       link.href = a.href;
       book.appendChild(position);
@@ -129,7 +129,7 @@ function addImagesForTopList() {
       book.appendChild(link);
       topBooks.appendChild(book);
       book.appendChild(a);
-      //a.parentElement.insertBefore(book, a);
+      // a.parentElement.insertBefore(book, a);
     });
     topBooks.removeChild(topBooks.querySelector('ol'));
     topBooks.style.textAlign = 'center';

@@ -41,7 +41,9 @@ Jest to najpopularniejszy język, jeśli chodzi o strony internetowe. 80% z 10 m
 
 # Przyszłość języka
 
-PHP jest dosyć starym językiem, ale jego popularność nie spada i się na to nie zanosi. Fakt, że jest wykorzystywany przez ponad 80% najpopularniejszych stron internetowych sprawia, że nie zostanie łatwo wyparty. Ponadto cały czas jest rozwijany, aby sprostać nowym wymaganiom. Wersja PHP7 mocno go odświeżyła, a ostatnia jego wersja 7.2.2 wydana została 31 stycznia 2018 roku.
+{% assign versions = site.data.languagesVersions %}
+
+PHP jest dosyć starym językiem, ale jego popularność nie spada i się na to nie zanosi. Fakt, że jest wykorzystywany przez ponad 80% najpopularniejszych stron internetowych sprawia, że nie zostanie łatwo wyparty. Ponadto cały czas jest rozwijany, aby sprostać nowym wymaganiom. Wersja PHP7 mocno go odświeżyła, a ostatnia jego wersja {{ versions.PHP.version }} została  wydana {{ versions.PHP.releaseDate }}.
 
 # Najlepsze książki do nauki {{ page.title }}
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):

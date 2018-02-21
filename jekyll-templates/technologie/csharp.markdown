@@ -42,7 +42,9 @@ Duża popularność silnika Unity (który może się pochwalić tym, że 34% naj
 
 # Przyszłość języka
 
-**C#** jest cały czas rozwijany przez Microsoft, który nie zamierza kończyć dla niego wsparcia. Ostatnia wersja 7.2 została wydana 15 grudnia 2017 roku. Silnik Unity nadal jest rozwijany i ulepszany, więc jest to dobry wybór dla osób zainteresowanych tworzeniem gier. Dodatkowym plusem jest to, że umożliwia pisanie oprogramowania na platformy VR (Virtual Reality), a ta technologia staję się coraz bardziej popularna. Na stronie Unity można zobaczyć szacowane dane, które mówią, że 90% gier VR na Samsung Gear, a 53% na Oculus Rift zostało stworzonych w Unity.
+{% assign versions = site.data.languagesVersions %}
+
+**C#** jest cały czas rozwijany przez Microsoft, który nie zamierza kończyć dla niego wsparcia. Jego ostatnia wersja {{ versions.Csharp.version }} została wydana {{ versions.Csharp.releaseDate }}. Silnik Unity nadal jest rozwijany i ulepszany, więc jest to dobry wybór dla osób zainteresowanych tworzeniem gier. Dodatkowym plusem jest to, że umożliwia pisanie oprogramowania na platformy VR (Virtual Reality), a ta technologia staję się coraz bardziej popularna. Na stronie Unity można zobaczyć szacowane dane, które mówią, że 90% gier VR na Samsung Gear, a 53% na Oculus Rift zostało stworzonych w Unity.
 
 <h1 id="najlepsze-książki-do-nauki-c#"> Najlepsze książki do nauki {{ page.title }} </h1>
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):

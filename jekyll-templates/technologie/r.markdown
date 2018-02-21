@@ -28,11 +28,11 @@ W rankingach popularności R jest całkiem daleko, a wiąże się z tym, że spo
 
 {% include language/github.html %}
 
-{% include language/meetup.html %}
-
 # Przyszłość języka
 
-Popularność w dziedzinach analizowania danych, statystyki, data science czy big data stale wzrasta, co dobrze wróży przyszłości języka R. Na jego korzyść wskazują także statystyki, pokazujące że zainteresowanie tym językiem w ubiegłych latach wzrosło o 51.7%.
+{% assign versions = site.data.languagesVersions %}
+
+Popularność w dziedzinach analizowania danych, statystyki, data science czy big data stale wzrasta, co dobrze wróży przyszłości języka R. Na jego korzyść wskazują także statystyki, pokazujące że zainteresowanie tym językiem w ubiegłych latach wzrosło o 51.7%. Jego ostatnia wersja {{ versions.R.version }} została wydana {{ versions.R.releaseDate }}.
 
 # Najlepsze książki do nauki {{ page.title }}
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):

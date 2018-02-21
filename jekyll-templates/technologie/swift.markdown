@@ -38,7 +38,9 @@ Swift zajmuje się za nas także zarządzaniem pamięcią, co ułatwia sprawę p
 
 # Przyszłość języka
 
-Swift dopiero się rozwija, ale udaje mu się wyprzeć Objective-C. Dlatego zapotrzebowanie na programistów Swift będzie się z roku na rok zwiększać. Swift jest jednym z najszybciej rozwijającym się języków. Jego przyszłość głównie zależy od Apple, która wydaję się całkiem przejrzysta. Ma wszystko to co nowoczesny język programowania powinien mieć i ma potencjał na konkurowanie z najlepszymi..
+{% assign versions = site.data.languagesVersions %}
+
+Swift dopiero się rozwija, ale udaje mu się wyprzeć Objective-C. Dlatego zapotrzebowanie na programistów Swift będzie się z roku na rok zwiększać. Swift jest jednym z najszybciej rozwijającym się języków. Jego przyszłość głównie zależy od Apple, która wydaję się całkiem przejrzysta. Ma wszystko to co nowoczesny język programowania powinien mieć i ma potencjał na konkurowanie z najlepszymi. Jego ostatnia wersja {{ versions.Swift.version }} została wydana {{ versions.Swift.releaseDate }}.
 
 # Najlepsze książki do nauki {{ page.title }}
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):

@@ -46,7 +46,9 @@ Podsumowując, nauka języka JavaScript jest dość łatwa, jednak pełne opanow
 
 # Przyszłość języka
 
-JavaScript to "must know" jeśli chodzi o programowanie webowe i w najbliższym czasie to się nie zmieni. Jest to bardzo dynamicznie rozwijający się język programowania, szczególnie ze względu na co chwilę pojawiające się nowe biblioteki i frameworki poszerzające jego możliwości i zastosowanie. Ciężko za nim nadążyć. 2 lata w przypadku JavaScript to wieki. Jego ostatnia wersja ECMAScript 2017 wyszła w czerwcu 2017 roku. JavaScript to uniwersalny wybór i często jest nawet w stacku technologicznym backendowca.
+{% assign versions = site.data.languagesVersions %}
+
+JavaScript to "must know" jeśli chodzi o programowanie webowe i w najbliższym czasie to się nie zmieni. Jest to bardzo dynamicznie rozwijający się język programowania, szczególnie ze względu na co chwilę pojawiające się nowe biblioteki i frameworki poszerzające jego możliwości i zastosowanie. Ciężko za nim nadążyć. 2 lata w przypadku JavaScript to wieki. Jego ostatnia wersja {{ versions.JavaScript.version }} została wydana {{ versions.JavaScript.releaseDate }}. JavaScript to uniwersalny wybór i często jest nawet w stacku technologicznym backendowca.
 
 # Najlepsze książki do nauki {{ page.title }}
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):

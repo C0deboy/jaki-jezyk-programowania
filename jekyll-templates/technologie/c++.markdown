@@ -42,7 +42,9 @@ Meetupy C++ są kategoryzowane razem z językiem C. Mimo to widać, że w porów
 
 # Przyszłość języka
 
-Lata świetności C++ z 2003 roku już dawno minęły, jednak wraz z rozwojem technologii VR (Virtual Reality), w której C++ jest przodującym językiem, wraca on do swojej świetności. C++ jest co jakiś czas nadal ulepszany mimo, że powstał w 1985 roku. Jego zastosowanie jest nadal szerokie, a tam gdzie liczy się wydajność jest niezastąpiony wśród języków wysokopoziomowych i nie zapowiada się żeby się to zmieniło w najbliższym czasie. Ostatnia jego wersja C++17 wyszła 1 grudnia 2017 roku po trzyletniej przerwie. C++20 jest kolejną planowaną wersją, więc prawdopodobnie zobaczymy ją w 2020 roku.
+{% assign versions = site.data.languagesVersions %}
+
+Lata świetności C++ z 2003 roku już dawno minęły, jednak wraz z rozwojem technologii VR (Virtual Reality), w której C++ jest przodującym językiem, wraca on do swojej świetności. C++ jest co jakiś czas nadal ulepszany mimo, że powstał w 1985 roku. Jego zastosowanie jest nadal szerokie, a tam gdzie liczy się wydajność jest niezastąpiony wśród języków wysokopoziomowych i nie zapowiada się żeby się to zmieniło w najbliższym czasie. Ostatnia jego wersja C++17 wyszła {{ versions.Cpp.releaseDate }} po trzyletniej przerwie. C++20 jest kolejną planowaną wersją, więc prawdopodobnie zobaczymy ją w 2020 roku.
 
 # Najlepsze książki do nauki {{ page.title }}
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):

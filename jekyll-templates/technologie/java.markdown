@@ -62,7 +62,9 @@ Języki skryptowe i szybkie rozwiązania są dobre do prototypowania. Gdy tworzo
 
 # Przyszłość języka
 
-Programiści Javy mają duże zapotrzebowanie na rynku ze względu na jej popularność. Jest jednym z najbardziej opłacalnych oraz najbardziej pożądanych języków. **Java** cały czas jest rozwijana i ulepszana, aby utrzymać się na rynku. Ostatnia wersja **Java** SE 9 została wydana 21 września 2017 roku, a niecały miesiąc później poleciała pierwsza łatka 9.0.1. Pokazuje to, że Java nadal prężnie się rozwija, mimo, że powstała w 1995 roku. Często krytykowano ten język i wiele języków próbowało zastąpić Jave, jednak wyszła z tego zwycięsko. W kolejnych latach **Java** raczej nigdzie się nie wybiera i będzie kontynuować swoją dominacje.
+{% assign versions = site.data.languagesVersions %}
+
+Programiści Javy mają duże zapotrzebowanie na rynku ze względu na jej popularność. Jest jednym z najbardziej opłacalnych oraz najbardziej pożądanych języków. **Java** cały czas jest rozwijana i ulepszana, aby utrzymać się na rynku. Jej ostatnia wersja {{ versions.Java.version }} została wydana {{ versions.Java.releaseDate }}. Pokazuje to, że Java nadal prężnie się rozwija, mimo, że powstała w 1995 roku. Często krytykowano ten język i wiele języków próbowało zastąpić Jave, jednak wyszła z tego zwycięsko. W kolejnych latach **Java** raczej nigdzie się nie wybiera i będzie kontynuować swoją dominacje.
 
 # Najlepsze książki do nauki {{ page.title }}
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
