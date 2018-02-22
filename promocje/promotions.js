@@ -1,8 +1,8 @@
 const promotion = {
-  start: new Date('2018-02-21'),
-  end: new Date('2018-02-21'),
-  number: 4490,
-  discount: '-30% (-50% ebooki) na książki w kategorii Java',
+  start: new Date('2018-02-22'),
+  end: new Date('2018-02-22'),
+  number: 4491,
+  discount: '-30% (-50% ebooki) na książki w kategorii C#',
   host: 'helion.pl',
   img: true,
 };
