@@ -1,8 +1,8 @@
 const promotion = {
-  start: new Date('2018-02-23'),
-  end: new Date('2018-02-23'),
-  number: 4492,
-  discount: '-30% (-50% ebooki) na książki w kategorii Python',
+  start: new Date('2018-02-24'),
+  end: new Date('2018-02-24'),
+  number: 4493,
+  discount: '-30% (-50% ebooki) na książki w kategorii PHP',
   host: 'helion.pl',
   img: true,
 };
