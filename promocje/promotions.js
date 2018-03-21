@@ -1,8 +1,8 @@
 const promotion = {
-  start: new Date('2018-02-25'),
-  end: new Date('2018-02-25'),
-  number: 4494,
-  discount: '-30% (-50% ebooki) na książki w kategorii C++',
+  start: new Date('2018-03-20'),
+  end: new Date('2018-03-23'),
+  number: 'promocja-3za2',
+  discount: '3 książki w cenie 2',
   host: 'helion.pl',
   img: true,
 };
@@ -10,7 +10,7 @@ const promotion = {
 const customMessage = '';
 const promotionURL = new URL(`http://${promotion.host}/page/9102Q/promocja/${promotion.number}`);
 
-let promotionAdText = `Na ${promotionURL.hostname} jest <a href="${promotionURL}" target="_blank">promocja</a> ${promotion.discount}. Tylko dziś! Zobacz książki, które warto kupić.`;
+let promotionAdText = `Na ${promotionURL.hostname} jest <a href="${promotionURL}" target="_blank">promocja</a> ${promotion.discount}. Zobacz książki, które warto kupić.`;
 
 if (isPromotionActive()) {
   if (customMessage !== '') {
