@@ -1,14 +1,13 @@
 {
   "name": "jaki-jezyk-programowania",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Website that helps choose a programming language for begginers.",
   "main": "",
   "scripts": {
     "build": "webpack",
-    "build:w": "webpack --watch",
-    "build:p": "webpack -p",
-    "serve": "webpack-dev-server",
-    "lint": "eslint"
+    "build:w": "webpack --watch --mode development",
+    "build:p": "webpack -p --mode production",
+    "serve": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -26,25 +25,26 @@
   "homepage": "https://github.com/C0deboy/jaki-jezyk-programowania#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.18.12",
-    "browser-sync-webpack-plugin": "^1.2.0",
-    "css-loader": "^0.28.7",
-    "eslint": "^4.12.1",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "style-loader": "^0.19.0",
-    "uglifyjs-webpack-plugin": "^1.1.1",
-    "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.5"
+    "eslint-plugin-import": "^2.9.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "style-loader": "^0.20.3",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
     "highlight.js": "^9.11.0",
-    "jquery": "^3.2.1",
+    "jquery": "^3.3.1",
     "mattboldt.typed.js": "^1.1.4"
   }
 }

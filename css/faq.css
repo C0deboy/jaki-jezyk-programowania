@@ -1,5 +1,4 @@
 .faq {
-  background: linear-gradient(#09455d,#144667);
   padding: 40px 0 3% 0;
 }
 
@@ -11,7 +10,7 @@
 }
 
 .answer {
-  background-color: #032f46;
+  background-color: #00353e;
   display: none;
   padding: 4%;
   border-top: solid 3px #000000;

@@ -21,12 +21,14 @@ module.exports = {
     filename: '[name]',
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        loader: 'babel-loader',
-        query: {
-          presets: [['es2015']],
+        use: {
+          loader: 'babel-loader',
+          query: {
+            presets: [['env']],
+          },
         },
       },
       {

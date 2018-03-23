@@ -79,14 +79,14 @@ header .text-muted a {
   background: -webkit-linear-gradient(to bottom,#de3e3e,#981313);
   background: #AA3939 linear-gradient(to bottom,#de3e3e,#981313);
   border-radius: 5px;
-  box-shadow: 0 2px 6px 0 black;
+  box-shadow: 0 2px 4px 0 #111111;
   margin: 15px auto 40px;
 }
 
 .btn.btn-danger.start:hover,
 .btn.btn-danger.start:focus{
   transform: translateY(-1px);
-  box-shadow: 0 3px 10px 0 black;
+  box-shadow: 0 2px 8px 0 #141414;
 }
 
 .btn.btn-danger.start:active {

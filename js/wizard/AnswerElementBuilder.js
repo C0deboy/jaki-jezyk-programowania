@@ -53,18 +53,15 @@ function escaped(e) {
   return e.toLowerCase().replace(/[-]/g, '').replace('#', 'sharp');
 }
 
-let previousColor;
-
 function markAnswer() {
-  previousColor = $(this).children('p').css('background-color');
   $(this).children('img').addClass('jumpImg');
-  $(this).children('p').css('background-color', '#0a5677');
+  $(this).children('p').addClass('answer-p-hover');
   $(this).children('.shade').addClass('shadeImg');
 }
 
 function unmarkAnswer() {
   $(this).children('img').removeClass('jumpImg');
-  $(this).children('p').css('background-color', previousColor);
+  $(this).children('p').removeClass('answer-p-hover');
   $(this).children('.shade').removeClass('shadeImg');
 }
 

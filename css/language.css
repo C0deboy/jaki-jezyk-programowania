@@ -25,7 +25,7 @@ section {
 
 .language-content {
   width: 100%;
-  background-color: #0a455e;
+  background-color: #003e48;
   box-shadow: 0 2px 4px 0 black;
   padding: 0 5% 40px;
   margin-top: 30px;
@@ -56,8 +56,7 @@ section {
 }
 
 .language-content .language-logo {
-  background: -webkit-linear-gradient(to right bottom, #076187, #0a455e);
-  background: linear-gradient(to right bottom, #076187, #0a455e);
+  background: #00353e;
   box-shadow: 2px 3px 8px 0 black;
   border-radius: 50%;
   width: 250px;
@@ -107,7 +106,7 @@ section {
 
 .language-content table td {
   text-align: left;
-  background: #01213a4a;
+  background: #00353e;
   box-shadow: 0 0 1px 0 #000000ab;
   padding: 0 10px;
 }
@@ -257,7 +256,7 @@ section {
 
 .book-of-a-day {
   display: inline-block;
-  background: #103f57;
+  background: #00353e;
   -webkit-box-shadow: 10px 10px 33px -15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 33px -15px rgba(0, 0, 0, 0.75);
   box-shadow: 0 1px 4px 0 black;
@@ -286,7 +285,7 @@ section {
 }
 
 .promotions-link {
-  background: #22303a;
+  background: #00353e;
   margin: 15px auto 25px;
   padding: 5px 5px;
   display: inline-block;
