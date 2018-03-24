@@ -1,4 +1,30 @@
+
+{% case page.title %}
+  {% when "C++" %}
+  {% assign extension = ".cc lub .cpp" %}
+  {% when "Java" %}
+  {% assign extension = ".java" %}
+  {% when "JavaScript" %}
+  {% assign extension = ".js" %}
+  {% when "PHP" %}
+  {% assign extension = ".php" %}
+  {% when "Ruby" %}
+  {% assign extension = ".rb" %}
+  {% when "C" %}
+  {% assign extension = ".c" %}
+  {% when "R" %}
+  {% assign extension = ".R" %}
+  {% when "C#" %}
+  {% assign extension = ".cs" %}
+  {% when "Swift" %}
+  {% assign extension = ".swift" %}
+  {% when "Python" %}
+  {% assign extension = ".py" %}
+{% endcase %}
+
 <h2>Top 10 projektów na Github wykorzystujących {{ page.title }}</h2>
+
+<p>Github to system kontroli wersji. Możesz znaleźć tam projekty open source w każdej technologii. Zobacz jakiego typu tworzone są projekty za pomocą {{ page.title }} oraz jak wygląda {{ page.title }} od strony kodu. Zwróć uwagę na pliki z rozszerzeniem {{ extension }}.</p>
 
 <table>
 {% for project in stats.Github.top10 %}
