@@ -1,4 +1,14 @@
 $(() => {
+
+  $('.typed-languages').typed({
+    strings: [
+      'JavaScript?', 'Python?', 'Java?', 'C#?', 'PHP?', 'C++?', 'Swift?', 'Ruby?', 'C?', 'R?',
+    ],
+    typeSpeed: 40,
+    loop: true,
+    backSpeed: 40,
+  });
+
   const javascript = document.querySelector('.language-javascript').innerHTML;
   const cpp = document.querySelector('.language-cpp').innerHTML;
   const php = document.querySelector('.language-php').innerHTML;
@@ -29,7 +39,6 @@ $(() => {
   const scrollTerminal = document.querySelector('.screen');
 
   function ScrollTerminal() {
-  // eslint-disable-next-line max-len
     if (scrollTerminal.scrollTop < ((scrollTerminal.scrollHeight - scrollTerminal.offsetHeight) + 100)) {
       scrollTerminal.scrollTop = scrollTerminal.scrollHeight;
     }
