@@ -4,7 +4,7 @@ const promotion = {
   number: '4727',
   discount: '-50%',
   host: 'helion.pl',
-  img: false,
+  img: true,
 };
 
 const customMessage = '';
