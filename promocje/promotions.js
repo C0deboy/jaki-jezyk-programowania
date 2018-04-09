@@ -1,16 +1,16 @@
 const promotion = {
   start: new Date('2018-03-20'),
   end: new Date('2018-03-23'),
-  number: 'promocja-3za2',
-  discount: '3 książki w cenie 2',
+  number: '4727',
+  discount: '-50%',
   host: 'helion.pl',
-  img: true,
+  img: false,
 };
 
 const customMessage = '';
 const promotionURL = new URL(`http://${promotion.host}/page/9102Q/promocja/${promotion.number}`);
 
-let promotionAdText = `Na ${promotionURL.hostname} jest <a href="${promotionURL}" target="_blank">promocja</a> ${promotion.discount}. Zobacz książki, które warto kupić.`;
+let promotionAdText = `Na ${promotionURL.hostname} jest <a href="${promotionURL}" target="_blank">promocja</a> ${promotion.discount} na wybrane ksiązki. Zobacz książki, które warto kupić.`;
 
 if (isPromotionActive()) {
   if (customMessage !== '') {
