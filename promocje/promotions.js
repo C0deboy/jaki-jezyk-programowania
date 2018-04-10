@@ -1,7 +1,7 @@
 const promotion = {
   start: new Date('2018-04-09'),
   end: new Date('2018-04-14'),
-  number: '4727',
+  number: '4728',
   discount: '-50%',
   host: 'helion.pl',
   img: true,
@@ -10,7 +10,7 @@ const promotion = {
 const customMessage = '';
 const promotionURL = new URL(`http://${promotion.host}/page/9102Q/promocja/${promotion.number}`);
 
-let promotionAdText = `Na ${promotionURL.hostname} jest <a href="${promotionURL}" target="_blank">promocja</a> ${promotion.discount} na wybrane ksiązki. Zobacz książki, które warto kupić.`;
+let promotionAdText = `Na ${promotionURL.hostname} jest <a href="${promotionURL}" target="_blank">promocja</a> ${promotion.discount} na "Zaprojektuj i zbuduj witrynę WWW. Podręcznik Front End Developera".`;
 
 if (isPromotionActive()) {
   if (customMessage !== '') {
