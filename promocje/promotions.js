@@ -1,8 +1,8 @@
 const promotion = {
-  start: new Date('2018-04-13'),
-  end: new Date('2018-04-13'),
-  number: '4731',
-  discount: '-50%',
+  start: new Date('2018-04-23'),
+  end: new Date('2018-04-25'),
+  number: '4812',
+  discount: '2 książki w cenie 1',
   host: 'helion.pl',
   img: true,
 };
@@ -10,7 +10,7 @@ const promotion = {
 const customMessage = '';
 const promotionURL = new URL(`http://${promotion.host}/page/9102Q/promocja/${promotion.number}`);
 
-let promotionAdText = `Na ${promotionURL.hostname} jest <a href="${promotionURL}" target="_blank">promocja</a> ${promotion.discount} na "Wzorce projektowe. Elementy oprogramowania obiektowego wielokrotnego użytku".`;
+let promotionAdText = `Na ${promotionURL.hostname} jest <a href="${promotionURL}" target="_blank">promocja</a> ${promotion.discount}. Zobacz książki, które warto kupić.".`;
 
 if (isPromotionActive()) {
   if (customMessage !== '') {
