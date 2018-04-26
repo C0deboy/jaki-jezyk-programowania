@@ -10,7 +10,7 @@ const promotion = {
 const customMessage = '';
 const promotionURL = new URL(`http://${promotion.host}/page/9102Q/promocja/${promotion.number}`);
 
-let promotionAdText = `Na ${promotionURL.hostname} jest <a href="${promotionURL}" target="_blank">promocja</a> ${promotion.discount}. Zobacz książki, które warto kupić.".`;
+let promotionAdText = `Na ${promotionURL.hostname} jest <a href="${promotionURL}" target="_blank">promocja</a> ${promotion.discount}. Zobacz książki, które warto kupić.`;
 
 if (isPromotionActive()) {
   if (customMessage !== '') {
