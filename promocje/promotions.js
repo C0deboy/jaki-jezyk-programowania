@@ -1,6 +1,6 @@
 const promotion = {
   start: new Date('2018-04-23'),
-  end: new Date('2018-04-25'),
+  end: new Date('2018-04-26'),
   number: '4812',
   discount: '2 książki w cenie 1',
   host: 'helion.pl',
