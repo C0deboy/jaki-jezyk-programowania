@@ -1,6 +1,6 @@
 html, body {
   font-family: 'Lato', sans-serif;
-  font-size: calc( 13px + (25 - 15) * ( (100vw - 320px) / ( 1920 - 320) ));
+  font-size: calc(14px + 5 * ((100vw - 320px) / 1600));
   width: 100%;
   min-height: 100%;
   color: #fff;

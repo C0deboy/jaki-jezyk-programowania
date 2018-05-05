@@ -2,7 +2,6 @@ html, body {
   color: white;
   background: -webkit-linear-gradient(#f8f8f8, #d6d6d6);
   background: linear-gradient(#f8f8f8, #d6d6d6) no-repeat fixed;
-  font-size: 1.1em;
 }
 
 @media (max-width: 768px) {
@@ -119,6 +118,7 @@ section {
 .language-content table td:last-of-type,
 .language-content table td:first-of-type {
   text-align: right;
+  white-space: nowrap;
 }
 
 .language-logo img {

@@ -2,18 +2,14 @@
   width: 100%;
   z-index: 999;
   font-size: .7em;
-  background-color: #ba2828;
+  background: inherit;
   color: #fff;
   display: flex;
   text-align: center;
   align-items: center;
   justify-items: center;
-}
-
-.cookies-info {
   position: fixed;
   bottom: 0;
-  background: #18455f;
   box-shadow: 0 0 4px 0px black;
  }
 
