@@ -1,7 +1,7 @@
 const promotion = {
-  start: new Date('2018-04-23'),
-  end: new Date('2018-04-26'),
-  number: '4812',
+  start: new Date('2018-05-15'),
+  end: new Date('2018-05-20'),
+  number: '4894',
   discount: '2 książki w cenie 1',
   host: 'helion.pl',
   img: true,
@@ -10,7 +10,7 @@ const promotion = {
 const customMessage = '';
 const promotionURL = new URL(`http://${promotion.host}/page/9102Q/promocja/${promotion.number}`);
 
-let promotionAdText = `Na ${promotionURL.hostname} jest <a href="${promotionURL}" target="_blank">promocja</a> ${promotion.discount}. Zobacz książki, które warto kupić.`;
+let promotionAdText = `Helion wydał nową książkę Roberta C.Martina, można ją kupić <a href="${promotionURL}" target="_blank">w zestawie</a> ze zniżką do 60%.`;
 
 if (isPromotionActive()) {
   if (customMessage !== '') {
