@@ -1,8 +1,7 @@
 const promotion = {
   start: new Date('2018-05-15'),
   end: new Date('2018-05-20'),
-  number: '4894',
-  discount: '2 książki w cenie 1',
+  number: '4900',
   host: 'helion.pl',
   img: true,
 };
@@ -10,7 +9,7 @@ const promotion = {
 const customMessage = '';
 const promotionURL = new URL(`http://${promotion.host}/page/9102Q/promocja/${promotion.number}`);
 
-let promotionAdText = `Helion wydał nową książkę Roberta C.Martina, można ją kupić <a href="${promotionURL}" target="_blank">w zestawie</a> ze zniżką do 60%.`;
+let promotionAdText = `W Helion trwa <a href="${promotionURL}" target="_blank">promocja</a> -60% na ebooki (papier -25%). Zobacz książki, które warto kupić.`;
 
 if (isPromotionActive()) {
   if (customMessage !== '') {
