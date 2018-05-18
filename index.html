@@ -2,22 +2,27 @@
 <html lang="pl">
 <head>
 
+  <head>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"
-        content="Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jaki język wybrać/od jakiego rozpocząć naukę? Zajrzyj!">
+  <meta name="description" content="Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jaki język wybrać/od jakiego rozpocząć naukę? Zajrzyj!">
+  <meta name="author" content="">
 
   <meta name="theme-color" content="#0376a5">
   <meta name="msapplication-navbutton-color" content="#0376a5">
   <meta name="apple-mobile-web-app-status-bar-style" content="#0376a5">
-
-  <title>Jaki język programowania wybrać?</title>
+  
+  <title> Jaki język programowania wybrać?</title>
 
   <link rel="shortcut icon" href="/img/logo/logo.ico">
-
   <link rel="stylesheet" href="/dist/global.bundle.css">
+
+</head>
+
   <link rel="stylesheet" href="/dist/home.bundle.css">
+  <link rel="stylesheet" href="/dist/technologies-list.css">
 
   <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
@@ -32,6 +37,7 @@
         Menu
         <i class="fa fa-bars" aria-hidden="true"></i>
       </button>
+      <a class="navbar-brand page-scroll" href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
     </div>
 
     <nav id="site-nav" class="collapse navbar-collapse">
@@ -39,12 +45,12 @@
 
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a class="page-scroll program-languages-btn" href="#technologie">
+          <a class="page-scroll program-languages-btn" href="/#technologie">
             Technologie
           </a>
         </li>
         <li>
-          <a class="page-scroll about-project-btn" href="#o-projekcie">
+          <a class="page-scroll about-project-btn" href="/#o-projekcie">
             O projekcie
           </a>
         </li>
@@ -67,6 +73,7 @@
     </nav>
   </div>
 </div>
+
 
 <header id="intro" class="site-header container-fluid">
   <div class="row header-row">
@@ -511,12 +518,6 @@
   <button class="close-cookies-info"><i class="fa fa-times fa-2x close-form"></i></button>
 </div>
 
-<footer class="site-footer">
-  <small class="copyright">
-    Copyright &copy; jaki-jezyk-programowania.pl 2017-2018
-  </small>
-</footer>
-
 <pre hidden><code class="language-javascript">//Javascript
 function binarySearch(A, x) {
   let start = 0;
@@ -815,10 +816,18 @@ print(paste("Znaleziono ", x, " na pozycji ", foundXAt));
 </code>
 </pre>
 
+<footer>
+  <div class="container">
+    <p>Copyright &copy; jaki-jezyk-programowania.pl 2017-2018</p>
+  </div>
+</footer>
+
 <script src="/libs/jquery.min.js"></script>
 <script src="/dist/global.bundle.js"></script>
+
+
 <script src="/promocje/promotions.js"></script>
-<script src="/highlight/highlight.pack.js"></script>
+<script src="/libs/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script src="/dist/home.bundle.js"></script>
 </body>
