@@ -1,0 +1,105 @@
+
+Git:
+  title: Książka dzięki której nauczysz się systemu kontroli wersji Git
+  books:
+    - gitroz
+
+Czysty kod i agile:
+  title: Najlepsze książki o dobrych praktykach, czystym kodzie i agile
+  books:
+  - Nowa książa C. Martina:
+    - czarch
+  - Klasyki:
+    - czykov
+    - prorze
+    - pragpv
+    - mckkod
+  - Inne:
+    - koddov
+  - Agile:
+    - zwisam
+
+Wzorce projektowe:
+  title: Najlepsze książki o wzorcach projektowych
+  books:
+    - Klasyk bandy czworga. Najlepsza o wzorcach projektowych. (Przykłady w C++, ale wiedza dla każdego):
+      - wzoelv
+    - (Przykłady w Javie):
+      - wzorvv
+      - wzoimp
+
+
+Język angielski w IT:
+  title: Książka dla programistów dzięki której poprawisz swój angielski
+  books:
+    - anginf
+
+Dla najmłodszych:
+  title: Najlepsze książki do rozpoczęcia nauki programowania dla dziecka
+  books:
+    - Scratch:
+      - scrabt
+      - a_03cg
+      - scrakp
+    - Python:
+      - hellow
+      - a_03ch
+      - a_03ca
+    - Javascript:
+      - a_0352
+
+Algorytmy:
+  title: Najlepsze książki o algorytmach
+  books:
+    - algoip
+    - algory
+    - algbet
+
+Bezpieczeństwo:
+  title: Najlepsze książki o bezpieczeństwie systemów
+  books:
+    - tespen
+    - splasi
+    - besyha
+    - podpen
+    - kalil2
+    - wykreg
+    - jowozr
+
+Testowanie oprogramowania:
+  title: Najlepsze książki o testowaniu oprogramowania
+  books:
+    - tddszt
+    - seler2
+    - tesjed
+
+Domain driven design:
+  title: Najlepsze książki o Domain-driven Design
+  books:
+    - dddaro
+    - domdri
+
+Produktywność i samodyscyplina:
+  title: Najlepsze książki o produktywności i samodyscyplinie
+  books:
+    - getti2
+    - samodv
+    - 15taza
+    - nietlv
+    - droppp
+
+Refaktoryzacja:
+  title: Najlepsze książki o refaktoryzacji
+  books:
+    - refukv
+    - refawp
+    - prazav
+
+Startupy:
+  title: Najlepsze książki o start-upach
+  books:
+    - melean
+    - pispri
+    - podsta
+    - prasta
+    - nisbud

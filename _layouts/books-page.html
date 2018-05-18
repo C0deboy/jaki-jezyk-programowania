@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+{% assign category = site.data.books_by_category[page.books-category] %}
+
+<h1>{{ category.title }}</h1>
+
+<h2>od wydawnictwa <a href="https://helion.pl/view/9102Q">Helion</a></h2>
+
+{% include promotion.html %}
+
+<br>
+
+{% for book in category.books %}
+
+  {% if book.first %}
+
+    {% for group in book %}
+
+      <p>{{ group[0] }}</p>
+
+      {% for bookId in group[1] %}
+      <div class="book">
+        <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id={{ bookId }}&nr=9102Q&size=181&utf8=1"></script>
+      </div>
+      {% endfor %}
+    {% endfor %}
+
+  {% else %}
+  <div class="book">
+    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id={{ book }}&nr=9102Q&size=181&utf8=1"></script>
+  </div>
+  {% endif %}
+{% endfor %}
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+{% include head.html %}
+
+<link rel="stylesheet" href="/dist/language.css">
+
+<body>
+
+	{% include language-nav.html %}
+
+	<section>
+
+		<div class="language-content">
+
+			{% include header.html %}
+
+			{{ content }}
+
+		</div>
+
+	</section>
+
+	{% include footer.html %}
+
+	<script src="/promocje/promotions.js"></script>
+
+</body>
+
+</html>

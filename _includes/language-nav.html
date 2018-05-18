@@ -1,0 +1,26 @@
+<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Rozwiń menu</span> Menu <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand page-scroll" href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
+        </div>
+        <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <a class="page-scroll use-btn" href="#zastosowanie">Zastosowanie</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll difficulty-btn" href="#poziom-skomplikowania">Trudność</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll popularity-btn" href="#popularność">Popularność i Przyszłość</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll popularity-btn" href="#najlepsze-książki-do-nauki-{{ page.title | downcase | replace: '#', 'sharp'}}">Książki</a>
+                  </li>
+              </ul>
+          </div>
+    </div>
+</nav>

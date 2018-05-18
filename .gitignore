@@ -1,6 +1,8 @@
 .idea
 node_modules
 npm-debug.log
-/jekyll-templates/_site/
-/jekyll-templates/_data/scrap-data.bat
-/jekyll-templates/_data/stats-scraper-1.0.0.jar
+_site
+_data/scrap-data.bat
+_data/stats-scraper-1.0.0.jar
+libs
+dist
