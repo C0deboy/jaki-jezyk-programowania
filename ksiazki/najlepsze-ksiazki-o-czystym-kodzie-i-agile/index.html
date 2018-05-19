@@ -25,13 +25,51 @@
 
 <body>
 
-<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-    <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand page-scroll" href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
-        </div>
+<div class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" id="navbar-toggle-btn" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav"
+              aria-expanded="false" aria-controls="site-nav">
+        Menu
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <a class="navbar-brand page-scroll" href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
     </div>
-</nav>
+
+    <nav id="site-nav" class="collapse navbar-collapse">
+      <h2 class="visually-hidden">Nawigacja</h2>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a class="page-scroll program-languages-btn" href="/#technologie">
+            Technologie
+          </a>
+        </li>
+        <li>
+          <a class="page-scroll about-project-btn" href="/#o-projekcie">
+            O projekcie
+          </a>
+        </li>
+        <li>
+          <a class="page-scroll books-btn" href="/ksiazki/">
+            Książki
+          </a>
+        </li>
+        <li>
+          <a class="page-scroll faq-btn" href="/faq/">
+            FAQ
+          </a>
+        </li>
+        <li>
+          <a class="page-scroll blog-btn" href="https://devcave.pl/">
+            Mój blog
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
 
 <section>
 
@@ -48,30 +86,12 @@
 </div>
 
 
-<br>
-
-
-
-  
-
-    
-
-      <p>Nowa książa C. Martina</p>
+<br><p>Nowa książa C. Martina</p>
 
       
       <div class="book">
         <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=czarch&nr=9102Q&size=181&utf8=1"></script>
       </div>
-      
-    
-
-  
-
-
-  
-
-    
-
       <p>Klasyki</p>
 
       
@@ -90,32 +110,12 @@
       <div class="book">
         <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=mckkod&nr=9102Q&size=181&utf8=1"></script>
       </div>
-      
-    
-
-  
-
-
-  
-
-    
-
       <p>Inne</p>
 
       
       <div class="book">
         <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=koddov&nr=9102Q&size=181&utf8=1"></script>
       </div>
-      
-    
-
-  
-
-
-  
-
-    
-
       <p>Agile</p>
 
       
@@ -123,13 +123,6 @@
         <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=zwisam&nr=9102Q&size=181&utf8=1"></script>
       </div>
       
-    
-
-  
-
-
-
-
 
   </div>
 
@@ -141,11 +134,10 @@
   </div>
 </footer>
 
-<script src="/libs/jquery.min.js"></script>
 <script src="/dist/global.bundle.js"></script>
 
 
-<script src="/promocje/promotions.js"></script>
+<script src="/promotion/promotion.js"></script>
 
 </body>
 </html>
