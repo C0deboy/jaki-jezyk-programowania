@@ -39,20 +39,4 @@ Popularność w dziedzinach analizowania danych, statystyki, data science czy bi
 
 {% include promotion.html %}
 
-<div class="book">
-    <script src="http://helion.pl/plugins/new/ksiazkasm.phi?id=jezrko&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=anasta&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=umapro&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-Data science (nauka o danych) (większość przykładów w arkuszu kalkulacyjnym):
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=mianda&nr=9102Q&size=181&utf8=1"></script>
-</div>
+{% include books.html %}

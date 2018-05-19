@@ -47,18 +47,4 @@ Swift dopiero się rozwija, ale udaje mu się wyprzeć Objective-C. Dlatego zapo
 
 {% include promotion.html %}
 
-Swift jest jeszcze nieco młody - nie ma dużo książek do wyboru. Aktualna i dobra pozycja to:
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=pswfdp&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-Po za tym dostępne są jeszcze dwie:
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=swifpk&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=pjswif&nr=9102Q&size=181&utf8=1"></script>
-</div>
+{% include books.html %}

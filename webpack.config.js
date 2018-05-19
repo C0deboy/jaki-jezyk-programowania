@@ -49,8 +49,9 @@ module.exports = {
     new ExtractTextPlugin('[name]'),
     new BrowserSyncPlugin({
       host: 'localhost',
+      proxy: 'http://localhost:4000',
       port: 8080,
-      server: { baseDir: path.resolve(__dirname, '') },
+      files: ['_site'],
     }),
   ],
   devServer: {

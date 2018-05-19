@@ -42,20 +42,4 @@ A kolejne na liście są:
 
 {% include promotion.html %}
 
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=une24g&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=unreng&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-Projektowanie gier:
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=prgpo2&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=wprofi&nr=9102Q&size=181&utf8=1"></script>
-</div>
+{% include books.html %}

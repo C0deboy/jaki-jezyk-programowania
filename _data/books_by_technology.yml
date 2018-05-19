@@ -1,0 +1,221 @@
+
+Angular:
+  books:
+    - ang2ty
+    - angupk
+    - angupt
+    - pnasab
+
+C++:
+  books:
+    - '':
+      - cppri6
+      - jcppkw
+      - cppppo
+    - Oraz najnowszy następca popularnej Symfonii C++:
+      - ocpp11
+    - Najlepsza książka o wzorcach projektowych z przykładami w C++:
+      - wzoelv
+    - Inne warte uwagi:
+      - cpbsp2
+
+C:
+  books:
+    - '':
+      - jcszp6
+      - jansic
+    - Mikrokontrolery:
+      - jcmika
+      - jcmikr
+    - Inne warte uwagi:
+      - cpbsp2
+
+'C#':
+  books:
+    - ch7lek
+    - cshpk3
+    - c6pig6
+    - cshru3
+
+Django:
+  books:
+    - '':
+      - djptas
+    - Pythod + Django + TDD (Test Driven Development):
+      - tddwpr
+
+HTML i CSS:
+  books:
+    - '':
+      - htcsww
+      - cssnp4
+      - htm5n2
+    - Do nauki Bootstrap:
+      - boot24
+      - bootst
+      - bootgr
+      - bootpp
+    - Sass i less:
+      - sasspp
+      - lesspp
+    - Pozycjonowanie stron (SEO):
+      - nagoog
+      - seowit
+      - seodka
+
+Java:
+  books:
+    - '':
+      - javp10
+      - javpp6
+      - javkp9
+    - Po bardziej zaawansowane rzeczy sięgnij tutaj:
+      - javtzx
+      - jave2v
+      - javapf
+      - jav8pd
+      - wzorvv
+    - Dotyczące testowania i refaktoryzacji:
+      - tddpro
+      - refukv
+
+JavaScript:
+  books:
+    - '':
+      - jsqwdk
+      - ecmasc
+      - jascpz
+      - efprjs
+      - jscmoc
+      - prjsrg
+    - Oraz cała seria:
+      - tjndro
+      - tajnjs
+      - tajejs
+      - tjsasy
+      - tjtypy
+      - tjszak
+    - JQuery:
+      - bjqswp
+      - jquer3
+    - O OOP i wzorcach projektowych:
+      - jascwz
+      - misjsp
+
+Jekyll:
+  books:
+    - jazabl
+    - prblog
+
+Node.js:
+  books:
+    - pnjsp3
+    - nodejs
+
+PHP:
+  books:
+    - '':
+      - phpob5
+      - php7pk
+      - phmdk3
+      - phpwzo
+    - Inne:
+      - twbeap
+
+Python:
+  books:
+    - '':
+      - pytdk3
+      - autopy
+      - pythip
+      - cwpyth
+      - zaprpy
+    - Data science i machine lerning (nauka o danych i uczenie maszynowe):
+      - pypod2
+      - zaaucz
+      - pythum
+    - Robotyka:
+      - naropy
+    - Bardziej zaawansowane:
+      - prprpe
+      - tddwpr
+
+R:
+  books:
+    - '':
+      - jezrko
+      - anasta
+      - umapro
+    - Data science (nauka o danych) (większość przykładów w arkuszu kalkulacyjnym):
+      - mianda
+
+React:
+  books:
+    - reactz
+    - reacwd
+
+Ruby:
+  books:
+    - Ruby ma wyjątkowo mało polskich, aktualnych książek. Można rozważyć tylko te 2 pozycje:
+      - rubprp
+      - a_03cd
+
+Ruby on Rails:
+  books:
+    - Z polskich książek jest niewielki wybór, mamy tylko jedną pozycję:
+      - rrtwww
+
+Scratch:
+  books:
+    - Scratch:
+      - scrabt
+      - a_03cg
+      - scrakp
+    - Python:
+      - hellow
+      - a_03ch
+      - a_03ca
+    - Javascript:
+      - a_0352
+
+Spring:
+  books:
+    - spfrwp
+    - sprimv
+    - sprwa4
+
+SQL:
+  books:
+    - '':
+      - missql
+      - sqldkp
+      - jsqlp2
+      - sqlsts
+    - PHP + SQL:
+      - phmdk3
+      - phmsv5
+      - phmyj4
+
+Swift:
+  books:
+    - Swift jest jeszcze nieco młody - nie ma dużo książek do wyboru. Aktualna i dobra pozycja to:
+      - pswfdp
+    - Po za tym dostępne są jeszcze dwie:
+      - swifpk
+      - pjswif
+
+Unity:
+  books:
+    - uniwak
+    - unippg
+
+Unreal Engine 4:
+  books:
+    - une24g
+    - unreng
+
+WordPress:
+  books:
+    - '':
+      - wopr4i
+      - jowozr

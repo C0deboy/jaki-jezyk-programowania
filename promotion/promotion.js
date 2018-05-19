@@ -6,10 +6,11 @@ const promotion = {
   img: true,
 };
 
-const customMessage = '';
 const promotionURL = new URL(`http://${promotion.host}/page/9102Q/promocja/${promotion.number}`);
 
 let promotionAdText = `W Helion trwa <a href="${promotionURL}" target="_blank">promocja</a> -60% na ebooki (papier -25%). Zobacz książki, które warto kupić.`;
+
+const customMessage = '';
 
 if (isPromotionActive()) {
   if (customMessage !== '') {
@@ -17,7 +18,9 @@ if (isPromotionActive()) {
   } else {
     createPromotionAd();
   }
-  createPromotionMessagePopup();
+  if (window.location.pathname === '/') {
+    createPromotionMessagePopup();
+  }
 }
 
 modifyBookButtons();
@@ -73,7 +76,7 @@ function createPromotionAd() {
     }
     promotionLink.innerHTML = 'Promocja ' + to;
     if (promotion.img) {
-      promotionLink.innerHTML += '<br> <img src="/promocje/promotion.png"/>';
+      promotionLink.innerHTML += '<br> <img src="/promotion/promotion.png"/>';
     }
   }
   changeBookLinksHost();

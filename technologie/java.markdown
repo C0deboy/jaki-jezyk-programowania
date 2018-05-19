@@ -71,46 +71,4 @@ Programiści Javy mają duże zapotrzebowanie na rynku ze względu na jej popula
 
 {% include promotion.html %}
 
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=javp10&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=javpp6&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=javkp9&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-Po bardziej zaawansowane rzeczy sięgnij tutaj:
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=javtzx&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jave2v&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=javapf&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jav8pd&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=wzorvv&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-Dotyczące testowania i refaktoryzacji:
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=tddpro&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=refukv&nr=9102Q&size=181&utf8=1"></script>
-</div>
+{% include books.html %}

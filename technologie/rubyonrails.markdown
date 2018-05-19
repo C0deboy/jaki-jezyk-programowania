@@ -29,10 +29,4 @@ Aplikacje zbudowane na Railsach:
 
 {% include promotion.html %}
 
-<br>
-
-Z polskich książek jest niewielki wybór, mamy tylko jedną pozycję:
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=rrtwww&nr=9102Q&size=181&utf8=1"></script>
-</div>
+{% include books.html %}

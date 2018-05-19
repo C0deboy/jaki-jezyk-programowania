@@ -27,10 +27,4 @@ React odpowiedzialny jest tylko za interfejsy aplikacji. Czyli w modelu MVC (Mod
 
 {% include promotion.html %}
 
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=reactz&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=reacwd&nr=9102Q&size=181&utf8=1"></script>
-</div>
+{% include books.html %}

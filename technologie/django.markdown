@@ -22,12 +22,4 @@ Najbardziej popularne strony internetowy, które korzystają z **Django** to:
 
 {% include promotion.html %}
 
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=djptas&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-Pythod + Django + TDD (Test Driven Development)
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=tddwpr&nr=9102Q&size=181&utf8=1"></script>
-</div>
+{% include books.html %}

@@ -29,36 +29,4 @@ Jeśli uważasz, że twoje dziecko może zacząć zabawę już z prawdziwymi ję
 
 {% include promotion.html %}
 
-Scratch:
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=scrabt&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=a_03cg&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=scrakp&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-Python:
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=hellow&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=a_03ch&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=a_03ca&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-Javascript:
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=a_0352&nr=9102Q&size=181&utf8=1"></script>
-</div>
+{% include books.html %}

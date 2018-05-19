@@ -19,24 +19,4 @@ WordPress w styczniu 2017 roku był wykorzystywany przez 27.5% z 10 milionów na
 
 {% include promotion.html %}
 
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=wopr4i&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jowozr&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-Książki, które pomogą pisać lepszego bloga:
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jazabl&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=prblog&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=magslo&nr=9102Q&size=181&utf8=1"></script>
-</div>
+{% include books.html %}

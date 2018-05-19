@@ -16,14 +16,5 @@ Jego kluczowym elementem był i jest kontener wstrzykiwania zależności, ale pr
 
 {% include promotion.html %}
 
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=spfrwp&nr=9102Q&size=181&utf8=1"></script>
-</div>
 
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=sprimv&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=sprwa4&nr=9102Q&size=181&utf8=1"></script>
-</div>
+{% include books.html %}

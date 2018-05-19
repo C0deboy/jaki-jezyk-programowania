@@ -1,0 +1,23 @@
+{% assign category = site.data.books_by_technology[page.title] %}
+
+{%- for book in category.books -%}
+
+{%- if book.first -%}
+
+{%- for group in book -%}
+
+<p>{{ group[0] }}</p>
+
+{% for bookId in group[1] %}
+<div class="book">
+  <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id={{ bookId }}&nr=9102Q&size=181&utf8=1"></script>
+</div>
+{% endfor %}
+{%- endfor -%}
+
+{%- else -%}
+<div class="book">
+  <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id={{ book }}&nr=9102Q&size=181&utf8=1"></script>
+</div>
+{%- endif -%}
+{%- endfor -%}

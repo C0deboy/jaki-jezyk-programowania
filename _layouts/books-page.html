@@ -12,11 +12,11 @@ layout: default
 
 <br>
 
-{% for book in category.books %}
+{%- for book in category.books -%}
 
-  {% if book.first %}
+  {%- if book.first -%}
 
-    {% for group in book %}
+    {%- for group in book -%}
 
       <p>{{ group[0] }}</p>
 
@@ -25,13 +25,13 @@ layout: default
         <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id={{ bookId }}&nr=9102Q&size=181&utf8=1"></script>
       </div>
       {% endfor %}
-    {% endfor %}
+    {%- endfor -%}
 
-  {% else %}
+  {%- else -%}
   <div class="book">
     <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id={{ book }}&nr=9102Q&size=181&utf8=1"></script>
   </div>
-  {% endif %}
-{% endfor %}
+  {%- endif -%}
+{%- endfor -%}
 
 

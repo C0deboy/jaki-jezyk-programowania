@@ -54,32 +54,4 @@ Lata świetności C++ z 2003 roku już dawno minęły i można powiedzieć, że 
 
 {% include promotion.html %}
 
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=cppri6&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jcppkw&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=cppppo&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-Oraz najnowszy następca popularnej Symfonii C++
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=ocpp11&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-Najlepsza książka o wzorcach projektowych z przykładami w C++:
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=wzoelv&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-Inne warte uwagi:
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=cpbsp2&nr=9102Q&size=181&utf8=1"></script>
-</div>
+{% include books.html %}

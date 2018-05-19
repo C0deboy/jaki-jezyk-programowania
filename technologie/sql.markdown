@@ -19,33 +19,4 @@ Język SQL znacząco różni się od innych języków programowania, takich jak 
 
 {% include promotion.html %}
 
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=missql&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=sqldkp&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jsqlp2&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=sqlsts&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-PHP + SQL
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=phmdk3&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=phmsv5&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=phmyj4&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
+{% include books.html %}

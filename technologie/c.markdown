@@ -51,30 +51,5 @@ Język C nie wydaje się mieć daty przydatności do użycia. Język powstał po
 
 {% include promotion.html %}
 
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jcszp6&nr=9102Q&size=181&utf8=1"></script>
-</div>
+{% include books.html %}
 
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jansic&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-Mikrokontrolery:
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jcmika&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jcmikr&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-Inne:
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=zaprcn&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=cruszg&nr=9102Q&size=181&utf8=1"></script>
-</div>

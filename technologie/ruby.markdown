@@ -43,12 +43,4 @@ Przez powstanie Node.js popularność platformy Ruby on Rails delikatnie spadła
 
 {% include promotion.html %}
 
-Ruby ma wyjątkowo mało polskich, aktualnych książek. Można rozważyć tylko te 2 pozycje:
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=rubprp&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=a_03cd&nr=9102Q&size=181&utf8=1"></script>
-</div>
+{% include books.html %}

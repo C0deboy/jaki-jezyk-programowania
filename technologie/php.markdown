@@ -50,24 +50,4 @@ PHP jest dosyć starym językiem, ale jego popularność nie spada i się na to 
 
 {% include promotion.html %}
 
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=phpob5&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=php7pk&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=phmdk3&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=phpwzo&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-Inne:
-
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=twbeap&nr=9102Q&size=181&utf8=1"></script>
-</div>
+{% include books.html %}

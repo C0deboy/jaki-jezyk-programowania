@@ -32,14 +32,8 @@ Warto wspomnieć, że wspiera go [GitHub Pages](https://pages.github.com/) - ser
 
 {% include promotion.html %}
 
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jazabl&nr=9102Q&size=181&utf8=1"></script>
-</div>
 
-<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=prblog&nr=9102Q&size=181&utf8=1"></script>
-</div>
-
-<div class="book">
+  - jazabl
+  - prblog<div class="book">
     <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=magslo&nr=9102Q&size=181&utf8=1"></script>
 </div>
