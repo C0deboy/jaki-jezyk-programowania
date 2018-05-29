@@ -1,14 +1,14 @@
 const promotion = {
   start: new Date('2018-05-15'),
-  end: new Date('2018-05-20'),
-  number: '4900',
-  host: 'helion.pl',
+  end: new Date('2018-06-01'),
+  number: '4988',
+  host: 'videopoint.pl',
   img: true,
 };
 
 const promotionURL = new URL(`http://${promotion.host}/page/9102Q/promocja/${promotion.number}`);
 
-let promotionAdText = `W Helion trwa <a href="${promotionURL}" target="_blank">promocja</a> -60% na ebooki (papier -25%). Zobacz książki, które warto kupić.`;
+let promotionAdText = `W Videopoint trwa <a href="${promotionURL}" target="_blank">promocja</a> -35% na videokursy.`;
 
 const customMessage = '';
 
@@ -74,7 +74,7 @@ function createPromotionAd() {
     } else {
       to = 'tylko dziś';
     }
-    promotionLink.innerHTML = 'Promocja ' + to;
+    promotionLink.innerHTML = 'Promocja na videokursy ' + to;
     if (promotion.img) {
       promotionLink.innerHTML += '<br> <img src="/promotion/promotion.png"/>';
     }
