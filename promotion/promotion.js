@@ -1,14 +1,14 @@
 const promotion = {
   start: new Date('2018-05-15'),
-  end: new Date('2018-05-20'),
-  number: '4900',
+  end: new Date('2018-06-09'),
+  number: '3607',
   host: 'helion.pl',
   img: true,
 };
 
-const promotionURL = new URL(`http://${promotion.host}/page/9102Q/promocja/${promotion.number}`);
+const promotionURL = new URL(`http://${promotion.host}/page/9102Q/kategorie/promocja-2za1`);//  promocja/${promotion.number}`);
 
-let promotionAdText = `W Helion trwa <a href="${promotionURL}" target="_blank">promocja</a> -60% na ebooki (papier -25%). Zobacz książki, które warto kupić.`;
+let promotionAdText = `W Helion trwa <a href="${promotionURL}" target="_blank">promocja</a> 2za1 na książki z top100. Zobacz książki, które warto kupić.`;
 
 const customMessage = '';
 
@@ -74,7 +74,7 @@ function createPromotionAd() {
     } else {
       to = 'tylko dziś';
     }
-    promotionLink.innerHTML = 'Promocja ' + to;
+    promotionLink.innerHTML = 'Promocja na książki ' + to;
     if (promotion.img) {
       promotionLink.innerHTML += '<br> <img src="/promotion/promotion.png"/>';
     }
