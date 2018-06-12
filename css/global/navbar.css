@@ -108,7 +108,7 @@
   margin: 0;
 }
 
-.promotion-sign {
+.promotion-popup {
   position: absolute;
   font-size: .8em;
   display: inline-block;
@@ -125,7 +125,12 @@
   margin-left: 25px;
 }
 
-.promotion-sign:before {
+.promotion-popup button {
+  background: none;
+  border: none;
+}
+
+.promotion-popup:before {
   content: '';
   display: block;
   height: 12px;
@@ -139,7 +144,7 @@
 }
 
 @media (max-width: 768px){
-  .promotion-sign {
+  .promotion-popup {
     right: 0;
   }
 }

@@ -147,6 +147,7 @@ section {
 .lang-starter {
   padding: 1%;
   text-align: left;
+  text-align: left;
 }
 
 .lang-starter h2 {
@@ -284,19 +285,27 @@ section {
   box-shadow: 0 1px 4px 0 black;
 }
 
-.promotions-link {
-  background: #00353e;
-  margin: 15px auto 25px;
-  padding: 5px 5px;
+.promotion {
+  margin: 15px 28px 25px 28px;
   display: inline-block;
-  max-width: 95%;
-  text-align: center;
-  box-shadow: 0 0 4px 0 black;
+  max-width: 425px;
+  vertical-align: top;
 }
 
-.promotions-link img {
-  width: 400px;
-  max-height: 150px;
+.promotion-content {
+  background: #00353e;
+  padding: 5px 5px;
+  text-align: center;
+  box-shadow: 0 0 4px 0 black;
+  font-size: .9em;
+}
+
+.promotion-header {
+  font-size: 1.1em;
+}
+
+.promotion img {
+  display: block;
   max-width: 100%;
 }
 

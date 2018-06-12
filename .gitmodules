@@ -1,0 +1,3 @@
+[submodule "promotion-js"]
+	path = promotion-js
+	url = https://github.com/C0deboy/promotion-js
