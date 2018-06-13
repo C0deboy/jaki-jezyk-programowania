@@ -1,34 +1,43 @@
-const promotion = {
-  start: new Date('2018-05-15'),
-  end: new Date('2018-06-09'),
-  number: '3607',
-  host: 'helion.pl',
-  img: true,
-};
-
-const promotionURL = new URL(`http://${promotion.host}/page/9102Q/kategorie/promocja-2za1`);//  promocja/${promotion.number}`);
-
-let promotionAdText = `W Helion trwa <a href="${promotionURL}" target="_blank">promocja</a> 2za1 na książki z top100. Zobacz książki, które warto kupić.`;
+const promotions = [
+  {
+    start: new Date('2018-06-14'),
+    end: new Date('2018-06-17'),
+    number: '5060',
+    host: 'videopoint.pl',
+    img: '/promotion/p.jpg',
+    popup: true,
+    message: 'W videopoint jest duża [promocja] z okazji 3 urodzin. Wszystkie kursy za 33.33zł!',
+    adHeader: 'W videopoint jest duża [promocja]:',
+    adContent: '',
+  },
+];
 
 const customMessage = '';
 
-if (isPromotionActive()) {
-  if (customMessage !== '') {
-    promotionAdText = customMessage;
-  } else {
-    createPromotionAd();
-  }
-  if (window.location.pathname === '/') {
-    createPromotionMessagePopup();
-  }
+function appendLinkToMessage(message, url) {
+  return message.replace(/\[(.*?)]/, `<a href="${url}" target="_blank">$1</a>`);
 }
 
-modifyBookButtons();
-styleBookButtons();
-addImagesForTopList();
+promotions.forEach((promotion, i) => {
+  if (isPromotionActive(promotion)) {
+    promotion.url = new URL(`http://${promotion.host}/page/9102Q/promocja/${promotion.number}`);
 
+    promotion.message = appendLinkToMessage(promotion.message, promotion.url);
+    promotion.adHeader = appendLinkToMessage(promotion.adHeader, promotion.url);
 
-function isPromotionActive() {
+    if (customMessage !== '') {
+      promotion.message = customMessage;
+    } else {
+      showPromotionAd(promotion, i);
+    }
+
+    if (promotion.popup && localStorage.getItem('ad-closed') !== '1') {
+      createPromotionMessagePopup(promotion);
+    }
+  }
+});
+
+function isPromotionActive(promotion) {
   const currentDate = new Date();
 
   currentDate.setHours(0, 0, 0, 0);
@@ -38,102 +47,100 @@ function isPromotionActive() {
   return currentDate >= promotion.start && currentDate <= promotion.end;
 }
 
-
-function createPromotionMessagePopup() {
+function createPromotionMessagePopup(promotion) {
   const booksBtn = document.querySelector('.books-btn');
   if (booksBtn) {
-    const promotionSign = document.createElement('p');
-    promotionSign.innerHTML = promotionAdText;
-    promotionSign.classList.add('promotion-sign');
-    document.body.appendChild(promotionSign);
+    const promotionPopup = document.createElement('p');
+    const closeBtn = document.createElement('button');
+    closeBtn.classList.add('close-ad');
+    closeBtn.innerHTML = '<i class="fa fa-times"></i>';
+    closeBtn.setAttribute('title', 'Nie pokazuj');
+    closeBtn.setAttribute('data-toggle', 'tooltip');
+    closeBtn.setAttribute('data-placement', 'right');
+    closeBtn.addEventListener('click', () => closeAd(promotionPopup));
 
-    positionPromotionSign(booksBtn, promotionSign);
-    window.addEventListener('resize', () => positionPromotionSign(booksBtn, promotionSign));
+    promotionPopup.innerHTML = promotion.message;
+    promotionPopup.classList.add('promotion-popup', 'box-effect');
+    promotionPopup.appendChild(closeBtn);
+    document.body.appendChild(promotionPopup);
+    positionPromotionPopup(booksBtn, promotionPopup);
+    window.addEventListener('resize', () => positionPromotionPopup(booksBtn, promotionPopup));
   }
 }
 
-function positionPromotionSign(booksBtn, promotionSign) {
+function closeAd(ad) {
+  localStorage.setItem('ad-closed', '1');
+  ad.style.display = 'none';
+}
+
+function positionPromotionPopup(booksBtn, popup) {
   const booksBtnRect = booksBtn.getBoundingClientRect();
-  const left = (booksBtnRect.left - promotionSign.offsetWidth) + +(booksBtnRect.width / 4);
+  const left = (booksBtnRect.left - popup.offsetWidth) + +(booksBtnRect.width / 4);
 
   if (document.documentElement.clientWidth <= 768) {
-    promotionSign.style.right = '25px';
+    popup.style.right = '25px';
   } else {
-    promotionSign.style.left = left + 'px';
-    promotionSign.style.right = '';
+    popup.style.left = left + 'px';
+    popup.style.right = '';
   }
 }
 
-function createPromotionAd() {
-  const promotionLink = document.querySelector('.promotions-link');
+function getWhenEndMessage(promotion) {
+  let to;
+  if (promotion.start.valueOf() !== promotion.end.valueOf()) {
+    const currentDate = new Date();
+    currentDate.setHours(0, 0, 0, 0);
+    if (promotion.end.valueOf() === currentDate.valueOf()) {
+      to = 'Ostatni dzień promocji!'
+    } else {
+      to = `Promocja do ${promotion.end.toLocaleDateString('pl-Pl')}`;
+    }
+  } else {
+    to = 'Promocja tylko dziś!';
+  }
+  return '(' + to + ')';
+}
+
+function cloneAd(promotionLink, i) {
+  const newPromotionLink = promotionLink.cloneNode(true);
+  promotionLink.parentElement.insertBefore(newPromotionLink, promotionLink);
+  newPromotionLink.classList.add(`link-${i}`);
+  promotionLink = document.querySelector(`.promotion.link-${i}`);
+  return promotionLink;
+}
+
+function showPromotionAd(promotion, i) {
+  let promotionLink = document.querySelector('.promotion');
+
   if (promotionLink) {
-    promotionLink.href = promotionURL;
-    let to;
-    if (promotion.start.valueOf() !== promotion.end.valueOf()) {
-      to = `do ${promotion.end.toLocaleDateString('pl-Pl')}`;
-    } else {
-      to = 'tylko dziś';
+    promotion.popup = false;
+    if (i > 0) {
+      promotionLink = cloneAd(promotionLink, i);
     }
-    promotionLink.innerHTML = 'Promocja na książki ' + to;
-    if (promotion.img) {
-      promotionLink.innerHTML += '<br> <img src="/promotion/promotion.png"/>';
+    promotionLink.style.display = 'inline-block';
+
+    const header = promotionLink.querySelector('.promotion-header');
+    header.innerHTML = promotion.adHeader;
+
+    const promoDesc = promotionLink.querySelector('.promotion-content');
+
+    let desc = promotion.adContent;
+
+    if (document.title === 'devcave.pl' && promotion.url.hostname === 'helion.pl') {
+      if (desc === '') desc += '<br>';
+      desc += '<br> Zobacz książki, które warto kupić w <a href="/moja-biblioteka">mojej bibliotece</a>';
     }
-  }
-  changeBookLinksHost();
-}
+    promoDesc.innerHTML = desc;
 
-function changeBookLinksHost() {
-  document.querySelectorAll('.book a').forEach((link) => {
-    link.hostname = promotionURL.hostname;
-  });
-}
+    const imageLink = document.createElement('a');
+    imageLink.href = promotion.url.toString();
+    const img = document.createElement('img');
+    img.src = promotion.img;
 
-function modifyBookButtons() {
-  document.querySelectorAll('.helion-ksiazkasm4 a:first-of-type').forEach((link) => {
-    let host = 'helion.pl';
-
-    const nextLink = link.parentElement.querySelector('a:last-of-type');
-
-    if (isPromotionActive() && promotionURL.hostname === 'ebookpoint.pl') {
-      host = promotionURL.hostname;
-      nextLink.hostname = 'helion.pl';
-      nextLink.innerText = 'Wersja papierowa';
-    } else {
-      nextLink.style.display = 'none';
-    }
-    link.innerText = 'Kup na ' + host;
-  });
-}
-
-function styleBookButtons() {
-  document.querySelectorAll('.helion-ksiazkasm4 a').forEach((link) => {
-    link.classList.add('main-btn');
-  });
-}
-
-function addImagesForTopList() {
-  const topBooks = document.querySelector('.top-books');
-  let positionNum = 1;
-  if (topBooks) {
-    topBooks.querySelectorAll('a').forEach((a) => {
-      const bookId = a.href.replace('http://helion.pl/view/9102Q/', '').replace('.htm', '');
-      const book = document.createElement('div');
-      const link = document.createElement('a');
-      const img = document.createElement('img');
-      const position = document.createElement('span');
-      position.innerText = '#' + positionNum++;
-      position.classList.add('position');
-      img.src = `https://static01.helion.com.pl/global/okladki/181x236/${bookId}.jpg`;
-      book.classList.add('book');
-      link.href = a.href;
-      book.appendChild(position);
-      link.appendChild(img);
-      book.appendChild(link);
-      topBooks.appendChild(book);
-      book.appendChild(a);
-      // a.parentElement.insertBefore(book, a);
-    });
-    topBooks.removeChild(topBooks.querySelector('ol'));
-    topBooks.style.textAlign = 'center';
+    imageLink.appendChild(img);
+    promoDesc.appendChild(imageLink);
+    const endsAt = document.createElement('span');
+    endsAt.innerText = getWhenEndMessage(promotion);
+    promotionLink.appendChild(endsAt);
   }
 }
