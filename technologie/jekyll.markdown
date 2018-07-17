@@ -32,8 +32,4 @@ Warto wspomnieć, że wspiera go [GitHub Pages](https://pages.github.com/) - ser
 
 {% include promotion.html %}
 
-
-  - jazabl
-  - prblog<div class="book">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=magslo&nr=9102Q&size=181&utf8=1"></script>
-</div>
+{% include books.html %}
