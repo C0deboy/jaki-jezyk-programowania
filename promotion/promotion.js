@@ -1,13 +1,13 @@
 const promotions = [
   {
     start: new Date('2018-06-14'),
-    end: new Date('2018-06-17'),
+    end: new Date('2018-08-14'),
     number: '5060',
     host: 'videopoint.pl',
     img: '/promotion/p.jpg',
     popup: true,
-    message: 'W videopoint jest duża [promocja] z okazji 3 urodzin. Wszystkie kursy za 33.33zł!',
-    adHeader: 'W videopoint jest duża [promocja]:',
+    message: 'W videopoint jest [promocja] - 2 kursy w cenie 1.',
+    adHeader: 'W videopoint jest [promocja] 2za1:',
     adContent: '',
   },
 ];
