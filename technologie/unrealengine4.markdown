@@ -37,9 +37,6 @@ A kolejne na liście są:
 - Dead Island 2
 - Fortnite
 
-# Najlepsze książki do nauki {{ page.title }}
-## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
-
-{% include promotion.html %}
+{% include courses.html %}
 
 {% include books.html %}

@@ -32,4 +32,6 @@ Warto wspomnieć, że wspiera go [GitHub Pages](https://pages.github.com/) - ser
 
 {% include promotion.html %}
 
+{% include courses.html %}
+
 {% include books.html %}

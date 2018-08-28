@@ -1,3 +1,8 @@
+<h1 id="najlepsze-książki-do-nauki-języka-{{ page.title | downcase | replace: '#', 'sharp'}}"> Najlepsze książki do nauki języka {{ page.title }}</h1>
+<h2>od wydawnictwa <a href="https://helion.pl/view/9102Q">Helion</a>:</h2>
+
+{% include promotion.html %}
+
 {% assign category = site.data.books_by_technology[page.title] %}
 
 {%- for book in category.books -%}

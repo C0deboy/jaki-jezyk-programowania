@@ -15,3 +15,5 @@ Symfony jest używany w tysiącach aplikacji, a najpopularniejsze z nich to m.in
 - Drupal
 - PrestaShop
 - Joomla
+
+{% include courses.html %}

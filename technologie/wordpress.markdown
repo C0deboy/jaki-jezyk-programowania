@@ -14,9 +14,6 @@ WordPress posiada ogromną bazę wtyczek rozszerzających funkcjonalność twój
 
 WordPress w styczniu 2017 roku był wykorzystywany przez 27.5% z 10 milionów najpopularniejszych stron co czyni go najpopularniejszym systemem zarządzania treścią (zarówno zwykłe strony jak i blogi)..
 
-# Najlepsze książki do nauki {{ page.title }}
-## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
-
-{% include promotion.html %}
+{% include courses.html %}
 
 {% include books.html %}

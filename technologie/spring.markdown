@@ -11,10 +11,7 @@ date:       18.11.2017
 
 Jego kluczowym elementem był i jest kontener wstrzykiwania zależności, ale przez lata **Spring** zyskał wsparcie dla wielu technologii i stanowi dziś jeden z kluczowych elementów całego ekosystemu Javy.
 
-# Najlepsze książki do nauki {{ page.title }}
-## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
-{% include promotion.html %}
-
+{% include courses.html %}
 
 {% include books.html %}

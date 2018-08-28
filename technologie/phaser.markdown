@@ -20,10 +20,4 @@ Zobacz [przykłady](https://phaser.io/examples) na stronie Phasera, żeby zobacz
 
 {% include promotion.html %}
 
-
-  - grywal
-  - grymeg
-  - prgpo2
-  - jazaap
-  - wprofi
-  - dotkpr
+{% include courses.html %}

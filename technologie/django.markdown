@@ -17,9 +17,6 @@ Najbardziej popularne strony internetowy, które korzystają z **Django** to:
 - Bitbucket
 - Pinterest (na początku, później Flask)
 
-# Najlepsze książki do nauki {{ page.title }}
-## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
-
-{% include promotion.html %}
+{% include courses.html %}
 
 {% include books.html %}

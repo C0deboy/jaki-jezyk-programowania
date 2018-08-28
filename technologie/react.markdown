@@ -22,9 +22,6 @@ React odpowiedzialny jest tylko za interfejsy aplikacji. Czyli w modelu MVC (Mod
 - SeatGeek
 - Walmart
 
-# Najlepsze książki do nauki {{ page.title }}
-## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
-
-{% include promotion.html %}
+{% include courses.html %}
 
 {% include books.html %}

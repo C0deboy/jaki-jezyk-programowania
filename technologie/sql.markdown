@@ -14,9 +14,6 @@ SQL to standard w komunikacji z serwerami relacyjnych baz danych. Jeśli chcesz 
 
 Język SQL znacząco różni się od innych języków programowania, takich jak chociażby C++ czy Java. Nie służy on tworzenia programów tylko do formułowania zapytań do bazy danych. Znajomość SQL to fundamentalna umiejętność, którą później możesz wykorzystać np. pisząc programy w językach, które umożliwiają komunikację z bazami danych np. Java, C#, PHP.
 
-# Najlepsze książki do nauki {{ page.title }}
-## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
-
-{% include promotion.html %}
+{% include courses.html %}
 
 {% include books.html %}

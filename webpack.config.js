@@ -9,6 +9,7 @@ module.exports = {
     'global.bundle.js': './js/global/merge.js',
     'global.bundle.css': './css/global/merge.css',
     'faq.js': './js/faq.js',
+    'courses.js': './js/courses.js',
     'wizard.js': './js/wizard/wizard.js',
     'faq.css': './css/faq.css',
     'extendTechnologies.js': './js/extendTechnologies.js',
@@ -56,5 +57,8 @@ module.exports = {
   ],
   devServer: {
     contentBase: path.resolve(__dirname, ''),
+    proxy: {
+      '/api-2.0': 'https://www.udemy.com',
+    },
   },
 };

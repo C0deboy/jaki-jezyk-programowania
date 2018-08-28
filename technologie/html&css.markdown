@@ -24,10 +24,7 @@ Do znacznego ułatwienia i przyspieszenia edytowania stylów używane są prepro
 * **Framework CSS** to zbiór gotowych stylów, który ułatwia i znacznie przyspiesza budowanie stron. Jednym z najbardziej popularnych jest [Bootstrap](https://getbootstrap.com/). Dzięki niemu tworzenie responsywnych stron jest dużo prostsze. Bootstrap zawiera także gotowe szablony dla typografii, formularzy, przycisków nawigacji oraz innych elementów interfejsu.
 * **Preprocesory** , takie jak [Less.js](https://lesscss.org/) czy [Sass](https://sass-lang.com/), wprowadzają do CSS-a elementy znane z języków programowania, czyli między innymi funkcje, instrukcje warunkowe czy pętle. Oczywiście taki kod wygenerowany przez preprocesor nie mógłby zostać poprawnie wczytany i zinterpretowany przez przeglądarkę, zatem musi zostać najpierw zamieniony ( *przetranspilowany* ) na wynikowy kod CSS.
 
-# Najlepsze książki do nauki {{ page.title }}
-## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
-
-{% include promotion.html %}
+{% include courses.html %}
 
 {% include books.html %}
 
