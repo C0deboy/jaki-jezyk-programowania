@@ -42,7 +42,9 @@ Popularność Pythona rośnie z każdym rokiem do tego stopnia, że jest niemal 
 
 # Przyszłość języka
 
-Python jest obecnie w czołówce najbardziej opłacalnych oraz najbardziej pożądanych języków. Wraz ze wzrostem big data, rośnie zapotrzebowanie na programistów Pythona, którzy są coraz częściej zatrudniani jako data scientist. Jako projekt open source jest cały czas aktywnie dopracowywany, by sprostać coraz to nowszym wymaganiom. Ostatnia jego wersja 3.6.4 została wydana 19 grudnia 2017 roku. Rozwój uczenia maszynowego (machine learning), które jest witalną częścią rozwoju sztucznej inteligencji, jak i zarówno rosnąca ilość big data dobrze wróżą przyszłości tego języka.
+{% assign versions = site.data.statistics.languagesVersions %}
+
+Python jest obecnie w czołówce najbardziej opłacalnych oraz najbardziej pożądanych języków. Wraz ze wzrostem zainteresowania tematami takimi jak big data, data science i machine learning, rośnie zapotrzebowanie na programistów Pythona, którzy są coraz częściej zatrudniani jako data scientist. Jako projekt open source jest cały czas aktywnie dopracowywany, by sprostać coraz to nowszym wymaganiom. Ostatnia jego wersja {{ versions.Python.version }} została wydana {{ versions.Python.releaseDate }}. Rozwój uczenia maszynowego (machine learning), które jest witalną częścią rozwoju sztucznej inteligencji, jak i zarówno rosnąca ilość big data dobrze wróżą przyszłości tego języka.
 
 {% include courses.html %}
 

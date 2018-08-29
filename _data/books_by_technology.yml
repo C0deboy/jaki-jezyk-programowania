@@ -3,21 +3,17 @@ Angular:
   books:
     - ang2ty
     - angupk
-    - angupt
-    - pnasab
 
 C++:
   books:
+    - Najnowszy następca popularnej Symfonii C++:
+      - ocpp11
     - '':
       - cppri6
       - jcppkw
       - cppppo
-    - Oraz najnowszy następca popularnej Symfonii C++:
-      - ocpp11
     - Najlepsza książka o wzorcach projektowych z przykładami w C++:
       - wzoelv
-    - Inne warte uwagi:
-      - cpbsp2
 
 C:
   books:
@@ -33,9 +29,9 @@ C:
 'C#':
   books:
     - ch7lek
+    - jezc7d
     - cshpk3
-    - c6pig6
-    - cshru3
+    - c7pig7
 
 Django:
   books:
@@ -53,15 +49,9 @@ HTML i CSS:
     - Do nauki Bootstrap:
       - boot24
       - bootst
-      - bootgr
       - bootpp
-    - Sass i less:
+    - Sass:
       - sasspp
-      - lesspp
-    - Pozycjonowanie stron (SEO):
-      - nagoog
-      - seowit
-      - seodka
 
 Java:
   books:
@@ -70,11 +60,13 @@ Java:
       - javpp6
       - javkp9
     - Po bardziej zaawansowane rzeczy sięgnij tutaj:
-      - javtzx
       - javep3
+      - javtzx
       - javapf
       - jav8pd
       - wzorvv
+    - Tworzenie aplikacji desktopowych:
+      - jafx9t
     - Dotyczące testowania i refaktoryzacji:
       - tddpro
       - refukv
@@ -85,42 +77,16 @@ JavaScript:
       - jsqwdk
       - ecmasc
       - jascpz
-      - efprjs
-      - jscmoc
-      - prjsrg
-    - Oraz cała seria:
-      - tjndro
-      - tajnjs
-      - tajejs
-      - tjsasy
-      - tjtypy
-      - tjszak
-    - JQuery:
-      - bjqswp
-      - jquer3
-    - O OOP i wzorcach projektowych:
-      - jascwz
+      - nojspo
       - misjsp
-
-Jekyll:
-  books:
-    - jazabl
-    - prblog
-
-Node.js:
-  books:
-    - pnjsp3
-    - nodejs
 
 PHP:
   books:
     - '':
       - phpob5
       - php7pk
+      - php7al
       - phmdk3
-      - phpwzo
-    - Inne:
-      - twbeap
 
 Python:
   books:
@@ -128,11 +94,10 @@ Python:
       - pytdk3
       - autopy
       - pythip
-      - cwpyth
       - zaprpy
     - Data science i machine lerning (nauka o danych i uczenie maszynowe):
       - pypod2
-      - zaaucz
+      - uczema
       - pythum
     - Robotyka:
       - naropy
@@ -144,26 +109,12 @@ R:
   books:
     - '':
       - jezrko
-      - anasta
-      - umapro
     - Data science (nauka o danych) (większość przykładów w arkuszu kalkulacyjnym):
       - mianda
 
-React:
-  books:
-    - reactz
-    - reacwd
-
 Ruby:
   books:
-    - Ruby ma wyjątkowo mało polskich, aktualnych książek. Można rozważyć tylko te 2 pozycje:
       - rubprp
-      - a_03cd
-
-Ruby on Rails:
-  books:
-    - Z polskich książek jest niewielki wybór, mamy tylko jedną pozycję:
-      - rrtwww
 
 Scratch:
   books:
@@ -171,18 +122,12 @@ Scratch:
       - scrabt
       - a_03cg
       - scrakp
-    - Python:
+    - Dobrym językiem dla dzieci jest też Python:
       - hellow
       - a_03ch
       - a_03ca
-    - Javascript:
+    - oraz Javascript:
       - a_0352
-
-Spring:
-  books:
-    - spfrwp
-    - sprimv
-    - sprwa4
 
 SQL:
   books:
@@ -190,29 +135,20 @@ SQL:
       - missql
       - sqldkp
       - jsqlp2
-      - sqlsts
-    - PHP + SQL:
-      - phmdk3
-      - phmsv5
-      - phmyj4
 
 Swift:
   books:
-    - Swift jest jeszcze nieco młody - nie ma dużo książek do wyboru. Aktualna i dobra pozycja to:
       - pswfdp
-    - Po za tym dostępne są jeszcze dwie:
-      - swifpk
-      - pjswif
 
 Unity:
   books:
     - uniwak
-    - unippg
+    - unityc
+    - unitgm
 
 Unreal Engine 4:
   books:
     - une24g
-    - unreng
 
 WordPress:
   books:

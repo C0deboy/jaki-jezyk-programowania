@@ -42,7 +42,7 @@ Meetupy C są kategoryzowane razem z językiem C++. Mimo to widać, że w porów
 
 # Przyszłość języka
 
-{% assign versions = site.data.languagesVersions %}
+{% assign versions = site.data.statistics.languagesVersions %}
 
 Język C nie wydaje się mieć daty przydatności do użycia. Język powstał ponad 40 lat temu, a w rankingach popularności nadal jest w czołówce. Jego ostatnia wersja {{ versions.C.version }} wyszła juz dosyć dawno, bo {{ versions.C.releaseDate }}. Fakt, że wiele dzisiejszych języków jest lepszych od C w niektórych dziedzinach, nie oznacza, że są lepsze od niego w każdej. C nadal jest niedoścignionym językiem wysokopoziomowym jeżeli priorytetem jest wydajność. W dzisiejszych czasach stawia się na języki wspierające programowanie obiektowe i te w których proces programowania jest szybszy, więc C nie jest dobrym wyborem dla ogólnego zastosowania. Jednak jeśli masz konkretny powód, warto uczyć się języka C, gdyż nadal jest on wykorzystywany w specyficznych obszarach, a wiedza którą zdobędziesz ucząc się C na pewno się nie zmarnuje, zwłaszcza jeśli planujesz naukę C++.
 

@@ -34,7 +34,7 @@ Czytanie kodu Ruby jest praktycznie identyczne z czytaniem instrukcji po angiels
 
 # Przyszłość języka
 
-{% assign versions = site.data.languagesVersions %}
+{% assign versions = site.data.statistics.languagesVersions %}
 
 Przez powstanie Node.js popularność platformy Ruby on Rails delikatnie spadła, również o samym Ruby coraz mniej słychać, co widać w rankingach popularności. Mimo to Ruby ma się nadal całkiem dobrze. Używa go wciąż masa ludzi i jest cały czas rozwijany, twórcy wypuszczają często aktualizacje, rozwiązujące wiele wcześniejszych problemów. Jego ostatnia wersja {{ versions.Ruby.version }} została wydana {{ versions.Ruby.releaseDate }}.
 

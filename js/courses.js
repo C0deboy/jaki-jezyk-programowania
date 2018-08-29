@@ -1,5 +1,5 @@
 const courses = $('.courses');
-const q = encodeURIComponent(courses.attr('data-language'));
+const q = encodeURIComponent(courses.attr('data-query'));
 const t = 'ZUt4dk1EZG1wOEt6Y3g5OTJzVkNwQTFjM2NneTJPeDBlZklybnZYSDphaVozeUJBMlpIaXMyanNBMXp6MEFFTEo5OUhmOHh4T1lpZWtCSmtkYTZ3YUJrUlBxektEOGRZMXFIS01MRUdCZm1OcHZNcHh6c3pIUEc5SDdCMjg4UUJMb1JxTlhXOW55a1VlQVVORUJJYkRETkFhTnBRcDRxeHdNUmFPYmVSRg==';
 
 collect('pl');
@@ -16,10 +16,11 @@ function collect(lang) {
       data.results.slice(0, 4).forEach((course) => {
         addCourse(course, lang);
       });
+      courses.find('.loading').remove();
     },
     error: (error) => {
       courses.css('display', 'none');
-      $('#courses-link').css('display', 'none');
+      $('.courses-link').css('display', 'none');
       console.log(error);
     },
   });

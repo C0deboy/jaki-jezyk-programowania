@@ -2,6 +2,7 @@
 layout:     simpleTechnology
 title:      Node.js
 date:       18.11.2017
+nobooks:    true
 ---
 
 {: .official-page}
@@ -21,5 +22,3 @@ Istnieje wiele poradników oraz przykładowych projektów, które pozwalają na 
  - Ebay
 
 {% include courses.html %}
-
-{% include books.html %}

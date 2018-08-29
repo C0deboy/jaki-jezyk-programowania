@@ -380,7 +380,6 @@ section {
 }
 
 .course-header {
-  padding-left: 20px;
   text-align: left;
 }
 
@@ -403,6 +402,7 @@ section {
 
 .course img {
   margin: 0 auto auto 0;
+  padding-right: 20px;
 }
 
 .course .details {

@@ -2,6 +2,7 @@
 layout:     simpleTechnology
 title:      Ruby on Rails
 date:       18.11.2017
+nobooks:    true
 ---
 
 {: .official-page}
@@ -25,5 +26,3 @@ Aplikacje zbudowane na Railsach:
 - SoundCloud
 
 {% include courses.html %}
-
-{% include books.html %}

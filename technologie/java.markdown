@@ -10,18 +10,18 @@ date:       18.11.2017
 
 # Zastosowanie
 
-**Java** to wysokopoziomowy język programowania ogólnego zastosowania. Jest w pełni obiektowa, z wyjątkiem kilku typów prostych. Java jest łatwo przenośna, gdyż jest interpretowana przez wieloplatformową maszynę wirtualną Javy (Java Virtual Machine). Dlatego Java reklamuje się sloganem „Napisz raz, uruchom wszędzie!". Oczywiście jest to uzależnione od obecności JVM i ograniczone. **Java** jest przenośna w dziedzinach, które nie są związane z tworzeniem interfejsu użytkownika, interakcją z systemem operacyjnym albo sprzętem.
+**Java** to wysokopoziomowy język programowania ogólnego zastosowania. Jest w pełni obiektowa, z wyjątkiem kilku typów prostych. Java jest łatwo przenośna, gdyż jest interpretowana przez wieloplatformową maszynę wirtualną Javy (Java Virtual Machine). Java reklamuje się sloganem „Napisz raz, uruchom wszędzie!" jednak nie zawsze jest to takie proste - jest to uzależnione od obecności JVM i ograniczone. **Java** jest przenośna w dziedzinach, które nie są związane z tworzeniem interfejsu użytkownika, interakcją z systemem operacyjnym albo sprzętem.
 
-**Java** jest najczęściej używana w backendowych systemach aplikacji internetowych. Czyli jest odpowiedzialna za wszystko, co działa "pod spodem". Można też jej użyć do tworzenia oprogramowania desktopowego czy gier (Zobacz [LibGDX](https://jaki-jezyk-programowania.pl/technologie/libgdx/)).
-Ponadto, system operacyjny Android działa w środowisku Javy, co umożliwia także tworzenie aplikacji lub gier na Androida.
+**Java** jest najczęściej używana w backendowych systemach aplikacji internetowych. Czyli jest odpowiedzialna za wszystko, co działa "pod spodem". Można też jej użyć do tworzenia oprogramowania desktopowego (JavaFx) czy gier (Zobacz [LibGDX](https://jaki-jezyk-programowania.pl/technologie/libgdx/)).
+Ponadto, system operacyjny Android działa w środowisku Javy, co umożliwia także tworzenie aplikacji lub gier na Androida. Obecnie oficjalnym językiem androida jest [Kotlin](https://kotlinlang.org/), który działa na tej samej maszynie wirtualnej co Java i jest z nią w pełni  kompatybilny.
 
-Nadaje się do pisania zarówno małych jak i większych projektów. Jest preferowanym językiem w korporacjach i dużych firmach. Często wykorzystywana w systemach bankowych.
+Java nadaje się do pisania zarówno małych jak i większych projektów. Jest preferowanym językiem w korporacjach i dużych firmach. Często wykorzystywana w systemach bankowych.
 
 Co więcej, Java może być nawet używana w systemach wbudowanych, dzięki [Oracle Java Embedded](http://www.oracle.com/technetwork/java/embedded/overview/index.html). Typowe przykłady to karty SIM, telefony VOIP, odtwarzacze dysków Blu-ray, zestawy telewizyjne, mierniki poboru energii elektrycznej, ciepła czy wody, urządzenia do monitorowania stanu zdrowia, przemysłowe systemy sterujące i niezliczona ilość innych urządzeń.
 
 Javie zarzucano, że jest dużo wolniejsza niż języki natywnie kompilowane, jak np. C++. Jednak odnosi się to do starszych wersji. Obecnie wydajność Javy została poprawiona tak, że może konkurować z językami, które wcześniej były uważane za dużo szybsze. Głównie dzięki kompilatorowi JIT (Just in time), który potrafi optymalizować pod kątem szybkości te części kodu, które są najczęściej używane oraz poprawionym mechanizmom, takim jak odśmiecanie pamięci (ang. garbage collecting).
 
-W Javie został napisany m.in sławny Minecraft, a z popularnych aplikacji można wymienić:
+W Javie został napisany m.in popularny Minecraft, a z innych aplikacji można wymienić jeszcze:
 - Gmail
 - OpenOffice
 - Eclipse
@@ -62,9 +62,9 @@ Języki skryptowe i szybkie rozwiązania są dobre do prototypowania. Gdy tworzo
 
 # Przyszłość języka
 
-{% assign versions = site.data.languagesVersions %}
+{% assign versions = site.data.statistics.languagesVersions %}
 
-Programiści Javy mają duże zapotrzebowanie na rynku ze względu na jej popularność. Jest jednym z najbardziej opłacalnych oraz najbardziej pożądanych języków. **Java** cały czas jest rozwijana i ulepszana, aby utrzymać się na rynku. Jej ostatnia wersja {{ versions.Java.version }} została wydana {{ versions.Java.releaseDate }}. Pokazuje to, że Java nadal prężnie się rozwija, mimo, że powstała w 1995 roku. Często krytykowano ten język i wiele języków próbowało zastąpić Jave, jednak wyszła z tego zwycięsko. W kolejnych latach **Java** raczej nigdzie się nie wybiera i będzie kontynuować swoją dominacje.
+Programiści Javy mają duże zapotrzebowanie na rynku ze względu na jej popularność. Jest jednym z najbardziej opłacalnych oraz najbardziej pożądanych języków. **Java** cały czas jest rozwijana i ulepszana, aby utrzymać się na rynku. Jej ostatnia wersja {{ versions.Java.version }} została wydana {{ versions.Java.releaseDate }}. Pokazuje to, że Java nadal prężnie się rozwija, mimo, że powstała w 1995 roku. Często krytykowano ten język i wiele języków próbowało zastąpić Jave, jednak wyszła z tego zwycięsko. W kolejnych latach **Java** raczej nigdzie się nie wybiera i będzie kontynuować swoją dominacje pod względem popularności.
 
 {% include courses.html %}
 

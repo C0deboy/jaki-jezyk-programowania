@@ -2,6 +2,7 @@
 layout:     simpleTechnology
 title:      LibGDX
 date:       18.11.2017
+nobooks:    true
 ---
 
 {: .official-page}

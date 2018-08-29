@@ -2,6 +2,7 @@
 layout:     simpleTechnology
 title:      Phaser
 date:       18.11.2017
+nobooks:    true
 ---
 
 {: .official-page}
@@ -14,10 +15,5 @@ Phaser wspiera przeglądarki zarówno desktopowe jak i mobilne. Dzięki zewnętr
 Phaser wspiera również TypeScript.
 
 Zobacz [przykłady](https://phaser.io/examples) na stronie Phasera, żeby zobaczyć co potrafi.
-
-# Najlepsze książki o projektowaniu gier
-## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
-
-{% include promotion.html %}
 
 {% include courses.html %}

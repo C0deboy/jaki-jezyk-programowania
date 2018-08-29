@@ -2,6 +2,7 @@
 layout:     simpleTechnology
 title:      Spring
 date:       18.11.2017
+nobooks:     true
 ---
 
 {: .official-page}
@@ -13,5 +14,3 @@ Jego kluczowym elementem był i jest kontener wstrzykiwania zależności, ale pr
 
 
 {% include courses.html %}
-
-{% include books.html %}

@@ -3,6 +3,7 @@ layout:     simpleTechnology
 title:      Jekyll
 image:      jekyll-light.png
 date:       18.11.2017
+nobooks:    true
 ---
 
 {: .official-page}
@@ -27,11 +28,4 @@ Warto wspomnieć, że wspiera go [GitHub Pages](https://pages.github.com/) - ser
 
 [Mój blog](https://devcave.pl/) jest oparty na Jekyllu. Napisałem również [wpis](https://devcave.pl/dajsiepoznac2017/jekyll/2017/03/04/instalacja-jekyll/) oraz kilka kolejnych (zobacz tag [Jekyll](https://devcave.pl/archive/#jekyll)), które pomogą Ci ruszyć z własnym blogiem.
 
-# Książki, które pomogą pisać lepszego bloga:
-## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
-
-{% include promotion.html %}
-
 {% include courses.html %}
-
-{% include books.html %}

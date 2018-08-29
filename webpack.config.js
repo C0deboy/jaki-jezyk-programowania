@@ -57,8 +57,5 @@ module.exports = {
   ],
   devServer: {
     contentBase: path.resolve(__dirname, ''),
-    proxy: {
-      '/api-2.0': 'https://www.udemy.com',
-    },
   },
 };

@@ -4,6 +4,7 @@ title-full: Programowanie dla dzieci - Scratch, Python, Javascript
 title:      Scratch
 image:		scratch.png
 date:       18.11.2017
+nocourses:  true
 ---
 
 # Co to jest Scratch?
@@ -23,10 +24,5 @@ Jeśli masz dziecko, które chcesz wprowadzić w świat programowania, Scratch b
 Ciekawostką jest, że Scratch jest na 20 pozycji rankingu popularności TIOBE index  stale zyskujący popularność od 2014 roku. To odzwierciedlenie upowszechniania się nauki programowania w szkołach, gdzie głównie wykorzystuje się Scratcha.
 
 Jeśli uważasz, że twoje dziecko może zacząć zabawę już z prawdziwymi językami programowania to możesz mu zaproponować [Python](/technologie/python) lub [Javascript](/technologie/javascript).
-
-# Najlepsze książki do rozpoczęcia nauki dla dziecka
-## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
-
-{% include promotion.html %}
 
 {% include books.html %}
