@@ -1,9 +1,9 @@
 ---
 layout:     default
-title-full: "Książki, które każdy powinien przeczytać"
+title-full: "Polecane książki do nauki programowania"
 ---
 
-# Książki warte polecenia
+# Polecane książki do nauki programowania
 ## od wydawnictwa [Helion](https://helion.pl/view/9102Q):
 
 {% include promotion.html %}
@@ -75,15 +75,9 @@ title-full: "Książki, które każdy powinien przeczytać"
       <a href="/technologie/javascript#najlepsze-książki-do-nauki-javascript" class="lang-link"  >
         <img class="tip" src="/img/javascript.png" alt="Logo języka Javascript" data-tip="Javascript">
       </a>
-
-      <a href="/technologie/node.js/#najlepsze-książki-do-nauki-nodejs" class="sub lang-link">
-        <img class="tip" src="/img/node.js.png" alt="Logo Node.js" data-tip="Node.js">
-      </a>
+      
       <a href="/technologie/angular/#najlepsze-książki-do-nauki-angular" class="sub lang-link">
         <img class="tip" src="/img/angular.png" alt="Logo Angular" data-tip="Angular">
-      </a>
-      <a href="/technologie/react/#najlepsze-książki-do-nauki-react" class="sub lang-link">
-        <img class="tip" src="/img/react.png" alt="Logo React" data-tip="React">
       </a>
     </div>
 
@@ -96,7 +90,7 @@ title-full: "Książki, które każdy powinien przeczytać"
 
   <div class="row">
     <div role="listitem" class="col-sm-3 lang">
-      <a href="/technologie/c++#najlepsze-książki-do-nauki-c" class="lang-link" >
+      <a href="/technologie/c++#najlepsze-książki-do-nauki-c++" class="lang-link" >
         <img class="tip" src="/img/c++.png" alt="Logo języka C++" data-tip="C++">
       </a>
 
@@ -109,24 +103,16 @@ title-full: "Książki, które każdy powinien przeczytać"
       <a href="/technologie/java#najlepsze-książki-do-nauki-java" class="lang-link">
         <img class="tip" src="/img/java.png" alt="Logo języka Java" data-tip="Java">
       </a>
-
-      <a href="/technologie/spring/#najlepsze-książki-do-nauki-spring" class="sub lang-link">
-        <img class="tip" src="/img/spring.png" alt="Logo Spring" data-tip="Spring">
-      </a>
     </div>
 
     <div role="listitem" class="col-sm-3 lang">
       <a href="/technologie/ruby#najlepsze-książki-do-nauki-ruby" class="lang-link" >
         <img class="tip" src="/img/ruby.png" alt="Logo języka Ruby" data-tip="Ruby">
       </a>
-
-      <a href="/technologie/rubyonrails/#najlepsze-książki-do-nauki-ruby-on-rails" class="sub lang-link">
-        <img class="tip" src="/img/rubyonrails.png" alt="Logo Ruby on Rails" data-tip="Ruby on Rails">
-      </a>
     </div>
 
     <div role="listitem" class="col-sm-3 lang">
-      <a href="/technologie/csharp#najlepsze-książki-do-nauki-c#" class="lang-link" >
+      <a href="/technologie/csharp#najlepsze-książki-do-nauki-csharp" class="lang-link" >
         <img class="tip" src="/img/csharp.png" alt="Logo języka C#" data-tip="C#">
       </a>
 
@@ -168,7 +154,7 @@ title-full: "Książki, które każdy powinien przeczytać"
 
   <div class="row">
     <div role="listitem" class="col-sm-12 lang other-technologies">
-      <a href="/technologie/scratch/#najlepsze-książki-do-rozpoczęcia-nauki-dla-dziecka" class="other lang-link">
+      <a href="/technologie/scratch/#najlepsze-książki-do-nauki-scratch" class="other lang-link">
         <img class="tip" src="/img/scratch.png" alt="Logo Scratch" data-tip="Scratch">
       </a>
       <a href="/technologie/sql/#najlepsze-książki-do-nauki-sql" class="other lang-link">
@@ -190,3 +176,4 @@ src="https://helion.pl/plugins/new/top.phi?ile=20i&nr=9102Q&utf8=1">
 </div>
 
 <script src="/dist/extendTechnologies.js"></script>
+<script src="/dist/top-books.js"></script>

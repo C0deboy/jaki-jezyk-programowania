@@ -9,6 +9,7 @@ module.exports = {
     'global.bundle.js': './js/global/merge.js',
     'global.bundle.css': './css/global/merge.css',
     'faq.js': './js/faq.js',
+    'top-books.js': './js/top-books.js',
     'courses.js': './js/courses.js',
     'wizard.js': './js/wizard/wizard.js',
     'faq.css': './css/faq.css',

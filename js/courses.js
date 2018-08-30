@@ -7,13 +7,14 @@ collect('en');
 
 function collect(lang) {
   $.ajax({
-    url: `https://cors-anywhere.herokuapp.com/https://www.udemy.com/api-2.0/courses?search=${q}&category=Development&language=${lang}&ordering=relevance&ratings=4&page_size=8&fields[course]=@default,headline,content_info,num_subscribers,instructional_level,avg_rating,num_reviews,discount_price`,
+    url: `https://cors-anywhere.herokuapp.com/https://www.udemy.com/api-2.0/courses?search=${q}&category=Development&language=${lang}&ordering=relevance&ratings=4&page_size=8&fields[course]=@default,headline,content_info,num_subscribers,instructional_level,avg_rating,num_reviews,discount_price,last_update_date,created`,
     headers: {
       Authorization: 'Basic ' + t,
     },
     success: (data) => {
       data.results.sort(((a, b) => b.num_reviews - a.num_reviews));
       data.results.slice(0, 4).forEach((course) => {
+        console.log(course);
         addCourse(course, lang);
       });
       courses.find('.loading').remove();
@@ -47,9 +48,10 @@ function addCourse(course, lang) {
             <div class="course-header">
               <p class="course-title">${course.title}</p>
               <p class="course-headline">${course.headline}</p>
-              <span><i class="fa fa-clock-o"></i> ${course.content_info}</span>
-              <span><i class="fa fa-user"></i> ${course.num_subscribers} uczestników</span>
+              <span><i class="fa fa-clock-o"></i> Czas trwania: ${course.content_info}</span>
+              <span><i class="fa fa-user"></i> ${course.num_subscribers} zapisanych uczestników</span><br>
               <span><i class="fa fa-graduation-cap"></i> ${course.instructional_level}</span>
+              <span><i class="fa fa-calendar-check-o" data-created="${course.created}"></i> Ostatnia aktualizacja: ${course.last_update_date}</span>
             </div>
             <div class="details">
               ${discount}
