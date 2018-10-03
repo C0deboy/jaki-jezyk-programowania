@@ -1,2 +1,2 @@
-java -jar stats-scraper-1.0.0.jar
+java -jar stats-scraper-2.0.0.jar
 pause
