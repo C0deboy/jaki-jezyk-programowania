@@ -1,13 +1,13 @@
 const promotions = [
   {
-    start: new Date('2018-06-14'),
-    end: new Date('2018-08-14'),
-    number: '5060',
-    host: 'videopoint.pl',
+    start: new Date('2018-11-23'),
+    end: new Date('2018-11-25'),
+    // number: '5060',
+    host: 'helion.pl',
     img: '/promotion/p.jpg',
     popup: true,
-    message: 'W videopoint jest [promocja] - 2 kursy w cenie 1.',
-    adHeader: 'W videopoint jest [promocja] 2za1:',
+    message: 'Black Friday w Helion - [książki 2za1]',
+    adHeader: 'Black Friday w Helion - [książki 2za1]',
     adContent: '',
   },
 ];
