@@ -127,8 +127,8 @@ function showPromotionAd(promotion, i) {
     let desc = promotion.adContent;
 
     if (document.title === 'devcave.pl' && promotion.url.hostname === 'helion.pl') {
-      if (desc === '') desc += '<br>';
-      desc += '<br> Zobacz książki, które warto kupić w <a href="/moja-biblioteka">mojej bibliotece</a>';
+      if (desc !== '') desc += '<br><br>';
+      desc += 'Zobacz książki, które warto kupić w <a href="/moja-biblioteka">mojej bibliotece</a>';
     }
     promoDesc.innerHTML = desc;
 
