@@ -28,6 +28,8 @@ W rankingach popularności R jest całkiem daleko, a wiąże się z tym, że spo
 
 {% include language/github.html %}
 
+{% include language/meetup.html %}
+
 # Przyszłość języka
 
 {% assign versions = site.data.statistics.languagesVersions %}
