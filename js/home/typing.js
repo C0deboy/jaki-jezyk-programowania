@@ -1,5 +1,4 @@
 $(() => {
-
   $('.typed-languages').typed({
     strings: [
       'JavaScript?', 'Python?', 'Java?', 'C#?', 'PHP?', 'C++?', 'Swift?', 'Ruby?', 'C?', 'R?',
@@ -39,7 +38,8 @@ $(() => {
   const scrollTerminal = document.querySelector('.screen');
 
   function ScrollTerminal() {
-    if (scrollTerminal.scrollTop < ((scrollTerminal.scrollHeight - scrollTerminal.offsetHeight) + 100)) {
+    const terminalHeight = (scrollTerminal.scrollHeight - scrollTerminal.offsetHeight);
+    if (scrollTerminal.scrollTop < terminalHeight + 100) {
       scrollTerminal.scrollTop = scrollTerminal.scrollHeight;
     }
   }

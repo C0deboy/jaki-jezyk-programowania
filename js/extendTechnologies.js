@@ -3,7 +3,7 @@ const langElements = document.querySelectorAll('.lang');
 
 window.addEventListener('touchstart', function onFirstHover() {
   document.querySelectorAll('.lang-link').forEach((link) => {
-    link.addEventListener('click', disablelink);
+    link.addEventListener('click', disableLink);
   });
   window.DOUBLE_CLICK_ENABLED = true;
   window.removeEventListener('touchstart', onFirstHover, false);
@@ -17,9 +17,9 @@ function showSubTechnologeis(subs) {
   }
 }
 
-function disablelink(e) {
+function disableLink(e) {
   e.preventDefault();
-  this.removeEventListener('click', disablelink);
+  this.removeEventListener('click', disableLink);
 }
 
 function hideSubTechnologeis(subs, lang) {
@@ -30,7 +30,7 @@ function hideSubTechnologeis(subs, lang) {
   }
   if (window.DOUBLE_CLICK_ENABLED) {
     lang.querySelectorAll('.lang-link').forEach((link) => {
-      link.addEventListener('click', disablelink);
+      link.addEventListener('click', disableLink);
     });
   }
 }

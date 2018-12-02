@@ -5,8 +5,7 @@ import { NextQuestion } from './wizardData';
 const firstQuestion = new NextQuestion('whyProgramming');
 const previousQuestions = [firstQuestion];
 
-const imageLoader = new ImageLoader();
-imageLoader.load(() => load(firstQuestion));
+ImageLoader.load(() => load(firstQuestion));
 
 const returnBtn = $('.return-btn');
 
@@ -58,4 +57,3 @@ $(document).on('keydown', (e) => {
 });
 
 export { loadNextQuestionAndRememberPrevious };
-

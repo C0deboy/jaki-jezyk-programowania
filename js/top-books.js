@@ -14,7 +14,7 @@ function addImagesForTopList() {
       const position = document.createElement('span');
       position.innerText = '#' + positionNum++;
       position.classList.add('position');
-      img.src = `https://static01.helion.com.pl/global/okladki/181x236/${bookId}.jpg`
+      img.src = `https://static01.helion.com.pl/global/okladki/181x236/${bookId}.jpg`;
       book.classList.add('book');
       link.href = a.href;
       book.appendChild(position);

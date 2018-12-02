@@ -14,7 +14,6 @@ function collect(lang) {
     success: (data) => {
       data.results.sort(((a, b) => b.num_reviews - a.num_reviews));
       data.results.slice(0, 4).forEach((course) => {
-        console.log(course);
         addCourse(course, lang);
       });
       courses.find('.loading').remove();
@@ -43,8 +42,8 @@ function addCourse(course, lang) {
 
   courses.append(`
           <a class="course" href="${link}" target="_blank">
-            <img class="lang" src='/img/${lang}.png'/>
-            <img src="${course.image_240x135}"/>
+            <img class="lang" src='/img/${lang}.png' alt="course language"/>
+            <img src="${course.image_240x135}" alt="course cover"/>
             <div class="course-header">
               <p class="course-title">${course.title}</p>
               <p class="course-headline">${course.headline}</p>
@@ -63,4 +62,3 @@ function addCourse(course, lang) {
           <hr>
         `);
 }
-

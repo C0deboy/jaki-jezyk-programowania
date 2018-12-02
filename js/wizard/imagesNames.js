@@ -70,4 +70,3 @@ const imagesNames = [
 ];
 
 export default imagesNames;
-

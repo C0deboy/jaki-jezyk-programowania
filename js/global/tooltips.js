@@ -6,8 +6,9 @@ function positionTooltip(el, tooltip) {
   const tooltipWidth = tooltip.offsetWidth;
   const centerEl = left + (width / 2);
 
-  tooltip.style.top = (top - tooltipHeight - 10) + 'px';
-  tooltip.style.left = (centerEl - tooltipWidth / 2) + 'px';
+  const tooltipStyle = tooltip.style;
+  tooltipStyle.top = (top - tooltipHeight - 10) + 'px';
+  tooltipStyle.left = (centerEl - tooltipWidth / 2) + 'px';
 }
 
 function toggleTooltip(e, state) {
@@ -22,12 +23,12 @@ function toggleTooltip(e, state) {
   if (state === true) {
     positionTooltip(el, tooltip);
     tooltip.classList.add('fadeIn');
-    if(tipIcon){
+    if (tipIcon) {
       tipIcon.style.opacity = '0';
     }
   } else {
     tooltip.classList.remove('fadeIn');
-    if(tipIcon){
+    if (tipIcon) {
       tipIcon.style.opacity = '1';
     }
   }
