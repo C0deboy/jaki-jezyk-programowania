@@ -1,7 +1,7 @@
 import imagePaths from '../../img/imagesNames';
 
 class ImageLoader {
-  load(LoadingCompleteHandler) {
+  static load(LoadingCompleteHandler) {
     window.addEventListener('load', LoadingCompleteHandler);
     imagePaths.forEach((imageName) => {
       const preload = new Image();
@@ -12,11 +12,10 @@ class ImageLoader {
 }
 
 function loadingImages() {
-  document.querySelector('.answers').innerHTML =
-    '<div class="spinner">\n' +
-    '  <div class="bounce1"></div>\n' +
-    '  <div class="bounce2"></div>\n' +
-    '  <div class="bounce3"></div>\n' +
-    '</div>';
+  document.querySelector('.answers').innerHTML = `<div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>`;
 }
 export default ImageLoader;

@@ -2,7 +2,7 @@ import { loadNextQuestionAndRememberPrevious } from './wizard';
 import AnswerElementBuilder from './AnswerElementBuilder';
 
 if (!('remove' in Element.prototype)) {
-  Element.prototype.remove = function() {
+  Element.prototype.remove = () => {
     if (this.parentNode) {
       this.parentNode.removeChild(this);
     }
