@@ -1,6 +1,8 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ExtractCssPlugin = require('mini-css-extract-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+
+const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   entry: {
@@ -29,26 +31,28 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           query: {
-            presets: [['env']],
+            presets: ['@babel/preset-env'],
           },
         },
       },
       {
         test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: {
+        use: [
+          ExtractCssPlugin.loader,
+          {
             loader: 'css-loader',
             options: {
               url: false,
             },
           },
-        }),
+        ],
       },
     ],
   },
   plugins: [
-    new ExtractTextPlugin('[name]'),
+    new ExtractCssPlugin({
+      filename: '[name]',
+    }),
     new BrowserSyncPlugin({
       host: 'localhost',
       proxy: 'http://localhost:4000',
