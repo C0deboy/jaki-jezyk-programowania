@@ -20,7 +20,7 @@ function appendLinkToMessage(message, url) {
 
 promotions.forEach((promotion, i) => {
   if (isPromotionActive(promotion)) {
-    promotion.url = new URL(`http://${promotion.host}/page/9102Q/kategorie/promocja-2za1`);//promocja/${promotion.number}`);
+    promotion.url = new URL(`http://${promotion.host}/page/9102Q/kategorie/promocja-2za1`);// promocja/${promotion.number}`);
 
     promotion.message = appendLinkToMessage(promotion.message, promotion.url);
     promotion.adHeader = appendLinkToMessage(promotion.adHeader, promotion.url);
@@ -91,7 +91,7 @@ function getWhenEndMessage(promotion) {
     const currentDate = new Date();
     currentDate.setHours(0, 0, 0, 0);
     if (promotion.end.valueOf() === currentDate.valueOf()) {
-      to = 'Ostatni dzień promocji!'
+      to = 'Ostatni dzień promocji!';
     } else {
       to = `Promocja do ${promotion.end.toLocaleDateString('pl-Pl')}`;
     }
