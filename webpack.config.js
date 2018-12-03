@@ -3,7 +3,6 @@
 const path = require('path');
 const ExtractCssPlugin = require('mini-css-extract-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
