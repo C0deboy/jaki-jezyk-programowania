@@ -141,4 +141,4 @@ title-full: "Polecane kursy video do nauki programowania"
   </div>
 </div>
 
-<script src="/dist/extendTechnologies.js"></script>
+<script src="/dist/technologies-list.js"></script>

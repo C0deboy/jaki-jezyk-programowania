@@ -1,3 +1,5 @@
+require('../css/faq.css');
+
 function toggleAnswer() {
   const answer = $(this).next();
   const arrow = $(this).find('.fa-arrow-down');

@@ -1,5 +1,6 @@
 .laptop {
-  margin: auto auto 7%;
+  visibility: hidden;
+  position: absolute;
 }
 
 .screen {

@@ -1,3 +1,9 @@
+@import url('cookiesInfo.css');
+@import url('laptop.css');
+@import url('monokai-sublime.css');
+@import url('survey.css');
+@import url('emailform.css');
+
 hr {
   border-color: rgba(42, 144, 180, 0.31);
 }
@@ -32,14 +38,7 @@ header .text-muted a {
   position: relative;
   width: 100%;
   color: #fff;
-  padding: 140px 5% 20px;
-}
-
-@media (min-width: 768px) {
-
-  .site-header .container-fluid {
-    padding: 100px 5% 20px;
-  }
+  padding: 100px 5% 20px;
 }
 
 @media (min-width: 992px) {
@@ -54,6 +53,7 @@ header .text-muted a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 70vh;
   }
 
   .site-header .lets-go {

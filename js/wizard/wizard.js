@@ -1,6 +1,8 @@
 import ImageLoader from './ImageLoader';
 import { NextQuestion } from './wizardData';
 
+require('../../css/wizard.css');
+
 
 const firstQuestion = new NextQuestion('whyProgramming');
 const previousQuestions = [firstQuestion];

@@ -1,3 +1,5 @@
+require('../css/courses.css');
+
 const courses = $('.courses');
 const q = encodeURIComponent(courses.attr('data-query'));
 const t = 'ZUt4dk1EZG1wOEt6Y3g5OTJzVkNwQTFjM2NneTJPeDBlZklybnZYSDphaVozeUJBMlpIaXMyanNBMXp6MEFFTEo5OUhmOHh4T1lpZWtCSmtkYTZ3YUJrUlBxektEOGRZMXFIS01MRUdCZm1OcHZNcHh6c3pIUEc5SDdCMjg4UUJMb1JxTlhXOW55a1VlQVVORUJJYkRETkFhTnBRcDRxeHdNUmFPYmVSRg==';
@@ -42,7 +44,7 @@ function addCourse(course, lang) {
 
   courses.append(`
           <a class="course" href="${link}" target="_blank">
-            <img class="lang" src='/img/${lang}.png' alt="course language"/>
+            <img class="course-lang" src='/img/${lang}.png' alt="course language"/>
             <img src="${course.image_240x135}" alt="course cover"/>
             <div class="course-header">
               <p class="course-title">${course.title}</p>

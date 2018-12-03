@@ -175,5 +175,5 @@ src="https://helion.pl/plugins/new/top.phi?ile=20i&nr=9102Q&utf8=1">
 </script>
 </div>
 
-<script src="/dist/extendTechnologies.js"></script>
+<script src="/dist/technologies-list.js"></script>
 <script src="/dist/top-books.js"></script>

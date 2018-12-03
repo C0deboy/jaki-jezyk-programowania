@@ -1,28 +1,25 @@
+/* eslint-disable quote-props */
+
 const path = require('path');
 const ExtractCssPlugin = require('mini-css-extract-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
-
-const devMode = process.env.NODE_ENV !== 'production';
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   entry: {
-    'home.bundle.js': './js/home/merge.js',
-    'home.bundle.css': './css/home/merge.css',
-    'global.bundle.js': './js/global/merge.js',
-    'global.bundle.css': './css/global/merge.css',
-    'faq.js': './js/faq.js',
-    'top-books.js': './js/top-books.js',
-    'courses.js': './js/courses.js',
-    'wizard.js': './js/wizard/wizard.js',
-    'faq.css': './css/faq.css',
-    'extendTechnologies.js': './js/extendTechnologies.js',
-    'technologies-list.css': './css/technologies-list.css',
-    'language.css': './css/language.css',
-    'wizard.css': './css/wizard.css',
+    'home.bundle': './js/home/home.js',
+    'global.bundle': './js/global/global.js',
+    'faq': './js/faq.js',
+    'top-books': './js/top-books.js',
+    'courses': './js/courses.js',
+    'wizard': './js/wizard/wizard.js',
+    'technologies-list': './js/technologies-list.js',
+    'language': './js/language.js',
   },
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: '[name]',
+    filename: '[name].js',
   },
   module: {
     rules: [
@@ -51,7 +48,12 @@ module.exports = {
   },
   plugins: [
     new ExtractCssPlugin({
-      filename: '[name]',
+      filename: '[name].css',
+    }),
+    new OptimizeCssAssetsPlugin({
+      cssProcessorPluginOptions: {
+        preset: ['default', { discardComments: { removeAll: true } }],
+      },
     }),
     new BrowserSyncPlugin({
       host: 'localhost',

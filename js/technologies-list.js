@@ -1,3 +1,4 @@
+require('../css/technologies-list.css');
 
 const langElements = document.querySelectorAll('.lang');
 

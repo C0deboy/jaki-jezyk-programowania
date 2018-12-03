@@ -1,6 +1,6 @@
 import wizardData from './wizardData';
-import Answers from './answers';
-import Question from './question';
+import Answers from './Answers';
+import Question from './Question';
 
 const answers = new Answers();
 const question = new Question();

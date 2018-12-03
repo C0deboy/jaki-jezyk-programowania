@@ -91,12 +91,9 @@ h4 {
 .header-heading {
   font-size: 2em;
   padding-bottom: 23px;
-  margin-top: -40px;
   margin-bottom: 30px;
   position: relative;
 }
-
-
 
 .header-text {
   font-weight: 600;
@@ -177,4 +174,13 @@ h4 {
 .main-btn:active {
   transform: translateY(+1px);
   box-shadow: 0 1px 4px 0 black;
+}
+
+@media (min-width: 992px) {
+  .center-992px {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

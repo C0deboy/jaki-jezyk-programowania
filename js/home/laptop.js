@@ -1,10 +1,14 @@
 function responsiveLaptop() {
+  const laptop = $('.laptop');
   const screen = $('.screen');
   const keyboard = $('.keyboard');
   const keys = $('.keys');
   const button = $('.laptop .laptop-header .button');
-  const screenWidth = screen.width();
 
+  laptop.css({ visibility: 'visible', position: 'relative' });
+  laptop.parent().find('.fa-spin').hide();
+
+  const screenWidth = screen.width();
   screen.css({ height: `${screenWidth * 0.6}px` });
   $('.terminal').css('height', `calc(${screen.height()}-20px)`);
   const keyboardHeight = screen.height() * 0.6;
@@ -16,7 +20,10 @@ function responsiveLaptop() {
   keys.css({ height: `${parseInt(keysHeight, 10) * 0.75}px` });
   const keysWidth = keyboard.width() / 3.5;
   keys.css({ '-webkit-transform': `perspective(${keysWidth}px) rotateX(10deg)` });
+
   button.width(button.height());
+
+
 }
 
 responsiveLaptop();
