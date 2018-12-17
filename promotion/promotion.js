@@ -1,13 +1,13 @@
 const promotions = [
   {
-    start: new Date('2018-11-23'),
-    end: new Date('2018-11-25'),
+    start: new Date('2018-12-17'),
+    end: new Date('2018-12-20'),
     // number: '5060',
     host: 'helion.pl',
     img: '/promotion/p.jpg',
     popup: true,
-    message: 'Black Friday w Helion - [książki 2za1]',
-    adHeader: 'Black Friday w Helion - [książki 2za1]',
+    message: 'Świąteczna promocja w Helion - [książki 2za1]',
+    adHeader: 'Świąteczna promocja w Helion - [książki 2za1]',
     adContent: '',
   },
 ];
@@ -20,7 +20,7 @@ function appendLinkToMessage(message, url) {
 
 promotions.forEach((promotion, i) => {
   if (isPromotionActive(promotion)) {
-    promotion.url = new URL(`http://${promotion.host}/page/9102Q/kategorie/promocja-2za1`);// promocja/${promotion.number}`);
+    promotion.url = new URL(`http://${promotion.host}/page/9102Q/kategorie/promocja-2za1`);//promocja/${promotion.number}`);
 
     promotion.message = appendLinkToMessage(promotion.message, promotion.url);
     promotion.adHeader = appendLinkToMessage(promotion.adHeader, promotion.url);
@@ -91,7 +91,7 @@ function getWhenEndMessage(promotion) {
     const currentDate = new Date();
     currentDate.setHours(0, 0, 0, 0);
     if (promotion.end.valueOf() === currentDate.valueOf()) {
-      to = 'Ostatni dzień promocji!';
+      to = 'Ostatni dzień promocji!'
     } else {
       to = `Promocja do ${promotion.end.toLocaleDateString('pl-Pl')}`;
     }
