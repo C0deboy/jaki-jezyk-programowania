@@ -2,8 +2,8 @@ const promotions = [
   {
     start: new Date('2019-01-02'),
     end: new Date('2019-01-03'),
-    number: '6094',
-    host: 'ebookpoint.pl',
+    number: '6092',
+    host: 'helion.pl',
     img: '/promotion/p.jpg',
     popup: true,
     message: 'Promocja w [ebookpoint] - nawet do -90%',
