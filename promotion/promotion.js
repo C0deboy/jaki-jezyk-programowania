@@ -2,7 +2,7 @@ const promotions = [
   {
     start: new Date('2019-01-02'),
     end: new Date('2019-01-03'),
-    // number: '5060',
+    number: '6094',
     host: 'ebookpoint.pl',
     img: '/promotion/p.jpg',
     popup: true,
