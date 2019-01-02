@@ -6,8 +6,8 @@ const promotions = [
     host: 'helion.pl',
     img: '/promotion/p.jpg',
     popup: true,
-    message: 'Promocja w [ebookpoint] - nawet do -90%',
-    adHeader: 'Promocja w [ebookpoint] - nawet do -90%',
+    message: 'Promocja na ebooki w [Helion] - nawet do -90%',
+    adHeader: 'Promocja na ebooki w [Helion] - nawet do -90%',
     adContent: '',
   },
 ];
