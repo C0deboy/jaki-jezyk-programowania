@@ -39,6 +39,7 @@ header .text-muted a {
   width: 100%;
   color: #fff;
   padding: 100px 5% 20px;
+  margin-top: 20px;
 }
 
 @media (min-width: 992px) {
