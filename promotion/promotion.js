@@ -1,13 +1,13 @@
 const promotions = [
   {
-    start: new Date('2019-01-02'),
-    end: new Date('2019-01-03'),
+    start: new Date('2019-02-12'),
+    end: new Date('2019-02-14'),
     number: '6094',
     host: 'helion.pl',
     img: '/promotion/p.jpg',
     popup: true,
-    message: 'Promocja na ebooki w [Helion] - nawet do -90%',
-    adHeader: 'Promocja na ebooki w [Helion] - nawet do -90%',
+    message: 'Promocja na książki w [Helion] - 2 książki w cenie 1',
+    adHeader: 'Promocja na książki w [Helion] - 2 książki w cenie 1',
     adContent: '',
   },
 ];
@@ -20,7 +20,7 @@ function appendLinkToMessage(message, url) {
 
 promotions.forEach((promotion, i) => {
   if (isPromotionActive(promotion)) {
-    promotion.url = new URL(`http://${promotion.host}/page/9102Q/promocja/${promotion.number}`);// kategorie/promocja-2za1`);
+    promotion.url = new URL(`http://${promotion.host}/page/9102Q/promocja/kategorie/promocja-2za1`);//${promotion.number}`);
 
     promotion.message = appendLinkToMessage(promotion.message, promotion.url);
     promotion.adHeader = appendLinkToMessage(promotion.adHeader, promotion.url);
