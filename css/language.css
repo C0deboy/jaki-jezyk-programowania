@@ -52,6 +52,12 @@ section {
   padding: 0 2px 25px;
 }
 
+@media (max-width: 550px) {
+  .language-content {
+    box-shadow: none;
+  }
+}
+
 .start-row {
   margin-top: 20px;
 }
