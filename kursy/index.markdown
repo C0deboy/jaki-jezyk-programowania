@@ -13,13 +13,13 @@ title-full: "Polecane kursy video do nauki programowania"
 
 <div class="languages-list" role="list">
   <div class="row">
-    <div role="listitem" class="col-md-4 col-sm-3 lang">
+    <div role="listitem" class="col-lg-4 col-sm-3 lang">
       <a href="/technologie/c#najlepsze-kursy-video-do-nauki-c" class="lang-link">
         <img class="tip" src="/img/c.png" alt="Logo języka C" data-tip="C">
       </a>
     </div>
 
-    <div role="listitem" class="col-md-4 col-sm-6 lang">
+    <div role="listitem" class="col-lg-4 col-sm-6 lang">
       <a href="/technologie/javascript#najlepsze-kursy-video-do-nauki-javascript" class="lang-link">
         <img class="tip" src="/img/javascript.png" alt="Logo języka Javascript" data-tip="Javascript">
       </a>
@@ -38,7 +38,7 @@ title-full: "Polecane kursy video do nauki programowania"
       </a>
     </div>
 
-    <div role="listitem" class="col-md-4 col-sm-3 lang">
+    <div role="listitem" class="col-lg-4 col-sm-3 lang">
       <a href="/technologie/r#najlepsze-kursy-video-do-nauki-r" class="lang-link">
         <img class="tip" src="/img/r.png" alt="Logo języka R" data-tip="R">
       </a>

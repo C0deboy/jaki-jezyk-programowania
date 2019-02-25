@@ -25,6 +25,7 @@
   border: 0;
   cursor: pointer;
   padding: 5px 10px;
+  color: inherit;
 }
 
 #close-project-state-btn:hover,

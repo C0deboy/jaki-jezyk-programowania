@@ -50,6 +50,7 @@
 .answer img {
   width: 150px;
   cursor: pointer;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 1200px) {

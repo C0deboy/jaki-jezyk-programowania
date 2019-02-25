@@ -43,10 +43,11 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^4.3.1",
     "font-awesome": "^4.7.0",
     "highlight.js": "^9.14.2",
     "jquery": "^3.3.1",
-    "mattboldt.typed.js": "^1.1.4"
+    "mattboldt.typed.js": "^1.1.4",
+    "popper.js": "^1.14.7"
   }
 }

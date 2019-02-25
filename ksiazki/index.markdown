@@ -17,7 +17,7 @@ title-full: "Polecane książki do nauki programowania"
 [Cała lista](/ksiazki/ksiazki-ktore-moze-przeczytac-kazdy-bez-wzgledu-na-technologie) lub według kategorii:
 {% endmarkdown %}
 
-<div class="col-md-6 col-sm-6">
+<div class="col-lg-6 col-sm-6">
 
 <p class="list-header">Must read:</p>
 
@@ -32,7 +32,7 @@ title-full: "Polecane książki do nauki programowania"
 
 </div>
 
-<div class="col-md-6 col-sm-6">
+<div class="col-lg-6 col-sm-6">
 
 <p class="list-header">Inne:</p>
 

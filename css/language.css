@@ -232,13 +232,12 @@ section {
 }
 
 .official-page {
-  background: #464646;
   display: inline-block;
-  color: black;
   padding: 10px 20px 10px 10px;
   border-radius: 2px;
   margin-top: 20px;
-  border: solid 1px #777777;
+  background: rgba(1,46,53,.55);
+  box-shadow: 0 1px 4px 0 rgb(0, 0, 0);
 }
 
 .official-page a {
@@ -307,12 +306,15 @@ section {
   vertical-align: top;
 }
 
+.promotion .fa-percent {
+  color: #f94646;
+}
+
 .promotion-content {
   background: #00353e;
-  padding: 5px 5px;
+  padding: 10px;
   text-align: center;
   box-shadow: 0 0 4px 0 black;
-  font-size: .9em;
 }
 
 .promotion-header {

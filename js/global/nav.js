@@ -9,8 +9,10 @@ $('.navbar a[href^="#"]').on('click', function scrollTo() {
   scrollToElement($(this).attr('href'), 600);
 });
 
+const navbarCustom = $('.navbar-custom');
+const navbarCollapse = $('.navbar-collapse');
+
 function dynamicNavbar() {
-  const navbarCustom = $('.navbar-custom');
   const headerHeight = navbarCustom.height();
   const currentTop = $(window).scrollTop();
   if (currentTop < this.previousTop) {
@@ -21,7 +23,7 @@ function dynamicNavbar() {
     }
   } else {
     navbarCustom.removeClass('is-visible');
-    $('.navbar-collapse').removeClass('in');
+    navbarCollapse.removeClass('in');
     if (currentTop > headerHeight && !navbarCustom.hasClass('is-fixed')) navbarCustom.addClass('is-fixed');
   }
   this.previousTop = currentTop;

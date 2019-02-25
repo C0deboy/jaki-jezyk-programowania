@@ -49,6 +49,9 @@ h4 {
 
 .text-muted {
   opacity: 0.6;
+  color: white!important;
+  font-size: .8em;
+  text-shadow: 0 0 10px black;
 }
 
 .header-heading,
@@ -107,7 +110,7 @@ h4 {
   position: relative;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .header-heading {
     padding-top: 40px;
   }

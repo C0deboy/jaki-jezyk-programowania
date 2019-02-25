@@ -1,11 +1,13 @@
 .navbar-custom {
   z-index: 999;
-  font-size: 0.77em;
+  font-size: 0.8em;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-
+  padding: 0;
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
   -webkit-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
   transition: background-color 0.3s;
@@ -18,48 +20,53 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   box-shadow: 0 0 4px 0 black;
+  color: #777!important;
 }
 
 .navbar-custom .navbar-brand {
   font-weight: 800;
   font-size: 25px;
-  padding: 15px 5px 15px;
+  padding: 0 15px;
+  color: inherit;
 }
 
-.navbar-brand img{
-  margin-top: -12px;
+.navbar-brand img {
   height: 45px;
   display: inline;
 }
 
 @media (min-width: 2160px) {
-  .navbar-brand img{
+  .navbar-brand img {
     margin-top: -18px;
   }
 }
 
-.navbar-custom .navbar-toggle {
-  color: #777777;
-  font-weight: 800;
+.navbar-custom .navbar-toggler {
+  margin: 5px;
   text-transform: uppercase;
 }
 
-.navbar-custom .nav li a {
+.navbar-custom .nav li .nav-link {
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 1px;
+  padding: 15px;
+  color: inherit;
 }
 
 @media (min-width: 2160px) {
-  html,body {
-    font-size: calc( 30px + (50 - 35) * ( (100vw - 2160px) / ( 4096 - 2160) ));
+  html, body {
+    font-size: calc(30px + (50 - 35) * ((100vw - 2160px) / (4096 - 2160)));
   }
+
   .navbar-custom {
     font-size: 0.8em;
   }
+
   .page-scroll {
     padding: 20px !important;
   }
+
   .container {
     width: 65vw;
   }
@@ -85,16 +92,13 @@
   color: #626262;
 }
 
-.navbar-right {
-  text-align: right;
-}
-
 .navbar-custom.is-fixed .navbar-brand:hover,
 .navbar-custom.is-fixed .navbar-brand:focus,
 .navbar-custom.is-fixed .nav li a:hover,
 .navbar-custom.is-fixed .nav li a:focus {
   color: rgba(0, 0, 0, 1);
 }
+
 .navbar-custom.is-visible {
   /* if the user changes the scrolling direction, we show the header */
   -webkit-transform: translate3d(0, 52px, 0);
@@ -135,7 +139,7 @@
   display: block;
   height: 12px;
   z-index: -1;
-  transform: skew(0deg,-38deg);
+  transform: skew(0deg, -38deg);
   width: 19px;
   background: #f8f8f8;
   position: absolute;
@@ -143,13 +147,17 @@
   top: 0;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .promotion-popup {
     right: 0;
   }
 }
 
 @keyframes popup {
-  0% {transform: translateY(0px) scale3d(.2,.2,1);}
-  100% {transform: translateY(65px) scale3d(1,1,1);}
+  0% {
+    transform: translateY(0px) scale3d(.2, .2, 1);
+  }
+  100% {
+    transform: translateY(65px) scale3d(1, 1, 1);
+  }
 }

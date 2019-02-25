@@ -19,13 +19,6 @@ hr {
   box-sizing: border-box;
 }
 
-header .text-muted,
-.about-project .text-muted{
-  color: white;
-  font-size: .8em;
-  text-shadow: 0px 0px 10px black;
-}
-
 header .text-muted a {
   color: #ff0a00;
 }
@@ -38,11 +31,14 @@ header .text-muted a {
   position: relative;
   width: 100%;
   color: #fff;
-  padding: 100px 5% 20px;
+  padding: 20px 5% 20px;
   margin-top: 20px;
 }
 
 @media (min-width: 992px) {
+  .site-header {
+    padding-top: 100px;
+  }
   .site-header .header-row {
     display:-webkit-box;
     display: -webkit-flex;

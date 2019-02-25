@@ -20,189 +20,30 @@ permalink: "/faq/"
 <section class="faq">
 
   <div class="container">
-    <div class="row">
+    <h1>FAQ</h1>
+    <div class="row justify-content-center">
 
-      <h1>FAQ</h1>
+      {% assign faqData = site.data.faq %}
 
-      <div class="col-sm-6 clearfix">
-        <div tabindex="0" class="question">
-          <h2>Istnieje najlepszy język programowania?</h2><i class="fa fa-arrow-down" aria-hidden="true"></i>
-        </div>
-        <div class="answer">
-          <p>Nie, nie ma "najlepszego" języka programowania. Każda z technologii wymienianych na stronie jest równie
-            dobra w swoich zastosowaniach. Twoim zadaniem jest wybrać ten, który jest najbardziej odpowiedni do Twoich
-            celów oraz ten, z którym będzie Ci się najlepiej pracowało. Możesz popróbować różnych technologii zanim
-            skupisz się na konkretnym. Po prostu wybierz to, co najlepiej Ci "leży".</p>
-        </div>
+      {% assign middle = faqData.size | minus: 1 | divided_by: 2 %}
+      {% assign beforeMiddle = faqData.size | minus: 1 | divided_by: 2 | minus: 1%}
+
+      <div class="col-sm-6">
+
+        {%- for faq in faqData -%}
 
         <div tabindex="0" class="question">
-          <h2>Czy wybór pierwszego języka ściśle określa przyszłość mojej kariery?</h2><i class="fa fa-arrow-down"
-                                                                                          aria-hidden="true"></i>
+          <h2>{{faq.Q}}</h2><i class="fa fa-arrow-down" aria-hidden="true"></i>
         </div>
         <div class="answer">
-          <p>Oczywiście, że nie. Twój pierwszy język programowania nie ma żadnego wpływu na Twoją przyszłość związaną z
-            programowaniem. To co jest ważne, to poznanie głównych fundamentów programowania, które można zastosować w
-            różnych językach. Jeśli opanujesz jeden język, to przejście do kolejnego jest naturalną rzeczą. Im więcej
-            ich dotkniesz, tym lepsze będziesz miał spojrzenie na świat. Jednak ciężko jest wyspecjalizować się w wielu
-            technologiach na raz, dlatego gdy przebrniesz przez klika i znajdziesz swoją ulubioną, warto przy niej
-            pozostać.</p>
+          {{faq.A | newline_to_br | markdownify }}
         </div>
 
-        <div tabindex="0" class="question">
-          <h2>Mam N lat, czy jest już za późno na naukę programowania?</h2><i class="fa fa-arrow-down"
-                                                                              aria-hidden="true"></i>
-        </div>
-        <div class="answer">
-          <p>Nie, nigdy nie jest za późno na rozpoczęcie nauki programowania. Wiek nie ma tu żadnego znaczenia. To czego
-            programowanie wymaga to masa poświęconego czasu, samodyscypliny i cierpliwości. Oczywiście są od tego
-            wyjątki i lista może się zwiększyć zależnie od branży.</p>
-        </div>
-
-        <div tabindex="0" class="question" id="matematyka-programista">
-          <h2>Czy muszę być dobry z matematyki by umieć programować?</h2><i class="fa fa-arrow-down"
-                                                                            aria-hidden="true"></i>
-        </div>
-        <div class="answer">
-          <p>Niekoniecznie - to zależy od dyscypliny, którą będziesz się zajmować. Wiadomo, że istnieją takie, które bez
-            tego się nie obejdą, np. tworzenie złożonych gier 2D, 3D, silniki graficzne, data science itp.. Jednak
-            większość aspektów programowania nie będzie od Ciebie wymagać znajomości matematyki na wysokim poziomie,
-            wystarczą podstawy. Wiele programistów podczas swojej całej kariery ledwo co ją dotyka. Z drugiej strony,
-            pewne jest to, że programowanie wymaga logicznego i matematycznego sposobu myślenia, a znajomość matematyki
-            może być przydatna.
-
-            Nieco inaczej wygląda sytuacja jeśli chcesz studiować Informatykę. Wtedy tego nie unikniesz. Ba, nawet matma
-            stanie się Twoim najlepszym przyjacielem.
-        </div>
-
-        <div tabindex="0" class="question">
-          <h2>Jaki wybrać edytor / IDE / komputer / system operacyjny itd.?</h2><i class="fa fa-arrow-down"
-                                                                                   aria-hidden="true"></i>
-        </div>
-        <div class="answer">
-          <p> W większości przypadków nie ma to żadnego znaczenia, tym bardziej nie ma "najlepszego". Zwłaszcza na
-            początku nauki nie powinieneś się na tym skupiać. Jest to uzależnione tylko i wyłącznie od twoich
-            preferencji i od tego, z czym pracuje Ci się komfortowo. Jeśli chodzi o systemy operacyjne to zależy już od
-            Ciebie na jaką platformę chcesz tworzyć oprogramowanie. Niektóre języki są stworzone dla konkretnego
-            systemu, ale większość z nich posiada narzędzia, które umożliwią prace na wielu. Są jednak pewne wyjątki.
-            Niemniej jednak dobrze być zaprzyjaźnionym z każdym systemem, żeby w razie spotkania z nim np. w pracy, nie
-            być zaskoczonym.</p>
-        </div>
-
-        <div tabindex="0" class="question">
-          <h2>Co powinienem umieć, aby zacząć programować?</h2><i class="fa fa-arrow-down" aria-hidden="true"></i>
-        </div>
-        <div class="answer">
-          <p>Podstawowa rzecz to język angielski. Potrzebny jest do rozumienia kodu, do czytania dokumentacji, która
-            zazwyczaj występuje po angielsku oraz do korzystania z wielu anglojęzycznych źródeł, których, nie oszukujmy
-            się, jest o wiele więcej niż polskich. Na przykład największe forum programistyczne Stack OverFlow jest w
-            całości po angielsku, a jest to źródło odpowiedzi na większość twoich początkujących problemów związanych z
-            programowaniem.</p>
-          <p>Do tego matematyka, przynajmniej podstawy (zależnie od branży). Zobacz <a href="#matematyka-programista"
-                                                                                       onclick="document.getElementById('matematyka-programista').click()">pytanie</a>
-            w FAQ.</p>
-          <p>Musisz także nauczyć się myśleć algorytmicznie i rozkładać problemy na czynniki pierwsze.</p>
-          <p>Ważne jest też, żebyś potrafił samodzielnie googlować/szukać odpowiedzi na swoje problemy. Umiejętność ta
-            jest niezbędna, stosuje się ją każdego dnia. Miej też na uwadze to, że do pewnego stopnia zaawansowania, nie
-            ma problemów, które gdzieś nie są już rozwiązane.</p>
-          <p>Ważna rzeczą jest też to, żeby Cię to interesowało. Nie mówię, że to musi być od razu twoja pasja, jednak
-            programista to taki zawód, w którym uczymy sie praktycznie całe życie, ze względu na zmieniające się
-            technologie i trendy. Nie sposób być na bieżąco, gdy traktujemy naszą pracę jako zwykłe rzemiosło. Jeśli
-            usłyszałeś gdzieś, że to fajne i opłacalne, spróbowałeś, ale raczej Cię to nie kręci i robisz to na siłę,
-            według mnie powinieneś porozglądać się za inna dyscypliną ;)</p>
-        </div>
-
-        <div tabindex="0" class="question">
-          <h2>Czy jako programista będę dużo zarabiać?</h2><i class="fa fa-arrow-down" aria-hidden="true"></i>
-        </div>
-        <div class="answer">
-          <p>Tak i nie. Od wielu lat istnieje trend na programowanie, często opisywany jako łatwe siedzenie przed
-            komputerem i zarabianie ogromnych pieniędzy. Tak to może wygląda z zewnątrz dla ludzi, którzy o
-            programowaniu tylko słyszeli. Zarabiać będziesz dużo, jeśli będziesz w tym naprawdę dobry i wtedy pewnie
-            twoim obowiązkiem nie będzie już samo programowanie. Jest to jednak oczywista oczywistość, bo tak samo jest
-            w każdym innym zawodzie. To nie jest tak, że programowanie jest bezpieczną i zagwarantowaną wysoko płatną
-            pracą dla wszystkich.</p>
-        </div>
-
+        {%- if forloop.index == middle -%}
       </div>
-
-      <div class="col-sm-6 clearfix">
-
-        <div tabindex="0" class="question">
-          <h2>Czy do zostania programistą potrzebne są studia?</h2><i class="fa fa-arrow-down" aria-hidden="true"></i>
-        </div>
-        <div class="answer">
-          <p>Aby zostać programistą studia nie są konieczne. Wykształcenie wyższe nie jest wymagane przez większość
-            pracodawców, a ścieżka freelancera całkowicie pomija ten aspekt. Plusem dyplomu jest to, że dwa lata po
-            zakończeniu studiów dostajesz gratis 4 dni rocznie urlopu więcej. Jednak samo studiowanie nie zrobi z Ciebie
-            pełnoprawnego programisty. Prawdopodobnie studia nie dadzą Ci wiele wiedzy związanej z programowaniem.
-            Będziesz musiał uczyć się na własną rękę, musisz mieć to na uwadze. Jeżeli jesteś już w tym dobry, może być
-            nawet tak, że będziesz wiedział więcej od wykładowców.
-            Więc czy przez studia coś zyskasz? No pewnie, że tak.
-            Prawdopodobnie poznasz wielu ciekawych ludzi z branży IT oraz będziesz miał okazję uczestniczyć w
-            interesujących inicjatywach. Kontakty są ważne. Nie wiesz też czy programowaniem będziesz się zajmował całe
-            życie, studia dadzą Ci pewne rozeznanie. Dowiesz się o rzeczach, których sam pewnie byś nie ruszył, bo
-            wydają Ci się zbędne. “Zbędne” przedmioty dają perspektywę, czynią Cię bardziej świadomym programistą.
-            Powinniśmy podejść do tego z pokorą. Jeżeli przez te 5 lat będziesz się rozwijał i uczył programowania także
-            w wolnym czasie, nie będziesz żył studenckim życiem na całego, to na pewno nie będą to lata stracone.</p>
-        </div>
-
-        <div tabindex="0" class="question">
-          <h2>Praca czy studia?</h2><i class="fa fa-arrow-down" aria-hidden="true"></i>
-        </div>
-        <div class="answer">
-          <p>Jeśli sytuacja materialna pozwala Ci iść na studia, według mnie lepiej je właśnie wybrać. Praca i pieniądze
-            nie uciekną, a wszystkie korzyści płynące ze studiowania już tak. Unikniesz wtedy rozmyślań w przyszłości
-            typu „a mogłem...”. Trzeba dodać, że studiując możliwa jest praca na pół etatu. Może nie być łatwo wszystko
-            to pogodzić, ale kto mówi, że ma być łatwo? :D </p>
-        </div>
-
-        <div tabindex="0" class="question">
-          <h2>Istnieje najszybszy język programowania?</h2><i class="fa fa-arrow-down" aria-hidden="true"></i>
-        </div>
-        <div class="answer">
-          <p>Im bliżej sprzętu działa język programowania (im jego poziom abstrakcji od sprzętu jest mniejszy), im mniej
-            wykonuje za nas pracy i jest mniej elastyczny, tym jest wydajniejszy. Jednak w zwykłych zastosowaniach nie
-            jest to coś na co powinniśmy zwracać szczególną uwagę, zwłaszcza, że procesory stają się coraz mocniejsze i
-            różnice te są coraz mniej zauważalne. Ważniejsza jest produktywność, czyli szybszy proces tworzenia
-            aplikacji. Wykorzystywane są, więc technologie, które są elastyczne, mniej złożone i wykonują za nas więcej
-            rzeczy. Większość języków w swoich zastosowaniach jest wystarczająco wydajna, więc nie powinniśmy się tym
-            martwić. Trzeba też mieć na uwadze, że sam język ma mało wspólnego z wydajnością aplikacji. Największa rolę
-            odgrywa to, w jaki sposób aplikacja została zbudowana oraz jej optymalizacja.</p>
-        </div>
-
-        <div tabindex="0" class="question">
-          <h2>Co to znaczy "znać język programowania"?</h2><i class="fa fa-arrow-down" aria-hidden="true"></i>
-        </div>
-        <div class="answer">
-          <p>Mniej więcej to samo co znaczy znać język obcy. Można to stwierdzić kiedy wiesz jak go używać efektywnie,
-            nawet jeśli nie wiesz o nim wszystkiego. Jednak trzeba zaznaczyć, że nauczenie się samego języka
-            programowania nie czyni z nas dobrego programisty w danym języku.</p>
-        </div>
-
-        <div tabindex="0" class="question">
-          <h2>Uczę się języka X, powinienem zacząć uczyć się kolejnego? </h2><i class="fa fa-arrow-down"
-                                                                                aria-hidden="true"></i>
-        </div>
-        <div class="answer">
-          <p>Kiedy zaczynasz się uczyć, dobrze jest pozostać dłużej z jednym językiem, aby zrozumieć wszystkie aspekty
-            programowania. Najważniejsze to nauczyć się programować, a później możesz próbować innych języków ile tylko
-            chcesz. Jeśli opanujesz jeden język to przejście do kolejnego jest już dużo prostsze.</p>
-        </div>
-
-        <div tabindex="0" class="question">
-          <h2>Jak się uczyć programowania?</h2><i class="fa fa-arrow-down" aria-hidden="true"></i>
-        </div>
-        <div class="answer">
-          <p>Najskuteczniejszą metodą jest samodzielne pisanie aplikacji i programów. Można się też wspomagać <a
-            href="/ksiazki">książkami</a> lub kursami, ale to powinno być na drugim miejscu. Przeklepywanie czyjegoś
-            kodu niespecjalnie nas czegoś uczy. Przeczytanie kilki książek nie zrobi z Ciebie programisty, jeśli nie
-            przysiądziesz do kodu.</p> Możesz podglądać też wysokooceniane projekty na Githubie, aby zobaczyć jak
-          wyglądają aplikację w prawdziwym świecie.</p>
-          <p>Jeśli chcesz polepszyć też znajomość algorytmiki i użyć nieco matematyki, spróbuj rozwiązywanie różnych
-            łamigłówek programistycznych ze stron jak <a href="https://projecteuler.net/">Project Euler</a>, czy <a
-              href="https://www.reddit.com/r/dailyprogrammer/">/r/dailyprogrammer</a></p>
-        </div>
-
+      <div class="col-sm-6">
+        {%- endif -%}
+        {%- endfor -%}
       </div>
     </div>
   </div>
