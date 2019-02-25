@@ -24,38 +24,41 @@
 
 <body>
 
-	<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-    <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Rozwiń menu</span> Menu <i class="fa fa-bars"></i>
-          </button>
-          <a class="navbar-brand page-scroll" href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
-        </div>
-        <div class="collapse navbar-collapse">
-              <ul class="nav navbar-nav navbar-right">
-                  <li>
-                      <a class="page-scroll use-btn" href="#zastosowanie">Zastosowanie</a>
-                  </li>
-                  <li>
-                      <a class="page-scroll difficulty-btn" href="#poziom-skomplikowania">Trudność</a>
-                  </li>
-                  <li>
-                      <a class="page-scroll popularity-btn" href="#popularność">Popularność</a>
-                  </li>
-                  <li>
-                      <a class="page-scroll popularity-btn" href="#przyszłość-języka">Przyszłość</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll courses-link" href="#najlepsze-kursy-video-do-nauki-ruby">Kursy</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#najlepsze-książki-do-nauki-ruby">Książki</a>
-                  </li>
-              </ul>
-          </div>
-    </div>
-</nav>
+	<div class="navbar navbar-expand-lg navbar-light navbar-fixed-top navbar-custom">
+
+    <a class="navbar-brand page-scroll" href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
+
+    <button type="button" id="navbar-toggle-btn" class="navbar-toggler" data-toggle="collapse"
+            data-target="#site-nav" aria-expanded="false" aria-controls="site-nav">
+
+        Menu <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <nav id="site-nav" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav ml-auto text-right">
+            <li class="nav-item">
+                <a class="page-scroll nav-link use-btn" href="#zastosowanie">Zastosowanie</a>
+            </li>
+            <li class="nav-item">
+                <a class="page-scroll nav-link difficulty-btn" href="#poziom-skomplikowania">Trudność</a>
+            </li>
+            <li class="nav-item">
+                <a class="page-scroll nav-link popularity-btn" href="#popularność">Popularność</a>
+            </li>
+            <li class="nav-item">
+                <a class="page-scroll nav-link popularity-btn" href="#przyszłość-języka">Przyszłość</a>
+            </li>
+            <li class="nav-item">
+                <a class="page-scroll nav-link courses-link"
+                   href="#najlepsze-kursy-video-do-nauki-ruby">Kursy</a>
+            </li>
+            <li class="nav-item">
+                <a class="page-scroll nav-link"
+                   href="#najlepsze-książki-do-nauki-ruby">Książki</a>
+            </li>
+        </ul>
+    </nav>
+</div>
 
 	<section>
 
@@ -64,10 +67,10 @@
 			<header class="start-container">
   <div class="container-fluid">
     <div class="row start-row">
-      <div class="col-xs-12 col-md-6 col-header">
+      <div class="col-sm-12 col-lg-6 col-header">
         <div class="language-logo"><img src="/img/ruby.png" alt="Ruby logo"></div>
       </div>
-      <div class="col-xs-12 col-md-6 col-header">
+      <div class="col-sm-12 col-lg-6 col-header">
         <h2 class="lang-starter-heading">Ruby</h2>
         <div class="up-to-date">Aktualizacja: 30.08.2018</div>
 
@@ -204,11 +207,11 @@
 <h1 id="najlepsze-książki-do-nauki-ruby"> Najlepsze książki do nauki  Ruby</h1>
 <h2>od wydawnictwa <a href="https://helion.pl/view/9102Q">Helion</a>:</h2>
 
-<div class="row">
+<div class="row justify-content-center">
   <div class="promotion">
     <h3 class="promotion-header">
     </h3>
-    <div class="promotion-content"><a href="https://helion.pl/page/9102Q/promocje"> <i class="fa fa-percent"></i> Zobacz aktualne promocje <i class="fa fa-percent"></i></a></div>
+    <div class="promotion-content"><a href="https://helion.pl/page/9102Q/promocje"> <i class="fa fa-percent"></i> Zobacz aktualne promocje w Helion <i class="fa fa-percent"></i></a></div>
   </div>
 </div>
 

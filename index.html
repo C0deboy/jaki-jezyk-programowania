@@ -29,55 +29,53 @@
 
 <body>
 
-<div class="navbar navbar-default navbar-fixed-top navbar-custom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" id="navbar-toggle-btn" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav"
-              aria-expanded="false" aria-controls="site-nav">
-        Menu
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </button>
-      <a class="navbar-brand page-scroll" href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
-    </div>
+<div class="navbar navbar-expand-lg navbar-light navbar-fixed-top navbar-custom">
 
-    <nav id="site-nav" class="collapse navbar-collapse">
-      <h2 class="visually-hidden">Nawigacja</h2>
+  <a class="navbar-brand page-scroll" href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
 
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a class="page-scroll program-languages-btn" href="/#technologie">
-            Technologie
-          </a>
-        </li>
-        <li>
-          <a class="page-scroll books-btn" href="/kursy/">
-            Polecane kursy
-          </a>
-        </li>
-        <li>
-          <a class="page-scroll books-btn" href="/ksiazki/">
-            Polecane książki
-          </a>
-        </li>
-        <li>
-          <a class="page-scroll faq-btn" href="/faq/">
-            FAQ
-          </a>
-        </li>
-        <li>
-          <a class="page-scroll blog-btn" href="https://devcave.pl/">
-            Mój blog
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+  <button type="button" id="navbar-toggle-btn" class="navbar-toggler" data-toggle="collapse"
+            data-target="#site-nav" aria-expanded="false" aria-controls="site-nav">
+
+    Menu <i class="fa fa-bars" aria-hidden="true"></i>
+  </button>
+
+  <nav id="site-nav" class="collapse navbar-collapse">
+    <h2 class="visually-hidden">Nawigacja</h2>
+
+    <ul class="nav navbar-nav ml-auto text-right">
+      <li class="nav-item">
+        <a class="page-scroll program-languages-btn nav-link" href="/#technologie">
+          Technologie
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="page-scroll nav-link" href="/kursy/">
+          Polecane kursy
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="page-scroll books-btn nav-link" href="/ksiazki/">
+          Polecane książki
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="page-scroll faq-btn nav-link" href="/faq/">
+          FAQ
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="page-scroll blog-btn nav-link" href="https://devcave.pl/">
+          Mój blog
+        </a>
+      </li>
+    </ul>
+  </nav>
 </div>
 
 
 <header id="intro" class="site-header container-fluid">
   <div class="row header-row">
-    <div class="col-md-6 intro-text">
+    <div class="col-lg-6 intro-text">
 
       <h1 class="header-heading">Zastanawiasz się jaki język programowania wybrać?</h1>
 
@@ -96,9 +94,9 @@
       </a>
 
       <p>Jeśli masz dodatkowe pytania, przejrzyj <a class="page-scroll faq-btn" href="/faq/">FAQ</a>, gdzie zebrałem
-        kilka fundamentalnych pytań lub napisz do mnie.</p>
+        kilka fundamentalnych pytań.</p>
     </div>
-    <div class="col-md-6" aria-hidden="true">
+    <div class="col-lg-6" aria-hidden="true">
 
       <i class="fa fa-cog fa-spin flex fa-3x fa-fw center-992px"></i>
 
@@ -254,13 +252,13 @@
 
     <div class="languages-list" role="list">
       <div class="row">
-        <div role="listitem" class="col-md-4 col-sm-3 lang">
+        <div role="listitem" class="col-lg-4 col-md-3 lang">
           <a href="technologie/c" class="lang-link">
             <img class="tip" src="img/c.png" alt="Logo języka C" data-tip="C">
           </a>
         </div>
 
-        <div role="listitem" class="col-md-4 col-sm-6 lang">
+        <div role="listitem" class="col-lg-4 col-md-6 lang">
           <a href="technologie/javascript" class="lang-link">
             <img class="tip" src="img/javascript.png" alt="Logo języka Javascript" data-tip="Javascript">
           </a>
@@ -279,7 +277,7 @@
           </a>
         </div>
 
-        <div role="listitem" class="col-md-4 col-sm-3 lang">
+        <div role="listitem" class="col-lg-4 col-md-3 lang">
           <a href="technologie/r" class="lang-link">
             <img class="tip" src="img/r.png" alt="Logo języka R" data-tip="R">
           </a>
@@ -287,7 +285,7 @@
       </div>
 
       <div class="row">
-        <div role="listitem" class="col-sm-3 lang">
+        <div role="listitem" class="col-md-3 lang">
           <a href="technologie/c++" class="lang-link">
             <img class="tip" src="img/c++.png" alt="Logo języka C++" data-tip="C++">
           </a>
@@ -297,7 +295,7 @@
           </a>
         </div>
 
-        <div role="listitem" class="col-sm-3 lang">
+        <div role="listitem" class="col-md-3 lang">
           <a href="technologie/java" class="lang-link">
             <img class="tip" src="img/java.png" alt="Logo języka Java" data-tip="Java">
           </a>
@@ -310,7 +308,7 @@
           </a>
         </div>
 
-        <div role="listitem" class="col-sm-3 lang">
+        <div role="listitem" class="col-md-3 lang">
           <a href="technologie/ruby" class="lang-link">
             <img class="tip" src="img/ruby.png" alt="Logo języka Ruby" data-tip="Ruby">
           </a>
@@ -320,7 +318,7 @@
           </a>
         </div>
 
-        <div role="listitem" class="col-sm-3 lang">
+        <div role="listitem" class="col-md-3 lang">
           <a href="technologie/csharp" class="lang-link">
             <img class="tip" src="img/csharp.png" alt="Logo języka C#" data-tip="C#">
           </a>
@@ -335,13 +333,13 @@
       </div>
 
       <div class="row">
-        <div role="listitem" class="col-sm-4 lang">
+        <div role="listitem" class="col-md-4 lang">
           <a href="technologie/swift" class="lang-link">
             <img class="tip" src="img/swift.png" alt="Logo języka Swift" data-tip="Swift">
           </a>
         </div>
 
-        <div role="listitem" class="col-sm-4 lang">
+        <div role="listitem" class="col-md-4 lang">
           <a href="technologie/python" class="lang-link">
             <img class="tip" src="img/python.png" alt="Logo języka Python" data-tip="Python">
           </a>
@@ -351,7 +349,7 @@
           </a>
         </div>
 
-        <div role="listitem" class="col-sm-4 lang">
+        <div role="listitem" class="col-md-4 lang">
           <a href="technologie/php" class="lang-link">
             <img class="tip" src="img/php.png" alt="Logo języka PHP" data-tip="PHP">
           </a>
@@ -368,7 +366,7 @@
       <hr>
 
       <div class="row">
-        <div role="listitem" class="col-sm-12 lang other-technologies">
+        <div role="listitem" class="col-md-12 lang other-technologies">
           <a href="technologie/scratch" class="other lang-link">
             <img class="tip" src="img/scratch.png" alt="Logo Scratch" data-tip="Scratch">
           </a>
@@ -390,7 +388,7 @@
 <section id="o-projekcie" class="section about-project">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-md-12">
 
         <h2 class="section-heading">O projekcie</h2>
         <p>Wybór języka programowania/technologii to odwieczny problem, szczególnie początkujących programistów. Dlatego
@@ -407,7 +405,7 @@
           </p>
 
           <ul class="list-inline social-buttons">
-            <li class="tip" data-tip="Github">
+            <li class="tip list-inline-item" data-tip="Github">
               <a class="main-btn" href="https://github.com/C0deboy">
                   <span class="visually-hidden">
                     Github
@@ -415,7 +413,7 @@
                 <i class="fa fa-github" aria-hidden="true"></i>
               </a>
             </li>
-            <li class="tip" data-tip="O mnie">
+            <li class="tip list-inline-item" data-tip="O mnie">
               <a class="main-btn" href="https://devcave.pl/o-mnie/">
                   <span class="visually-hidden">
                     O mnie
@@ -423,7 +421,7 @@
                 <i class="fa fa-user-circle" aria-hidden="true"></i>
               </a>
             </li>
-            <li class="tip" data-tip="LinkedIn">
+            <li class="tip list-inline-item" data-tip="LinkedIn">
               <a class="main-btn" href="https://www.linkedin.com/in/marcin-lasota/">
                   <span class="visually-hidden">
                     LinkedIn
@@ -438,7 +436,7 @@
     </div>
 
     <div class="row">
-      <div class="col-sm-12">
+      <div class="col-md-12">
         <!--118-->
         <p>Przygotowałem ankietę dotyczącą wyboru języka / technologii do danego zastosowania. Daj znać co ty
           zaproponowałbyś początkującym programistom!</p>
@@ -452,24 +450,22 @@
             class="fa fa-times"></i></button>
         </div>
 
-        <p>Masz jakieś uwagi czy zastrzeżenia? A może masz sugestię, którą chciałbyś się z mną podzielić? Czekam na
-          twoją opinię, która na pewno zmotywuje mnie do dalszej pracy! Jeśli chcesz pomóc w rozwoju projektu skontaktuj
-          się!</p>
+        <p>Masz jakieś uwagi czy zastrzeżenia? Masz sugestię, którą chciałbyś się z mną podzielić? A może chciałbyś pomóc w rozwoju projektu? Cokolwiek by to było - pisz śmiało!</p>
       </div>
 
-      <div class="col-sm-4">
+      <div class="col-md-4">
         <button type="button" id="open-contact-btn" class="main-btn">
           <i class="fa fa-envelope-o" aria-hidden="true"></i>
           Formularz kontaktowy
         </button>
       </div>
-      <div class="col-sm-4">
+      <div class="col-md-4">
         <a href="https://github.com/C0deboy/jaki-jezyk-programowania" class="main-btn">
           <i class="fa fa-github"></i>
           Repozytorium strony
         </a>
       </div>
-      <div class="col-sm-4">
+      <div class="col-md-4">
         <a href="mailto:lasota.marcinm@gmail.com" class="main-btn">
           <i class="fa fa-envelope-o" aria-hidden="true"></i>
           lasota.marcinm@gmail.com
@@ -511,12 +507,12 @@
 </div>
 
 <div class="cookies-info">
-  <p>Strona wykorzystuje pliki cookies (ciasteczka) w celach statystycznych oraz do zapamiętywania twoich wyborów.
+  <p>Strona wykorzystuje pliki cookies (ciasteczka) w celu zbierania statystyk odwiedzin strony oraz do zapamiętywania twoich wyborów.
     Korzystając ze strony zgadzasz się na ich wykorzystanie.</p>
   <button class="close-cookies-info"><i class="fa fa-times fa-2x close-form"></i></button>
 </div>
 
-<pre hidden><code class="language-javascript">//Javascript
+<pre hidden><code class="language-javascript">//JavaScript
 function binarySearch(A, x) {
   let start = 0;
   let end = A.length - 1;
@@ -543,8 +539,7 @@ const foundXAt = binarySearch(library, x);
 
 console.log('Znaleziono "' + x + '" na pozycji ' + foundXAt);
 // Znaleziono "Illuminati" na pozycji 3
-</code>
-<code class="language-cpp">//C++
+</code><code class="language-cpp">//C++
 #include &#60;iostream&#62;
 using namespace std;
 
@@ -576,8 +571,7 @@ int main() {
   cout << "Znaleziono \"" + x + "\" na pozycji " + to_string(foundXat)<< endl;
   // Znaleziono "Illuminati" na pozycji 3
 }
-</code>
-<code class="language-php">//PHP
+</code><code class="language-php">//PHP
 function binarySearch($A, $x) {
   $start = 0;
   $end = sizeof($A) - 1;
@@ -604,8 +598,7 @@ $foundXAt = binarySearch($library, $x);
 
 echo "Znaleziono \" $x \" na pozycji $foundXAt";
 //Znaleziono "Illuminati" na pozycji 3
-</code>
-<code class="language-java">//Java
+</code><code class="language-java">//Java
 public class BinarySearch {
   public static int binarySearch(String[] A, String x) {
     int start = 0;
@@ -636,8 +629,7 @@ public class BinarySearch {
     // Znaleziono "Illuminati" na pozycji 3
   }
 }
-</code>
-<code class="language-ruby">#Ruby
+</code><code class="language-ruby">#Ruby
 def binarySearch(a, x)
   startAt = 0
   endAt = a.length - 1
@@ -664,8 +656,7 @@ x = "Illuminati";
 foundXAt = binarySearch(library, x);
 puts("Znaleziono \"" + x + "\" na pozycji " + foundXAt.to_s)
 # Znaleziono "Illuminati" na pozycji 3
-</code>
-<code class="language-python">#Python
+</code><code class="language-python">#Python
 def binarySearch(A, x) :
   start = 0
   end = len(A) - 1
@@ -688,8 +679,7 @@ foundXAt = binarySearch(library, x)
 
 print("Znaleziono \"" + x + "\" na pozycji " + str(foundXAt))
 # Znaleziono "Illuminati" na pozycji 3
-</code>
-<code class="language-c">//C
+</code><code class="language-c">//C
 #include &#60;stdio.h&#62;
 
 int binarySearch(char *A[], char *x, int Asize){
@@ -723,8 +713,7 @@ int main(void) {
   printf("Znaleziono \"%s\" na pozycji %d \n", x, foundXAt);
   // Znaleziono "Illuminati" na pozycji 3
 }
-</code>
-<code class="language-swift">//Swift
+</code><code class="language-swift">//Swift
 func binarySearch(A: [String], x: String) -> Int {
   var start = 0;
   var end = A.count - 1;
@@ -751,8 +740,7 @@ var x = "Illuminati";
 var foundXAt = binarySearch(A: library, x: x);
 print("Znaleziono \"" + String(x) + "\" na pozycji " + String(foundXAt));
 // Znaleziono "Illuminati" na pozycji 3
-</code>
-<code class="language-csharp">//C♯
+</code><code class="language-csharp">//C♯
 using System;
 class MainClass {
   public static int binarySearch(String[] A, String x){
@@ -784,8 +772,7 @@ class MainClass {
     // Znaleziono "Illuminati" na pozycji 3
   }
 }
-</code>
-<code class="language-r">#R
+</code><code class="language-r">#R
 binarySearch <- function (A, x){
   start <- 0;
   end <- length(A) - 1;
@@ -810,9 +797,7 @@ library <- c("Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce pr
 x = "Illuminati";
 foundXAt = binarySearch(library, x);
 print(paste("Znaleziono ", x, " na pozycji ", foundXAt));
-# Znaleziono "Illuminati" na pozycji 4
-</code>
-</pre>
+# Znaleziono "Illuminati" na pozycji 4</code></pre>
 
 <footer>
   <div class="container">
