@@ -3,7 +3,6 @@ layout:     simpleTechnology
 title-full: Programowanie dla dzieci - Scratch, Python, Javascript
 title:      Scratch
 image:		scratch.png
-date:       18.11.2017
 nocourses:  true
 ---
 

@@ -3,7 +3,6 @@ layout:     technology
 title-full: Język programowania C - zastosowanie, przyszłość, polecane książki
 title:      C
 image:		c.png
-date:       18.11.2017
 ---
 
 {% assign stats = site.data.statistics.statistics.C %}

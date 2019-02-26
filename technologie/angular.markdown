@@ -1,7 +1,6 @@
 ---
 layout:     simpleTechnology
 title:      Angular
-date:       18.11.2017
 ---
 
 {: .official-page}

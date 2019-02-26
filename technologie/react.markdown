@@ -1,7 +1,6 @@
 ---
 layout:     simpleTechnology
 title:      React
-date:       18.11.2017
 nobooks:    true
 ---
 

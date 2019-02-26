@@ -3,7 +3,6 @@ layout:     technology
 title-full: Język programowania JavaScript - zastosowanie, przyszłość, polecane książki
 title:      JavaScript
 image:		javascript.png
-date:       18.11.2017
 ---
 
 {% assign stats = site.data.statistics.statistics.JavaScript %}

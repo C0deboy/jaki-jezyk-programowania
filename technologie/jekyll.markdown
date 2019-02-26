@@ -2,7 +2,6 @@
 layout:     simpleTechnology
 title:      Jekyll
 image:      jekyll-light.png
-date:       18.11.2017
 nobooks:    true
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout:     simpleTechnology
 title:      Unreal Engine 4
-date:       18.11.2017
 ---
 
 {: .official-page}

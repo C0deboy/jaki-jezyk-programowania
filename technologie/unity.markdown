@@ -1,7 +1,6 @@
 ---
 layout:     simpleTechnology
 title:      Unity
-date:       18.11.2017
 ---
 
 {: .official-page}

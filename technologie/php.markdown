@@ -3,7 +3,6 @@ layout:     technology
 title-full: Język programowania PHP - zastosowanie, przyszłość, polecane książki
 title:      PHP
 image:		php.png
-date:       18.11.2017
 ---
 
 {% assign stats = site.data.statistics.statistics.PHP %}

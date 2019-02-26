@@ -1,7 +1,6 @@
 ---
 layout:     simpleTechnology
 title:      ASP.NET
-date:       18.11.2017
 nobooks:    true
 ---
 

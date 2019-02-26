@@ -3,7 +3,6 @@ layout:     simpleTechnology
 title-full: Język HTML i CSS
 title:      HTML i CSS
 image:		html&css.png
-date:       18.11.2017
 ---
 
 

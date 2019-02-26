@@ -3,7 +3,6 @@ layout:     technology
 title-full: Język programowania Java - zastosowanie, przyszłość, polecane książki
 title:      Java
 image:		java.png
-date:       18.11.2017
 ---
 
 {% assign stats = site.data.statistics.statistics.Java %}

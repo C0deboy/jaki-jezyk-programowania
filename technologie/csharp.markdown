@@ -2,8 +2,7 @@
 layout:     technology
 title-full: Język programowania C# - zastosowanie, przyszłość, polecane książki
 title:      C#
-image:    csharp.png
-date:       18.11.2017
+image:      csharp.png
 ---
 
 {% assign stats = site.data.statistics.statistics.Csharp %}

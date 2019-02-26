@@ -1,7 +1,6 @@
 ---
 layout:     simpleTechnology
 title:      Django
-date:       18.11.2017
 ---
 
 {: .official-page}

@@ -1,7 +1,6 @@
 ---
 layout:     simpleTechnology
 title:      Ruby on Rails
-date:       18.11.2017
 nobooks:    true
 ---
 

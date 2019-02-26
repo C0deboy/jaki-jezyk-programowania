@@ -3,7 +3,6 @@ layout:     technology
 title-full: Język programowania R - zastosowanie, przyszłość, polecane książki
 title:      R
 image:		r.png
-date:       18.11.2017
 ---
 
 {% assign stats = site.data.statistics.statistics.R %}

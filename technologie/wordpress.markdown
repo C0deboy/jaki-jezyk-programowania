@@ -1,7 +1,6 @@
 ---
 layout:     simpleTechnology
 title:      WordPress
-date:       18.11.2017
 ---
 
 {: .official-page}
