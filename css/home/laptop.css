@@ -248,7 +248,7 @@
   color: white;
   padding: 0;
   font-size: inherit;
-  overflow-x: hidden;
+  white-space: pre-wrap;
 }
 
 .typed-cursor {
