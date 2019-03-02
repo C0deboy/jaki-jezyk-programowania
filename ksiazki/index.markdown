@@ -154,7 +154,7 @@ title-full: "Polecane książki do nauki programowania"
     
     <div role="listitem" class="col-sm-4 lang">
       <a href="/technologie/scala#najlepsze-książki-do-nauki-scala" class="lang-link">
-        <img class="tip" src="/img/Scala.png" alt="Logo języka Scala" data-tip="Scala">
+        <img class="tip" src="/img/scala.png" alt="Logo języka Scala" data-tip="Scala">
       </a>
     </div>
     
