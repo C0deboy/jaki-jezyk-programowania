@@ -31,8 +31,7 @@ description: "Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jak
         nich będzie odpowiedni dla danego zastosowania, w co brnąć dalej, gdy opanujesz podstawy oraz zobaczysz
         wybrane książki i kursy video do nauki danej technologii.</p>
 
-      <p class="tip"
-         data-tip="Na podstawie Twoich odpowiedzi na pytania zostanie określony język programowania (lub więcej niż jeden) odpowiedni do Twoich celów. Będziesz mógł przejrzeć najważniejsze informacje o każdym z nich i je porównać. ">
+      <p class="tip" data-tip="Na podstawie Twoich odpowiedzi na pytania zostanie określony język programowania (lub więcej niż jeden) odpowiedni do Twoich celów. Będziesz mógł przejrzeć najważniejsze informacje o każdym z nich i je porównać. ">
         Jak to działa? <i class="fa fa-commenting-o" aria-hidden="true"></i></p>
 
       <a href="/start/" class="btn btn-danger btn-lg start">
@@ -56,8 +55,8 @@ description: "Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jak
           <div class="laptop-content">
             <div class="terminal-window">
               <div class="terminal">
-                <span class="hljs-comment">//Przykładowa implementacja wyszukiwania binarnego<br>
-                  //Użyj strzałek, aby zmienić język</span><br>
+                <span class="hljs-comment">Przykładowa implementacja wyszukiwania binarnego</span><br>
+                <span class="lang"></span>
                 <pre><code class="nohighlight"><span class="element"></span>
                   </code>
                 </pre>
@@ -173,7 +172,7 @@ description: "Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jak
             <div class="key ctrl-right">Ctrl</div>
             <button class="key previousExample-btn red-btn" title="Poprzedni przykład">&lt;</button>
             <div class="key">v</div>
-            <button class="key nextExample-btn red-btn" title="Następny przykład">></button>
+            <button class="key nextExample-btn red-btn tip" data-tip="Użyj strzałek, aby zmienić język" title="Następny przykład">></button>
             <div class="key">0</div>
             <div class="key">,</div>
             <div class="touchpad">
@@ -197,14 +196,15 @@ description: "Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jak
     </h2>
 
     <div class="languages-list" role="list">
-      <div class="row">
-        <div role="listitem" class="col-lg-4 col-md-3 lang">
+      <div class="row justify-content-center">
+
+        <div role="listitem" class="col-md-2 lang">
           <a href="technologie/c" class="lang-link">
             <img class="tip" src="img/c.png" alt="Logo języka C" data-tip="C">
           </a>
         </div>
 
-        <div role="listitem" class="col-lg-4 col-md-6 lang">
+        <div role="listitem" class="col-md-4 lang">
           <a href="technologie/javascript" class="lang-link">
             <img class="tip" src="img/javascript.png" alt="Logo języka Javascript" data-tip="Javascript">
           </a>
@@ -223,21 +223,23 @@ description: "Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jak
           </a>
         </div>
 
-        <div role="listitem" class="col-lg-4 col-md-3 lang">
-          <a href="technologie/r" class="lang-link">
-            <img class="tip" src="img/r.png" alt="Logo języka R" data-tip="R">
-          </a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div role="listitem" class="col-md-3 lang">
+        <div role="listitem" class="col-md-2 lang">
           <a href="technologie/c++" class="lang-link">
             <img class="tip" src="img/c++.png" alt="Logo języka C++" data-tip="C++">
           </a>
 
           <a href="technologie/unrealengine4" class="sub lang-link">
             <img class="tip" src="img/unrealengine4.png" alt="Logo Unreal Engine 4" data-tip="Unreal Engine 4">
+          </a>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div role="listitem" class="col-md-3 lang">
+          <a href="technologie/scala" class="lang-link">
+            <img class="tip" src="img/scala.png" alt="Logo języka Scala" data-tip="Scala">
           </a>
         </div>
 
@@ -255,6 +257,22 @@ description: "Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jak
         </div>
 
         <div role="listitem" class="col-md-3 lang">
+          <a href="technologie/kotlin" class="lang-link">
+            <img class="tip" src="img/kotlin.png" alt="Logo języka Kotlin" data-tip="Kotlin">
+          </a>
+        </div>
+
+        <div role="listitem" class="col-md-3 lang">
+          <a href="technologie/groovy" class="lang-link">
+            <img class="tip" src="img/groovy.png" alt="Logo języka Groovy" data-tip="Groovy">
+          </a>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div role="listitem" class="col-md-2 lang">
           <a href="technologie/ruby" class="lang-link">
             <img class="tip" src="img/ruby.png" alt="Logo języka Ruby" data-tip="Ruby">
           </a>
@@ -276,16 +294,14 @@ description: "Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jak
             <img class="tip" src="img/asp.net.png" alt="Logo ASP.NET" data-tip="ASP.NET">
           </a>
         </div>
-      </div>
 
-      <div class="row">
-        <div role="listitem" class="col-md-4 lang">
+        <div role="listitem" class="col-md-2 lang">
           <a href="technologie/swift" class="lang-link">
             <img class="tip" src="img/swift.png" alt="Logo języka Swift" data-tip="Swift">
           </a>
         </div>
 
-        <div role="listitem" class="col-md-4 lang">
+        <div role="listitem" class="col-md-3 lang">
           <a href="technologie/python" class="lang-link">
             <img class="tip" src="img/python.png" alt="Logo języka Python" data-tip="Python">
           </a>
@@ -294,6 +310,16 @@ description: "Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jak
             <img class="tip" src="img/django.png" alt="Logo Django" data-tip="Django">
           </a>
         </div>
+
+        <div role="listitem" class="col-md-2 lang">
+          <a href="technologie/go" class="lang-link">
+            <img class="tip" src="img/go.png" alt="Logo języka Go" data-tip="Go">
+          </a>
+        </div>
+
+      </div>
+
+      <div class="row">
 
         <div role="listitem" class="col-md-4 lang">
           <a href="technologie/php" class="lang-link">
@@ -307,6 +333,19 @@ description: "Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jak
             <img class="tip" src="img/wordpress.png" alt="Logo WordPress" data-tip="WordPress">
           </a>
         </div>
+
+        <div role="listitem" class="col-md-4 lang">
+          <a href="technologie/rust" class="lang-link">
+            <img class="tip" src="img/rust.png" alt="Logo języka Rust" data-tip="Rust">
+          </a>
+        </div>
+
+        <div role="listitem" class="col-md-4 lang">
+          <a href="technologie/r" class="lang-link">
+            <img class="tip" src="img/r.png" alt="Logo języka R" data-tip="R">
+          </a>
+        </div>
+
       </div>
 
       <hr>
@@ -337,8 +376,8 @@ description: "Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jak
       <div class="col-md-12">
 
         <h2 class="section-heading">O projekcie</h2>
-        <p>Wybór języka programowania/technologii to odwieczny problem, szczególnie początkujących programistów. Dlatego
-          powstał ten projekt, aby ułatwić innym to zadanie (przynajmniej te oczywiste przypadki) oraz zredukować liczbę
+        <p>Wybór języka programowania/technologii to częsty problem, szczególnie początkujących programistów, dlatego
+          powstał ten projekt, aby ułatwić to zadanie (przynajmniej te oczywiste przypadki) oraz zredukować liczbę
           kolejnych, tych samych wątków na forach.</p>
 
         <p>Autor:</p>
@@ -383,7 +422,7 @@ description: "Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jak
 
     <div class="row">
       <div class="col-md-12">
-        <!--118-->
+        <!--130-->
         <p>Przygotowałem ankietę dotyczącą wyboru języka / technologii do danego zastosowania. Daj znać co ty
           zaproponowałbyś początkującym programistom!</p>
         <button id="ankieta" class="main-btn"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ankieta</button>
@@ -459,8 +498,8 @@ description: "Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jak
 </div>
 
 <pre hidden>
-  {%- for example in site.data.example_code -%}
-  <code class="language-{{ example.lang }}">{{ example.code }}</code>
+  {%- for example in site.data.code_examples -%}
+  <code class="language-{{ example.lang }}">{{ example.code | escape }}</code>
   {%- endfor -%}
 </pre>
 

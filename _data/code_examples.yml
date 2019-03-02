@@ -1,15 +1,15 @@
 - lang: javascript
   code: |
-    //JavaScript
-    function binarySearch(A, x) {
+    // JavaScript
+    function binarySearch(array, x) {
       let start = 0;
-      let end = A.length - 1;
+      let end = array.length - 1;
       while (start <= end) {
         const middle = Math.floor((start + end) / 2);
-        if (A[middle] === x) {
+        if (array[middle] === x) {
           return middle;
         }
-        if (A[middle] > x) {
+        if (array[middle] > x) {
           end = middle - 1;
         } else {
           start = middle + 1;
@@ -30,19 +30,19 @@
 
 - lang: cpp
   code: |
-    //C++
-    #include &#60;iostream&#62;
+    // C++
+    #include <iostream>
     using namespace std;
 
-    int binarySearch(string A[], string x) {
+    int binarySearch(string array[], string x) {
       int start = 0;
-      int end = sizeof(A) - 1;
+      int end = sizeof(array) - 1;
       while (start <= end) {
         int middle = (start + end) / 2;
-        if (A[middle] == x) {
+        if (array[middle] == x) {
           return middle;
         }
-        if (A[middle] > x) {
+        if (array[middle] > x) {
           end = middle - 1;
         } else {
           start = middle + 1;
@@ -65,16 +65,16 @@
 
 - lang: php
   code: |
-    //PHP
-    function binarySearch($A, $x) {
+    // PHP
+    function binarySearch($array, $x) {
       $start = 0;
-      $end = sizeof($A) - 1;
+      $end = sizeof($array) - 1;
       while ($start <= $end) {
         $middle = floor(($start + $end) / 2);
-        if ($A[$middle] === $x) {
+        if ($array[$middle] === $x) {
           return $middle;
         }
-        if ($A[$middle] > $x) {
+        if ($array[$middle] > $x) {
           $end = $middle - 1;
         } else {
           $start = $middle + 1;
@@ -95,17 +95,17 @@
 
 - lang: java
   code: |
-    //Java
+    // Java
     public class BinarySearch {
-      public static int binarySearch(String[] A, String x) {
+      public static int binarySearch(String[] array, String x) {
         int start = 0;
-        int end = A.length - 1;
+        int end = array.length - 1;
         while (start <= end) {
           int middle = (start + end) / 2;
-          if (A[middle].equals(x)) {
+          if (array[middle].equals(x)) {
             return middle;
           }
-          if(A[middle].compareTo(x) > 0) {
+          if(array[middle].compareTo(x) > 0) {
             end = middle-1;
           } else {
             start = middle+1;
@@ -129,7 +129,7 @@
 
 - lang: ruby
   code: |
-    #Ruby
+    # Ruby
     def binarySearch(a, x)
       startAt = 0
       endAt = a.length - 1
@@ -159,15 +159,15 @@
 
 - lang: python
   code: |
-    #Python
-    def binarySearch(A, x) :
+    # Python
+    def binarySearch(array, x) :
       start = 0
-      end = len(A) - 1
+      end = len(array) - 1
       while start <= end :
         middle = (start+end) // 2
-        if A[middle] == x :
+        if array[middle] == x :
           return middle
-        if A[middle] > x :
+        if array[middle] > x :
           end = middle - 1
         else:
           start = middle + 1
@@ -185,18 +185,18 @@
 
 - lang: c
   code: |
-    //C
-    #include &#60;stdio.h&#62;
+    // C
+    #include <stdio.h>
 
-    int binarySearch(char *A[], char *x, int Asize){
+    int binarySearch(char *array[], char *x, int Asize){
       int start = 0;
       int end = Asize - 1;
       while(start <= end) {
         int middle = (start + end) / 2;
-        if (strcmp(A[middle], x) == 0) {
+        if (strcmp(array[middle], x) == 0) {
           return middle;
         }
-        if (strcmp(A[middle], x) > 0) {
+        if (strcmp(array[middle], x) > 0) {
           end = middle - 1;
 
         } else {
@@ -208,13 +208,13 @@
     }
 
     int main(void) {
-      char *A[6] = {"Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce projektowe", "..."};
+      char *array[6] = {"Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce projektowe", "..."};
       /* Dla wyszukiwania binarnego
       tablica musi być posortowana rosnąco */
 
-      int arrSize = sizeof(A) / sizeof(A[0]);
+      int arrSize = sizeof(array) / sizeof(array[0]);
       char x[] = "Illuminati";
-      int foundXAt = binarySearch(A, x, arrSize);
+      int foundXAt = binarySearch(array, x, arrSize);
 
       printf("Znaleziono \"%s\" na pozycji %d \n", x, foundXAt);
       // Znaleziono "Illuminati" na pozycji 3
@@ -222,16 +222,16 @@
 
 - lang: swift
   code: |
-      //Swift
-      func binarySearch(A: [String], x: String) -> Int {
+      // Swift
+      func binarySearch(array: [String], x: String) -> Int {
         var start = 0;
-        var end = A.count - 1;
+        var end = array.count - 1;
         while (start<=end) {
           var middle = (start+end) / 2;
-          if (A[middle] == x) {
+          if (array[middle] == x) {
             return middle;
           }
-          if (A[middle] > x) {
+          if (array[middle] > x) {
             end = middle - 1;
           } else {
             start = middle + 1;
@@ -246,24 +246,25 @@
       tablica musi być posortowana rosnąco */
 
       var x = "Illuminati";
-      var foundXAt = binarySearch(A: library, x: x);
+      var foundXAt = binarySearch(array: library, x: x);
+
       print("Znaleziono \"" + String(x) + "\" na pozycji " + String(foundXAt));
       // Znaleziono "Illuminati" na pozycji 3
 
 - lang: csharp
   code: |
-      //C♯
+      // C♯
       using System;
       class MainClass {
-        public static int binarySearch(String[] A, String x){
+        public static int binarySearch(String[] array, String x){
           int start = 0;
-          int end = A.Length - 1;
+          int end = array.Length - 1;
           while(start <= end) {
             int middle = (start+end) / 2;
-            if (A[middle] == x) {
+            if (array[middle] == x) {
               return middle;
             }
-            if(A[middle].CompareTo(x) > 0){
+            if(array[middle].CompareTo(x) > 0){
               end = middle - 1;
             } else {
               start = middle + 1;
@@ -287,16 +288,16 @@
 
 - lang: r
   code: |
-    #R
-    binarySearch <- function (A, x){
+    # R
+    binarySearch <- function (array, x){
       start <- 0;
-      end <- length(A) - 1;
+      end <- length(array) - 1;
       while (start <= end) {
         middle <- floor((start+end) / 2);
-        if (A[middle] == x) {
+        if (array[middle] == x) {
           return(middle);
         }
-        if(A[middle] > x){
+        if(array[middle] > x){
           end = middle - 1;
         }
         else{
@@ -309,7 +310,72 @@
     library <- c("Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce projektowe", "...");
     # Dla wyszukiwania binarnego
     # tablica musi być posortowana rosnąco
+
     x = "Illuminati";
     foundXAt = binarySearch(library, x);
+
     print(paste("Znaleziono ", x, " na pozycji ", foundXAt));
     # Znaleziono "Illuminati" na pozycji 4
+
+- lang: kotlin
+  code: |
+    // Kotlin
+    fun binarySearch(array: Array<String>, x: String): Int {
+        var start = 0
+        var end = array.size - 1
+        while (start <= end) {
+            val middle = (start + end) / 2
+            if (array[middle] == x) {
+                return middle
+            }
+            if (array[middle] > x) {
+                end = middle - 1
+            } else {
+                start = middle + 1
+            }
+        }
+        return -1
+    }
+
+    fun main() {
+        val library = arrayOf("Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce projektowe", "...")
+        /* Dla wyszukiwania binarnego
+        tablica musi być posortowana rosnąco */
+
+        val x = "Illuminati"
+        val foundXAt = binarySearch(library, x)
+
+        println("""Znaleziono "$x" na pozycji $foundXAt""")
+        // Znaleziono "Illuminati" na pozycji 3
+    }
+- lang: scala
+  code: |
+    // Scala
+    object BinarySearch extends App {
+      def binarySearch(array: Array[String], x: String): Int = {
+        var start = 0
+        var end = array.size - 1
+        while (start <= end) {
+            val middle = (start + end) / 2
+            if (array(middle) == x) {
+                return middle
+            }
+            if (array(middle) > x) {
+                end = middle - 1
+            } else {
+                start = middle + 1
+            }
+        }
+        return -1
+      }
+
+      val library = Array("Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce projektowe", "...")
+      /* Dla wyszukiwania binarnego
+      tablica musi być posortowana rosnąco */
+
+      val x = "Illuminati"
+      val foundXAt = binarySearch(library, x)
+
+      println(s"""Znaleziono "$x" na pozycji $foundXAt""")
+      // Znaleziono "Illuminati" na pozycji 3
+    }

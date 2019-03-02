@@ -1,7 +1,7 @@
 ---
 layout:     simpleTechnology
 title:      React
-nobooks:    true
+no-books:    true
 ---
 
 {: .official-page}

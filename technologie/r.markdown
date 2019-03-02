@@ -2,7 +2,7 @@
 layout:     technology
 title-full: Język programowania R - zastosowanie, przyszłość, polecane książki
 title:      R
-image:		r.png
+image:      r.png
 ---
 
 {% assign stats = site.data.statistics.statistics.R %}

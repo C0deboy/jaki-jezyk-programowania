@@ -1,7 +1,7 @@
 ---
 layout:     simpleTechnology
 title:      Spring
-nobooks:     true
+no-books:     true
 ---
 
 {: .official-page}

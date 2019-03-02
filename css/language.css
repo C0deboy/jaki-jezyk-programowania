@@ -28,8 +28,8 @@ section {
   width: 100%;
   background-color: #003e48;
   box-shadow: 0 2px 4px 0 black;
-  padding: 40px 5% 40px;
-  margin-top: 30px;
+  padding: 20px 5% 40px;
+  margin-top: 50px;
 }
 
 @media (max-width: 768px) {
@@ -368,4 +368,9 @@ section {
 
 .stats-icon {
   margin-right: 10px;
+}
+
+.in-progress {
+  background: linear-gradient(#f94646,#8f0808);
+  box-shadow: 0 1px 4px 0 #212121;
 }

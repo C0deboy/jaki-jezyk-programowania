@@ -1,1 +1,1248 @@
-{"date": "2019-02-04", "C": {"Meetup": {"global" : {"meetups" : "209", "members" : "91,304", "ranking" : "9"}, "local" : {"meetups" : "11", "members" : "4,912", "ranking" : "7"}}, "StackOverFlow": {"questions" : "295,360", "ranking" : "7"}, "SpectrumRanking": {"currentPosition" : "4", "lastYearPosition" : "2"}, "TiobeIndex": {"currentPosition" : "2", "lastYearPosition" : "2"}, "Github": {"moreThen1000Stars" : "659", "projects" : "227,270", "ranking" : "7", "top10" : [{"name" : "linux", "stars" : "68,944", "url" : "https://github.com/torvalds/linux"}, {"name" : "netdata", "stars" : "35,218", "url" : "https://github.com/netdata/netdata"}, {"name" : "redis", "stars" : "34,125", "url" : "https://github.com/antirez/redis"}, {"name" : "git", "stars" : "25,958", "url" : "https://github.com/git/git"}, {"name" : "ijkplayer", "stars" : "22,040", "url" : "https://github.com/bilibili/ijkplayer"}, {"name" : "php-src", "stars" : "21,606", "url" : "https://github.com/php/php-src"}, {"name" : "wrk", "stars" : "19,016", "url" : "https://github.com/wg/wrk"}, {"name" : "How-to-Make-a-Computer-Operating-System", "stars" : "17,802", "url" : "https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System"}, {"name" : "the_silver_searcher", "stars" : "17,063", "url" : "https://github.com/ggreer/the_silver_searcher"}, {"name" : "emscripten", "stars" : "16,441", "url" : "https://github.com/emscripten-core/emscripten"}]}}, "Cpp": {"Meetup": {"global" : {"meetups" : "209", "members" : "91,304", "ranking" : "9"}, "local" : {"meetups" : "11", "members" : "4,912", "ranking" : "7"}}, "StackOverFlow": {"questions" : "603,156", "ranking" : "6"}, "SpectrumRanking": {"currentPosition" : "2", "lastYearPosition" : "4"}, "TiobeIndex": {"currentPosition" : "4", "lastYearPosition" : "3"}, "Github": {"moreThen1000Stars" : "749", "projects" : "276,377", "ranking" : "6", "top10" : [{"name" : "tensorflow", "stars" : "119,999", "url" : "https://github.com/tensorflow/tensorflow"}, {"name" : "electron", "stars" : "69,643", "url" : "https://github.com/electron/electron"}, {"name" : "swift", "stars" : "46,543", "url" : "https://github.com/apple/swift"}, {"name" : "bitcoin", "stars" : "36,996", "url" : "https://github.com/bitcoin/bitcoin"}, {"name" : "nw.js", "stars" : "34,974", "url" : "https://github.com/nwjs/nw.js"}, {"name" : "x64dbg", "stars" : "33,589", "url" : "https://github.com/x64dbg/x64dbg"}, {"name" : "protobuf", "stars" : "31,914", "url" : "https://github.com/protocolbuffers/protobuf"}, {"name" : "opencv", "stars" : "31,533", "url" : "https://github.com/opencv/opencv"}, {"name" : "caffe", "stars" : "26,959", "url" : "https://github.com/BVLC/caffe"}, {"name" : "pytorch", "stars" : "24,435", "url" : "https://github.com/pytorch/pytorch"}]}}, "Java": {"Meetup": {"global" : {"meetups" : "2,223", "members" : "1,437,131", "ranking" : "3"}, "local" : {"meetups" : "88", "members" : "70,517", "ranking" : "2"}}, "StackOverFlow": {"questions" : "1,508,662", "ranking" : "2"}, "SpectrumRanking": {"currentPosition" : "3", "lastYearPosition" : "3"}, "TiobeIndex": {"currentPosition" : "1", "lastYearPosition" : "1"}, "Github": {"moreThen1000Stars" : "1,993", "projects" : "573,620", "ranking" : "3", "top10" : [{"name" : "elasticsearch", "stars" : "38,138", "url" : "https://github.com/elastic/elasticsearch"}, {"name" : "RxJava", "stars" : "37,475", "url" : "https://github.com/ReactiveX/RxJava"}, {"name" : "spring-boot", "stars" : "33,830", "url" : "https://github.com/spring-projects/spring-boot"}, {"name" : "interviews", "stars" : "32,215", "url" : "https://github.com/kdn251/interviews"}, {"name" : "okhttp", "stars" : "30,737", "url" : "https://github.com/square/okhttp"}, {"name" : "guava", "stars" : "29,648", "url" : "https://github.com/google/guava"}, {"name" : "MPAndroidChart", "stars" : "25,813", "url" : "https://github.com/PhilJay/MPAndroidChart"}, {"name" : "glide", "stars" : "24,796", "url" : "https://github.com/bumptech/glide"}, {"name" : "lottie-android", "stars" : "24,129", "url" : "https://github.com/airbnb/lottie-android"}, {"name" : "JavaGuide", "stars" : "22,958", "url" : "https://github.com/Snailclimb/JavaGuide"}]}}, "JavaScript": {"Meetup": {"global" : {"meetups" : "5,749", "members" : "3,965,482", "ranking" : "1"}, "local" : {"meetups" : "127", "members" : "76,358", "ranking" : "1"}}, "StackOverFlow": {"questions" : "1,753,945", "ranking" : "1"}, "SpectrumRanking": {"currentPosition" : "8", "lastYearPosition" : "7"}, "TiobeIndex": {"currentPosition" : "6", "lastYearPosition" : "6"}, "Github": {"moreThen1000Stars" : "4,349", "projects" : "1,112,869", "ranking" : "1", "top10" : [{"name" : "freeCodeCamp", "stars" : "297,252", "url" : "https://github.com/freeCodeCamp/freeCodeCamp"}, {"name" : "vue", "stars" : "126,971", "url" : "https://github.com/vuejs/vue"}, {"name" : "react", "stars" : "121,365", "url" : "https://github.com/facebook/react"}, {"name" : "d3", "stars" : "82,154", "url" : "https://github.com/d3/d3"}, {"name" : "javascript", "stars" : "81,322", "url" : "https://github.com/airbnb/javascript"}, {"name" : "react-native", "stars" : "73,490", "url" : "https://github.com/facebook/react-native"}, {"name" : "create-react-app", "stars" : "63,019", "url" : "https://github.com/facebook/create-react-app"}, {"name" : "angular.js", "stars" : "59,368", "url" : "https://github.com/angular/angular.js"}, {"name" : "Font-Awesome", "stars" : "58,679", "url" : "https://github.com/FortAwesome/Font-Awesome"}, {"name" : "node", "stars" : "57,855", "url" : "https://github.com/nodejs/node"}]}}, "Python": {"Meetup": {"global" : {"meetups" : "2,269", "members" : "1,916,516", "ranking" : "2"}, "local" : {"meetups" : "40", "members" : "28,356", "ranking" : "4"}}, "StackOverFlow": {"questions" : "1,102,900", "ranking" : "5"}, "SpectrumRanking": {"currentPosition" : "1", "lastYearPosition" : "1"}, "TiobeIndex": {"currentPosition" : "3", "lastYearPosition" : "4"}, "Github": {"moreThen1000Stars" : "1,880", "projects" : "676,359", "ranking" : "2", "top10" : [{"name" : "awesome-python", "stars" : "61,020", "url" : "https://github.com/vinta/awesome-python"}, {"name" : "system-design-primer", "stars" : "56,370", "url" : "https://github.com/donnemartin/system-design-primer"}, {"name" : "models", "stars" : "47,975", "url" : "https://github.com/tensorflow/models"}, {"name" : "public-apis", "stars" : "47,121", "url" : "https://github.com/toddmotto/public-apis"}, {"name" : "youtube-dl", "stars" : "46,832", "url" : "https://github.com/rg3/youtube-dl"}, {"name" : "flask", "stars" : "41,716", "url" : "https://github.com/pallets/flask"}, {"name" : "thefuck", "stars" : "40,636", "url" : "https://github.com/nvbn/thefuck"}, {"name" : "httpie", "stars" : "39,634", "url" : "https://github.com/jakubroztocil/httpie"}, {"name" : "django", "stars" : "39,267", "url" : "https://github.com/django/django"}, {"name" : "keras", "stars" : "37,939", "url" : "https://github.com/keras-team/keras"}]}}, "Swift": {"Meetup": {"global" : {"meetups" : "375", "members" : "188,519", "ranking" : "7"}, "local" : {"meetups" : "7", "members" : "1,441", "ranking" : "9"}}, "StackOverFlow": {"questions" : "220,232", "ranking" : "9"}, "SpectrumRanking": {"currentPosition" : "18", "lastYearPosition" : "10"}, "TiobeIndex": {"currentPosition" : "15", "lastYearPosition" : "12"}, "Github": {"moreThen1000Stars" : "570", "projects" : "72,965", "ranking" : "9", "top10" : [{"name" : "Alamofire", "stars" : "30,081", "url" : "https://github.com/Alamofire/Alamofire"}, {"name" : "awesome-ios", "stars" : "29,614", "url" : "https://github.com/vsouza/awesome-ios"}, {"name" : "Charts", "stars" : "20,208", "url" : "https://github.com/danielgindi/Charts"}, {"name" : "swift-algorithm-club", "stars" : "19,431", "url" : "https://github.com/raywenderlich/swift-algorithm-club"}, {"name" : "ReactiveCocoa", "stars" : "19,306", "url" : "https://github.com/ReactiveCocoa/ReactiveCocoa"}, {"name" : "open-source-ios-apps", "stars" : "19,183", "url" : "https://github.com/dkhamsing/open-source-ios-apps"}, {"name" : "SwiftyJSON", "stars" : "17,992", "url" : "https://github.com/SwiftyJSON/SwiftyJSON"}, {"name" : "ShadowsocksX-NG", "stars" : "17,899", "url" : "https://github.com/shadowsocks/ShadowsocksX-NG"}, {"name" : "iina", "stars" : "17,124", "url" : "https://github.com/iina/iina"}, {"name" : "awesome-swift", "stars" : "16,483", "url" : "https://github.com/matteocrippa/awesome-swift"}]}}, "R": {"Meetup": {"global" : {"meetups" : "208", "members" : "95,856", "ranking" : "8"}, "local" : {"meetups" : "5", "members" : "3,471", "ranking" : "8"}}, "StackOverFlow": {"questions" : "273,631", "ranking" : "8"}, "SpectrumRanking": {"currentPosition" : "7", "lastYearPosition" : "6"}, "TiobeIndex": {"currentPosition" : "12", "lastYearPosition" : "8"}, "Github": {"moreThen1000Stars" : "24", "projects" : "43,220", "ranking" : "10", "top10" : [{"name" : "ggplot2", "stars" : "3,589", "url" : "https://github.com/tidyverse/ggplot2"}, {"name" : "ML_for_Hackers", "stars" : "3,458", "url" : "https://github.com/johnmyleswhite/ML_for_Hackers"}, {"name" : "awesome-R", "stars" : "3,343", "url" : "https://github.com/qinwf/awesome-R"}, {"name" : "shiny", "stars" : "3,239", "url" : "https://github.com/rstudio/shiny"}, {"name" : "swirl_courses", "stars" : "2,807", "url" : "https://github.com/swirldev/swirl_courses"}, {"name" : "AnomalyDetection", "stars" : "2,798", "url" : "https://github.com/twitter/AnomalyDetection"}, {"name" : "dplyr", "stars" : "2,795", "url" : "https://github.com/tidyverse/dplyr"}, {"name" : "devtools", "stars" : "1,759", "url" : "https://github.com/r-lib/devtools"}, {"name" : "r4ds", "stars" : "1,743", "url" : "https://github.com/hadley/r4ds"}, {"name" : "knitr", "stars" : "1,710", "url" : "https://github.com/yihui/knitr"}]}}, "Csharp": {"Meetup": {"global" : {"meetups" : "840", "members" : "455,190", "ranking" : "6"}, "local" : {"meetups" : "34", "members" : "29,374", "ranking" : "3"}}, "StackOverFlow": {"questions" : "1,281,120", "ranking" : "3"}, "SpectrumRanking": {"currentPosition" : "5", "lastYearPosition" : "5"}, "TiobeIndex": {"currentPosition" : "7", "lastYearPosition" : "5"}, "Github": {"moreThen1000Stars" : "390", "projects" : "213,378", "ranking" : "8", "top10" : [{"name" : "shadowsocks-windows", "stars" : "32,576", "url" : "https://github.com/shadowsocks/shadowsocks-windows"}, {"name" : "CodeHub", "stars" : "18,650", "url" : "https://github.com/CodeHubApp/CodeHub"}, {"name" : "corefx", "stars" : "15,677", "url" : "https://github.com/dotnet/corefx"}, {"name" : "PowerShell", "stars" : "12,369", "url" : "https://github.com/PowerShell/PowerShell"}, {"name" : "Wox", "stars" : "12,126", "url" : "https://github.com/Wox-launcher/Wox"}, {"name" : "WaveFunctionCollapse", "stars" : "11,405", "url" : "https://github.com/mxgmn/WaveFunctionCollapse"}, {"name" : "coreclr", "stars" : "10,886", "url" : "https://github.com/dotnet/coreclr"}, {"name" : "roslyn", "stars" : "10,768", "url" : "https://github.com/dotnet/roslyn"}, {"name" : "Dapper", "stars" : "10,124", "url" : "https://github.com/StackExchange/Dapper"}, {"name" : "ShareX", "stars" : "9,424", "url" : "https://github.com/ShareX/ShareX"}]}}, "Ruby": {"Meetup": {"global" : {"meetups" : "882", "members" : "784,622", "ranking" : "5"}, "local" : {"meetups" : "17", "members" : "7,160", "ranking" : "6"}}, "StackOverFlow": {"questions" : "201,977", "ranking" : "10"}, "SpectrumRanking": {"currentPosition" : "13", "lastYearPosition" : "12"}, "TiobeIndex": {"currentPosition" : "18", "lastYearPosition" : "11"}, "Github": {"moreThen1000Stars" : "694", "projects" : "307,404", "ranking" : "5", "top10" : [{"name" : "rails", "stars" : "42,040", "url" : "https://github.com/rails/rails"}, {"name" : "jekyll", "stars" : "36,734", "url" : "https://github.com/jekyll/jekyll"}, {"name" : "discourse", "stars" : "27,308", "url" : "https://github.com/discourse/discourse"}, {"name" : "fastlane", "stars" : "24,387", "url" : "https://github.com/fastlane/fastlane"}, {"name" : "awesome-awesomeness", "stars" : "23,568", "url" : "https://github.com/bayandin/awesome-awesomeness"}, {"name" : "gitlabhq", "stars" : "21,548", "url" : "https://github.com/gitlabhq/gitlabhq"}, {"name" : "huginn", "stars" : "20,454", "url" : "https://github.com/huginn/huginn"}, {"name" : "devdocs", "stars" : "19,780", "url" : "https://github.com/freeCodeCamp/devdocs"}, {"name" : "devise", "stars" : "19,534", "url" : "https://github.com/plataformatec/devise"}, {"name" : "vagrant", "stars" : "17,911", "url" : "https://github.com/hashicorp/vagrant"}]}}, "PHP": {"Meetup": {"global" : {"meetups" : "2,088", "members" : "1,079,155", "ranking" : "4"}, "local" : {"meetups" : "36", "members" : "18,101", "ranking" : "5"}}, "StackOverFlow": {"questions" : "1,258,702", "ranking" : "4"}, "SpectrumRanking": {"currentPosition" : "6", "lastYearPosition" : "8"}, "TiobeIndex": {"currentPosition" : "8", "lastYearPosition" : "9"}, "Github": {"moreThen1000Stars" : "741", "projects" : "350,679", "ranking" : "4", "top10" : [{"name" : "laravel", "stars" : "48,921", "url" : "https://github.com/laravel/laravel"}, {"name" : "symfony", "stars" : "19,731", "url" : "https://github.com/symfony/symfony"}, {"name" : "Faker", "stars" : "19,265", "url" : "https://github.com/fzaninotto/Faker"}, {"name" : "composer", "stars" : "18,216", "url" : "https://github.com/composer/composer"}, {"name" : "CodeIgniter", "stars" : "16,942", "url" : "https://github.com/bcit-ci/CodeIgniter"}, {"name" : "DesignPatternsPHP", "stars" : "16,658", "url" : "https://github.com/domnikl/DesignPatternsPHP"}, {"name" : "SecLists", "stars" : "16,387", "url" : "https://github.com/danielmiessler/SecLists"}, {"name" : "framework", "stars" : "15,918", "url" : "https://github.com/laravel/framework"}, {"name" : "guzzle", "stars" : "15,509", "url" : "https://github.com/guzzle/guzzle"}, {"name" : "monolog", "stars" : "13,514", "url" : "https://github.com/Seldaek/monolog"}]}}}
+{
+  "date": "2019-03-01",
+  "C": {
+    "StackOverFlow": {
+      "questions": "297,344",
+      "ranking": "7"
+    },
+    "TiobeIndex": {
+      "currentPosition": "2",
+      "lastYearPosition": "2"
+    },
+    "SpectrumRanking": {
+      "currentPosition": "4",
+      "lastYearPosition": "2"
+    },
+    "Meetup": {
+      "global": {
+        "meetups": "210",
+        "members": "92,744",
+        "ranking": "11"
+      },
+      "local": {
+        "meetups": "11",
+        "members": "5,069",
+        "ranking": "9"
+      }
+    },
+    "Github": {
+      "moreThen1000Stars": "667",
+      "projects": "230,554",
+      "ranking": "7",
+      "top10": [
+        {
+          "name": "linux",
+          "stars": "70,026",
+          "url": "https://github.com/torvalds/linux"
+        },
+        {
+          "name": "netdata",
+          "stars": "36,099",
+          "url": "https://github.com/netdata/netdata"
+        },
+        {
+          "name": "redis",
+          "stars": "34,579",
+          "url": "https://github.com/antirez/redis"
+        },
+        {
+          "name": "git",
+          "stars": "26,342",
+          "url": "https://github.com/git/git"
+        },
+        {
+          "name": "ijkplayer",
+          "stars": "22,249",
+          "url": "https://github.com/bilibili/ijkplayer"
+        },
+        {
+          "name": "php-src",
+          "stars": "21,996",
+          "url": "https://github.com/php/php-src"
+        },
+        {
+          "name": "wrk",
+          "stars": "19,317",
+          "url": "https://github.com/wg/wrk"
+        },
+        {
+          "name": "How-to-Make-a-Computer-Operating-System",
+          "stars": "17,854",
+          "url": "https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System"
+        },
+        {
+          "name": "the_silver_searcher",
+          "stars": "17,249",
+          "url": "https://github.com/ggreer/the_silver_searcher"
+        },
+        {
+          "name": "emscripten",
+          "stars": "16,597",
+          "url": "https://github.com/emscripten-core/emscripten"
+        }
+      ]
+    }
+  },
+  "Cpp": {
+    "StackOverFlow": {
+      "questions": "606,789",
+      "ranking": "6"
+    },
+    "TiobeIndex": {
+      "currentPosition": "4",
+      "lastYearPosition": "3"
+    },
+    "SpectrumRanking": {
+      "currentPosition": "2",
+      "lastYearPosition": "4"
+    },
+    "Meetup": {
+      "global": {
+        "meetups": "210",
+        "members": "92,744",
+        "ranking": "11"
+      },
+      "local": {
+        "meetups": "11",
+        "members": "5,069",
+        "ranking": "9"
+      }
+    },
+    "Github": {
+      "moreThen1000Stars": "772",
+      "projects": "281,927",
+      "ranking": "6",
+      "top10": [
+        {
+          "name": "tensorflow",
+          "stars": "121,528",
+          "url": "https://github.com/tensorflow/tensorflow"
+        },
+        {
+          "name": "electron",
+          "stars": "70,519",
+          "url": "https://github.com/electron/electron"
+        },
+        {
+          "name": "swift",
+          "stars": "46,796",
+          "url": "https://github.com/apple/swift"
+        },
+        {
+          "name": "bitcoin",
+          "stars": "37,282",
+          "url": "https://github.com/bitcoin/bitcoin"
+        },
+        {
+          "name": "nw.js",
+          "stars": "35,082",
+          "url": "https://github.com/nwjs/nw.js"
+        },
+        {
+          "name": "x64dbg",
+          "stars": "33,655",
+          "url": "https://github.com/x64dbg/x64dbg"
+        },
+        {
+          "name": "protobuf",
+          "stars": "32,380",
+          "url": "https://github.com/protocolbuffers/protobuf"
+        },
+        {
+          "name": "opencv",
+          "stars": "32,201",
+          "url": "https://github.com/opencv/opencv"
+        },
+        {
+          "name": "caffe",
+          "stars": "27,171",
+          "url": "https://github.com/BVLC/caffe"
+        },
+        {
+          "name": "pytorch",
+          "stars": "25,261",
+          "url": "https://github.com/pytorch/pytorch"
+        }
+      ]
+    }
+  },
+  "Java": {
+    "StackOverFlow": {
+      "questions": "1,519,681",
+      "ranking": "2"
+    },
+    "TiobeIndex": {
+      "currentPosition": "1",
+      "lastYearPosition": "1"
+    },
+    "SpectrumRanking": {
+      "currentPosition": "3",
+      "lastYearPosition": "3"
+    },
+    "Meetup": {
+      "global": {
+        "meetups": "2,197",
+        "members": "1,456,227",
+        "ranking": "3"
+      },
+      "local": {
+        "meetups": "88",
+        "members": "72,272",
+        "ranking": "2"
+      }
+    },
+    "Github": {
+      "moreThen1000Stars": "2,019",
+      "projects": "659,437",
+      "ranking": "3",
+      "top10": [
+        {
+          "name": "java-design-patterns",
+          "stars": "44,949",
+          "url": "https://github.com/iluwatar/java-design-patterns"
+        },
+        {
+          "name": "elasticsearch",
+          "stars": "38,728",
+          "url": "https://github.com/elastic/elasticsearch"
+        },
+        {
+          "name": "RxJava",
+          "stars": "37,802",
+          "url": "https://github.com/ReactiveX/RxJava"
+        },
+        {
+          "name": "spring-boot",
+          "stars": "34,702",
+          "url": "https://github.com/spring-projects/spring-boot"
+        },
+        {
+          "name": "interviews",
+          "stars": "32,760",
+          "url": "https://github.com/kdn251/interviews"
+        },
+        {
+          "name": "retrofit",
+          "stars": "31,418",
+          "url": "https://github.com/square/retrofit"
+        },
+        {
+          "name": "okhttp",
+          "stars": "31,057",
+          "url": "https://github.com/square/okhttp"
+        },
+        {
+          "name": "guava",
+          "stars": "30,063",
+          "url": "https://github.com/google/guava"
+        },
+        {
+          "name": "spring-framework",
+          "stars": "26,902",
+          "url": "https://github.com/spring-projects/spring-framework"
+        },
+        {
+          "name": "JavaGuide",
+          "stars": "26,839",
+          "url": "https://github.com/Snailclimb/JavaGuide"
+        }
+      ]
+    }
+  },
+  "JavaScript": {
+    "StackOverFlow": {
+      "questions": "1,769,121",
+      "ranking": "1"
+    },
+    "TiobeIndex": {
+      "currentPosition": "6",
+      "lastYearPosition": "8"
+    },
+    "SpectrumRanking": {
+      "currentPosition": "8",
+      "lastYearPosition": "7"
+    },
+    "Meetup": {
+      "global": {
+        "meetups": "5,758",
+        "members": "4,023,967",
+        "ranking": "1"
+      },
+      "local": {
+        "meetups": "131",
+        "members": "79,332",
+        "ranking": "1"
+      }
+    },
+    "Github": {
+      "moreThen1000Stars": "4,099",
+      "projects": "1,132,771",
+      "ranking": "1",
+      "top10": [
+        {
+          "name": "freeCodeCamp",
+          "stars": "297,639",
+          "url": "https://github.com/freeCodeCamp/freeCodeCamp"
+        },
+        {
+          "name": "bootstrap",
+          "stars": "131,200",
+          "url": "https://github.com/twbs/bootstrap"
+        },
+        {
+          "name": "vue",
+          "stars": "129,280",
+          "url": "https://github.com/vuejs/vue"
+        },
+        {
+          "name": "react",
+          "stars": "123,433",
+          "url": "https://github.com/facebook/react"
+        },
+        {
+          "name": "d3",
+          "stars": "82,742",
+          "url": "https://github.com/d3/d3"
+        },
+        {
+          "name": "javascript",
+          "stars": "82,239",
+          "url": "https://github.com/airbnb/javascript"
+        },
+        {
+          "name": "react-native",
+          "stars": "74,558",
+          "url": "https://github.com/facebook/react-native"
+        },
+        {
+          "name": "create-react-app",
+          "stars": "64,280",
+          "url": "https://github.com/facebook/create-react-app"
+        },
+        {
+          "name": "angular.js",
+          "stars": "59,407",
+          "url": "https://github.com/angular/angular.js"
+        },
+        {
+          "name": "Font-Awesome",
+          "stars": "58,947",
+          "url": "https://github.com/FortAwesome/Font-Awesome"
+        }
+      ]
+    }
+  },
+  "Python": {
+    "StackOverFlow": {
+      "questions": "1,120,631",
+      "ranking": "5"
+    },
+    "TiobeIndex": {
+      "currentPosition": "3",
+      "lastYearPosition": "4"
+    },
+    "SpectrumRanking": {
+      "currentPosition": "1",
+      "lastYearPosition": "1"
+    },
+    "Meetup": {
+      "global": {
+        "meetups": "2,300",
+        "members": "1,958,111",
+        "ranking": "2"
+      },
+      "local": {
+        "meetups": "40",
+        "members": "29,235",
+        "ranking": "4"
+      }
+    },
+    "Github": {
+      "moreThen1000Stars": "1,934",
+      "projects": "693,400",
+      "ranking": "2",
+      "top10": [
+        {
+          "name": "awesome-python",
+          "stars": "63,309",
+          "url": "https://github.com/vinta/awesome-python"
+        },
+        {
+          "name": "system-design-primer",
+          "stars": "57,968",
+          "url": "https://github.com/donnemartin/system-design-primer"
+        },
+        {
+          "name": "public-apis",
+          "stars": "52,379",
+          "url": "https://github.com/toddmotto/public-apis"
+        },
+        {
+          "name": "models",
+          "stars": "48,958",
+          "url": "https://github.com/tensorflow/models"
+        },
+        {
+          "name": "youtube-dl",
+          "stars": "47,713",
+          "url": "https://github.com/rg3/youtube-dl"
+        },
+        {
+          "name": "flask",
+          "stars": "42,264",
+          "url": "https://github.com/pallets/flask"
+        },
+        {
+          "name": "thefuck",
+          "stars": "41,233",
+          "url": "https://github.com/nvbn/thefuck"
+        },
+        {
+          "name": "httpie",
+          "stars": "40,006",
+          "url": "https://github.com/jakubroztocil/httpie"
+        },
+        {
+          "name": "django",
+          "stars": "39,802",
+          "url": "https://github.com/django/django"
+        },
+        {
+          "name": "keras",
+          "stars": "38,633",
+          "url": "https://github.com/keras-team/keras"
+        }
+      ]
+    }
+  },
+  "Swift": {
+    "StackOverFlow": {
+      "questions": "222,915",
+      "ranking": "9"
+    },
+    "TiobeIndex": {
+      "currentPosition": "20",
+      "lastYearPosition": "16"
+    },
+    "SpectrumRanking": {
+      "currentPosition": "18",
+      "lastYearPosition": "10"
+    },
+    "Meetup": {
+      "global": {
+        "meetups": "369",
+        "members": "182,709",
+        "ranking": "8"
+      },
+      "local": {
+        "meetups": "7",
+        "members": "1,455",
+        "ranking": "12"
+      }
+    },
+    "Github": {
+      "moreThen1000Stars": "583",
+      "projects": "74,726",
+      "ranking": "10",
+      "top10": [
+        {
+          "name": "Alamofire",
+          "stars": "30,268",
+          "url": "https://github.com/Alamofire/Alamofire"
+        },
+        {
+          "name": "awesome-ios",
+          "stars": "29,919",
+          "url": "https://github.com/vsouza/awesome-ios"
+        },
+        {
+          "name": "Charts",
+          "stars": "20,356",
+          "url": "https://github.com/danielgindi/Charts"
+        },
+        {
+          "name": "swift-algorithm-club",
+          "stars": "19,731",
+          "url": "https://github.com/raywenderlich/swift-algorithm-club"
+        },
+        {
+          "name": "open-source-ios-apps",
+          "stars": "19,406",
+          "url": "https://github.com/dkhamsing/open-source-ios-apps"
+        },
+        {
+          "name": "ReactiveCocoa",
+          "stars": "19,359",
+          "url": "https://github.com/ReactiveCocoa/ReactiveCocoa"
+        },
+        {
+          "name": "ShadowsocksX-NG",
+          "stars": "18,568",
+          "url": "https://github.com/shadowsocks/ShadowsocksX-NG"
+        },
+        {
+          "name": "SwiftyJSON",
+          "stars": "18,077",
+          "url": "https://github.com/SwiftyJSON/SwiftyJSON"
+        },
+        {
+          "name": "iina",
+          "stars": "17,629",
+          "url": "https://github.com/iina/iina"
+        },
+        {
+          "name": "awesome-swift",
+          "stars": "16,642",
+          "url": "https://github.com/matteocrippa/awesome-swift"
+        }
+      ]
+    }
+  },
+  "R": {
+    "StackOverFlow": {
+      "questions": "278,072",
+      "ranking": "8"
+    },
+    "TiobeIndex": {
+      "currentPosition": "15",
+      "lastYearPosition": "13"
+    },
+    "SpectrumRanking": {
+      "currentPosition": "7",
+      "lastYearPosition": "6"
+    },
+    "Meetup": {
+      "global": {
+        "meetups": "218",
+        "members": "102,890",
+        "ranking": "10"
+      },
+      "local": {
+        "meetups": "5",
+        "members": "3,528",
+        "ranking": "11"
+      }
+    },
+    "Github": {
+      "moreThen1000Stars": "25",
+      "projects": "44,496",
+      "ranking": "11",
+      "top10": [
+        {
+          "name": "ggplot2",
+          "stars": "3,632",
+          "url": "https://github.com/tidyverse/ggplot2"
+        },
+        {
+          "name": "ML_for_Hackers",
+          "stars": "3,465",
+          "url": "https://github.com/johnmyleswhite/ML_for_Hackers"
+        },
+        {
+          "name": "awesome-R",
+          "stars": "3,367",
+          "url": "https://github.com/qinwf/awesome-R"
+        },
+        {
+          "name": "shiny",
+          "stars": "3,280",
+          "url": "https://github.com/rstudio/shiny"
+        },
+        {
+          "name": "swirl_courses",
+          "stars": "2,838",
+          "url": "https://github.com/swirldev/swirl_courses"
+        },
+        {
+          "name": "AnomalyDetection",
+          "stars": "2,837",
+          "url": "https://github.com/twitter/AnomalyDetection"
+        },
+        {
+          "name": "dplyr",
+          "stars": "2,823",
+          "url": "https://github.com/tidyverse/dplyr"
+        },
+        {
+          "name": "r4ds",
+          "stars": "1,776",
+          "url": "https://github.com/hadley/r4ds"
+        },
+        {
+          "name": "devtools",
+          "stars": "1,773",
+          "url": "https://github.com/r-lib/devtools"
+        },
+        {
+          "name": "knitr",
+          "stars": "1,727",
+          "url": "https://github.com/yihui/knitr"
+        }
+      ]
+    }
+  },
+  "Csharp": {
+    "StackOverFlow": {
+      "questions": "1,289,460",
+      "ranking": "3"
+    },
+    "TiobeIndex": {
+      "currentPosition": "7",
+      "lastYearPosition": "5"
+    },
+    "SpectrumRanking": {
+      "currentPosition": "5",
+      "lastYearPosition": "5"
+    },
+    "Meetup": {
+      "global": {
+        "meetups": "843",
+        "members": "463,319",
+        "ranking": "6"
+      },
+      "local": {
+        "meetups": "34",
+        "members": "29,969",
+        "ranking": "3"
+      }
+    },
+    "Github": {
+      "moreThen1000Stars": "401",
+      "projects": "221,115",
+      "ranking": "8",
+      "top10": [
+        {
+          "name": "shadowsocks-windows",
+          "stars": "33,681",
+          "url": "https://github.com/shadowsocks/shadowsocks-windows"
+        },
+        {
+          "name": "CodeHub",
+          "stars": "19,010",
+          "url": "https://github.com/CodeHubApp/CodeHub"
+        },
+        {
+          "name": "corefx",
+          "stars": "15,864",
+          "url": "https://github.com/dotnet/corefx"
+        },
+        {
+          "name": "PowerShell",
+          "stars": "12,561",
+          "url": "https://github.com/PowerShell/PowerShell"
+        },
+        {
+          "name": "Wox",
+          "stars": "12,351",
+          "url": "https://github.com/Wox-launcher/Wox"
+        },
+        {
+          "name": "WaveFunctionCollapse",
+          "stars": "11,528",
+          "url": "https://github.com/mxgmn/WaveFunctionCollapse"
+        },
+        {
+          "name": "coreclr",
+          "stars": "11,060",
+          "url": "https://github.com/dotnet/coreclr"
+        },
+        {
+          "name": "roslyn",
+          "stars": "10,943",
+          "url": "https://github.com/dotnet/roslyn"
+        },
+        {
+          "name": "Dapper",
+          "stars": "10,259",
+          "url": "https://github.com/StackExchange/Dapper"
+        },
+        {
+          "name": "AspNetCore",
+          "stars": "9,854",
+          "url": "https://github.com/aspnet/AspNetCore"
+        }
+      ]
+    }
+  },
+  "Ruby": {
+    "StackOverFlow": {
+      "questions": "202,665",
+      "ranking": "10"
+    },
+    "TiobeIndex": {
+      "currentPosition": "16",
+      "lastYearPosition": "10"
+    },
+    "SpectrumRanking": {
+      "currentPosition": "13",
+      "lastYearPosition": "12"
+    },
+    "Meetup": {
+      "global": {
+        "meetups": "878",
+        "members": "786,650",
+        "ranking": "5"
+      },
+      "local": {
+        "meetups": "17",
+        "members": "7,247",
+        "ranking": "7"
+      }
+    },
+    "Github": {
+      "moreThen1000Stars": "699",
+      "projects": "308,533",
+      "ranking": "5",
+      "top10": [
+        {
+          "name": "rails",
+          "stars": "42,329",
+          "url": "https://github.com/rails/rails"
+        },
+        {
+          "name": "jekyll",
+          "stars": "36,983",
+          "url": "https://github.com/jekyll/jekyll"
+        },
+        {
+          "name": "discourse",
+          "stars": "27,576",
+          "url": "https://github.com/discourse/discourse"
+        },
+        {
+          "name": "fastlane",
+          "stars": "24,716",
+          "url": "https://github.com/fastlane/fastlane"
+        },
+        {
+          "name": "awesome-awesomeness",
+          "stars": "23,762",
+          "url": "https://github.com/bayandin/awesome-awesomeness"
+        },
+        {
+          "name": "gitlabhq",
+          "stars": "21,601",
+          "url": "https://github.com/gitlabhq/gitlabhq"
+        },
+        {
+          "name": "huginn",
+          "stars": "20,664",
+          "url": "https://github.com/huginn/huginn"
+        },
+        {
+          "name": "devdocs",
+          "stars": "20,021",
+          "url": "https://github.com/freeCodeCamp/devdocs"
+        },
+        {
+          "name": "devise",
+          "stars": "19,629",
+          "url": "https://github.com/plataformatec/devise"
+        },
+        {
+          "name": "vagrant",
+          "stars": "18,015",
+          "url": "https://github.com/hashicorp/vagrant"
+        }
+      ]
+    }
+  },
+  "PHP": {
+    "StackOverFlow": {
+      "questions": "1,265,608",
+      "ranking": "4"
+    },
+    "TiobeIndex": {
+      "currentPosition": "8",
+      "lastYearPosition": "7"
+    },
+    "SpectrumRanking": {
+      "currentPosition": "6",
+      "lastYearPosition": "8"
+    },
+    "Meetup": {
+      "global": {
+        "meetups": "2,091",
+        "members": "1,091,165",
+        "ranking": "4"
+      },
+      "local": {
+        "meetups": "37",
+        "members": "18,649",
+        "ranking": "5"
+      }
+    },
+    "Github": {
+      "moreThen1000Stars": "755",
+      "projects": "355,054",
+      "ranking": "4",
+      "top10": [
+        {
+          "name": "laravel",
+          "stars": "50,344",
+          "url": "https://github.com/laravel/laravel"
+        },
+        {
+          "name": "symfony",
+          "stars": "20,015",
+          "url": "https://github.com/symfony/symfony"
+        },
+        {
+          "name": "Faker",
+          "stars": "19,643",
+          "url": "https://github.com/fzaninotto/Faker"
+        },
+        {
+          "name": "composer",
+          "stars": "18,627",
+          "url": "https://github.com/composer/composer"
+        },
+        {
+          "name": "CodeIgniter",
+          "stars": "17,027",
+          "url": "https://github.com/bcit-ci/CodeIgniter"
+        },
+        {
+          "name": "SecLists",
+          "stars": "16,857",
+          "url": "https://github.com/danielmiessler/SecLists"
+        },
+        {
+          "name": "DesignPatternsPHP",
+          "stars": "16,788",
+          "url": "https://github.com/domnikl/DesignPatternsPHP"
+        },
+        {
+          "name": "framework",
+          "stars": "16,322",
+          "url": "https://github.com/laravel/framework"
+        },
+        {
+          "name": "guzzle",
+          "stars": "15,815",
+          "url": "https://github.com/guzzle/guzzle"
+        },
+        {
+          "name": "monolog",
+          "stars": "13,837",
+          "url": "https://github.com/Seldaek/monolog"
+        }
+      ]
+    }
+  },
+  "Kotlin": {
+    "StackOverFlow": {
+      "questions": "20,084",
+      "ranking": "14"
+    },
+    "TiobeIndex": {
+      "currentPosition": "38",
+      "lastYearPosition": "N/A"
+    },
+    "SpectrumRanking": {
+      "currentPosition": "N/A",
+      "lastYearPosition": "N/A"
+    },
+    "Meetup": {
+      "global": {
+        "meetups": "209",
+        "members": "85,286",
+        "ranking": "12"
+      },
+      "local": {
+        "meetups": "6",
+        "members": "3,861",
+        "ranking": "10"
+      }
+    },
+    "Github": {
+      "moreThen1000Stars": "114",
+      "projects": "24,346",
+      "ranking": "14",
+      "top10": [
+        {
+          "name": "kotlin",
+          "stars": "26,509",
+          "url": "https://github.com/JetBrains/kotlin"
+        },
+        {
+          "name": "shadowsocks-android",
+          "stars": "21,338",
+          "url": "https://github.com/shadowsocks/shadowsocks-android"
+        },
+        {
+          "name": "profile-summary-for-github",
+          "stars": "18,615",
+          "url": "https://github.com/tipsy/profile-summary-for-github"
+        },
+        {
+          "name": "iosched",
+          "stars": "17,917",
+          "url": "https://github.com/google/iosched"
+        },
+        {
+          "name": "material-dialogs",
+          "stars": "15,287",
+          "url": "https://github.com/afollestad/material-dialogs"
+        },
+        {
+          "name": "p3c",
+          "stars": "13,980",
+          "url": "https://github.com/alibaba/p3c"
+        },
+        {
+          "name": "anko",
+          "stars": "13,594",
+          "url": "https://github.com/Kotlin/anko"
+        },
+        {
+          "name": "flexbox-layout",
+          "stars": "13,387",
+          "url": "https://github.com/google/flexbox-layout"
+        },
+        {
+          "name": "plaid",
+          "stars": "12,729",
+          "url": "https://github.com/nickbutcher/plaid"
+        },
+        {
+          "name": "android-architecture-components",
+          "stars": "11,966",
+          "url": "https://github.com/googlesamples/android-architecture-components"
+        }
+      ]
+    }
+  },
+  "Scala": {
+    "StackOverFlow": {
+      "questions": "87,123",
+      "ranking": "11"
+    },
+    "TiobeIndex": {
+      "currentPosition": "29",
+      "lastYearPosition": "N/A"
+    },
+    "SpectrumRanking": {
+      "currentPosition": "12",
+      "lastYearPosition": "14"
+    },
+    "Meetup": {
+      "global": {
+        "meetups": "637",
+        "members": "443,815",
+        "ranking": "7"
+      },
+      "local": {
+        "meetups": "29",
+        "members": "17,180",
+        "ranking": "6"
+      }
+    },
+    "Github": {
+      "moreThen1000Stars": "105",
+      "projects": "36,833",
+      "ranking": "12",
+      "top10": [
+        {
+          "name": "spark",
+          "stars": "20,768",
+          "url": "https://github.com/apache/spark"
+        },
+        {
+          "name": "prisma",
+          "stars": "12,831",
+          "url": "https://github.com/prisma/prisma"
+        },
+        {
+          "name": "predictionio",
+          "stars": "11,669",
+          "url": "https://github.com/apache/predictionio"
+        },
+        {
+          "name": "scala",
+          "stars": "11,295",
+          "url": "https://github.com/scala/scala"
+        },
+        {
+          "name": "playframework",
+          "stars": "10,981",
+          "url": "https://github.com/playframework/playframework"
+        },
+        {
+          "name": "akka",
+          "stars": "9,581",
+          "url": "https://github.com/akka/akka"
+        },
+        {
+          "name": "gitbucket",
+          "stars": "7,576",
+          "url": "https://github.com/gitbucket/gitbucket"
+        },
+        {
+          "name": "finagle",
+          "stars": "6,961",
+          "url": "https://github.com/twitter/finagle"
+        },
+        {
+          "name": "kafka-manager",
+          "stars": "6,808",
+          "url": "https://github.com/yahoo/kafka-manager"
+        },
+        {
+          "name": "source-han-sans",
+          "stars": "5,880",
+          "url": "https://github.com/adobe-fonts/source-han-sans"
+        }
+      ]
+    }
+  },
+  "Go": {
+    "StackOverFlow": {
+      "questions": "36,282",
+      "ranking": "12"
+    },
+    "TiobeIndex": {
+      "currentPosition": "18",
+      "lastYearPosition": "18"
+    },
+    "SpectrumRanking": {
+      "currentPosition": "9",
+      "lastYearPosition": "9"
+    },
+    "Meetup": {
+      "global": {
+        "meetups": "308",
+        "members": "150,749",
+        "ranking": "9"
+      },
+      "local": {
+        "meetups": "8",
+        "members": "5,291",
+        "ranking": "8"
+      }
+    },
+    "Github": {
+      "moreThen1000Stars": "1,011",
+      "projects": "122,839",
+      "ranking": "9",
+      "top10": [
+        {
+          "name": "go",
+          "stars": "53,855",
+          "url": "https://github.com/golang/go"
+        },
+        {
+          "name": "moby",
+          "stars": "52,352",
+          "url": "https://github.com/moby/moby"
+        },
+        {
+          "name": "kubernetes",
+          "stars": "48,891",
+          "url": "https://github.com/kubernetes/kubernetes"
+        },
+        {
+          "name": "lantern",
+          "stars": "40,517",
+          "url": "https://github.com/getlantern/lantern"
+        },
+        {
+          "name": "awesome-go",
+          "stars": "40,499",
+          "url": "https://github.com/avelino/awesome-go"
+        },
+        {
+          "name": "hugo",
+          "stars": "33,066",
+          "url": "https://github.com/gohugoio/hugo"
+        },
+        {
+          "name": "gogs",
+          "stars": "29,376",
+          "url": "https://github.com/gogs/gogs"
+        },
+        {
+          "name": "build-web-application-with-golang",
+          "stars": "28,166",
+          "url": "https://github.com/astaxie/build-web-application-with-golang"
+        },
+        {
+          "name": "gin",
+          "stars": "24,722",
+          "url": "https://github.com/gin-gonic/gin"
+        },
+        {
+          "name": "syncthing",
+          "stars": "24,418",
+          "url": "https://github.com/syncthing/syncthing"
+        }
+      ]
+    }
+  },
+  "Groovy": {
+    "StackOverFlow": {
+      "questions": "22,519",
+      "ranking": "13"
+    },
+    "TiobeIndex": {
+      "currentPosition": "19",
+      "lastYearPosition": "49"
+    },
+    "SpectrumRanking": {
+      "currentPosition": "N/A",
+      "lastYearPosition": "N/A"
+    },
+    "Meetup": {
+      "global": {
+        "meetups": "55",
+        "members": "25,764",
+        "ranking": "14"
+      },
+      "local": {
+        "meetups": "2",
+        "members": "574",
+        "ranking": "13"
+      }
+    },
+    "Github": {
+      "moreThen1000Stars": "14",
+      "projects": "11,672",
+      "ranking": "15",
+      "top10": [
+        {
+          "name": "gradle",
+          "stars": "8,495",
+          "url": "https://github.com/gradle/gradle"
+        },
+        {
+          "name": "jd-gui",
+          "stars": "5,787",
+          "url": "https://github.com/java-decompiler/jd-gui"
+        },
+        {
+          "name": "rundeck",
+          "stars": "2,929",
+          "url": "https://github.com/rundeck/rundeck"
+        },
+        {
+          "name": "pipeline-examples",
+          "stars": "2,593",
+          "url": "https://github.com/jenkinsci/pipeline-examples"
+        },
+        {
+          "name": "asgard",
+          "stars": "2,201",
+          "url": "https://github.com/Netflix/asgard"
+        },
+        {
+          "name": "gradle-versions-plugin",
+          "stars": "1,795",
+          "url": "https://github.com/ben-manes/gradle-versions-plugin"
+        },
+        {
+          "name": "gradle_plugin_android_aspectjx",
+          "stars": "1,600",
+          "url": "https://github.com/HujiangTechnology/gradle_plugin_android_aspectjx"
+        },
+        {
+          "name": "sdk-manager-plugin",
+          "stars": "1,449",
+          "url": "https://github.com/JakeWharton/sdk-manager-plugin"
+        },
+        {
+          "name": "shadow",
+          "stars": "1,432",
+          "url": "https://github.com/johnrengelman/shadow"
+        },
+        {
+          "name": "bintray-release",
+          "stars": "1,378",
+          "url": "https://github.com/novoda/bintray-release"
+        }
+      ]
+    }
+  },
+  "Rust": {
+    "StackOverFlow": {
+      "questions": "11,380",
+      "ranking": "15"
+    },
+    "TiobeIndex": {
+      "currentPosition": "37",
+      "lastYearPosition": "N/A"
+    },
+    "SpectrumRanking": {
+      "currentPosition": "28",
+      "lastYearPosition": "22"
+    },
+    "Meetup": {
+      "global": {
+        "meetups": "164",
+        "members": "49,291",
+        "ranking": "13"
+      },
+      "local": {
+        "meetups": "4",
+        "members": "541",
+        "ranking": "14"
+      }
+    },
+    "Github": {
+      "moreThen1000Stars": "141",
+      "projects": "27,230",
+      "ranking": "13",
+      "top10": [
+        {
+          "name": "rust",
+          "stars": "34,293",
+          "url": "https://github.com/rust-lang/rust"
+        },
+        {
+          "name": "xi-editor",
+          "stars": "15,719",
+          "url": "https://github.com/xi-editor/xi-editor"
+        },
+        {
+          "name": "alacritty",
+          "stars": "14,596",
+          "url": "https://github.com/jwilm/alacritty"
+        },
+        {
+          "name": "servo",
+          "stars": "13,538",
+          "url": "https://github.com/servo/servo"
+        },
+        {
+          "name": "ripgrep",
+          "stars": "12,926",
+          "url": "https://github.com/BurntSushi/ripgrep"
+        },
+        {
+          "name": "bat",
+          "stars": "12,345",
+          "url": "https://github.com/sharkdp/bat"
+        },
+        {
+          "name": "awesome-rust",
+          "stars": "9,746",
+          "url": "https://github.com/rust-unofficial/awesome-rust"
+        },
+        {
+          "name": "fd",
+          "stars": "8,642",
+          "url": "https://github.com/sharkdp/fd"
+        },
+        {
+          "name": "xray",
+          "stars": "8,616",
+          "url": "https://github.com/atom/xray"
+        },
+        {
+          "name": "firecracker",
+          "stars": "7,520",
+          "url": "https://github.com/firecracker-microvm/firecracker"
+        }
+      ]
+    }
+  }
+}

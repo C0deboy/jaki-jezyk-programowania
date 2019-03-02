@@ -2,7 +2,7 @@
 layout:     technology
 title-full: Język programowania Ruby - zastosowanie, przyszłość, polecane książki
 title:      Ruby
-image:		ruby.png
+image:      ruby.png
 ---
 
 # Zastosowanie

@@ -2,7 +2,7 @@
 layout:     technology
 title-full: Język programowania C - zastosowanie, przyszłość, polecane książki
 title:      C
-image:		c.png
+image:      c.png
 ---
 
 {% assign stats = site.data.statistics.statistics.C %}

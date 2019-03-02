@@ -20,6 +20,16 @@
   {% assign extension = ".swift" %}
   {% when "Python" %}
   {% assign extension = ".py" %}
+  {% when "Scala" %}
+  {% assign extension = ".sc lub .scala" %}
+  {% when "Kotlin" %}
+  {% assign extension = ".kt lub .kts" %}
+  {% when "Groovy" %}
+  {% assign extension = ".groovy" %}
+  {% when "Rust" %}
+  {% assign extension = ".rs lub .rlib" %}
+  {% when "Go" %}
+  {% assign extension = ".go" %}
 {% endcase %}
 
 <h2>Top 10 projektów na Github wykorzystujących {{ page.title }}</h2>

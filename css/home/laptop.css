@@ -280,6 +280,14 @@
   text-indent: -1px;
 }
 
+.nextExample-btn .lightAriaTooltips {
+  font-size: 1.5em;
+  padding: 5px;
+}
+.nextExample-btn .lightAriaTooltips:after {
+  margin-top: -5px;
+}
+
 .skip {
   cursor: pointer;
   border: none;

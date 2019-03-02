@@ -2,7 +2,7 @@
 layout:     simpleTechnology
 title-full: Język HTML i CSS
 title:      HTML i CSS
-image:		html&css.png
+image:      html&css.png
 ---
 
 

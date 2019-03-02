@@ -1,7 +1,7 @@
 ---
 layout:     simpleTechnology
 title:      Symfony
-nobooks:    true
+no-books:    true
 ---
 
 {: .official-page}

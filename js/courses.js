@@ -19,6 +19,7 @@ function collect(lang) {
         addCourse(course, lang);
       });
       courses.find('.loading').remove();
+      document.querySelector('.books').scrollIntoView();
     },
     error: (error) => {
       courses.css('display', 'none');

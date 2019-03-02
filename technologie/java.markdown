@@ -2,7 +2,7 @@
 layout:     technology
 title-full: Język programowania Java - zastosowanie, przyszłość, polecane książki
 title:      Java
-image:		java.png
+image:      java.png
 ---
 
 {% assign stats = site.data.statistics.statistics.Java %}
@@ -30,6 +30,8 @@ Do najbardziej znanych stron, które mają "pod spodem" Jave, należą
 - LinkedIn.com
 - Netflix.com
 - Amazon.com
+
+[Opis Kotlina dla Androida](https://developer.android.com/kotlin/)
 
 {% include language/top10github.html %}
 

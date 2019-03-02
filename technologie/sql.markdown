@@ -2,7 +2,7 @@
 layout:     simpleTechnology
 title-full: Język programowania SQL
 title:      SQL
-image:		sql.png
+image:      sql.png
 ---
 
 Czym jest SQL?

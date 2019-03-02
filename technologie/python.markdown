@@ -2,7 +2,7 @@
 layout:     technology
 title-full: Język programowania Python - zastosowanie, przyszłość, polecane książki
 title:      Python
-image:		python.png
+image:      python.png
 ---
 
 {% assign stats = site.data.statistics.statistics.Python %}

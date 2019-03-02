@@ -2,7 +2,7 @@
 layout:     technology
 title-full: Język programowania Swift - zastosowanie, przyszłość, polecane książki
 title:      Swift
-image:		swift.png
+image:      swift.png
 ---
 
 {% assign stats = site.data.statistics.statistics.Swift %}

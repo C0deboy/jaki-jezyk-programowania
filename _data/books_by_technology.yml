@@ -93,10 +93,11 @@ Python:
       - autopy
       - pythip
       - zaprpy
-    - Data science i machine lerning (nauka o danych i uczenie maszynowe):
-      - pypod2
+    - Data science i machine lerning (analiza danych i uczenie maszynowe):
       - uczema
+      - dascpo
       - pythum
+      - pypod2
     - Robotyka:
       - naropy
     - Bardziej zaawansowane:
@@ -153,3 +154,10 @@ WordPress:
     - '':
       - wopr4i
       - jowozr
+
+Scala:
+  books:
+    - scalan
+Go:
+  books:
+    - progo2

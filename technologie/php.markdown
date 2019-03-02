@@ -2,7 +2,7 @@
 layout:     technology
 title-full: Język programowania PHP - zastosowanie, przyszłość, polecane książki
 title:      PHP
-image:		php.png
+image:      php.png
 ---
 
 {% assign stats = site.data.statistics.statistics.PHP %}

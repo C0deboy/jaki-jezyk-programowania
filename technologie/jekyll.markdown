@@ -2,7 +2,7 @@
 layout:     simpleTechnology
 title:      Jekyll
 image:      jekyll-light.png
-nobooks:    true
+no-books:    true
 ---
 
 {: .official-page}

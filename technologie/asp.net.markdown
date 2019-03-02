@@ -1,7 +1,7 @@
 ---
 layout:     simpleTechnology
 title:      ASP.NET
-nobooks:    true
+no-books:    true
 ---
 
 {: .official-page}

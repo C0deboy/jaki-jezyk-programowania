@@ -1,7 +1,7 @@
 ---
 layout:     simpleTechnology
 title:      Node.js
-nobooks:    true
+no-books:    true
 ---
 
 {: .official-page}

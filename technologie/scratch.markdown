@@ -2,8 +2,8 @@
 layout:     simpleTechnology
 title-full: Programowanie dla dzieci - Scratch, Python, Javascript
 title:      Scratch
-image:		scratch.png
-nocourses:  true
+image:      scratch.png
+no-courses:  true
 ---
 
 # Co to jest Scratch?

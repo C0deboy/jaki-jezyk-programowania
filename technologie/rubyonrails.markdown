@@ -1,7 +1,7 @@
 ---
 layout:     simpleTechnology
 title:      Ruby on Rails
-nobooks:    true
+no-books:    true
 ---
 
 {: .official-page}

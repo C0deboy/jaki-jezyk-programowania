@@ -27,10 +27,11 @@ const wizardData = {
     answers: [
       new Answer('Aplikacje', 'webdev.png', new NextQuestion('typeOfApps')),
       new Answer('Gry', 'games.png', new NextQuestion('typeOfGames')),
-      new Answer('Data science', 'dataanalysis.png', new Guide('R', 'Python')),
-      new Answer('Systemy wbudowane', 'lowlevel.png', new Guide('C')),
-      new Answer('Sztuczna inteligencja', 'brain.png', new Guide('Python')),
-      new Answer('Robotyka', 'robot.png', new Guide('C', 'C++', 'Python')),
+      new Answer('Data science/Big data', 'dataanalysis.png', new Guide('R', 'Python', 'Scala')),
+      new Answer('Systemy wbudowane', 'lowlevel.png', new Guide('C', 'Rust')),
+      new Answer('Sztuczna inteligencja/Machine Learning', 'brain.png', new Guide('Python', 'Scala')),
+      new Answer('Robotyka', 'robot.png', new Guide('C', 'C++', 'Python', 'Rust')),
+      new Answer('Bioinformatyka', 'bio.png', new Guide('R')),
       new Answer('Bazy danych', 'databases.png', new Guide('SQL')),
       new Answer('Nie wiem, ja tylko chce $$$', 'money.png', new Guide('Java', 'C#', 'Python')),
     ],
@@ -38,8 +39,8 @@ const wizardData = {
   whichMobilePlatform: {
     question: 'Na jaką platformę?',
     answers: [
-      new Answer('iOS', 'apple.png', new Guide('swift')),
-      new Answer('Android', 'android.png', new Guide('java')),
+      new Answer('iOS', 'apple.png', new Guide('Swift')),
+      new Answer('Android', 'android.png', new Guide('Java', 'Kotlin')),
       new Answer('Web', 'webdev.png', new NextQuestion('frontendOrBackend')),
     ],
   },
@@ -85,7 +86,7 @@ const wizardData = {
     question: 'Jaki typ gier?',
     answers: [
       new Answer('AAA', 'aaa.png', new Guide('C++ -> Unreal-Engine-4')),
-      new Answer('Indie', 'indie.png', new Guide('C# -> Unity', 'Java -> LibGDX')),
+      new Answer('Indie', 'indie.png', new Guide('C# -> Unity', 'Java -> LibGDX', 'Kotlin -> LibGDX')),
       new Answer('Wirtualna rzeczywistość', 'virtualreality.png', new Guide('C++ -> Unreal-Engine-4', 'C# -> Unity')),
       new Answer('Yyy co?', 'undecided.png', new NextQuestion('easyOrPerformence')),
     ],
@@ -94,7 +95,7 @@ const wizardData = {
     question: 'Na jaką plaftormę?',
     answers: [
       new Answer('Gra desktopowa', 'pc.png', new NextQuestion('typeOfGames')),
-      new Answer('Gra mobilna', 'mobile.png', new Guide('C# -> Unity', 'Java -> LibGDX')),
+      new Answer('Gra mobilna', 'mobile.png', new Guide('C# -> Unity', 'Java -> LibGDX', 'Kotlin -> LibGDX')),
       new Answer('Gra przeglądarkowa', 'webdev.png', new Guide('Javascript -> Phaser')),
     ],
   },

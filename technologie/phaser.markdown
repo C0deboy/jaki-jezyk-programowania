@@ -1,7 +1,7 @@
 ---
 layout:     simpleTechnology
 title:      Phaser
-nobooks:    true
+no-books:    true
 ---
 
 {: .official-page}

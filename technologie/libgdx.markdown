@@ -1,7 +1,7 @@
 ---
 layout:     simpleTechnology
 title:      LibGDX
-nobooks:    true
+no-books:    true
 ---
 
 {: .official-page}

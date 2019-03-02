@@ -150,6 +150,21 @@ title-full: "Polecane książki do nauki programowania"
     </div>
   </div>
 
+  <div class="row justify-content-center">
+    
+    <div role="listitem" class="col-sm-4 lang">
+      <a href="/technologie/scala#najlepsze-książki-do-nauki-scala" class="lang-link">
+        <img class="tip" src="/img/Scala.png" alt="Logo języka Scala" data-tip="Scala">
+      </a>
+    </div>
+    
+    <div role="listitem" class="col-sm-4 lang">
+      <a href="/technologie/go#najlepsze-książki-do-nauki-go" class="lang-link">
+        <img class="tip" src="/img/go.png" alt="Logo języka Go" data-tip="Go">
+      </a>
+    </div>
+  </div>
+
   <hr>
 
   <div class="row">

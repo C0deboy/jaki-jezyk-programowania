@@ -1,12 +1,15 @@
 $(() => {
   $('.typed-languages').typed({
     strings: [
-      'JavaScript?', 'Python?', 'Java?', 'C#?', 'PHP?', 'C++?', 'Swift?', 'Ruby?', 'C?', 'R?',
+      'JavaScript?', 'Python?', 'Java?', 'Kotlin?', 'Scala?', 'C#?', 'PHP?', 'C++?', 'Swift?', 'Ruby?', 'C?', 'R?',
     ],
     typeSpeed: 40,
     loop: true,
     backSpeed: 40,
   });
+
+  const terminalElement = $('.element');
+  const terminalLang = $('.terminal .lang');
 
   const javascript = document.querySelector('.language-javascript').innerHTML;
   const cpp = document.querySelector('.language-cpp').innerHTML;
@@ -18,8 +21,24 @@ $(() => {
   const c = document.querySelector('.language-c').innerHTML;
   const r = document.querySelector('.language-r').innerHTML;
   const swift = document.querySelector('.language-swift').innerHTML;
+  const kotlin = document.querySelector('.language-kotlin').innerHTML;
+  const scala = document.querySelector('.language-scala').innerHTML;
 
-  const languageExamples = [javascript, cpp, java, python, php, swift, ruby, c, r, csharp];
+  const languageExamples = [
+    javascript,
+    python,
+    java,
+    kotlin,
+    scala,
+    cpp,
+    php,
+    swift,
+    ruby,
+    c,
+    r,
+    csharp,
+  ];
+
   let next = 0;
 
   const animatedKeys = document.querySelectorAll('.typekey');
@@ -51,9 +70,12 @@ $(() => {
   });
 
   function startTyping(language) {
-    $('.element').typed({
+    const langComment = language.substr(0, language.indexOf('\n'));
+    terminalLang.html(langComment);
+    const code = language.substr(langComment.length + 1);
+    terminalElement.typed({
       strings: [
-        language,
+        code,
       ],
       typeSpeed: -1,
       loop: false,
@@ -102,9 +124,17 @@ $(() => {
     }
   });
 
-  $('.nextExample-btn').on('click', () => {
+  const nextExampleBtn = $('.nextExample-btn');
+
+  nextExampleBtn.on('click', () => {
     changeExample('right');
   });
+
+  nextExampleBtn.on('blur', () => {
+    nextExampleBtn.removeClass('tip');
+  });
+
+  nextExampleBtn.focus();
 
 
   $('.previousExample-btn').on('click', () => {

@@ -1,3 +1,7 @@
+{%- if page.in-progress == true -%}
+<div class="in-progress"><span>Strona tego języka nie jest kompletna i jest w trakcie budowy</span></div>
+{%- endif -%}
+
 <header class="start-container">
   <div class="container-fluid">
     <div class="row start-row">
@@ -6,13 +10,14 @@
       </div>
       <div class="col-sm-12 col-lg-6 col-header">
         <h2 class="lang-starter-heading">{{ page.title }}</h2>
+
         <div class="up-to-date">Aktualizacja: {{ page.last_modified_at | date: "%d.%m.%Y" }}</div>
 
         <p style="margin: 25px 0 0 0; text-align: center">Zobacz polecane:</p>
-        {% if page.nocourses != true %}
+        {% if page.no-courses != true %}
         <a class="main-btn page-scroll courses-link" href="#najlepsze-kursy-video-do-nauki-{{ page.title | downcase | replace: '#', 'sharp' | replace: ' ', '-'}}"> <i class="fa fa-video-camera" aria-hidden="true"></i> Kursy</a>
         {% endif %}
-        {% if page.nobooks != true %}
+        {% if page.no-books != true %}
         <a class="main-btn page-scroll" href="#najlepsze-książki-do-nauki-{{ page.title | downcase | replace: '#', 'sharp' | replace: ' ', '-'}}"><i class="fa fa-book" aria-hidden="true"></i> Książki</a>
         {% endif %}
       </div>
