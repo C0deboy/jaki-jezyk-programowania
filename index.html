@@ -85,8 +85,7 @@
         nich będzie odpowiedni dla danego zastosowania, w co brnąć dalej, gdy opanujesz podstawy oraz zobaczysz
         wybrane książki i kursy video do nauki danej technologii.</p>
 
-      <p class="tip"
-         data-tip="Na podstawie Twoich odpowiedzi na pytania zostanie określony język programowania (lub więcej niż jeden) odpowiedni do Twoich celów. Będziesz mógł przejrzeć najważniejsze informacje o każdym z nich i je porównać. ">
+      <p class="tip" data-tip="Na podstawie Twoich odpowiedzi na pytania zostanie określony język programowania (lub więcej niż jeden) odpowiedni do Twoich celów. Będziesz mógł przejrzeć najważniejsze informacje o każdym z nich i je porównać. ">
         Jak to działa? <i class="fa fa-commenting-o" aria-hidden="true"></i></p>
 
       <a href="/start/" class="btn btn-danger btn-lg start">
@@ -110,8 +109,8 @@
           <div class="laptop-content">
             <div class="terminal-window">
               <div class="terminal">
-                <span class="hljs-comment">//Przykładowa implementacja wyszukiwania binarnego<br>
-                  //Użyj strzałek, aby zmienić język</span><br>
+                <span class="hljs-comment">Przykładowa implementacja wyszukiwania binarnego</span><br>
+                <span class="lang"></span>
                 <pre><code class="nohighlight"><span class="element"></span>
                   </code>
                 </pre>
@@ -227,7 +226,7 @@
             <div class="key ctrl-right">Ctrl</div>
             <button class="key previousExample-btn red-btn" title="Poprzedni przykład">&lt;</button>
             <div class="key">v</div>
-            <button class="key nextExample-btn red-btn" title="Następny przykład">></button>
+            <button class="key nextExample-btn red-btn tip" data-tip="Użyj strzałek, aby zmienić język" title="Następny przykład">></button>
             <div class="key">0</div>
             <div class="key">,</div>
             <div class="touchpad">
@@ -251,14 +250,15 @@
     </h2>
 
     <div class="languages-list" role="list">
-      <div class="row">
-        <div role="listitem" class="col-lg-4 col-md-3 lang">
+      <div class="row justify-content-center">
+
+        <div role="listitem" class="col-md-2 lang">
           <a href="technologie/c" class="lang-link">
             <img class="tip" src="img/c.png" alt="Logo języka C" data-tip="C">
           </a>
         </div>
 
-        <div role="listitem" class="col-lg-4 col-md-6 lang">
+        <div role="listitem" class="col-md-4 lang">
           <a href="technologie/javascript" class="lang-link">
             <img class="tip" src="img/javascript.png" alt="Logo języka Javascript" data-tip="Javascript">
           </a>
@@ -277,21 +277,23 @@
           </a>
         </div>
 
-        <div role="listitem" class="col-lg-4 col-md-3 lang">
-          <a href="technologie/r" class="lang-link">
-            <img class="tip" src="img/r.png" alt="Logo języka R" data-tip="R">
-          </a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div role="listitem" class="col-md-3 lang">
+        <div role="listitem" class="col-md-2 lang">
           <a href="technologie/c++" class="lang-link">
             <img class="tip" src="img/c++.png" alt="Logo języka C++" data-tip="C++">
           </a>
 
           <a href="technologie/unrealengine4" class="sub lang-link">
             <img class="tip" src="img/unrealengine4.png" alt="Logo Unreal Engine 4" data-tip="Unreal Engine 4">
+          </a>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div role="listitem" class="col-md-3 lang">
+          <a href="technologie/scala" class="lang-link">
+            <img class="tip" src="img/scala.png" alt="Logo języka Scala" data-tip="Scala">
           </a>
         </div>
 
@@ -309,6 +311,22 @@
         </div>
 
         <div role="listitem" class="col-md-3 lang">
+          <a href="technologie/kotlin" class="lang-link">
+            <img class="tip" src="img/kotlin.png" alt="Logo języka Kotlin" data-tip="Kotlin">
+          </a>
+        </div>
+
+        <div role="listitem" class="col-md-3 lang">
+          <a href="technologie/groovy" class="lang-link">
+            <img class="tip" src="img/groovy.png" alt="Logo języka Groovy" data-tip="Groovy">
+          </a>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div role="listitem" class="col-md-2 lang">
           <a href="technologie/ruby" class="lang-link">
             <img class="tip" src="img/ruby.png" alt="Logo języka Ruby" data-tip="Ruby">
           </a>
@@ -330,16 +348,14 @@
             <img class="tip" src="img/asp.net.png" alt="Logo ASP.NET" data-tip="ASP.NET">
           </a>
         </div>
-      </div>
 
-      <div class="row">
-        <div role="listitem" class="col-md-4 lang">
+        <div role="listitem" class="col-md-2 lang">
           <a href="technologie/swift" class="lang-link">
             <img class="tip" src="img/swift.png" alt="Logo języka Swift" data-tip="Swift">
           </a>
         </div>
 
-        <div role="listitem" class="col-md-4 lang">
+        <div role="listitem" class="col-md-3 lang">
           <a href="technologie/python" class="lang-link">
             <img class="tip" src="img/python.png" alt="Logo języka Python" data-tip="Python">
           </a>
@@ -348,6 +364,16 @@
             <img class="tip" src="img/django.png" alt="Logo Django" data-tip="Django">
           </a>
         </div>
+
+        <div role="listitem" class="col-md-2 lang">
+          <a href="technologie/go" class="lang-link">
+            <img class="tip" src="img/go.png" alt="Logo języka Go" data-tip="Go">
+          </a>
+        </div>
+
+      </div>
+
+      <div class="row">
 
         <div role="listitem" class="col-md-4 lang">
           <a href="technologie/php" class="lang-link">
@@ -361,6 +387,19 @@
             <img class="tip" src="img/wordpress.png" alt="Logo WordPress" data-tip="WordPress">
           </a>
         </div>
+
+        <div role="listitem" class="col-md-4 lang">
+          <a href="technologie/rust" class="lang-link">
+            <img class="tip" src="img/rust.png" alt="Logo języka Rust" data-tip="Rust">
+          </a>
+        </div>
+
+        <div role="listitem" class="col-md-4 lang">
+          <a href="technologie/r" class="lang-link">
+            <img class="tip" src="img/r.png" alt="Logo języka R" data-tip="R">
+          </a>
+        </div>
+
       </div>
 
       <hr>
@@ -391,8 +430,8 @@
       <div class="col-md-12">
 
         <h2 class="section-heading">O projekcie</h2>
-        <p>Wybór języka programowania/technologii to odwieczny problem, szczególnie początkujących programistów. Dlatego
-          powstał ten projekt, aby ułatwić innym to zadanie (przynajmniej te oczywiste przypadki) oraz zredukować liczbę
+        <p>Wybór języka programowania/technologii to częsty problem, szczególnie początkujących programistów, dlatego
+          powstał ten projekt, aby ułatwić to zadanie (przynajmniej te oczywiste przypadki) oraz zredukować liczbę
           kolejnych, tych samych wątków na forach.</p>
 
         <p>Autor:</p>
@@ -437,7 +476,7 @@
 
     <div class="row">
       <div class="col-md-12">
-        <!--118-->
+        <!--130-->
         <p>Przygotowałem ankietę dotyczącą wyboru języka / technologii do danego zastosowania. Daj znać co ty
           zaproponowałbyś początkującym programistom!</p>
         <button id="ankieta" class="main-btn"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ankieta</button>
@@ -512,16 +551,16 @@
   <button class="close-cookies-info"><i class="fa fa-times fa-2x close-form"></i></button>
 </div>
 
-<pre hidden><code class="language-javascript">//JavaScript
-function binarySearch(A, x) {
+<pre hidden><code class="language-javascript">// JavaScript
+function binarySearch(array, x) {
   let start = 0;
-  let end = A.length - 1;
-  while (start <= end) {
+  let end = array.length - 1;
+  while (start &lt;= end) {
     const middle = Math.floor((start + end) / 2);
-    if (A[middle] === x) {
+    if (array[middle] === x) {
       return middle;
     }
-    if (A[middle] > x) {
+    if (array[middle] &gt; x) {
       end = middle - 1;
     } else {
       start = middle + 1;
@@ -530,28 +569,28 @@ function binarySearch(A, x) {
   return -1;
 }
 
-const library = ['Algorytmy', 'Czysty kod', 'Harry Potter', 'Illuminati', 'Wzorce projektowe', '...'];
+const library = [&#39;Algorytmy&#39;, &#39;Czysty kod&#39;, &#39;Harry Potter&#39;, &#39;Illuminati&#39;, &#39;Wzorce projektowe&#39;, &#39;...&#39;];
 /* Dla wyszukiwania binarnego
  tablica musi być posortowana rosnąco */
 
-const x = 'Illuminati';
+const x = &#39;Illuminati&#39;;
 const foundXAt = binarySearch(library, x);
 
-console.log('Znaleziono "' + x + '" na pozycji ' + foundXAt);
-// Znaleziono "Illuminati" na pozycji 3
-</code><code class="language-cpp">//C++
-#include &#60;iostream&#62;
+console.log(&#39;Znaleziono &quot;&#39; + x + &#39;&quot; na pozycji &#39; + foundXAt);
+// Znaleziono &quot;Illuminati&quot; na pozycji 3
+</code><code class="language-cpp">// C++
+#include &lt;iostream&gt;
 using namespace std;
 
-int binarySearch(string A[], string x) {
+int binarySearch(string array[], string x) {
   int start = 0;
-  int end = sizeof(A) - 1;
-  while (start <= end) {
+  int end = sizeof(array) - 1;
+  while (start &lt;= end) {
     int middle = (start + end) / 2;
-    if (A[middle] == x) {
+    if (array[middle] == x) {
       return middle;
     }
-    if (A[middle] > x) {
+    if (array[middle] &gt; x) {
       end = middle - 1;
     } else {
       start = middle + 1;
@@ -561,26 +600,26 @@ int binarySearch(string A[], string x) {
 }
 
 int main() {
-  string library[] = {"Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce projektowe", "..."};
+  string library[] = {&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;};
   /* Dla wyszukiwania binarnego
   tablica musi być posortowana rosnąco */
 
-  string x = "Illuminati";
+  string x = &quot;Illuminati&quot;;
   int foundXat = binarySearch(library, x);
 
-  cout << "Znaleziono \"" + x + "\" na pozycji " + to_string(foundXat)<< endl;
-  // Znaleziono "Illuminati" na pozycji 3
+  cout &lt;&lt; &quot;Znaleziono \&quot;&quot; + x + &quot;\&quot; na pozycji &quot; + to_string(foundXat)&lt;&lt; endl;
+  // Znaleziono &quot;Illuminati&quot; na pozycji 3
 }
-</code><code class="language-php">//PHP
-function binarySearch($A, $x) {
+</code><code class="language-php">// PHP
+function binarySearch($array, $x) {
   $start = 0;
-  $end = sizeof($A) - 1;
-  while ($start <= $end) {
+  $end = sizeof($array) - 1;
+  while ($start &lt;= $end) {
     $middle = floor(($start + $end) / 2);
-    if ($A[$middle] === $x) {
+    if ($array[$middle] === $x) {
       return $middle;
     }
-    if ($A[$middle] > $x) {
+    if ($array[$middle] &gt; $x) {
       $end = $middle - 1;
     } else {
       $start = $middle + 1;
@@ -589,26 +628,26 @@ function binarySearch($A, $x) {
   return -1;
 }
 
-$library = array("Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce projektowe", "...");
+$library = array(&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;);
 /* Dla wyszukiwania binarnego
 tablica musi być posortowana rosnąco */
 
-$x = "Illuminati";
+$x = &quot;Illuminati&quot;;
 $foundXAt = binarySearch($library, $x);
 
-echo "Znaleziono \" $x \" na pozycji $foundXAt";
-//Znaleziono "Illuminati" na pozycji 3
-</code><code class="language-java">//Java
+echo &quot;Znaleziono \&quot; $x \&quot; na pozycji $foundXAt&quot;;
+//Znaleziono &quot;Illuminati&quot; na pozycji 3
+</code><code class="language-java">// Java
 public class BinarySearch {
-  public static int binarySearch(String[] A, String x) {
+  public static int binarySearch(String[] array, String x) {
     int start = 0;
-    int end = A.length - 1;
-    while (start <= end) {
+    int end = array.length - 1;
+    while (start &lt;= end) {
       int middle = (start + end) / 2;
-      if (A[middle].equals(x)) {
+      if (array[middle].equals(x)) {
         return middle;
       }
-      if(A[middle].compareTo(x) > 0) {
+      if(array[middle].compareTo(x) &gt; 0) {
         end = middle-1;
       } else {
         start = middle+1;
@@ -618,27 +657,27 @@ public class BinarySearch {
   }
 
   public static void main(String[] args) {
-    String[] library = {"Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce projektowe", "..."};
+    String[] library = {&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;};
     /* Dla wyszukiwania binarnego
     tablica musi być posortowana rosnąco */
 
-    String x = "Illuminati";
+    String x = &quot;Illuminati&quot;;
     int foundXAt = binarySearch(library, x);
 
-    System.out.println("Znaleziono \"" + x + "\" na pozycji " + foundXAt);
-    // Znaleziono "Illuminati" na pozycji 3
+    System.out.println(&quot;Znaleziono \&quot;&quot; + x + &quot;\&quot; na pozycji &quot; + foundXAt);
+    // Znaleziono &quot;Illuminati&quot; na pozycji 3
   }
 }
-</code><code class="language-ruby">#Ruby
+</code><code class="language-ruby"># Ruby
 def binarySearch(a, x)
   startAt = 0
   endAt = a.length - 1
-  while startAt <= endAt
+  while startAt &lt;= endAt
     middle = ((startAt + endAt) / 2).floor
     if a[middle] == x
       return middle
     else
-      if a[middle] > x
+      if a[middle] &gt; x
         endAt = middle - 1
       else
         startAt = middle + 1
@@ -648,49 +687,49 @@ def binarySearch(a, x)
   return -1
 end
 
-library = ["Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce projektowe", "..."]
+library = [&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;]
 # Dla wyszukiwania binarnego
 # tablica musi być posortowana rosnąco
 
-x = "Illuminati";
+x = &quot;Illuminati&quot;;
 foundXAt = binarySearch(library, x);
-puts("Znaleziono \"" + x + "\" na pozycji " + foundXAt.to_s)
-# Znaleziono "Illuminati" na pozycji 3
-</code><code class="language-python">#Python
-def binarySearch(A, x) :
+puts(&quot;Znaleziono \&quot;&quot; + x + &quot;\&quot; na pozycji &quot; + foundXAt.to_s)
+# Znaleziono &quot;Illuminati&quot; na pozycji 3
+</code><code class="language-python"># Python
+def binarySearch(array, x) :
   start = 0
-  end = len(A) - 1
-  while start <= end :
+  end = len(array) - 1
+  while start &lt;= end :
     middle = (start+end) // 2
-    if A[middle] == x :
+    if array[middle] == x :
       return middle
-    if A[middle] > x :
+    if array[middle] &gt; x :
       end = middle - 1
     else:
       start = middle + 1
   return -1
 
-library = ["Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce projektowe", "..."]
+library = [&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;]
 # Dla wyszukiwania binarnego
 # tablica musi być posortowana rosnąco
 
-x = "Illuminati"
+x = &quot;Illuminati&quot;
 foundXAt = binarySearch(library, x)
 
-print("Znaleziono \"" + x + "\" na pozycji " + str(foundXAt))
-# Znaleziono "Illuminati" na pozycji 3
-</code><code class="language-c">//C
-#include &#60;stdio.h&#62;
+print(&quot;Znaleziono \&quot;&quot; + x + &quot;\&quot; na pozycji &quot; + str(foundXAt))
+# Znaleziono &quot;Illuminati&quot; na pozycji 3
+</code><code class="language-c">// C
+#include &lt;stdio.h&gt;
 
-int binarySearch(char *A[], char *x, int Asize){
+int binarySearch(char *array[], char *x, int Asize){
   int start = 0;
   int end = Asize - 1;
-  while(start <= end) {
+  while(start &lt;= end) {
     int middle = (start + end) / 2;
-    if (strcmp(A[middle], x) == 0) {
+    if (strcmp(array[middle], x) == 0) {
       return middle;
     }
-    if (strcmp(A[middle], x) > 0) {
+    if (strcmp(array[middle], x) &gt; 0) {
       end = middle - 1;
 
     } else {
@@ -702,27 +741,27 @@ int binarySearch(char *A[], char *x, int Asize){
 }
 
 int main(void) {
-  char *A[6] = {"Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce projektowe", "..."};
+  char *array[6] = {&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;};
   /* Dla wyszukiwania binarnego
   tablica musi być posortowana rosnąco */
 
-  int arrSize = sizeof(A) / sizeof(A[0]);
-  char x[] = "Illuminati";
-  int foundXAt = binarySearch(A, x, arrSize);
+  int arrSize = sizeof(array) / sizeof(array[0]);
+  char x[] = &quot;Illuminati&quot;;
+  int foundXAt = binarySearch(array, x, arrSize);
 
-  printf("Znaleziono \"%s\" na pozycji %d \n", x, foundXAt);
-  // Znaleziono "Illuminati" na pozycji 3
+  printf(&quot;Znaleziono \&quot;%s\&quot; na pozycji %d \n&quot;, x, foundXAt);
+  // Znaleziono &quot;Illuminati&quot; na pozycji 3
 }
-</code><code class="language-swift">//Swift
-func binarySearch(A: [String], x: String) -> Int {
+</code><code class="language-swift">// Swift
+func binarySearch(array: [String], x: String) -&gt; Int {
   var start = 0;
-  var end = A.count - 1;
-  while (start<=end) {
+  var end = array.count - 1;
+  while (start&lt;=end) {
     var middle = (start+end) / 2;
-    if (A[middle] == x) {
+    if (array[middle] == x) {
       return middle;
     }
-    if (A[middle] > x) {
+    if (array[middle] &gt; x) {
       end = middle - 1;
     } else {
       start = middle + 1;
@@ -732,26 +771,27 @@ func binarySearch(A: [String], x: String) -> Int {
 
 }
 
-var library = ["Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce projektowe", "..."];
+var library = [&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;];
 /* Dla wyszukiwania binarnego
 tablica musi być posortowana rosnąco */
 
-var x = "Illuminati";
-var foundXAt = binarySearch(A: library, x: x);
-print("Znaleziono \"" + String(x) + "\" na pozycji " + String(foundXAt));
-// Znaleziono "Illuminati" na pozycji 3
-</code><code class="language-csharp">//C♯
+var x = &quot;Illuminati&quot;;
+var foundXAt = binarySearch(array: library, x: x);
+
+print(&quot;Znaleziono \&quot;&quot; + String(x) + &quot;\&quot; na pozycji &quot; + String(foundXAt));
+// Znaleziono &quot;Illuminati&quot; na pozycji 3
+</code><code class="language-csharp">// C♯
 using System;
 class MainClass {
-  public static int binarySearch(String[] A, String x){
+  public static int binarySearch(String[] array, String x){
     int start = 0;
-    int end = A.Length - 1;
-    while(start <= end) {
+    int end = array.Length - 1;
+    while(start &lt;= end) {
       int middle = (start+end) / 2;
-      if (A[middle] == x) {
+      if (array[middle] == x) {
         return middle;
       }
-      if(A[middle].CompareTo(x) > 0){
+      if(array[middle].CompareTo(x) &gt; 0){
         end = middle - 1;
       } else {
         start = middle + 1;
@@ -761,27 +801,27 @@ class MainClass {
   }
 
   public static void Main(String[] args) {
-    String[] library = {"Algorytmy", "Czysty kod" ,"Harry Potter" , "Illuminati", "Wzorce projektowe", "..."};
+    String[] library = {&quot;Algorytmy&quot;, &quot;Czysty kod&quot; ,&quot;Harry Potter&quot; , &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;};
     /* Dla wyszukiwania binarnego
     tablica musi być posortowana rosnąco */
 
-    String x = "Illuminati";
+    String x = &quot;Illuminati&quot;;
     int foundXAt = binarySearch(library, x);
 
-    Console.WriteLine("Znaleziono \"" + x + "\" na pozycji " + foundXAt);
-    // Znaleziono "Illuminati" na pozycji 3
+    Console.WriteLine(&quot;Znaleziono \&quot;&quot; + x + &quot;\&quot; na pozycji &quot; + foundXAt);
+    // Znaleziono &quot;Illuminati&quot; na pozycji 3
   }
 }
-</code><code class="language-r">#R
-binarySearch <- function (A, x){
-  start <- 0;
-  end <- length(A) - 1;
-  while (start <= end) {
-    middle <- floor((start+end) / 2);
-    if (A[middle] == x) {
+</code><code class="language-r"># R
+binarySearch &lt;- function (array, x){
+  start &lt;- 0;
+  end &lt;- length(array) - 1;
+  while (start &lt;= end) {
+    middle &lt;- floor((start+end) / 2);
+    if (array[middle] == x) {
       return(middle);
     }
-    if(A[middle] > x){
+    if(array[middle] &gt; x){
       end = middle - 1;
     }
     else{
@@ -791,13 +831,73 @@ binarySearch <- function (A, x){
   return -1;
 }
 
-library <- c("Algorytmy", "Czysty kod", "Harry Potter", "Illuminati", "Wzorce projektowe", "...");
+library &lt;- c(&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;);
 # Dla wyszukiwania binarnego
 # tablica musi być posortowana rosnąco
-x = "Illuminati";
+
+x = &quot;Illuminati&quot;;
 foundXAt = binarySearch(library, x);
-print(paste("Znaleziono ", x, " na pozycji ", foundXAt));
-# Znaleziono "Illuminati" na pozycji 4</code></pre>
+
+print(paste(&quot;Znaleziono &quot;, x, &quot; na pozycji &quot;, foundXAt));
+# Znaleziono &quot;Illuminati&quot; na pozycji 4
+</code><code class="language-kotlin">// Kotlin
+fun binarySearch(array: Array&lt;String&gt;, x: String): Int {
+    var start = 0
+    var end = array.size - 1
+    while (start &lt;= end) {
+        val middle = (start + end) / 2
+        if (array[middle] == x) {
+            return middle
+        }
+        if (array[middle] &gt; x) {
+            end = middle - 1
+        } else {
+            start = middle + 1
+        }
+    }
+    return -1
+}
+
+fun main() {
+    val library = arrayOf(&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;)
+    /* Dla wyszukiwania binarnego
+    tablica musi być posortowana rosnąco */
+
+    val x = &quot;Illuminati&quot;
+    val foundXAt = binarySearch(library, x)
+
+    println(&quot;&quot;&quot;Znaleziono &quot;$x&quot; na pozycji $foundXAt&quot;&quot;&quot;)
+    // Znaleziono &quot;Illuminati&quot; na pozycji 3
+}
+</code><code class="language-scala">// Scala
+object BinarySearch extends App {
+  def binarySearch(array: Array[String], x: String): Int = {
+    var start = 0
+    var end = array.size - 1
+    while (start &lt;= end) {
+        val middle = (start + end) / 2
+        if (array(middle) == x) {
+            return middle
+        }
+        if (array(middle) &gt; x) {
+            end = middle - 1
+        } else {
+            start = middle + 1
+        }
+    }
+    return -1
+  }
+
+  val library = Array(&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;)
+  /* Dla wyszukiwania binarnego
+  tablica musi być posortowana rosnąco */
+
+  val x = &quot;Illuminati&quot;
+  val foundXAt = binarySearch(library, x)
+
+  println(s&quot;&quot;&quot;Znaleziono &quot;$x&quot; na pozycji $foundXAt&quot;&quot;&quot;)
+  // Znaleziono &quot;Illuminati&quot; na pozycji 3
+}</code></pre>
 
 <footer>
   <div class="container">
