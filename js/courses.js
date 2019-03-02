@@ -19,7 +19,8 @@ function collect(lang) {
         addCourse(course, lang);
       });
       courses.find('.loading').remove();
-      document.querySelector('.books').scrollIntoView();
+      if (document.location.hash.includes(encodeURI('książki'))) document.querySelector('.books').scrollIntoView();
+      else if (document.location.hash.includes('kursy')) courses[0].scrollIntoView();
     },
     error: (error) => {
       courses.css('display', 'none');
