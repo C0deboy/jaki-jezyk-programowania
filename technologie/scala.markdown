@@ -12,17 +12,23 @@ in-progress:  true
 
 **Scala** jest to wieloplatformowy, statycznie typowany język programowania działający na maszynie wirtualnej Javy. Wspiera programowanie funkcyjne jaki i obiektowe.
 
-Scala kompiluje się do kodu bajtowego Javy, więc nie działa tak jak Kotlin, który kompiluje się do czystej Javy, jednak też jest w pełni kompatybilna z Javą. Biblioteki więc mogą być reużywane pomiędzy Scalą a Javą bez problemu.
+Dużą zaletą Scali jest kompatybilność z javą - biblioteki mogą być reużywane pomiędzy Scalą a Javą bez problemu. 
 
-...
+Zastosowanie skali dominuje w dziedzinach jak *data science*, *big data* czy *machine learning*.
 
-Wkrótce
+Scala jest wykorzystywana przez duże firmy takie jak:
+- LinkedIn
+- Twitter
+- Zalando
+- SoundCloud
 
 {% include language/top10github.html %}
 
 # Poziom skomplikowania
 
-Wkrótce
+Scala w porównaniu do Kotlina czy Javy ma nieco większy próg wejścia. Również przejście z Javy na Scalę jest relatywnie trudniejsze w porównaniu z Kotlinem.
+
+Wpływa na to fakt, że Scala jest ekspresyjna - potrzeba dużo mniej kodu niż w Javie by wyrazić to samo - jednak co za tym idzie, trzeba więcej rozumieć co się dzieje pod spodem. Jest to zaleta języka, gdy mamy już doświadczenie, jednak na początku nauka jest przez to bardziej problematyczna.
 
 # Popularność
 
@@ -38,9 +44,7 @@ Wkrótce
 
 # Przyszłość języka
 
- Wkrótce 
- 
- [//]: <> 28.4% to 21.6%
+Scala w ostatnim roku straciła nieco swoją popularność wśród języków JVM z 28.4% do 21.6%. Jednak nie jest to wina samej Scali czy też znak, że dzieje się coś nie tak. Scala znalazła zastosowania w niszach jak *data science*, *big data* czy *machine learning* i tam będzie utrzymywać swoją dobrą pozycję. Jest to też spowodowane faktem, że Kotlin stał się oficjalnym językiem androida, co znacznie wpłynęło na jego popularność.
 
 {% assign versions = site.data.statistics.languagesVersions %}
 
