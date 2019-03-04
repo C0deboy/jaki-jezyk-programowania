@@ -281,11 +281,22 @@
 }
 
 .nextExample-btn .lightAriaTooltips {
-  font-size: 1.5em;
+  font-size: 1.4em;
   padding: 5px;
 }
 .nextExample-btn .lightAriaTooltips:after {
   margin-top: -5px;
+}
+
+@media (max-width: 768px) {
+
+  .nextExample-btn .lightAriaTooltips {
+    font-size: 1.2em;
+    padding: 3px 2px;
+  }
+  .nextExample-btn .lightAriaTooltips:after {
+    margin-top: -8px;
+  }
 }
 
 .skip {

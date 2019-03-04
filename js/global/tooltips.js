@@ -42,6 +42,7 @@ function makeElementAlive(element) {
   element.setAttribute('aria-live', 'true');
   element.addEventListener('mouseover', e => toggleTooltip(e, true));
   element.addEventListener('focus', e => toggleTooltip(e, true));
+  element.addEventListener('open', e => toggleTooltip(e, true));
   element.addEventListener('mouseout', e => toggleTooltip(e, false));
   element.addEventListener('blur', e => toggleTooltip(e, false));
 }
