@@ -44,9 +44,10 @@ Wpływa na to fakt, że Scala jest ekspresyjna - potrzeba dużo mniej kodu niż 
 
 # Przyszłość języka
 
-Scala w ostatnim roku straciła nieco swoją popularność wśród języków JVM z 28.4% do 21.6%. Jednak nie jest to wina samej Scali czy też znak, że dzieje się coś nie tak. Scala znalazła zastosowania w niszach jak *data science*, *big data* czy *machine learning* i tam będzie utrzymywać swoją dobrą pozycję. Jest to też spowodowane faktem, że Kotlin stał się oficjalnym językiem androida, co znacznie wpłynęło na jego popularność.
+{% assign scala = site.data.statistics.languagesVersions.Scala %}
 
-{% assign versions = site.data.statistics.languagesVersions %}
+Scala w ostatnim roku straciła nieco swoją popularność wśród języków JVM z 28.4% do 21.6%. Jednak nie jest to wina samej Scali czy też znak, że dzieje się coś nie tak. Scala znalazła zastosowania w niszach jak *data science*, *big data* czy *machine learning* i tam będzie utrzymywać swoją dobrą pozycję. Jest to też spowodowane faktem, że Kotlin stał się oficjalnym językiem androida, co znacznie wpłynęło na jego popularność wśród języków JVM. Jej ostatnia wersja {{ scala.version }} została wydana {{ scala.releaseDate }}.
+
 
 {% include courses.html %}
 

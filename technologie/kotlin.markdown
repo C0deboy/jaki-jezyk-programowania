@@ -50,9 +50,9 @@ Z drugiej strony w Kotlinie mamy wbudowane *null safety*, więc napotkamy na mni
 
 # Przyszłość języka
 
-Kotlin zyskuje na popularności cały czas. Rok 2018 dla Kotlina był bardzo dobrym rokiem - jego popularność wśród języków na JVM wzrosła z 11.4% w 2017 roku do 28.8%. To, że zostanie z nami na dłuży czas, jest niemal pewne - choćby ze względu na to, że stał się oficjalnym językiem systemu Android. Za Kotlinem stoi solida firma JetBrains co również dobrze wróży temu językowi.
+{% assign kotlin = site.data.statistics.languagesVersions.Kotlin %}
 
-{% assign versions = site.data.statistics.languagesVersions %}
+Kotlin zyskuje na popularności cały czas. Rok 2018 dla Kotlina był bardzo dobrym rokiem - jego popularność wśród języków na JVM wzrosła z 11.4% w 2017 roku do 28.8%. To, że zostanie z nami na dłuży czas, jest niemal pewne - choćby ze względu na to, że stał się oficjalnym językiem systemu Android. Za Kotlinem stoi solida firma JetBrains co również dobrze wróży temu językowi. Jego ostatnia wersja {{ kotlin.version }} została wydana {{ kotlin.releaseDate }}.
 
 {% include courses.html %}
 

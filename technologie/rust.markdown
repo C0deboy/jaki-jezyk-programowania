@@ -45,9 +45,9 @@ Nie jest to najłatwiejszy język na początek, ale też taka jest jego specyfik
 
 # Przyszłość języka
 
-Według ankiety przeprowadzonej przez StackOverflow Rust był najbardziej polubionym językiem wśród programistów **3 lata z rzędu** - w 2016, 2017 i 2018. Oznacza to, że ten język programowania ma naprawdę dobry potencjał. Dodatkowym plusem jest to, że jest rozwijany przez Mozillę, co dobrze mu wróży. Jego popularność cały czas rośnie i jest całkiem możliwe, że Rust w ciągu kilku najbliższych lat będzie wysoce pożądany.
+{% assign rust = site.data.statistics.languagesVersions.Rust %}
 
-{% assign versions = site.data.statistics.languagesVersions %}
+Według ankiety przeprowadzonej przez StackOverflow Rust był najbardziej polubionym językiem wśród programistów **3 lata z rzędu** - w 2016, 2017 i 2018. Oznacza to, że ten język programowania ma naprawdę dobry potencjał. Dodatkowym plusem jest to, że jest rozwijany przez Mozillę, co dobrze mu wróży. Jego popularność cały czas rośnie i jest całkiem możliwe, że Rust w ciągu kilku najbliższych lat będzie wysoce pożądany. Jego ostatnia wersja {{ rust.version }} została wydana {{ rust.releaseDate }}.
 
 {% include courses.html %}
 

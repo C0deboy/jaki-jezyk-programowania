@@ -32,9 +32,9 @@ Wkrótce
 
 # Przyszłość języka
 
-Wkrótce
+{% assign groovy = site.data.statistics.languagesVersions.Groovy %}
 
-{% assign versions = site.data.statistics.languagesVersions %}
+Wkrótce
 
 {% include courses.html %}
 
