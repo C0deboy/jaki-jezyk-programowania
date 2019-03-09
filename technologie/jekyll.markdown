@@ -25,6 +25,6 @@ Jekyll sparsuje otrzymane pliki i wyrzuci nam całą strukturę statycznych plik
  
 Warto wspomnieć, że wspiera go [GitHub Pages](https://pages.github.com/) - serwis Githuba pozwalający na darmowe hostowanie twojej strony/bloga. Na GH Pages twój projekt w Jekyllu zostanie automatycznie wykryty i zbuildowany, więc wystarczy, że wrzucisz pliki źródłowe Jekylla i włączysz GH Pages.
 
-[Mój blog](https://devcave.pl/) jest oparty na Jekyllu. Napisałem również [wpis](https://devcave.pl/dajsiepoznac2017/jekyll/2017/03/04/instalacja-jekyll/) oraz kilka kolejnych (zobacz tag [Jekyll](https://devcave.pl/archive/#jekyll)), które pomogą Ci ruszyć z własnym blogiem.
+Zarówno ta strona jak i [Mój blog](https://devcave.pl/) są oparte na Jekyllu. Napisałem również [wpis](https://devcave.pl/dajsiepoznac2017/instalacja-jekyll) oraz kilka kolejnych (zobacz tag [Jekyll](https://devcave.pl/archive/#jekyll)), które pomogą Ci ruszyć z własnym blogiem.
 
 {% include courses.html %}
