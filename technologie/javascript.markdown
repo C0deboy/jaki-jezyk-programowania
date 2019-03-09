@@ -21,11 +21,11 @@ Dzięki platformom, takim jak [Electron.js](https://electron.atom.io/) czy [nw.j
 
 # Poziom skomplikowania
 
-JavaScript jest bardzo łatwym językiem do rozpoczęcia nauki programowania, zwłaszcza, że jest to język wysokiego poziomu, a do pisania kodu wystarczy tylko notatnik oraz przeglądarka - nie ma potrzeby kompilowania kodu. Problematyczne dla początkujących może być jednak fakt, że ten sam kod może działać inaczej w różnych przeglądarkach. Te różnice na szczęście powoli zanikają wraz z rozwojem przeglądarek oraz dzięki dynamicznemu procesowi standaryzacji.
+JavaScript jest bardzo łatwym językiem do rozpoczęcia nauki programowania, zwłaszczazwłaszcza że jest to język wysokiego poziomu, a do pisania kodu wystarczy tylko notatnik oraz przeglądarka - nie ma potrzeby kompilowania kodu. Problematyczne dla początkujących może być jednak fakt, że ten sam kod może działać inaczej w różnych przeglądarkach. Te różnice na szczęście powoli zanikają wraz z rozwojem przeglądarek oraz dzięki dynamicznemu procesowi standaryzacji.
 
-Język JavaScript jest językiem jednowątkowym, co w uproszczeniu oznacza tyle, że naraz może być wykonywana tylko jedna operacja. W przypadku większych aplikacji może stanowić to problem, gdyż kolejne operacje będą blokowane przez pozostałe. Stąd powstała potrzeba wprowadzenia do języka *asynchroniczności* , a zatem -- w dużym skrócie -- możliwości wykonywania operacji "w tle", bez potrzeby czekania na ich wynik. To umożliwiło wypracowanie takich technik, jak [Ajax](https://developer.mozilla.org/en/docs/AJAX) (nieblokująca komunikacja z serwerem w celu pobrania dodatkowych danych), niemniej wprowadziło całą nową klasę problemów związanych z faktem, że zaburzona została kolejność wykonywania kodu (nie wiadomo bowiem, kiedy operacje asynchroniczne zwrócą swój wynik).
+Język JavaScript jest językiem jednowątkowym, co w uproszczeniu oznacza tyle, że naraz może być wykonywana tylko jedna operacja. W przypadku większych aplikacji może stanowić to problem, gdyż kolejne operacje będą blokowane przez pozostałe. Stąd powstała potrzeba wprowadzenia do języka *asynchroniczności*, a zatem — w dużym skrócie — możliwości wykonywania operacji "w tle", bez potrzeby czekania na ich wynik. To umożliwiło wypracowanie takich technik, jak [Ajax](https://developer.mozilla.org/en/docs/AJAX) (nieblokująca komunikacja z serwerem w celu pobrania dodatkowych danych), niemniej wprowadziło całą nową klasę problemów związanych z faktem, że zaburzona została kolejność wykonywania kodu (nie wiadomo bowiem, kiedy operacje asynchroniczne zwrócą swój wynik).
 
-Debugowanie JavaScriptu nie jest jakoś specjalnie trudne. Tym bardziej, że przeglądarki mają wbudowane narzędzia dla programistów, które pomagają rozwiązać większość problemów bez używania internetu czy dokumentacji. Jest to podstawowa umiejętność, którą należy poznać na samym początku. Smutne jest to, że spora część kursów kompletnie omija ten aspekt.
+Debugowanie JavaScriptu nie jest jakoś specjalnie trudne. Tym bardziej że przeglądarki mają wbudowane narzędzia dla programistów, które pomagają rozwiązać większość problemów bez używania internetu czy dokumentacji. Jest to podstawowa umiejętność, którą należy poznać na samym początku. Smutne jest to, że spora część kursów kompletnie omija ten aspekt.
 
 Im większa aplikacja, tym trudniej jest ją poprawnie utrzymać. Pomogą w tym podzielenie kodu na moduły, stosowanie odpowiednich wzorców projektowych oraz trzymanie się dobrych praktyk.
 
@@ -47,7 +47,7 @@ Podsumowując, nauka języka JavaScript jest dość łatwa, jednak pełne opanow
 
 {% assign versions = site.data.statistics.languagesVersions %}
 
-JavaScript to "must know" jeśli chodzi o programowanie webowe i w najbliższym czasie to się nie zmieni. Jest to bardzo dynamicznie rozwijający się język programowania, szczególnie ze względu na co chwilę pojawiające się nowe biblioteki i frameworki poszerzające jego możliwości i zastosowanie. Ciężko za nim nadążyć. 2 lata w przypadku JavaScript to wieki. Jego ostatnia wersja {{ versions.JavaScript.version }} została wydana {{ versions.JavaScript.releaseDate }}. JavaScript to uniwersalny wybór i często jest nawet w stacku technologicznym backendowca.
+JavaScript to "must know" jeśli chodzi o programowanie webowe i raczej to się nie zmieni. Jest to bardzo dynamicznie rozwijający się język programowania, szczególnie ze względu na co chwilę pojawiające się nowe biblioteki i frameworki poszerzające jego możliwości i zastosowanie. Ciężko za nim nadążyć. 2 lata w przypadku JavaScript to wieki. Jego ostatnia wersja {{ versions.JavaScript.version }} została wydana {{ versions.JavaScript.releaseDate }}. JavaScript to uniwersalny wybór i często jest nawet w stacku technologicznym backendowca.
 
 {% include courses.html %}
 
