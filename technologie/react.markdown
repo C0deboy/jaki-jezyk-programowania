@@ -1,5 +1,6 @@
 ---
 layout:     simpleTechnology
+title-full: React - opis, najlepsze polecane kursy video
 title:      React
 no-books:    true
 ---

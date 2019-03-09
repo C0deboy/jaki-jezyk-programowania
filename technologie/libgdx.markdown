@@ -1,5 +1,6 @@
 ---
 layout:     simpleTechnology
+title-full: LibGDX - opis, najlepsze polecane kursy video
 title:      LibGDX
 no-books:    true
 ---

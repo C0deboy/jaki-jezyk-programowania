@@ -1,5 +1,6 @@
 ---
 layout:     simpleTechnology
+title-full: Phaser - opis, najlepsze polecane kursy video
 title:      Phaser
 no-books:    true
 ---

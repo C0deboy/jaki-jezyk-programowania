@@ -1,5 +1,6 @@
 ---
 layout:     simpleTechnology
+title-full: Ruby on Rails - opis, najlepsze polecane kursy video
 title:      Ruby on Rails
 no-books:    true
 ---

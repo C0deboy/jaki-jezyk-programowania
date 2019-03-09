@@ -1,5 +1,6 @@
 ---
 layout:     simpleTechnology
+title-full: Jekyll - opis, najlepsze polecane kursy video
 title:      Jekyll
 image:      jekyll-light.png
 no-books:    true

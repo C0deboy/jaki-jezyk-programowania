@@ -1,5 +1,6 @@
 ---
 layout:     simpleTechnology
+title-full: Node.js - opis, najlepsze polecane kursy video
 title:      Node.js
 no-books:    true
 ---

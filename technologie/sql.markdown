@@ -1,6 +1,6 @@
 ---
 layout:     simpleTechnology
-title-full: Język programowania SQL
+title-full: Język SQL - opis, najlepsze kursy i polecane książki
 title:      SQL
 image:      sql.png
 ---

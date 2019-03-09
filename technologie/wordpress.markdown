@@ -1,5 +1,6 @@
 ---
 layout:     simpleTechnology
+title-full: WordPress - opis, najlepsze kursy i polecane książki
 title:      WordPress
 ---
 

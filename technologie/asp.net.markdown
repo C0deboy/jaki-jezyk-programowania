@@ -1,5 +1,6 @@
 ---
 layout:     simpleTechnology
+title-full: ASP.NET - opis, najlepsze polecane kursy video
 title:      ASP.NET
 no-books:    true
 ---

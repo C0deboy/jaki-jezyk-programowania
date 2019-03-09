@@ -1,5 +1,6 @@
 ---
 layout:     simpleTechnology
+title-full: Symfony - opis, najlepsze polecane kursy video
 title:      Symfony
 no-books:    true
 ---

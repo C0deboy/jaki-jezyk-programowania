@@ -1,5 +1,6 @@
 ---
 layout:     simpleTechnology
+title-full: Angular - opis, najlepsze kursy i polecane książki
 title:      Angular
 ---
 

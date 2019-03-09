@@ -1,6 +1,6 @@
 ---
 layout:     simpleTechnology
-title-full: Język HTML i CSS
+title-full: HTML i CSS - opis, najlepsze kursy i polecane książki
 title:      HTML i CSS
 image:      html&css.png
 ---

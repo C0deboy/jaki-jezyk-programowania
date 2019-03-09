@@ -1,6 +1,6 @@
 ---
 layout:     simpleTechnology
-title-full: Programowanie dla dzieci - Scratch, Python, Javascript
+title-full: Programowanie dla dzieci - jaki język programowania
 title:      Scratch
 image:      scratch.png
 no-courses:  true
