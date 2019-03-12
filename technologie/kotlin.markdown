@@ -1,6 +1,6 @@
 ---
 layout:     technology
-title-full: Język programowania Kotlin - zastosowanie, przyszłość, polecane książki
+title-full: Kotlin - zastosowanie, przyszłość, najlepsze i polecane kursy
 title:      Kotlin
 image:      kotlin.png
 no-books:    true

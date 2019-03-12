@@ -1,6 +1,6 @@
 ---
 layout:     technology
-title-full: Język programowania Python - zastosowanie, przyszłość, polecane książki
+title-full: Python - zastosowanie, przyszłość, najlepsze kursy i polecane książki
 title:      Python
 image:      python.png
 ---

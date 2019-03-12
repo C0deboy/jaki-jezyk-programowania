@@ -1,6 +1,6 @@
 ---
 layout:     technology
-title-full: Język programowania R - zastosowanie, przyszłość, polecane książki
+title-full: R - zastosowanie, przyszłość, najlepsze kursy i polecane książki
 title:      R
 image:      r.png
 ---

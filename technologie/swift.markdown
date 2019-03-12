@@ -1,6 +1,6 @@
 ---
 layout:     technology
-title-full: Język programowania Swift - zastosowanie, przyszłość, polecane książki
+title-full: Swift - zastosowanie, przyszłość, najlepsze kursy i polecane książki
 title:      Swift
 image:      swift.png
 ---

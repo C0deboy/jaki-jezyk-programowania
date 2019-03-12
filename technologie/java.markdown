@@ -1,6 +1,6 @@
 ---
 layout:     technology
-title-full: Język programowania Java - zastosowanie, przyszłość, polecane książki
+title-full: Java - zastosowanie, przyszłość, najlepsze kursy i polecane książki
 title:      Java
 image:      java.png
 ---

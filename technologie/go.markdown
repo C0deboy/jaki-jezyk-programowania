@@ -1,6 +1,6 @@
 ---
 layout:     technology
-title-full: Język programowania Go - zastosowanie, przyszłość, polecane książki
+title-full: Go - zastosowanie, przyszłość, najlepsze kursy i polecane książki
 title:      Go
 image:      go.png
 in-progress:  true

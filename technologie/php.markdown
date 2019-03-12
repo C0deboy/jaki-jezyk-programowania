@@ -1,6 +1,6 @@
 ---
 layout:     technology
-title-full: Język programowania PHP - zastosowanie, przyszłość, polecane książki
+title-full: PHP - zastosowanie, przyszłość, najlepsze kursy i polecane książki
 title:      PHP
 image:      php.png
 ---

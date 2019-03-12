@@ -1,6 +1,6 @@
 ---
 layout:     technology
-title-full: Język programowania JavaScript - zastosowanie, przyszłość, polecane książki
+title-full: JavaScript - zastosowanie, przyszłość, najlepsze kursy i polecane książki
 title:      JavaScript
 image:      javascript.png
 ---
