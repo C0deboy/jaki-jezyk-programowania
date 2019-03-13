@@ -1,6 +1,6 @@
 ---
 layout:     technology
-title-full: Groovy - zastosowanie, przyszłość, najlepsze i polecane kursy
+title-full: Groovy - zastosowanie, przyszłość, najlepsze, polecane kursy
 title:      Groovy
 image:      groovy.png
 in-progress:  true

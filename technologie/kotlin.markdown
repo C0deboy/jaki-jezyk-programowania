@@ -1,6 +1,6 @@
 ---
 layout:     technology
-title-full: Kotlin - zastosowanie, przyszłość, najlepsze i polecane kursy
+title-full: Kotlin - zastosowanie, przyszłość, najlepsze, polecane kursy
 title:      Kotlin
 image:      kotlin.png
 no-books:    true

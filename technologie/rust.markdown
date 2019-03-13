@@ -1,6 +1,6 @@
 ---
 layout:     technology
-title-full: Rust - zastosowanie, przyszłość, najlepsze i polecane kursy
+title-full: Rust - zastosowanie, przyszłość, najlepsze, polecane kursy
 title:      Rust
 image:      rust.png
 in-progress:  true
@@ -11,13 +11,13 @@ no-books:   true
 
 # Zastosowanie
 
-**Rust** jest relatywnie świeżym, wieloparadygmatowym językiem programowania obecnie rozwijanym przez Mozillę. Został zaprojektowany by być bezpiecznym, szczególnie pod względem współbieżności. Rust składniowo jest podobny do C++, jednak oferuje automatyczne zarządzanie pamięcią (bez garbage collectora), jednocześnie utrzymując wysoką wydajność.
+**Rust** jest relatywnie świeżym, wieloparadygmatowym językiem programowania obecnie rozwijanym przez Mozillę. Został zaprojektowany by być bezpiecznym, szczególnie pod względem współbieżności. Rust składniowo jest podobny do C++, jednak w odróżnieniu do niego, oferuje automatyczne zarządzanie pamięcią bez garbage collectora, jednocześnie utrzymując wysoką wydajność.
 
-Rust jest porównywalny często do C/C++ zarówno pod względem zastosowania jak i wydajności. Jest on więc wykorzystywany najczęściej w obszarach, gdzie wydajność jest krytycznym aspektem. 
+Rust jest porównywalny często do C/C++ zarówno pod względem zastosowania jak i wydajności. Jest on więc najczęściej wykorzystywany w obszarach, gdzie wydajność jest krytycznym aspektem. 
 
 Rust ma już wiele zastosowań komercyjnych, całą listę można zobaczyć tu [Rust - production users](https://www.rust-lang.org/production/users).
 
-Są to między innymi:
+Wykorzystują go między innymi:
 - Mozilla
 - Dropbox
 - npm
