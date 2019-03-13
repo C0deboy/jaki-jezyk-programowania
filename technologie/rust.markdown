@@ -11,7 +11,7 @@ no-books:   true
 
 # Zastosowanie
 
-**Rust** jest relatywnie świeżym, wieloparadygmatowym językiem programowania obecnie rozwijanym przez Mozillę. Został zaprojektowany by być bezpiecznym, szczególnie pod względem współbieżności. Rust składniowo jest podobny do C++, jednak w odróżnieniu do niego, oferuje automatyczne zarządzanie pamięcią bez garbage collectora, jednocześnie utrzymując wysoką wydajność.
+**Rust** jest relatywnie świeżym, wieloparadygmatowym językiem programowania obecnie rozwijanym przez Mozillę. Został zaprojektowany by być bezpiecznym, szczególnie pod względem współbieżności. Rust składniowo jest podobny do C++. Oferuje automatyczne zarządzanie pamięcią, jednak w odróżnieniu do typowych rozwiązań, robi to bez garbage collectora, co wpływa na utrzymanie wysokiej wydajności.
 
 Rust jest porównywalny często do C/C++ zarówno pod względem zastosowania jak i wydajności. Jest on więc najczęściej wykorzystywany w obszarach, gdzie wydajność jest krytycznym aspektem. 
 
