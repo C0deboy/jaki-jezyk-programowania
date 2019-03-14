@@ -51,7 +51,7 @@ Meetupy C++ są kategoryzowane razem z językiem C. Mimo to widać, że w porów
 
 {% assign versions = site.data.statistics.languagesVersions %}
 
-Lata świetności C++ z 2003 roku już dawno minęły i można powiedzieć, że C++ staję się coraz bardziej niszowym językiem. Jednak wraz z rozwojem technologii VR (Virtual Reality), w której C++ jest przodującym językiem, znów zyskuje na popularności. C++ jest co jakiś czas nadal ulepszany, mimo że powstał w 1985 roku. C++ nie należy do najpopularniejszych, ale tam, gdzie liczy się wydajność częstp jest wybierany i nie zapowiada się, żeby się to zmieniło w najbliższym czasie. Ostatnia jego wersja C++17 wyszła 1 grudnia 2017 po trzyletniej przerwie. C++20 jest kolejną planowaną wersją, więc prawdopodobnie zobaczymy ją w 2020 roku.
+Lata świetności C++ z 2003 roku już dawno minęły i można powiedzieć, że C++ staję się coraz bardziej niszowym językiem. Jednak wraz z rozwojem technologii VR (Virtual Reality), w której C++ jest przodującym językiem, znów zyskuje na popularności. C++ jest co jakiś czas nadal ulepszany, mimo że powstał w 1985 roku. C++ nie należy do najpopularniejszych, ale tam, gdzie liczy się wydajność, jest często wybierany i nie zapowiada się, żeby się to zmieniło w najbliższym czasie. Ostatnia jego wersja C++17 wyszła 1 grudnia 2017 po trzyletniej przerwie. C++20 jest kolejną planowaną wersją, więc prawdopodobnie zobaczymy ją w 2020 roku.
 
 {% include courses.html %}
 

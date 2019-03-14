@@ -15,9 +15,9 @@ Gry stworzone na silniku Unity obsługują wiele platform sprzętowych, są to m
 
 W unity jest możliwość pisanie skryptów w UnityScript (podobieństwo składni do [JavaScript](/technologie/javascript) oraz [C#](/technologie/csharp).
 
-Do wersji 4.6 silnik był udostępniany na licencji płatnej lub darmowej zawierającej ograniczoną funkcjonalność, ale wraz z premierą Unity 5 prawie wszystkie funkcje silnika udostępniono w wersji darmowej dla twórców nie przekraczających 100 tysięcy dolarów dochodów rocznie.
+Do wersji 4.6 silnik był udostępniany na licencji płatnej lub darmowej zawierającej ograniczoną funkcjonalność, ale wraz z premierą Unity 5 prawie wszystkie funkcje silnika udostępniono w wersji darmowej dla twórców nieprzekraczających 100 tysięcy dolarów dochodów rocznie.
 
-Unity oferuje również tzw. Asset Store, który umożliwia skorzystanie z płatnych lub darmowych komponentów takich jak tekstury lub skrypty
+Unity oferuje również tzw. Asset Store, który umożliwia skorzystanie z płatnych lub darmowych komponentów takich jak tekstury lub skrypty.
 
 W Unity powstały gry mobilne takie jak:
 - Dead Trigger 1, 2

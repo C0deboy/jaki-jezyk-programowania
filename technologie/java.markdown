@@ -31,8 +31,6 @@ Do najbardziej znanych stron, które mają "pod spodem" Jave, należą
 - Netflix.com
 - Amazon.com
 
-[Opis Kotlina dla Androida](https://developer.android.com/kotlin/)
-
 {% include language/top10github.html %}
 
 # Poziom skomplikowania

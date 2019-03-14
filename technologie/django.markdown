@@ -15,7 +15,7 @@ Najbardziej popularne strony internetowy, które korzystają z **Django** to:
 - The Washington Times
 - Disqus
 - Bitbucket
-- Pinterest (na początku, później Flask)
+- Pinterest (na początku)
 
 {% include courses.html %}
 

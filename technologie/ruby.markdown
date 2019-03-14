@@ -9,7 +9,19 @@ image:      ruby.png
 
 {% assign stats = site.data.statistics.statistics.Ruby %}
 
-**Ruby** to interpretowany, w pełni obiektowy język programowania. Jako język o bardzo prostej składni jest często stosowany do pisania tak zwanych jednolinijkowców, skryptów, przetwarzania tekstu oraz prototypowania nowych aplikacji. Jego zaletą jest ogromna ilość frameworków webowych oraz aplikacji napisanych w tym języku. Warto wspomnieć tu o [Jekyllu](/technologie/jekyll) i [Ruby on Rails](/technologie/rubyonrails).
+**Ruby** to interpretowany, w pełni obiektowy język programowania. Jako język o bardzo prostej składni jest często stosowany do pisania tak zwanych jednolinijkowców, skryptów, przetwarzania tekstu oraz prototypowania nowych aplikacji. 
+
+Jego zaletą jest ogromna ilość frameworków webowych oraz aplikacji napisanych w tym języku. Warto wspomnieć tu o [Jekyllu](/technologie/jekyll) i [Ruby on Rails](/technologie/rubyonrails).
+
+Dzięki nim tworzenie stron internetowych w tym języku jest proste i szybkie.
+
+Jest wykorzystywany przez takie strony jak:
+
+- Twitch.tv
+- Starbucks
+- Tumblr
+- Shopify
+- Heroku
 
 {% include language/top10github.html %}
 

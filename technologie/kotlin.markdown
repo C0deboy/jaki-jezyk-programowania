@@ -28,6 +28,8 @@ Najpopularniejsze marki, które korzystają z Kotlina to:
 - Trello
 - Evernote
 
+Zobacz też: [Opis Kotlina na oficjalnej stronie Androida](https://developer.android.com/kotlin/)
+
 {% include language/top10github.html %}
 
 # Poziom skomplikowania
