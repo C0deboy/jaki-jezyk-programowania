@@ -5,13 +5,12 @@ title:      SQL
 image:      sql.png
 ---
 
-Czym jest SQL?
-==============
+# Czym jest SQL?
 
-SQL to strukturalny język zapytań używany do zarządzania bazami danych. Pozwala m.in na tworzenie, modyfikowanie, pobieranie oraz usuwanie danych z baz danych.
-SQL to standard w komunikacji z serwerami relacyjnych baz danych. Jeśli chcesz pracować z bazami to właśnie od niego powinieneś zacząć.
+SQL to strukturalny język zapytań używany do zarządzania bazami danych. Pozwala m.in. na tworzenie, modyfikowanie, pobieranie oraz usuwanie danych z baz danych.
+SQL to standard w komunikacji z serwerami relacyjnych baz danych. Jeśli chcesz pracować z bazami, to właśnie od niego powinieneś zacząć.
 
-Język SQL znacząco różni się od innych języków programowania, takich jak chociażby C++ czy Java. Nie służy on tworzenia programów tylko do formułowania zapytań do bazy danych. Znajomość SQL to fundamentalna umiejętność, którą później możesz wykorzystać np. pisząc programy w językach, które umożliwiają komunikację z bazami danych np. Java, C#, PHP.
+Język SQL znacząco różni się od innych języków programowania, takich jak C++ czy Java. Nie służy on do tworzenia programów tylko do formułowania zapytań do bazy danych. Znajomość SQL to fundamentalna umiejętność, którą później można wykorzystać np. pisząc programy w językach, które umożliwiają komunikację z bazami danych.
 
 {% include courses.html %}
 
