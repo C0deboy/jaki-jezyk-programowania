@@ -9,6 +9,5 @@ require('bootstrap');
 require('./forEachPolyfill');
 require('./parentElementAppendPolyfill');
 require('./nav');
-require('./ganalitics');
 require('./tooltips');
 require('../technologies-list');
