@@ -68,6 +68,8 @@ function createLineChart(ctx, title, yAxisLabel, labels, datasets, reverse = fal
 
   ctx.canvas.parentElement.insertBefore(header, ctx.canvas);
 
+  if (window.matchMedia('(max-width: 768px)').matches) ctx.canvas.height = 360;
+
   datasets.forEach((entry, i) => {
     const color = defaultColors[i];
     entry.borderColor = color;
@@ -82,7 +84,7 @@ function createLineChart(ctx, title, yAxisLabel, labels, datasets, reverse = fal
       datasets,
     },
     options: {
-      responsive: false,
+      responsive: true,
       maintainAspectRatio: true,
       scales: {
         yAxes: [{
