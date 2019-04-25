@@ -33,6 +33,8 @@ Do najbardziej znanych stron, które mają "pod spodem" Jave, należą
 
 {% include language/top10github.html %}
 
+Zobacz [wizualizację wszystkich statystyk zebranych w 2018 roku](/statystyki-jezykow-programowania-2018) i porównaj z innymi językami.
+
 # Poziom skomplikowania
 
 **Java** została zaprojektowana tak, aby była przyjazna dla początkujących, tym samym łatwiejsza niż C++. Składnia Javy jest podobna do składni języka C++, ale ma mniej niskopoziomowych funkcji. **Java** posiada także wiele wbudowanych bibliotek z gotowymi rozwiązaniami, podczas gdy w niektórych językach musimy je znaleźć, wybrać i dołączyć na własną rękę. Jest to pewne ułatwienie na początku nauki, bo **Java** robi to za nas. Jednak później nie ma to większego znaczenia. W Javie jest ich po prostu więcej domyślnie. Jednak nie wszystkie są idealne, gdyż ze względu na kompatybilność wsteczną niektóre rozwiązania są przestarzałe.

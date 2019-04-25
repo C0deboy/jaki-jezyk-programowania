@@ -3,7 +3,6 @@ layout:     technology
 title-full: Rust - zastosowanie, przyszłość, najlepsze, polecane kursy
 title:      Rust
 image:      rust.png
-in-progress:  true
 no-books:   true
 ---
 

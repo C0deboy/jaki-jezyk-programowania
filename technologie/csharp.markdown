@@ -41,6 +41,8 @@ Jest także językiem silnie typowanym, co oznacza, że każda zmienna musi mie�
 
 {% include language/meetup.html %}
 
+Zobacz [wizualizację wszystkich statystyk zebranych w 2018 roku](/statystyki-jezykow-programowania-2018) i porównaj z innymi językami.
+
 Duża popularność silnika Unity (który może się pochwalić tym, że 34% najpopularniejszych gier mobilnych powstało w tym silniku) wpływa także pozytywnie na rozgłos **C#**.
 
 # Przyszłość języka

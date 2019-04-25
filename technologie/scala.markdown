@@ -3,7 +3,6 @@ layout:     technology
 title-full: Scala - zastosowanie, przyszłość, najlepsze kursy i polecane książki
 title:      Scala
 image:      scala.png
-in-progress:  true
 ---
 
 {% assign stats = site.data.statistics.statistics.Scala %}

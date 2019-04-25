@@ -15,6 +15,7 @@ module.exports = {
     'wizard': './js/wizard/wizard.js',
     'technologies-list': './js/technologies-list.js',
     'language': './js/language.js',
+    'statistics2018': './js/statistics/statistics2018.js',
   },
   output: {
     path: path.join(__dirname, 'dist'),

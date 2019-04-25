@@ -3,7 +3,6 @@ layout:     technology
 title-full: Groovy - zastosowanie, przyszłość, najlepsze, polecane kursy
 title:      Groovy
 image:      groovy.png
-in-progress:  true
 no-books:   true
 ---
 
@@ -13,7 +12,7 @@ no-books:   true
 
 **Groovy** to obiektowy język programowania na platformę Javy - podobnie jak Kotlin, Scala i inne języki JVM-owe, kompiluje się do kodu bajtowego Javy. Znaczy to mniej więcej tyle, że uruchamiamy go w tym samym środowisku co Javę.
 
-Groovy wspiera typowanie dynamiczne jak i statyczne, dlatego może być używany też jako język skryptowy. Posiada wiele użytecznych featurów, które usprawniają pracę programisty i sprawiają, że kod jest bardziej zwięzły i czytelny.
+Groovy wspiera typowanie dynamiczne jak i statyczne, dlatego może być używany też jako język skryptowy. Posiada wiele użytecznych funkcji, które usprawniają pracę programisty i sprawiają, że kod jest bardziej zwięzły i czytelny.
 
 Tak jak inne języki JVM-owe, Groovy może być używany zamiennie z Javą oraz wykorzystywać jej biblioteki. Wiele narzędzi wspiera Groviego ze względu na jego zalety i też na nich jego zastosowanie w ostatnich latach się skupia. Groovy jest też często wykorzystywany do automatyzacji pracy w postaci skryptów.
 
@@ -41,7 +40,7 @@ Można więc powiedzieć, że obecnie Grooviego najczęściej wykorzystuje się 
 
 Groovy w porównaniu do Javy oferuję dużo bardziej zwięzłą i czytelniejszą składnię, która jest łatwa do nauki. To dlatego jest często wykorzystywany do pisania skryptów lub testów.
 
-Groovy posiada wszystkie funkcję wysokopoziomowego języka, dlatego nie musimy się martwić rzeczami jak zarządzanie pamięcią.
+Groovy posiada wszystkie funkcję wysokopoziomowego języka m.in. nie musimy się martwić zarządzaniem pamięcią.
 
 Ogólnie Groovy jest językiem relatywnie łatwym do nauki, szczególnie dla osoby, która jest już zaznajomiona z Javą - wtedy przejście jest naprawdę płynne.
 

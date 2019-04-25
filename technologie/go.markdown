@@ -3,7 +3,6 @@ layout:     technology
 title-full: Go - zastosowanie, przyszłość, najlepsze kursy i polecane książki
 title:      Go
 image:      go.png
-in-progress:  true
 ---
 
 {% assign stats = site.data.statistics.statistics.Go %}
@@ -52,7 +51,7 @@ Jak widać, nie ma w nim wielu aspektów programowania obiektowego, co dla niekt
 
 Go jest idiomatyczny, tzn. często jest tylko jeden sposób na wykonanie danej rzeczy, co może być zarówno plusem, jak i minusem. Go ma także wbudowanych wiele mechanizmów, które wymuszają na programistach stosowanie się do dobrych praktyk. Jest to na pewno plusem dla początkujących, bo trudniej sobie strzelić w stopę. Dzięki takim rozwiązaniom czytelność i porządek w kodzie przestają zależeć od kultury programisty, a przesuwają się w stronę zasad konstrukcji języka.
 
-Dzięki tzw. gorutynom (ang. *goroutines*) i kanałom wbudowanych w Go, programowanie współbieżne jest dużo prostsze.
+Dzięki tzw. gorutynom (ang. *goroutines*) i kanałom wbudowanym w Go, programowanie współbieżne jest dużo prostsze.
 
 # Popularność
 
