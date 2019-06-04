@@ -28,7 +28,7 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "babel-loader": "^8.0.5",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.5",
     "browser-sync-webpack-plugin": "^2.2.2",
     "css-loader": "^2.1.0",
     "eslint": "^5.13.0",
@@ -46,8 +46,9 @@
     "bootstrap": "^4.3.1",
     "font-awesome": "^4.7.0",
     "highlight.js": "^9.14.2",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.1",
     "mattboldt.typed.js": "^1.1.4",
+    "npm": "^6.9.0",
     "popper.js": "^1.14.7"
   }
 }
