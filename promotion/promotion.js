@@ -1,13 +1,13 @@
 const promotions = [
   {
-    start: new Date('2019-03-19'),
-    end: new Date('2019-03-24'),
+    start: new Date('2019-06-05'),
+    end: new Date('2019-06-08'),
     number: '6094',
-    host: 'videopoint.pl',
+    host: 'helion.pl',
     img: '/promotion/p.jpg',
     popup: true,
-    message: 'Jest promocja na kursy video w [Videopoint] - 2 w cenie 1',
-    adHeader: 'Jest promocja na kursy video w [Videopoint] - 2 w cenie 1',
+    message: 'Promocja na książki w [Helion] - 2 książki w cenie 1',
+    adHeader: 'Promocja na książki w [Helion] - 2 książki w cenie 1',
     adContent: '',
   },
 ];
