@@ -1,8 +1,8 @@
 ---
-title: "Statystyki języków programowania 2018"
-description: "Wizualizacja statystyk z serwisów Tiobe Index, Stack Overflow, Meetup i Github zbieranych przez stronę jaki-jezyk-programowania.pl w roku 2018"
-permalink: "/statystyki-jezykow-programowania-2018/"
-year: 2018
+title: "Statystyki języków programowania 2019"
+description: "Wizualizacja statystyk z serwisów Tiobe Index, Stack Overflow, Meetup i Github zbieranych przez stronę jaki-jezyk-programowania.pl w roku 2019"
+permalink: "/statystyki-jezykow-programowania-2019/"
+year: 2019
 ---
 
 
@@ -42,7 +42,7 @@ year: 2018
   <div class="container">
     <h1>Statystyki języków programowania {{page.year}}</h1>
     <p class="m-4">Wizualizacja wszystkich statystyk, które są zbierane co miesiąc na potrzebę tej strony w roku {{page.year}}.</p>
-    <h2><a href="/statystyki-jezykow-programowania-{{page.year | plus: 1}}/">Zobacz także rok {{page.year | plus: 1}}</a></h2>
+    <h2><a href="/statystyki-jezykow-programowania-{{page.year | minus: 1}}/">Zobacz także rok {{page.year | minus: 1}}</a></h2>
     <div class="row flex-column justify-content-center">
 
       <canvas class="chart" id="tiobeCurrentYear"></canvas>
@@ -70,6 +70,11 @@ year: 2018
         <button class="git-lang-switcher main-btn" data-lang="C">C</button>
         <button class="git-lang-switcher main-btn" data-lang="C++">C++</button>
         <button class="git-lang-switcher main-btn" data-lang="R">R</button>
+        <button class="git-lang-switcher main-btn" data-lang="Rust">Rust</button>
+        <button class="git-lang-switcher main-btn" data-lang="Kotlin">Kotlin</button>
+        <button class="git-lang-switcher main-btn" data-lang="Scala">Scala</button>
+        <button class="git-lang-switcher main-btn" data-lang="Go">Go</button>
+        <button class="git-lang-switcher main-btn" data-lang="Groovy">Groovy</button>
       </div>
       <div id="lang-projects">
         <canvas class="chart" id="github-projects-for-lang"></canvas>
@@ -79,8 +84,7 @@ year: 2018
 
     </div>
 
-    <h2><a href="/statystyki-jezykow-programowania-{{page.year | plus: 1}}/">Zobacz także rok {{page.year | plus: 1}}</a></h2>
-
+    <h2><a href="/statystyki-jezykow-programowania-{{page.year | minus: 1}}/">Zobacz także rok  {{page.year | minus: 1}}</a></h2>
   </div>
 </section>
 

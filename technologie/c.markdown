@@ -47,7 +47,7 @@ C jest jednym z najpopularniejszych języków programowania, głownie, ze wzglę
 
 {% include language/meetup.html %}
 
-Zobacz [wizualizację wszystkich statystyk zebranych w 2018 roku](/statystyki-jezykow-programowania-2018) i porównaj z innymi językami.
+Zobacz [wizualizację wszystkich statystyk z ostatnich lat](/statystyki-jezykow-programowania-2019) i porównaj różne języki.
 
 Meetupy C są kategoryzowane razem z językiem C++. Mimo to widać, że w porównaniu do innych języków, grup organizujących spotkania dla społeczności C/C++ jest dużo mniej, szczególnie w Polsce.
 

@@ -1,19 +1,10 @@
-import {
-  githubMoreThen1000Stars,
-  githubProjects,
-  labels, langToProjects,
-  lastYearLabels,
-  meetupMeetupsGlobal,
-  meetupMeetupsLocal,
-  meetupMembersGlobal,
-  meetupMembersLocal,
-  stackQuestions,
-  tiobeCurrentYear,
-  tiobeLastYear, top10GithubProjects,
-} from './statistics2018-data';
+import statistics2018 from './statistics2018-data';
+import statistics2019 from './statistics2019-data';
 
 const defaultColors = ['#3366CC', '#DC3912', '#FF9900', '#109618', '#990099', '#3B3EAC', '#0099C6', '#DD4477', '#66AA00', '#B82E2E', '#316395', '#994499', '#22AA99', '#AAAA11', '#6633CC', '#E67300', '#8B0707', '#329262', '#5574A6', '#3B3EAC'];
 
+const year = parseInt(document.getElementById('statistics').getAttribute('data-year'));
+const statistics = year === 2018 ? statistics2018 : statistics2019;
 
 const langProjects = document.getElementById('lang-projects');
 const top10GithubProjectsCtx = document.getElementById('top10GithubProjects').getContext('2d');
@@ -27,20 +18,20 @@ const meetupMembersGlobalCtx = document.getElementById('meetupMembersGlobal').ge
 const githubMoreThen1000StarsCtx = document.getElementById('githubMoreThen1000Stars').getContext('2d');
 const githubProjectsCtx = document.getElementById('githubProjects').getContext('2d');
 
-createLineChart(tiobeCurrentYearCtx, 'Tiobe index - ranking', 'Pozycja', labels, tiobeCurrentYear, true);
-createLineChart(tiobeLastYearCtx, 'Tiobe index - ranking - poprzedni rok', 'Pozycja', lastYearLabels, tiobeLastYear, true);
-createLineChart(stackQuestionsCtx, 'Stack Overflow - liczba pytań', 'Liczba pytań', labels, stackQuestions);
-createLineChart(meetupMeetupsLocalCtx, 'Meetup - ilość grup - Polska', 'Liczba grup', labels, meetupMeetupsLocal);
-createLineChart(meetupMeetupsGlobalCtx, 'Meetup - ilość grup - cały świat', 'Liczba grup', labels, meetupMeetupsGlobal);
-createLineChart(meetupMembersLocalCtx, 'Meetup - wielkość społeczności - Polska', 'Liczba członków', labels, meetupMembersLocal);
-createLineChart(meetupMembersGlobalCtx, 'Meetup - wielkość społeczności - cały świat', 'Liczba członków', labels, meetupMembersGlobal);
-createLineChart(githubProjectsCtx, 'Github - liczba projektów', 'Liczba projektów', labels, githubProjects);
-createLineChart(githubMoreThen1000StarsCtx, 'Github - ilość projektów z liczbą gwiazdek większą niż 1000', 'Liczba projektów', labels, githubMoreThen1000Stars);
+createLineChart(tiobeCurrentYearCtx, 'Tiobe index - ranking', 'Pozycja', statistics.labels, statistics.tiobeCurrentYear, true);
+createLineChart(tiobeLastYearCtx, 'Tiobe index - ranking - poprzedni rok', 'Pozycja', statistics.lastYearLabels, statistics.tiobeLastYear, true);
+createLineChart(stackQuestionsCtx, 'Stack Overflow - liczba pytań', 'Liczba pytań', statistics.labels, statistics.stackQuestions);
+createLineChart(meetupMeetupsLocalCtx, 'Meetup - ilość grup - Polska', 'Liczba grup', statistics.labels, statistics.meetupMeetupsLocal);
+createLineChart(meetupMeetupsGlobalCtx, 'Meetup - ilość grup - cały świat', 'Liczba grup', statistics.labels, statistics.meetupMeetupsGlobal);
+createLineChart(meetupMembersLocalCtx, 'Meetup - wielkość społeczności - Polska', 'Liczba członków', statistics.labels, statistics.meetupMembersLocal);
+createLineChart(meetupMembersGlobalCtx, 'Meetup - wielkość społeczności - cały świat', 'Liczba członków', statistics.labels, statistics.meetupMembersGlobal);
+createLineChart(githubProjectsCtx, 'Github - liczba projektów', 'Liczba projektów', statistics.labels, statistics.githubProjects);
+createLineChart(githubMoreThen1000StarsCtx, 'Github - ilość projektów z liczbą gwiazdek większą niż 1000', 'Liczba projektów', statistics.labels, statistics.githubMoreThen1000Stars);
 
 const lang = 'Java';
 const ctx = document.getElementById('github-projects-for-lang').getContext('2d');
 
-createLineChart(ctx, 'Github - top 10 projektów ' + lang, 'Liczba gwiazdek', labels, langToProjects[lang]);
+createLineChart(ctx, 'Github - top 10 projektów ' + lang, 'Liczba gwiazdek', statistics.labels, statistics.langToProjects[lang]);
 
 let previousBtn = document.querySelector('.git-lang-switcher');
 
@@ -55,12 +46,12 @@ document.querySelectorAll('.git-lang-switcher').forEach((btn) => {
     langProjects.innerHTML = '<canvas class="chart" id="github-projects-for-lang"></canvas>';
     const lang = btn.getAttribute('data-lang');
     const ctx = document.getElementById('github-projects-for-lang').getContext('2d');
-    createLineChart(ctx, 'Github - top 10 projektów ' + lang, 'Liczba gwiazdek', labels, langToProjects[lang]);
+    createLineChart(ctx, 'Github - top 10 projektów ' + lang, 'Liczba gwiazdek', statistics.labels, statistics.langToProjects[lang]);
     previousBtn = btn;
   });
 });
 
-createLineChart(top10GithubProjectsCtx, 'Github - porównanie najlepszych projektów z każdego języka', 'Liczba gwiazdek', labels, top10GithubProjects);
+createLineChart(top10GithubProjectsCtx, 'Github - porównanie najlepszych projektów z każdego języka', 'Liczba gwiazdek', statistics.labels, statistics.top10GithubProjects);
 
 function createLineChart(ctx, title, yAxisLabel, labels, datasets, reverse = false) {
   const header = document.createElement('h2');
@@ -91,10 +82,12 @@ function createLineChart(ctx, title, yAxisLabel, labels, datasets, reverse = fal
           ticks: {
             reverse,
             min: reverse ? 1 : null,
+            fontSize: 14,
           },
           scaleLabel: {
             display: true,
             labelString: yAxisLabel,
+            fontSize: 16,
           },
         }],
       },

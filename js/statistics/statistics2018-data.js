@@ -1,9 +1,9 @@
 /* eslint-disable max-len */
 
-export const labels = ['2017-12', '2018-01', '2018-02', '2018-03', '2018-04', '2018-05', '2018-06', '2018-07', '2018-08', '2018-09', '2018-10', '2018-11', '2018-12'];
-export const lastYearLabels = ['2016-12', '2017-01', '2017-02', '2017-03', '2017-04', '2017-05', '2017-06', '2017-07', '2017-08', '2017-09', '2017-10', '2017-11', '2017-12'];
+const labels = ['2017-12', '2018-01', '2018-02', '2018-03', '2018-04', '2018-05', '2018-06', '2018-07', '2018-08', '2018-09', '2018-10', '2018-11', '2018-12'];
+const lastYearLabels = ['2016-12', '2017-01', '2017-02', '2017-03', '2017-04', '2017-05', '2017-06', '2017-07', '2017-08', '2017-09', '2017-10', '2017-11', '2017-12'];
 
-export const top10GithubProjects = [
+const top10GithubProjects = [
   {
     data: [27115, 27926, 29522, 30196, 31299, 33053, 34450, 35433, 36919, 38744, 39778, 40966, 41892],
     label: 'java-design-patterns (Java)',
@@ -46,7 +46,7 @@ export const top10GithubProjects = [
   },
 ];
 
-export const langToProjects = {};
+const langToProjects = {};
 
 langToProjects.R = [
   {
@@ -542,7 +542,7 @@ langToProjects.Java = [
   },
 ];
 
-export const tiobeCurrentYear = [
+const tiobeCurrentYear = [
   {
     data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     label: 'Java',
@@ -585,7 +585,7 @@ export const tiobeCurrentYear = [
   },
 ];
 
-export const tiobeLastYear = [
+const tiobeLastYear = [
   {
     data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     label: 'Java',
@@ -628,7 +628,7 @@ export const tiobeLastYear = [
   },
 ];
 
-export const stackQuestions = [
+const stackQuestions = [
   {
     data: [1348774, 1358424, 1374156, 1382432, 1394568, 1409185, 1423671, 1432827, 1443786, 1455209, 1464829, 1477633, 1486943],
     label: 'Java',
@@ -671,7 +671,7 @@ export const stackQuestions = [
   },
 ];
 
-export const meetupMeetupsLocal = [
+const meetupMeetupsLocal = [
   {
     data: [86, 86, 86, 82, 83, 84, 87, 86, 86, 88, 90, 89, 88],
     label: 'Java',
@@ -710,7 +710,7 @@ export const meetupMeetupsLocal = [
   },
 ];
 
-export const meetupMeetupsGlobal = [
+const meetupMeetupsGlobal = [
   {
     data: [2082, 2094, 2124, 2124, 2151, 2141, 2170, 2192, 2197, 2201, 2207, 2199, 2212],
     label: 'Java',
@@ -749,7 +749,7 @@ export const meetupMeetupsGlobal = [
   },
 ];
 
-export const meetupMembersLocal = [
+const meetupMembersLocal = [
   {
     data: [48698, 49527, 51802, 52531, 54282, 55751, 57473, 58480, 59956, 61659, 63939, 66035, 67643],
     label: 'Java',
@@ -788,7 +788,7 @@ export const meetupMembersLocal = [
   },
 ];
 
-export const meetupMembersGlobal = [
+const meetupMembersGlobal = [
   {
     data: [1159440, 1158955, 1194637, 1200995, 1232417, 1256340, 1281077, 1301681, 1325483, 1343828, 1359793, 1381354, 1402451],
     label: 'Java',
@@ -827,7 +827,7 @@ export const meetupMembersGlobal = [
   },
 ];
 
-export const githubProjects = [
+const githubProjects = [
   {
     data: [486955, 495503, 509906, 516717, 528644, 541999, 554608, 563229, 573594, 584310, 593743, 595426, 615754],
     label: 'Java',
@@ -870,7 +870,7 @@ export const githubProjects = [
   },
 ];
 
-export const githubMoreThen1000Stars = [
+const githubMoreThen1000Stars = [
   {
     data: [1500, 1534, 1596, 1619, 1650, 1690, 1738, 1766, 1802, 1843, 1870, 1902, 1926],
     label: 'Java',
@@ -912,3 +912,19 @@ export const githubMoreThen1000Stars = [
     label: 'Python',
   },
 ];
+
+module.exports = {
+  githubMoreThen1000Stars,
+  githubProjects,
+  labels,
+  langToProjects,
+  lastYearLabels,
+  meetupMeetupsGlobal,
+  meetupMeetupsLocal,
+  meetupMembersGlobal,
+  meetupMembersLocal,
+  stackQuestions,
+  tiobeCurrentYear,
+  tiobeLastYear,
+  top10GithubProjects,
+};
