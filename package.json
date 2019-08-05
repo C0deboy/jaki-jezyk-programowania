@@ -48,7 +48,7 @@
     "highlight.js": "^9.15.8",
     "jquery": "^3.4.1",
     "mattboldt.typed.js": "^1.1.4",
-    "npm": "^6.10.0",
+    "npm": "^6.10.2",
     "popper.js": "^1.15.0"
   }
 }
