@@ -94,3 +94,15 @@ function createLineChart(ctx, title, yAxisLabel, labels, datasets, reverse = fal
     },
   });
 }
+
+const demoDialog = $('#demo');
+
+if (localStorage.getItem('stats-demo-closed') !== 'true') {
+  demoDialog.modal('show');
+} else {
+  demoDialog.modal('hide');
+}
+
+demoDialog.on('hidden.bs.modal', () => {
+  localStorage.setItem('stats-demo-closed', 'true');
+});

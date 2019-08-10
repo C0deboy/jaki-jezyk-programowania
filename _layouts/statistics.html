@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+  {% include head.html %}
+
+  <link rel="stylesheet" href="/dist/faq.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+
+  <style>
+    .chart {
+      background: #f8f8f8;
+      width: 100%;
+      margin: 30px 0;
+    }
+
+    .git-lang-switcher {
+      margin: 10px 5px 25px;
+    }
+
+    h2 {
+      margin: 30px 30px 15px;
+    }
+
+    #demo.modal ul {
+      list-style: none;
+      margin: 0 0 15px 0;
+      padding: 0;
+    }
+
+    #demo.modal {
+      color: black;
+    }
+
+  </style>
+
+</head>
+<body>
+
+{% include nav.html %}
+
+{% case page.year %}
+  {% when 2019 %}{% assign see_also = 2018 %}
+  {% when 2018 %}{% assign see_also = 2019 %}
+{% endcase %}2019
+
+<section class="faq" id="statistics" data-year="{{page.year}}">
+
+  <div class="container">
+    <h1>Statystyki języków programowania {{page.year}}</h1>
+    <p class="m-4">Wizualizacja wszystkich statystyk, które są zbierane co miesiąc na potrzebę tej strony w roku {{page.year}}.</p>
+    <p><a href="/statystyki-jezykow-programowania-{{see_also}}/">Zobacz także rok {{see_also}}</a></p>
+
+    <button type="button" class="main-btn" data-toggle="modal" data-target="#demo">Jak używać?</button>
+
+    <div class="row flex-column justify-content-center">
+
+      {{ content }}
+
+    </div>
+
+    <h2><a href="/statystyki-jezykow-programowania-{{see_also}}/">Zobacz także rok {{see_also}}</a></h2>
+
+  </div>
+</section>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="demo" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Jak używać?</h5>
+        <button type="button" class="close close-demo" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li><i class="fa fa-arrow-right" aria-hidden="true"></i> Możesz odznaczyć któryś z języków by wykres był czytelniejszy.</li>
+          <li><i class="fa fa-arrow-right" aria-hidden="true"></i> Po najechaniu na daną kropkę zobaczysz szczegóły.</li>
+        </ul>
+        <img class="img-fluid" src="/img/stats/stats-demo.gif" alt="Demo statystyki"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="main-btn close-demo" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include footer.html %}
+
+<script src="/dist/statistics.js"></script>
+</body>
+</html>

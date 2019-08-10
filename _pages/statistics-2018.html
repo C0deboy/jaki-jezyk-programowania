@@ -1,91 +1,40 @@
 ---
+layout: statistics
 title: "Statystyki języków programowania 2018"
 description: "Wizualizacja statystyk z serwisów Tiobe Index, Stack Overflow, Meetup i Github zbieranych przez stronę jaki-jezyk-programowania.pl w roku 2018"
 permalink: "/statystyki-jezykow-programowania-2018/"
 year: 2018
 ---
 
+<canvas class="chart" id="tiobeCurrentYear"></canvas>
+<canvas class="chart" id="tiobeLastYear"></canvas>
 
-<!DOCTYPE html>
-<html lang="pl">
-<head>
+<canvas class="chart" id="stackQuestions"></canvas>
 
-  {% include head.html %}
+<canvas class="chart" id="meetupMeetupsLocal"></canvas>
+<canvas class="chart" id="meetupMeetupsGlobal"></canvas>
+<canvas class="chart" id="meetupMembersLocal"></canvas>
+<canvas class="chart" id="meetupMembersGlobal"></canvas>
 
-  <link rel="stylesheet" href="/dist/faq.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+<canvas class="chart" id="githubProjects"></canvas>
+<canvas class="chart" id="githubMoreThen1000Stars"></canvas>
 
-  <style>
-    .chart {
-      background: #f8f8f8;
-      width: 100%;
-      margin: 30px 0;
-    }
+<h2>Top 10 projektów na Github. Wybierz język:</h2>
+<div>
+  <button class="git-lang-switcher main-btn" data-lang="Java">Java</button>
+  <button class="git-lang-switcher main-btn" data-lang="JavaScript">JavaScript</button>
+  <button class="git-lang-switcher main-btn" data-lang="Python">Python</button>
+  <button class="git-lang-switcher main-btn" data-lang="PHP">PHP</button>
+  <button class="git-lang-switcher main-btn" data-lang="Ruby">Ruby</button>
+  <button class="git-lang-switcher main-btn" data-lang="C#">C#</button>
+  <button class="git-lang-switcher main-btn" data-lang="Swift">Swift</button>
+  <button class="git-lang-switcher main-btn" data-lang="C">C</button>
+  <button class="git-lang-switcher main-btn" data-lang="C++">C++</button>
+  <button class="git-lang-switcher main-btn" data-lang="R">R</button>
+</div>
 
-    .git-lang-switcher {
-      margin: 10px 5px 25px;
-    }
+<div id="lang-projects">
+  <canvas class="chart" id="github-projects-for-lang"></canvas>
+</div>
 
-    h2 {
-      margin: 30px 30px 15px;
-    }
-
-  </style>
-
-</head>
-<body>
-
-{% include nav.html %}
-
-<section class="faq" id="statistics" data-year="{{page.year}}">
-
-  <div class="container">
-    <h1>Statystyki języków programowania {{page.year}}</h1>
-    <p class="m-4">Wizualizacja wszystkich statystyk, które są zbierane co miesiąc na potrzebę tej strony w roku {{page.year}}.</p>
-    <h2><a href="/statystyki-jezykow-programowania-{{page.year | plus: 1}}/">Zobacz także rok {{page.year | plus: 1}}</a></h2>
-    <div class="row flex-column justify-content-center">
-
-      <canvas class="chart" id="tiobeCurrentYear"></canvas>
-      <canvas class="chart" id="tiobeLastYear"></canvas>
-
-      <canvas class="chart" id="stackQuestions"></canvas>
-
-      <canvas class="chart" id="meetupMeetupsLocal"></canvas>
-      <canvas class="chart" id="meetupMeetupsGlobal"></canvas>
-      <canvas class="chart" id="meetupMembersLocal"></canvas>
-      <canvas class="chart" id="meetupMembersGlobal"></canvas>
-
-      <canvas class="chart" id="githubProjects"></canvas>
-      <canvas class="chart" id="githubMoreThen1000Stars"></canvas>
-
-      <h2>Top 10 projektów na Github. Wybierz język:</h2>
-      <div>
-        <button class="git-lang-switcher main-btn" data-lang="Java">Java</button>
-        <button class="git-lang-switcher main-btn" data-lang="JavaScript">JavaScript</button>
-        <button class="git-lang-switcher main-btn" data-lang="Python">Python</button>
-        <button class="git-lang-switcher main-btn" data-lang="PHP">PHP</button>
-        <button class="git-lang-switcher main-btn" data-lang="Ruby">Ruby</button>
-        <button class="git-lang-switcher main-btn" data-lang="C#">C#</button>
-        <button class="git-lang-switcher main-btn" data-lang="Swift">Swift</button>
-        <button class="git-lang-switcher main-btn" data-lang="C">C</button>
-        <button class="git-lang-switcher main-btn" data-lang="C++">C++</button>
-        <button class="git-lang-switcher main-btn" data-lang="R">R</button>
-      </div>
-      <div id="lang-projects">
-        <canvas class="chart" id="github-projects-for-lang"></canvas>
-      </div>
-
-      <canvas class="chart" id="top10GithubProjects"></canvas>
-
-    </div>
-
-    <h2><a href="/statystyki-jezykow-programowania-{{page.year | plus: 1}}/">Zobacz także rok {{page.year | plus: 1}}</a></h2>
-
-  </div>
-</section>
-
-{% include footer.html %}
-
-<script src="/dist/statistics.js"></script>
-</body>
-</html>
+<canvas class="chart" id="top10GithubProjects"></canvas>
