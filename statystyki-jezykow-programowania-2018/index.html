@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
 
-  <head>
-
-  <meta charset="utf-8">
+    <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Wizualizacja statystyk z serwisów Tiobe Index, Stack Overflow, Meetup i Github zbieranych przez stronę jaki-jezyk-programowania.pl w roku 2018">
@@ -29,9 +28,6 @@
   <link rel="shortcut icon" href="/img/logo/logo.ico">
   <link rel="stylesheet" href="/dist/global.bundle.css">
 
-</head>
-
-
   <link rel="stylesheet" href="/dist/faq.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
 
@@ -48,6 +44,16 @@
 
     h2 {
       margin: 30px 30px 15px;
+    }
+
+    #demo.modal ul {
+      list-style: none;
+      margin: 0 0 15px 0;
+      padding: 0;
+    }
+
+    #demo.modal {
+      color: black;
     }
 
   </style>
@@ -104,45 +110,51 @@
 </div>
 
 
+2019
+
 <section class="faq" id="statistics" data-year="2018">
 
   <div class="container">
     <h1>Statystyki języków programowania 2018</h1>
     <p class="m-4">Wizualizacja wszystkich statystyk, które są zbierane co miesiąc na potrzebę tej strony w roku 2018.</p>
-    <h2><a href="/statystyki-jezykow-programowania-2019/">Zobacz także rok 2019</a></h2>
+    <p><a href="/statystyki-jezykow-programowania-2019/">Zobacz także rok 2019</a></p>
+
+    <button type="button" class="main-btn" data-toggle="modal" data-target="#demo">Jak używać?</button>
+
     <div class="row flex-column justify-content-center">
 
       <canvas class="chart" id="tiobeCurrentYear"></canvas>
-      <canvas class="chart" id="tiobeLastYear"></canvas>
+<canvas class="chart" id="tiobeLastYear"></canvas>
 
-      <canvas class="chart" id="stackQuestions"></canvas>
+<canvas class="chart" id="stackQuestions"></canvas>
 
-      <canvas class="chart" id="meetupMeetupsLocal"></canvas>
-      <canvas class="chart" id="meetupMeetupsGlobal"></canvas>
-      <canvas class="chart" id="meetupMembersLocal"></canvas>
-      <canvas class="chart" id="meetupMembersGlobal"></canvas>
+<canvas class="chart" id="meetupMeetupsLocal"></canvas>
+<canvas class="chart" id="meetupMeetupsGlobal"></canvas>
+<canvas class="chart" id="meetupMembersLocal"></canvas>
+<canvas class="chart" id="meetupMembersGlobal"></canvas>
 
-      <canvas class="chart" id="githubProjects"></canvas>
-      <canvas class="chart" id="githubMoreThen1000Stars"></canvas>
+<canvas class="chart" id="githubProjects"></canvas>
+<canvas class="chart" id="githubMoreThen1000Stars"></canvas>
 
-      <h2>Top 10 projektów na Github. Wybierz język:</h2>
-      <div>
-        <button class="git-lang-switcher main-btn" data-lang="Java">Java</button>
-        <button class="git-lang-switcher main-btn" data-lang="JavaScript">JavaScript</button>
-        <button class="git-lang-switcher main-btn" data-lang="Python">Python</button>
-        <button class="git-lang-switcher main-btn" data-lang="PHP">PHP</button>
-        <button class="git-lang-switcher main-btn" data-lang="Ruby">Ruby</button>
-        <button class="git-lang-switcher main-btn" data-lang="C#">C#</button>
-        <button class="git-lang-switcher main-btn" data-lang="Swift">Swift</button>
-        <button class="git-lang-switcher main-btn" data-lang="C">C</button>
-        <button class="git-lang-switcher main-btn" data-lang="C++">C++</button>
-        <button class="git-lang-switcher main-btn" data-lang="R">R</button>
-      </div>
-      <div id="lang-projects">
-        <canvas class="chart" id="github-projects-for-lang"></canvas>
-      </div>
+<h2>Top 10 projektów na Github. Wybierz język:</h2>
+<div>
+  <button class="git-lang-switcher main-btn" data-lang="Java">Java</button>
+  <button class="git-lang-switcher main-btn" data-lang="JavaScript">JavaScript</button>
+  <button class="git-lang-switcher main-btn" data-lang="Python">Python</button>
+  <button class="git-lang-switcher main-btn" data-lang="PHP">PHP</button>
+  <button class="git-lang-switcher main-btn" data-lang="Ruby">Ruby</button>
+  <button class="git-lang-switcher main-btn" data-lang="C#">C#</button>
+  <button class="git-lang-switcher main-btn" data-lang="Swift">Swift</button>
+  <button class="git-lang-switcher main-btn" data-lang="C">C</button>
+  <button class="git-lang-switcher main-btn" data-lang="C++">C++</button>
+  <button class="git-lang-switcher main-btn" data-lang="R">R</button>
+</div>
 
-      <canvas class="chart" id="top10GithubProjects"></canvas>
+<div id="lang-projects">
+  <canvas class="chart" id="github-projects-for-lang"></canvas>
+</div>
+
+<canvas class="chart" id="top10GithubProjects"></canvas>
 
     </div>
 
@@ -150,6 +162,29 @@
 
   </div>
 </section>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="demo" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Jak używać?</h5>
+        <button type="button" class="close close-demo" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li><i class="fa fa-arrow-right" aria-hidden="true"></i> Możesz odznaczyć któryś z języków by wykres był czytelniejszy.</li>
+          <li><i class="fa fa-arrow-right" aria-hidden="true"></i> Po najechaniu na daną kropkę zobaczysz szczegóły.</li>
+        </ul>
+        <img class="img-fluid" src="/img/stats/stats-demo.gif" alt="Demo statystyki"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="main-btn close-demo" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <footer>
   <div class="container">
