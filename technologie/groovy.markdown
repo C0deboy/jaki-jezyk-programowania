@@ -56,6 +56,8 @@ Ogólnie Groovy jest językiem relatywnie łatwym do nauki, szczególnie dla oso
 
 {% include language/meetup.html %}
 
+{% include language/see_all_stats.html %}
+
 # Przyszłość języka
 
 {% assign groovy = site.data.statistics.languagesVersions.Groovy %}

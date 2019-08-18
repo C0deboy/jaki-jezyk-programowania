@@ -28,8 +28,7 @@ section {
   width: 100%;
   background-color: #003e48;
   box-shadow: 0 2px 4px 0 black;
-  padding: 20px 5% 40px;
-  margin-top: 50px;
+  padding: 60px 5% 40px;
 }
 
 @media (max-width: 768px) {
@@ -321,6 +320,7 @@ section {
   padding: 10px;
   text-align: center;
   box-shadow: 0 0 4px 0 black;
+  margin-bottom: 5px;
 }
 
 .promotion-header {

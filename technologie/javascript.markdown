@@ -49,7 +49,7 @@ Podsumowując, nauka języka JavaScript sama w sobie jest dość łatwa, jednak 
 
 {% include language/meetup.html %}
 
-Zobacz [wizualizację wszystkich statystyk z ostatnich lat](/statystyki-jezykow-programowania-2019) i porównaj różne języki.
+{% include language/see_all_stats.html %}
 
 # Przyszłość języka
 

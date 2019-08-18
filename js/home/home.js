@@ -9,3 +9,5 @@ requireAll.keys().forEach((filename) => {
 const hljs = require('highlight.js');
 
 hljs.initHighlightingOnLoad();
+
+require('../../promotion/promotion.js');

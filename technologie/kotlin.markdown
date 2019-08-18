@@ -52,6 +52,8 @@ Z drugiej strony w Kotlinie mamy wbudowane *null safety*, więc napotkamy na mni
 
 {% include language/meetup.html %}
 
+{% include language/see_all_stats.html %}
+
 # Przyszłość języka
 
 {% assign kotlin = site.data.statistics.languagesVersions.Kotlin %}

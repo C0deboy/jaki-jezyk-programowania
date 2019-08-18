@@ -41,6 +41,8 @@ Wpływa na to fakt, że Scala jest ekspresyjna - potrzeba dużo mniej kodu niż 
 
 {% include language/meetup.html %}
 
+{% include language/see_all_stats.html %}
+
 # Przyszłość języka
 
 {% assign scala = site.data.statistics.languagesVersions.Scala %}

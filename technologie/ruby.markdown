@@ -43,7 +43,7 @@ Czytanie kodu Ruby jest praktycznie identyczne z czytaniem instrukcji po angiels
 
 {% include language/meetup.html %}
 
-Zobacz [wizualizację wszystkich statystyk z ostatnich lat](/statystyki-jezykow-programowania-2019) i porównaj różne języki.
+{% include language/see_all_stats.html %}
 
 # Przyszłość języka
 

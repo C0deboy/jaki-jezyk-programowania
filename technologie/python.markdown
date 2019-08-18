@@ -47,7 +47,7 @@ Popularność Pythona rośnie z każdym rokiem do tego stopnia, że jest niemal 
 
 {% include language/meetup.html %}
 
-Zobacz [wizualizację wszystkich statystyk z ostatnich lat](/statystyki-jezykow-programowania-2019) i porównaj różne języki.
+{% include language/see_all_stats.html %}
 
 # Przyszłość języka
 

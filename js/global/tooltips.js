@@ -1,14 +1,19 @@
 function positionTooltip(el, tooltip) {
-  const top = el.offsetTop;
-  const left = el.offsetLeft;
-  const width = el.offsetWidth;
-  const tooltipHeight = tooltip.offsetHeight;
-  const tooltipWidth = tooltip.offsetWidth;
-  const centerEl = left + (width / 2);
-
   const tooltipStyle = tooltip.style;
-  tooltipStyle.top = (top - tooltipHeight - 10) + 'px';
-  tooltipStyle.left = (centerEl - tooltipWidth / 2) + 'px';
+  if (tooltip.classList.contains('tooltip-global')) {
+    const rect = el.getBoundingClientRect();
+    tooltipStyle.top = rect.top + window.pageYOffset - (tooltip.offsetHeight) - 10 + 'px';
+    tooltipStyle.left = rect.left + window.pageXOffset - (tooltip.offsetWidth / 2) + (el.offsetWidth / 2) + 'px';
+  } else {
+    const top = el.offsetTop;
+    const left = el.offsetLeft;
+    const width = el.offsetWidth;
+    const tooltipHeight = tooltip.offsetHeight;
+    const tooltipWidth = tooltip.offsetWidth;
+    const centerEl = left + (width / 2);
+    tooltipStyle.top = (top - tooltipHeight - 10) + 'px';
+    tooltipStyle.left = (centerEl - tooltipWidth / 2) + 'px';
+  }
 }
 
 function toggleTooltip(e, state) {
@@ -40,16 +45,16 @@ function makeElementAlive(element) {
   element.setAttribute('tabindex', '0');
   element.setAttribute('aria-describedby', 'tooltip' + tipId);
   element.setAttribute('aria-live', 'true');
-  element.addEventListener('mouseover', e => toggleTooltip(e, true));
-  element.addEventListener('focus', e => toggleTooltip(e, true));
-  element.addEventListener('open', e => toggleTooltip(e, true));
-  element.addEventListener('mouseout', e => toggleTooltip(e, false));
-  element.addEventListener('blur', e => toggleTooltip(e, false));
+  element.addEventListener('mouseover', (e) => toggleTooltip(e, true));
+  element.addEventListener('focus', (e) => toggleTooltip(e, true));
+  element.addEventListener('open', (e) => toggleTooltip(e, true));
+  element.addEventListener('mouseout', (e) => toggleTooltip(e, false));
+  element.addEventListener('blur', (e) => toggleTooltip(e, false));
 }
 
 function prepareTooltip(text) {
   const tooltip = document.createElement('span');
-  tooltip.innerHTML = text;
+  tooltip.innerText = text;
   tooltip.setAttribute('id', 'tooltip' + tipId);
   tooltip.setAttribute('role', 'tooltip');
   tooltip.classList.add('lightAriaTooltips');
@@ -64,7 +69,10 @@ function createTooltipsOver(el) {
   const tooltip = prepareTooltip(text);
 
   if (el.nodeName === 'IMG') el.parentElement.insertBefore(tooltip, el);
-  else el.append(tooltip);
+  else if (el.classList.contains('tip-global')) {
+    tooltip.classList.add('tooltip-global');
+    document.body.appendChild(tooltip);
+  } else el.append(tooltip);
 }
 
 const elementsWithTip = document.querySelectorAll('.tip');
@@ -72,5 +80,12 @@ const elementsWithTip = document.querySelectorAll('.tip');
 elementsWithTip.forEach((element) => {
   createTooltipsOver(element);
   makeElementAlive(element);
+
+  window.addEventListener('resize', () => {
+    const tooltipId = element.getAttribute('aria-describedby');
+    const tooltip = document.getElementById(tooltipId);
+    positionTooltip(element, tooltip);
+  });
+
   tipId++;
 });

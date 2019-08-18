@@ -38,8 +38,8 @@
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "style-loader": "^1.0.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
-    "webpack": "^4.39.1",
-    "webpack-cli": "^3.3.6",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7",
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
@@ -50,7 +50,7 @@
     "jquery": "^3.4.1",
     "mattboldt.typed.js": "^1.1.4",
     "npm": "^6.10.3",
-    "npm-check-updates": "^3.1.20",
+    "npm-check-updates": "^3.1.21",
     "popper.js": "^1.15.0"
   }
 }

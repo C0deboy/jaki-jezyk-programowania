@@ -65,6 +65,8 @@ Dzięki tzw. gorutynom (ang. *goroutines*) i kanałom wbudowanym w Go, programow
 
 {% include language/meetup.html %}
 
+{% include language/see_all_stats.html %}
+
 # Przyszłość języka
 
 {% assign go = site.data.statistics.languagesVersions.Go %}

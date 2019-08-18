@@ -13,6 +13,8 @@ window.addEventListener('touchstart', function onFirstHover() {
 function showSubTechnologeis(subs) {
   if (subs.length !== 0) {
     subs.forEach((sub) => {
+      sub.style.height = 60 + 'px';
+      sub.style.width = 60 + 'px';
       sub.classList.add('backToPosition');
     });
   }
@@ -26,6 +28,8 @@ function disableLink(e) {
 function hideSubTechnologeis(subs, lang) {
   if (subs.length !== 0) {
     subs.forEach((sub) => {
+      sub.style.height = 35 + 'px';
+      sub.style.width = 35 + 'px';
       sub.classList.remove('backToPosition');
     });
   }
@@ -37,7 +41,7 @@ function hideSubTechnologeis(subs, lang) {
 }
 
 langElements.forEach((lang) => {
-  const subs = lang.querySelectorAll('.sub img');
+  const subs = lang.querySelectorAll('.sub');
   lang.addEventListener('mouseover', () => showSubTechnologeis(subs, lang));
   lang.addEventListener('mouseout', () => hideSubTechnologeis(subs, lang));
 });

@@ -31,7 +31,7 @@
   padding: 5px;
   position: relative;
   top: 0;
-  margin: 5px 0;
+  margin: 0;
   box-shadow: 0 1px 6px 0px black;
 }
 
@@ -85,17 +85,14 @@
   box-shadow: 0 0 4px 0 black;
 }
 
-.sub.lang-link {
-  display: inline-block;
-  padding: 0 5px;
-}
-
-.lang .sub.lang-link img {
+.lang .sub.lang-link {
   height: 35px;
   position: relative;
+  display: inline-block;
   top: -25px;
   left: 25px;
-  margin: -30px;
+  margin: 0 -7px;
+  padding: 0;
   -webkit-transition: all .4s;
   -moz-transition: all .4s;
   -ms-transition: all .4s;
@@ -107,17 +104,24 @@
   -ms-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  box-shadow: 0 1px 4px 0px black;
   z-index: 0;
+}
+
+.lang .sub.lang-link img {
+  height: 35px;
+  box-shadow: 0 1px 4px 0px black;
+  margin: 0;
 }
 
 .lang .other {
   display: inline-block;
+  margin: 5px;
+  position: relative;
 }
 
 .lang .other img {
   height: 60px;
-  margin: 5px;
+  width: 60px;
 }
 
 .backToPosition {
@@ -125,7 +129,12 @@
   height: 60px !important;
   top: 20px !important;
   left: 0 !important;
-  margin: inherit !important;
+  margin: 0 5px !important;
+}
+
+.backToPosition img {
+  height: 60px!important;
+  width: 60px!important;
 }
 
 .other-technologies {

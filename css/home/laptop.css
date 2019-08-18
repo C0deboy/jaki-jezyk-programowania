@@ -280,21 +280,21 @@
   text-indent: -1px;
 }
 
-.nextExample-btn .lightAriaTooltips {
+#arrow-down-key .lightAriaTooltips {
   font-size: 1.4em;
   padding: 5px;
 }
-.nextExample-btn .lightAriaTooltips:after {
+#arrow-down-key .lightAriaTooltips:after {
   margin-top: -5px;
 }
 
 @media (max-width: 768px) {
 
-  .nextExample-btn .lightAriaTooltips {
+  #arrow-down-key .lightAriaTooltips {
     font-size: 1.2em;
     padding: 3px 2px;
   }
-  .nextExample-btn .lightAriaTooltips:after {
+  #arrow-down-key .lightAriaTooltips:after {
     margin-top: -8px;
   }
 }

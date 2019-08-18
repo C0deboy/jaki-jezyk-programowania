@@ -147,9 +147,9 @@
   top: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .promotion-popup {
-    right: 0;
+    top: -10px;
   }
 }
 

@@ -16,6 +16,29 @@
 	left:0;
 }
 
+.tooltip {
+	margin-bottom: 3px;
+	font-family: inherit;
+}
+
+.tooltip.show {
+	opacity: 1;
+}
+
+.tooltip .arrow::before {
+	border-top-color: #e8ebf0;
+}
+
+.tooltip-inner {
+	background: #e8ebf0;
+	box-shadow: 0 2px 4px 0 black;
+	color: #333;
+	font-size: 0.9em;
+	border-radius: 4px;
+	padding: 3px 5px;
+	max-width: 250px;
+}
+
 .fadeIn {
 	opacity: 1;
 	visibility: visible;

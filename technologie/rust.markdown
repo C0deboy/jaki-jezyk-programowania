@@ -42,6 +42,8 @@ Nie jest to najłatwiejszy język na początek, ale też taka jest jego specyfik
 
 {% include language/meetup.html %}
 
+{% include language/see_all_stats.html %}
+
 # Przyszłość języka
 
 {% assign rust = site.data.statistics.languagesVersions.Rust %}

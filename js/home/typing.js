@@ -134,8 +134,6 @@ $(() => {
     nextExampleBtn.removeClass('tip');
   });
 
-  nextExampleBtn[0].dispatchEvent(new Event('open'));
-
   $('.previousExample-btn').on('click', () => {
     changeExample('left');
   });

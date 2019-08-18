@@ -31,13 +31,12 @@ header .text-muted a {
   position: relative;
   width: 100%;
   color: #fff;
-  padding: 20px 5% 20px;
-  margin-top: 20px;
+  padding: 60px 5% 20px;
 }
 
 @media (min-width: 992px) {
   .site-header {
-    padding-top: 100px;
+    padding-top: 115px;
   }
   .site-header .header-row {
     display:-webkit-box;
