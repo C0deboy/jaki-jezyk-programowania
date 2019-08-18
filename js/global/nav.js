@@ -23,7 +23,7 @@ function dynamicNavbar() {
     }
   } else {
     navbarCustom.removeClass('is-visible');
-    navbarCollapse.removeClass('in');
+    navbarCollapse.removeClass('show');
     if (currentTop > headerHeight && !navbarCustom.hasClass('is-fixed')) navbarCustom.addClass('is-fixed');
   }
   this.previousTop = currentTop;
