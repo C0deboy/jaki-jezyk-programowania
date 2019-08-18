@@ -1,7 +1,7 @@
 const promotions = [
   {
-    start: new Date('2019-06-05'),
-    end: new Date('2019-06-08'),
+    start: new Date('2019-08-18'),
+    end: new Date('2019-08-18'),
     number: '6094',
     host: 'helion.pl',
     img: '/promotion/p.jpg',
@@ -77,7 +77,7 @@ function positionPromotionPopup(booksBtn, popup) {
   const booksBtnRect = booksBtn.getBoundingClientRect();
   const left = (booksBtnRect.left - popup.offsetWidth) + +(booksBtnRect.width / 4);
 
-  if (document.documentElement.clientWidth <= 768) {
+  if (document.documentElement.clientWidth <= 992) {
     popup.style.right = '25px';
   } else {
     popup.style.left = left + 'px';

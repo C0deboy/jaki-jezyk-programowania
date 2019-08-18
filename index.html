@@ -75,7 +75,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="page-scroll blog-btn nav-link" href="https://devcave.pl/">
+        <a class="page-scroll blog-btn nav-link" href="https://devcave.pl">
           Mój blog
         </a>
       </li>
@@ -96,7 +96,8 @@
         nich będzie odpowiedni dla danego zastosowania, w co brnąć dalej, gdy opanujesz podstawy oraz zobaczysz
         wybrane książki i kursy video do nauki danej technologii.</p>
 
-      <p class="tip" data-tip="Na podstawie Twoich odpowiedzi na pytania zostanie określony język programowania (lub więcej niż jeden) odpowiedni do Twoich celów. Będziesz mógł przejrzeć najważniejsze informacje o każdym z nich i je porównać. ">
+      <p class="tip"
+         data-tip="Na podstawie Twoich odpowiedzi na pytania zostanie określony język programowania (lub więcej niż jeden) odpowiedni do Twoich celów. Będziesz mógł przejrzeć najważniejsze informacje o każdym z nich i je porównać. ">
         Jak to działa? <i class="fa fa-commenting-o" aria-hidden="true"></i></p>
 
       <a href="/start/" class="btn btn-danger btn-lg start">
@@ -236,8 +237,8 @@
             <div class="key">&hearts;</div>
             <div class="key ctrl-right">Ctrl</div>
             <button class="key previousExample-btn red-btn" title="Poprzedni przykład">&lt;</button>
-            <div class="key">v</div>
-            <button class="key nextExample-btn red-btn tip" data-tip="Użyj strzałek, aby zmienić język" title="Następny przykład">></button>
+            <div class="key tip tip-global" id="arrow-down-key" data-tip="Zmień język używając strzałek">v</div>
+            <button class="key nextExample-btn red-btn" title="Następny przykład">></button>
             <div class="key">0</div>
             <div class="key">,</div>
             <div class="touchpad">
@@ -464,7 +465,7 @@
               </a>
             </li>
             <li class="tip list-inline-item" data-tip="O mnie">
-              <a class="main-btn" href="https://devcave.pl/o-mnie/">
+              <a class="main-btn" href="https://devcave.pl/o-mnie">
                   <span class="visually-hidden">
                     O mnie
                   </span>
@@ -500,7 +501,8 @@
             class="fa fa-times"></i></button>
         </div>
 
-        <p>Masz jakieś uwagi czy zastrzeżenia? Masz sugestię, którą chciałbyś się z mną podzielić? A może chciałbyś pomóc w rozwoju projektu? Cokolwiek by to było - pisz śmiało!</p>
+        <p>Masz jakieś uwagi czy zastrzeżenia? Masz sugestię, którą chciałbyś się z mną podzielić? A może chciałbyś
+          pomóc w rozwoju projektu? Cokolwiek by to było - pisz śmiało!</p>
       </div>
 
       <div class="col-md-4">
@@ -557,7 +559,8 @@
 </div>
 
 <div class="cookies-info">
-  <p>Strona wykorzystuje pliki cookies (ciasteczka) w celu zbierania statystyk odwiedzin strony oraz do zapamiętywania twoich wyborów.
+  <p>Strona wykorzystuje pliki cookies (ciasteczka) w celu zbierania statystyk odwiedzin strony oraz do zapamiętywania
+    twoich wyborów.
     Korzystając ze strony zgadzasz się na ich wykorzystanie.</p>
   <button class="close-cookies-info"><i class="fa fa-times fa-2x close-form"></i></button>
 </div>
@@ -920,6 +923,5 @@ object BinarySearch extends App {
 
 
 <script src="/dist/home.bundle.js"></script>
-<script src="/promotion/promotion.js"></script>
 </body>
 </html>
