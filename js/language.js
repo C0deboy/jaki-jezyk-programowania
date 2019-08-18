@@ -1,6 +1,5 @@
 require('../css/language.css');
 require('./courses.js');
-require('../promotion/promotion.js');
 
 const books = document.querySelectorAll('.book');
 
