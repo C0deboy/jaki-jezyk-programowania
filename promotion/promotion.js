@@ -1,7 +1,7 @@
 const promotions = [
   {
-    start: new Date('2019-08-18'),
-    end: new Date('2019-08-18'),
+    start: new Date('2019-06-05'),
+    end: new Date('2019-06-08'),
     number: '6094',
     host: 'helion.pl',
     img: '/promotion/p.jpg',
