@@ -169,6 +169,10 @@ h4 {
   color: white;
 }
 
+.main-btn:disabled {
+  opacity: 0.5;
+}
+
 .main-btn:hover,
 .main-btn:focus{
   text-decoration: none;
