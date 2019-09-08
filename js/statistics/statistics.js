@@ -109,3 +109,11 @@ if (localStorage.getItem('stats-demo-closed') !== 'true') {
 demoDialog.on('hidden.bs.modal', () => {
   localStorage.setItem('stats-demo-closed', 'true');
 });
+
+const chartsContainer = document.querySelector('.charts-container');
+window.addEventListener('resize', () => {
+  chartsContainer.style.width = '100.1%';
+  setTimeout(() => {
+    chartsContainer.style.width = '100%';
+  }, 1);
+});
