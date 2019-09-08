@@ -47,7 +47,7 @@ Poza tym, od Javy 9 do takiego szybkiego prototypowania i robienia małych kawa�
 
 Języki skryptowe i szybkie rozwiązania są dobre do prototypowania. Gdy tworzony jest duży projekt i ważne jest jego późniejsze utrzymywanie, "rozwlekłość" języka jest na plus.
 
-# Popularność
+# Statystyki
 
 <h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y"  }}</h4>
 

@@ -29,7 +29,7 @@ Scala w porównaniu do Kotlina czy Javy ma nieco większy próg wejścia. Równi
 
 Wpływa na to fakt, że Scala jest ekspresyjna - potrzeba dużo mniej kodu niż w Javie by wyrazić to samo - jednak co za tym idzie, trzeba więcej rozumieć co się dzieje pod spodem. Jest to zaleta języka, gdy mamy już doświadczenie, jednak na początku nauka jest przez to bardziej problematyczna.
 
-# Popularność
+# Statystyki
 
 <h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y"  }}</h4>
 

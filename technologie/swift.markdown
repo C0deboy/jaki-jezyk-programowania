@@ -25,7 +25,7 @@ Swift zajmuje się za nas także zarządzaniem pamięcią.
 
 Ogólnie rzecz biorąc, Swift jest przyjazny dla początkujących programistów.
 
-# Popularność
+# Statystyki
 
 <h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y"  }}</h4>
 

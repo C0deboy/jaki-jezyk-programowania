@@ -33,7 +33,7 @@ Python to język dynamicznie typowany, czyli nie ma potrzeby ustawiania typu dla
 
 Python jest często polecany dla osób, które chcą rozpocząć przygodę z programowaniem ze względu na niski próg wejścia.
 
-# Popularność
+# Statystyki
 
 <h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y"  }}</h4>
 

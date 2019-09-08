@@ -38,7 +38,7 @@ Składnia PHP jest relatywnie prosta, lecz niektórzy uważają, że jest to brz
 
 PHP wraz ze wzrostem aplikacji może być trudniejszy do utrzymania i namierzania błędów, jako że brak w nim statycznego typowania. Jednak jeśli nauczymy się jak prowadzić porządek w kodzie i pisać testy, to utrzymanie spójnego kodu stanie się łatwiejsze.
 
-# Popularność
+# Statystyki
 
 <h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y"  }}</h4>
 

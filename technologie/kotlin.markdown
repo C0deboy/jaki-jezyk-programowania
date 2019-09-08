@@ -40,7 +40,7 @@ Dlatego warto znać Javę przed Kotlinem - jest to najlepsza droga. Wtedy przej�
 
 Z drugiej strony w Kotlinie mamy wbudowane *null safety*, więc napotkamy na mniej ciężkich problemów związanych z NullPointerException, i kilka innych udogodnień, których z pewnością będzie nam brakowało w Javie.
 
-# Popularność
+# Statystyki
 
 <h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y"  }}</h4>
 

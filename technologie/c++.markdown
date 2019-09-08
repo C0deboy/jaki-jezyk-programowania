@@ -33,7 +33,7 @@ O C++ krąży wiele mitów i twierdzeń, które są już zaszłością, a były 
 
 Można zauważyć, że C++ jest często polecanym językiem na początek, na zasadzie, że jak poznasz wszystkie koncepty programowania w C++ to już żaden inny język nie sprawi Ci problemu. Jednak jest to język bardzo złożony i dla nowicjuszy może być przytłaczający. Zaczynając z C++ bardzo łatwo jest się sparzyć, dlatego jeśli nie masz konkretnego powodu, dla którego chcesz uczyć się języka C++, warto zacząć z językami bardziej przyjaznymi dla początkujących jak np. [Python](/technologie/python). C++ to nieco trudniejsza i dłuższa droga na początek.
 
-# Popularność
+# Statystyki
 
 <h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y"  }}</h4>
 

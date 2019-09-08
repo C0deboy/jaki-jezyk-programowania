@@ -31,7 +31,7 @@ R nie jest najłatwiejszym językiem do nauki, ale mimo wszystko wizualizowanie 
 
 Z drugiej strony, jeśli masz już trochę doświadczenia z innym językiem programowania, to [Python](/technologie/python) może być dla Ciebie bardziej przyjazny.
 
-# Popularność
+# Statystyki
 
 W rankingach popularności R jest całkiem daleko, a wiąże się z tym, że społeczność tego języka jest znacznie mniejsza w stosunku do innych języków programowania, głównie ze względu na fakt, że R jest niszowym językiem. Mimo to, w ostatnich latach sporo podskoczył w rankingach popularności, a związane jest to ze wzrostem zainteresowanie w obrębie *data science*.
 

@@ -29,7 +29,7 @@ Podobnie jak w Javie nie musimy też zarządzać pamięcią i proces tworzenia o
 
 Jest także językiem silnie typowanym, co oznacza, że każda zmienna musi mieć zadeklarowany przechowywany typ danych, a program zwróci błąd i zapobiegnie kompilacji, jeżeli będzie się coś nie zgadzać, w przeciwieństwie do języka słabo typowanego, który nie wygeneruje błędu i zwróci nieprzewidywany wynik. Wadą tego rozwiązania jest tylko to, że musimy zadeklarować więcej informacji dla programu, ale dzięki temu jest bardziej jednoznaczny i łatwiej wychwycić błędy.
 
-# Popularność
+# Statystyki
 
 <h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y"  }}</h4>
 

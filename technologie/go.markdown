@@ -53,7 +53,7 @@ Go jest idiomatyczny, tzn. często jest tylko jeden sposób na wykonanie danej r
 
 Dzięki tzw. gorutynom (ang. *goroutines*) i kanałom wbudowanym w Go, programowanie współbieżne jest dużo prostsze.
 
-# Popularność
+# Statystyki
 
 <h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y"  }}</h4>
 

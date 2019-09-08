@@ -30,7 +30,7 @@ Wykorzystują go między innymi:
 Rust podobnie jak inne bardziej niskopoziomowe języki takie jak C++, ma nieco większy próg wejścia od tych z wyższym poziomem abstrakcji.
 Nie jest to najłatwiejszy język na początek, ale też taka jest jego specyfika zastosowania.
 
-# Popularność
+# Statystyki
 
 <h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y"  }}</h4>
 

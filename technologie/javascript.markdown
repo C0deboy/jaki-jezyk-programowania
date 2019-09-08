@@ -37,7 +37,7 @@ JavaScript to ogromy i dynamiczny ekosystem, który ma wiele bibliotek i framwor
 
 Podsumowując, nauka języka JavaScript sama w sobie jest dość łatwa, jednak pełne opanowanie tego języka i ekosystemu jest już wymagające.
 
-# Popularność
+# Statystyki
 
 <h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y"  }}</h4>
 

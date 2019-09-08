@@ -44,7 +44,7 @@ Groovy posiada wszystkie funkcję wysokopoziomowego języka m.in. nie musimy si�
 
 Ogólnie Groovy jest językiem relatywnie łatwym do nauki, szczególnie dla osoby, która jest już zaznajomiona z Javą - wtedy przejście jest naprawdę płynne.
 
-# Popularność
+# Statystyki
 
 <h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y"  }}</h4>
 
