@@ -1,7 +1,7 @@
 const promotions = [
   {
-    start: new Date('2019-06-05'),
-    end: new Date('2019-06-08'),
+    start: new Date('2019-09-20'),
+    end: new Date('2019-09-23'),
     number: '6094',
     host: 'helion.pl',
     img: '/promotion/p.jpg',
@@ -14,13 +14,13 @@ const promotions = [
 
 const customMessage = '';
 
-function appendLinkToMessage(message, url) {
-  return message.replace(/\[(.*?)]/, `<a href="${url}" target="_blank">$1</a>`);
-}
-
 promotions.forEach((promotion, i) => {
   if (isPromotionActive(promotion)) {
-    promotion.url = new URL(`http://${promotion.host}/page/9102Q/kategorie/promocja-2za1`);// /promocja/${promotion.number}`);
+
+    let url = `http://${promotion.host}/page/9102Q/kategorie/promocja-2za1`;
+    // let url = `http://${promotion.host}/page/9102Q/promocja/${promotion.number}`;
+
+    promotion.url = new URL(url);
 
     promotion.message = appendLinkToMessage(promotion.message, promotion.url);
     promotion.adHeader = appendLinkToMessage(promotion.adHeader, promotion.url);
@@ -36,6 +36,10 @@ promotions.forEach((promotion, i) => {
     }
   }
 });
+
+function appendLinkToMessage(message, url) {
+  return message.replace(/\[(.*?)]/, `<a href="${url}" target="_blank">$1</a>`);
+}
 
 function isPromotionActive(promotion) {
   const currentDate = new Date();
