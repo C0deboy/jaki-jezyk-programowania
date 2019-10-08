@@ -505,10 +505,10 @@
       </div>
 
       <div class="offset-md-2 col-md-4">
-        <button disabled type="button" id="open-contact-btn" class="main-btn">
+        <a href="https://devcave.pl/kontakt#formularz-kontaktowy" class="main-btn">
           <i class="fa fa-envelope-o" aria-hidden="true"></i>
           Formularz kontaktowy
-        </button>
+        </a>
       </div>
       <div class="col-md-4">
         <a href="mailto:lasota.marcinm@gmail.com" class="main-btn">
@@ -527,41 +527,9 @@
   </div>
 </section>
 
-<div id="formularz-kontaktowy" class="contact" role="dialog" aria-label="Formularz kontaktowy" aria-hidden="true">
-  <form class="emailForm" method="POST" action="https://formspree.io/lasota.marcinm@gmail.com">
-    <label class="half" aria-live="polite">
-      Twój email
-      <input class="form-data" name="email" type="email" placeholder="Wpisz tu twój email" required>
-    </label>
-    <label class="half" aria-live="polite">
-      Temat
-      <input class="form-data" name="_subject" placeholder="Wpisz tu temat wiadomości" minlength="4" maxlength="78"
-             required>
-    </label>
-    <label aria-live="polite">
-      Wiadomość
-      <textarea class="form-data" name="message" placeholder="Wpisz tu twoją wiadomość" minlength="4"
-                maxlength="6000" required></textarea>
-    </label>
-    <label class="recaptcha-label" aria-live="polite">
-      <div class="g-recaptcha" tabindex="-1" data-sitekey="6Lc9_xMUAAAAAFPVNhvDKb9lMXHGI4o7-zhqkTgL"
-           data-callback="recaptchaClearErr"></div>
-    </label>
-    <button class="emailFormSubmit main-btn" name="submit" type="submit">Wyślij</button>
-
-    <div class="emailFormAlert" aria-live="polite"></div>
-  </form>
-
-  <button type="button" id="close-contact-btn" class="close-btn" aria-label="Zamknij formularz kontaktowy"
-          title="Zamknij formularz kontaktowy">
-    <i class="fa fa-times close-form"></i>
-  </button>
-</div>
-
 <div class="cookies-info">
   <p>Strona wykorzystuje pliki cookies (ciasteczka) w celu zbierania statystyk odwiedzin strony oraz do zapamiętywania
-    twoich wyborów.
-    Korzystając ze strony zgadzasz się na ich wykorzystanie.</p>
+    twoich wyborów. Korzystając ze strony zgadzasz się na ich wykorzystanie.</p>
   <button class="close-cookies-info"><i class="fa fa-times fa-2x close-form"></i></button>
 </div>
 
