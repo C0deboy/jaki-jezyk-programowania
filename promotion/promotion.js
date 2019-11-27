@@ -6,8 +6,8 @@ const promotions = [
     host: 'helion.pl',
     img: '/promotion/p.jpg',
     popup: true,
-    message: 'Black friday w [Helion] - 2 książki w cenie 1',
-    adHeader: 'Black friday w [Helion] - 2 książki w cenie 1',
+    message: 'Black Friday w [Helion] - 2 książki w cenie 1',
+    adHeader: 'Black Friday w [Helion] - 2 książki w cenie 1',
     adContent: '',
   },
 ];
