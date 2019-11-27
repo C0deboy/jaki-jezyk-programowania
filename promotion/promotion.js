@@ -1,13 +1,13 @@
 const promotions = [
   {
-    start: new Date('2019-09-20'),
-    end: new Date('2019-09-23'),
+    start: new Date('2019-11-27'),
+    end: new Date('2019-11-29'),
     number: '6094',
     host: 'helion.pl',
     img: '/promotion/p.jpg',
     popup: true,
-    message: 'Promocja na książki w [Helion] - 2 książki w cenie 1',
-    adHeader: 'Promocja na książki w [Helion] - 2 książki w cenie 1',
+    message: 'Black friday w [Helion] - 2 książki w cenie 1',
+    adHeader: 'Black friday w [Helion] - 2 książki w cenie 1',
     adContent: '',
   },
 ];
