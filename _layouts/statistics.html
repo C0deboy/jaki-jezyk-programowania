@@ -14,8 +14,9 @@
 {% include nav.html %}
 
 {% case page.year %}
-  {% when 2019 %}{% assign see_also = 2018 %}
-  {% when 2018 %}{% assign see_also = 2019 %}
+  {% when 2020 %}{% assign see_also = 2019 %}{% assign see_also2 = 2018 %}
+  {% when 2019 %}{% assign see_also = 2020 %}{% assign see_also2 = 2018 %}
+  {% when 2018 %}{% assign see_also = 2020 %}{% assign see_also2 = 2019 %}
 {% endcase %}2019
 
 <section class="faq" id="statistics" data-year="{{page.year}}">
@@ -23,7 +24,10 @@
   <div class="container">
     <h1>Statystyki języków programowania {{page.year}}</h1>
     <p class="m-4">Wizualizacja wszystkich statystyk, które są zbierane co miesiąc na potrzebę tej strony w roku {{page.year}}.</p>
-    <p><a href="/statystyki-jezykow-programowania-{{see_also}}/">Zobacz także rok {{see_also}}</a></p>
+    <p>Zobacz także rok
+      <a href="/statystyki-jezykow-programowania-{{see_also}}/">{{see_also}}</a> lub
+      <a href="/statystyki-jezykow-programowania-{{see_also2}}/">{{see_also2}}</a>
+    </p>
 
     <button type="button" class="main-btn" data-toggle="modal" data-target="#demo">Jak używać?</button>
 
@@ -33,7 +37,10 @@
       </div>
     </div>
 
-    <h2><a href="/statystyki-jezykow-programowania-{{see_also}}/">Zobacz także rok {{see_also}}</a></h2>
+    <p>Zobacz także rok
+      <a href="/statystyki-jezykow-programowania-{{see_also}}/">{{see_also}}</a> lub
+      <a href="/statystyki-jezykow-programowania-{{see_also2}}/">{{see_also2}}</a>
+    </p>
 
   </div>
 </section>

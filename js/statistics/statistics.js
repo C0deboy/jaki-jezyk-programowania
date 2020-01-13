@@ -1,13 +1,20 @@
 import Chart from 'chart.js';
 import statistics2018 from './statistics2018-data';
 import statistics2019 from './statistics2019-data';
+import statistics2020 from './statistics2020-data';
 
 require('../../css/statistics.css');
 
 const defaultColors = ['#3366CC', '#DC3912', '#FF9900', '#109618', '#990099', '#3B3EAC', '#0099C6', '#DD4477', '#66AA00', '#B82E2E', '#316395', '#994499', '#22AA99', '#AAAA11', '#6633CC', '#E67300', '#8B0707', '#329262', '#5574A6', '#3B3EAC'];
 
 const year = parseInt(document.getElementById('statistics').getAttribute('data-year'));
-const statistics = year === 2018 ? statistics2018 : statistics2019;
+
+const yearToStats = {
+  2018: statistics2018,
+  2019: statistics2019,
+  2020: statistics2020,
+};
+const statistics = yearToStats[year];
 
 const langProjects = document.getElementById('lang-projects');
 const top10GithubProjectsCtx = document.getElementById('top10GithubProjects').getContext('2d');

@@ -1,0 +1,47 @@
+---
+layout: statistics
+title: "Statystyki języków programowania 2020"
+description: "Wizualizacja statystyk z serwisów Tiobe Index, Stack Overflow, Meetup i Github zbieranych przez stronę jaki-jezyk-programowania.pl w roku 2020"
+permalink: "/statystyki-jezykow-programowania-2020/"
+year: 2020
+---
+
+<div style="position: relative; width: 100%; height: 100%">
+<canvas class="chart" id="tiobeCurrentYear"></canvas>
+
+</div>
+<canvas class="chart" id="tiobeLastYear"></canvas>
+
+<canvas class="chart" id="stackQuestions"></canvas>
+
+<canvas class="chart" id="meetupMeetupsLocal"></canvas>
+<canvas class="chart" id="meetupMeetupsGlobal"></canvas>
+<canvas class="chart" id="meetupMembersLocal"></canvas>
+<canvas class="chart" id="meetupMembersGlobal"></canvas>
+
+<canvas class="chart" id="githubProjects"></canvas>
+<canvas class="chart" id="githubMoreThen1000Stars"></canvas>
+
+<h2>Top 10 projektów na Github. Wybierz język:</h2>
+<div>
+  <button class="git-lang-switcher main-btn" data-lang="Java">Java</button>
+  <button class="git-lang-switcher main-btn" data-lang="JavaScript">JavaScript</button>
+  <button class="git-lang-switcher main-btn" data-lang="Python">Python</button>
+  <button class="git-lang-switcher main-btn" data-lang="PHP">PHP</button>
+  <button class="git-lang-switcher main-btn" data-lang="Ruby">Ruby</button>
+  <button class="git-lang-switcher main-btn" data-lang="C#">C#</button>
+  <button class="git-lang-switcher main-btn" data-lang="Swift">Swift</button>
+  <button class="git-lang-switcher main-btn" data-lang="C">C</button>
+  <button class="git-lang-switcher main-btn" data-lang="C++">C++</button>
+  <button class="git-lang-switcher main-btn" data-lang="R">R</button>
+  <button class="git-lang-switcher main-btn" data-lang="Rust">Rust</button>
+  <button class="git-lang-switcher main-btn" data-lang="Kotlin">Kotlin</button>
+  <button class="git-lang-switcher main-btn" data-lang="Scala">Scala</button>
+  <button class="git-lang-switcher main-btn" data-lang="Go">Go</button>
+  <button class="git-lang-switcher main-btn" data-lang="Groovy">Groovy</button>
+</div>
+<div id="lang-projects">
+  <canvas class="chart" id="github-projects-for-lang"></canvas>
+</div>
+
+<canvas class="chart" id="top10GithubProjects"></canvas>
