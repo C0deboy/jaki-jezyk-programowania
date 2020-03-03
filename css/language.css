@@ -136,12 +136,13 @@ section {
 
 .up-to-date {
   clear: both;
-  box-shadow: 0 1px 4px 0 black;
+  box-shadow: 0 1px 4px 0 #000;
   color: #3b3b3b;
-  background: -webkit-linear-gradient(#f8f8f8, #bbbbbb);
-  background: linear-gradient(#f8f8f8, #bbbbbb);
+  background: -webkit-linear-gradient(#f8f8f8,#bbb);
+  border-radius: 3px;
+  background: linear-gradient(#f8f8f8,#bbb);
   display: inline-block;
-  padding: 0 15px;
+  padding: 2px 10px 0;
 }
 
 .language-content h1 {
@@ -208,9 +209,10 @@ section {
   box-shadow: 0 2px 4px 0 black;
 }
 
-.helion-ksiazkasm4 a {
+.helion-ksiazkasm4 a,
+.helion-prom3 a {
   background: #222222;
-  padding: 5px 5px;
+  padding: 3px 8px 0;
 }
 
 .helion-ksiazkasm4 a:first-of-type,

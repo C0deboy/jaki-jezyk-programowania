@@ -51,7 +51,7 @@
   font-weight: 800;
   letter-spacing: 1px;
   padding: 15px;
-  color: inherit;
+  color: rgba(0,0,0,.7);
 }
 
 @media (min-width: 2160px) {
@@ -92,10 +92,10 @@
   color: #626262;
 }
 
-.navbar-custom.is-fixed .navbar-brand:hover,
-.navbar-custom.is-fixed .navbar-brand:focus,
-.navbar-custom.is-fixed .nav li a:hover,
-.navbar-custom.is-fixed .nav li a:focus {
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .nav li .nav-link:hover,
+.navbar-custom .nav li .nav-link:focus {
   color: rgba(0, 0, 0, 1);
 }
 
