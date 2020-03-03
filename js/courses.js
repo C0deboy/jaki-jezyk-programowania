@@ -23,6 +23,7 @@ function collect(lang) {
       courses.find('.loading').remove();
       if (document.location.hash.includes(encodeURI('książki'))) document.querySelector('.books').scrollIntoView();
       else if (document.location.hash.includes('kursy')) courses[0].scrollIntoView();
+      document.querySelector('.currency-info').classList.remove('d-none');
     },
     error: (error) => {
       courses.css('display', 'none');

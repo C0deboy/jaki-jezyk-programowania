@@ -103,3 +103,9 @@
     padding-right: 20px;
   }
 }
+
+.currency-info {
+  color: #ff4747;
+  text-align: right;
+  font-size: 0.9em;
+}
