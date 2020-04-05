@@ -19,7 +19,8 @@ const statistics = yearToStats[year];
 const langProjects = document.getElementById('lang-projects');
 const top10GithubProjectsCtx = document.getElementById('top10GithubProjects').getContext('2d');
 const tiobeCurrentYearCtx = document.getElementById('tiobeCurrentYear').getContext('2d');
-const tiobeLastYearCtx = document.getElementById('tiobeLastYear').getContext('2d');
+const tiobeLastYearCanvas = document.getElementById('tiobeLastYear');
+const tiobeLastYearCtx = tiobeLastYearCanvas ? tiobeLastYearCanvas.getContext('2d') : null;
 const stackQuestionsCtx = document.getElementById('stackQuestions').getContext('2d');
 const meetupMeetupsLocalCtx = document.getElementById('meetupMeetupsLocal').getContext('2d');
 const meetupMeetupsGlobalCtx = document.getElementById('meetupMeetupsGlobal').getContext('2d');
@@ -64,6 +65,9 @@ document.querySelectorAll('.git-lang-switcher').forEach((btn) => {
 createLineChart(top10GithubProjectsCtx, 'Github - porównanie najlepszych projektów z każdego języka', 'Liczba gwiazdek', statistics.labels, statistics.top10GithubProjects);
 
 function createLineChart(ctx, title, yAxisLabel, labels, datasets, reverse = false) {
+  if (ctx === null) {
+    return;
+  }
   const header = document.createElement('h2');
   header.innerText = title;
 
