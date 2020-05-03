@@ -131,63 +131,63 @@ const tiobeCurrentYear = [
 
 const stackQuestions = [
   {
-    data: [319433, 320732, 322763, 325586, 328715, null, null, null, null, null, null, null],
+    data: [319433, 320732, 322763, 325586, 328724, null, null, null, null, null, null, null],
     label: 'C',
   },
   {
-    data: [650164, 652854, 657327, 662673, 668406, null, null, null, null, null, null, null],
+    data: [650164, 652854, 657327, 662673, 668431, null, null, null, null, null, null, null],
     label: 'C++',
   },
   {
-    data: [1624553, 1631459, 1641974, 1654397, 1666751, null, null, null, null, null, null, null],
+    data: [1624553, 1631459, 1641974, 1654397, 1666806, null, null, null, null, null, null, null],
     label: 'Java',
   },
   {
-    data: [1929253, 1940188, 1956810, 1976582, 1997403, null, null, null, null, null, null, null],
+    data: [1929253, 1940188, 1956810, 1976582, 1997486, null, null, null, null, null, null, null],
     label: 'JavaScript',
   },
   {
-    data: [1323684, 1338063, 1360921, 1387274, 1415571, null, null, null, null, null, null, null],
+    data: [1323684, 1338063, 1360921, 1387274, 1415686, null, null, null, null, null, null, null],
     label: 'Python',
   },
   {
-    data: [252819, 254671, 257590, 260997, 264271, null, null, null, null, null, null, null],
+    data: [252819, 254671, 257590, 260997, 264287, null, null, null, null, null, null, null],
     label: 'Swift',
   },
   {
-    data: [322231, 325100, 329936, 335567, 341386, null, null, null, null, null, null, null],
+    data: [322231, 325100, 329936, 335567, 341408, null, null, null, null, null, null, null],
     label: 'R',
   },
   {
-    data: [1372718, 1377790, 1385873, 1394088, 1402093, null, null, null, null, null, null, null],
+    data: [1372718, 1377790, 1385873, 1394088, 1402108, null, null, null, null, null, null, null],
     label: 'C#',
   },
   {
-    data: [210017, 210488, 211337, 212116, 212802, null, null, null, null, null, null, null],
+    data: [210017, 210488, 211337, 212116, 212805, null, null, null, null, null, null, null],
     label: 'Ruby',
   },
   {
-    data: [1326157, 1329899, 1335579, 1341324, 1347362, null, null, null, null, null, null, null],
+    data: [1326157, 1329899, 1335579, 1341324, 1347397, null, null, null, null, null, null, null],
     label: 'PHP',
   },
   {
-    data: [33158, 34114, 35574, 37315, 38970, null, null, null, null, null, null, null],
+    data: [33158, 34114, 35574, 37315, 38979, null, null, null, null, null, null, null],
     label: 'Kotlin',
   },
   {
-    data: [94519, 94962, 95713, 96474, 97209, null, null, null, null, null, null, null],
+    data: [94519, 94962, 95713, 96474, 97213, null, null, null, null, null, null, null],
     label: 'Scala',
   },
   {
-    data: [42929, 43387, 44115, 44850, 45605, null, null, null, null, null, null, null],
+    data: [42929, 43387, 44115, 44850, 45610, null, null, null, null, null, null, null],
     label: 'Go',
   },
   {
-    data: [24420, 24545, 24699, 24885, 25053, null, null, null, null, null, null, null],
+    data: [24420, 24545, 24699, 24885, 25052, null, null, null, null, null, null, null],
     label: 'Groovy',
   },
   {
-    data: [14739, 14921, 15311, 15708, 16148, null, null, null, null, null, null, null],
+    data: [14739, 14921, 15311, 15708, 16149, null, null, null, null, null, null, null],
     label: 'Rust',
   },
 ];
@@ -430,27 +430,27 @@ const meetupMeetupsGlobal = [
 
 const top10GithubProjects = [
   {
-    data: [85272, 85975, 87367, 88967, 90410, null, null, null, null, null, null, null],
+    data: [85272, 85975, 87367, 88967, 90414, null, null, null, null, null, null, null],
     label: 'linux (C)',
   },
   {
-    data: [139985, 140583, 141567, 142844, 143829, null, null, null, null, null, null, null],
+    data: [139985, 140583, 141567, 142844, 143831, null, null, null, null, null, null, null],
     label: 'tensorflow (C++)',
   },
   {
-    data: [67521, 68304, 70175, 74221, 77403, null, null, null, null, null, null, null],
+    data: [67521, 68304, 70175, 74221, 77404, null, null, null, null, null, null, null],
     label: 'JavaGuide (Java)',
   },
   {
-    data: [308088, 308433, 308959, 309625, 310428, null, null, null, null, null, null, null],
+    data: [308088, 308433, 308959, 309625, 310431, null, null, null, null, null, null, null],
     label: 'freeCodeCamp (JavaScript)',
   },
   {
-    data: [80249, 81990, 84231, 88203, 93277, null, null, null, null, null, null, null],
+    data: [80249, 81990, 84231, 88203, 93286, null, null, null, null, null, null, null],
     label: 'system-design-primer (Python)',
   },
   {
-    data: [33853, 34004, 34224, 34487, 34756, null, null, null, null, null, null, null],
+    data: [33853, 34004, 34224, 34487, 34757, null, null, null, null, null, null, null],
     label: 'awesome-ios (Swift)',
   },
   {
@@ -462,15 +462,15 @@ const top10GithubProjects = [
     label: 'shadowsocks-windows (C#)',
   },
   {
-    data: [44839, 44960, 45126, 45314, 45496, null, null, null, null, null, null, null],
+    data: [44839, 44960, 45126, 45314, 45498, null, null, null, null, null, null, null],
     label: 'rails (Ruby)',
   },
   {
-    data: [57071, 57349, 57845, 58453, 58931, null, null, null, null, null, null, null],
+    data: [57071, 57349, 57845, 58453, 58932, null, null, null, null, null, null, null],
     label: 'laravel (PHP)',
   },
   {
-    data: [35263, 35430, 35622, 35906, 36258, null, null, null, null, null, null, null],
+    data: [35263, 35430, 35622, 35906, 36260, null, null, null, null, null, null, null],
     label: 'architecture-samples (Kotlin)',
   },
   {
@@ -478,7 +478,7 @@ const top10GithubProjects = [
     label: 'spark (Scala)',
   },
   {
-    data: [67896, 68535, 69549, 70853, 72017, null, null, null, null, null, null, null],
+    data: [67896, 68535, 69549, 70853, 72019, null, null, null, null, null, null, null],
     label: 'go (Go)',
   },
   {
@@ -523,7 +523,7 @@ langToProjects.R = [
     label: 'swirl_courses',
   },
   {
-    data: [2202, 2222, 2253, 2302, 2355, null, null, null, null, null, null, null],
+    data: [2202, 2222, 2253, 2302, 2356, null, null, null, null, null, null, null],
     label: 'r4ds',
   },
   {
@@ -538,15 +538,15 @@ langToProjects.R = [
 
 langToProjects.Swift = [
   {
-    data: [33853, 34004, 34224, 34487, 34756, null, null, null, null, null, null, null],
+    data: [33853, 34004, 34224, 34487, 34757, null, null, null, null, null, null, null],
     label: 'awesome-ios',
   },
   {
-    data: [32714, 32789, 32997, 33218, 33412, null, null, null, null, null, null, null],
+    data: [32714, 32789, 32997, 33218, 33414, null, null, null, null, null, null, null],
     label: 'Alamofire',
   },
   {
-    data: [26163, 26396, 26969, 27395, 27647, null, null, null, null, null, null, null],
+    data: [26163, 26396, 26969, 27395, 27648, null, null, null, null, null, null, null],
     label: 'ShadowsocksX-NG',
   },
   {
@@ -554,11 +554,11 @@ langToProjects.Swift = [
     label: 'Charts',
   },
   {
-    data: [22093, 22195, 22404, 22584, 22765, null, null, null, null, null, null, null],
+    data: [22093, 22195, 22404, 22584, 22766, null, null, null, null, null, null, null],
     label: 'swift-algorithm-club',
   },
   {
-    data: [22049, 22215, 22441, 22800, 23206, null, null, null, null, null, null, null],
+    data: [22049, 22215, 22441, 22800, 23207, null, null, null, null, null, null, null],
     label: 'open-source-ios-apps',
   },
   {
@@ -566,7 +566,7 @@ langToProjects.Swift = [
     label: 'iina',
   },
   {
-    data: [21016, 21244, 21637, 21967, 22413, null, null, null, null, null, null, null],
+    data: [21016, 21244, 21637, 21967, 22414, null, null, null, null, null, null, null],
     label: 'open-source-mac-os-apps',
   },
   {
@@ -605,7 +605,7 @@ langToProjects['C#'] = [
     label: 'WaveFunctionCollapse',
   },
   {
-    data: [12889, 13056, 13506, 13848, 14271, null, null, null, null, null, null, null],
+    data: [12889, 13056, 13506, 13848, 14273, null, null, null, null, null, null, null],
     label: 'dnSpy',
   },
   {
@@ -617,7 +617,7 @@ langToProjects['C#'] = [
     label: 'coreclr',
   },
   {
-    data: [11792, 11903, 12019, null, 12234, null, null, null, null, null, null, null],
+    data: [11792, 11903, 12019, null, null, null, null, null, null, null, null, null],
     label: 'Dapper',
   },
   {
@@ -625,30 +625,30 @@ langToProjects['C#'] = [
     label: 'roslyn',
   },
   {
-    data: [null, null, null, 12220, null, null, null, null, null, null, null, null],
+    data: [null, null, null, 12220, 12574, null, null, null, null, null, null, null],
     label: 'ShareX',
   },
 ];
 
 langToProjects.C = [
   {
-    data: [85272, 85975, 87367, 88967, 90410, null, null, null, null, null, null, null],
+    data: [85272, 85975, 87367, 88967, 90414, null, null, null, null, null, null, null],
     label: 'linux',
   },
   {
-    data: [44077, 44510, 45185, 45785, 46448, null, null, null, null, null, null, null],
+    data: [44077, 44510, 45185, 45785, 46449, null, null, null, null, null, null, null],
     label: 'netdata',
   },
   {
-    data: [40736, 40980, 41378, 41976, 42552, null, null, null, null, null, null, null],
+    data: [40736, 40980, 41378, 41976, 42553, null, null, null, null, null, null, null],
     label: 'redis',
   },
   {
-    data: [30992, 31220, 31548, 31924, 32380, null, null, null, null, null, null, null],
+    data: [30992, 31220, 31548, 31924, 32384, null, null, null, null, null, null, null],
     label: 'git',
   },
   {
-    data: [26214, 26398, 26665, 26924, 27128, null, null, null, null, null, null, null],
+    data: [26214, 26398, 26665, 26924, 27130, null, null, null, null, null, null, null],
     label: 'php-src',
   },
   {
@@ -656,15 +656,15 @@ langToProjects.C = [
     label: 'ijkplayer',
   },
   {
-    data: [24413, 25011, 26249, 27811, 29434, null, null, null, null, null, null, null],
+    data: [24413, 25011, 26249, 27811, 29438, null, null, null, null, null, null, null],
     label: 'scrcpy',
   },
   {
-    data: [23085, 23273, 23544, 23958, 24305, null, null, null, null, null, null, null],
+    data: [23085, 23273, 23544, 23958, 24306, null, null, null, null, null, null, null],
     label: 'wrk',
   },
   {
-    data: [19323, 19423, 19638, 19872, 20048, null, null, null, null, null, null, null],
+    data: [19323, 19423, 19638, 19872, 20049, null, null, null, null, null, null, null],
     label: 'the_silver_searcher',
   },
   {
@@ -676,14 +676,14 @@ langToProjects.C = [
     label: 'The-Art-Of-Programming-By-July',
   },
   {
-    data: [null, null, null, null, 19343, null, null, null, null, null, null, null],
+    data: [null, null, null, null, 19344, null, null, null, null, null, null, null],
     label: 'FFmpeg',
   },
 ];
 
 langToProjects.Ruby = [
   {
-    data: [44839, 44960, 45126, 45314, 45496, null, null, null, null, null, null, null],
+    data: [44839, 44960, 45126, 45314, 45498, null, null, null, null, null, null, null],
     label: 'rails',
   },
   {
@@ -691,15 +691,15 @@ langToProjects.Ruby = [
     label: 'jekyll',
   },
   {
-    data: [29746, 29914, 30121, 30375, 30571, null, null, null, null, null, null, null],
+    data: [29746, 29914, 30121, 30375, 30572, null, null, null, null, null, null, null],
     label: 'discourse',
   },
   {
-    data: [27835, 27961, 28181, 28424, 28622, null, null, null, null, null, null, null],
+    data: [27835, 27961, 28181, 28424, 28623, null, null, null, null, null, null, null],
     label: 'fastlane',
   },
   {
-    data: [26663, 26847, 27453, 27907, 28258, null, null, null, null, null, null, null],
+    data: [26663, 26847, 27453, 27907, 28259, null, null, null, null, null, null, null],
     label: 'huginn',
   },
   {
@@ -719,30 +719,30 @@ langToProjects.Ruby = [
     label: 'devise',
   },
   {
-    data: [20276, 20416, 20717, 21080, 21413, null, null, null, null, null, null, null],
+    data: [20276, 20416, 20717, 21080, 21414, null, null, null, null, null, null, null],
     label: 'brew',
   },
   {
-    data: [null, null, null, null, 20831, null, null, null, null, null, null, null],
+    data: [null, null, null, null, 20833, null, null, null, null, null, null, null],
     label: 'mastodon',
   },
 ];
 
 langToProjects.PHP = [
   {
-    data: [57071, 57349, 57845, 58453, 58931, null, null, null, null, null, null, null],
+    data: [57071, 57349, 57845, 58453, 58932, null, null, null, null, null, null, null],
     label: 'laravel',
   },
   {
-    data: [30478, 30499, 30541, 30594, 30650, null, null, null, null, null, null, null],
+    data: [30478, 30499, 30541, 30594, 30651, null, null, null, null, null, null, null],
     label: 'jQuery-File-Upload',
   },
   {
-    data: [22950, 23110, 23334, 23588, 23806, null, null, null, null, null, null, null],
+    data: [22950, 23110, 23334, 23588, 23807, null, null, null, null, null, null, null],
     label: 'Faker',
   },
   {
-    data: [22564, 22689, 22867, 23009, 23154, null, null, null, null, null, null, null],
+    data: [22564, 22689, 22867, 23009, 23156, null, null, null, null, null, null, null],
     label: 'symfony',
   },
   {
@@ -750,7 +750,7 @@ langToProjects.PHP = [
     label: 'SecLists',
   },
   {
-    data: [22025, 22200, 22433, 22714, 22941, null, null, null, null, null, null, null],
+    data: [22025, 22200, 22433, 22714, 22943, null, null, null, null, null, null, null],
     label: 'composer',
   },
   {
@@ -758,7 +758,7 @@ langToProjects.PHP = [
     label: 'framework',
   },
   {
-    data: [18527, 18683, 18881, 19059, 19211, null, null, null, null, null, null, null],
+    data: [18527, 18683, 18881, 19059, 19212, null, null, null, null, null, null, null],
     label: 'guzzle',
   },
   {
@@ -773,15 +773,15 @@ langToProjects.PHP = [
 
 langToProjects['C++'] = [
   {
-    data: [139985, 140583, 141567, 142844, 143829, null, null, null, null, null, null, null],
+    data: [139985, 140583, 141567, 142844, 143831, null, null, null, null, null, null, null],
     label: 'tensorflow',
   },
   {
-    data: [80058, 80433, 81025, 81717, 82379, null, null, null, null, null, null, null],
+    data: [80058, 80433, 81025, 81717, 82382, null, null, null, null, null, null, null],
     label: 'electron',
   },
   {
-    data: [56484, 57208, 58306, 59685, 60904, null, null, null, null, null, null, null],
+    data: [56484, 57208, 58306, 59685, 60906, null, null, null, null, null, null, null],
     label: 'terminal',
   },
   {
@@ -789,19 +789,19 @@ langToProjects['C++'] = [
     label: 'swift',
   },
   {
-    data: [41882, 42096, 42383, 42764, 43155, null, null, null, null, null, null, null],
+    data: [41882, 42096, 42383, 42764, 43157, null, null, null, null, null, null, null],
     label: 'bitcoin',
   },
   {
-    data: [41464, 41821, 42460, 43357, 44181, null, null, null, null, null, null, null],
+    data: [41464, 41821, 42460, 43357, 44185, null, null, null, null, null, null, null],
     label: 'opencv',
   },
   {
-    data: [39528, 39779, 40252, 40812, 41305, null, null, null, null, null, null, null],
+    data: [39528, 39779, 40252, 40812, 41304, null, null, null, null, null, null, null],
     label: 'protobuf',
   },
   {
-    data: [35338, 35731, 36541, 37474, 38299, null, null, null, null, null, null, null],
+    data: [35338, 35731, 36541, 37474, 38304, null, null, null, null, null, null, null],
     label: 'pytorch',
   },
   {
@@ -809,30 +809,30 @@ langToProjects['C++'] = [
     label: 'x64dbg',
   },
   {
-    data: [32621, 32755, 33223, 33718, 34163, null, null, null, null, null, null, null],
+    data: [32621, 32755, 33223, 33718, 34165, null, null, null, null, null, null, null],
     label: 'tesseract',
   },
 ];
 
 langToProjects.Python = [
   {
-    data: [80249, 81990, 84231, 88203, 93277, null, null, null, null, null, null, null],
+    data: [80249, 81990, 84231, 88203, 93286, null, null, null, null, null, null, null],
     label: 'system-design-primer',
   },
   {
-    data: [78152, 78823, 79825, 80926, 81999, null, null, null, null, null, null, null],
+    data: [78152, 78823, 79825, 80926, 81998, null, null, null, null, null, null, null],
     label: 'awesome-python',
   },
   {
-    data: [68849, 70029, 71367, 75181, 80532, null, null, null, null, null, null, null],
+    data: [68849, 70029, 71367, 75181, 80535, null, null, null, null, null, null, null],
     label: 'public-apis',
   },
   {
-    data: [65451, 66180, 67647, 69190, 70718, null, null, null, null, null, null, null],
+    data: [65451, 66180, 67647, 69190, 70722, null, null, null, null, null, null, null],
     label: 'Python',
   },
   {
-    data: [61043, 61390, 62004, 62829, 63435, null, null, null, null, null, null, null],
+    data: [61043, 61390, 62004, 62829, 63436, null, null, null, null, null, null, null],
     label: 'models',
   },
   {
@@ -848,7 +848,7 @@ langToProjects.Python = [
     label: 'flask',
   },
   {
-    data: [46523, 46942, 47541, 48285, 48966, null, null, null, null, null, null, null],
+    data: [46523, 46942, 47541, 48285, 48967, null, null, null, null, null, null, null],
     label: 'django',
   },
   {
@@ -859,15 +859,15 @@ langToProjects.Python = [
 
 langToProjects.JavaScript = [
   {
-    data: [308088, 308433, 308959, 309625, 310428, null, null, null, null, null, null, null],
+    data: [308088, 308433, 308959, 309625, 310431, null, null, null, null, null, null, null],
     label: 'freeCodeCamp',
   },
   {
-    data: [155561, 156388, 158441, 160869, 163190, null, null, null, null, null, null, null],
+    data: [155561, 156388, 158441, 160869, 163192, null, null, null, null, null, null, null],
     label: 'vue',
   },
   {
-    data: [141231, 143139, 144649, 146366, 147966, null, null, null, null, null, null, null],
+    data: [141231, 143139, 144649, 146366, 147967, null, null, null, null, null, null, null],
     label: 'react',
   },
   {
@@ -875,7 +875,7 @@ langToProjects.JavaScript = [
     label: 'bootstrap',
   },
   {
-    data: [91798, 92181, 93358, 94175, 94992, null, null, null, null, null, null, null],
+    data: [91798, 92181, 93358, 94175, 94994, null, null, null, null, null, null, null],
     label: 'javascript',
   },
   {
@@ -887,22 +887,22 @@ langToProjects.JavaScript = [
     label: 'react-native',
   },
   {
-    data: [75203, 75688, 76531, 77449, 78312, null, null, null, null, null, null, null],
+    data: [75203, 75688, 76531, 77449, 78314, null, null, null, null, null, null, null],
     label: 'create-react-app',
   },
   {
-    data: [68641, 69251, 70194, 71457, 72695, null, null, null, null, null, null, null],
+    data: [68641, 69251, 70194, 71457, 72696, null, null, null, null, null, null, null],
     label: 'axios',
   },
   {
-    data: [67100, 67466, 68001, 68858, 69641, null, null, null, null, null, null, null],
+    data: [67100, 67466, 68001, 68858, 69642, null, null, null, null, null, null, null],
     label: 'node',
   },
 ];
 
 langToProjects.Java = [
   {
-    data: [67521, 68304, 70175, 74221, 77403, null, null, null, null, null, null, null],
+    data: [67521, 68304, 70175, 74221, 77404, null, null, null, null, null, null, null],
     label: 'JavaGuide',
   },
   {
@@ -918,7 +918,7 @@ langToProjects.Java = [
     label: 'elasticsearch',
   },
   {
-    data: [44803, 45153, 45739, 46637, 47392, null, null, null, null, null, null, null],
+    data: [44803, 45153, 45739, 46637, 47391, null, null, null, null, null, null, null],
     label: 'spring-boot',
   },
   {
@@ -926,15 +926,15 @@ langToProjects.Java = [
     label: 'RxJava',
   },
   {
-    data: [41397, 41671, 42353, 43017, 43686, null, null, null, null, null, null, null],
+    data: [41397, 41671, 42353, 43017, 43687, null, null, null, null, null, null, null],
     label: 'interviews',
   },
   {
-    data: [37858, 38482, 39422, 41513, 42991, null, null, null, null, null, null, null],
+    data: [37858, 38482, 39422, 41513, 42992, null, null, null, null, null, null, null],
     label: 'advanced-java',
   },
   {
-    data: [35610, 35761, 36058, 36514, 36884, null, null, null, null, null, null, null],
+    data: [35610, 35761, 36058, 36514, 36883, null, null, null, null, null, null, null],
     label: 'okhttp',
   },
   {
@@ -949,19 +949,19 @@ langToProjects.Rust = [
     label: '996.ICU',
   },
   {
-    data: [41768, 42216, 42972, 43723, 44450, null, null, null, null, null, null, null],
+    data: [41768, 42216, 42972, 43723, 44454, null, null, null, null, null, null, null],
     label: 'rust',
   },
   {
-    data: [19905, 20221, 20926, 21541, 22222, null, null, null, null, null, null, null],
+    data: [19905, 20221, 20926, 21541, 22223, null, null, null, null, null, null, null],
     label: 'alacritty',
   },
   {
-    data: [17604, 17979, 18508, 19041, 19481, null, null, null, null, null, null, null],
+    data: [17604, 17979, 18508, 19041, 19483, null, null, null, null, null, null, null],
     label: 'ripgrep',
   },
   {
-    data: [17281, 17589, 18097, 18798, 19444, null, null, null, null, null, null, null],
+    data: [17281, 17589, 18097, 18798, 19451, null, null, null, null, null, null, null],
     label: 'bat',
   },
   {
@@ -981,14 +981,14 @@ langToProjects.Rust = [
     label: 'awesome-rust',
   },
   {
-    data: [11720, 12051, 12480, 12861, 13237, null, null, null, null, null, null, null],
+    data: [11720, 12051, 12480, 12861, 13239, null, null, null, null, null, null, null],
     label: 'fd',
   },
 ];
 
 langToProjects.Kotlin = [
   {
-    data: [35263, 35430, 35622, 35906, 36258, null, null, null, null, null, null, null],
+    data: [35263, 35430, 35622, 35906, 36260, null, null, null, null, null, null, null],
     label: 'architecture-samples',
   },
   {
@@ -996,23 +996,23 @@ langToProjects.Kotlin = [
     label: 'kotlin',
   },
   {
-    data: [28317, 28538, 28981, 29330, 29556, null, null, null, null, null, null, null],
+    data: [28317, 28538, 28981, 29330, 29557, null, null, null, null, null, null, null],
     label: 'shadowsocks-android',
   },
   {
-    data: [24247, 24301, 24419, 24526, 24645, null, null, null, null, null, null, null],
+    data: [24247, 24301, 24419, 24526, 24646, null, null, null, null, null, null, null],
     label: 'leakcanary',
   },
   {
-    data: [20056, 20190, 20429, 20883, 21368, null, null, null, null, null, null, null],
+    data: [20056, 20190, 20429, 20883, 21369, null, null, null, null, null, null, null],
     label: 'p3c',
   },
   {
-    data: [19491, 19534, 19606, 19670, 19741, null, null, null, null, null, null, null],
+    data: [19491, 19534, 19606, 19670, 19742, null, null, null, null, null, null, null],
     label: 'iosched',
   },
   {
-    data: [17128, 17183, 17322, 17478, 17614, null, null, null, null, null, null, null],
+    data: [17128, 17183, 17322, 17478, 17615, null, null, null, null, null, null, null],
     label: 'material-dialogs',
   },
   {
@@ -1024,7 +1024,7 @@ langToProjects.Kotlin = [
     label: 'anko',
   },
   {
-    data: [15140, 15140, 15215, 15353, 15476, null, null, null, null, null, null, null],
+    data: [15140, 15140, 15215, 15353, 15477, null, null, null, null, null, null, null],
     label: 'flexbox-layout',
   },
 ];
@@ -1125,31 +1125,31 @@ langToProjects.Groovy = [
 
 langToProjects.Go = [
   {
-    data: [67896, 68535, 69549, 70853, 72017, null, null, null, null, null, null, null],
+    data: [67896, 68535, 69549, 70853, 72019, null, null, null, null, null, null, null],
     label: 'go',
   },
   {
-    data: [62276, 62850, 63718, 64723, 65679, null, null, null, null, null, null, null],
+    data: [62276, 62850, 63718, 64723, 65680, null, null, null, null, null, null, null],
     label: 'kubernetes',
   },
   {
-    data: [56094, 56264, 56501, 56743, 56961, null, null, null, null, null, null, null],
+    data: [56094, 56264, 56501, 56743, 56962, null, null, null, null, null, null, null],
     label: 'moby',
   },
   {
-    data: [51167, 51631, 52377, 53175, 54007, null, null, null, null, null, null, null],
+    data: [51167, 51631, 52377, 53175, 54009, null, null, null, null, null, null, null],
     label: 'awesome-go',
   },
   {
-    data: [40873, 41308, 41984, 42896, 43658, null, null, null, null, null, null, null],
+    data: [40873, 41308, 41984, 42896, 43661, null, null, null, null, null, null, null],
     label: 'hugo',
   },
   {
-    data: [34707, 35113, 35834, 36726, 37640, null, null, null, null, null, null, null],
+    data: [34707, 35113, 35834, 36726, 37643, null, null, null, null, null, null, null],
     label: 'gin',
   },
   {
-    data: [33481, 33632, 33881, 34236, 34534, null, null, null, null, null, null, null],
+    data: [33481, 33632, 33881, 34236, 34536, null, null, null, null, null, null, null],
     label: 'build-web-application-with-golang',
   },
   {
@@ -1157,7 +1157,7 @@ langToProjects.Go = [
     label: 'gogs',
   },
   {
-    data: [31904, 32407, 33411, 34564, 35447, null, null, null, null, null, null, null],
+    data: [31904, 32407, 33411, 34564, 35448, null, null, null, null, null, null, null],
     label: 'frp',
   },
   {
@@ -1168,55 +1168,55 @@ langToProjects.Go = [
 
 const githubProjects = [
   {
-    data: [275334, 278145, 282255, 252477, 291281, null, null, null, null, null, null, null],
+    data: [275334, 278145, 282255, 252477, 291290, null, null, null, null, null, null, null],
     label: 'C',
   },
   {
-    data: [354913, 358858, 366309, 374617, 382556, null, null, null, null, null, null, null],
+    data: [354913, 358858, 366309, 374617, 382592, null, null, null, null, null, null, null],
     label: 'C++',
   },
   {
-    data: [790389, 802478, 828841, 844405, 855511, null, null, null, null, null, null, null],
+    data: [790389, 802478, 828841, 844405, 858836, null, null, null, null, null, null, null],
     label: 'Java',
   },
   {
-    data: [1358306, 1380886, 1403005, 1418056, 1412686, null, null, null, null, null, null, null],
+    data: [1358306, 1380886, 1403005, 1418056, 1443113, null, null, null, null, null, null, null],
     label: 'JavaScript',
   },
   {
-    data: [910131, 920924, 919810, 949745, 914865, null, null, null, null, null, null, null],
+    data: [910131, 920924, 919810, 949745, 983542, null, null, null, null, null, null, null],
     label: 'Python',
   },
   {
-    data: [93348, 94438, 96158, 98075, 99928, null, null, null, null, null, null, null],
+    data: [93348, 94438, 96158, 98075, 99929, null, null, null, null, null, null, null],
     label: 'Swift',
   },
   {
-    data: [58654, 59536, 61116, 63037, 64770, null, null, null, null, null, null, null],
+    data: [58654, 59536, 61116, 63037, 64775, null, null, null, null, null, null, null],
     label: 'R',
   },
   {
-    data: [280989, 284860, 290884, 297907, 299040, null, null, null, null, null, null, null],
+    data: [280989, 284860, 290884, 297907, 304945, null, null, null, null, null, null, null],
     label: 'C#',
   },
   {
-    data: [319763, 320611, 321851, 323267, 324809, null, null, null, null, null, null, null],
+    data: [319763, 320611, 321851, 323267, 324815, null, null, null, null, null, null, null],
     label: 'Ruby',
   },
   {
-    data: [403792, 406837, 411695, 416983, 421802, null, null, null, null, null, null, null],
+    data: [403792, 406837, 411695, 416983, 417158, null, null, null, null, null, null, null],
     label: 'PHP',
   },
   {
-    data: [41101, 42172, 43927, 46108, 48331, null, null, null, null, null, null, null],
+    data: [41101, 42172, 43927, 46108, 48341, null, null, null, null, null, null, null],
     label: 'Kotlin',
   },
   {
-    data: [40933, 41127, 41457, 41817, 42168, null, null, null, null, null, null, null],
+    data: [40933, 41127, 41457, 41817, 42169, null, null, null, null, null, null, null],
     label: 'Scala',
   },
   {
-    data: [158070, 160193, 163710, 167826, 171615, null, null, null, null, null, null, null],
+    data: [158070, 160193, 163710, 167826, 171633, null, null, null, null, null, null, null],
     label: 'Go',
   },
   {
@@ -1224,7 +1224,7 @@ const githubProjects = [
     label: 'Groovy',
   },
   {
-    data: [40253, 41293, 42877, 44450, 46204, null, null, null, null, null, null, null],
+    data: [40253, 41293, 42877, 44450, 46207, null, null, null, null, null, null, null],
     label: 'Rust',
   },
 ];
@@ -1235,7 +1235,7 @@ const githubMoreThen1000Stars = [
     label: 'C',
   },
   {
-    data: [1032, 1048, 1072, 1093, 916, null, null, null, null, null, null, null],
+    data: [1032, 1048, 1072, 1093, 1123, null, null, null, null, null, null, null],
     label: 'C++',
   },
   {
