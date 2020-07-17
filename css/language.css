@@ -190,6 +190,7 @@ section {
   display: inline-block;
   text-align: center;
   padding: 15px;
+  margin-bottom: 10px;
   width: 300px;
   vertical-align: top;
 }
@@ -207,6 +208,17 @@ section {
   text-align: center;
   border: 0;
   box-shadow: 0 2px 4px 0 black;
+}
+
+.helion-ksiazkasm3,
+.helion-ksiazkasm4 {
+  display: none;
+}
+
+.book:hover {
+  background: rgba(1,46,53,.55);
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.75);
+  color: #fff;
 }
 
 .helion-ksiazkasm4 a,

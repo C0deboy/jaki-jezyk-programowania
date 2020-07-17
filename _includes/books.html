@@ -8,15 +8,17 @@
 {%- for book in category.books -%}
   {%- if book.first -%}
     {% for group in book %}
-  <p>{{ group[0] }}</p>
+      {%- if group[0] != '' -%}
+  <p>{{ group[0] }}:</p>
+      {%- endif -%}
       {% for bookId in group[1] %}
-  <div class="book">
+  <div class="book" data-book-id="{{ bookId }}">
     <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id={{ bookId }}&nr=9102Q&size=181&utf8=1"></script>
   </div>
       {% endfor %}
     {% endfor %}
   {%- else -%}
-  <div class="book">
+  <div class="book" data-book-id="{{ book }}">
     <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id={{ book }}&nr=9102Q&size=181&utf8=1"></script>
   </div>
   {%- endif -%}
