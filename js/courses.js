@@ -1,13 +1,22 @@
+import '../node_modules/waypoints/lib/noframework.waypoints.min';
+
 require('../css/courses.css');
+
+new Waypoint({
+  element: document.querySelector('.courses'),
+  handler() {
+    if (!window.location.href.includes('127.0.0.1')) {
+      collect('pl');
+      collect('en');
+    }
+    this.destroy();
+  },
+  offset: '100%',
+});
 
 const courses = $('.courses');
 const q = encodeURIComponent(courses.attr('data-query'));
 const t = 'ZUt4dk1EZG1wOEt6Y3g5OTJzVkNwQTFjM2NneTJPeDBlZklybnZYSDphaVozeUJBMlpIaXMyanNBMXp6MEFFTEo5OUhmOHh4T1lpZWtCSmtkYTZ3YUJrUlBxektEOGRZMXFIS01MRUdCZm1OcHZNcHh6c3pIUEc5SDdCMjg4UUJMb1JxTlhXOW55a1VlQVVORUJJYkRETkFhTnBRcDRxeHdNUmFPYmVSRg==';
-
-if (!window.location.href.includes('127.0.0.1')) {
-  collect('pl');
-  collect('en');
-}
 
 function collect(lang) {
   $.ajax({
@@ -28,7 +37,7 @@ function collect(lang) {
     error: (error) => {
       courses.css('display', 'none');
       $('.courses-link').css('display', 'none');
-      console.log(error);
+      console.error(error);
     },
   });
 }
