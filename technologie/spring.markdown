@@ -1,7 +1,6 @@
 ---
 layout:     simpleTechnology
 title:      Spring
-no-books:     true
 ---
 
 {: .official-page}
@@ -14,3 +13,5 @@ Jego kluczowym elementem był i jest kontener wstrzykiwania zależności, ale pr
 Jest to tzw. *must have* dla programisty Javy.
 
 {% include courses.html %}
+
+{% include books.html %}

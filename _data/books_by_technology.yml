@@ -34,14 +34,14 @@ C:
 Django:
   books:
     - '':
-      - djptas
+      - djpta2
     - Pythod + Django + TDD (Test Driven Development):
       - tddwpr
 
 HTML i CSS:
   books:
     - '':
-      - htcsww
+      - htcswv
       - cssnp4
       - htm5n2
     - Do nauki Bootstrap:
@@ -72,7 +72,8 @@ Java:
 JavaScript:
   books:
     - '':
-      - jsqwdk
+      - jsqwdv
+      - podjav
       - ecmasc
       - jascpz
       - nojspo
@@ -94,6 +95,7 @@ Python:
       - pythip
       - zaprpy
     - Data science i machine lerning (analiza danych i uczenie maszynowe):
+      - delepy
       - uczema
       - dascpo
       - pythum
@@ -158,3 +160,7 @@ Scala:
 Go:
   books:
     - progo2
+
+Spring:
+  books:
+    - sprwa5

@@ -51,12 +51,21 @@
 {% when "Django" %}
 {% assign category = "" %}
 {% assign subcategory = "" %}
+{% when "Spring" %}
+{% assign category = "" %}
+{% assign subcategory = "" %}
 {% when "Go" %}
 {% assign category = "programowanie" %}
 {% assign subcategory = "go-programowanie" %}
 {% when "C#" %}
 {% assign category = "programowanie" %}
 {% assign subcategory = "c-sharp" %}
+{% when "SQL" %}
+{% assign category = "bazy-danych" %}
+{% assign subcategory = page.title %}
+{% when "HTML i CSS" %}
+{% assign category = "webmasterstwo" %}
+{% assign subcategory = "css" %}
 {% else %}
 {% assign category = "programowanie" %}
 {% assign subcategory = page.title %}
