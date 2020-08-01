@@ -181,6 +181,11 @@ section {
   }
 }
 
+.book-link {
+  color: #ffffff;
+  display: inline-block;
+}
+
 .book {
   display: inline-block;
   text-align: center;

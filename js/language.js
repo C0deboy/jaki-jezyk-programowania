@@ -8,10 +8,11 @@ books.forEach((book) => {
   if (!title) return;
   if (title.innerText.startsWith('nak')) {
     book.parentElement.removeChild(book);
+    return;
   }
   const bookId = book.getAttribute('data-book-id');
   const bookLink = document.createElement('a');
-  bookLink.style.color = '#fff';
+  bookLink.classList.add('book-link');
   bookLink.target = '_blank';
   bookLink.href = `https://helion.pl/view/9102Q/${bookId}.htm`;
   wrap(book, bookLink);
