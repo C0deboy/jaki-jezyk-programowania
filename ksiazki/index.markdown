@@ -17,8 +17,6 @@ title-full: "Polecane książki do nauki programowania"
 [Cała lista](/ksiazki/ksiazki-ktore-moze-przeczytac-kazdy-bez-wzgledu-na-technologie) lub według kategorii:
 {% endmarkdown %}
 
-<div class="col-lg-6 col-sm-6">
-
 <p class="list-header">Must read:</p>
 
 {% markdown %}
@@ -29,10 +27,6 @@ title-full: "Polecane książki do nauki programowania"
 - [Wzorce projektowe](/ksiazki/najlepsze-ksiazki-o-wzorcach-projektowych)
 
 {% endmarkdown %}
-
-</div>
-
-<div class="col-lg-6 col-sm-6">
 
 <p class="list-header">Inne:</p>
 
@@ -49,7 +43,6 @@ title-full: "Polecane książki do nauki programowania"
 
 {% endmarkdown %}
 
-</div>
 </div>
 
 <div class="col-lg-5 col-sm-12">
