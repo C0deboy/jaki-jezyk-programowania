@@ -38,7 +38,7 @@
 
 <table>
 {% for project in stats.Github.top10 %}
-    <tr onclick="window.location='{{ project.url }}'">
+    <tr>
       <td>{{ forloop.index }}#</td>
       <td><a href="{{ project.url }}">{{ project.name }}</a></td>
       <td>{{ project.stars }} <i class="fa fa-star" aria-hidden="true"></i></td>

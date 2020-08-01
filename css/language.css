@@ -117,11 +117,6 @@ section {
   padding: 0 10px;
 }
 
-.language-content table tr:hover {
-  background: #01213a44;
-  cursor: pointer;
-}
-
 .language-content table td:last-of-type,
 .language-content table td:first-of-type {
   text-align: right;
@@ -312,10 +307,6 @@ section {
   border: 0;
   padding: 0px 5px;
   box-shadow: 0 1px 4px 0 black;
-}
-
-.top-books a {
-
 }
 
 .promotion {
