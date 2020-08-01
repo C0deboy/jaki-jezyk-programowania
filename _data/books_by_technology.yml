@@ -106,10 +106,7 @@ Python:
 
 R:
   books:
-    - '':
-      - jezrko
-    - Data science (nauka o danych) (większość przykładów w arkuszu kalkulacyjnym):
-      - mianda
+    - delerk
 
 Ruby:
   books:

@@ -1,3 +1,4 @@
+{% unless page.no-books %}
 <div class="books">
 {% assign category = site.data.books_by_technology[page.title] %}
 {% if category != null %}
@@ -24,3 +25,46 @@
   {%- endif -%}
 {%- endfor -%}
 </div>
+
+{% case page.title %}
+{% when "JavaScript" %}
+{% assign category = "webmasterstwo" %}
+{% assign subcategory = page.title %}
+{% when "PHP" %}
+{% assign category = "webmasterstwo" %}
+{% assign subcategory = page.title %}
+{% when "Angular" %}
+{% assign category = "webmasterstwo" %}
+{% assign subcategory = "angularjs" %}
+{% when "WordPress" %}
+{% assign category = "webmasterstwo" %}
+{% assign subcategory = page.title %}
+{% when "Swift" %}
+{% assign category = "programowanie" %}
+{% assign subcategory = "objective-c-swift" %}
+{% when "Unreal Engine 4" %}
+{% assign category = "gry" %}
+{% assign subcategory = "unreal-engine" %}
+{% when "Unity" %}
+{% assign category = "gry" %}
+{% assign subcategory = "unity" %}
+{% when "Django" %}
+{% assign category = "" %}
+{% assign subcategory = "" %}
+{% when "Go" %}
+{% assign category = "programowanie" %}
+{% assign subcategory = "go-programowanie" %}
+{% when "C#" %}
+{% assign category = "programowanie" %}
+{% assign subcategory = "c-sharp" %}
+{% else %}
+{% assign category = "programowanie" %}
+{% assign subcategory = page.title %}
+{% endcase %}
+
+{% if category != "" %}
+<div>
+  <a class="other-books-link" href="https://helion.pl/page-new/9102Q/kategorie/{{category}}/{{subcategory | downcase }}/druk,ebook">Zobacz inne książki w kategorii {{ page.title }}</a>
+</div>
+{% endif %}
+{% endunless %}
