@@ -4,8 +4,8 @@ title-full: Unreal Engine 4 - opis, najlepsze kursy i polecane książki
 title:      Unreal Engine 4
 ---
 
-{: .official-page}
-[Przeczytaj o {{ page.title }} na oficjalnej stronie](https://www.unrealengine.com/what-is-unreal-engine-4)
+{: .official-page .darker-overlay }
+[Poczytaj o {{ page.title }} na oficjalnej stronie](https://www.unrealengine.com/what-is-unreal-engine-4)
 
 Unreal Engine 4 jest to silnik gry, wyprodukowany przez firmę Epic Games. Bazuje na języku [C++](/technologie/c++).
 

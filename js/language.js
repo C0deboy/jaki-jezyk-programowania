@@ -12,7 +12,7 @@ books.forEach((book) => {
   }
   const bookId = book.getAttribute('data-book-id');
   const bookLink = document.createElement('a');
-  bookLink.classList.add('book-link');
+  bookLink.classList.add('book-link', 'darker-overlay-on-hover');
   bookLink.target = '_blank';
   bookLink.href = `https://helion.pl/view/9102Q/${bookId}.htm`;
   wrap(book, bookLink);

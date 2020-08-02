@@ -11,27 +11,24 @@ title-full: "Polecane książki do nauki programowania"
 ### Książki, które może przeczytać każdy, bez względu na używaną technologię:
 
 <div class="row recommended-books-list">
-<div class="book-categories col-lg-7 col-sm-12">
+    <div class="book-categories col-lg-7 col-sm-12">
 
 {% markdown %}
 [Cała lista](/ksiazki/ksiazki-ktore-moze-przeczytac-kazdy-bez-wzgledu-na-technologie) lub według kategorii:
 {% endmarkdown %}
 
-<p class="list-header">Must read:</p>
+        <p class="list-header">Must read:</p>
 
 {% markdown %}
-
 - [Git](/ksiazki/ksiazka-system-kontroli-wersji-git)
 - [Czysty kod i agile](/ksiazki/najlepsze-ksiazki-o-czystym-kodzie-i-agile)
 - [Refaktoryzacja](/ksiazki/najlepsze-ksiazki-o-refaktoryzacji)
 - [Wzorce projektowe](/ksiazki/najlepsze-ksiazki-o-wzorcach-projektowych)
-
 {% endmarkdown %}
 
-<p class="list-header">Inne:</p>
+        <p class="list-header">Inne:</p>
 
 {% markdown %}
-
 - [Dla najmłodszych](/ksiazki/najlepsze-ksiazki-do-rozpoczecia-nauki-programowania-dla-dziecka)
 - [Język angielski](/ksiazki/ksiazka-jezyk-angielski-dla-programistow)
 - [Algorytmy](/ksiazki/najlepsze-ksiazki-o-algorytmach)
@@ -40,17 +37,16 @@ title-full: "Polecane książki do nauki programowania"
 - [Domain-driven design](/ksiazki/najlepsze-ksiazki-o-domain-driven-design)
 - [Start-upy](/ksiazki/najlepsze-ksiazki-o-start-upach)
 - [Produktywność i samodyscyplina](/ksiazki/najlepsze-ksiazki-o-produktywnosci-i-samodyscyplinie)
-
 {% endmarkdown %}
 
-</div>
+    </div>
 
-<div class="col-lg-5 col-sm-12">
-<div class="book book-of-a-day">
-    <p>Promocja dnia</p>
-    <script src="https://helion.pl/plugins/new/promocja-sm.phi?nr=9102Q&size=125&utf8=1"></script>
-</div>
-</div>
+    <div class="col-lg-5 col-sm-12">
+        <div class="book book-of-a-day darker-overlay">
+            <p>Promocja dnia</p>
+            <script src="https://helion.pl/plugins/new/promocja-sm.phi?nr=9102Q&size=125&utf8=1"></script>
+        </div>
+    </div>
 
 </div>
 
@@ -178,9 +174,7 @@ title-full: "Polecane książki do nauki programowania"
 # Top 20 najlepiej sprzedających się książek
 
 <div class="top-books">
-<script
-src="https://helion.pl/plugins/new/top.phi?ile=20i&nr=9102Q&utf8=1">
-</script>
+    <script src="https://helion.pl/plugins/new/top.phi?ile=20i&nr=9102Q&utf8=1"></script>
 </div>
 
 <script src="/dist/technologies-list.js"></script>

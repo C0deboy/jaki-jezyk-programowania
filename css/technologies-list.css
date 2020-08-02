@@ -32,11 +32,11 @@
   position: relative;
   top: 0;
   margin: 0;
-  box-shadow: 0 1px 6px 0px black;
+  box-shadow: 0 1px 2px 0px black;
 }
 
 .lang img:hover {
-  box-shadow: 0 1px 8px 0px black!important;
+  box-shadow: 0 1px 4px 0px black!important;
 }
 
 .languages-list {
@@ -82,7 +82,7 @@
 
 .lang-label {
   background: #033951;;
-  box-shadow: 0 0 4px 0 black;
+  box-shadow: 0 0 2px 0 black;
 }
 
 .lang .sub.lang-link {
@@ -109,7 +109,7 @@
 
 .lang .sub.lang-link img {
   height: 35px;
-  box-shadow: 0 1px 4px 0px black;
+  box-shadow: 0 1px 2px 0px black;
   margin: 0;
 }
 

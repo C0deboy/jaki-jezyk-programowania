@@ -5,8 +5,8 @@ title:      Ruby on Rails
 no-books:    true
 ---
 
-{: .official-page}
-[Przeczytaj o {{ page.title }} na oficjalnej stronie](https://rubyonrails.org/)
+{: .official-page .darker-overlay }
+[Poczytaj o {{ page.title }} na oficjalnej stronie](https://rubyonrails.org/)
 
 **Ruby on Rails** to w pełni wyposażony framework do tworzenia aplikacji internetowych w języku [Ruby](/technologie/ruby) opartych o model MVC (Model-View-Controller). Znacznie uprzyjemnia, ułatwia i przyspiesza proces tworzenia aplikacji i daje Ci niemal wszystko, czego potrzebujesz.
 

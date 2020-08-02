@@ -3,8 +3,8 @@ layout:     simpleTechnology
 title:      Spring
 ---
 
-{: .official-page}
-[Przeczytaj o {{ page.title }} na oficjalnej stronie](https://spring.io/)
+{: .official-page .darker-overlay }
+[Poczytaj o {{ page.title }} na oficjalnej stronie](https://spring.io/)
 
 **Spring** to obecnie najpopularniejszym framwork do tworzenia aplikacji w języku [Java](/technologie/java). Ułatwia proces tworzenia aplikacji i dostarcza niemal wszystkiego czego potrzebujesz. Złożony jest z wielu [projektów/modułów](https://spring.io/projects).
 

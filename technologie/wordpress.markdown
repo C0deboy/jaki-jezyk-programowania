@@ -4,8 +4,8 @@ title-full: WordPress - opis, najlepsze kursy i polecane książki
 title:      WordPress
 ---
 
-{: .official-page}
-[Przeczytaj o {{ page.title }} na oficjalnej stronie](https://wordpress.org/)
+{: .official-page .darker-overlay }
+[Poczytaj o {{ page.title }} na oficjalnej stronie](https://wordpress.org/)
 
 
 WordPress to open-sourcowy system zarządzania treścią (CMS), który bazuje na [PHP](/technologie/php) i MySQL. Z założenia jest platformą blogową, lecz mimo to, coraz częściej jest używany jako CMS do stawiania zwykłych stron, stron firmowych, czy nawet całych serwisów internetowych. Główną jego zaletą jest prostota i intuicyjność, nawet nowi użytkownicy internetu, którzy dopiero raczkują w tym temacie, szybko opanują podstawy jego obsługi.

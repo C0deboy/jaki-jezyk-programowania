@@ -57,7 +57,7 @@ function addCourse(course, lang) {
   const strikethrough = discount !== '' ? 'discount' : '';
 
   courses.append(`
-          <a class="course" href="${link}" target="_blank">
+          <a class="course darker-overlay-on-hover" href="${link}" target="_blank">
             <img class="course-lang" src='/img/${lang}.png' alt="course language"/>
             <img src="${course.image_240x135}" alt="course cover"/>
             <div class="course-header">

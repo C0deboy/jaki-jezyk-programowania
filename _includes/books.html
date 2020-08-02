@@ -73,7 +73,9 @@
 
 {% if category != "" %}
 <div>
-  <a class="other-books-link" href="https://helion.pl/page-new/9102Q/kategorie/{{category}}/{{subcategory | downcase }}/druk,ebook">Zobacz inne książki w kategorii {{ page.title }}</a>
+  <a class="other-books-link darker-overlay" href="https://helion.pl/page-new/9102Q/kategorie/{{category}}/{{subcategory | downcase }}/druk,ebook">
+    <img src="/img/other/books.png"/>Zobacz inne książki w kategorii {{ page.title }}
+  </a>
 </div>
 {% endif %}
 {% endunless %}

@@ -4,8 +4,8 @@ title-full: Angular - opis, najlepsze kursy i polecane książki
 title:      Angular
 ---
 
-{: .official-page}
-[Przeczytaj o {{ page.title }} na oficjalnej stronie](https://angular.io/docs)
+{: .official-page .darker-overlay }
+[Poczytaj o {{ page.title }} na oficjalnej stronie](https://angular.io/docs)
 
 **Angular** to framework [JavaScript](/technologie/javascript) stworzony przez Google. Służy on do szybkiego i łatwego budowania aplikacji internetowych. Idealny do tworzenia tak zwanych – [Single Page Applications](https://en.wikipedia.org/wiki/Single-page_application).
 

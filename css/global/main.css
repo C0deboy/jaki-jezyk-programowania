@@ -40,14 +40,14 @@ h4 {
   opacity: 0.6;
   color: white!important;
   font-size: .8em;
-  text-shadow: 0 0 10px black;
+  text-shadow: 0 0 4px black;
 }
 
 .header-heading,
 .section-heading,
 .language-content h1,
 .language-content h2 {
-  text-shadow: 0 2px 8px black;
+  text-shadow: 0 2px 4px black;
 }
 
 .faq h1::after,
@@ -112,19 +112,17 @@ h4 {
 /* Footer Section */
 
 .site-footer, footer {
-  background: #eeeeee;
-  box-shadow: 0 0 5px 0 black;
-  padding: 10px 0;
+  background: #f8f8f8;
+  box-shadow: 0 0 2px 0 black;
+  padding: 5px 0;
   color: black;
   text-align: center;
 }
 
 .site-footer .copyright, footer p {
-  font-size: 1em;
+  font-size: 0.8em;
   margin: 0;
 }
-
-/* */
 
 .visually-hidden {
   position: absolute !important;
@@ -146,7 +144,7 @@ h4 {
   text-align: center;
   border: 0;
   padding: 3px 10px 0;
-  box-shadow: 0 1px 4px 0 black;
+  box-shadow: 0 1px 2px 0 black;
   cursor: pointer;
 }
 
@@ -168,7 +166,7 @@ h4 {
   transform: translateY(-1px);
   color: #ffffff;
   background: rgb(50, 50, 50);
-  box-shadow: 0 2px 6px 0 black;
+  box-shadow: 0 2px 4px 0 black;
 }
 .main-btn.on-white:hover,
 .main-btn.on-white:focus {
@@ -191,4 +189,14 @@ h4 {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+.darker-overlay {
+  box-shadow: 0 0 2px 0 #000;
+  background: #00353e;
+}
+
+.darker-overlay-on-hover:hover {
+  box-shadow: 0 0 2px 0 #000;
+  background: #00353e;
 }

@@ -2,8 +2,7 @@
 
 html, body {
   color: white;
-  background: -webkit-linear-gradient(#f8f8f8, #d6d6d6);
-  background: linear-gradient(#f8f8f8, #d6d6d6) no-repeat fixed;
+  background: #f8f8f8;
 }
 
 @media (max-width: 768px) {
@@ -27,7 +26,7 @@ section {
 .language-content {
   width: 100%;
   background-color: #003e48;
-  box-shadow: 0 2px 4px 0 black;
+  box-shadow: 0 2px 2px 0 black;
   padding: 60px 5% 40px;
 }
 
@@ -63,7 +62,7 @@ section {
 
 .language-content .language-logo {
   background: #00353e;
-  box-shadow: 2px 3px 8px 0 black;
+  box-shadow: 1px 2px 4px 0 #000;
   border-radius: 50%;
   width: 250px;
   margin: 10px auto;
@@ -112,7 +111,6 @@ section {
 
 .language-content table td {
   text-align: left;
-  background: #00353e;
   box-shadow: 0 0 1px 0 #000000ab;
   padding: 0 10px;
 }
@@ -131,7 +129,7 @@ section {
 
 .up-to-date {
   clear: both;
-  box-shadow: 0 1px 4px 0 #000;
+  box-shadow: 0 1px 2px 0 #000;
   color: #3b3b3b;
   background: -webkit-linear-gradient(#f8f8f8,#bbb);
   border-radius: 3px;
@@ -207,7 +205,7 @@ section {
   margin: 10px auto 10px auto;
   text-align: center;
   border: 0;
-  box-shadow: 0 2px 4px 0 black;
+  box-shadow: 0 1px 2px 0 black;
 }
 
 .helion-ksiazkasm3,
@@ -216,8 +214,6 @@ section {
 }
 
 .book:hover {
-  background: rgba(1,46,53,.55);
-  box-shadow: 0 0 4px 0 rgba(0,0,0,.75);
   color: #fff;
 }
 
@@ -247,12 +243,16 @@ section {
 }
 
 .other-books-link {
-  padding: 12px 20px;
+  padding: 8px 20px;
   margin-top: 20px;
   display: inline-block;
-  box-shadow: 0 0 4px 0 #000;
-  background: #00353e;
 }
+
+.other-books-link img {
+  max-height: 40px;
+  margin-right: 10px;
+}
+
 
 .language-content hr {
   border: 1px solid rgba(255, 255, 255, 0.17);
@@ -263,17 +263,10 @@ section {
   padding: 10px 20px 10px 10px;
   border-radius: 2px;
   margin-top: 20px;
-  background: rgba(1,46,53,.55);
-  box-shadow: 0 1px 4px 0 rgb(0, 0, 0);
 }
 
 .official-page a {
   text-decoration: none;
-}
-
-.official-page:hover {
-  background: rgba(9, 27, 34, 0.69);
-  cursor: pointer;
 }
 
 .recommended-books-list {
@@ -304,10 +297,6 @@ section {
 
 .book-of-a-day {
   display: inline-block;
-  background: #00353e;
-  -webkit-box-shadow: 10px 10px 33px -15px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 33px -15px rgba(0, 0, 0, 0.75);
-  box-shadow: 0 1px 4px 0 black;
   margin-top: 20px;
   max-width: 90vw;
 }
@@ -321,7 +310,7 @@ section {
   position: absolute;
   color: #f94546;
   font-size: 1.4em;
-  text-shadow: 0 2px 8px black;
+  text-shadow: 0 2px 4px black;
   margin: -10px 0 0 -25px;
   background: #222222;
   border-radius: 5px;
@@ -329,7 +318,7 @@ section {
   text-align: center;
   border: 0;
   padding: 0px 5px;
-  box-shadow: 0 1px 4px 0 black;
+  box-shadow: 0 1px 2px 0 black;
 }
 
 .promotion {
@@ -339,16 +328,21 @@ section {
   vertical-align: top;
 }
 
-.promotion .fa-percent {
-  color: #f94646;
-}
-
 .promotion-content {
-  background: #00353e;
   padding: 10px;
   text-align: center;
-  box-shadow: 0 0 4px 0 black;
   margin-bottom: 5px;
+}
+
+.promotion-content .icon {
+  max-height: 30px;
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: bottom;
+}
+
+.promotion-content .icon:nth-of-type(2) {
+  transform: scaleX(-1);
 }
 
 .promotion-header {
@@ -401,4 +395,19 @@ section {
 .in-progress {
   background: linear-gradient(#f94646,#8f0808);
   box-shadow: 0 1px 4px 0 #212121;
+}
+
+.see-stats-btn {
+  padding: 8px 20px;
+  margin-top: 15px;
+  display: inline-block;
+  max-width: 450px;
+  color: white;
+}
+
+.language-content .see-stats-btn img {
+  max-height: 50px;
+  margin-right: 10px;
+  display: inline;
+  float: left;
 }

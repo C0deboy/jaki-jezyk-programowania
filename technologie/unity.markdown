@@ -4,8 +4,8 @@ title-full: Unity - opis, najlepsze kursy i polecane książki
 title:      Unity
 ---
 
-{: .official-page}
-[Przeczytaj o {{ page.title }} na oficjalnej stronie](https://unity3d.com/)
+{: .official-page .darker-overlay }
+[Poczytaj o {{ page.title }} na oficjalnej stronie](https://unity3d.com/)
 
 Unity – wieloplatformowy silnik gier do tworzenia gier komputerowych 2D i 3D lub innych materiałów interaktywnych, takich jak wizualizacje czy animacje.
 

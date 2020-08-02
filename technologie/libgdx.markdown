@@ -5,8 +5,8 @@ title:      LibGDX
 no-books:    true
 ---
 
-{: .official-page}
-[Przeczytaj o {{ page.title }} na oficjalnej stronie](https://libgdx.badlogicgames.com/)
+{: .official-page .darker-overlay }
+[Poczytaj o {{ page.title }} na oficjalnej stronie](https://libgdx.badlogicgames.com/)
 
 LibGDX – wieloplatformowy framework do tworzenia gier i wizualizacji w języku [Java](/technologie/java). Napisany został w Javie oraz C, C++ w miejscach, gdzie liczy się wydajność.
 

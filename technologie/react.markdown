@@ -5,8 +5,8 @@ title:      React
 no-books:    true
 ---
 
-{: .official-page}
-[Przeczytaj o {{ page.title }} na oficjalnej stronie](https://facebook.github.io/react/)
+{: .official-page .darker-overlay }
+[Poczytaj o {{ page.title }} na oficjalnej stronie](https://facebook.github.io/react/)
 
 **React** jest biblioteką dla [JavaScript](/technologie/javascript), która wykorzystywana jest do tworzenia interfejsów graficznych aplikacji internetowych. Za React odpowiedzialny jest m.in Facebook i Instagram.
 

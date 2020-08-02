@@ -6,8 +6,8 @@ image:      jekyll-light.png
 no-books:    true
 ---
 
-{: .official-page}
-[Przeczytaj o {{ page.title }} na oficjalnej stronie](https://jekyllrb.com/)
+{: .official-page .darker-overlay }
+[Poczytaj o {{ page.title }} na oficjalnej stronie](https://jekyllrb.com/)
 
 Aby efektywnie używać Jeykll i dowolnie modyfikować swojego bloga warto znać [HTML i CSS](/technologie/html&css)
 

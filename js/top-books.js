@@ -15,7 +15,7 @@ function addImagesForTopList() {
       position.innerText = '#' + positionNum++;
       position.classList.add('position');
       img.src = `https://static01.helion.com.pl/global/okladki/181x236/${bookId}.jpg`;
-      book.classList.add('book');
+      book.classList.add('book', 'darker-overlay-on-hover');
       link.href = a.href;
       book.appendChild(position);
       link.appendChild(img);

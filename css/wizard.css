@@ -163,14 +163,12 @@
   color: #1e1e1e;
   cursor: pointer;
   padding: 5px 10px 5px 10px;
-  -webkit-box-shadow: 0 1px 4px 0 black;
-  -moz-box-shadow: 0 1px 4px 0 black;
-  box-shadow: 0 1px 4px 0 black;
+  box-shadow: 0 1px 2px 0 black;
 }
 
 .answer-p-hover {
   transform: translateY(-1px);
-  box-shadow: 0 2px 8px 0 black!important;
+  box-shadow: 0 1px 4px 0 black!important;
 }
 
 .fadeOut {

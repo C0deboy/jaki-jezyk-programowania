@@ -5,8 +5,8 @@ title:      Phaser
 no-books:    true
 ---
 
-{: .official-page}
-[Przeczytaj o {{ page.title }} na oficjalnej stronie](https://phaser.io/)
+{: .official-page .darker-overlay }
+[Poczytaj o {{ page.title }} na oficjalnej stronie](https://phaser.io/)
 
 Phaser jest framworkiem [Javascript](/technologie/javascript) do tworzenia gier w HTML5. Używa biblioteki Pixi.js do renderowania w WebGL lub Canvas.
 
