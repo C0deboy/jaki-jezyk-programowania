@@ -167,7 +167,7 @@ title-full: "Polecane kursy video do nauki programowania"
 <hr>
 
 <div class="row">
-  <div role="listitem" class="col-md-12 lang other-/technologies/#najlepsze-kursy-video-do-nauki-other-/technologies">
+  <div role="listitem" class="col-md-12 h-auto lang other-/technologies/#najlepsze-kursy-video-do-nauki-other-/technologies">
     <a href="/technologie/sql/#najlepsze-kursy-video-do-nauki-sql" class="other lang-link">
       <img class="tip" src="/img/sql.png" alt="Logo SQL" data-tip="SQL">
     </a>
@@ -179,6 +179,13 @@ title-full: "Polecane kursy video do nauki programowania"
     </a>
   </div>
 </div>
+
+<div>
+    <a class="mt-5 other-books-link darker-overlay" href="https://click.linksynergy.com/fs-bin/click?id=0Bz3A2CPbI4&offerid=358574.1389&subid=0&type=4">
+      <img src="/img/other/video-courses.png"/>Zobacz inne kursy video na Udemy
+    </a>
 </div>
 
-<script src="//dist//technologies/#najlepsze-kursy-video-do-nauki-/technologies-list.js"></script>
+</div>
+
+<script src="/dist/technologies/#najlepsze-kursy-video-do-nauki-/technologies-list.js"></script>

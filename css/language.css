@@ -322,14 +322,14 @@ section {
 }
 
 .promotion {
-  margin: 15px 28px 25px 28px;
+  margin: 15px 3px 25px;
   display: inline-block;
   max-width: 425px;
   vertical-align: top;
 }
 
 .promotion-content {
-  padding: 10px;
+  padding: 10px 5px;
   text-align: center;
   margin-bottom: 5px;
 }
@@ -339,6 +339,10 @@ section {
   display: inline-block;
   margin: 0 5px;
   vertical-align: bottom;
+}
+
+.promotion-content span {
+  vertical-align: middle;
 }
 
 .promotion-content .icon:nth-of-type(2) {

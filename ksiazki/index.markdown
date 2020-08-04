@@ -177,5 +177,11 @@ title-full: "Polecane książki do nauki programowania"
     <script src="https://helion.pl/plugins/new/top.phi?ile=20i&nr=9102Q&utf8=1"></script>
 </div>
 
+<div>
+  <a class="mt-4 other-books-link darker-overlay" href="https://helion.pl/view/9102Q">
+    <img src="/img/other/books.png"/>Zobacz inne książki w Helion
+  </a>
+</div>
+
 <script src="/dist/technologies-list.js"></script>
 <script src="/dist/top-books.js"></script>

@@ -31,11 +31,21 @@
 
 .close-survey-btn{
   position: absolute;
-  top: 0;
-  right: 23px;
+  top: -5px;
+  right: 20px;
   z-index: 999;
   background: none;
   border: 0;
   color: #232625;
   font-size: 30px;
+}
+
+@media (max-width: 1300px) {
+  .close-survey-btn{
+    top: -20px;
+    right: -20px;
+    background: white;
+    border-radius: 50%;
+    padding: 0 10px;
+  }
 }

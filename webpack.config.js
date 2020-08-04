@@ -17,9 +17,6 @@ module.exports = {
     'language': './js/language.js',
     'statistics': './js/statistics/statistics.js',
   },
-  externals: {
-    moment: 'moment',
-  },
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].js',

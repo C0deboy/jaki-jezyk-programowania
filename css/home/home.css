@@ -65,7 +65,7 @@ header .text-muted a {
   margin-top: -1px;
 }
 
-.btn.btn-danger {
+.btn.start {
   min-width: 35%;
   font-size: 2.1em;
   background: -webkit-linear-gradient(to bottom,#de3e3e,#981313);
@@ -73,17 +73,23 @@ header .text-muted a {
   border-radius: 5px;
   box-shadow: 0 2px 4px 0 #111111;
   margin: 15px auto 40px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
-.btn.btn-danger.start:hover,
-.btn.btn-danger.start:focus{
+.btn.start:hover,
+.btn.start:focus{
   transform: translateY(-1px);
   box-shadow: 0 2px 8px 0 #141414;
 }
 
-.btn.btn-danger.start:active {
+.btn.start:active {
   transform: translateY(+1px);
   box-shadow: 0 2px 6px 0 black;
+}
+
+.btn.start .fa-play {
+  margin-right: 15px;
 }
 
 .program-languages .section-heading,
@@ -93,7 +99,8 @@ header .text-muted a {
 }
 
 .about-project {
-  min-height: 100vh;
+  min-height: 80vh;
+  margin-top: 15px;
   padding: 0 0 20px 0;
 }
 
