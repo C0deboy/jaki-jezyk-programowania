@@ -61,7 +61,7 @@ function addCourse(course, lang) {
 
   courses.append(`
           <a class="course darker-overlay-on-hover" href="${link}" target="_blank">
-            <img class="course-lang" src='/img/${lang}.png' alt="course language"/>
+            <img class="course-lang" src='/img/other/${lang}.png' alt="course language"/>
             <img src="${course.image_240x135}" alt="course cover"/>
             <div class="course-header">
               <p class="course-title">${course.title}</p>

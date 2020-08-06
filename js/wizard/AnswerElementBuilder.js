@@ -14,9 +14,9 @@ class AnswerElementBuilder {
     this.answerElement.next = nextAnswerReference;
   }
 
-  appendImage(imgName) {
+  appendImage(imgPath) {
     const img = document.createElement('img');
-    img.setAttribute('src', '/img/' + escaped(imgName));
+    img.setAttribute('src', '/img/' + escaped(imgPath));
     img.setAttribute('alt', '');
     this.answerElement.appendChild(img);
   }

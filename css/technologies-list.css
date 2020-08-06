@@ -22,6 +22,7 @@
 .lang {
   padding: 0;
   height: 200px;
+  transition: margin-bottom 0.4s;
 }
 
 .lang img {

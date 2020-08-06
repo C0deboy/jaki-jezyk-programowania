@@ -3,6 +3,7 @@ Angular:
   books:
     - ang2ty
     - angupk
+    - angup2
 
 C++:
   books:
@@ -50,6 +51,12 @@ HTML i CSS:
       - bootpp
     - Sass:
       - sasspp
+      -
+Bootstrap:
+  books:
+  - boot24
+  - bootst
+  - bootpp
 
 Java:
   books:
@@ -174,3 +181,18 @@ Kotlin:
   books:
     - prokot
     - kotakc
+
+Vue:
+  books:
+    - vueakc
+    - vue2wp
+    - vuejs2
+
+React:
+  books:
+    - reac16
+
+TypeScript:
+  books:
+    - tspopr
+    - jeztyp

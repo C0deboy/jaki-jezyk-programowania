@@ -13,9 +13,9 @@ Przy tworzeniu stron internetowych, oprócz samego języka Javascript, niezbędn
 
 **JavaScript** to dynamicznie typowany język wysokiego poziomu. Najczęściej jest używany przy tworzeniu stron WWW, zapewniając interaktywność stron oraz obsługę zdarzeń, walidacji formularzy czy budowanie elementów nawigacyjnych. Takie wykorzystanie języka JavaScript ułatwia zastosowanie biblioteki, takiej jak [jQuery](https://jquery.com/). Warto przy tym zauważyć, że używanie biblioteki nie powinno zastępować sensownej znajomości samego języka.
 
-W większych projektach warto korzystać z zalety statycznego typowania i przyjemniejszego programowania obiektowego w [TypeScript](https://www.typescriptlang.org/), który jest swojego rodzaju nakładką na JavaScript. Ponadto w takich przypadkach warto też skorzystać z frameworków do budowania aplikacji jak np. [Angular](/technologie), które znacznie ułatwiają pracę.
+W większych projektach warto korzystać z zalety statycznego typowania i przyjemniejszego programowania obiektowego w [TypeScript](/technologie/typescript), który jest swojego rodzaju nakładką na JavaScript. Ponadto, w takich przypadkach, warto też skorzystać z frameworków do budowania aplikacji jak np. [Angular](/technologie/angular), [React](/technologie/react) czy [Vue](/technologie/vue), które znacznie ułatwiają pracę.
 
-Javascript może też być wykorzystywany do tworzenia gier przeglądarkowych, a jednym z popularnych frameworków do tych celów jest [Phaser](/technolgoie/phaser).
+Javascript może też być wykorzystywany do tworzenia gier przeglądarkach, a jednym z popularnych frameworków do tych celów jest [Phaser](/technolgoie/phaser).
 
 Dzięki platformom, takim jak [Electron.js](https://electron.atom.io/) czy [nw.js](https://nwjs.io/), możliwe jest tworzenie pełnoprawnych, wieloplatformowych aplikacji/gier przy użyciu wyłącznie technologii sieciowych (HTML, CSS, JS...) dzięki połączeniu platformy Node.js oraz silnika [przeglądarki Chromium](https://www.chromium.org/).
 

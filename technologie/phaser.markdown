@@ -12,7 +12,7 @@ Phaser jest framworkiem [Javascript](/technologie/javascript) do tworzenia gier 
 
 Phaser wspiera przeglądarki zarówno desktopowe jak i mobilne. Dzięki zewnętrznym narzędziom (np. [Electron.js](https://electron.atom.io/) czy [nw.js](https://nwjs.io/)) możemy nawet skompilować nasze gry na iOS, Android, Windows, Linux i Mac - czyli praktycznie na wszystko.
 
-Phaser wspiera również TypeScript.
+Phaser wspiera również [TypeScript](/technologie/typescript).
 
 Zobacz [przykłady](https://phaser.io/examples) na stronie Phasera, żeby zobaczyć co potrafi.
 

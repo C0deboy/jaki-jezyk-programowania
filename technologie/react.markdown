@@ -2,7 +2,7 @@
 layout:     simpleTechnology
 title-full: React - opis, najlepsze polecane kursy video
 title:      React
-no-books:    true
+no-books:    false
 ---
 
 {: .official-page .darker-overlay }
@@ -24,3 +24,5 @@ React odpowiedzialny jest tylko za interfejsy aplikacji. Czyli w modelu MVC (Mod
 - Walmart
 
 {% include courses.html %}
+
+{% include books.html %}

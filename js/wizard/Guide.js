@@ -33,7 +33,7 @@ class Guide {
         } else if (element === '->') {
           answers.addMessage('Później:<br><i class="then fa fa-long-arrow-down fa-4x" aria-hidden="true"></i>');
         } else {
-          answers.add(element, element + '.png', null);
+          answers.add(element, 'technologies/' + element + '.png', null);
         }
       });
 

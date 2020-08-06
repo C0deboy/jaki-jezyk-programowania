@@ -16,7 +16,7 @@ class NextQuestion {
     question.set(wizardData[this.key].question);
 
     wizardData[this.key].answers.forEach((ans) => {
-      answers.add(ans.text, ans.img, ans.next);
+      answers.add(ans.text, ans.imgPath, ans.next);
     });
   }
 }

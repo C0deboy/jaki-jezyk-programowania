@@ -23,10 +23,10 @@ class Answers {
     this.container = guideContainer;
   }
 
-  add(answer, imgName, nextQuestionReference) {
+  add(answer, imgPath, nextQuestionReference) {
     const answerBuilder = new AnswerElementBuilder();
 
-    answerBuilder.appendImage(imgName);
+    answerBuilder.appendImage(imgPath);
 
     if (nextQuestionReference !== null) {
       answerBuilder.appendShade();

@@ -1,13 +1,16 @@
 import imagePaths from '../../img/imagesNames';
 
+const cachedImages = [];
+
 class ImageLoader {
   static load(LoadingCompleteHandler) {
-    window.addEventListener('load', LoadingCompleteHandler);
-    imagePaths.forEach((imageName) => {
-      const preload = new Image();
-      preload.src = '/img/' + imageName;
-    });
     document.addEventListener('DOMContentLoaded', loadingImages);
+    window.addEventListener('load', LoadingCompleteHandler);
+    imagePaths.forEach((imagePath) => {
+      const preloadedImage = new Image();
+      preloadedImage.src = '/img/' + imagePath;
+      cachedImages.push(preloadedImage);
+    });
   }
 }
 
