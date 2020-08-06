@@ -6,49 +6,55 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class GenerateImageNamesJS {
-    private File folder;
+    private static final File currentFolder = new File("./");
+    private static final List<File> imageFolders = List.of(
+        new File("technologies"),
+        new File("wizard")
+    );
 
     public static void main(String[] args) throws FileNotFoundException {
-        File cssFolder = new File("./");
         String jsFileName = "imagesNames";
 
-        GenerateImageNamesJS assets = new GenerateImageNamesJS(cssFolder);
-        System.out.println("Working dir: " + cssFolder.getAbsolutePath());
-        assets.generateJsArrayWithFileNames(jsFileName);
-        System.out.println("Success!\nFile: " + jsFileName + ".js");
+        System.out.println("Working dir: " + currentFolder.getAbsolutePath());
+        generateJsArrayWithFileNames(jsFileName);
+        System.out.println("Generated file: " + jsFileName + ".js");
     }
 
-    public GenerateImageNamesJS(File folder) {
-        this.folder = folder;
+    public static void generateJsArrayWithFileNames(String fileName) throws FileNotFoundException {
+        System.setProperty("line.separator", "\n");
+        PrintWriter jsFile = new PrintWriter(currentFolder.getPath() + "\\" + fileName + ".js");
+        List<String> imageNames = readImageNames();
+
+        jsFile.println("const " + fileName + " = [");
+        for (String path : imageNames) {
+            jsFile.println("  '" + path + "',");
+        }
+        jsFile.println("];");
+        jsFile.println("export default " + fileName + ";");
+
+        jsFile.close();
     }
 
-    public List<String> readFileNames() {
-        List<String> fileNames = new ArrayList<>();
+    public static List<String> readImageNames() {
+        List<String> imageNames = new ArrayList<>();
 
-        for (File file : Objects.requireNonNull(folder.listFiles())) {
-            String filename = file.getName();
+        List<File> files = imageFolders.stream()
+            .flatMap(folder -> Stream.of(Objects.requireNonNull(folder.listFiles())))
+            .collect(Collectors.toList());
 
-            if (file.isFile() && filename.endsWith(".png")) {
-                fileNames.add(filename);
+        for (File file : files) {
+
+            String filePath = file.getParent() + "/" + file.getName();
+
+            if (file.isFile() && filePath.endsWith(".png")) {
+                imageNames.add(filePath);
             }
         }
 
-        return fileNames;
-    }
-
-    public void generateJsArrayWithFileNames(String fileName) throws FileNotFoundException {
-        PrintWriter jsFile = new PrintWriter(this.folder.getPath() + "\\" + fileName + ".js");
-        List<String> filePaths = readFileNames();
-
-        jsFile.println("const " + fileName + " = [");
-        for (String path : filePaths) {
-            jsFile.println("  '" + path + "', ");
-        }
-        jsFile.println("];");
-        jsFile.println("export default " + fileName);
-
-        jsFile.close();
+        return imageNames;
     }
 }
