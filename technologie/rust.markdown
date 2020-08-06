@@ -3,7 +3,7 @@ layout:     technology
 title-full: Rust - zastosowanie, przyszłość, najlepsze, polecane kursy
 title:      Rust
 image:      rust.png
-no-books:   true
+no-books:   false
 ---
 
 {% assign stats = site.data.statistics.statistics.Rust %}

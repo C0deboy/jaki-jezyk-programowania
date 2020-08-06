@@ -3,7 +3,7 @@ layout:     technology
 title-full: Kotlin - zastosowanie, przyszłość, najlepsze, polecane kursy
 title:      Kotlin
 image:      kotlin.png
-no-books:    true
+no-books:    false
 ---
 
 {% assign stats = site.data.statistics.statistics.Kotlin %}

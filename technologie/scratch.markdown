@@ -3,7 +3,7 @@ layout:     simpleTechnology
 title-full: Programowanie dla dzieci - jaki język programowania
 title:      Scratch
 image:      scratch.png
-no-courses:  true
+no-courses:  false
 ---
 
 # Co to jest Scratch?
@@ -27,3 +27,5 @@ Ciekawostką jest, że Scratch jest na 20 pozycji rankingu popularności TIOBE i
 Jeśli uważasz, że twoje dziecko może już zacząć zabawę z pełnoprawnymi językami programowania, to możesz mu zaproponować [Python](/technologie/python) lub [Javascript](/technologie/javascript).
 
 {% include books.html %}
+
+{% include courses.html %}

@@ -43,6 +43,10 @@
   padding-top: 25px;
 }
 
+.languages-list hr {
+  margin-top: 0;
+}
+
 .container-lang {
   margin-left: 0;
   margin-right: 0;

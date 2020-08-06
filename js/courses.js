@@ -2,20 +2,23 @@ import '../node_modules/waypoints/lib/noframework.waypoints.min';
 
 require('../css/courses.css');
 
+const courses = $('.courses');
+const q = encodeURIComponent(courses.attr('data-query'));
+
+const excludeEnglishFor = ['Scratch'];
+
 new Waypoint({
   element: document.querySelector('.courses'),
   handler() {
-    if (!window.location.href.includes('127.0.0.1')) {
-      collect('pl');
+    collect('pl');
+    if (!excludeEnglishFor.includes(q)) {
       collect('en');
     }
     this.destroy();
   },
-  offset: '100%',
+  offset: '130%',
 });
 
-const courses = $('.courses');
-const q = encodeURIComponent(courses.attr('data-query'));
 const t = 'ZUt4dk1EZG1wOEt6Y3g5OTJzVkNwQTFjM2NneTJPeDBlZklybnZYSDphaVozeUJBMlpIaXMyanNBMXp6MEFFTEo5OUhmOHh4T1lpZWtCSmtkYTZ3YUJrUlBxektEOGRZMXFIS01MRUdCZm1OcHZNcHh6c3pIUEc5SDdCMjg4UUJMb1JxTlhXOW55a1VlQVVORUJJYkRETkFhTnBRcDRxeHdNUmFPYmVSRg==';
 
 function collect(lang) {

@@ -164,3 +164,13 @@ Go:
 Spring:
   books:
     - sprwa5
+
+Rust:
+  books:
+    - prrust
+    - a_0f2e
+
+Kotlin:
+  books:
+    - prokot
+    - kotakc
