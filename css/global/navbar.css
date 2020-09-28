@@ -54,24 +54,6 @@
   color: rgba(0,0,0,.7);
 }
 
-@media (min-width: 2160px) {
-  html, body {
-    font-size: calc(30px + (50 - 35) * ((100vw - 2160px) / (4096 - 2160)));
-  }
-
-  .navbar-custom {
-    font-size: 0.8em;
-  }
-
-  .page-scroll {
-    padding: 20px !important;
-  }
-
-  .container {
-    width: 65vw;
-  }
-}
-
 .navbar-custom.is-fixed {
   /* when the user scrolls down, we hide the header right above the viewport */
   position: fixed;

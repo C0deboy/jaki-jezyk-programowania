@@ -1,6 +1,6 @@
 html, body {
   font-family: 'Lato', sans-serif;
-  font-size: calc(14px + 5 * ((100vw - 320px) / 1600));
+  font-size: calc(14px + 5*(100vw - 320px)/1600);
   width: 100%;
   min-height: 100%;
   color: #fff;
@@ -87,6 +87,12 @@ h4 {
   position: relative;
 }
 
+@media (min-width: 2160px) {
+  .header-heading {
+    margin-top: 3rem;
+  }
+}
+
 .header-text {
   font-weight: 600;
 }
@@ -117,11 +123,12 @@ h4 {
   padding: 5px 0;
   color: black;
   text-align: center;
+  height: 40px;
 }
 
 .site-footer .copyright, footer p {
-  font-size: 0.8em;
-  margin: 0;
+  font-size: 0.9em;
+  margin: 2px auto;
 }
 
 .visually-hidden {

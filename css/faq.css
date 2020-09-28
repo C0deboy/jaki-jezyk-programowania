@@ -1,5 +1,6 @@
 .faq {
   padding: 40px 0 3% 0;
+  min-height: calc(100vh - 40px);
 }
 
 .faq h1{

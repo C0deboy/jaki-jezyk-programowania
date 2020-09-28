@@ -47,8 +47,7 @@ header .text-muted a {
   .intro-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    min-height: 70vh;
+    justify-content: space-around;
   }
 
   .site-header .lets-go {
@@ -61,7 +60,7 @@ header .text-muted a {
 }
 
 .section {
-  min-height: 100vh;
+  padding: 2rem 0 2rem 0;
   margin-top: -1px;
 }
 
@@ -99,9 +98,7 @@ header .text-muted a {
 }
 
 .about-project {
-  min-height: 80vh;
   margin-top: 15px;
-  padding: 0 0 20px 0;
 }
 
 .team-member {
