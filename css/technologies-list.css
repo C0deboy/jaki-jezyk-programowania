@@ -39,8 +39,6 @@
 
 .languages-list {
   padding-top: 25px;
-  overflow-x: hidden;
-  overflow-y: visible;
 }
 
 .languages-list hr {
