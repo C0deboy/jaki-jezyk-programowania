@@ -2,6 +2,7 @@ import Chart from 'chart.js';
 import statistics2018 from './statistics2018-data';
 import statistics2019 from './statistics2019-data';
 import statistics2020 from './statistics2020-data';
+import statistics2021 from './statistics2021-data';
 
 require('../../css/statistics.css');
 
@@ -13,6 +14,7 @@ const yearToStats = {
   2018: statistics2018,
   2019: statistics2019,
   2020: statistics2020,
+  2021: statistics2021,
 };
 const statistics = yearToStats[year];
 

@@ -442,7 +442,7 @@ const top10GithubProjects = [
     label: 'JavaGuide (Java)',
   },
   {
-    data: [308088, 308433, 308959, 309625, 310431, 311472, 314572, 313115, 314572, 315292, 316701, null],
+    data: [308088, 308433, 308959, 309625, 310431, 311472, 314572, 313115, 314572, 315292, 316701, 317433],
     label: 'freeCodeCamp (JavaScript)',
   },
   {
@@ -899,15 +899,15 @@ langToProjects.Python = [
 
 langToProjects.JavaScript = [
   {
-    data: [308088, 308433, 308959, 309625, 310431, 311472, 314572, 313115, 314572, 315292, 316701, null],
+    data: [308088, 308433, 308959, 309625, 310431, 311472, 314572, 313115, 314572, 315292, 316701, 317433],
     label: 'freeCodeCamp',
   },
   {
-    data: [155561, 156388, 158441, 160869, 163192, 165490, 171835, 169117, 171835, 173389, 175167, null],
+    data: [155561, 156388, 158441, 160869, 163192, 165490, 171835, 169117, 171835, 173389, 175167, 176212],
     label: 'vue',
   },
   {
-    data: [141231, 143139, 144649, 146366, 147967, 150021, 155742, 153248, 155742, 156892, 158982, null],
+    data: [141231, 143139, 144649, 146366, 147967, 150021, 155742, 153248, 155742, 156892, 158982, 160421],
     label: 'react',
   },
   {
@@ -915,7 +915,7 @@ langToProjects.JavaScript = [
     label: 'bootstrap',
   },
   {
-    data: [91798, 92181, 93358, 94175, 94994, 96760, 99561, 98363, 99561, 100193, 101417, null],
+    data: [91798, 92181, 93358, 94175, 94994, 96760, 99561, 98363, 99561, 100193, 101417, 102113],
     label: 'javascript',
   },
   {
@@ -923,48 +923,24 @@ langToProjects.JavaScript = [
     label: 'd3',
   },
   {
-    data: [84104, 84583, 85277, 86044, 86818, 87831, 90031, 89038, 90031, 90510, 91261, null],
+    data: [84104, 84583, 85277, 86044, 86818, 87831, 90031, 89038, 90031, 90510, 91261, 91891],
     label: 'react-native',
   },
   {
-    data: [75203, 75688, 76531, 77449, 78314, 79275, 81778, 80715, 81778, 82476, 83741, null],
+    data: [75203, 75688, 76531, 77449, 78314, 79275, 81778, 80715, 81778, 82476, 83741, 84301],
     label: 'create-react-app',
   },
   {
-    data: [68641, 69251, 70194, 71457, 72696, 73979, 76898, 75668, 76898, 77546, 78853, null],
+    data: [68641, 69251, 70194, 71457, 72696, 73979, 76898, 75668, 76898, 77546, 78853, 79641],
     label: 'axios',
   },
   {
-    data: [67100, 67466, 68001, 68858, 69642, 70741, 72910, 71944, null, null, null, 75234],
+    data: [67100, 67466, 68001, 68858, 69642, 70741, 72910, 71944, null, null, null, null],
     label: 'node',
   },
   {
     data: [null, null, null, null, null, null, null, null, 80736, 81961, 84394, 87770],
     label: 'javascript-algorithms',
-  },
-  {
-    data: [null, null, null, null, null, null, null, null, null, null, null, 66000],
-    label: '30-seconds-of-code',
-  },
-  {
-    data: [null, null, null, null, null, null, null, null, null, null, null, 65365],
-    label: 'three.js',
-  },
-  {
-    data: [null, null, null, null, null, null, null, null, null, null, null, 64628],
-    label: 'Font-Awesome',
-  },
-  {
-    data: [null, null, null, null, null, null, null, null, null, null, null, 63382],
-    label: 'material-ui',
-  },
-  {
-    data: [null, null, null, null, null, null, null, null, null, null, null, 59524],
-    label: 'angular.js',
-  },
-  {
-    data: [null, null, null, null, null, null, null, null, null, null, null, 58154],
-    label: 'next.js',
   },
 ];
 

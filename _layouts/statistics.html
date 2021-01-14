@@ -13,20 +13,20 @@
 
 {% include nav.html %}
 
-{% case page.year %}
-  {% when 2020 %}{% assign see_also = 2019 %}{% assign see_also2 = 2018 %}
-  {% when 2019 %}{% assign see_also = 2020 %}{% assign see_also2 = 2018 %}
-  {% when 2018 %}{% assign see_also = 2020 %}{% assign see_also2 = 2019 %}
-{% endcase %}2019
+{% assign years = "2018,2019,2020,2021" | split: ',' %}
+{% assign current_year = page.year | downcase %}
+{% assign filteredYears = years | reverse | where_exp:"year", "year != current_year" %}
+{% assign yearsSizeMinus2 = years.size | minus: 2 %}
 
 <section class="faq" id="statistics" data-year="{{page.year}}">
 
   <div class="container">
     <h1>Statystyki języków programowania {{page.year}}</h1>
     <p class="m-4">Wizualizacja wszystkich statystyk, które są zbierane co miesiąc na potrzebę tej strony w roku {{page.year}}.</p>
-    <p>Zobacz także rok
-      <a href="/statystyki-jezykow-programowania-{{see_also}}/">{{see_also}}</a> lub
-      <a href="/statystyki-jezykow-programowania-{{see_also2}}/">{{see_also2}}</a>
+    <p>Zobacz także rok&nbsp;
+      {%- for year in filteredYears -%}
+        <a href="/statystyki-jezykow-programowania-{{year}}/">{{year}}</a> {% if forloop.last == false %}lub {% endif %}
+      {%- endfor -%}
     </p>
 
     <button type="button" class="main-btn" data-toggle="modal" data-target="#demo">Jak używać?</button>
@@ -37,9 +37,10 @@
       </div>
     </div>
 
-    <p>Zobacz także rok
-      <a href="/statystyki-jezykow-programowania-{{see_also}}/">{{see_also}}</a> lub
-      <a href="/statystyki-jezykow-programowania-{{see_also2}}/">{{see_also2}}</a>
+    <p>Zobacz także rok&nbsp;
+      {%- for year in filteredYears -%}
+      <a href="/statystyki-jezykow-programowania-{{year}}/">{{year}}</a> {% if forloop.last == false %}lub {% endif %}
+      {%- endfor -%}
     </p>
 
   </div>
