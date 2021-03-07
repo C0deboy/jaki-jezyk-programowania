@@ -1,83 +1,39 @@
-import '../node_modules/waypoints/lib/noframework.waypoints.min';
-
 require('../css/courses.css');
 
-const courses = $('.courses');
-const q = encodeURIComponent(courses.attr('data-query'));
+document.querySelectorAll('.stars')
+  .forEach((container) => showStars(container));
 
-const excludeEnglishFor = ['Scratch'];
-
-new Waypoint({
-  element: document.querySelector('.courses'),
-  handler() {
-    collect('pl');
-    if (!excludeEnglishFor.includes(q)) {
-      collect('en');
-    }
-    this.destroy();
-  },
-  offset: '130%',
-});
-
-const t = 'ZUt4dk1EZG1wOEt6Y3g5OTJzVkNwQTFjM2NneTJPeDBlZklybnZYSDphaVozeUJBMlpIaXMyanNBMXp6MEFFTEo5OUhmOHh4T1lpZWtCSmtkYTZ3YUJrUlBxektEOGRZMXFIS01MRUdCZm1OcHZNcHh6c3pIUEc5SDdCMjg4UUJMb1JxTlhXOW55a1VlQVVORUJJYkRETkFhTnBRcDRxeHdNUmFPYmVSRg==';
-
-function collect(lang) {
-  $.ajax({
-    url: `https://cors-anywhere.herokuapp.com/https://www.udemy.com/api-2.0/courses?search=${q}&category=Development&language=${lang}&ordering=relevance&ratings=4&page_size=8&fields[course]=@default,headline,content_info,num_subscribers,instructional_level,avg_rating,num_reviews,discount_price,last_update_date,created`,
-    headers: {
-      Authorization: 'Basic ' + t,
-    },
-    success: (data) => {
-      data.results.sort(((a, b) => b.num_reviews - a.num_reviews));
-      data.results.slice(0, 4).forEach((course) => {
-        addCourse(course, lang);
-      });
-      courses.find('.loading').remove();
-      if (document.location.hash.includes(encodeURI('książki'))) document.querySelector('.books').scrollIntoView();
-      else if (document.location.hash.includes('kursy')) courses[0].scrollIntoView();
-      document.querySelector('.currency-info').classList.remove('d-none');
-    },
-    error: (error) => {
-      courses.css('display', 'none');
-      $('.courses-link').css('display', 'none');
-      console.error(error);
-    },
-  });
+if (document.location.hash.includes(encodeURI('książki'))) {
+  document.querySelector('.books').scrollIntoView();
+} else if (document.location.hash.includes('kursy')) {
+  document.querySelector('.courses').scrollIntoView();
 }
 
-function addCourse(course, lang) {
-  const rating = Math.round(course.avg_rating * 100) / 100;
-  let stars = '<div class="stars">';
+function showStars(stars) {
+  const rating = stars.getAttribute('data-rating');
 
   let i;
   for (i = rating; i > 1; i--) {
-    stars += '<div><i class="fa fa-star"></i><i class="fa fa-star filled"></i></div>';
+    const starDiv = getStarDiv();
+    const starFilled = document.createElement('i');
+    starFilled.classList.add('fa', 'fa-star', 'filled');
+    starDiv.append(starFilled);
+    stars.append(starDiv);
   }
-  stars += `<div><i class="fa fa-star"></i><i class="fa fa-star filled not-full" style="width: ${i * 17.66}px"></i></div></div>`;
 
-  const link = `https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com${encodeURIComponent(course.url)}`;
-  const discount = course.discount_price != null ? `<span class="course-discount">${course.discount_price.price_string}</span>` : '';
-  const strikethrough = discount !== '' ? 'discount' : '';
+  const starDiv = getStarDiv();
+  const starPartFilled = document.createElement('i');
+  starPartFilled.classList.add('fa', 'fa-star', 'filled', 'not-full');
+  starPartFilled.style.width = `${i * 17.66}px`;
+  starDiv.append(starPartFilled);
 
-  courses.append(`
-          <a class="course darker-overlay-on-hover" href="${link}" target="_blank">
-            <img class="course-lang" src='/img/other/${lang}.png' alt="course language"/>
-            <img src="${course.image_240x135}" alt="course cover"/>
-            <div class="course-header">
-              <p class="course-title">${course.title}</p>
-              <p class="course-headline">${course.headline}</p>
-              <span><i class="fa fa-clock-o"></i> Czas trwania: ${course.content_info}</span>
-              <span><i class="fa fa-user"></i> ${course.num_subscribers} zapisanych uczestników</span><br>
-              <span><i class="fa fa-graduation-cap"></i> ${course.instructional_level}</span>
-              <span><i class="fa fa-calendar-check-o" data-created="${course.created}"></i> Ostatnia aktualizacja: ${course.last_update_date}</span>
-            </div>
-            <div class="details">
-              ${discount}
-              <span class="course-price ${strikethrough}">${course.price}</span>
-              <span class="course-rating">${stars} ${rating} / 5</span>
-              <span class="course-reviews">Ocen: ${course.num_reviews}</span>
-            </div>
-          </a>
-          <hr>
-        `);
+  stars.append(starDiv);
+}
+
+function getStarDiv() {
+  const emptyStarDiv = document.createElement('div');
+  const emptyStar = document.createElement('i');
+  emptyStar.classList.add('fa', 'fa-star');
+  emptyStarDiv.append(emptyStar);
+  return emptyStarDiv;
 }

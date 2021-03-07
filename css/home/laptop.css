@@ -362,32 +362,8 @@
   margin: auto;
 }
 
-.laptop .laptop-header .button {
-  height: 40%;
-  display: block;
-  border-radius: 8px;
-  margin: 0 2px 0 2px;
-}
-
 @media (max-width: 500px) {
-  .laptop .laptop-header .button {
-    width: 6px;
-    height: 6px;
-  }
-
   .key {
     border-radius: 1px;
   }
-}
-
-.laptop .laptop-header .button.green {
-  background: #3BB662;
-}
-
-.laptop .laptop-header .button.yellow {
-  background: #E5C30F;
-}
-
-.laptop .laptop-header .button.red {
-  background: #E75448;
 }

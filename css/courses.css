@@ -59,6 +59,7 @@
 
 .course .stars {
   display: inline-block;
+  margin-right: 5px;
 }
 
 .course .stars div {

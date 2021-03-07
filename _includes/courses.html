@@ -1,14 +1,57 @@
-<div class="courses" data-query="{{ page.title }}">
+{%- assign langKey = page.title | downcase | replace: ' ', '' -%}
+{%- assign courses = site.data.courses[langKey] -%}
 
-  <h1 id="najlepsze-kursy-video-do-nauki-{{ page.title | downcase | replace: '#', 'sharp' | replace: ' ', '-'}}"> Najlepsze kursy video do nauki  {{ page.title }}</h1>
+<div class="courses">
+  <h1 id="najlepsze-kursy-video-do-nauki-{{ page.title | downcase | replace: '#', 'sharp' | replace: ' ', '-'}}">Najlepsze kursy video do nauki  {{ page.title }}</h1>
   <h2>na platformie <a href="https://click.linksynergy.com/fs-bin/click?id=0Bz3A2CPbI4&offerid=358574.1389&subid=0&type=4">Udemy</a>:</h2>
-  <div class="loading"><i class="fa fa-cog fa-spin fa-3x fa-fw"></i><span class="sr-only">Ładowanie...</span></div>
-  <div class="currency-info d-none">* Po przejściu do danego kursu zobaczysz cenę w PLN</div>
 
+  {%- for course in courses.en -%}
+  <a class="course darker-overlay-on-hover" href="https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com{{ course.url }}" target="_blank">
+    <img class="course-lang" src='/img/other/en.png' alt="Język kursu - angielski"/>
+    <img src="{{course.image_240x135}}" alt="Okładka kursu"/>
+    <div class="course-header">
+      <p class="course-title">{{course.title}}</p>
+      <p class="course-headline">{{course.headline}}</p>
+      <span><i class="fa fa-clock-o"></i> Czas trwania: {{course.content_info}}</span>
+      <span><i class="fa fa-user"></i> {{course.num_subscribers}} zapisanych uczestników</span><br>
+      <span><i class="fa fa-graduation-cap"></i> {{course.instructional_level}}</span>
+      <span><i class="fa fa-calendar-check-o" data-created="{{course.created}}"></i> Ostatnia aktualizacja: {{course.last_update_date}}</span>
+    </div>
+    {%- assign rating = course.avg_rating | times:100 | round | divided_by:100.0 -%}
+    <div class="details">
+
+      <span class="course-rating"><div class="stars" data-rating="{{rating}}"></div>{{rating}} / 5</span>
+      <span class="course-reviews">Liczba ocen: {{course.num_reviews}}</span>
+    </div>
+  </a>
+  <hr>
+  {%- endfor -%}
+
+  {%- for course in courses.pl -%}
+    <a class="course darker-overlay-on-hover" href="https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com{{ course.url }}" target="_blank">
+      <img class="course-lang" src='/img/other/pl.png' alt="Język kursu - polski"/>
+      <img src="{{course.image_240x135}}" alt="Okładka kursu"/>
+      <div class="course-header">
+        <p class="course-title">{{course.title}}</p>
+        <p class="course-headline">{{course.headline}}</p>
+        <span><i class="fa fa-clock-o"></i> Czas trwania: {{course.content_info}}</span>
+        <span><i class="fa fa-user"></i> {{course.num_subscribers}} zapisanych uczestników</span><br>
+        <span><i class="fa fa-graduation-cap"></i> {{course.instructional_level}}</span>
+        <span><i class="fa fa-calendar-check-o" data-created="{{course.created}}"></i> Ostatnia aktualizacja: {{course.last_update_date}}</span>
+      </div>
+      {%- assign rating = course.avg_rating | times:100 | round | divided_by:100.0 -%}
+      <div class="details">
+
+        <span class="course-rating"><div class="stars" data-rating="{{rating}}"></div>{{rating}} / 5</span>
+        <span class="course-reviews">Liczba ocen: {{course.num_reviews}}</span>
+      </div>
+    </a>
+    <hr>
+  {%- endfor -%}
 </div>
 
 <div>
   <a class="other-books-link darker-overlay" href="https://click.linksynergy.com/fs-bin/click?id=0Bz3A2CPbI4&offerid=358574.1389&subid=0&type=4">
-    <img src="/img/other/video-courses.png"/>Zobacz inne kursy video na Udemy
+    <img src="/img/other/video-courses.png" alt="Inne kursy video na Udemy"/>Zobacz inne kursy video na Udemy
   </a>
 </div>
