@@ -1,9 +1,10 @@
 /* eslint-disable quote-props */
 
+const TerserPlugin = require('terser-webpack-plugin');
 const path = require('path');
-const ExtractCssPlugin = require('mini-css-extract-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -27,7 +28,7 @@ module.exports = {
         test: /\.js$/,
         use: {
           loader: 'babel-loader',
-          query: {
+          options: {
             presets: ['@babel/preset-env'],
           },
         },
@@ -35,7 +36,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          ExtractCssPlugin.loader,
+          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -46,14 +47,26 @@ module.exports = {
       },
     ],
   },
+  optimization: {
+    minimizer: [
+      new TerserPlugin({
+        extractComments: false,
+      }),
+      new CssMinimizerPlugin({
+        minimizerOptions: {
+          preset: [
+            'default',
+            {
+              discardComments: { removeAll: true },
+            },
+          ],
+        },
+      }),
+    ],
+  },
   plugins: [
-    new ExtractCssPlugin({
+    new MiniCssExtractPlugin({
       filename: '[name].css',
-    }),
-    new OptimizeCssAssetsPlugin({
-      cssProcessorPluginOptions: {
-        preset: ['default', { discardComments: { removeAll: true } }],
-      },
     }),
     new BrowserSyncPlugin({
       host: 'localhost',
