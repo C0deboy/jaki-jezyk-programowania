@@ -13,7 +13,7 @@
 
 {% include nav.html %}
 
-{% assign years = "2018,2019,2020,2021" | split: ',' %}
+{% assign years = "2018,2019,2020,2021,2022" | split: ',' %}
 {% assign current_year = page.year | downcase %}
 {% assign filteredYears = years | reverse | where_exp:"year", "year != current_year" %}
 {% assign yearsSizeMinus2 = years.size | minus: 2 %}
