@@ -1,4 +1,14 @@
-import { CategoryScale, Chart, Legend, LinearScale, LineController, LineElement, PointElement, Title, Tooltip } from 'chart.js';
+import {
+  CategoryScale,
+  Chart,
+  Legend,
+  LinearScale,
+  LineController,
+  LineElement,
+  PointElement,
+  Title,
+  Tooltip,
+} from 'chart.js';
 import { Modal } from 'bootstrap';
 
 import statistics2018 from './statistics2018-data';
@@ -11,10 +21,13 @@ require('../../css/statistics.css');
 
 Chart.register(LineController, LineElement, PointElement, LinearScale, CategoryScale, Title, Tooltip, Legend);
 
-const defaultColors = ['#3366CC', '#DC3912', '#FF9900', '#109618', '#990099', '#3B3EAC', '#0099C6', '#DD4477', '#66AA00',
-  '#B82E2E', '#316395', '#994499', '#22AA99', '#AAAA11', '#6633CC', '#E67300', '#8B0707', '#329262', '#5574A6', '#3B3EAC'];
+const defaultColors = [
+  '#3366CC', '#DC3912', '#FF9900', '#109618', '#990099', '#3B3EAC', '#0099C6', '#DD4477', '#66AA00', '#B82E2E',
+  '#316395', '#994499', '#22AA99', '#AAAA11', '#6633CC', '#E67300', '#8B0707', '#329262', '#5574A6', '#3B3EAC',
+];
 
-const year = parseInt(document.getElementById('statistics').getAttribute('data-year'), 10);
+const year = parseInt(document.getElementById('statistics')
+  .getAttribute('data-year'), 10);
 
 const yearToStats = {
   2018: statistics2018,
@@ -24,47 +37,121 @@ const yearToStats = {
   2022: statistics2022,
 };
 const statistics = yearToStats[year];
+const githubProjectsCfg = {
+  statsKey: 'langToProjects',
+  gitLang: 'Java',
+};
 
-createLineChart('tiobeCurrentYear', 'Tiobe index - ranking', 'Pozycja', statistics, { reverse: true });
-createLineChart('tiobeLastYear', 'Tiobe index - ranking - poprzedni rok', 'Pozycja', statistics, { reverse: true });
-createLineChart('stackQuestions', 'Stack Overflow - liczba pytań', 'Liczba pytań', statistics);
-createLineChart('meetupMeetupsLocal', 'Meetup - ilość grup - Polska', 'Liczba grup', statistics);
-createLineChart('meetupMeetupsGlobal', 'Meetup - ilość grup - cały świat', 'Liczba grup', statistics);
-createLineChart('meetupMembersLocal', 'Meetup - wielkość społeczności - Polska', 'Liczba członków', statistics);
-createLineChart('meetupMembersGlobal', 'Meetup - wielkość społeczności - cały świat', 'Liczba członków', statistics);
-createLineChart('githubProjects', 'Github - liczba projektów', 'Liczba projektów', statistics);
-createLineChart('githubMoreThen1000Stars', 'Github - ilość projektów z liczbą gwiazdek większą niż 1000', 'Liczba projektów', statistics);
+const chartsData = [
+  {
+    canvasId: 'tiobeCurrentYear',
+    title: 'Tiobe index - ranking',
+    yAxisLabel: 'Pozycja',
+    cfg: { reverse: true },
+  },
+  {
+    canvasId: 'tiobeLastYear',
+    title: 'Tiobe index - ranking - poprzedni rok',
+    yAxisLabel: 'Pozycja',
+    cfg: { reverse: true },
+  },
+  {
+    canvasId: 'stackQuestions',
+    title: 'Stack Overflow - liczba pytań',
+    yAxisLabel: 'Liczba pytań',
+  },
+  {
+    canvasId: 'meetupMeetupsLocal',
+    title: 'Meetup - ilość grup - Polska',
+    yAxisLabel: 'Liczba grup',
+  },
+  {
+    canvasId: 'meetupMeetupsGlobal',
+    title: 'Meetup - ilość grup - cały świat',
+    yAxisLabel: 'Liczba grup',
+  },
+  {
+    canvasId: 'meetupMembersLocal',
+    title: 'Meetup - wielkość społeczności - Polska',
+    yAxisLabel: 'Liczba członków',
+  },
+  {
+    canvasId: 'meetupMembersGlobal',
+    title: 'Meetup - wielkość społeczności - cały świat',
+    yAxisLabel: 'Liczba członków',
+  },
+  {
+    canvasId: 'githubProjects',
+    title: 'Github - liczba projektów',
+    yAxisLabel: 'Liczba projektów',
+  },
+  {
+    canvasId: 'githubMoreThen1000Stars',
+    title: 'Github - ilość projektów z liczbą gwiazdek większą niż 1000',
+    yAxisLabel: 'Pozycja',
+  },
+  {
+    canvasId: 'github-projects-for-lang',
+    title: 'Github - top 10 projektów ',
+    yAxisLabel: 'Liczba gwiazdek',
+    cfg: githubProjectsCfg,
+  },
+];
 
-const gitCfg = { statsKey: 'langToProjects', gitLang: 'Java' };
-createLineChart('github-projects-for-lang', 'Github - top 10 projektów ', 'Liczba gwiazdek', statistics, gitCfg);
+const githubTop10ChartsData = {
+  forEachLang: {
+    canvasId: 'github-projects-for-lang',
+    title: 'Github - top 10 projektów ',
+    yAxisLabel: 'Liczba gwiazdek',
+  },
+  overall: {
+    canvasId: 'top10GithubProjects',
+    title: 'Github - porównanie najlepszych projektów z każdego języka',
+    yAxisLabel: 'Liczba gwiazdek',
+  },
+};
 
-let previousBtn = document.querySelector('.git-lang-switcher');
+chartsData.forEach((data) => createLineChart(data.canvasId, data.title, data.yAxisLabel, statistics, data.cfg));
+createTop10GithubProjectsChartsOnButtonClick(githubTop10ChartsData.forEachLang);
+createTop10GithubProjectsOverall(githubTop10ChartsData.overall);
+createLogicForHowToUseDialog();
 
-const activeBtnBgColor = '#4d4d4d';
-previousBtn.style.background = activeBtnBgColor;
+function createTop10GithubProjectsChartsOnButtonClick(data) {
+  let previousBtn = document.querySelector('.git-lang-switcher');
 
-const langProjects = document.getElementById('lang-projects');
+  const activeBtnBgColor = '#4d4d4d';
+  previousBtn.style.background = activeBtnBgColor;
 
-document.querySelectorAll('.git-lang-switcher').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    previousBtn.style.background = '';
-    btn.style.background = activeBtnBgColor;
-    langProjects.innerHTML = '<canvas class="chart" id="github-projects-for-lang"></canvas>';
-    gitCfg.gitLang = btn.getAttribute('data-lang');
-    createLineChart('github-projects-for-lang', 'Github - top 10 projektów ', 'Liczba gwiazdek', statistics, gitCfg);
-    previousBtn = btn;
-  });
-});
+  const langProjects = document.getElementById('lang-projects');
 
-createLineChart('top10GithubProjects', 'Github - porównanie najlepszych projektów z każdego języka', 'Liczba gwiazdek', statistics);
+  document.querySelectorAll('.git-lang-switcher')
+    .forEach((btn) => {
+      btn.addEventListener('click', () => {
+        previousBtn.style.background = '';
+        btn.style.background = activeBtnBgColor;
+        langProjects.innerHTML = '<canvas class="chart" id="github-projects-for-lang"></canvas>';
+        githubProjectsCfg.gitLang = btn.getAttribute('data-lang');
+        createLineChart(data.canvasId, data.title, data.yAxisLabel, statistics, githubProjectsCfg);
+        previousBtn = btn;
+      });
+    });
+}
 
-function createLineChart(ctxId, title, yAxisLabel, stats, cfg = { reverse: false, gitLang: null, statsKey: null }) {
-  const { reverse, gitLang, statsKey } = cfg;
-  const { labels, lastYearLabels } = stats;
-  const key = statsKey || ctxId;
+function createTop10GithubProjectsOverall(data) {
+  createLineChart(data.canvasId, data.title, data.yAxisLabel, statistics);
+}
+
+function createLineChart(canvasId, title, yAxisLabel, stats, cfg = {
+  reverse: false,
+  gitLang: null,
+  statsKey: null,
+}) {
+  const { gitLang } = cfg;
+
+  const key = cfg.statsKey || canvasId;
   const datasets = gitLang ? stats[key][gitLang] : stats[key];
 
-  const elementById = document.getElementById(ctxId);
+  const elementById = document.getElementById(canvasId);
   if (elementById == null) {
     return;
   }
@@ -89,7 +176,7 @@ function createLineChart(ctxId, title, yAxisLabel, stats, cfg = { reverse: false
   const chart = new Chart(ctx, {
     type: 'line',
     data: {
-      labels: ctxId.includes('Last') ? lastYearLabels : labels,
+      labels: canvasId.includes('Last') ? stats.lastYearLabels : stats.labels,
       datasets,
     },
     options: {
@@ -103,8 +190,8 @@ function createLineChart(ctxId, title, yAxisLabel, stats, cfg = { reverse: false
           },
         },
         y: {
-          reverse,
-          min: reverse ? 1 : null,
+          reverse: cfg.reverse,
+          min: cfg.reverse ? 1 : null,
           ticks: {
             font: { size: 14 },
           },
@@ -116,23 +203,20 @@ function createLineChart(ctxId, title, yAxisLabel, stats, cfg = { reverse: false
         },
       },
     },
-    plugins: [{
-      beforeInit: (chart) => {chart.legend.afterFit = () => { this.height += 50; };},
-    }],
   });
 }
 
-// DEMO DIALOG
+function createLogicForHowToUseDialog() {
+  const demoEl = document.getElementById('demo');
+  const demoModal = new Modal(demoEl);
 
-const demoEl = document.getElementById('demo');
-const demoModal = new Modal(demoEl);
+  if (localStorage.getItem('stats-demo-closed') !== 'true') {
+    demoModal.show();
+  } else {
+    demoModal.hide();
+  }
 
-if (localStorage.getItem('stats-demo-closed') !== 'true') {
-  demoModal.show();
-} else {
-  demoModal.hide();
+  demoEl.addEventListener('hidden.bs.modal', () => {
+    localStorage.setItem('stats-demo-closed', 'true');
+  });
 }
-
-demoEl.addEventListener('hidden.bs.modal', () => {
-  localStorage.setItem('stats-demo-closed', 'true');
-});
