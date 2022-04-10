@@ -168,7 +168,7 @@
 
 .answer-p-hover {
   transform: translateY(-1px);
-  box-shadow: 0 1px 4px 0 black!important;
+  box-shadow: 0 1px 4px 0 black !important;
 }
 
 .fadeOut {
@@ -213,24 +213,4 @@
 .spinner .bounce2 {
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
-}
-
-@-webkit-keyframes sk-bouncedelay {
-  0%, 80%, 100% {
-    -webkit-transform: scale(0)
-  }
-  40% {
-    -webkit-transform: scale(1.0)
-  }
-}
-
-@keyframes sk-bouncedelay {
-  0%, 80%, 100% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-  40% {
-    -webkit-transform: scale(1.0);
-    transform: scale(1.0);
-  }
 }

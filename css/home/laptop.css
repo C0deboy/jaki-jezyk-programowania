@@ -101,10 +101,7 @@
 .keys {
   width: 100%;
   margin-left: 2%;
-  -webkit-transform: perspective(150px) rotateX(10deg);
-  -moz-transform: perspective(150px) rotateX(10deg);
   -ms-transform: perspective(150px) rotateX(10deg);
-  -o-transform: perspective(150px) rotateX(10deg);
   transform: perspective(150px) rotateX(10deg);
 }
 
@@ -193,15 +190,7 @@
 }
 
 .enter2, .plus {
-  -webkit-transform-origin: top;
-  -moz-transform-origin: top;
-  -ms-transform-origin: top;
-  -o-transform-origin: top;
   transform-origin: top;
-  -webkit-transform: scale(1, 2.15);
-  -moz-transform: scale(1, 2.15);
-  -ms-transform: scale(1, 2.15);
-  -o-transform: scale(1, 2.15);
   transform: scale(1, 2.15);
   border-bottom: solid 1px #000;
   font-size: .15em;
@@ -283,6 +272,7 @@
   font-size: 1.4em;
   padding: 5px;
 }
+
 #arrow-down-key .lightTooltip:after {
   margin-top: -5px;
 }
@@ -293,6 +283,7 @@
     font-size: 1.2em;
     padding: 3px 2px;
   }
+
   #arrow-down-key .lightTooltip:after {
     margin-top: -8px;
   }
@@ -306,16 +297,16 @@
 }
 
 .red-btn {
-  background: -webkit-linear-gradient(to bottom,#de3e3e,#981313);
-  background: #AA3939 linear-gradient(to bottom,#de3e3e,#981313);
+  background: -webkit-linear-gradient(to bottom, #de3e3e, #981313);
+  background: #AA3939 linear-gradient(to bottom, #de3e3e, #981313);
   color: white;
   font-size: .5em;
 }
 
 .red-btn:hover,
 .red-btn:focus {
-  background: -webkit-linear-gradient(to bottom,#de3e3e,#981313);
-  background: #AA3939 linear-gradient(to bottom,#de3e3e,#981313);
+  background: -webkit-linear-gradient(to bottom, #de3e3e, #981313);
+  background: #AA3939 linear-gradient(to bottom, #de3e3e, #981313);
 }
 
 .red-btn:active {
@@ -330,7 +321,7 @@
 
 .terminal {
   font-family: Menlo, Monaco, Consolas, "Courier New", Courier, sans-serif;
-  font-size: calc(11px + (25 - 20) * ((100vw - 320px)/ (1920 - 320)));
+  font-size: calc(11px + (25 - 20) * ((100vw - 320px) / (1920 - 320)));
   text-align: left;
   padding: 0 0 0 8px;
 }

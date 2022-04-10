@@ -55,7 +55,7 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 }
 
 .hljs-built_in,
-/*.hljs-function .hljs-keyword,*/
+  /*.hljs-function .hljs-keyword,*/
 .hljs-symbol,
 .hljs-attribute {
   color: #66d9ef;
@@ -83,6 +83,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 }
 
 .hljs-comment,
-.hljs-deletion{
+.hljs-deletion {
   color: #75715e;
 }

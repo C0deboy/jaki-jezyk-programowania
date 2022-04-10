@@ -1,81 +1,83 @@
 .lightTooltip {
-	display: block;
-	visibility: hidden;
-	position: absolute;
-	background: #e8ebf0;
-	color: #333;
-	font-size: 0.9em;
-	box-shadow: 0 1px 2px 0 black;
-	z-index: 999;
-	text-align: center;
-	min-width: 100px;
-	max-width: 768px;
-	border-radius: 4px;
-	opacity: 0;
-	transition: opacity 0.6s;
-	padding: 0px 6px;
-	left:0;
+  display: block;
+  visibility: hidden;
+  position: absolute;
+  background: #e8ebf0;
+  color: #333;
+  font-size: 0.9em;
+  box-shadow: 0 1px 2px 0 black;
+  z-index: 999;
+  text-align: center;
+  min-width: 100px;
+  max-width: 768px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.6s;
+  padding: 0 6px;
+  left: 0;
 }
 
 .tooltip {
-	margin-bottom: 3px;
-	font-family: inherit;
+  margin-bottom: 3px;
+  font-family: inherit;
 }
 
 .tooltip.show {
-	opacity: 1;
+  opacity: 1;
 }
 
 .tooltip .arrow::before {
-	border-top-color: #e8ebf0;
+  border-top-color: #e8ebf0;
 }
 
 .tooltip-inner {
-	background: #e8ebf0;
-	box-shadow: 0 1px 2px 0 black;
-	color: #333;
-	font-size: 0.9em;
-	border-radius: 4px;
-	padding: 3px 5px;
-	max-width: 250px;
+  background: #e8ebf0;
+  box-shadow: 0 1px 2px 0 black;
+  color: #333;
+  font-size: 0.9em;
+  border-radius: 4px;
+  padding: 3px 5px;
+  max-width: 250px;
 }
 
 .fadeIn {
-	opacity: 1;
-	visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 .lightTooltip::after {
-	content: ' ';
-	display: block;
-	background: inherit;
-	width: 15px;
-	height: 15px;
-	z-index: -1;
-	position: absolute;
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
+  content: ' ';
+  display: block;
+  background: inherit;
+  width: 15px;
+  height: 15px;
+  z-index: -1;
+  position: absolute;
+  transform: rotate(45deg);
   left: 50%;
   margin: -9px 0 -9px -7.5px;
 }
 
-.tip{
-	color: inherit;
+.tip {
+  color: inherit;
 }
 
 .tip:hover {
-	outline: none;
+  outline: none;
 }
 
 .tip .fa-commenting-o {
-	animation: 1s jumping infinite ease-out;
+  animation: 1s jumping infinite ease-out;
 }
 
 @keyframes jumping {
-	0% {transform: translateY(-3px)}
-	50% {transform: translateY(0px)}
-	100% {transform: translateY(-3px)}
+  0% {
+    transform: translateY(-3px)
+  }
+  50% {
+    transform: translateY(0px)
+  }
+  100% {
+    transform: translateY(-3px)
+  }
 }

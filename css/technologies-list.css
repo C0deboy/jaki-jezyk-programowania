@@ -2,7 +2,7 @@
 .program-languages .section-heading small {
   display: block;
   margin: 15px 0 5px 0;
-  font-size: calc( 13px + (25 - 15) * ( (100vw - 320px) / ( 1920 - 320) ));
+  font-size: calc(13px + (25 - 15) * ((100vw - 320px) / (1920 - 320)));
 }
 
 .program-languages a {
@@ -30,11 +30,11 @@
   position: relative;
   top: 0;
   margin: 0;
-  box-shadow: 0 1px 2px 0px black;
+  box-shadow: 0 1px 2px 0 black;
 }
 
 .lang img:hover {
-  box-shadow: 0 1px 4px 0px black!important;
+  box-shadow: 0 1px 4px 0 black !important;
 }
 
 .languages-list {
@@ -53,27 +53,15 @@
 .lang-link {
   display: block;
   text-decoration: none;
-  -webkit-transition: -webkit-transform .2s ease-out;
-  -moz-transition: transform .2s ease-out;
-  -ms-transition: transform .2s ease-out;
-  -o-transition: transform .2s ease-out;
   transition: transform .2s ease-out;
 }
 
 .lang-link:active {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
   transform: scale(1.1);
 }
 
 .lang-link:hover,
-.lang-link:focus{
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
+.lang-link:focus {
   transform: scale(1.2);
 }
 
@@ -101,17 +89,13 @@
   -o-transition: all .4s;
   transition: all .4s;
   will-change: height, margin, left, top;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   z-index: 0;
 }
 
 .lang .sub.lang-link img {
   height: 35px;
-  box-shadow: 0 1px 2px 0px black;
+  box-shadow: 0 1px 2px 0 black;
   margin: 0;
 }
 
@@ -127,7 +111,7 @@
 }
 
 .backToPosition {
-  position: relative!important;
+  position: relative !important;
   height: 60px !important;
   top: 20px !important;
   left: 0 !important;
@@ -135,8 +119,8 @@
 }
 
 .backToPosition img {
-  height: 60px!important;
-  width: 60px!important;
+  height: 60px !important;
+  width: 60px !important;
 }
 
 .other-technologies {

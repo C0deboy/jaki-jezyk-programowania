@@ -10,7 +10,6 @@ module.exports = {
   entry: {
     'home.bundle': './js/home/home.js',
     'global.bundle': './js/global/global.js',
-    'faq': './js/faq.js',
     'top-books': './js/top-books.js',
     'courses': './js/courses.js',
     'wizard': './js/wizard/wizard.js',

@@ -3,14 +3,21 @@ require('../css/technologies-list.css');
 const langElements = document.querySelectorAll('.lang');
 
 window.addEventListener('touchstart', function onFirstHover() {
-  document.querySelectorAll('.lang-link').forEach((link) => {
-    link.addEventListener('click', disableLink);
-  });
+  document.querySelectorAll('.lang-link')
+    .forEach((link) => {
+      link.addEventListener('click', disableLink);
+    });
   window.DOUBLE_CLICK_ENABLED = true;
   window.removeEventListener('touchstart', onFirstHover, false);
 }, false);
 
-function showSubTechnologeis(subs, lang) {
+langElements.forEach((lang) => {
+  const subs = lang.querySelectorAll('.sub');
+  lang.addEventListener('mouseover', () => showSubTechnologies(subs, lang));
+  lang.addEventListener('mouseout', () => hideSubTechnologies(subs, lang));
+});
+
+function showSubTechnologies(subs, lang) {
   if (subs.length !== 0) {
     subs.forEach((sub) => {
       sub.style.height = 60 + 'px';
@@ -23,12 +30,7 @@ function showSubTechnologeis(subs, lang) {
   }
 }
 
-function disableLink(e) {
-  e.preventDefault();
-  this.removeEventListener('click', disableLink);
-}
-
-function hideSubTechnologeis(subs, lang) {
+function hideSubTechnologies(subs, lang) {
   if (subs.length !== 0) {
     subs.forEach((sub) => {
       sub.style.height = 35 + 'px';
@@ -42,14 +44,14 @@ function hideSubTechnologeis(subs, lang) {
   }
 
   if (window.DOUBLE_CLICK_ENABLED) {
-    lang.querySelectorAll('.lang-link').forEach((link) => {
-      link.addEventListener('click', disableLink);
-    });
+    lang.querySelectorAll('.lang-link')
+      .forEach((link) => {
+        link.addEventListener('click', disableLink);
+      });
   }
 }
 
-langElements.forEach((lang) => {
-  const subs = lang.querySelectorAll('.sub');
-  lang.addEventListener('mouseover', () => showSubTechnologeis(subs, lang));
-  lang.addEventListener('mouseout', () => hideSubTechnologeis(subs, lang));
-});
+function disableLink(e) {
+  e.preventDefault();
+  this.removeEventListener('click', disableLink);
+}

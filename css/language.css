@@ -130,9 +130,9 @@ section {
   clear: both;
   box-shadow: 0 1px 2px 0 #000;
   color: #3b3b3b;
-  background: -webkit-linear-gradient(#f8f8f8,#bbb);
+  background: -webkit-linear-gradient(#f8f8f8, #bbb);
   border-radius: 3px;
-  background: linear-gradient(#f8f8f8,#bbb);
+  background: linear-gradient(#f8f8f8, #bbb);
   display: inline-block;
   padding: 2px 10px 0;
 }
@@ -146,7 +146,6 @@ section {
 
 .lang-starter {
   padding: 1%;
-  text-align: left;
   text-align: left;
 }
 
@@ -278,7 +277,7 @@ section {
 
 .recommended-books-list ul li::before {
   content: "\f101";
-  font-family: "FontAwesome";
+  font-family: "FontAwesome", sans-serif;
   padding: 0 10px 0 0;
 }
 
@@ -316,14 +315,13 @@ section {
   display: inline-block;
   text-align: center;
   border: 0;
-  padding: 0px 5px;
+  padding: 0 5px;
   box-shadow: 0 1px 2px 0 black;
 }
 
 .promotion {
   margin: 15px 3px 25px;
   display: inline-block;
-  max-width: 425px;
   vertical-align: top;
 }
 
@@ -331,6 +329,7 @@ section {
   padding: 10px 5px;
   text-align: center;
   margin-bottom: 5px;
+  display: inline-block;
 }
 
 .promotion-content .icon {
@@ -396,13 +395,13 @@ section {
 }
 
 .in-progress {
-  background: linear-gradient(#f94646,#8f0808);
+  background: linear-gradient(#f94646, #8f0808);
   box-shadow: 0 1px 4px 0 #212121;
 }
 
 .see-stats-btn {
   padding: 8px 20px;
-  margin-top: 15px;
+  margin: 15px 0 20px;
   display: inline-block;
   max-width: 450px;
   color: white;
