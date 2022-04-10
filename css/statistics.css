@@ -27,3 +27,8 @@ h2 {
 #demo.modal {
   color: black;
 }
+
+#demo.modal .btn-close {
+  font-size: 0.7em;
+  margin-right: -5px;
+}

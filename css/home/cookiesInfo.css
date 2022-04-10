@@ -1,6 +1,7 @@
 .cookies-info {
   width: 100%;
   z-index: 1000;
+  padding: 5px 10px;
   font-size: .7em;
   background: inherit;
   color: #fff;
@@ -10,26 +11,11 @@
   justify-items: center;
   position: fixed;
   bottom: 0;
-  box-shadow: 0 0 2px 0px black;
+  box-shadow: 0 0 2px 0 black;
  }
 
-.cookies-info p,
-.canary-version-alert p{
+.cookies-info p {
   margin: 0;
   padding: 5px;
   width: 100%;
-}
-.canary-version-alert button,
-.close-cookies-info {
-  background: 0;
-  border: 0;
-  cursor: pointer;
-  padding: 5px 10px;
-  color: inherit;
-}
-
-#close-project-state-btn:hover,
-.close-cookies-info:hover {
-  cursor: pointer;
-  outline: none;
 }

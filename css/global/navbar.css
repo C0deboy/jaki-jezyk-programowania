@@ -44,6 +44,7 @@
 .navbar-custom .navbar-toggler {
   margin: 5px;
   text-transform: uppercase;
+  box-shadow: none;
 }
 
 .navbar-custom .nav li .nav-link {

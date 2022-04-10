@@ -25,7 +25,7 @@ description: "Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jak
 
       <h1 class="header-heading">Zastanawiasz się jaki język programowania wybrać?</h1>
 
-      <p><span class="typed-languages">?</span></p>
+      <p class="fs-2"><span class="typed-languages">?</span></p>
 
       <p class="header-text">Kliknij start, a szybko wybierzesz coś dla siebie. Między innymi dowiesz się, który z
         nich będzie odpowiedni dla danego zastosowania, w co brnąć dalej, gdy opanujesz podstawy oraz zobaczysz
@@ -381,12 +381,13 @@ description: "Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jak
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-
         <h2 class="section-heading">O projekcie</h2>
-        <p>Wybór języka programowania/technologii to częsty problem, szczególnie początkujących programistów. Stworzyłem ten projekt, aby ułatwić to zadanie (przynajmniej te oczywiste przypadki) oraz by zredukować liczbę kolejnych, tych samych wątków/pytań na forach.</p>
+        <p>Wybór języka programowania/technologii to częsty problem, szczególnie początkujących programistów.
+          Stworzyłem ten projekt, aby ułatwić to zadanie (przynajmniej te oczywiste przypadki)
+          oraz by zredukować liczbę kolejnych, tych samych wątków/pytań na forach.</p>
 
-        <p>Autor:</p>
-        <div class="team-member">
+        <div class="author">
+          <span>Autor:</span>
           <h3 class="name">
             Marcin Lasota
           </h3>
@@ -418,27 +419,38 @@ description: "Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jak
             </li>
           </ul>
         </div>
-
       </div>
     </div>
 
     <div class="row">
       <div class="col-md-12">
         <!--130-->
-        <p>Przygotowałem ankietę dotyczącą wyboru języka / technologii do danego zastosowania. Daj znać co ty
-          zaproponowałbyś początkującym programistom!</p>
-        <button id="ankieta" class="main-btn mb-4"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ankieta</button>
-        <div class="survey-dialog" role="dialog" aria-label="Ankieta">
-          <iframe class="survey" src="https://docs.google.com/forms/d/e/1FAIpQLScdtXZd_Y_4oQyOtlhYpmDID48ejeK2w-CEuO0IL53wC4dQxQ/viewform?embedded=true">
-            Ładuję...
-          </iframe>
-          <button id="close-survey-btn" class="close-survey-btn" aria-label="Zamknij ankietę" title="Zamknij ankietę"><i
-            class="fa fa-times"></i></button>
-        </div>
+        <p>Przygotowałem ankietę dotyczącą wyboru języka / technologii do danego zastosowania.
+          Daj znać co ty zaproponowałbyś początkującym programistom!</p>
 
-        <p>Masz jakieś uwagi czy zastrzeżenia? Masz sugestię, którą chciałbyś się z mną podzielić? A może chciałbyś
-          pomóc w rozwoju projektu? Cokolwiek by to było - pisz śmiało!</p>
+        <button id="ankieta" class="main-btn mb-4" data-bs-toggle="modal" data-bs-target="#survey">
+          <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ankieta
+        </button>
+
+        <div id="survey" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" aria-label="Ankieta">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-dark">Ankieta</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij" title="Zamknij"></button>
+              </div>
+              <div class="modal-body">
+                <iframe class="survey" title="Ankieta" src="https://docs.google.com/forms/d/e/1FAIpQLScdtXZd_Y_4oQyOtlhYpmDID48ejeK2w-CEuO0IL53wC4dQxQ/viewform?embedded=true">
+                  Ładuję...
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <p>Masz jakieś uwagi czy zastrzeżenia? Masz sugestię, którą chciałbyś się z mną podzielić? A może chciałbyś
+        pomóc w rozwoju projektu? Cokolwiek by to było — pisz śmiało!</p>
 
       <div class="offset-md-1 col-md-5">
         <a href="https://devcave.pl/kontakt#formularz-kontaktowy" class="main-btn">
@@ -456,10 +468,9 @@ description: "Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jak
   </div>
 </section>
 
-<div class="cookies-info">
-  <p>Strona wykorzystuje pliki cookies (ciasteczka) w celu zbierania statystyk odwiedzin strony oraz do zapamiętywania
-    twoich wyborów. Korzystając ze strony zgadzasz się na ich wykorzystanie.</p>
-  <button class="close-cookies-info"><i class="fa fa-times fa-2x close-form"></i></button>
+<div class="cookies-info fade">
+  <p>Strona wykorzystuje pliki cookies (ciasteczka) w celu zbierania statystyk odwiedzin strony. Korzystając ze strony zgadzasz się na ich wykorzystanie.</p>
+  <button type="button" class="btn-close btn-close-white" aria-label="Zamknij informacje o plikach cookies"></button>
 </div>
 
 <pre hidden>

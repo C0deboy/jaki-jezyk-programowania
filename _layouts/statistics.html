@@ -29,7 +29,7 @@
       {%- endfor -%}
     </p>
 
-    <button type="button" class="main-btn" data-toggle="modal" data-target="#demo">Jak używać?</button>
+    <button type="button" class="main-btn" data-bs-toggle="modal" data-bs-target="#demo">Jak używać?</button>
 
     <div class="row flex-column justify-content-center">
       <div class="charts-container" style="position: relative; width: 100%; height: 100%">
@@ -46,14 +46,12 @@
   </div>
 </section>
 
-<div class="modal fade" tabindex="-1" role="dialog" id="demo" aria-hidden="true">
+<div  id="demo" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Jak używać?</h5>
-        <button type="button" class="close close-demo" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij" title="Zamknij"></button>
       </div>
       <div class="modal-body">
         <ul>
@@ -63,7 +61,7 @@
         <img class="img-fluid" src="/img/stats/stats-demo.gif" alt="Demo statystyki"/>
       </div>
       <div class="modal-footer">
-        <button type="button" class="main-btn on-white close-demo" data-dismiss="modal">OK</button>
+        <button type="button" class="main-btn on-white" data-bs-dismiss="modal">OK</button>
       </div>
     </div>
   </div>

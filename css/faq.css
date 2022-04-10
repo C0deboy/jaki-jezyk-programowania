@@ -10,6 +10,12 @@
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .faq .container, .container-sm {
+    max-width: none;
+  }
+}
+
 .answer {
   background-color: #00353e;
   display: none;

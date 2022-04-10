@@ -10,6 +10,8 @@
   "rules": {
     "prefer-template": 0,
     "no-plusplus": 0,
-    "no-use-before-define":"off"
+    "max-len": ["error", { "code": 120 }],
+    "no-param-reassign": ["error", { "props": false }],
+    "no-use-before-define": "off"
   }
 }

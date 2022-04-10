@@ -1,3 +1,5 @@
+import { ScrollSpy } from 'bootstrap';
+
 const scrollToElement = (el, ms) => {
   const speed = ms || 600;
   $('html,body').animate({
@@ -35,7 +37,7 @@ $(document).ready(($) => {
   }, dynamicNavbar);
 });
 
-$('body').scrollspy({
+const scrollSpy = new ScrollSpy(document.body, {
   target: '.navbar-fixed-top',
   offset: 51,
 });

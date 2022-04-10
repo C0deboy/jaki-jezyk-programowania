@@ -57,7 +57,7 @@ function prepareTooltip(text) {
   tooltip.innerText = text;
   tooltip.setAttribute('id', 'tooltip' + tipId);
   tooltip.setAttribute('role', 'tooltip');
-  tooltip.classList.add('lightAriaTooltips');
+  tooltip.classList.add('lightTooltip');
   return tooltip;
 }
 

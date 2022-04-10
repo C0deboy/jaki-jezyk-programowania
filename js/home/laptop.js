@@ -14,8 +14,8 @@ function responsiveLaptop() {
   const keyboardHeight = screen.height() * 0.6;
   keyboard.css({'border-bottom': `${keyboardHeight}px solid #e8ebf0`});
   const keyboardWidth = screen.width() / 8.45;
-  keyboard.css({'border-left': `${keyboardWidth}px solid transparent`});
-  keyboard.css({'border-right': `${keyboardWidth}px solid transparent`});
+  keyboard.css({'border-start': `${keyboardWidth}px solid transparent`});
+  keyboard.css({'border-end': `${keyboardWidth}px solid transparent`});
   const keysHeight = keyboard.css('border-bottom-width');
   keys.css({height: `${parseInt(keysHeight, 10) * 0.75}px`});
   const keysWidth = keyboard.width() / 3.5;

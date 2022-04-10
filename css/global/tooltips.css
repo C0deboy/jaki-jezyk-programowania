@@ -1,4 +1,4 @@
-.lightAriaTooltips {
+.lightTooltip {
 	display: block;
 	visibility: hidden;
 	position: absolute;
@@ -9,6 +9,7 @@
 	z-index: 999;
 	text-align: center;
 	min-width: 100px;
+	max-width: 768px;
 	border-radius: 4px;
 	opacity: 0;
 	transition: opacity 0.6s;
@@ -44,7 +45,7 @@
 	visibility: visible;
 }
 
-.lightAriaTooltips::after {
+.lightTooltip::after {
 	content: ' ';
 	display: block;
 	background: inherit;
