@@ -165,7 +165,7 @@ function createLineChart(canvasId, title, yAxisLabel, stats, cfg = {
 
   ctx.canvas.parentElement.insertBefore(header, ctx.canvas);
 
-  if (window.matchMedia('(max-width: 768px)').matches) ctx.canvas.height = 360;
+  if (window.matchMedia('(max-width: 768px)').matches) ctx.canvas.height = 500;
 
   datasets.forEach((entry, i) => {
     const color = defaultColors[i];
@@ -175,7 +175,7 @@ function createLineChart(canvasId, title, yAxisLabel, stats, cfg = {
     entry.tension = 0.4;
   });
 
-  const chart = new Chart(ctx, {
+  new Chart(ctx, {
     type: 'line',
     data: {
       labels: canvasId.includes('Last') ? stats.lastYearLabels : stats.labels,
