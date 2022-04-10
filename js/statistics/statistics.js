@@ -165,6 +165,8 @@ function createLineChart(canvasId, title, yAxisLabel, stats, cfg = {
 
   ctx.canvas.parentElement.insertBefore(header, ctx.canvas);
 
+  if (window.matchMedia('(max-width: 768px)').matches) ctx.canvas.height = 360;
+
   datasets.forEach((entry, i) => {
     const color = defaultColors[i];
     entry.borderColor = color;
