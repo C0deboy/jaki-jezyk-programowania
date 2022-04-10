@@ -5,14 +5,14 @@
   font-size: .7em;
   background: inherit;
   color: #fff;
-  display: none;
+  display: flex;
   text-align: center;
   align-items: center;
   justify-items: center;
   position: fixed;
   bottom: 0;
   box-shadow: 0 0 2px 0 black;
- }
+}
 
 .cookies-info p {
   margin: 0;
