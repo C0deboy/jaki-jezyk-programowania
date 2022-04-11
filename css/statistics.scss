@@ -18,17 +18,17 @@ h2 {
   margin: 30px 30px 15px;
 }
 
-#demo.modal ul {
-  list-style: none;
-  margin: 0 0 15px 0;
-  padding: 0;
-}
-
 #demo.modal {
-  color: black;
-}
+  ul {
+    list-style: none;
+    margin: 0 0 15px 0;
+    padding: 0;
+  }
 
-#demo.modal .btn-close {
-  font-size: 0.7em;
-  margin-right: -5px;
+  color: black;
+
+  .btn-close {
+    font-size: 0.7em;
+    margin-right: -5px;
+  }
 }

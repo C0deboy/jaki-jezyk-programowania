@@ -1,5 +1,5 @@
-require('../../css/home/home.css');
-require('../../css/faq.css');
+require('../../css/home/home.scss');
+require('../../css/faq.scss');
 
 const requireAll = require.context('./', true, /\.js$/);
 requireAll.keys()

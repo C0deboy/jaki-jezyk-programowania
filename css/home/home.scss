@@ -1,19 +1,17 @@
-@import url('cookiesInfo.css');
-@import url('laptop.css');
-@import url('monokai-sublime.css');
+@import url('cookiesInfo.scss');
+@import url('laptop.scss');
+@import url('monokai-sublime.scss');
 
 hr {
   border-color: rgba(42, 144, 180, 0.31);
 }
 
-.key,
-.site-header {
+.key, .site-header {
   text-align: center;
   flex-direction: row;
 }
 
-.key,
-.laptop {
+.key, .laptop {
   box-sizing: border-box;
 }
 
@@ -35,13 +33,13 @@ header .text-muted a {
 @media (min-width: 992px) {
   .site-header {
     padding-top: 115px;
-  }
 
-  .site-header .header-row {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+    .header-row {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
   }
 
   .intro-text {
@@ -74,25 +72,30 @@ header .text-muted a {
   margin: 15px auto 40px;
   padding-right: 30px;
   padding-left: 30px;
+
+  &:hover, &:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px 0 #141414;
+  }
+
+  &:active {
+    transform: translateY(+1px);
+    box-shadow: 0 2px 6px 0 black;
+  }
+
+  .fa-play {
+    margin-right: 15px;
+  }
 }
 
-.btn.start:hover,
-.btn.start:focus {
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px 0 #141414;
+.program-languages .section-heading {
+  color: #fff;
+
+  small {
+    color: #fff;
+  }
 }
 
-.btn.start:active {
-  transform: translateY(+1px);
-  box-shadow: 0 2px 6px 0 black;
-}
-
-.btn.start .fa-play {
-  margin-right: 15px;
-}
-
-.program-languages .section-heading,
-.program-languages .section-heading small,
 .lang-link {
   color: #fff;
 }
@@ -103,9 +106,12 @@ header .text-muted a {
 
 .author {
   margin-bottom: 20px;
+
+  .name {
+    margin-bottom: 0;
+  }
 }
 
-.author .name,
 .social-buttons {
   margin-bottom: 0;
 }
@@ -123,12 +129,11 @@ header .text-muted a {
   -ms-transition: background .2s linear, transform .2s linear;
   -o-transition: background .2s linear, transform .2s linear;
   transition: background .2s linear, transform .2s linear;
-}
 
-.social-buttons a:hover,
-.social-buttons a:focus {
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+  &:hover, &:focus {
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
 }
 
 .survey {

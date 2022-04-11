@@ -20,14 +20,14 @@
 .tooltip {
   margin-bottom: 3px;
   font-family: inherit;
-}
 
-.tooltip.show {
-  opacity: 1;
-}
+  &.show {
+    opacity: 1;
+  }
 
-.tooltip .arrow::before {
-  border-top-color: #e8ebf0;
+  .arrow::before {
+    border-top-color: #e8ebf0;
+  }
 }
 
 .tooltip-inner {
@@ -60,24 +60,26 @@
 
 .tip {
   color: inherit;
-}
 
-.tip:hover {
-  outline: none;
-}
+  &:hover {
+    outline: none;
+  }
 
-.tip .fa-commenting-o {
-  animation: 1s jumping infinite ease-out;
+  .fa-commenting-o {
+    animation: 1s jumping infinite ease-out;
+  }
 }
 
 @keyframes jumping {
   0% {
-    transform: translateY(-3px)
+    transform: translateY(-3px);
   }
+
   50% {
-    transform: translateY(0px)
+    transform: translateY(0px);
   }
+
   100% {
-    transform: translateY(-3px)
+    transform: translateY(-3px);
   }
 }

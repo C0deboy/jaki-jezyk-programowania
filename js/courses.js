@@ -1,12 +1,14 @@
-require('../css/courses.css');
+require('../css/courses.scss');
 
 document.querySelectorAll('.stars')
   .forEach((container) => showStars(container));
 
 if (document.location.hash.includes(encodeURI('książki'))) {
-  document.querySelector('.books').scrollIntoView();
+  document.querySelector('.books')
+    .scrollIntoView();
 } else if (document.location.hash.includes('kursy')) {
-  document.querySelector('.courses').scrollIntoView();
+  document.querySelector('.courses')
+    .scrollIntoView();
 }
 
 function showStars(stars) {

@@ -1,7 +1,7 @@
 @import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "../../node_modules/font-awesome/css/font-awesome.min.css";
-@import "tooltips.css";
-@import "navbar.css";
+@import "tooltips.scss";
+@import "navbar.scss";
 
 html, body {
   font-family: 'Lato', sans-serif;
@@ -19,11 +19,11 @@ section {
 a {
   color: #03A9F4;
   text-decoration: none;
-}
 
-a:hover {
-  color: #00d6ff;
-  text-decoration: none;
+  &:hover {
+    color: #00d6ff;
+    text-decoration: none;
+  }
 }
 
 h1 {
@@ -49,11 +49,14 @@ h4 {
   text-shadow: 0 0 4px black;
 }
 
-.header-heading,
-.section-heading,
-.language-content h1,
-.language-content h2 {
+.header-heading, .section-heading {
   text-shadow: 0 2px 4px black;
+}
+
+.language-content {
+  h1, h2 {
+    text-shadow: 0 2px 4px black;
+  }
 }
 
 .faq h1::after,
@@ -144,41 +147,41 @@ h4 {
   padding: 3px 10px 0;
   box-shadow: 0 1px 2px 0 black;
   cursor: pointer;
-}
 
-.main-btn.on-white {
-  box-shadow: 0 1px 2px 0 #000;
-}
+  &.on-white {
+    box-shadow: 0 1px 2px 0 #000;
+  }
 
-.main-btn i {
-  color: white;
-}
+  i {
+    color: white;
+  }
 
-.main-btn:disabled {
-  opacity: 0.5;
-}
+  &:disabled {
+    opacity: 0.5;
+  }
 
-.main-btn:hover,
-.main-btn:focus {
-  text-decoration: none;
-  transform: translateY(-1px);
-  color: #ffffff;
-  background: rgb(50, 50, 50);
-  box-shadow: 0 2px 4px 0 black;
-}
+  &:hover, &:focus {
+    text-decoration: none;
+    transform: translateY(-1px);
+    color: #ffffff;
+    background: rgb(50, 50, 50);
+    box-shadow: 0 2px 4px 0 black;
+  }
 
-.main-btn.on-white:hover,
-.main-btn.on-white:focus {
-  box-shadow: 0 2px 4px 0 black;
-}
+  &.on-white {
+    &:hover, &:focus {
+      box-shadow: 0 2px 4px 0 black;
+    }
+  }
 
-.main-btn:active {
-  transform: translateY(+1px);
-  box-shadow: 0 1px 4px 0 black;
-}
+  &:active {
+    transform: translateY(+1px);
+    box-shadow: 0 1px 4px 0 black;
+  }
 
-.main-btn.on-white:active {
-  box-shadow: 0 1px 2px 0 black;
+  &.on-white:active {
+    box-shadow: 0 1px 2px 0 black;
+  }
 }
 
 @media (min-width: 992px) {
@@ -190,11 +193,7 @@ h4 {
   }
 }
 
-.darker-overlay {
-  box-shadow: 0 0 2px 0 #000;
-  background: #00353e;
-}
-
+.darker-overlay,
 .darker-overlay-on-hover:hover {
   box-shadow: 0 0 2px 0 #000;
   background: #00353e;

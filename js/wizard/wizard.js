@@ -1,8 +1,7 @@
 import ImageLoader from './ImageLoader';
 import { NextQuestion } from './wizardData';
 
-require('../../css/wizard.css');
-
+require('../../css/wizard.scss');
 
 const firstQuestion = new NextQuestion('whyProgramming');
 const previousQuestions = [firstQuestion];
@@ -12,7 +11,7 @@ ImageLoader.load(() => load(firstQuestion));
 const returnBtn = $('.return-btn');
 
 function loadNextQuestionAndRememberPrevious() {
-  const next = this.next;
+  const { next } = this;
 
   previousQuestions.push(next);
 
@@ -40,22 +39,24 @@ function loadPreviousQuestion() {
 }
 
 returnBtn.on('click', loadPreviousQuestion);
-returnBtn.on('mouseleave', e => e.target.blur());
+returnBtn.on('mouseleave', (e) => e.target.blur());
 
-$(document).on('keydown', (e) => {
-  if ((e.which === 8)) { // backspace
-    loadPreviousQuestion();
-  }
-});
+$(document)
+  .on('keydown', (e) => {
+    if ((e.which === 8)) { // backspace
+      loadPreviousQuestion();
+    }
+  });
 
 const againBtn = $('.again-btn');
 againBtn.on('click', () => load(firstQuestion));
-againBtn.on('mouseleave', e => e.target.blur());
+againBtn.on('mouseleave', (e) => e.target.blur());
 
-$(document).on('keydown', (e) => {
-  if ((e.which === 27)) { // esc
-    load(firstQuestion);
-  }
-});
+$(document)
+  .on('keydown', (e) => {
+    if ((e.which === 27)) { // esc
+      load(firstQuestion);
+    }
+  });
 
 export { loadNextQuestionAndRememberPrevious };

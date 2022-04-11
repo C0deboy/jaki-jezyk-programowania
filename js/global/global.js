@@ -3,7 +3,7 @@ import $ from 'jquery';
 window.jQuery = $;
 window.$ = $;
 
-require('../../css/global/global.css');
+require('../../css/global/global.scss');
 
 require('bootstrap');
 require('./forEachPolyfill');

@@ -33,13 +33,19 @@ module.exports = {
         },
       },
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
               url: false,
+            },
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
             },
           },
         ],

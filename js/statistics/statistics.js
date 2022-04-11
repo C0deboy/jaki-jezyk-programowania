@@ -17,7 +17,7 @@ import statistics2020 from './statistics2020-data';
 import statistics2021 from './statistics2021-data';
 import statistics2022 from './statistics2022-data';
 
-require('../../css/statistics.css');
+require('../../css/statistics.scss');
 
 Chart.register(LineController, LineElement, PointElement, LinearScale, CategoryScale, Title, Tooltip, Legend);
 

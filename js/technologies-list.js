@@ -1,4 +1,4 @@
-require('../css/technologies-list.css');
+require('../css/technologies-list.scss');
 
 const langElements = document.querySelectorAll('.lang');
 

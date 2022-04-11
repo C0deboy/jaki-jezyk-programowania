@@ -1,0 +1,143 @@
+.navbar-custom {
+  z-index: 999;
+  font-size: 0.9em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+
+  /* Force Hardware Acceleration in WebKit */
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0 0 4px 0 black;
+  color: #777 !important;
+
+  .navbar-brand {
+    font-size: 25px;
+    padding: 0 15px;
+    color: inherit;
+  }
+}
+
+.navbar-brand img {
+  height: 45px;
+  display: inline;
+}
+
+@media (min-width: 2160px) {
+  .navbar-brand img {
+    margin-top: -18px;
+  }
+}
+
+.navbar-custom {
+  .navbar-toggler {
+    margin: 5px;
+    text-transform: uppercase;
+    box-shadow: none;
+  }
+
+  .nav li .nav-link {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  &.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -52px;
+    opacity: 0.8;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+    border-bottom: 1px solid #eee;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    .navbar-brand, .nav li > a {
+      color: #626262;
+    }
+  }
+
+  .navbar-brand {
+    &:hover, &:focus {
+      color: rgba(0, 0, 0, 1);
+    }
+  }
+
+  .nav li .nav-link {
+    &:hover, &:focus {
+      color: rgba(0, 0, 0, 1);
+    }
+  }
+
+  &.is-visible {
+    transform: translate3d(0, 52px, 0);
+  }
+}
+
+.site-logo {
+  margin: 0;
+}
+
+.promotion-popup {
+  position: absolute;
+  font-size: .8em;
+  display: inline-block;
+  top: 0;
+  color: black;
+  background: #f8f8f8;
+  border-radius: 5px;
+  padding: 4px;
+  opacity: 1;
+  animation: .5s popup ease-out forwards;
+  animation-delay: .5s;
+  box-shadow: 0 1px 2px 0 black;
+  z-index: 2;
+  margin-left: 25px;
+
+  button {
+    background: none;
+    border: none;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    height: 12px;
+    z-index: -1;
+    transform: skew(0deg, -38deg);
+    width: 19px;
+    background: #f8f8f8;
+    position: absolute;
+    right: 5px;
+    top: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .promotion-popup {
+    top: -10px;
+  }
+}
+
+@keyframes popup {
+  0% {
+    transform: translateY(0px) scale3d(0.2, 0.2, 1);
+  }
+
+  100% {
+    transform: translateY(65px) scale3d(1, 1, 1);
+  }
+}

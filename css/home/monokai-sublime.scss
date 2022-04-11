@@ -1,16 +1,10 @@
-/*
-
-Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
-
-*/
-
 .hljs {
   display: block;
   width: 100%;
   overflow-x: auto;
+  color: #f8f8f2;
 }
 
-.hljs,
 .hljs-tag,
 .hljs-subst,
 .hljs-meta-string {
@@ -55,7 +49,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 }
 
 .hljs-built_in,
-  /*.hljs-function .hljs-keyword,*/
 .hljs-symbol,
 .hljs-attribute {
   color: #66d9ef;
@@ -64,7 +57,6 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .hljs-params {
   color: #FD971F;
 }
-
 
 .hljs-class .hljs-title {
   color: #f8f8f2;

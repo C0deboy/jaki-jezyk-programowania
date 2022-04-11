@@ -1,12 +1,14 @@
-@import url('courses.css');
+@import url('courses.scss');
 
-html, body {
+html,
+body {
   color: white;
   background: #f8f8f8;
 }
 
 @media (max-width: 768px) {
-  html, body {
+  html,
+  body {
     font-size: 14px;
   }
 }
@@ -27,6 +29,10 @@ section {
   background-color: #003e48;
   box-shadow: 0 2px 2px 0 black;
   padding: 60px 5% 40px;
+
+  .start-container {
+    padding: 0 2px 25px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -45,10 +51,6 @@ section {
   }
 }
 
-.language-content .start-container {
-  padding: 0 2px 25px;
-}
-
 @media (max-width: 550px) {
   .language-content {
     box-shadow: none;
@@ -59,35 +61,64 @@ section {
   margin-top: 20px;
 }
 
-.language-content .language-logo {
-  background: #00353e;
-  box-shadow: 1px 2px 4px 0 #000;
-  border-radius: 50%;
-  width: 250px;
-  margin: 10px auto;
-  animation: language-logo-animation 2s ease-in-out;
-  transform-origin: 50% 100%;
+.language-content {
+  .language-logo {
+    background: #00353e;
+    box-shadow: 1px 2px 4px 0 #000;
+    border-radius: 50%;
+    width: 250px;
+    margin: 10px auto;
+    animation: language-logo-animation 2s ease-in-out;
+    transform-origin: 50% 100%;
+  }
+
+  ul,
+  ol {
+    text-align: left;
+  }
+
+  table {
+    margin: auto;
+
+    td {
+      text-align: left;
+      box-shadow: 0 0 1px 0 #000000ab;
+      padding: 0 10px;
+
+      &:last-of-type,
+      &:first-of-type {
+        text-align: right;
+        white-space: nowrap;
+      }
+    }
+  }
 }
 
 @keyframes language-logo-animation {
   0% {
     transform: rotate(0deg) scaleY(0.6);
   }
+
   20% {
     transform: rotate(-2deg) scaleY(1.05);
   }
+
   35% {
     transform: rotate(2deg) scaleY(1);
   }
+
   50% {
     transform: rotate(-2deg);
   }
+
   65% {
     transform: rotate(1deg);
   }
+
   80% {
     transform: rotate(-1deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -100,26 +131,6 @@ section {
   }
 }
 
-.language-content ul, .language-content ol {
-  text-align: left;
-}
-
-.language-content table {
-  margin: auto;
-}
-
-.language-content table td {
-  text-align: left;
-  box-shadow: 0 0 1px 0 #000000ab;
-  padding: 0 10px;
-}
-
-.language-content table td:last-of-type,
-.language-content table td:first-of-type {
-  text-align: right;
-  white-space: nowrap;
-}
-
 .language-logo img {
   padding: 20px;
   width: 100%;
@@ -130,9 +141,11 @@ section {
   clear: both;
   box-shadow: 0 1px 2px 0 #000;
   color: #3b3b3b;
-  background: -webkit-linear-gradient(#f8f8f8, #bbb);
+  background: -webkit-linear-gradient(#f8f8f8,
+          #bbb);
   border-radius: 3px;
-  background: linear-gradient(#f8f8f8, #bbb);
+  background: linear-gradient(#f8f8f8,
+          #bbb);
   display: inline-block;
   padding: 2px 10px 0;
 }
@@ -147,19 +160,19 @@ section {
 .lang-starter {
   padding: 1%;
   text-align: left;
-}
 
-.lang-starter h2 {
-  text-align: center;
+  h2 {
+    text-align: center;
+  }
 }
 
 .language-content p {
   text-align: justify;
-}
 
-.language-content p img {
-  margin: auto;
-  display: block;
+  img {
+    margin: auto;
+    display: block;
+  }
 }
 
 .lang-starter-heading {
@@ -189,21 +202,21 @@ section {
   margin-bottom: 10px;
   width: 300px;
   vertical-align: top;
-}
 
-.book img {
-  margin: 0 auto;
-  max-width: 290px;
-}
+  img {
+    margin: 0 auto;
+    max-width: 290px;
+  }
 
-.book a {
-  border-radius: 5px;
-  color: #ffffff;
-  display: inline-block;
-  margin: 10px auto 10px auto;
-  text-align: center;
-  border: 0;
-  box-shadow: 0 1px 2px 0 black;
+  a {
+    border-radius: 5px;
+    color: #ffffff;
+    display: inline-block;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    border: 0;
+    box-shadow: 0 1px 2px 0 black;
+  }
 }
 
 .helion-ksiazkasm3,
@@ -221,19 +234,23 @@ section {
   padding: 3px 8px 0;
 }
 
-.helion-ksiazkasm4 a:first-of-type,
-.helion-ksiazkasm4 br:first-of-type {
-  display: none;
+.helion-ksiazkasm4 {
+  a:first-of-type,
+  br:first-of-type {
+    display: none;
+  }
 }
 
-.book p {
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
+.book {
+  p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
 
-.book .helion-ksiazkasm3 {
-  font-size: .7em;
+  .helion-ksiazkasm3 {
+    font-size: .7em;
+  }
 }
 
 .book-section p {
@@ -244,16 +261,18 @@ section {
   padding: 8px 20px;
   margin-top: 20px;
   display: inline-block;
-}
 
-.other-books-link img {
-  max-height: 40px;
-  margin-right: 10px;
+  img {
+    max-height: 40px;
+    margin-right: 10px;
+  }
 }
-
 
 .language-content hr {
-  border: 1px solid rgba(255, 255, 255, 0.17);
+  border: 1px solid rgba(255,
+          255,
+          255,
+          0.17);
 }
 
 .official-page {
@@ -261,36 +280,37 @@ section {
   padding: 10px 20px 10px 10px;
   border-radius: 2px;
   margin-top: 20px;
-}
 
-.official-page a {
-  text-decoration: none;
+  a {
+    text-decoration: none;
+  }
 }
 
 .recommended-books-list {
   padding: 30px 0;
-}
 
-.recommended-books-list ul {
-  list-style-type: none;
-}
+  ul {
+    list-style-type: none;
 
-.recommended-books-list ul li::before {
-  content: "\f101";
-  font-family: "FontAwesome", sans-serif;
-  padding: 0 10px 0 0;
+    li::before {
+      content: "\f101";
+      font-family: "FontAwesome",
+      sans-serif;
+      padding: 0 10px 0 0;
+    }
+  }
 }
 
 .book-categories {
   display: inline-block;
-}
 
-.book-categories span {
-  text-align: left;
-}
+  span {
+    text-align: left;
+  }
 
-.book-categories p {
-  text-align: center;
+  p {
+    text-align: center;
+  }
 }
 
 .book-of-a-day {
@@ -302,21 +322,21 @@ section {
 .top-books {
   text-align: left;
   margin-top: 35px;
-}
 
-.top-books .position {
-  position: absolute;
-  color: #f94546;
-  font-size: 1.4em;
-  text-shadow: 0 2px 4px black;
-  margin: -10px 0 0 -25px;
-  background: #222222;
-  border-radius: 5px;
-  display: inline-block;
-  text-align: center;
-  border: 0;
-  padding: 0 5px;
-  box-shadow: 0 1px 2px 0 black;
+  .position {
+    position: absolute;
+    color: #f94546;
+    font-size: 1.4em;
+    text-shadow: 0 2px 4px black;
+    margin: -10px 0 0 -25px;
+    background: #222222;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    border: 0;
+    padding: 0 5px;
+    box-shadow: 0 1px 2px 0 black;
+  }
 }
 
 .promotion {
@@ -330,21 +350,21 @@ section {
   text-align: center;
   margin-bottom: 5px;
   display: inline-block;
-}
 
-.promotion-content .icon {
-  max-height: 30px;
-  display: inline-block;
-  margin: 0 5px;
-  vertical-align: bottom;
-}
+  .icon {
+    max-height: 30px;
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: bottom;
+  }
 
-.promotion-content span {
-  vertical-align: middle;
-}
+  span {
+    vertical-align: middle;
+  }
 
-.promotion-content .icon:nth-of-type(2) {
-  transform: scaleX(-1);
+  .icon:nth-of-type(2) {
+    transform: scaleX(-1);
+  }
 }
 
 .promotion-header {
@@ -395,7 +415,8 @@ section {
 }
 
 .in-progress {
-  background: linear-gradient(#f94646, #8f0808);
+  background: linear-gradient(#f94646,
+          #8f0808);
   box-shadow: 0 1px 4px 0 #212121;
 }
 
