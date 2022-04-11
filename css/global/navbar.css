@@ -20,7 +20,6 @@
 }
 
 .navbar-custom .navbar-brand {
-  font-weight: 800;
   font-size: 25px;
   padding: 0 15px;
   color: inherit;
@@ -45,7 +44,6 @@
 
 .navbar-custom .nav li .nav-link {
   text-transform: uppercase;
-  font-weight: 800;
   letter-spacing: 1px;
   padding: 15px;
   color: rgba(0, 0, 0, .7);

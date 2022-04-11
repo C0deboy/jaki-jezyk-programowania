@@ -259,12 +259,11 @@
 }
 
 .previousExample-btn,
-.nextExample-btn{
+.nextExample-btn {
   cursor: pointer;
   border: none;
   border-bottom: solid 2px #000;
   line-height: 100%;
-  font-weight: 700;
   text-indent: -1px;
 }
 
