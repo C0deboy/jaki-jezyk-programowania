@@ -6,7 +6,10 @@
   <div class="container-fluid">
     <div class="row start-row">
       <div class="col-sm-12 col-lg-6 col-header">
-        <div class="language-logo"><img src="/img/technologies/{% if page.image %}{{ page.image }}{% else %}{{ page.title | downcase | remove: ' '}}.png{% endif %}" alt="{{ page.title }} logo"></div>
+        <div class="language-logo"><img
+          alt="{{ page.title }} logo"
+          src="/img/technologies/{% if page.image %}{{ page.image }}{% else %}{{ page.title | downcase | remove: ' '}}.png{% endif %}">
+        </div>
       </div>
       <div class="col-sm-12 col-lg-6 col-header">
         <h2 class="lang-starter-heading">{{ page.title }}</h2>
@@ -15,10 +18,14 @@
 
         <p style="margin: 25px 0 0 0; text-align: center">Zobacz polecane:</p>
         {% if page.no-courses != true %}
-        <a class="main-btn page-scroll courses-link me-2" href="#najlepsze-kursy-video-do-nauki-{{ page.title | downcase | replace: '#', 'sharp' | replace: ' ', '-'}}"> <i class="fa fa-video-camera" aria-hidden="true"></i> Kursy</a>
+        <a class="main-btn page-scroll courses-link me-2"
+           href="#najlepsze-kursy-video-do-nauki-{{ page.title | downcase | replace: '#', 'sharp' | replace: ' ', '-'}}">
+          <i aria-hidden="true" class="fa fa-video-camera"></i> Kursy</a>
         {% endif %}
         {% if page.no-books != true %}
-        <a class="main-btn page-scroll" href="#najlepsze-książki-do-nauki-{{ page.title | downcase | replace: '#', 'sharp' | replace: ' ', '-'}}"><i class="fa fa-book" aria-hidden="true"></i> Książki</a>
+        <a class="main-btn page-scroll"
+           href="#najlepsze-książki-do-nauki-{{ page.title | downcase | replace: '#', 'sharp' | replace: ' ', '-'}}"><i
+          aria-hidden="true" class="fa fa-book"></i> Książki</a>
         {% endif %}
       </div>
     </div>

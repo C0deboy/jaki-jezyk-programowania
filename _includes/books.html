@@ -1,29 +1,30 @@
 {% unless page.no-books %}
 <div class="books">
-{% assign category = site.data.books_by_technology[page.title] %}
-{% if category != null %}
-  <h1 id="najlepsze-książki-do-nauki-{{ page.title | downcase | replace: '#', 'sharp'| replace: ' ', '-'}}"> Najlepsze książki do nauki  {{ page.title }}</h1>
+  {% assign category = site.data.books_by_technology[page.title] %}
+  {% if category != null %}
+  <h1 id="najlepsze-książki-do-nauki-{{ page.title | downcase | replace: '#', 'sharp'| replace: ' ', '-'}}"> Najlepsze
+    książki do nauki {{ page.title }}</h1>
   <h2>od wydawnictwa <a href="https://helion.pl/view/9102Q">Helion</a>:</h2>
   {% include promotion.html %}
-{% endif %}
-{%- for book in category.books -%}
+  {% endif %}
+  {%- for book in category.books -%}
   {%- if book.first -%}
-    {% for group in book %}
-      {%- if group[0] != '' -%}
+  {% for group in book %}
+  {%- if group[0] != '' -%}
   <p>{{ group[0] }}:</p>
-      {%- endif -%}
-      {% for bookId in group[1] %}
+  {%- endif -%}
+  {% for bookId in group[1] %}
   <div class="book" data-book-id="{{ bookId }}">
     <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id={{ bookId }}&nr=9102Q&size=181&utf8=1"></script>
   </div>
-      {% endfor %}
-    {% endfor %}
+  {% endfor %}
+  {% endfor %}
   {%- else -%}
   <div class="book" data-book-id="{{ book }}">
     <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id={{ book }}&nr=9102Q&size=181&utf8=1"></script>
   </div>
   {%- endif -%}
-{%- endfor -%}
+  {%- endfor -%}
 </div>
 
 {% case page.title %}
@@ -91,7 +92,8 @@
 
 {% if category != "" %}
 <div>
-  <a class="other-books-link darker-overlay" href="https://helion.pl/page-new/9102Q/kategorie/{{category}}/{{subcategory | downcase }}/druk,ebook">
+  <a class="other-books-link darker-overlay"
+     href="https://helion.pl/page-new/9102Q/kategorie/{{category}}/{{subcategory | downcase }}/druk,ebook">
     <img src="/img/other/books.png"/>Zobacz inne książki w kategorii {{ page.title }}
   </a>
 </div>

@@ -1,0 +1,50 @@
+---
+title: "Jak wybrać język programowania? - asystent wyboru"
+description: "Dowiedz się jaki język programowania lub technologia będzie odpowiednia dla danego zastosowania."
+permalink: "/start/"
+---
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+  {% include head.html %}
+
+  <link rel="stylesheet" href="/dist/wizard.css">
+
+</head>
+<body>
+
+{% include nav.html %}
+
+<section class="all">
+  <div class="return-btn">
+    <button class="main-btn">
+      <i class="fa fa-undo" aria-hidden="true"></i> Cofnij
+    </button>
+    <br>
+    <small class="main-btn key-name">[Backspace]</small>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row flex-column justify-content-center ">
+      <h1 class="question"></h1>
+      <div class="answers"></div>
+    </div>
+  </div>
+
+  <div class="again-btn">
+    <button class="main-btn">
+      <i class="fa fa-refresh" aria-hidden="true"></i> Od początku
+    </button>
+    <br>
+    <small class="main-btn key-name">[Esc]</small>
+  </div>
+</section>
+
+{% include footer.html %}
+
+<script src="/dist/wizard.js"></script>
+
+</body>
+</html>

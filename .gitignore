@@ -2,9 +2,5 @@
 node_modules
 npm-debug.log
 _site
-_data/scrap-data.bat
-_data/stats-scraper-1.0.0.jar
 _data/statistics/stats-scraper*.jar
-libs
-dist
 promotion

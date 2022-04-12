@@ -5,8 +5,8 @@
 
   {% include head.html %}
 
-  <link rel="stylesheet" href="/dist/faq.css">
-  <link rel="stylesheet" href="/dist/statistics.css">
+  <link href="/dist/faq.css" rel="stylesheet">
+  <link href="/dist/statistics.css" rel="stylesheet">
 
 </head>
 <body>
@@ -18,18 +18,19 @@
 {% assign filteredYears = years | reverse | where_exp:"year", "year != current_year" %}
 {% assign yearsSizeMinus2 = years.size | minus: 2 %}
 
-<section class="faq" id="statistics" data-year="{{page.year}}">
+<section class="faq" data-year="{{page.year}}" id="statistics">
 
   <div class="container">
     <h1>Statystyki języków programowania {{page.year}}</h1>
-    <p class="m-4">Wizualizacja wszystkich statystyk, które są zbierane co miesiąc na potrzebę tej strony w roku {{page.year}}.</p>
+    <p class="m-4">Wizualizacja wszystkich statystyk, które są zbierane co miesiąc na potrzebę tej strony w roku
+      {{page.year}}.</p>
     <p>Zobacz także rok&nbsp;
       {%- for year in filteredYears -%}
-        <a href="/statystyki-jezykow-programowania-{{year}}/">{{year}}</a> {% if forloop.last == false %}lub {% endif %}
+      <a href="/statystyki-jezykow-programowania-{{year}}/">{{year}}</a> {% if forloop.last == false %}lub {% endif %}
       {%- endfor -%}
     </p>
 
-    <button type="button" class="main-btn" data-bs-toggle="modal" data-bs-target="#demo">Jak używać?</button>
+    <button class="main-btn" data-bs-target="#demo" data-bs-toggle="modal" type="button">Jak używać?</button>
 
     <div class="row flex-column justify-content-center">
       <div class="charts-container" style="position: relative; width: 100%; height: 100%">
@@ -46,22 +47,25 @@
   </div>
 </section>
 
-<div  id="demo" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+<div aria-hidden="true" class="modal fade" id="demo" role="dialog" tabindex="-1">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Jak używać?</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij" title="Zamknij"></button>
+        <button aria-label="Zamknij" class="btn-close" data-bs-dismiss="modal" title="Zamknij" type="button"></button>
       </div>
       <div class="modal-body">
         <ul>
-          <li><i class="fa fa-arrow-right" aria-hidden="true"></i> Możesz odznaczyć któryś z języków by wykres był czytelniejszy.</li>
-          <li><i class="fa fa-arrow-right" aria-hidden="true"></i> Po najechaniu na daną kropkę zobaczysz szczegóły.</li>
+          <li><i aria-hidden="true" class="fa fa-arrow-right"></i> Możesz odznaczyć któryś z języków by wykres był
+            czytelniejszy.
+          </li>
+          <li><i aria-hidden="true" class="fa fa-arrow-right"></i> Po najechaniu na daną kropkę zobaczysz szczegóły.
+          </li>
         </ul>
-        <img class="img-fluid" src="/img/stats/stats-demo.gif" alt="Demo statystyki"/>
+        <img alt="Demo statystyki" class="img-fluid" src="/img/stats/stats-demo.gif"/>
       </div>
       <div class="modal-footer">
-        <button type="button" class="main-btn on-white" data-bs-dismiss="modal">OK</button>
+        <button class="main-btn on-white" data-bs-dismiss="modal" type="button">OK</button>
       </div>
     </div>
   </div>

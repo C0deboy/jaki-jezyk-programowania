@@ -1,21 +1,21 @@
 /* eslint-disable quote-props */
 
-const TerserPlugin = require('terser-webpack-plugin');
 const path = require('path');
+const TerserPlugin = require('terser-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
   entry: {
-    'home.bundle': './js/home/home.js',
-    'global.bundle': './js/global/global.js',
-    'top-books': './js/top-books.js',
-    'courses': './js/courses.js',
-    'wizard': './js/wizard/wizard.js',
-    'technologies-list': './js/technologies-list.js',
-    'language': './js/language.js',
-    'statistics': './js/statistics/statistics.js',
+    'home.bundle': './src/js/home/home.js',
+    'global.bundle': './src/js/global/global.js',
+    'top-books': './src/js/top-books.js',
+    'courses': './src/js/courses.js',
+    'wizard': './src/js/wizard/wizard.js',
+    'technologies-list': './src/js/technologies-list.js',
+    'language': './src/js/language.js',
+    'statistics': './src/js/statistics/statistics.js',
   },
   output: {
     path: path.join(__dirname, 'dist'),

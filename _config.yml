@@ -1,11 +1,23 @@
-
 baseurl: ""
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
-plugins: [rouge, jekyll-last-modified-at]
-exclude: ["node_modules","webpack.config.js","package.json","README.md", "npm-debug.log", "Gemfile", "Gemfile.lock", "package-lock.json", ".idea", "License", ".gitattributes"]
-include: ["_pages"]
-keep_files: [.git, .gitignore, CNAME]
+exclude: [
+  "node_modules",
+  "webpack.config.js",
+  "package.json",
+  "README.md",
+  "License",
+  "npm-debug.log",
+  "Gemfile",
+  "Gemfile.lock",
+  "package-lock.json",
+  "src",
+  ".idea",
+  ".gitattributes"
+]
+include: [ "_pages" ]
+plugins: [ rouge, jekyll-last-modified-at ]
+keep_files: [ .git, .gitignore, CNAME ]
