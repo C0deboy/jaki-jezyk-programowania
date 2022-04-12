@@ -4,7 +4,7 @@ const promotions = [
     end: new Date('2020-07-20'),
     number: '6094',
     host: 'helion.pl',
-    img: '/promotion/p.jpg',
+    img: 'src/promotion/p.jpg',
     popup: true,
     message: 'Promocja w [Helion] - 2 książki w cenie 1. Wolisz video kursy? Zajrzyj na <a href="https://click.linksynergy.com/fs-bin/click?id=0Bz3A2CPbI4&offerid=358574.1389&subid=0&type=4" target="_blank">Udemy</a>',
     adHeader: 'Promocja w [Helion] - 2 książki w cenie 1. Wolisz video kursy? Zajrzyj na <a href="https://click.linksynergy.com/fs-bin/click?id=0Bz3A2CPbI4&offerid=358574.1389&subid=0&type=4" target="_blank">Udemy</a>',
@@ -16,8 +16,7 @@ const customMessage = '';
 
 promotions.forEach((promotion, i) => {
   if (isPromotionActive(promotion)) {
-
-    let url = `http://${promotion.host}/page/9102Q/kategorie/promocja-2za1`;
+    const url = `http://${promotion.host}/page/9102Q/kategorie/promocja-2za1`;
     // let url = `http://${promotion.host}/page/9102Q/promocja/${promotion.number}`;
 
     promotion.url = new URL(url);
@@ -95,7 +94,7 @@ function getWhenEndMessage(promotion) {
     const currentDate = new Date();
     currentDate.setHours(0, 0, 0, 0);
     if (promotion.end.valueOf() === currentDate.valueOf()) {
-      to = 'Ostatni dzień promocji!'
+      to = 'Ostatni dzień promocji!';
     } else {
       to = `Promocja do ${promotion.end.toLocaleDateString('pl-Pl')}`;
     }
