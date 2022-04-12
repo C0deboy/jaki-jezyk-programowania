@@ -28,10 +28,10 @@ permalink: "/faq/"
       {%- assign faqData = site.data.faq -%}
       {%- assign middle = faqData.size | minus: 1 | divided_by: 2 -%}
       {%- assign beforeMiddle = faqData.size | minus: 1 | divided_by: 2 | minus: 1 -%}
-      {%- assign faqId = 'faq1' -%}
+
 
       <div class="col-sm-6">
-        <div class="accordion" id="{{ faqId }}">
+        <div class="faq accordion">
           {%- for faq in faqData -%}
           {%- assign i = forloop.index -%}
 
@@ -42,18 +42,18 @@ permalink: "/faq/"
             </button>
           </h2>
           <div id="answer-{{ i }}" class="accordion-collapse collapse" aria-labelledby="question-{{ i }}"
-               data-bs-parent="#{{ faqId }}">
+               data-bs-parent=".faq">
             <div class="answer accordion-body">
               {{faq.A | newline_to_br | markdownify }}
             </div>
           </div>
 
           {%- if forloop.index == middle -%}
-          {%- assign faqId = 'faq2' -%}
+
         </div>
       </div>
       <div class="col-sm-6">
-        <div class="accordion" id="{{ faqId }}">
+        <div class="faq accordion">
           {%- endif -%}
           {%- endfor -%}
         </div>
@@ -63,6 +63,8 @@ permalink: "/faq/"
 </section>
 
 {% include footer.html %}
+
+<script src="../dist/faq.js"></script>
 
 </body>
 </html>
