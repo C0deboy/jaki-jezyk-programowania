@@ -4,7 +4,7 @@ const promotions = [
     end: new Date('2020-07-20'),
     number: '6094',
     host: 'helion.pl',
-    img: 'src/promotion/p.jpg',
+    img: '/promotion/p.jpg',
     popup: true,
     message: 'Promocja w [Helion] - 2 książki w cenie 1. Wolisz video kursy? Zajrzyj na <a href="https://click.linksynergy.com/fs-bin/click?id=0Bz3A2CPbI4&offerid=358574.1389&subid=0&type=4" target="_blank">Udemy</a>',
     adHeader: 'Promocja w [Helion] - 2 książki w cenie 1. Wolisz video kursy? Zajrzyj na <a href="https://click.linksynergy.com/fs-bin/click?id=0Bz3A2CPbI4&offerid=358574.1389&subid=0&type=4" target="_blank">Udemy</a>',
