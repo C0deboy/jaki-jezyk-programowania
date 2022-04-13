@@ -6,7 +6,6 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
 <meta content="width=device-width, initial-scale=1" name="viewport">
 <meta content="" name="description">
-<meta content="" name="author">
 
 <meta content="#0376a5" name="theme-color">
 <meta content="#0376a5" name="msapplication-navbutton-color">
@@ -36,41 +35,42 @@
 
 <div class="navbar navbar-expand-lg navbar-light navbar-fixed-top navbar-custom">
 
-    <a class="navbar-brand page-scroll" href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
+  <a class="navbar-brand page-scroll" href="/"><i aria-hidden="true" class="fa fa-home"></i></a>
 
-    <button type="button" id="navbar-toggle-btn" class="navbar-toggler" data-bs-toggle="collapse"
-            data-bs-target="#site-nav" aria-expanded="false" aria-controls="site-nav">
+  <button aria-controls="site-nav" aria-expanded="false" class="navbar-toggler" data-bs-target="#site-nav"
+          data-bs-toggle="collapse" id="navbar-toggle-btn" type="button">
 
-        Menu <i class="fa fa-bars" aria-hidden="true"></i>
-    </button>
+    Menu <i aria-hidden="true" class="fa fa-bars"></i>
+  </button>
 
-    <nav id="site-nav" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav ms-auto text-end">
-            <li class="nav-item">
-                <a class="page-scroll nav-link use-btn" href="#zastosowanie">Zastosowanie</a>
-            </li>
-            <li class="nav-item">
-                <a class="page-scroll nav-link difficulty-btn" href="#poziom-skomplikowania">Poziom skomplikowania</a>
-            </li>
-            <li class="nav-item">
-                <a class="page-scroll nav-link popularity-btn" href="#statystyki">Statystyki</a>
-            </li>
-            <li class="nav-item">
-                <a class="page-scroll nav-link popularity-btn" href="#przyszłość-języka">Przyszłość</a>
-            </li>
-            <li class="nav-item">
-                <a class="page-scroll nav-link courses-link"
-                   href="#najlepsze-kursy-video-do-nauki-c">Kursy</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="page-scroll nav-link"
-                   href="#najlepsze-książki-do-nauki-c">Książki</a>
-            </li>
-            
-        </ul>
-    </nav>
+  <nav class="collapse navbar-collapse" id="site-nav">
+    <ul class="nav navbar-nav ms-auto text-end">
+      <li class="nav-item">
+        <a class="page-scroll nav-link use-btn" href="#zastosowanie">Zastosowanie</a>
+      </li>
+      <li class="nav-item">
+        <a class="page-scroll nav-link difficulty-btn" href="#poziom-skomplikowania">Poziom skomplikowania</a>
+      </li>
+      <li class="nav-item">
+        <a class="page-scroll nav-link popularity-btn" href="#statystyki">Statystyki</a>
+      </li>
+      <li class="nav-item">
+        <a class="page-scroll nav-link popularity-btn" href="#przyszłość-języka">Przyszłość</a>
+      </li>
+      <li class="nav-item">
+        <a class="page-scroll nav-link courses-link"
+           href="#najlepsze-kursy-video-do-nauki-c">Kursy</a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="page-scroll nav-link"
+           href="#najlepsze-książki-do-nauki-c">Książki</a>
+      </li>
+      
+    </ul>
+  </nav>
 </div>
+
 
 <section>
 
@@ -267,8 +267,16 @@ naukę <a href="/technologie/c++">C++</a>.</p>
 <div class="courses">
   <h1 id="najlepsze-kursy-video-do-nauki-c">
     Najlepsze kursy video do nauki C</h1>
-  <h2>na platformie <a href="https://click.linksynergy.com/fs-bin/click?id=0Bz3A2CPbI4&amp;offerid=358574.1389&amp;subid=0&amp;type=4">Udemy</a>:</h2><a class="course darker-overlay-on-hover" href="https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com/course/the-complete-c-programming-bootcamp/" target="_blank">
-    <img alt="Język kursu - angielski" class="course-lang" src="//other/en.png" />
+  <h2>na platformie <a href="https://click.linksynergy.com/fs-bin/click?id=0Bz3A2CPbI4&amp;offerid=358574.1389&amp;subid=0&amp;type=4">Udemy</a>:</h2>
+
+  <div class="text-center">
+    <img alt="Flaga angielska" class="course-lang" src="/img/other/en.png" />
+    Kursy w języku angielskim
+    <img alt="Flaga angielska" class="course-lang" src="/img/other/en.png" />
+    <p class="text-center text-muted"> (W języku polskim niżej)</p>
+  </div>
+  <hr /><a class="course darker-overlay-on-hover" href="https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com/course/the-complete-c-programming-bootcamp/" target="_blank">
+    <img alt="Język kursu - angielski" class="course-lang" src="/img/other/en.png" />
     <img alt="Okładka kursu" src="https://img-c.udemycdn.com/course/240x135/3992134_20ab.jpg" />
     <div class="course-header">
       <p class="course-title">The Complete C Programming Bootcamp</p>
@@ -284,7 +292,7 @@ naukę <a href="/technologie/c++">C++</a>.</p>
     </div>
   </a>
   <hr /><a class="course darker-overlay-on-hover" href="https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com/course/c-programming-for-beginners-/" target="_blank">
-    <img alt="Język kursu - angielski" class="course-lang" src="//other/en.png" />
+    <img alt="Język kursu - angielski" class="course-lang" src="/img/other/en.png" />
     <img alt="Okładka kursu" src="https://img-c.udemycdn.com/course/240x135/1467808_f8c0.jpg" />
     <div class="course-header">
       <p class="course-title">C Programming For Beginners - Master the C Language</p>
@@ -300,7 +308,7 @@ naukę <a href="/technologie/c++">C++</a>.</p>
     </div>
   </a>
   <hr /><a class="course darker-overlay-on-hover" href="https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com/course/c-programming-for-beginners-programming-in-c/" target="_blank">
-    <img alt="Język kursu - angielski" class="course-lang" src="//other/en.png" />
+    <img alt="Język kursu - angielski" class="course-lang" src="/img/other/en.png" />
     <img alt="Okładka kursu" src="https://img-c.udemycdn.com/course/240x135/3173974_b870_4.jpg" />
     <div class="course-header">
       <p class="course-title">C Programming Bootcamp - The Complete C Language Course</p>
@@ -316,7 +324,7 @@ naukę <a href="/technologie/c++">C++</a>.</p>
     </div>
   </a>
   <hr /><a class="course darker-overlay-on-hover" href="https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com/course/c-programming-pointers-from-zero-to-hero/" target="_blank">
-    <img alt="Język kursu - angielski" class="course-lang" src="//other/en.png" />
+    <img alt="Język kursu - angielski" class="course-lang" src="/img/other/en.png" />
     <img alt="Okładka kursu" src="https://img-c.udemycdn.com/course/240x135/3408682_3d93_3.jpg" />
     <div class="course-header">
       <p class="course-title">Advanced C Programming Masterclass: Pointers &amp; Memory in C</p>
@@ -331,8 +339,13 @@ naukę <a href="/technologie/c++">C++</a>.</p>
       <span class="course-reviews">Liczba ocen: 156</span>
     </div>
   </a>
+  <hr /><div class="text-center">
+    <img alt="Flaga polska" class="course-lang" src="/img/other/pl.png" />
+    Kursy w języku polskim
+    <img alt="Flaga polska" class="course-lang" src="/img/other/pl.png" />
+  </div>
   <hr /><a class="course darker-overlay-on-hover" href="https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com/course/podstawy-programowania-jezyk-c/" target="_blank">
-    <img alt="Język kursu - polski" class="course-lang" src="//other/pl.png" />
+    <img alt="Język kursu - polski" class="course-lang" src="/img/other/pl.png" />
     <img alt="Okładka kursu" src="https://img-b.udemycdn.com/course/240x135/2427966_c6a7_7.jpg" />
     <div class="course-header">
       <p class="course-title">Podstawy programowania. Język C</p>
@@ -348,7 +361,7 @@ naukę <a href="/technologie/c++">C++</a>.</p>
     </div>
   </a>
   <hr /><a class="course darker-overlay-on-hover" href="https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com/course/zaawansowane-programowanie-w-jezyku-c/" target="_blank">
-    <img alt="Język kursu - polski" class="course-lang" src="//other/pl.png" />
+    <img alt="Język kursu - polski" class="course-lang" src="/img/other/pl.png" />
     <img alt="Okładka kursu" src="https://img-b.udemycdn.com/course/240x135/2713166_bc9a_2.jpg" />
     <div class="course-header">
       <p class="course-title">Zaawansowane programowanie w języku C</p>
@@ -364,7 +377,7 @@ naukę <a href="/technologie/c++">C++</a>.</p>
     </div>
   </a>
   <hr /><a class="course darker-overlay-on-hover" href="https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com/course/programowanie-w-jezyku-c/" target="_blank">
-    <img alt="Język kursu - polski" class="course-lang" src="//other/pl.png" />
+    <img alt="Język kursu - polski" class="course-lang" src="/img/other/pl.png" />
     <img alt="Okładka kursu" src="https://img-b.udemycdn.com/course/240x135/3006458_0de9_2.jpg" />
     <div class="course-header">
       <p class="course-title">Programowanie w języku C - od A do Z</p>
@@ -380,7 +393,7 @@ naukę <a href="/technologie/c++">C++</a>.</p>
     </div>
   </a>
   <hr /><a class="course darker-overlay-on-hover" href="https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com/course/jezyk-c-poziom-ekspert/" target="_blank">
-    <img alt="Język kursu - polski" class="course-lang" src="//other/pl.png" />
+    <img alt="Język kursu - polski" class="course-lang" src="/img/other/pl.png" />
     <img alt="Okładka kursu" src="https://img-b.udemycdn.com/course/240x135/3100204_0b19_2.jpg" />
     <div class="course-header">
       <p class="course-title">Język C. Poziom ekspert.</p>
