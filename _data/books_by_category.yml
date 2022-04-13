@@ -4,8 +4,8 @@ Git:
   books:
     - gitroz
 
-Czysty kod i agile:
-  title: Najlepsze książki o dobrych praktykach, czystym kodzie i agile
+Czysty kod:
+  title: Najlepsze książki o dobrych praktykach i czystym kodzie
   books:
   - Nowa książa C. Martina:
     - czarch
@@ -16,8 +16,12 @@ Czysty kod i agile:
     - mckkod
   - Inne:
     - koddov
-  - Agile:
-    - zwisam
+
+Agile:
+  title: Najlepsze książki o metodyce Agile
+  books:
+  - zwisam
+  - agilek
 
 Wzorce projektowe:
   title: Najlepsze książki o wzorcach projektowych
@@ -73,7 +77,7 @@ Testowanie oprogramowania:
     - seler2
     - tesjed
 
-Domain driven design:
+Domain-Driven Design:
   title: Najlepsze książki o Domain-driven Design
   books:
     - dddaro
