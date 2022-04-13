@@ -1,3 +1,5 @@
+import { Modal } from 'bootstrap';
+
 // SCSS
 require('../../css/home/home.scss');
 
@@ -22,5 +24,9 @@ hljs.highlightAll();
 // CUSTOM
 require('./cookiesInfo');
 require('./laptop');
-require('./survey');
 require('./typing');
+
+if (document.location.hash === '#ankieta') {
+  const survey = new Modal(document.getElementById('survey'));
+  survey.toggle();
+}

@@ -7,6 +7,7 @@
   <h2>na platformie <a
     href="https://click.linksynergy.com/fs-bin/click?id=0Bz3A2CPbI4&offerid=358574.1389&subid=0&type=4">Udemy</a>:</h2>
 
+  {%- if courses.en.size > 0 -%}
   <div class="text-center">
     <img alt="Flaga angielska" class="course-lang" src='/img/other/en.png'/>
     Kursy w języku angielskim
@@ -14,6 +15,7 @@
     <p class="text-center text-muted"> (W języku polskim niżej)</p>
   </div>
   <hr>
+  {%- endif -%}
 
   {%- for course in courses.en -%}
 
@@ -40,12 +42,14 @@
   <hr>
   {%- endfor -%}
 
+  {%- if courses.pl.size > 0 -%}
   <div class="text-center">
     <img alt="Flaga polska" class="course-lang" src='/img/other/pl.png'/>
     Kursy w języku polskim
     <img alt="Flaga polska" class="course-lang" src='/img/other/pl.png'/>
   </div>
   <hr>
+  {%- endif -%}
 
   {%- for course in courses.pl -%}
   <a class="course darker-overlay-on-hover"
