@@ -1,43 +1,31 @@
 import { ScrollSpy } from 'bootstrap';
 
-const scrollToElement = (el, ms) => {
-  const speed = ms || 600;
-  $('html,body').animate({
-    scrollTop: $(el).offset().top,
-  }, speed);
-};
+const navbarCustom = document.querySelector('.navbar-custom');
 
-$('.navbar a[href^="#"]').on('click', function scrollTo() {
-  scrollToElement($(this).attr('href'), 600);
-});
-
-const navbarCustom = $('.navbar-custom');
-const navbarCollapse = $('.navbar-collapse');
+let previousTop = 0;
 
 function dynamicNavbar() {
-  const headerHeight = navbarCustom.height();
-  const currentTop = $(window).scrollTop();
-  if (currentTop < this.previousTop) {
-    if (currentTop > 0 && navbarCustom.hasClass('is-fixed')) {
-      navbarCustom.addClass('is-visible');
+  const headerHeight = navbarCustom.offsetHeight;
+  const currentTop = window.scrollY;
+  if (currentTop < previousTop) {
+    if (currentTop > 0 && navbarCustom.classList.contains('is-fixed')) {
+      navbarCustom.classList.add('is-visible');
     } else {
-      navbarCustom.removeClass('is-visible is-fixed');
+      navbarCustom.classList.remove('is-visible', 'is-fixed');
     }
   } else {
-    navbarCustom.removeClass('is-visible');
-    navbarCollapse.removeClass('show');
-    if (currentTop > headerHeight && !navbarCustom.hasClass('is-fixed')) navbarCustom.addClass('is-fixed');
+    navbarCustom.classList.remove('is-visible');
+
+    if (currentTop > headerHeight && !navbarCustom.classList.contains('is-fixed')) {
+      navbarCustom.classList.add('is-fixed');
+    }
   }
-  this.previousTop = currentTop;
+  previousTop = currentTop;
 }
 
-$(document).ready(($) => {
-  $(window).on('scroll', {
-    previousTop: 0,
-  }, dynamicNavbar);
-});
+window.addEventListener('scroll', dynamicNavbar);
 
-const scrollSpy = new ScrollSpy(document.body, {
-  target: '.navbar-fixed-top',
-  offset: 51,
+new ScrollSpy(document.body, {
+  target: '#site-nav',
+  offset: 65,
 });

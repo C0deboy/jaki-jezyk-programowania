@@ -11,7 +11,6 @@
   -webkit-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
   transition: background-color 0.3s;
-
   /* Force Hardware Acceleration in WebKit */
   transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
@@ -54,7 +53,7 @@
   &.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
-    top: -52px;
+    top: -60px;
     opacity: 0.8;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
@@ -83,7 +82,7 @@
   }
 
   &.is-visible {
-    transform: translate3d(0, 52px, 0);
+    transform: translate3d(0, 60px, 0);
   }
 }
 
