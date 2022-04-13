@@ -13,6 +13,7 @@ hljs.registerLanguage('python', require('highlight.js/lib/languages/python'));
 hljs.registerLanguage('c', require('highlight.js/lib/languages/c'));
 hljs.registerLanguage('swift', require('highlight.js/lib/languages/swift'));
 hljs.registerLanguage('csharp', require('highlight.js/lib/languages/csharp'));
+hljs.registerLanguage('r', require('highlight.js/lib/languages/r'));
 hljs.registerLanguage('kotlin', require('highlight.js/lib/languages/kotlin'));
 hljs.registerLanguage('scala', require('highlight.js/lib/languages/scala'));
 
