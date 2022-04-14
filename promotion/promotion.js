@@ -1,13 +1,13 @@
 const promotions = [
   {
-    start: new Date('2020-07-14'),
-    end: new Date('2020-07-20'),
-    number: '6094',
+    start: new Date('2022-04-12'),
+    end: new Date('2022-04-18'),
+    number: '13996',
     host: 'helion.pl',
     img: '/promotion/p.jpg',
     popup: true,
-    message: 'Promocja w [Helion] - 2 książki w cenie 1. Wolisz video kursy? Zajrzyj na <a href="https://click.linksynergy.com/fs-bin/click?id=0Bz3A2CPbI4&offerid=358574.1389&subid=0&type=4" target="_blank">Udemy</a>',
-    adHeader: 'Promocja w [Helion] - 2 książki w cenie 1. Wolisz video kursy? Zajrzyj na <a href="https://click.linksynergy.com/fs-bin/click?id=0Bz3A2CPbI4&offerid=358574.1389&subid=0&type=4" target="_blank">Udemy</a>',
+    message: 'Promocja w [Helion] - Wielkanocny kiermasz książkowy! Wolisz video-kursy? Zajrzyj na [Udemy]',
+    adHeader: 'Promocja w [Helion] - Wielkanocny kiermasz książkowy!',
     adContent: '',
   },
 ];
@@ -16,13 +16,16 @@ const customMessage = '';
 
 promotions.forEach((promotion, i) => {
   if (isPromotionActive(promotion)) {
-    const url = `http://${promotion.host}/page/9102Q/kategorie/promocja-2za1`;
-    // let url = `http://${promotion.host}/page/9102Q/promocja/${promotion.number}`;
+    // const url = `http://${promotion.host}/page/9102Q/kategorie/promocja-2za1`;
+    const helionUrl = `http://${promotion.host}/page/9102Q/promocja/${promotion.number}`;
+    const udemyUrl = 'https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourses%2Fdevelopment%2F';
 
-    promotion.url = new URL(url);
+    promotion.url = new URL(helionUrl);
 
     promotion.message = appendLinkToMessage(promotion.message, promotion.url);
+    promotion.message = appendLinkToMessage(promotion.message, new URL(udemyUrl));
     promotion.adHeader = appendLinkToMessage(promotion.adHeader, promotion.url);
+    promotion.adHeader = appendLinkToMessage(promotion.adHeader, new URL(udemyUrl));
 
     if (customMessage !== '') {
       promotion.message = customMessage;
@@ -142,7 +145,8 @@ function showPromotionAd(promotion, i) {
 
     imageLink.appendChild(img);
     promoDesc.appendChild(imageLink);
-    const endsAt = document.createElement('span');
+    const endsAt = document.createElement('p');
+    endsAt.classList.add('text-center');
     endsAt.innerText = getWhenEndMessage(promotion);
     promotionLink.appendChild(endsAt);
   }
