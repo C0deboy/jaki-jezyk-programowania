@@ -343,6 +343,12 @@ section {
   margin: 15px 3px 25px;
   display: inline-block;
   vertical-align: top;
+
+  .promotion-end-info {
+    vertical-align: middle;
+    display: block;
+    text-align: center;
+  }
 }
 
 .promotion-content {
