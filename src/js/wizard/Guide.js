@@ -9,7 +9,8 @@ class Guide {
     this.guides = [];
     if (propositions !== undefined) {
       propositions.forEach((proposition) => {
-        this.guides.push(proposition.toString().split(' '));
+        this.guides.push(proposition.toString()
+          .split(' '));
       });
     }
   }
@@ -33,7 +34,7 @@ class Guide {
         } else if (element === '->') {
           answers.addMessage('Później:<br><i class="then fa fa-long-arrow-down fa-4x" aria-hidden="true"></i>');
         } else {
-          answers.add(element, 'technologies/' + element + '.png', null);
+          answers.add(element, `technologies/${element}.png`, null);
         }
       });
 

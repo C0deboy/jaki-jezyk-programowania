@@ -8,9 +8,8 @@
     "import"
   ],
   "rules": {
-    "prefer-template": 0,
     "no-plusplus": 0,
-    "max-len": ["error", { "code": 120 }],
+    "max-len": ["error", { "code": 120, "ignoreUrls": true }],
     "no-param-reassign": ["error", { "props": false }],
     "no-use-before-define": "off"
   }

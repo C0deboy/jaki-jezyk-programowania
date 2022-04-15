@@ -20,8 +20,8 @@ langElements.forEach((lang) => {
 function showSubTechnologies(subs, lang) {
   if (subs.length !== 0) {
     subs.forEach((sub) => {
-      sub.style.height = 60 + 'px';
-      sub.style.width = 60 + 'px';
+      sub.style.height = `${60}px`;
+      sub.style.width = `${60}px`;
       sub.classList.add('backToPosition');
     });
   }
@@ -33,8 +33,8 @@ function showSubTechnologies(subs, lang) {
 function hideSubTechnologies(subs, lang) {
   if (subs.length !== 0) {
     subs.forEach((sub) => {
-      sub.style.height = 35 + 'px';
-      sub.style.width = 35 + 'px';
+      sub.style.height = `${35}px`;
+      sub.style.width = `${35}px`;
       sub.classList.remove('backToPosition');
     });
   }

@@ -8,7 +8,7 @@ class ImageLoader {
     window.addEventListener('load', LoadingCompleteHandler);
     imagePaths.forEach((imagePath) => {
       const preloadedImage = new Image();
-      preloadedImage.src = '/img/' + imagePath;
+      preloadedImage.src = `/img/${imagePath}`;
       cachedImages.push(preloadedImage);
     });
   }

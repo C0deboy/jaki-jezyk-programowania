@@ -2,8 +2,8 @@ function positionTooltip(el, tooltip) {
   const tooltipStyle = tooltip.style;
   if (tooltip.classList.contains('tooltip-global')) {
     const rect = el.getBoundingClientRect();
-    tooltipStyle.top = rect.top + window.pageYOffset - (tooltip.offsetHeight) - 10 + 'px';
-    tooltipStyle.left = rect.left + window.pageXOffset - (tooltip.offsetWidth / 2) + (el.offsetWidth / 2) + 'px';
+    tooltipStyle.top = `${rect.top + window.pageYOffset - (tooltip.offsetHeight) - 10}px`;
+    tooltipStyle.left = `${rect.left + window.pageXOffset - (tooltip.offsetWidth / 2) + (el.offsetWidth / 2)}px`;
   } else {
     const top = el.offsetTop;
     const left = el.offsetLeft;
@@ -11,8 +11,8 @@ function positionTooltip(el, tooltip) {
     const tooltipHeight = tooltip.offsetHeight;
     const tooltipWidth = tooltip.offsetWidth;
     const centerEl = left + (width / 2);
-    tooltipStyle.top = (top - tooltipHeight - 10) + 'px';
-    tooltipStyle.left = (centerEl - tooltipWidth / 2) + 'px';
+    tooltipStyle.top = `${top - tooltipHeight - 10}px`;
+    tooltipStyle.left = `${centerEl - tooltipWidth / 2}px`;
   }
 }
 
@@ -43,7 +43,7 @@ let tipId = 1;
 
 function makeElementAlive(element) {
   element.setAttribute('tabindex', '0');
-  element.setAttribute('aria-describedby', 'tooltip' + tipId);
+  element.setAttribute('aria-describedby', `tooltip${tipId}`);
   element.setAttribute('aria-live', 'true');
   element.addEventListener('mouseover', (e) => toggleTooltip(e, true));
   element.addEventListener('focus', (e) => toggleTooltip(e, true));
@@ -55,7 +55,7 @@ function makeElementAlive(element) {
 function prepareTooltip(text) {
   const tooltip = document.createElement('span');
   tooltip.innerText = text;
-  tooltip.setAttribute('id', 'tooltip' + tipId);
+  tooltip.setAttribute('id', `tooltip${tipId}`);
   tooltip.setAttribute('role', 'tooltip');
   tooltip.classList.add('lightTooltip');
   return tooltip;
@@ -68,11 +68,14 @@ function createTooltipsOver(el) {
   }
   const tooltip = prepareTooltip(text);
 
-  if (el.nodeName === 'IMG') el.parentElement.insertBefore(tooltip, el);
-  else if (el.classList.contains('tip-global')) {
+  if (el.nodeName === 'IMG') {
+    el.parentElement.insertBefore(tooltip, el);
+  } else if (el.classList.contains('tip-global')) {
     tooltip.classList.add('tooltip-global');
     document.body.appendChild(tooltip);
-  } else el.append(tooltip);
+  } else {
+    el.append(tooltip);
+  }
 }
 
 const elementsWithTip = document.querySelectorAll('.tip');

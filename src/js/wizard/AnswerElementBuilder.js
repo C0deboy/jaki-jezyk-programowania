@@ -1,4 +1,3 @@
-
 class AnswerElementBuilder {
   constructor() {
     this.answerElement = document.createElement('button');
@@ -16,7 +15,7 @@ class AnswerElementBuilder {
 
   appendImage(imgPath) {
     const img = document.createElement('img');
-    img.setAttribute('src', '/img/' + escaped(imgPath));
+    img.setAttribute('src', `/img/${escaped(imgPath)}`);
     img.setAttribute('alt', '');
     this.answerElement.appendChild(img);
   }
@@ -43,26 +42,41 @@ class AnswerElementBuilder {
 
   makeItLinkToTechnology(answer) {
     const linkToTechnology = document.createElement('a');
-    linkToTechnology.setAttribute('href', '/technologie/' + escaped(answer));
+    linkToTechnology.setAttribute('href', `/technologie/${escaped(answer)}`);
     linkToTechnology.setAttribute('target', '_blank');
     linkToTechnology.appendChild(this.answerElement);
     this.answerElement = linkToTechnology;
   }
 }
+
 function escaped(e) {
-  return e.toLowerCase().replace(/[-]/g, '').replace('#', 'sharp');
+  return e.toLowerCase()
+    .replace(/[-]/g, '')
+    .replace('#', 'sharp');
 }
 
 function markAnswer() {
-  $(this).children('img').addClass('jumpImg');
-  $(this).children('p').addClass('answer-p-hover');
-  $(this).children('.shade').addClass('shadeImg');
+  $(this)
+    .children('img')
+    .addClass('jumpImg');
+  $(this)
+    .children('p')
+    .addClass('answer-p-hover');
+  $(this)
+    .children('.shade')
+    .addClass('shadeImg');
 }
 
 function unmarkAnswer() {
-  $(this).children('img').removeClass('jumpImg');
-  $(this).children('p').removeClass('answer-p-hover');
-  $(this).children('.shade').removeClass('shadeImg');
+  $(this)
+    .children('img')
+    .removeClass('jumpImg');
+  $(this)
+    .children('p')
+    .removeClass('answer-p-hover');
+  $(this)
+    .children('.shade')
+    .removeClass('shadeImg');
 }
 
 export default AnswerElementBuilder;
