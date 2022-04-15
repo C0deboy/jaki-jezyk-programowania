@@ -3,7 +3,6 @@ const promotions = [
     start: new Date('2022-04-12'),
     end: new Date('2022-04-18'),
     number: '13996',
-    host: 'helion.pl',
     img: '/promotion/p.jpg',
     popup: true,
     message: 'Promocja w [Helion] - Wielkanocny kiermasz książkowy! Wolisz video-kursy? Zajrzyj na [Udemy]',
@@ -16,8 +15,8 @@ const customMessage = '';
 
 promotions.forEach((promotion, i) => {
   if (isPromotionActive(promotion)) {
-    // const url = `http://${promotion.host}/page/9102Q/kategorie/promocja-2za1`;
-    const helionUrl = `http://${promotion.host}/page/9102Q/promocja/${promotion.number}`;
+    // const helionUrl = `http://helion.pl/page/9102Q/kategorie/promocja-2za1`;
+    const helionUrl = `https://helion.pl/page/9102Q/promocja/${promotion.number}`;
     const udemyUrl = 'https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourses%2Fdevelopment%2F';
 
     promotion.url = new URL(helionUrl);
@@ -145,8 +144,8 @@ function showPromotionAd(promotion, i) {
 
     imageLink.appendChild(img);
     promoDesc.appendChild(imageLink);
-    const endsAt = document.createElement('p');
-    endsAt.classList.add('text-center');
+    const endsAt = document.createElement('span');
+    endsAt.classList.add('promotion-end-info');
     endsAt.innerText = getWhenEndMessage(promotion);
     promotionLink.appendChild(endsAt);
   }
