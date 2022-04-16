@@ -60,6 +60,14 @@
     }
   }
 
+  @media (max-width: 992px) {
+    .nav li .nav-link {
+      padding: 15px;
+      margin: 0;
+      border-top: 1px solid #99999970;
+    }
+  }
+
   &.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
