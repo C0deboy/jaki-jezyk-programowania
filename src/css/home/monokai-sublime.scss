@@ -7,7 +7,11 @@
 
 .hljs-tag,
 .hljs-subst,
-.hljs-meta-string {
+.hljs-meta-string,
+.hljs-type,
+.hljs-variable,
+.hljs-class,
+.hljs-title {
   color: #f8f8f2;
 }
 
@@ -58,18 +62,12 @@
   color: #FD971F;
 }
 
-.hljs-class .hljs-title {
-  color: #f8f8f2;
-}
-
 .hljs-string,
-.hljs-type,
 .hljs-builtin-name,
 .hljs-selector-id,
 .hljs-selector-attr,
 .hljs-selector-pseudo,
 .hljs-addition,
-.hljs-variable,
 .hljs-template-variable {
   color: #e6db74;
 }

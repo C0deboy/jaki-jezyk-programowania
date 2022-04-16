@@ -1,152 +1,165 @@
-$(() => {
-  $('.typed-languages').typed({
-    strings: [
-      'JavaScript?', 'Python?', 'Java?', 'Kotlin?', 'Scala?', 'C#?', 'PHP?', 'C++?', 'Swift?', 'Ruby?', 'C?', 'R?',
-    ],
-    typeSpeed: 40,
-    loop: true,
-    backSpeed: 40,
-  });
+import Typed from 'typed.js';
 
-  const terminalElement = $('.element');
-  const terminalLang = $('.terminal .lang');
+const hljs = require('highlight.js/lib/core');
+hljs.registerLanguage('javascript', require('highlight.js/lib/languages/javascript'));
+hljs.registerLanguage('cpp', require('highlight.js/lib/languages/cpp'));
+hljs.registerLanguage('php', require('highlight.js/lib/languages/php'));
+hljs.registerLanguage('java', require('highlight.js/lib/languages/java'));
+hljs.registerLanguage('python', require('highlight.js/lib/languages/python'));
+hljs.registerLanguage('ruby', require('highlight.js/lib/languages/ruby'));
+hljs.registerLanguage('csharp', require('highlight.js/lib/languages/csharp'));
+hljs.registerLanguage('c', require('highlight.js/lib/languages/c'));
+hljs.registerLanguage('r', require('highlight.js/lib/languages/r'));
+hljs.registerLanguage('swift', require('highlight.js/lib/languages/swift'));
+hljs.registerLanguage('kotlin', require('highlight.js/lib/languages/kotlin'));
+hljs.registerLanguage('scala', require('highlight.js/lib/languages/scala'));
 
-  const javascript = document.querySelector('.language-javascript').innerHTML;
-  const cpp = document.querySelector('.language-cpp').innerHTML;
-  const php = document.querySelector('.language-php').innerHTML;
-  const java = document.querySelector('.language-java').innerHTML;
-  const python = document.querySelector('.language-python').innerHTML;
-  const csharp = document.querySelector('.language-csharp').innerHTML;
-  const ruby = document.querySelector('.language-ruby').innerHTML;
-  const c = document.querySelector('.language-c').innerHTML;
-  const r = document.querySelector('.language-r').innerHTML;
-  const swift = document.querySelector('.language-swift').innerHTML;
-  const kotlin = document.querySelector('.language-kotlin').innerHTML;
-  const scala = document.querySelector('.language-scala').innerHTML;
-
-  const languageExamples = [
-    javascript,
-    python,
-    java,
-    kotlin,
-    scala,
-    cpp,
-    php,
-    swift,
-    ruby,
-    c,
-    r,
-    csharp,
-  ];
-
-  let next = 0;
-
-  const animatedKeys = document.querySelectorAll('.typekey');
-
-  function pressKey() {
-    const randomKeyNum = Math.floor((Math.random() * 29));
-    animatedKeys[randomKeyNum].classList.add('pressKey');
-    setTimeout(() => {
-      animatedKeys[randomKeyNum].classList.remove('pressKey');
-    }, 350);
-  }
-
-  let pressKeyInt = setInterval(pressKey, 100);
-  let pressKeyInt2 = setInterval(pressKey, 200);
-
-  const scrollTerminal = document.querySelector('.screen');
-
-  function ScrollTerminal() {
-    const terminalHeight = (scrollTerminal.scrollHeight - scrollTerminal.offsetHeight);
-    if (scrollTerminal.scrollTop < terminalHeight + 100) {
-      scrollTerminal.scrollTop = scrollTerminal.scrollHeight;
-    }
-  }
-
-  let scrollDownTerminal = setInterval(ScrollTerminal, 500);
-
-  $('.screen').on('mousewheel DOMMouseScroll touchstart', () => {
-    clearInterval(scrollDownTerminal);
-  });
-
-  function startTyping(language) {
-    const langComment = language.substr(0, language.indexOf('\n'));
-    terminalLang.html(langComment);
-    const code = language.substr(langComment.length + 1);
-    terminalElement.typed({
-      strings: [
-        code,
-      ],
-      typeSpeed: -1,
-      loop: false,
-      backSpeed: -100,
-      onStringTyped() {
-        clearInterval(pressKeyInt);
-        clearInterval(pressKeyInt2);
-        clearInterval(scrollDownTerminal);
-      },
-    });
-  }
-
-  startTyping(javascript);
-
-  function changeExample(direction) {
-    clearInterval(pressKeyInt);
-    clearInterval(pressKeyInt2);
-    clearInterval(scrollDownTerminal);
-    $('.down').remove();
-    if (direction === 'left') {
-      next -= 1;
-      if (next <= -1) next = languageExamples.length - 1;
-    } else {
-      next += 1;
-      if (next >= languageExamples.length) next = 0;
-    }
-    if (next <= -1) next = languageExamples.length - 1;
-    startTyping(languageExamples[next]);
-    pressKeyInt = setInterval(pressKey, 100);
-    pressKeyInt2 = setInterval(pressKey, 200);
-    scrollDownTerminal = setInterval(ScrollTerminal, 500);
-  }
-
-  function skipTyping() {
-    startTyping('');
-    document.querySelector('.element').innerHTML = languageExamples[next];
-  }
-  document.querySelector('.skip').addEventListener('click', () => {
-    skipTyping();
-  });
-
-  $('.laptop').keydown((e) => {
-    if (e.which === 32) {
-      e.preventDefault();
-      skipTyping();
-    }
-  });
-
-  const nextExampleBtn = $('.nextExample-btn');
-
-  nextExampleBtn.on('click', () => {
-    changeExample('right');
-  });
-
-  nextExampleBtn.on('mouseleave', () => {
-    nextExampleBtn.removeClass('tip');
-  });
-
-  $('.previousExample-btn').on('click', () => {
-    changeExample('left');
-  });
-
-  $(document).keydown((e) => {
-    if (e.which === 39) {
-      changeExample('right');
-    }
-  });
-
-  $(document).keydown((event) => {
-    if (event.which === 37) {
-      changeExample('left');
-    }
-  });
+new Typed('.typed-languages', {
+  strings: [
+    'JavaScript?', 'Python?', 'Java?', 'Kotlin?', 'Scala?', 'C#?', 'PHP?', 'C++?', 'Swift?', 'Ruby?', 'C?', 'R?',
+  ],
+  typeSpeed: 30,
+  loop: true,
+  backSpeed: 30,
 });
+
+const typedExample = '.typed-example';
+const typedExampleEl = document.querySelector(typedExample);
+const terminalLang = document.querySelector('.terminal .lang');
+
+const languages = [
+  'javascript',
+  'cpp',
+  'php',
+  'java',
+  'python',
+  'csharp',
+  'ruby',
+  'c',
+  'r',
+  'swift',
+  'kotlin',
+  'scala',
+];
+
+let typed = startTyping(languages[0]);
+let readyCode;
+
+function startTyping(language) {
+  const example = getExample(language);
+  const code = printLanguageAndGetCode(example);
+  const highlightedCode = hljs.highlight(code, { language }).value;
+  readyCode = highlightedCode;
+  return new Typed(typedExample, {
+    strings: [
+      highlightedCode,
+    ],
+    typeSpeed: 20,
+    loop: false,
+    backSpeed: 0,
+    smartBackspace: false,
+    contentType: 'html',
+    ignoreUnescapedHTML: true,
+    onComplete: stopTyping,
+    onStop: stopTyping,
+  });
+}
+
+const animatedKeys = document.querySelectorAll('.typekey');
+
+function pressKey() {
+  const randomKeyNum = Math.floor((Math.random() * 29));
+  animatedKeys[randomKeyNum].classList.add('pressKey');
+  setTimeout(() => animatedKeys[randomKeyNum].classList.remove('pressKey'), 350);
+}
+
+let pressKeyInt = setInterval(pressKey, 100);
+let pressKeyInt2 = setInterval(pressKey, 200);
+
+function stopTyping() {
+  clearInterval(pressKeyInt);
+  clearInterval(pressKeyInt2);
+  clearInterval(scrollDownTerminal);
+}
+
+function skipTyping() {
+  typed.stop();
+  typed.destroy();
+  typedExampleEl.innerHTML = readyCode;
+}
+
+document.querySelector('.skip')
+  .addEventListener('click', skipTyping);
+
+window.addEventListener('keydown', (e) => {
+  if (e.code === 'Space') {
+    e.preventDefault();
+    skipTyping();
+  }
+});
+
+const scrollTerminalEl = document.querySelector('.screen');
+
+function scrollTerminal() {
+  const terminalHeight = (scrollTerminalEl.scrollHeight - scrollTerminalEl.offsetHeight);
+  if (scrollTerminalEl.scrollTop < terminalHeight + 100) {
+    scrollTerminalEl.scrollTop = scrollTerminalEl.scrollHeight;
+  }
+}
+
+let scrollDownTerminal = setInterval(scrollTerminal, 500);
+
+document.querySelector('.screen')
+  .addEventListener('mousewheel DOMMouseScroll touchstart', () => clearInterval(scrollDownTerminal));
+
+const nextExampleBtn = document.querySelector('.next-example-btn');
+nextExampleBtn.addEventListener('click', () => changeExample('right'));
+nextExampleBtn.addEventListener('mouseleave', () => nextExampleBtn.classList.remove('tip'));
+
+document.querySelector('.previous-example-btn')
+  .addEventListener('click', () => changeExample('left'));
+
+window.addEventListener('keydown', (e) => {
+  if (e.code === 'ArrowRight') {
+    changeExample('right');
+  }
+});
+
+window.addEventListener('keydown', (e) => {
+  if (e.code === 'ArrowLeft') {
+    changeExample('left');
+  }
+});
+
+let next = 0;
+nc;
+
+function changeExample(direction) {
+  typed.stop();
+  typed.destroy();
+  clearInterval(pressKeyInt);
+  clearInterval(pressKeyInt2);
+  clearInterval(scrollDownTerminal);
+  if (direction === 'left') {
+    next -= 1;
+    if (next <= -1) next = languages.length - 1;
+  } else {
+    next += 1;
+    if (next >= languages.length) next = 0;
+  }
+  if (next <= -1) next = languages.length - 1;
+  pressKeyInt = setInterval(pressKey, 100);
+  pressKeyInt2 = setInterval(pressKey, 200);
+  scrollDownTerminal = setInterval(scrollTerminal, 500);
+  typed = startTyping(languages[next]);
+}
+
+function printLanguageAndGetCode(language) {
+  const langComment = language.substring(0, language.indexOf('\n'));
+  terminalLang.innerHTML = langComment;
+  return language.substring(langComment.length + 1);
+}
+
+function getExample(language) {
+  return document.querySelector(`.language-${language}`).textContent;
+}
