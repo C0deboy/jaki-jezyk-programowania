@@ -85,12 +85,5 @@ const elementsWithTip = document.querySelectorAll('.tip');
 elementsWithTip.forEach((element) => {
   createTooltipsOver(element);
   makeElementAlive(element);
-
-  window.addEventListener('resize', () => {
-    const tooltipId = element.getAttribute('aria-describedby');
-    const tooltip = document.getElementById(tooltipId);
-    positionTooltip(element, tooltip);
-  });
-
   tipId++;
 });
