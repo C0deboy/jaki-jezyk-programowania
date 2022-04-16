@@ -1,19 +1,21 @@
+import { createPopper } from '@popperjs/core';
+import preventOverflow from '@popperjs/core/lib/modifiers/preventOverflow';
+import flip from '@popperjs/core/lib/modifiers/flip';
+
 function positionTooltip(el, tooltip) {
-  const tooltipStyle = tooltip.style;
-  if (tooltip.classList.contains('tooltip-global')) {
-    const rect = el.getBoundingClientRect();
-    tooltipStyle.top = `${rect.top + window.pageYOffset - (tooltip.offsetHeight) - 10}px`;
-    tooltipStyle.left = `${rect.left + window.pageXOffset - (tooltip.offsetWidth / 2) + (el.offsetWidth / 2)}px`;
-  } else {
-    const top = el.offsetTop;
-    const left = el.offsetLeft;
-    const width = el.offsetWidth;
-    const tooltipHeight = tooltip.offsetHeight;
-    const tooltipWidth = tooltip.offsetWidth;
-    const centerEl = left + (width / 2);
-    tooltipStyle.top = `${top - tooltipHeight - 10}px`;
-    tooltipStyle.left = `${centerEl - tooltipWidth / 2}px`;
-  }
+  createPopper(el, tooltip, {
+    placement: 'top',
+    modifiers: [
+      preventOverflow,
+      flip,
+      {
+        name: 'offset',
+        options: {
+          offset: [0, 15],
+        },
+      },
+    ],
+  });
 }
 
 function toggleTooltip(e, state) {
