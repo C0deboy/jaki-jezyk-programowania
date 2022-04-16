@@ -132,7 +132,6 @@ window.addEventListener('keydown', (e) => {
 });
 
 let next = 0;
-nc;
 
 function changeExample(direction) {
   typed.stop();

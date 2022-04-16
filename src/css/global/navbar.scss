@@ -92,13 +92,13 @@
 
 .promotion-popup {
   position: absolute;
-  font-size: .8em;
+  font-size: 0.9em;
   display: inline-block;
-  top: 3px;
+  top: 8px;
   color: black;
   background: #f8f8f8;
   border-radius: 5px;
-  padding: 4px;
+  padding: 2px 6px;
   opacity: 1;
   animation: .5s popup ease-out forwards;
   animation-delay: .5s;
