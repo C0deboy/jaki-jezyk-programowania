@@ -1,5 +1,5 @@
 .lightTooltip {
-  display: block;
+  display: none;
   visibility: hidden;
   position: absolute;
   background: #e8ebf0;
@@ -17,32 +17,15 @@
   left: 0;
 }
 
-.tooltip {
-  margin-bottom: 3px;
-  font-family: inherit;
-
-  &.show {
-    opacity: 1;
-    visibility: visible;
+@media (max-width: 768px) {
+  .lightTooltip {
+    max-width: 90%;
   }
-
-  .arrow::before {
-    border-top-color: #e8ebf0;
-  }
-}
-
-.tooltip-inner {
-  background: #e8ebf0;
-  box-shadow: 0 1px 2px 0 black;
-  color: #333;
-  font-size: 0.9em;
-  border-radius: 4px;
-  padding: 3px 5px;
-  max-width: 250px;
 }
 
 .fadeIn {
   opacity: 1;
+  display: block;
   visibility: visible;
 }
 
