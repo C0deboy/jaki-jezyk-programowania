@@ -1,8 +1,3 @@
-import $ from 'jquery';
-
-window.jQuery = $;
-window.$ = $;
-
 // SCSS
 require('../../css/global/global.scss');
 

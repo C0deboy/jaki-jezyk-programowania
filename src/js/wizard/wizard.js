@@ -8,7 +8,7 @@ const previousQuestions = [firstQuestion];
 
 ImageLoader.load(() => load(firstQuestion));
 
-const returnBtn = $('.return-btn');
+const returnBtn = document.querySelector('.return-btn');
 
 function loadNextQuestionAndRememberPrevious() {
   const { next } = this;
@@ -20,11 +20,10 @@ function loadNextQuestionAndRememberPrevious() {
 
 function load(next) {
   if (previousQuestions.length === 1) {
-    returnBtn.css('visibility', 'hidden');
+    returnBtn.style.visibility = 'hidden';
   } else {
-    returnBtn.css('visibility', 'visible');
+    returnBtn.style.visibility = 'visible';
   }
-
   next.show();
 }
 
@@ -38,25 +37,23 @@ function loadPreviousQuestion() {
   load(previous);
 }
 
-returnBtn.on('click', loadPreviousQuestion);
-returnBtn.on('mouseleave', (e) => e.target.blur());
+returnBtn.addEventListener('click', loadPreviousQuestion);
+returnBtn.addEventListener('mouseleave', (e) => e.target.blur());
 
-$(document)
-  .on('keydown', (e) => {
-    if ((e.which === 8)) { // backspace
-      loadPreviousQuestion();
-    }
-  });
+window.addEventListener('keydown', (e) => {
+  if ((e.key.toLowerCase() === 'backspace')) {
+    loadPreviousQuestion();
+  }
+});
 
-const againBtn = $('.again-btn');
-againBtn.on('click', () => load(firstQuestion));
-againBtn.on('mouseleave', (e) => e.target.blur());
+const againBtn = document.querySelector('.again-btn');
+againBtn.addEventListener('click', () => load(firstQuestion));
+againBtn.addEventListener('mouseleave', (e) => e.target.blur());
 
-$(document)
-  .on('keydown', (e) => {
-    if ((e.which === 27)) { // esc
-      load(firstQuestion);
-    }
-  });
+window.addEventListener('keydown', (e) => {
+  if ((e.key.toLowerCase() === 'escape')) {
+    load(firstQuestion);
+  }
+});
 
 export { loadNextQuestionAndRememberPrevious };

@@ -2,10 +2,10 @@ class AnswerElementBuilder {
   constructor() {
     this.answerElement = document.createElement('button');
     this.answerElement.classList.add('answer');
-    this.answerElement.addEventListener('mouseover', markAnswer);
-    this.answerElement.addEventListener('focus', markAnswer);
-    this.answerElement.addEventListener('mouseout', unmarkAnswer);
-    this.answerElement.addEventListener('blur', unmarkAnswer);
+    this.answerElement.addEventListener('mouseover', () => markAnswer(this.answerElement));
+    this.answerElement.addEventListener('focus', () => markAnswer(this.answerElement));
+    this.answerElement.addEventListener('mouseout', () => unmarkAnswer(this.answerElement));
+    this.answerElement.addEventListener('blur', () => unmarkAnswer(this.answerElement));
     this.answerElement.setAttribute('tabindex', '0');
   }
 
@@ -55,28 +55,28 @@ function escaped(e) {
     .replace('#', 'sharp');
 }
 
-function markAnswer() {
-  $(this)
-    .children('img')
-    .addClass('jumpImg');
-  $(this)
-    .children('p')
-    .addClass('answer-p-hover');
-  $(this)
-    .children('.shade')
-    .addClass('shadeImg');
+function markAnswer(el) {
+  el.querySelector('img')
+    .classList
+    .add('jumpImg');
+  el.querySelector('p')
+    .classList
+    .add('answer-p-hover');
+  el.querySelector('.shade')
+    .classList
+    .add('shadeImg');
 }
 
-function unmarkAnswer() {
-  $(this)
-    .children('img')
-    .removeClass('jumpImg');
-  $(this)
-    .children('p')
-    .removeClass('answer-p-hover');
-  $(this)
-    .children('.shade')
-    .removeClass('shadeImg');
+function unmarkAnswer(el) {
+  el.querySelector('img')
+    .classList
+    .remove('jumpImg');
+  el.querySelector('p')
+    .classList
+    .remove('answer-p-hover');
+  el.querySelector('.shade')
+    .classList
+    .remove('shadeImg');
 }
 
 export default AnswerElementBuilder;
