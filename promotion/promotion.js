@@ -85,7 +85,7 @@ function positionPromotionPopup(booksBtn, popup) {
   if (document.documentElement.clientWidth <= 992) {
     popup.style.right = '25px';
   } else {
-    popup.style.left = left + 'px';
+    popup.style.left = `${left}px`;
     popup.style.right = '';
   }
 }
@@ -103,15 +103,14 @@ function getWhenEndMessage(promotion) {
   } else {
     to = 'Promocja tylko dziś!';
   }
-  return '(' + to + ')';
+  return `(${to})`;
 }
 
 function cloneAd(promotionLink, i) {
   const newPromotionLink = promotionLink.cloneNode(true);
   promotionLink.parentElement.insertBefore(newPromotionLink, promotionLink);
   newPromotionLink.classList.add(`link-${i}`);
-  promotionLink = document.querySelector(`.promotion.link-${i}`);
-  return promotionLink;
+  return document.querySelector(`.promotion.link-${i}`);
 }
 
 function showPromotionAd(promotion, i) {
