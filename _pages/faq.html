@@ -31,7 +31,7 @@ permalink: "/faq/"
 
 
       <div class="col-sm-6">
-        <div class="faq-qa accordion">
+        <div class="accordion">
           {%- for faq in faqData -%}
           {%- assign i = forloop.index -%}
 
@@ -42,7 +42,7 @@ permalink: "/faq/"
             </button>
           </h2>
           <div id="answer-{{ i }}" class="accordion-collapse collapse" aria-labelledby="question-{{ i }}"
-               data-bs-parent=".faq-qa">
+               data-bs-parent=".faq">
             <div class="answer accordion-body">
               {{faq.A | newline_to_br | markdownify }}
             </div>
@@ -53,7 +53,7 @@ permalink: "/faq/"
         </div>
       </div>
       <div class="col-sm-6">
-        <div class="faq-qa accordion">
+        <div class="accordion">
           {%- endif -%}
           {%- endfor -%}
         </div>
