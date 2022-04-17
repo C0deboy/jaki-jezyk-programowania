@@ -4,6 +4,7 @@ title-full: Scala - zastosowanie, przyszłość, najlepsze kursy i polecane ksi�
 title: Scala
 permalink: /technologie/scala/
 image: scala.png
+no-books: true
 ---
 
 {% assign stats = site.data.statistics.statistics.Scala %}
@@ -52,8 +53,6 @@ Scala w ostatnim roku straciła nieco swoją popularność wśród języków JVM
 
 
 {% include courses.html %}
-
-{% include books.html %}
 
 
 

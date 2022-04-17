@@ -1,77 +1,86 @@
 
 Angular:
   books:
+    - anpro2
     - ang2ty
     - angupk
     - angup2
 
 C++:
   books:
-    - Najnowszy następca popularnej Symfonii C++:
-      - ocpp11
-    - '':
-      - cppri6
+    - Następca popularnej Symfonii C++:
+      - ocpp12
+      - opc144
+    - 'Inne: ':
       - jcppkw
       - cppppo
     - Najlepsza książka o wzorcach projektowych z przykładami w C++:
-      - wzoelv
+      - wzoevv
 
 C:
   books:
     - '':
+      - jansiv
       - jcszp6
-      - jansic
+      - jcprpo
+      - zaprcn
     - Mikrokontrolery:
       - jcmika
-      - jcmikr
+      - jcdlam
+      - ardup2
 
 'C#':
   books:
-    - ch7lek
-    - jezc7d
-    - cshpk3
-    - c7pig7
+    - ch9lek
+    - c8wpig
+    - c8kpp7
+    - strdan
+    - tejeza
+    - asynwi
 
 Django:
   books:
     - '':
+      - dj3pt3
       - djpta2
     - Pythod + Django + TDD (Test Driven Development):
       - tddwpr
+
+Laravel:
+  books:
+    - larav2
 
 HTML i CSS:
   books:
     - '':
       - htcswv
-      - cssnp4
-      - htm5n2
-    - Do nauki Bootstrap:
-      - boot24
+      - reswe3
+      - psippv
+      - webde5
+    - Bootstrap:
+      - boo4z2
       - bootst
-      - bootpp
     - Sass:
       - sasspp
-      -
+
 Bootstrap:
   books:
-  - boot24
-  - bootst
-  - bootpp
+    - boo4z2
+    - bootst
 
 Java:
   books:
     - '':
-      - javp10
-      - javpp6
-      - javkp9
+      - javp11
+      - javp8v
+      - javk11
     - Po bardziej zaawansowane rzeczy sięgnij tutaj:
       - javep3
-      - javtzx
-      - javapf
-      - jav8pd
-      - wzorvv
+      - jatz11
+      - wydja2
+      - wzorg2
     - Tworzenie aplikacji desktopowych:
-      - jafx9t
+      - javfxt
     - Dotyczące testowania i refaktoryzacji:
       - tddpro
       - refukv
@@ -79,10 +88,10 @@ Java:
 JavaScript:
   books:
     - '':
+      - jsppm7
       - jsqwdv
       - podjav
       - ecmasc
-      - jascpz
       - nojspo
       - misjsp
 
@@ -90,66 +99,69 @@ PHP:
   books:
     - '':
       - phpob5
-      - php7pk
-      - php7al
-      - phmdk3
+      - ph8sql
+      - phmsv5
 
 Python:
   books:
     - '':
+      - pyth5v
       - pytdk3
-      - autopy
-      - pythip
-      - zaprpy
+      - autop2
+      - blkpy2
     - Data science i machine lerning (analiza danych i uczenie maszynowe):
+      - uczem2
+      - dascp2
       - delepy
-      - uczema
-      - dascpo
+      - pytand
       - pythum
-      - pypod2
+      - pytexc
     - Robotyka:
-      - naropy
-    - Bardziej zaawansowane:
-      - prprpe
+      - jazar2
+    - Django i TDD:
       - tddwpr
 
 R:
   books:
-    - delerk
+    - zaanda
+    - jezrr2
+    - jrand2
+    - datasi
+    - qgistm
+
+React:
+  books:
+    - reac16
 
 Ruby:
   books:
+      - prumik
       - rubprp
 
 Scratch:
   books:
     - Scratch:
-      - scrabt
-      - a_03cg
-      - scrakp
-    - Dobrym językiem dla dzieci jest też Python:
-      - hellow
-      - a_03ch
-      - a_03ca
-    - oraz Javascript:
-      - a_0352
+      - mlogi2
+      - scra3n
+      - scrak2
 
 SQL:
   books:
     - '':
-      - missql
-      - sqldkp
+      - sqlok5
+      - cwsql3
       - jsqlp2
+      - missql
 
 Swift:
   books:
-      - pswfdp
+      - sw4km4
 
 Unity:
   books:
-    - uniwak
-    - unityc
-    - unitgm
+    - unipp3
+    - stwgr5
+    - japg2d
 
 Unreal Engine 4:
   books:
@@ -158,41 +170,23 @@ Unreal Engine 4:
 WordPress:
   books:
     - '':
-      - wopr4i
-      - jowozr
+      - wp5poc
 
-Scala:
-  books:
-    - scalan
 Go:
   books:
+    - jegotw
     - progo2
 
 Spring:
   books:
     - sprwa5
 
-Rust:
-  books:
-    - prrust
-    - a_0f2e
-
 Kotlin:
   books:
+    - efkonp
     - prokot
-    - kotakc
 
 Vue:
   books:
-    - vueakc
-    - vue2wp
     - vuejs2
-
-React:
-  books:
-    - reac16
-
-TypeScript:
-  books:
-    - tspopr
-    - jeztyp
+    - vue2wp

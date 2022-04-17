@@ -1,3 +1,7 @@
+O karierze i byciu programista:
+  title: Jak zostać programistą oraz plusy i minusy kariery programisty
+  books:
+    -karpro
 
 Git:
   title: Książka dzięki której nauczysz się systemu kontroli wersji Git
@@ -27,7 +31,7 @@ Wzorce projektowe:
   title: Najlepsze książki o wzorcach projektowych
   books:
     - Klasyk bandy czworga. Najlepsza o wzorcach projektowych. (Przykłady w C++, ale wiedza dla każdego):
-      - wzoelv
+      - wzoevv
     - (Przykłady w Javie):
       - wzorvv
       - wzoimp
