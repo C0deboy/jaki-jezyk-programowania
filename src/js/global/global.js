@@ -1,9 +1,6 @@
 // SCSS
 require('../../css/global/global.scss');
 
-// LIBS
-require('bootstrap');
-
 // POLYFILLS
 require('./forEachPolyfill');
 require('./parentElementAppendPolyfill');

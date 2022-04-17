@@ -1,4 +1,4 @@
-import { Collapse, ScrollSpy } from 'bootstrap';
+import { Collapse } from 'bootstrap';
 
 const navbarCustom = document.querySelector('.navbar-custom');
 const siteNav = document.getElementById('site-nav');
@@ -9,7 +9,7 @@ let previousTop = 0;
 function dynamicNavbar() {
   const headerHeight = navbarCustom.offsetHeight;
   const currentTop = window.scrollY;
-  if (currentTop < previousTop) {
+  if (currentTop <= previousTop) {
     if (currentTop > 0 && navbarCustom.classList.contains('is-fixed')) {
       navbarCustom.classList.add('is-visible');
     } else {
@@ -31,7 +31,6 @@ function dynamicNavbar() {
 
 window.addEventListener('scroll', dynamicNavbar);
 
-new ScrollSpy(document.body, {
-  target: '#site-nav',
-  offset: 65,
-});
+if (window.matchMedia('(max-width: 991px)')) {
+  setTimeout(() => navbarCollapse.hide(), 500);
+}
