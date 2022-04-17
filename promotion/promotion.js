@@ -84,6 +84,7 @@ function positionPromotionPopup(booksBtn, popup) {
 
   if (document.documentElement.clientWidth <= 992) {
     popup.style.right = '25px';
+    popup.style.left = '';
   } else {
     popup.style.left = `${left}px`;
     popup.style.right = '';
