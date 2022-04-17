@@ -1,20 +1,27 @@
 require('../css/technologies-list.scss');
 
 const langElements = document.querySelectorAll('.lang');
+const langLinks = document.querySelectorAll('.lang-link');
 
-window.addEventListener('touchstart', function onFirstHover() {
-  document.querySelectorAll('.lang-link')
-    .forEach((link) => {
-      link.addEventListener('click', disableLink);
-    });
-  window.DOUBLE_CLICK_ENABLED = true;
-  window.removeEventListener('touchstart', onFirstHover, false);
+const mobile = window.matchMedia('(max-width: 992px)').matches;
+
+window.addEventListener('touchstart', function onFirstTouch() {
+  langLinks.forEach((link) => link.addEventListener('click', disableLink));
+  window.removeEventListener('touchstart', onFirstTouch, false);
 }, false);
 
 langElements.forEach((lang) => {
   const subs = lang.querySelectorAll('.sub');
-  lang.addEventListener('mouseover', () => showSubTechnologies(subs, lang));
-  lang.addEventListener('mouseout', () => hideSubTechnologies(subs, lang));
+
+  if (!mobile) {
+    lang.addEventListener('mouseover', () => showSubTechnologies(subs, lang));
+    lang.addEventListener('mouseout', () => hideSubTechnologies(subs, lang));
+  } else {
+    showSubTechnologies(subs, lang);
+    if (subs.length === 0) {
+      lang.style.minHeight = '140px';
+    }
+  }
 });
 
 function showSubTechnologies(subs, lang) {
@@ -25,9 +32,6 @@ function showSubTechnologies(subs, lang) {
       sub.classList.add('backToPosition');
     });
   }
-  if (subs.length > 4 && window.matchMedia('(max-width: 992px)').matches) {
-    lang.style.marginBottom = '50px';
-  }
 }
 
 function hideSubTechnologies(subs, lang) {
@@ -37,17 +41,6 @@ function hideSubTechnologies(subs, lang) {
       sub.style.width = `${35}px`;
       sub.classList.remove('backToPosition');
     });
-  }
-
-  if (subs.length > 4 && window.matchMedia('(max-width: 992px)').matches) {
-    lang.style.marginBottom = '0';
-  }
-
-  if (window.DOUBLE_CLICK_ENABLED) {
-    lang.querySelectorAll('.lang-link')
-      .forEach((link) => {
-        link.addEventListener('click', disableLink);
-      });
   }
 }
 

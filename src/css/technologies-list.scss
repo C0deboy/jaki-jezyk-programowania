@@ -19,7 +19,7 @@
 
 .lang {
   padding: 0;
-  height: 200px;
+  min-height: 200px;
   transition: margin-bottom 0.4s;
 
   img {
@@ -35,6 +35,23 @@
     &:hover {
       box-shadow: 0 1px 4px 0 black !important;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .lang {
+    min-height: 240px;
+  }
+
+  .sub.lang-link {
+    margin-bottom: 7px !important;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .lang {
+    min-height: 265px;
   }
 }
 
@@ -109,6 +126,14 @@
       height: 60px;
       width: 60px;
     }
+  }
+
+  img.see {
+    opacity: 50%;
+  }
+
+  .see-icon {
+    position: absolute;
   }
 }
 

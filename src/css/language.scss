@@ -63,9 +63,10 @@ section {
 
 .language-content {
   .language-logo {
-    background: #00353e;
-    box-shadow: 1px 2px 4px 0 #000;
+    background: linear-gradient(#f8f8f8, #c2c2c2);
+    border: 1px solid black;
     border-radius: 50%;
+    box-shadow: 1px 2px 4px 0 #000;
     width: 250px;
     margin: 10px auto;
     animation: language-logo-animation 1.2s ease-in-out;
@@ -294,8 +295,7 @@ section {
 
     li::before {
       content: "\f101";
-      font-family: "FontAwesome",
-      sans-serif;
+      font-family: "FontAwesome", sans-serif;
       padding: 0 10px 0 0;
     }
   }
