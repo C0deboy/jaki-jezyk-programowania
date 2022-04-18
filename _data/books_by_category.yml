@@ -11,75 +11,64 @@ Git:
 Czysty kod:
   title: Najlepsze książki o dobrych praktykach i czystym kodzie
   books:
-  - Nowa książa C. Martina:
+  - Nowszy twór Roberta C. Martina:
     - czarch
   - Klasyki:
     - czykov
+    - pragp2
+    - mckkvv
     - prorze
-    - pragpv
-    - mckkod
-  - Inne:
-    - koddov
 
 Agile:
   title: Najlepsze książki o metodyce Agile
   books:
-  - zwisam
   - agilek
+  - zwisam
 
 Wzorce projektowe:
   title: Najlepsze książki o wzorcach projektowych
   books:
-    - Klasyk bandy czworga. Najlepsza o wzorcach projektowych. (Przykłady w C++, ale wiedza dla każdego):
+    - Klasyk bandy czworga (przykłady w C++, ale wiedza dla każdego):
       - wzoevv
-    - (Przykłady w Javie):
-      - wzorvv
-      - wzoimp
-
+    - W nieco bardziej przystępnej formie (przykłady w Javie):
+      - wzorg2
 
 Język angielski w IT:
   title: Książka dla programistów dzięki której poprawisz swój angielski
   books:
-    - anginf
+    - anginv
 
 Dla najmłodszych:
   title: Najlepsze książki do rozpoczęcia nauki programowania dla dziecka
   books:
     - Scratch:
-      - scrabt
-      - a_03cg
-      - scrakp
-    - Python:
-      - hellow
-      - a_03ch
-      - a_03ca
-    - Javascript:
-      - a_0352
+      - mlogi2
+      - scra3n
+      - scrak2
 
 Algorytmy:
   title: Najlepsze książki o algorytmach
   books:
     - algoip
-    - algory
-    - algbet
+    - algbvv
+    - naualg
 
 Bezpieczeństwo:
   title: Najlepsze książki o bezpieczeństwie systemów
   books:
-    - tespen
-    - splasi
-    - besyha
-    - podpen
-    - kalil2
-    - wykreg
-    - jowozr
+    - warhak
+    - ctispp
+    - hainrz
 
 Testowanie oprogramowania:
   title: Najlepsze książki o testowaniu oprogramowania
   books:
-    - tddszt
-    - seler2
-    - tesjed
+    - Testy jednostkowe:
+        - tejeza
+        - tesjed
+    - Test Driven Development:
+        - tddppr
+        - tddszv
 
 Domain-Driven Design:
   title: Najlepsze książki o Domain-driven Design
@@ -91,23 +80,22 @@ Produktywność i samodyscyplina:
   title: Najlepsze książki o produktywności i samodyscyplinie
   books:
     - getti2
-    - samodv
+    - droppp
     - 15taza
     - nietlv
-    - droppp
+    - samodv
 
 Refaktoryzacja:
   title: Najlepsze książki o refaktoryzacji
   books:
-    - refukv
+    - refak2
     - refawp
-    - prazav
 
 Startupy:
   title: Najlepsze książki o start-upach
   books:
-    - melean
-    - pispri
+    - meleav
+    - stwje2
     - podsta
-    - prasta
     - nisbud
+    - prasta

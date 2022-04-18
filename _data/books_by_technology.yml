@@ -31,6 +31,7 @@ C:
 
 'C#':
   books:
+    - cshru4
     - ch9lek
     - c8wpig
     - c8kpp7
@@ -118,7 +119,7 @@ Python:
       - pytexc
     - Robotyka:
       - jazar2
-    - Django i TDD:
+    - Django i Test Driven Development:
       - tddwpr
 
 R:

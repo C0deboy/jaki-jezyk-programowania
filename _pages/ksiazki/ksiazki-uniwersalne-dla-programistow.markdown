@@ -26,7 +26,7 @@ Są to książki uniwersalne, które może przeczytać każdy, bez względu na u
 
 {% for group in book %}
 
-<p>{{ group[0] }}</p>
+<p>{{ group[0] }}:</p>
 
 {% for bookId in group[1] %}
 
