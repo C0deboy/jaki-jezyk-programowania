@@ -5,26 +5,27 @@ const langLinks = document.querySelectorAll('.lang-link');
 
 const mobile = window.matchMedia('(max-width: 992px)').matches;
 
-window.addEventListener('touchstart', function onFirstTouch() {
-  langLinks.forEach((link) => link.addEventListener('click', disableLink));
-  window.removeEventListener('touchstart', onFirstTouch, false);
-}, false);
+if (mobile) {
+  createMobileLabels();
+}
 
 langElements.forEach((lang) => {
   const subs = lang.querySelectorAll('.sub');
 
   if (!mobile) {
-    lang.addEventListener('mouseover', () => showSubTechnologies(subs, lang));
-    lang.addEventListener('mouseout', () => hideSubTechnologies(subs, lang));
+    lang.addEventListener('mouseover', () => showSubTechnologies(subs));
+    lang.addEventListener('mouseout', () => hideSubTechnologies(subs));
   } else {
-    showSubTechnologies(subs, lang);
+    showSubTechnologies(subs);
     if (subs.length === 0) {
       lang.style.minHeight = '140px';
+    } else if (subs.length > 4) {
+      lang.style.marginBottom = '50px';
     }
   }
 });
 
-function showSubTechnologies(subs, lang) {
+function showSubTechnologies(subs) {
   if (subs.length !== 0) {
     subs.forEach((sub) => {
       sub.style.height = `${60}px`;
@@ -34,7 +35,18 @@ function showSubTechnologies(subs, lang) {
   }
 }
 
-function hideSubTechnologies(subs, lang) {
+function createMobileLabels() {
+  langLinks.forEach((link) => {
+    const img = link.querySelector('img');
+    const lang = img.getAttribute('data-tip');
+    const languageEl = document.createElement('span');
+    languageEl.innerText = lang;
+    languageEl.classList.add('mobile-label');
+    link.appendChild(languageEl);
+  });
+}
+
+function hideSubTechnologies(subs) {
   if (subs.length !== 0) {
     subs.forEach((sub) => {
       sub.style.height = `${35}px`;
@@ -42,9 +54,4 @@ function hideSubTechnologies(subs, lang) {
       sub.classList.remove('backToPosition');
     });
   }
-}
-
-function disableLink(e) {
-  e.preventDefault();
-  this.removeEventListener('click', disableLink);
 }

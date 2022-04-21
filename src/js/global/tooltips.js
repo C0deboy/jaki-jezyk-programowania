@@ -1,13 +1,11 @@
 import { createPopper } from '@popperjs/core';
 import preventOverflow from '@popperjs/core/lib/modifiers/preventOverflow';
-import flip from '@popperjs/core/lib/modifiers/flip';
 
 function positionTooltip(el, tooltip) {
   createPopper(el, tooltip, {
     placement: 'top',
     modifiers: [
       preventOverflow,
-      flip,
       {
         name: 'offset',
         options: {

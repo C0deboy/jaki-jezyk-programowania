@@ -57,10 +57,6 @@
 
 .languages-list {
   padding-top: 25px;
-
-  hr {
-    margin-top: 0;
-  }
 }
 
 .container-lang {
@@ -152,4 +148,13 @@
 
 .other-technologies {
   height: auto;
+}
+
+.mobile-label {
+  display: block;
+  max-width: 70px;
+  text-align: center;
+  margin: 3px auto 5px;
+  line-height: 14px;
+  opacity: 70%;
 }
