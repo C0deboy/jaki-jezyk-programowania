@@ -68,13 +68,11 @@ przyczyniło się do tego wzrost zainteresowania tematami jak *machine learning*
 
 {% assign versions = site.data.statistics.languagesVersions %}
 
-Python jest obecnie w czołówce najbardziej opłacalnych oraz najbardziej pożądanych języków. Wraz ze wzrostem
-zainteresowania tematami takimi jak big data, data science i machine learning, rośnie zapotrzebowanie na programistów
+Python jest obecnie w czołówce najbardziej opłacalnych oraz najbardziej pożądanych języków. Jest uniwersalnym rozwiązaniem,
+a wraz ze wzrostem zainteresowania tematami takimi jak big data, data science i machine learning, rośnie zapotrzebowanie na programistów
 Pythona, którzy są coraz częściej zatrudniani jako *data scientist*. Jako projekt open source jest cały czas aktywnie
-dopracowywany, by sprostać coraz to nowszym wymaganiom. Jego ostatnia wersja {{ versions.Python.version }} została
-wydana {{ versions.Python.releaseDate }}. Rozwój uczenia maszynowego (machine learning), które jest witalną częścią
-rozwoju sztucznej inteligencji, jak i zarówno rosnąca ilość big data dobrze wróżą przyszłości tego języka.
-Prawdopodobnie zostanie na topie przez dłuższy czas.
+rozwijany, by sprostać coraz to nowszym wymaganiom. Jego ostatnia wersja {{ versions.Python.version }} została
+wydana {{ versions.Python.releaseDate }}. Prawdopodobnie pozostanie na topie przez dłuższy czas.
 
 {% include courses.html %}
 

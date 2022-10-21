@@ -75,7 +75,7 @@ właśnie PHP.
 {% assign versions = site.data.statistics.languagesVersions %}
 
 PHP jest dosyć starym językiem, ale jego popularność nie spada i się na to nie zanosi. Fakt, że jest wykorzystywany
-przez większość najpopularniejszych stron internetowych sprawia, że nie zostanie łatwo wyparty. Ponadto cały czas jest
+przez większość najpopularniejszych stron internetowych, sprawia, że nie zostanie łatwo wyparty. Ponadto cały czas jest
 rozwijany, aby sprostać nowym wymaganiom. Wersja PHP7 mocno go odświeżyła, a ostatnia jego wersja {{
 versions.PHP.version }} została wydana {{ versions.PHP.releaseDate }}.
 

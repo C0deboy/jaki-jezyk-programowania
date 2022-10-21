@@ -75,9 +75,7 @@ wtedy przejście jest naprawdę płynne.
 
 Groovy stracił nieco na swojej popularności, głównie ze względu na pojawienia się [Kotlina](/technologie/kotlin)
 i [Scali](/technologie/scala). Najbliższe lata raczej nie zapowiadają się dla niego obiecująco, mimo to jest
-stale rozwijany. Jego ostatnia wersja {{ groovy.version }} została wydana {{ groovy.releaseDate }}{% unless
-groovy.version contains '3.'%}, a zapowiadana wersja 3.0 porzuci wsparcie dla starej Javy i wprowadzi
-wiele [nowych funkcji i ulepszeń](http://groovy-lang.org/releasenotes/groovy-3.0.html){% endunless %}.
+stale rozwijany. Jego ostatnia wersja {{ groovy.version }} została wydana {{ groovy.releaseDate }}.
 
 {% include courses.html %}
 

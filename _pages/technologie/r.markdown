@@ -63,7 +63,7 @@ science*.
 
 {% assign versions = site.data.statistics.languagesVersions %}
 
-Rosnące zainteresowanie w dziedzinach jak analizowanie danych, statystyka, *data science* czy *big data* dobrze wróży R,
+Rosnące zainteresowanie w dziedzinach takich jak *data science* czy *big data* dobrze wróży językowi R,
 jednak [Python](/technologie/python) jest dla niego mocnym rywalem i często jest językiem pierwszego wyboru.
 Język R jest stale rozwijany, jego ostatnia wersja {{ versions.R.version }} została wydana {{ versions.R.releaseDate }}.
 

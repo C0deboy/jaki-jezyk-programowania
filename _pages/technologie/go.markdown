@@ -72,7 +72,8 @@ Dzięki tzw. gorutynom (ang. *goroutines*) i kanałom wbudowanym w Go, programow
 
 {% assign go = site.data.statistics.languagesVersions.Go %}
 
-Popularność Go w ostatnich latach cały czas rośnie, a stoi za tym przede wszystkim rozwój internetu oraz zapotrzebowania na rozwiązania do obsługi komunikacji sieciowej. Język ten jest stale rozwijany, a jego ostatnia wersja {{ go.version }} została wydana {{ go.releaseDate }}. Równie dobrze wróży temu językowi fakt, że został stworzony i jest rozwijany przez pracowników Google. Go to dobry kandydat do nauki na najbliższe lata. 
+Popularność Go w ostatnich latach cały czas rośnie, a fakt, że został stworzony i jest rozwijany przez pracowników Google dobrze mu wróży. 
+Jego ostatnia wersja {{ go.version }} została wydana {{ go.releaseDate }}. Wydaje się, że to dobry kandydat do nauki na najbliższe lata. 
 
 {% include courses.html %}
 
