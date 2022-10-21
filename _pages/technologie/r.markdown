@@ -37,7 +37,7 @@ Dzięki swojemu przystosowaniu do obliczeń statystycznych został zaadaptowany 
 
 R nie jest najłatwiejszym językiem do nauki, ale mimo wszystko wizualizowanie danych jest o wiele łatwiejsze niż
 chociażby w Pythonie. Głównie ze względu na ogrom już wbudowanych funkcji obsługujących operacje statystyczne. Python w
-dłużej mierze polega na zewnętrznych bibliotekach.
+dużej mierze polega na zewnętrznych bibliotekach.
 
 Z drugiej strony, jeśli masz już trochę doświadczenia z innym językiem programowania,
 to [Python](/technologie/python) może być dla Ciebie bardziej przyjazny.
