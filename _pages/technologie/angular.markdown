@@ -13,7 +13,7 @@ permalink: /technologie/angular/
 – [Single Page Applications](https://en.wikipedia.org/wiki/Single-page_application).
 
 **Angular** jest oparty o model MVW (Model – View – Whatever) - pozwala pogodzić idee JavaScript i modelu MVC. Framework
-ten rozszerza możliwości trad~~~~ycyjnego HTML-a do lepszej obsługi dynamicznych treści, co umożliwia automatyczną
+ten rozszerza możliwości tradycyjnego HTML-a do lepszej obsługi dynamicznych treści, co umożliwia automatyczną
 synchronizację pomiędzy modelem i widokiem. W ten sposób Angular ogranicza manipulacje w DOMie i ułatwia testowanie.
 
 Popularne aplikacje, które wykorzystują Angular:
