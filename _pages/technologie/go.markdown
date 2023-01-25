@@ -10,7 +10,7 @@ image: go.png
 
 # Zastosowanie
 
-Go to relatywnie nowy, statycznie typowany język programowania od Google. Go został zaprojektowany tak, by umożliwić wysokowydajne i łatwe programowanie współbieżne. 
+Go to relatywnie nowy, statycznie typowany język programowania od Google. Go został zaprojektowany tak, by umożliwić wysokowydajne i łatwe programowanie współbieżne.
 
 W przypadku mikrousług wąskim gardłem nie jest moc obliczeniowa, a przepustowość i komunikacja między komponentami. W Go zarządzanie komunikacją wbudowane jest w sam język, co powoduje, że tego typu projekty znacznie łatwiej jest skalować.
 
@@ -72,8 +72,8 @@ Dzięki tzw. gorutynom (ang. *goroutines*) i kanałom wbudowanym w Go, programow
 
 {% assign go = site.data.statistics.languagesVersions.Go %}
 
-Popularność Go w ostatnich latach cały czas rośnie, a fakt, że został stworzony i jest rozwijany przez pracowników Google dobrze mu wróży. 
-Jego ostatnia wersja {{ go.version }} została wydana {{ go.releaseDate }}. Wydaje się, że to dobry kandydat do nauki na najbliższe lata. 
+Popularność Go w ostatnich latach cały czas rośnie, a fakt, że został stworzony i jest rozwijany przez pracowników Google dobrze mu wróży.
+Jego ostatnia wersja {{ go.version }} została wydana {{ go.releaseDate }}. Wydaje się, że to dobry kandydat do nauki na najbliższe lata.
 
 {% include courses.html %}
 

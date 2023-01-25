@@ -11,7 +11,7 @@ no-books: false
 
 # Zastosowanie
 
-Kotlin to wieloplatformowy, statycznie typowany język programowania działający na maszynie wirtualnej Javy, który jest głównie rozwijany przez programistów JetBrains - m.in. twórców popularnych IDE jak InteliJ. 
+Kotlin to wieloplatformowy, statycznie typowany język programowania działający na maszynie wirtualnej Javy, który jest głównie rozwijany przez programistów JetBrains - m.in. twórców popularnych IDE jak InteliJ.
 
 Kotlin jest zaprojektowany z myślą o pełnej interoperacyjności z językami działającymi na maszynie wirtualnej Javy. Dzięki temu jest w pełni kompatybilny z Javą, bo tak naprawdę jest kompilowany do Javy. Można więc powiedzieć, że jest to swojego rodzaju nakładka na Javę, która oferuje znacznie bardziej zwięzły kod i funkcjonalności, które w Javie nie występują, jednocześnie pozostając pod spodem zwykła Javą. Czyli jest to po prostu nowy lepszy sposób na pisanie Javy.
 

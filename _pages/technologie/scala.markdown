@@ -13,7 +13,7 @@ no-books: true
 
 **Scala** jest to wieloplatformowy, statycznie typowany język programowania działający na maszynie wirtualnej Javy. Wspiera programowanie funkcyjne jaki i obiektowe.
 
-Dużą zaletą Scali jest kompatybilność z javą - biblioteki mogą być reużywane pomiędzy Scalą a Javą bez problemu. 
+Dużą zaletą Scali jest kompatybilność z javą - biblioteki mogą być reużywane pomiędzy Scalą a Javą bez problemu.
 
 Zastosowanie skali dominuje w dziedzinach jak *data science*, *big data* czy *machine learning*.
 

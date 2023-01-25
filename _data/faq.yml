@@ -1,23 +1,23 @@
 - Q: Istnieje najlepszy język programowania?
-  A: |
+  A: >
     Nie, nie ma "najlepszego" języka programowania. Każda z technologii wymienianych na stronie jest równie dobra w swoich zastosowaniach. Twoim 
     zadaniem jest wybrać ten, który jest najbardziej odpowiedni do Twoich celów oraz ten, z którym będzie Ci się najlepiej pracowało. Możesz 
     popróbować różnych technologii, zanim skupisz się na tej konkretnej. Po prostu wybierz to, co najlepiej Ci "leży".
 
 - Q: Czy wybór pierwszego języka ściśle określa przyszłość mojej kariery?
-  A: |
+  A: >
     Oczywiście, że nie. Twój pierwszy język programowania nie ma żadnego wpływu na Twoją przyszłość związaną z programowaniem. To, co jest ważne, to
     poznanie głównych fundamentów programowania, które można zastosować w różnych językach. Jeśli opanujesz jeden język, to przejście do kolejnego 
     jest naturalną rzeczą. Im więcej ich dotkniesz, tym lepsze będziesz miał spojrzenie na świat programowania. Jednak ciężko jest wyspecjalizować 
     się w wielu technologiach naraz, dlatego, gdy przebrniesz przez kilka i znajdziesz swoją ulubioną, warto na niej się skupić.
 
 - Q: Mam N lat, czy jest już za późno na naukę programowania?
-  A: |
+  A: >
     Nie, nigdy nie jest za późno na rozpoczęcie nauki programowania. Wiek nie ma tu żadnego znaczenia. To, czego programowanie wymaga to masa 
     poświęconego czasu, samodyscypliny i cierpliwości. Oczywiście są od tego wyjątki i lista może się zwiększyć zależnie od branży.
 
 - Q: Czy muszę być dobry z matematyki, by pracować jako programista?
-  A: |
+  A: >
     Niekoniecznie — to zależy od branży, w jakiej będziesz pracował. Wiadomo, że istnieją takie, które bez tego się nie obejdą, np. tworzenie 
     złożonych gier, silniki graficzne, data science itp. Jednak większość aspektów programowania nie będzie od Ciebie wymagać znajomości 
     matematyki na wysokim poziomie, wystarczą podstawy. Wiele programistów podczas swojej całej kariery ledwo co ją dotyka. Z drugiej strony, pewne
@@ -25,7 +25,7 @@
     sytuacja, jeśli chcesz studiować Informatykę. Wtedy tego nie unikniesz. Ba, nawet matematyka stanie się Twoim najlepszym przyjacielem.
 
 - Q: Jaki wybrać edytor / IDE / komputer / system operacyjny itd.?
-  A: |
+  A: >
     W większości przypadków nie ma to żadnego znaczenia, tym bardziej nie ma "najlepszego". Zwłaszcza na początku nauki nie powinieneś się na tym 
     skupiać. Jest to uzależnione tylko i wyłącznie od twoich preferencji i od tego, z czym pracuje Ci się komfortowo. Jeśli chodzi o systemy 
     operacyjne, to zależy od tego, na jaką platformę chcesz tworzyć oprogramowanie. Niektóre języki są stworzone dla konkretnego systemu, ale 
@@ -33,18 +33,22 @@
     każdym systemem, żeby w razie spotkania z nim np. w pracy, nie być zaskoczonym.
 
 - Q: Co powinienem umieć, aby zacząć programować?
-  A: |
+  A: >
     Podstawowa rzecz to język angielski. Potrzebny jest do rozumienia kodu, do czytania dokumentacji, która zazwyczaj występuje po angielsku oraz 
     do korzystania z wielu anglojęzycznych źródeł, których, nie oszukujmy się, jest o wiele więcej niż polskich. Na przykład największe forum 
     programistyczne Stack OverFlow jest w całości po angielsku, a jest to źródło odpowiedzi na większość twoich 
     początkujących problemów związanych z programowaniem.
-
+    
+    
     Do tego matematyka, przynajmniej podstawy (zależnie od branży).
-
+    
+    
     Musisz także nauczyć się myśleć algorytmicznie i rozkładać problemy na czynniki pierwsze.
-
+    
+    
     Ważne jest też, żebyś potrafił samodzielnie szukać odpowiedzi na swoje problemy. Umiejętność ta jest niezbędna, stosuje się ją każdego dnia. 
     Miej też na uwadze to, że do pewnego stopnia zaawansowania, nie ma problemów, które gdzieś nie są już rozwiązane. 
+    
     
     Ważną rzeczą jest też to, żeby Cię to interesowało. Nie mówię, że to musi być od razu twoja pasja, jednak programista to taki zawód, w którym 
     uczymy się praktycznie całe życie — ze względu na zmieniające się technologie i trendy. Nie sposób być na bieżąco, gdy traktujemy naszą pracę 
@@ -52,14 +56,14 @@
     mnie powinieneś zastanowić się dwa razy czy to dobry wybór ;)
 
 - Q: Czy jako programista będę dużo zarabiać?
-  A: |
+  A: >
     Tak i nie. Od wielu lat istnieje trend na programowanie, często opisywany jako łatwe siedzenie przed komputerem i zarabianie dużych pieniędzy. 
     Tak to może wygląda z zewnątrz dla ludzi, którzy o programowaniu tylko słyszeli. Zarabiać będziesz dużo, jeśli będziesz w tym naprawdę dobry i 
     wtedy pewnie twoim obowiązkiem nie będzie już samo programowanie. Jest to jednak oczywista oczywistość, bo tak samo jest w każdym innym 
     zawodzie. Programowanie jak większość zawodów nie jest pewnikiem na bezpieczną i wysoko płatną pracą dla wszystkich.
 
 - Q: Czy do zostania programistą potrzebne są studia?
-  A: |
+  A: >
     By zostać programistą studia nie są konieczne. Wykształcenie wyższe nie jest wymagane przez większość pracodawców, a ścieżka freelancera 
     całkowicie pomija ten aspekt. Plusem dyplomu jest to, że dwa lata po zakończeniu studiów dostajesz gratis 4 dni rocznie urlopu więcej. Jednak 
     samo studiowanie nie zrobi z Ciebie pełnoprawnego programisty. Prawdopodobnie studia nie dadzą Ci wiele wiedzy związanej z programowaniem. 
@@ -71,13 +75,13 @@
     rozwijał i uczył programowania także w wolnym czasie, nie będziesz żył studenckim życiem na całego, to na pewno nie będą to lata stracone.
 
 - Q: Praca czy studia?
-  A: |
+  A: >
     Jeśli sytuacja materialna pozwala Ci iść na studia, według mnie lepiej je właśnie wybrać. Praca i pieniądze nie uciekną, a wszystkie korzyści 
     płynące ze studiowania już tak. Unikniesz wtedy rozmyślań w przyszłości typu „a mogłem...”. Trzeba dodać, że studiując, możliwa jest praca na 
     pół etatu. Może nie być łatwo wszystko to pogodzić, ale kto mówi, że ma być łatwo? :D
 
 - Q: Istnieje najszybszy język programowania?
-  A: |
+  A: >
     Im bliżej sprzętu działa język programowania (im jego poziom abstrakcji od sprzętu jest mniejszy), im mniej wykonuje za nas pracy i jest mniej 
     elastyczny, tym jest wydajniejszy. Jednak w zwykłych zastosowaniach nie jest to coś, na co powinniśmy zwracać szczególną uwagę, zwłaszcza że 
     procesory stają się coraz mocniejsze i różnice te są coraz mniej zauważalne. Ważniejsza jest produktywność, czyli szybszy proces tworzenia 
@@ -86,22 +90,23 @@
     wydajnością aplikacji. Największą rolę odgrywa to, w jaki sposób aplikacja została zbudowana oraz jej optymalizacja.
 
 - Q: Co to znaczy "znać język programowania"?
-  A: |
+  A: >
     Mniej więcej to samo co znaczy znać język obcy. Można to stwierdzić, kiedy wiesz, jak go używać efektywnie, nawet jeśli nie wiesz o nim 
     wszystkiego. Jednak trzeba zaznaczyć, że nauczenie się samego języka programowania nie czyni z nas dobrego programisty w danym języku.
 
 - Q: Uczę się języka X, powinienem zacząć uczyć się kolejnego?
-  A: |
+  A: >
     Kiedy zaczynasz się uczyć, dobrze jest pozostać dłużej z jednym językiem, aby zrozumieć wszystkie aspekty programowania. Najważniejsze to 
     nauczyć się programować, a później można przebierać w językach i technologiach do woli. Jeśli opanujesz jeden język, to przejście do kolejnego 
     jest już dużo prostsze.
 
 - Q: Jak się uczyć programowania?
-  A: |
+  A: >
     Najskuteczniejszą metodą jest samodzielne pisanie aplikacji i programów. Można się też wspomagać [książkami](/ksiazki) lub kursami, ale to 
     powinno być na drugim miejscu. Przeklepywanie czyjegoś kodu niespecjalnie nas czegoś uczy. Przeczytanie kilku książek nie zrobi z Ciebie 
     programisty, jeśli nie przysiądziesz do kodu. Możesz podglądać też wysoko oceniane projekty na Githubie, by zobaczyć, jak wyglądają aplikację w
     prawdziwym świecie. Można również rozważyć mentoring od kogoś, kto już jest w zawodzie i nieco nakieruje twoją naukę.
+    
     
     Jeśli chcesz polepszyć też znajomość algorytmiki i użyć nieco matematyki, spróbuj rozwiązywanie różnych łamigłówek programistycznych ze stron 
     jak [Project Euler](https://projecteuler.net/), czy [/r/dailyprogrammer](https://www.reddit.com/r/dailyprogrammer/)
