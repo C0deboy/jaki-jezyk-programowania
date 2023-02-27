@@ -3,8 +3,9 @@ layout: simpleTechnology
 title-full: Jekyll - opis, najlepsze polecane kursy video
 title: Jekyll
 permalink: /technologie/jekyll/
-image: jekyll-light.png
+image: jekyll.png
 no-books: true
+no-courses: true
 ---
 
 {: .official-page .darker-overlay }

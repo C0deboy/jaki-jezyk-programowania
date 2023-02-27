@@ -4,6 +4,7 @@ title-full: LibGDX - opis, najlepsze polecane kursy video
 title: LibGDX
 permalink: /technologie/libgdx/
 no-books: true
+no-courses: true
 ---
 
 {: .official-page .darker-overlay }

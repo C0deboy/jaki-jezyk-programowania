@@ -1,3 +1,4 @@
+{% unless page.no-courses %}
 {%- assign langKey = page.title | downcase | replace: ' ', '' -%}
 {%- assign courses = site.data.courses[langKey] -%}
 
@@ -85,3 +86,4 @@
     <img alt="Inne kursy video na Udemy" src="/img/other/video-courses.png"/>Zobacz inne kursy video na Udemy
   </a>
 </div>
+{% endunless %}

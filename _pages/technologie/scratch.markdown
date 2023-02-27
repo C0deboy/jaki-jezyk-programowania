@@ -4,7 +4,7 @@ title-full: Programowanie dla dzieci - jaki język programowania
 title: Scratch
 permalink: /technologie/scratch/
 image: scratch.png
-no-courses:  false
+no-courses: true
 ---
 
 # Co to jest Scratch?
