@@ -19,6 +19,8 @@ langElements.forEach((lang) => {
     showSubTechnologies(subs);
     if (subs.length === 0) {
       lang.style.minHeight = '140px';
+    } else if (subs.length < 3) {
+      lang.style.marginBottom = '20px';
     } else if (subs.length > 4) {
       lang.style.marginBottom = '50px';
     }

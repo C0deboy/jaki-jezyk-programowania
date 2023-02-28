@@ -6,15 +6,12 @@ O karierze programisty:
 Git:
   title: Książka dzięki której nauczysz się systemu kontroli wersji Git
   books:
-    - gitroz
+    - wprgit
 
 Czysty kod:
   title: Najlepsze książki o dobrych praktykach i czystym kodzie
   books:
-  - Nowszy twór Roberta C. Martina:
-    - czarch
-  - Klasyki:
-    - czykov
+    - czykvv
     - pragp2
     - mckkvv
     - prorze
@@ -33,11 +30,6 @@ Wzorce projektowe:
     - W nieco bardziej przystępnej formie (przykłady w Javie):
       - wzorg2
 
-Język angielski w IT:
-  title: Książka dla programistów dzięki której poprawisz swój angielski
-  books:
-    - anginv
-
 Dla najmłodszych:
   title: Najlepsze książki do rozpoczęcia nauki programowania dla dziecka
   books:
@@ -49,7 +41,6 @@ Dla najmłodszych:
 Algorytmy:
   title: Najlepsze książki o algorytmach
   books:
-    - algoip
     - algbvv
     - naualg
 
@@ -57,7 +48,6 @@ Bezpieczeństwo:
   title: Najlepsze książki o bezpieczeństwie systemów
   books:
     - warhak
-    - ctispp
     - hainrz
 
 Testowanie oprogramowania:
@@ -74,16 +64,12 @@ Domain-Driven Design:
   title: Najlepsze książki o Domain-driven Design
   books:
     - dddaro
-    - domdri
 
 Produktywność i samodyscyplina:
   title: Najlepsze książki o produktywności i samodyscyplinie
   books:
-    - getti2
     - droppp
     - 15taza
-    - nietlv
-    - samodv
 
 Refaktoryzacja:
   title: Najlepsze książki o refaktoryzacji
@@ -94,8 +80,6 @@ Refaktoryzacja:
 Startupy:
   title: Najlepsze książki o start-upach
   books:
-    - meleav
     - stwje2
     - podsta
-    - nisbud
     - prasta

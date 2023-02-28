@@ -10,12 +10,14 @@
 
   <nav id="site-nav" class="collapse navbar-collapse show">
     <ul class="nav navbar-nav ms-auto text-end">
+      {% if page.no-courses != true %}
       <li class="nav-item">
         <a class="page-scroll nav-link courses-link"
            href="#najlepsze-kursy-video-do-nauki-{{ page.title | downcase | replace: '#', 'sharp'}}">
           <i class="fa fa-caret-square-o-right" aria-hidden="true"></i> Polecane kursy
         </a>
       </li>
+      {% endif %}
       {% if page.no-books != true %}
       <li class="nav-item">
         <a class="page-scroll nav-link" href="#najlepsze-książki-do-nauki-{{ page.title | downcase | replace: '#', 'sharp'}}">
