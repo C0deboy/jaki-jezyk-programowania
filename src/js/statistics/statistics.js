@@ -48,6 +48,7 @@ const chartsData = [
   {
     canvasId: 'tiobeCurrentYear',
     title: 'Tiobe index - ranking',
+    subtitle: 'Popularność języków programowania na podstawie liczby wyszukiwań danego hasła w internecie',
     yAxisLabel: 'Pozycja',
     cfg: { reverse: true },
   },
@@ -60,11 +61,13 @@ const chartsData = [
   {
     canvasId: 'stackQuestions',
     title: 'Stack Overflow - liczba pytań',
+    subtitle: 'Stack Overflow to portal, gdzie można zadawać pytania dotyczące programowania',
     yAxisLabel: 'Liczba pytań',
   },
   {
     canvasId: 'meetupMeetupsLocal',
     title: 'Meetup - ilość grup - Polska',
+    subtitle: 'Meetup to platforma, gdzie możemy znaleźć spotkania dla entuzjastów danej dziedziny',
     yAxisLabel: 'Liczba grup',
   },
   {
@@ -85,6 +88,7 @@ const chartsData = [
   {
     canvasId: 'githubProjects',
     title: 'Github - liczba projektów',
+    subtitle: 'Github jest to najpopularniejsze miejsce do przechowywanania projektów programistycznych',
     yAxisLabel: 'Liczba projektów',
   },
   {
@@ -113,7 +117,8 @@ const githubTop10ChartsData = {
   },
 };
 
-chartsData.forEach((data) => createLineChart(data.canvasId, data.title, data.yAxisLabel, statistics, data.cfg));
+chartsData.forEach((data) => createLineChart(data.canvasId, data.title, data.yAxisLabel, statistics, data.cfg, data.subtitle));
+
 createTop10GithubProjectsChartsOnButtonClick(githubTop10ChartsData.forEachLang);
 createTop10GithubProjectsOverall(githubTop10ChartsData.overall);
 createLogicForHowToUseDialog();
@@ -147,7 +152,7 @@ function createLineChart(canvasId, title, yAxisLabel, stats, cfg = {
   reverse: false,
   gitLang: null,
   statsKey: null,
-}) {
+}, subtitle) {
   const { gitLang } = cfg;
 
   const key = cfg.statsKey || canvasId;
@@ -164,8 +169,14 @@ function createLineChart(canvasId, title, yAxisLabel, stats, cfg = {
 
   const header = document.createElement('h2');
   header.innerText = gitLang ? title + gitLang : title;
-
   ctx.canvas.parentElement.insertBefore(header, ctx.canvas);
+
+  if (subtitle) {
+    const subheader = document.createElement('p');
+    subheader.classList.add('text-muted');
+    subheader.innerText = subtitle;
+    ctx.canvas.parentElement.insertBefore(subheader, ctx.canvas);
+  }
 
   if (window.matchMedia('(max-width: 768px)').matches) ctx.canvas.height = 500;
 
