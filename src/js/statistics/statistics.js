@@ -17,6 +17,7 @@ import statistics2020 from './statistics2020-data';
 import statistics2021 from './statistics2021-data';
 import statistics2022 from './statistics2022-data';
 import statistics2023 from './statistics2023-data';
+import statistics2024 from './statistics2024-data';
 
 require('../../css/statistics.scss');
 
@@ -37,6 +38,7 @@ const yearToStats = {
   2021: statistics2021,
   2022: statistics2022,
   2023: statistics2023,
+  2024: statistics2024,
 };
 const statistics = yearToStats[year];
 const githubProjectsCfg = {
