@@ -187,7 +187,6 @@ function createLineChart(canvasId, title, yAxisLabel, stats, cfg = {
     entry.borderColor = color;
     entry.backgroundColor = color;
     entry.fill = false;
-    entry.tension = 0.4;
   });
 
   new Chart(ctx, {
