@@ -11,6 +11,10 @@ const promotions = [
   },
 ];
 
+if (localStorage.getItem('ad-closed') !== '1') {
+  createPromotionMessagePopup({message: "Zobacz polecane kursy i książki"});
+}
+
 const customMessage = '';
 
 promotions.forEach((promotion, i) => {
