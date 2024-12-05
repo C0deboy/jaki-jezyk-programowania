@@ -1,6 +1,6 @@
-@import 'cookiesInfo.scss';
-@import 'laptop.scss';
-@import 'monokai-sublime.scss';
+@use 'cookiesInfo.scss';
+@use 'laptop.scss';
+@use 'monokai-sublime.scss';
 
 hr {
   border-color: rgba(42, 144, 180, 0.31);

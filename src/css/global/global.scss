@@ -1,7 +1,7 @@
-@import "bootstrap";
-@import "font-awesome";
-@import "tooltips";
-@import "navbar";
+@use "~bootstrap/scss/bootstrap";
+@use "~font-awesome/scss/font-awesome";
+@use "tooltips";
+@use "navbar";
 
 html, body {
   font-family: 'Lato', sans-serif;

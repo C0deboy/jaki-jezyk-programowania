@@ -4,11 +4,11 @@
   "description": "Website that helps choose a programming language for beginners.",
   "main": "",
   "scripts": {
+    "build:all:prod": "webpack --mode production && bundle exec jekyll build",
     "webpack:watch": "webpack --watch --mode development",
     "webpack:prod": "webpack --mode production",
-    "build:all:prod": "webpack --mode production && bash -i -c buildjjp",
-    "jekyll:build": "bash -i -c buildjjp",
-    "jekyll:serve": "bash -i -c servejjp"
+    "jekyll:build": "bundle exec jekyll build",
+    "jekyll:serve": "bundle exec jekyll serve --livereload"
   },
   "repository": {
     "type": "git",
@@ -36,8 +36,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
     "mini-css-extract-plugin": "^2.7.2",
-    "node-sass": "^8.0.0",
-    "sass-loader": "^13.2.0",
+    "sass": "^1.82.0",
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.3.6",
     "webpack": "^5.75.0",
@@ -50,7 +49,7 @@
     "chart.js": "^4.2.0",
     "font-awesome": "^4.7.0",
     "highlight.js": "^11.7.0",
-    "npm": "^9.4.1",
+    "sass-loader": "^16.0.4",
     "typed.js": "^2.0.12"
   }
 }
