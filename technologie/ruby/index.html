@@ -28,6 +28,7 @@
 
 
   <link href="/dist/language.css" rel="stylesheet">
+  <link href="/dist/home.bundle.css" rel="stylesheet">
 
 </head>
 
@@ -48,6 +49,11 @@
       <li class="nav-item">
         <a class="page-scroll nav-link difficulty-btn" href="#poziom-skomplikowania">
           <i class="fa fa-cogs" aria-hidden="true"></i> Poziom skomplikowania
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="page-scroll nav-link difficulty-btn" href="#składnia">
+          <i class="fa fa-code" aria-hidden="true"></i> Składnia
         </a>
       </li>
       <li class="nav-item">
@@ -96,7 +102,7 @@
       <div class="col-sm-12 col-lg-6 col-header">
         <h2 class="lang-starter-heading">Ruby</h2>
 
-        <div class="up-to-date">Aktualizacja: 13.04.2022</div>
+        <div class="up-to-date">Aktualizacja: 08.12.2024</div>
         
         <p style="margin: 25px 0 0 0; text-align: center">Zobacz polecane:</p>
         
@@ -212,6 +218,44 @@ nawet początkującym adeptom kodu, podobnie do Pythona.</p>
 <p>Czytanie kodu Ruby jest praktycznie identyczne z czytaniem instrukcji po angielsku. Nie znajdziemy definicji typów, a
 składnia w porównaniu z językami takimi jak Java czy C++ jest maksymalnie uproszczona. Ruby to język wysokopoziomowy,
 więc nie musimy dbać o niskopoziomowe detale, takie jak zarządzanie pamięcią - robi to za nas garbage collector.</p>
+
+<h1 id="składnia">Składnia</h1>
+
+<p class="text-center text-muted">
+    Przykładowa implementacja wyszukiwania binarnego:
+</p>
+
+<div class="code-example">
+    <div class="code-example-header">BinarySearch.rb</div>
+    <pre><code class="language-Ruby"># Ruby
+def binarySearch(a, x)
+  startAt = 0
+  endAt = a.length - 1
+  while startAt &lt;= endAt
+    middle = ((startAt + endAt) / 2).floor
+    if a[middle] == x
+      return middle
+    else
+      if a[middle] &gt; x
+        endAt = middle - 1
+      else
+        startAt = middle + 1
+      end
+    end
+  end
+  return -1
+end
+
+library = [&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;]
+# Dla wyszukiwania binarnego
+# tablica musi być posortowana rosnąco
+
+x = &quot;Illuminati&quot;;
+foundXAt = binarySearch(library, x);
+puts(&quot;Znaleziono \&quot;&quot; + x + &quot;\&quot; na pozycji &quot; + foundXAt.to_s)
+# Znaleziono &quot;Illuminati&quot; na pozycji 3
+</code></pre>
+</div>
 
 <h1 id="statystyki">Statystyki</h1>
 
@@ -398,7 +442,7 @@ rozwijany, twórcy wypuszczają często aktualizacje, rozwiązujące wiele wcze�
     <div class="promotion-content darker-overlay">
       <a href="https://helion.pl/page/9102Q/promocje">
         <img alt="Promocja" class="icon" src="/img/other/sale.png" />
-        <span>Zobacz aktualne promocje w Helion</span>
+        <span>Zobacz aktualne promocje w księgarni Helion</span>
         <img alt="Promocja" class="icon" src="/img/other/sale.png" />
       </a>
     </div>

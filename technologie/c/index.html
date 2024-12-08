@@ -28,6 +28,7 @@
 
 
   <link href="/dist/language.css" rel="stylesheet">
+  <link href="/dist/home.bundle.css" rel="stylesheet">
 
 </head>
 
@@ -48,6 +49,11 @@
       <li class="nav-item">
         <a class="page-scroll nav-link difficulty-btn" href="#poziom-skomplikowania">
           <i class="fa fa-cogs" aria-hidden="true"></i> Poziom skomplikowania
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="page-scroll nav-link difficulty-btn" href="#składnia">
+          <i class="fa fa-code" aria-hidden="true"></i> Składnia
         </a>
       </li>
       <li class="nav-item">
@@ -96,7 +102,7 @@
       <div class="col-sm-12 col-lg-6 col-header">
         <h2 class="lang-starter-heading">C</h2>
 
-        <div class="up-to-date">Aktualizacja: 22.10.2022</div>
+        <div class="up-to-date">Aktualizacja: 08.12.2024</div>
         
         <p style="margin: 25px 0 0 0; text-align: center">Zobacz polecane:</p>
         
@@ -208,6 +214,51 @@
 <p>Może się wydawać, że C zmusza nas do robienia rzeczy, które inne języki robią za nas — to prawda, ale to dlatego, że C stawia na wydajność. To ma też swoje plusy – taki wymóg pomoże nam lepiej zrozumieć jak program zarządza pamięcią i dlaczego jest to tak ważne.</p>
 
 <p>Chcąc pisać w C oprogramowanie systemowe, przydatna może się okazać dobra znajomość architektury komputera oraz podstaw systemów operacyjnych. Niewątpliwie przydatna jest również znajomość bibliotek systemowych, a także umiejętność czytania ich dokumentacji.</p>
+
+<h1 id="składnia">Składnia</h1>
+
+<p class="text-center text-muted">
+    Przykładowa implementacja wyszukiwania binarnego:
+</p>
+
+<div class="code-example">
+    <div class="code-example-header">BinarySearch.c</div>
+    <pre><code class="language-C">// C
+#include &lt;stdio.h&gt;
+
+int binarySearch(char *array[], char *x, int Asize){
+  int start = 0;
+  int end = Asize - 1;
+  while(start &lt;= end) {
+    int middle = (start + end) / 2;
+    if (strcmp(array[middle], x) == 0) {
+      return middle;
+    }
+    if (strcmp(array[middle], x) &gt; 0) {
+      end = middle - 1;
+
+    } else {
+      start = middle + 1;
+
+    }
+  }
+  return -1;
+}
+
+int main(void) {
+  char *array[6] = {&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;};
+  /* Dla wyszukiwania binarnego
+  tablica musi być posortowana rosnąco */
+
+  int arrSize = sizeof(array) / sizeof(array[0]);
+  char x[] = &quot;Illuminati&quot;;
+  int foundXAt = binarySearch(array, x, arrSize);
+
+  printf(&quot;Znaleziono \&quot;%s\&quot; na pozycji %d \n&quot;, x, foundXAt);
+  // Znaleziono &quot;Illuminati&quot; na pozycji 3
+}
+</code></pre>
+</div>
 
 <h1 id="statystyki">Statystyki</h1>
 
@@ -412,7 +463,7 @@
     <div class="promotion-content darker-overlay">
       <a href="https://helion.pl/page/9102Q/promocje">
         <img alt="Promocja" class="icon" src="/img/other/sale.png" />
-        <span>Zobacz aktualne promocje w Helion</span>
+        <span>Zobacz aktualne promocje w księgarni Helion</span>
         <img alt="Promocja" class="icon" src="/img/other/sale.png" />
       </a>
     </div>

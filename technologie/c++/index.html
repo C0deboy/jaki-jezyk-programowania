@@ -28,6 +28,7 @@
 
 
   <link href="/dist/language.css" rel="stylesheet">
+  <link href="/dist/home.bundle.css" rel="stylesheet">
 
 </head>
 
@@ -48,6 +49,11 @@
       <li class="nav-item">
         <a class="page-scroll nav-link difficulty-btn" href="#poziom-skomplikowania">
           <i class="fa fa-cogs" aria-hidden="true"></i> Poziom skomplikowania
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="page-scroll nav-link difficulty-btn" href="#składnia">
+          <i class="fa fa-code" aria-hidden="true"></i> Składnia
         </a>
       </li>
       <li class="nav-item">
@@ -96,7 +102,7 @@
       <div class="col-sm-12 col-lg-6 col-header">
         <h2 class="lang-starter-heading">C++</h2>
 
-        <div class="up-to-date">Aktualizacja: 22.10.2022</div>
+        <div class="up-to-date">Aktualizacja: 08.12.2024</div>
         
         <p style="margin: 25px 0 0 0; text-align: center">Zobacz polecane:</p>
         
@@ -206,6 +212,49 @@
 <p>Często mówi się o wskaźnikach, że są trudne dla początkujących, jednak nie powinieneś się ich bać. To nie jest <em>rocket science</em>. W C++ też istnieją inteligentne wskaźniki (są zalecaną praktyką), które same usuwają się wraz z końcem swojego zasięgu, zapobiegając wyciekom pamięci. Surowe wskaźniki są używane tylko w specyficznych sytuacjach.</p>
 
 <p>Można zauważyć, że C++ jest często polecanym językiem na początek, z racji, że jak poznasz wszystkie koncepty programowania w C++, to wtedy żaden inny język nie sprawi Ci problemu. Jest to prawda, jednak jest to język dosyć złożony i dla nowicjuszy może być przytłaczający. Zaczynając z C++ można się sparzyć, dlatego, jeśli chcesz w krótkim czasie dowiedzieć się na czym polega samo programowanie, warto zacząć z językami bardziej przyjaznymi dla początkujących jak np. <a href="/technologie/python">Python</a> — C++ to nieco trudniejsza i dłuższa droga na początek.</p>
+
+<h1 id="składnia">Składnia</h1>
+
+<p class="text-center text-muted">
+    Przykładowa implementacja wyszukiwania binarnego:
+</p>
+
+<div class="code-example">
+    <div class="code-example-header">BinarySearch.cc lub .cpp</div>
+    <pre><code class="language-Cpp">// C++
+#include &lt;iostream&gt;
+using namespace std;
+
+int binarySearch(string array[], string x) {
+  int start = 0;
+  int end = sizeof(array) - 1;
+  while (start &lt;= end) {
+    int middle = (start + end) / 2;
+    if (array[middle] == x) {
+      return middle;
+    }
+    if (array[middle] &gt; x) {
+      end = middle - 1;
+    } else {
+      start = middle + 1;
+    }
+  }
+  return -1;
+}
+
+int main() {
+  string library[] = {&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;};
+  /* Dla wyszukiwania binarnego
+  tablica musi być posortowana rosnąco */
+
+  string x = &quot;Illuminati&quot;;
+  int foundXat = binarySearch(library, x);
+
+  cout &lt;&lt; &quot;Znaleziono \&quot;&quot; + x + &quot;\&quot; na pozycji &quot; + to_string(foundXat)&lt;&lt; endl;
+  // Znaleziono &quot;Illuminati&quot; na pozycji 3
+}
+</code></pre>
+</div>
 
 <h1 id="statystyki">Statystyki</h1>
 
@@ -409,7 +458,7 @@ spotkania dla społeczności C/C++ jest bardzo mało.</p>
     <div class="promotion-content darker-overlay">
       <a href="https://helion.pl/page/9102Q/promocje">
         <img alt="Promocja" class="icon" src="/img/other/sale.png" />
-        <span>Zobacz aktualne promocje w Helion</span>
+        <span>Zobacz aktualne promocje w księgarni Helion</span>
         <img alt="Promocja" class="icon" src="/img/other/sale.png" />
       </a>
     </div>

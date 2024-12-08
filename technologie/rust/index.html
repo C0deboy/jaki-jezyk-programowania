@@ -28,6 +28,7 @@
 
 
   <link href="/dist/language.css" rel="stylesheet">
+  <link href="/dist/home.bundle.css" rel="stylesheet">
 
 </head>
 
@@ -48,6 +49,11 @@
       <li class="nav-item">
         <a class="page-scroll nav-link difficulty-btn" href="#poziom-skomplikowania">
           <i class="fa fa-cogs" aria-hidden="true"></i> Poziom skomplikowania
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="page-scroll nav-link difficulty-btn" href="#składnia">
+          <i class="fa fa-code" aria-hidden="true"></i> Składnia
         </a>
       </li>
       <li class="nav-item">
@@ -90,7 +96,7 @@
       <div class="col-sm-12 col-lg-6 col-header">
         <h2 class="lang-starter-heading">Rust</h2>
 
-        <div class="up-to-date">Aktualizacja: 25.01.2023</div>
+        <div class="up-to-date">Aktualizacja: 08.12.2024</div>
         
         <p style="margin: 25px 0 0 0; text-align: center">Zobacz polecane:</p>
         
@@ -196,6 +202,46 @@
 
 <p>Rust podobnie jak inne bardziej niskopoziomowe języki takie jak C++, ma nieco większy próg wejścia od tych z wyższym poziomem abstrakcji.
 Nie jest to najłatwiejszy język na początek, ale też taka jest jego specyfika zastosowania.</p>
+
+<h1 id="składnia">Składnia</h1>
+
+<p class="text-center text-muted">
+    Przykładowa implementacja wyszukiwania binarnego:
+</p>
+
+<div class="code-example">
+    <div class="code-example-header">BinarySearch.rs lub .rlib</div>
+    <pre><code class="language-Rust">fn binary_search(array: &amp;[&amp;str], x: &amp;str) -&gt; isize {
+    let mut start = 0;
+    let mut end = array.len() as isize - 1;
+
+    while start &lt;= end {
+        let middle = (start + end) / 2;
+        if array[middle as usize] == x {
+            return middle;
+        }
+        if array[middle as usize] &gt; x {
+            end = middle - 1;
+        } else {
+            start = middle + 1;
+        }
+    }
+    -1
+}
+
+fn main() {
+    let library = [&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;];
+    /* Dla wyszukiwania binarnego
+       tablica musi być posortowana rosnąco */
+
+    let x = &quot;Illuminati&quot;;
+    let found_x_at = binary_search(&amp;library, x);
+
+    println!(&quot;Znaleziono \&quot;{}\&quot; na pozycji {}&quot;, x, found_x_at);
+    // Znaleziono &quot;Illuminati&quot; na pozycji 3
+}
+</code></pre>
+</div>
 
 <h1 id="statystyki">Statystyki</h1>
 

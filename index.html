@@ -29,8 +29,6 @@
 
   <link rel="stylesheet" href="/dist/home.bundle.css">
   <link rel="stylesheet" href="/dist/technologies-list.css">
-
-  <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
@@ -445,77 +443,9 @@
   </div>
 </section>
 
-<section id="o-projekcie" class="section about-project">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="section-heading">O projekcie</h2>
-        <p>Wybór języka programowania/technologii to częsty problem początkujących programistów.
-          Stworzyłem tę stronę, aby ułatwić to zadanie (przynajmniej te oczywiste przypadki)
-          i zredukować liczbę kolejnych, tych samych wątków na forach.</p>
-
-        <div class="author">
-          <span>Autor:</span>
-          <h3 class="name">
-            Marcin Lasota
-          </h3>
-
-          <ul class="list-inline social-buttons">
-            <li class="tip list-inline-item" data-tip="LinkedIn">
-              <a class="main-btn" href="https://www.linkedin.com/in/marcin-lasota/">
-                  <span class="visually-hidden">
-                    LinkedIn
-                  </span>
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12">
-        <!--144-->
-        <p>Przygotowałem ankietę dotyczącą wyboru języka / technologii do danego zastosowania.
-          Daj znać co ty zaproponowałbyś początkującym programistom!</p>
-
-        <button id="ankieta" class="main-btn mb-4" data-bs-toggle="modal" data-bs-target="#survey">
-          <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ankieta
-        </button>
-
-        <div id="survey" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" aria-label="Ankieta">
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title text-dark">Ankieta</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij" title="Zamknij"></button>
-              </div>
-              <div class="modal-body">
-                <iframe class="survey" title="Ankieta" src="https://docs.google.com/forms/d/e/1FAIpQLScdtXZd_Y_4oQyOtlhYpmDID48ejeK2w-CEuO0IL53wC4dQxQ/viewform?embedded=true">
-                  Ładuję...
-                </iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <p>Masz jakieś uwagi czy zastrzeżenia? Masz sugestię, którą chciałbyś się ze mną podzielić? Cokolwiek by to było — pisz śmiało!</p>
-
-      <div class="col-md-12">
-        <a href="mailto:lasota.marcinm@gmail.com" class="main-btn">
-          <i class="fa fa-envelope-o" aria-hidden="true"></i>
-          lasota.marcinm@gmail.com
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <div class="cookies-info d-none fade">
   <p>Strona wykorzystuje pliki cookies (ciasteczka) w celu zbierania statystyk odwiedzin strony.
-    Korzystając ze strony zgadzasz się na ich wykorzystanie.</p>
+    Korzystając ze strony, zgadzasz się na ich wykorzystanie.</p>
   <button type="button" class="btn-close btn-close-white" aria-label="Zamknij informacje o plikach cookies"></button>
 </div>
 
@@ -865,7 +795,97 @@ object BinarySearch extends App {
 
   println(s&quot;&quot;&quot;Znaleziono &quot;$x&quot; na pozycji $foundXAt&quot;&quot;&quot;)
   // Znaleziono &quot;Illuminati&quot; na pozycji 3
-}</code></pre>
+}
+</code><code class="language-rust">fn binary_search(array: &amp;[&amp;str], x: &amp;str) -&gt; isize {
+    let mut start = 0;
+    let mut end = array.len() as isize - 1;
+
+    while start &lt;= end {
+        let middle = (start + end) / 2;
+        if array[middle as usize] == x {
+            return middle;
+        }
+        if array[middle as usize] &gt; x {
+            end = middle - 1;
+        } else {
+            start = middle + 1;
+        }
+    }
+    -1
+}
+
+fn main() {
+    let library = [&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;];
+    /* Dla wyszukiwania binarnego
+       tablica musi być posortowana rosnąco */
+
+    let x = &quot;Illuminati&quot;;
+    let found_x_at = binary_search(&amp;library, x);
+
+    println!(&quot;Znaleziono \&quot;{}\&quot; na pozycji {}&quot;, x, found_x_at);
+    // Znaleziono &quot;Illuminati&quot; na pozycji 3
+}
+</code><code class="language-groovy">class BinarySearch {
+    static int binarySearch(String[] array, String x) {
+        int start = 0
+        int end = array.length - 1
+        while (start &lt;= end) {
+            int middle = (start + end) / 2
+            if (array[middle].equals(x)) {
+                return middle
+            }
+            if (array[middle].compareTo(x) &gt; 0) {
+                end = middle - 1
+            } else {
+                start = middle + 1
+            }
+        }
+        return -1
+    }
+
+    static void main(String[] args) {
+        String[] library = [&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;]
+        // Dla wyszukiwania binarnego
+        // tablica musi być posortowana rosnąco
+
+        String x = &quot;Illuminati&quot;
+        int foundXAt = binarySearch(library, x)
+
+        println(&quot;Znaleziono \&quot;${x}\&quot; na pozycji ${foundXAt}&quot;)
+        // Znaleziono &quot;Illuminati&quot; na pozycji 3
+    }
+}
+</code><code class="language-go">import &quot;fmt&quot;
+
+func binarySearch(array []string, x string) int {
+    start := 0
+    end := len(array) - 1
+
+    for start &lt;= end {
+        middle := (start + end) / 2
+        if array[middle] == x {
+            return middle
+        }
+        if array[middle] &gt; x {
+            end = middle - 1
+        } else {
+            start = middle + 1
+        }
+    }
+    return -1
+}
+
+func main() {
+    library := []string{&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;}
+    // Dla wyszukiwania binarnego tablica musi być posortowana rosnąco
+
+    x := &quot;Illuminati&quot;
+    foundXAt := binarySearch(library, x)
+
+    fmt.Printf(&quot;Znaleziono \&quot;%s\&quot; na pozycji %d\n&quot;, x, foundXAt)
+    // Znaleziono &quot;Illuminati&quot; na pozycji 3
+}
+</code></pre>
 
 <footer>
   <div class="container">

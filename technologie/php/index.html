@@ -28,6 +28,7 @@
 
 
   <link href="/dist/language.css" rel="stylesheet">
+  <link href="/dist/home.bundle.css" rel="stylesheet">
 
 </head>
 
@@ -48,6 +49,11 @@
       <li class="nav-item">
         <a class="page-scroll nav-link difficulty-btn" href="#poziom-skomplikowania">
           <i class="fa fa-cogs" aria-hidden="true"></i> Poziom skomplikowania
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="page-scroll nav-link difficulty-btn" href="#składnia">
+          <i class="fa fa-code" aria-hidden="true"></i> Składnia
         </a>
       </li>
       <li class="nav-item">
@@ -96,7 +102,7 @@
       <div class="col-sm-12 col-lg-6 col-header">
         <h2 class="lang-starter-heading">PHP</h2>
 
-        <div class="up-to-date">Aktualizacja: 22.10.2022</div>
+        <div class="up-to-date">Aktualizacja: 08.12.2024</div>
         
         <p style="margin: 25px 0 0 0; text-align: center">Zobacz polecane:</p>
         
@@ -229,6 +235,44 @@ wiele niespójności i błędów, więc jest bardziej przyjazna dla początkują
 <p>PHP wraz ze wzrostem aplikacji może być trudniejszy do utrzymania i namierzania błędów, jako że brak w nim statycznego
 typowania. Jednak jeśli nauczymy się jak prowadzić porządek w kodzie i pisać testy, to utrzymanie spójnego kodu stanie
 się łatwiejsze.</p>
+
+<h1 id="składnia">Składnia</h1>
+
+<p class="text-center text-muted">
+    Przykładowa implementacja wyszukiwania binarnego:
+</p>
+
+<div class="code-example">
+    <div class="code-example-header">BinarySearch.php</div>
+    <pre><code class="language-PHP">// PHP
+function binarySearch($array, $x) {
+  $start = 0;
+  $end = sizeof($array) - 1;
+  while ($start &lt;= $end) {
+    $middle = floor(($start + $end) / 2);
+    if ($array[$middle] === $x) {
+      return $middle;
+    }
+    if ($array[$middle] &gt; $x) {
+      $end = $middle - 1;
+    } else {
+      $start = $middle + 1;
+    }
+  }
+  return -1;
+}
+
+$library = array(&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;);
+/* Dla wyszukiwania binarnego
+tablica musi być posortowana rosnąco */
+
+$x = &quot;Illuminati&quot;;
+$foundXAt = binarySearch($library, $x);
+
+echo &quot;Znaleziono \&quot; $x \&quot; na pozycji $foundXAt&quot;;
+//Znaleziono &quot;Illuminati&quot; na pozycji 3
+</code></pre>
+</div>
 
 <h1 id="statystyki">Statystyki</h1>
 
@@ -434,7 +478,7 @@ rozwijany, aby sprostać nowym wymaganiom. Wersja PHP7 mocno go odświeżyła, a
     <div class="promotion-content darker-overlay">
       <a href="https://helion.pl/page/9102Q/promocje">
         <img alt="Promocja" class="icon" src="/img/other/sale.png" />
-        <span>Zobacz aktualne promocje w Helion</span>
+        <span>Zobacz aktualne promocje w księgarni Helion</span>
         <img alt="Promocja" class="icon" src="/img/other/sale.png" />
       </a>
     </div>

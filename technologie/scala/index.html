@@ -28,6 +28,7 @@
 
 
   <link href="/dist/language.css" rel="stylesheet">
+  <link href="/dist/home.bundle.css" rel="stylesheet">
 
 </head>
 
@@ -48,6 +49,11 @@
       <li class="nav-item">
         <a class="page-scroll nav-link difficulty-btn" href="#poziom-skomplikowania">
           <i class="fa fa-cogs" aria-hidden="true"></i> Poziom skomplikowania
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="page-scroll nav-link difficulty-btn" href="#składnia">
+          <i class="fa fa-code" aria-hidden="true"></i> Składnia
         </a>
       </li>
       <li class="nav-item">
@@ -90,7 +96,7 @@
       <div class="col-sm-12 col-lg-6 col-header">
         <h2 class="lang-starter-heading">Scala</h2>
 
-        <div class="up-to-date">Aktualizacja: 25.01.2023</div>
+        <div class="up-to-date">Aktualizacja: 08.12.2024</div>
         
         <p style="margin: 25px 0 0 0; text-align: center">Zobacz polecane:</p>
         
@@ -196,6 +202,46 @@
 <p>Scala w porównaniu do Kotlina czy Javy ma nieco większy próg wejścia. Również przejście z Javy na Scalę jest relatywnie trudniejsze w porównaniu z Kotlinem.</p>
 
 <p>Wpływa na to fakt, że Scala jest ekspresyjna - potrzeba dużo mniej kodu niż w Javie by wyrazić to samo - jednak co za tym idzie, trzeba więcej rozumieć co się dzieje pod spodem. Jest to zaleta języka, gdy mamy już doświadczenie, jednak na początku nauka jest przez to bardziej problematyczna.</p>
+
+<h1 id="składnia">Składnia</h1>
+
+<p class="text-center text-muted">
+    Przykładowa implementacja wyszukiwania binarnego:
+</p>
+
+<div class="code-example">
+    <div class="code-example-header">BinarySearch.sc lub .scala</div>
+    <pre><code class="language-Scala">// Scala
+object BinarySearch extends App {
+  def binarySearch(array: Array[String], x: String): Int = {
+    var start = 0
+    var end = array.size - 1
+    while (start &lt;= end) {
+        val middle = (start + end) / 2
+        if (array(middle) == x) {
+            return middle
+        }
+        if (array(middle) &gt; x) {
+            end = middle - 1
+        } else {
+            start = middle + 1
+        }
+    }
+    return -1
+  }
+
+  val library = Array(&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;)
+  /* Dla wyszukiwania binarnego
+  tablica musi być posortowana rosnąco */
+
+  val x = &quot;Illuminati&quot;
+  val foundXAt = binarySearch(library, x)
+
+  println(s&quot;&quot;&quot;Znaleziono &quot;$x&quot; na pozycji $foundXAt&quot;&quot;&quot;)
+  // Znaleziono &quot;Illuminati&quot; na pozycji 3
+}
+</code></pre>
+</div>
 
 <h1 id="statystyki">Statystyki</h1>
 

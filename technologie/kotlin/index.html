@@ -28,6 +28,7 @@
 
 
   <link href="/dist/language.css" rel="stylesheet">
+  <link href="/dist/home.bundle.css" rel="stylesheet">
 
 </head>
 
@@ -48,6 +49,11 @@
       <li class="nav-item">
         <a class="page-scroll nav-link difficulty-btn" href="#poziom-skomplikowania">
           <i class="fa fa-cogs" aria-hidden="true"></i> Poziom skomplikowania
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="page-scroll nav-link difficulty-btn" href="#składnia">
+          <i class="fa fa-code" aria-hidden="true"></i> Składnia
         </a>
       </li>
       <li class="nav-item">
@@ -96,7 +102,7 @@
       <div class="col-sm-12 col-lg-6 col-header">
         <h2 class="lang-starter-heading">Kotlin</h2>
 
-        <div class="up-to-date">Aktualizacja: 25.01.2023</div>
+        <div class="up-to-date">Aktualizacja: 08.12.2024</div>
         
         <p style="margin: 25px 0 0 0; text-align: center">Zobacz polecane:</p>
         
@@ -216,6 +222,46 @@
 <p>Dlatego warto znać Javę przed Kotlinem - jest to najlepsza droga. Wtedy przejście na Kotlin jest bardzo płynne, relatywnie łatwe i co najważniejsze — wiemy jak to wszystko działa pod spodem, więc nie jest to dla nas żadną magią. Jest to dobra ścieżka nauki, ale nie stoi nic na przeszkodzie, żeby zacząć od razu od Kotlina.</p>
 
 <p>Z drugiej strony w Kotlinie mamy wbudowane <em>null safety</em>, więc napotkamy na mniej ciężkich problemów związanych z NullPointerException, i kilka innych udogodnień, których z pewnością będzie nam brakowało w Javie.</p>
+
+<h1 id="składnia">Składnia</h1>
+
+<p class="text-center text-muted">
+    Przykładowa implementacja wyszukiwania binarnego:
+</p>
+
+<div class="code-example">
+    <div class="code-example-header">BinarySearch.kt lub .kts</div>
+    <pre><code class="language-Kotlin">// Kotlin
+fun binarySearch(array: Array&lt;String&gt;, x: String): Int {
+    var start = 0
+    var end = array.size - 1
+    while (start &lt;= end) {
+        val middle = (start + end) / 2
+        if (array[middle] == x) {
+            return middle
+        }
+        if (array[middle] &gt; x) {
+            end = middle - 1
+        } else {
+            start = middle + 1
+        }
+    }
+    return -1
+}
+
+fun main() {
+    val library = arrayOf(&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;)
+    /* Dla wyszukiwania binarnego
+    tablica musi być posortowana rosnąco */
+
+    val x = &quot;Illuminati&quot;
+    val foundXAt = binarySearch(library, x)
+
+    println(&quot;&quot;&quot;Znaleziono &quot;$x&quot; na pozycji $foundXAt&quot;&quot;&quot;)
+    // Znaleziono &quot;Illuminati&quot; na pozycji 3
+}
+</code></pre>
+</div>
 
 <h1 id="statystyki">Statystyki</h1>
 
@@ -416,7 +462,7 @@
     <div class="promotion-content darker-overlay">
       <a href="https://helion.pl/page/9102Q/promocje">
         <img alt="Promocja" class="icon" src="/img/other/sale.png" />
-        <span>Zobacz aktualne promocje w Helion</span>
+        <span>Zobacz aktualne promocje w księgarni Helion</span>
         <img alt="Promocja" class="icon" src="/img/other/sale.png" />
       </a>
     </div>

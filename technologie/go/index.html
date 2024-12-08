@@ -28,6 +28,7 @@
 
 
   <link href="/dist/language.css" rel="stylesheet">
+  <link href="/dist/home.bundle.css" rel="stylesheet">
 
 </head>
 
@@ -48,6 +49,11 @@
       <li class="nav-item">
         <a class="page-scroll nav-link difficulty-btn" href="#poziom-skomplikowania">
           <i class="fa fa-cogs" aria-hidden="true"></i> Poziom skomplikowania
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="page-scroll nav-link difficulty-btn" href="#składnia">
+          <i class="fa fa-code" aria-hidden="true"></i> Składnia
         </a>
       </li>
       <li class="nav-item">
@@ -96,7 +102,7 @@
       <div class="col-sm-12 col-lg-6 col-header">
         <h2 class="lang-starter-heading">Go</h2>
 
-        <div class="up-to-date">Aktualizacja: 25.01.2023</div>
+        <div class="up-to-date">Aktualizacja: 08.12.2024</div>
         
         <p style="margin: 25px 0 0 0; text-align: center">Zobacz polecane:</p>
         
@@ -232,6 +238,47 @@ Go w przeciwieństwie do np. Pythona ma typowanie statyczne, które w przypadku 
 <p>Go jest idiomatyczny, tzn. często jest tylko jeden sposób na wykonanie danej rzeczy, co może być zarówno plusem, jak i minusem. Go ma także wbudowanych wiele mechanizmów, które wymuszają na programistach stosowanie się do dobrych praktyk. Jest to na pewno plusem dla początkujących, bo trudniej sobie strzelić w stopę. Dzięki takim rozwiązaniom czytelność i porządek w kodzie przestają zależeć od kultury programisty, a przesuwają się w stronę zasad konstrukcji języka.</p>
 
 <p>Dzięki tzw. gorutynom (ang. <em>goroutines</em>) i kanałom wbudowanym w Go, programowanie współbieżne jest dużo prostsze.</p>
+
+<h1 id="składnia">Składnia</h1>
+
+<p class="text-center text-muted">
+    Przykładowa implementacja wyszukiwania binarnego:
+</p>
+
+<div class="code-example">
+    <div class="code-example-header">BinarySearch.go</div>
+    <pre><code class="language-Go">import &quot;fmt&quot;
+
+func binarySearch(array []string, x string) int {
+    start := 0
+    end := len(array) - 1
+
+    for start &lt;= end {
+        middle := (start + end) / 2
+        if array[middle] == x {
+            return middle
+        }
+        if array[middle] &gt; x {
+            end = middle - 1
+        } else {
+            start = middle + 1
+        }
+    }
+    return -1
+}
+
+func main() {
+    library := []string{&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;}
+    // Dla wyszukiwania binarnego tablica musi być posortowana rosnąco
+
+    x := &quot;Illuminati&quot;
+    foundXAt := binarySearch(library, x)
+
+    fmt.Printf(&quot;Znaleziono \&quot;%s\&quot; na pozycji %d\n&quot;, x, foundXAt)
+    // Znaleziono &quot;Illuminati&quot; na pozycji 3
+}
+</code></pre>
+</div>
 
 <h1 id="statystyki">Statystyki</h1>
 
@@ -385,7 +432,7 @@ Jego ostatnia wersja 1.23.3 została wydana 6 listopada 2024. Wydaje się, że t
     <div class="promotion-content darker-overlay">
       <a href="https://helion.pl/page/9102Q/promocje">
         <img alt="Promocja" class="icon" src="/img/other/sale.png" />
-        <span>Zobacz aktualne promocje w Helion</span>
+        <span>Zobacz aktualne promocje w księgarni Helion</span>
         <img alt="Promocja" class="icon" src="/img/other/sale.png" />
       </a>
     </div>

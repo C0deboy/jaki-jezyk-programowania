@@ -28,6 +28,7 @@
 
 
   <link href="/dist/language.css" rel="stylesheet">
+  <link href="/dist/home.bundle.css" rel="stylesheet">
 
 </head>
 
@@ -48,6 +49,11 @@
       <li class="nav-item">
         <a class="page-scroll nav-link difficulty-btn" href="#poziom-skomplikowania">
           <i class="fa fa-cogs" aria-hidden="true"></i> Poziom skomplikowania
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="page-scroll nav-link difficulty-btn" href="#składnia">
+          <i class="fa fa-code" aria-hidden="true"></i> Składnia
         </a>
       </li>
       <li class="nav-item">
@@ -96,7 +102,7 @@
       <div class="col-sm-12 col-lg-6 col-header">
         <h2 class="lang-starter-heading">Java</h2>
 
-        <div class="up-to-date">Aktualizacja: 13.04.2022</div>
+        <div class="up-to-date">Aktualizacja: 08.12.2024</div>
         
         <p style="margin: 25px 0 0 0; text-align: center">Zobacz polecane:</p>
         
@@ -226,6 +232,48 @@ Ponadto, system operacyjny Android działa w środowisku Javy, co umożliwia tak
 <p>Poza tym, od Javy 9 do takiego szybkiego prototypowania i robienia małych kawałków kodów (np. wykonujących jakieś obliczenia do zadania czy po prostu testowanie nowych funkcji) powstało narzędzie Jshell.</p>
 
 <p>Języki skryptowe i szybkie rozwiązania są dobre do prototypowania. Gdy tworzony jest duży projekt i ważne jest jego późniejsze utrzymywanie, “rozwlekłość” języka jest na plus.</p>
+
+<h1 id="składnia">Składnia</h1>
+
+<p class="text-center text-muted">
+    Przykładowa implementacja wyszukiwania binarnego:
+</p>
+
+<div class="code-example">
+    <div class="code-example-header">BinarySearch.java</div>
+    <pre><code class="language-Java">// Java
+public class BinarySearch {
+  public static int binarySearch(String[] array, String x) {
+    int start = 0;
+    int end = array.length - 1;
+    while (start &lt;= end) {
+      int middle = (start + end) / 2;
+      if (array[middle].equals(x)) {
+        return middle;
+      }
+      if(array[middle].compareTo(x) &gt; 0) {
+        end = middle-1;
+      } else {
+        start = middle+1;
+      }
+    }
+    return -1;
+  }
+
+  public static void main(String[] args) {
+    String[] library = {&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;};
+    /* Dla wyszukiwania binarnego
+    tablica musi być posortowana rosnąco */
+
+    String x = &quot;Illuminati&quot;;
+    int foundXAt = binarySearch(library, x);
+
+    System.out.println(&quot;Znaleziono \&quot;&quot; + x + &quot;\&quot; na pozycji &quot; + foundXAt);
+    // Znaleziono &quot;Illuminati&quot; na pozycji 3
+  }
+}
+</code></pre>
+</div>
 
 <h1 id="statystyki">Statystyki</h1>
 
@@ -426,7 +474,7 @@ Ponadto, system operacyjny Android działa w środowisku Javy, co umożliwia tak
     <div class="promotion-content darker-overlay">
       <a href="https://helion.pl/page/9102Q/promocje">
         <img alt="Promocja" class="icon" src="/img/other/sale.png" />
-        <span>Zobacz aktualne promocje w Helion</span>
+        <span>Zobacz aktualne promocje w księgarni Helion</span>
         <img alt="Promocja" class="icon" src="/img/other/sale.png" />
       </a>
     </div>

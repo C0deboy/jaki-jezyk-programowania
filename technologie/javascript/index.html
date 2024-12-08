@@ -28,6 +28,7 @@
 
 
   <link href="/dist/language.css" rel="stylesheet">
+  <link href="/dist/home.bundle.css" rel="stylesheet">
 
 </head>
 
@@ -48,6 +49,11 @@
       <li class="nav-item">
         <a class="page-scroll nav-link difficulty-btn" href="#poziom-skomplikowania">
           <i class="fa fa-cogs" aria-hidden="true"></i> Poziom skomplikowania
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="page-scroll nav-link difficulty-btn" href="#składnia">
+          <i class="fa fa-code" aria-hidden="true"></i> Składnia
         </a>
       </li>
       <li class="nav-item">
@@ -96,7 +102,7 @@
       <div class="col-sm-12 col-lg-6 col-header">
         <h2 class="lang-starter-heading">JavaScript</h2>
 
-        <div class="up-to-date">Aktualizacja: 13.04.2022</div>
+        <div class="up-to-date">Aktualizacja: 08.12.2024</div>
         
         <p style="margin: 25px 0 0 0; text-align: center">Zobacz polecane:</p>
         
@@ -236,6 +242,44 @@ więc na początku może to być przytłaczające.</p>
 
 <p>Podsumowując, nauka języka JavaScript sama w sobie jest dość łatwa, jednak pełne opanowanie tego języka i ekosystemu
 jest już wymagające.</p>
+
+<h1 id="składnia">Składnia</h1>
+
+<p class="text-center text-muted">
+    Przykładowa implementacja wyszukiwania binarnego:
+</p>
+
+<div class="code-example">
+    <div class="code-example-header">BinarySearch.js</div>
+    <pre><code class="language-JavaScript">// JavaScript
+function binarySearch(array, x) {
+  let start = 0;
+  let end = array.length - 1;
+  while (start &lt;= end) {
+    const middle = Math.floor((start + end) / 2);
+    if (array[middle] === x) {
+      return middle;
+    }
+    if (array[middle] &gt; x) {
+      end = middle - 1;
+    } else {
+      start = middle + 1;
+    }
+  }
+  return -1;
+}
+
+const library = [&#39;Algorytmy&#39;, &#39;Czysty kod&#39;, &#39;Harry Potter&#39;, &#39;Illuminati&#39;, &#39;Wzorce projektowe&#39;, &#39;...&#39;];
+/* Dla wyszukiwania binarnego
+ tablica musi być posortowana rosnąco */
+
+const x = &#39;Illuminati&#39;;
+const foundXAt = binarySearch(library, x);
+
+console.log(&#39;Znaleziono &quot;&#39; + x + &#39;&quot; na pozycji &#39; + foundXAt);
+// Znaleziono &quot;Illuminati&quot; na pozycji 3
+</code></pre>
+</div>
 
 <h1 id="statystyki">Statystyki</h1>
 
@@ -440,7 +484,7 @@ uniwersalny wybór i często jest nawet w stacku technologicznym backendowca.</p
     <div class="promotion-content darker-overlay">
       <a href="https://helion.pl/page/9102Q/promocje">
         <img alt="Promocja" class="icon" src="/img/other/sale.png" />
-        <span>Zobacz aktualne promocje w Helion</span>
+        <span>Zobacz aktualne promocje w księgarni Helion</span>
         <img alt="Promocja" class="icon" src="/img/other/sale.png" />
       </a>
     </div>

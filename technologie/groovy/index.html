@@ -28,6 +28,7 @@
 
 
   <link href="/dist/language.css" rel="stylesheet">
+  <link href="/dist/home.bundle.css" rel="stylesheet">
 
 </head>
 
@@ -48,6 +49,11 @@
       <li class="nav-item">
         <a class="page-scroll nav-link difficulty-btn" href="#poziom-skomplikowania">
           <i class="fa fa-cogs" aria-hidden="true"></i> Poziom skomplikowania
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="page-scroll nav-link difficulty-btn" href="#składnia">
+          <i class="fa fa-code" aria-hidden="true"></i> Składnia
         </a>
       </li>
       <li class="nav-item">
@@ -90,7 +96,7 @@
       <div class="col-sm-12 col-lg-6 col-header">
         <h2 class="lang-starter-heading">Groovy</h2>
 
-        <div class="up-to-date">Aktualizacja: 22.10.2022</div>
+        <div class="up-to-date">Aktualizacja: 08.12.2024</div>
         
         <p style="margin: 25px 0 0 0; text-align: center">Zobacz polecane:</p>
         
@@ -224,6 +230,47 @@ dlatego jest często wykorzystywany do pisania skryptów lub testów.</p>
 
 <p>Ogólnie Groovy jest językiem relatywnie łatwym do nauki, szczególnie dla osoby, która jest już zaznajomiona z Javą -
 wtedy przejście jest naprawdę płynne.</p>
+
+<h1 id="składnia">Składnia</h1>
+
+<p class="text-center text-muted">
+    Przykładowa implementacja wyszukiwania binarnego:
+</p>
+
+<div class="code-example">
+    <div class="code-example-header">BinarySearch.groovy</div>
+    <pre><code class="language-Groovy">class BinarySearch {
+    static int binarySearch(String[] array, String x) {
+        int start = 0
+        int end = array.length - 1
+        while (start &lt;= end) {
+            int middle = (start + end) / 2
+            if (array[middle].equals(x)) {
+                return middle
+            }
+            if (array[middle].compareTo(x) &gt; 0) {
+                end = middle - 1
+            } else {
+                start = middle + 1
+            }
+        }
+        return -1
+    }
+
+    static void main(String[] args) {
+        String[] library = [&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;]
+        // Dla wyszukiwania binarnego
+        // tablica musi być posortowana rosnąco
+
+        String x = &quot;Illuminati&quot;
+        int foundXAt = binarySearch(library, x)
+
+        println(&quot;Znaleziono \&quot;${x}\&quot; na pozycji ${foundXAt}&quot;)
+        // Znaleziono &quot;Illuminati&quot; na pozycji 3
+    }
+}
+</code></pre>
+</div>
 
 <h1 id="statystyki">Statystyki</h1>
 

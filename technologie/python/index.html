@@ -28,6 +28,7 @@
 
 
   <link href="/dist/language.css" rel="stylesheet">
+  <link href="/dist/home.bundle.css" rel="stylesheet">
 
 </head>
 
@@ -48,6 +49,11 @@
       <li class="nav-item">
         <a class="page-scroll nav-link difficulty-btn" href="#poziom-skomplikowania">
           <i class="fa fa-cogs" aria-hidden="true"></i> Poziom skomplikowania
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="page-scroll nav-link difficulty-btn" href="#składnia">
+          <i class="fa fa-code" aria-hidden="true"></i> Składnia
         </a>
       </li>
       <li class="nav-item">
@@ -96,7 +102,7 @@
       <div class="col-sm-12 col-lg-6 col-header">
         <h2 class="lang-starter-heading">Python</h2>
 
-        <div class="up-to-date">Aktualizacja: 22.10.2022</div>
+        <div class="up-to-date">Aktualizacja: 08.12.2024</div>
         
         <p style="margin: 25px 0 0 0; text-align: center">Zobacz polecane:</p>
         
@@ -221,6 +227,40 @@ początkujących, przez co mogą skupić się na nauce właściwego programowani
 mylący, gdyż czytający go programista i kompilator mogą go różnie zinterpretować.</p>
 
 <p>Python jest często polecany dla osób, które chcą rozpocząć przygodę z programowaniem ze względu na niski próg wejścia.</p>
+
+<h1 id="składnia">Składnia</h1>
+
+<p class="text-center text-muted">
+    Przykładowa implementacja wyszukiwania binarnego:
+</p>
+
+<div class="code-example">
+    <div class="code-example-header">BinarySearch.py</div>
+    <pre><code class="language-Python"># Python
+def binarySearch(array, x) :
+  start = 0
+  end = len(array) - 1
+  while start &lt;= end :
+    middle = (start+end) // 2
+    if array[middle] == x :
+      return middle
+    if array[middle] &gt; x :
+      end = middle - 1
+    else:
+      start = middle + 1
+  return -1
+
+library = [&quot;Algorytmy&quot;, &quot;Czysty kod&quot;, &quot;Harry Potter&quot;, &quot;Illuminati&quot;, &quot;Wzorce projektowe&quot;, &quot;...&quot;]
+# Dla wyszukiwania binarnego
+# tablica musi być posortowana rosnąco
+
+x = &quot;Illuminati&quot;
+foundXAt = binarySearch(library, x)
+
+print(&quot;Znaleziono \&quot;&quot; + x + &quot;\&quot; na pozycji &quot; + str(foundXAt))
+# Znaleziono &quot;Illuminati&quot; na pozycji 3
+</code></pre>
+</div>
 
 <h1 id="statystyki">Statystyki</h1>
 
@@ -428,7 +468,7 @@ wydana 3 grudnia 2024. Prawdopodobnie pozostanie na topie przez dłuższy czas.<
     <div class="promotion-content darker-overlay">
       <a href="https://helion.pl/page/9102Q/promocje">
         <img alt="Promocja" class="icon" src="/img/other/sale.png" />
-        <span>Zobacz aktualne promocje w Helion</span>
+        <span>Zobacz aktualne promocje w księgarni Helion</span>
         <img alt="Promocja" class="icon" src="/img/other/sale.png" />
       </a>
     </div>
