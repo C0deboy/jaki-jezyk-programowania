@@ -56,11 +56,11 @@ się łatwiejsze.
 
 # Składnia
 
-{% include language/code-example.html lang=lang%}
+{% include language/code-example.html lang=lang %}
 
 # Statystyki
 
-<h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y"  }}</h4>
+<h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y" }}</h4>
 
 Jest to najpopularniejszy język, jeśli chodzi o strony internetowe. 80% z 10 milionów najpopularniejszych stron używa
 właśnie PHP.

@@ -34,11 +34,11 @@ Nie jest to najłatwiejszy język na początek, ale też taka jest jego specyfik
 
 # Składnia
 
-{% include language/code-example.html lang=lang%}
+{% include language/code-example.html lang=lang %}
 
 # Statystyki
 
-<h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y"  }}</h4>
+<h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y" }}</h4>
 
 {% include language/popularity.html %}
 

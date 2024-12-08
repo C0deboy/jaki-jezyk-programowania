@@ -12,57 +12,48 @@ no-books: true
 
 # Zastosowanie
 
-**Groovy** to obiektowy język programowania na platformę Javy - podobnie jak Kotlin, Scala i inne języki JVM-owe,
-kompiluje się do kodu bajtowego Javy. Znaczy to mniej więcej tyle, że uruchamiamy go w tym samym środowisku co Javę.
+**Groovy** to dynamiczny, obiektowy język programowania działający na maszynie wirtualnej Javy (JVM). Dzięki pełnej kompatybilności z Javą, Groovy umożliwia korzystanie z istniejących bibliotek Javy, co czyni go wszechstronnym i łatwym w integracji z istniejącymi projektami.
 
-Groovy wspiera typowanie dynamiczne jak i statyczne, dlatego może być używany też jako język skryptowy. Posiada wiele
-użytecznych funkcji, które usprawniają pracę programisty i sprawiają, że kod jest bardziej zwięzły i czytelny.
+Groovy jest często używany jako:
+- Język skryptowy – umożliwia szybkie prototypowanie i automatyzację zadań.
+- Narzędzie do testowania – wspiera nowoczesne frameworki, takie jak **Spock**.
+- Język do definiowania konfiguracji i pisania wtyczek – np. w popularnym narzędziu **Gradle**.
 
-Tak jak inne języki JVM-owe, Groovy może być używany zamiennie z Javą oraz wykorzystywać jej biblioteki. Wiele narzędzi
-wspiera Groviego ze względu na jego zalety i też na nich jego zastosowanie w ostatnich latach się skupia. Groovy jest
-też często wykorzystywany do automatyzacji pracy w postaci skryptów.
+**Najważniejsze narzędzia i frameworki wspierające Groovy:**
+- **Gradle**: Narzędzie do budowania projektów, w którym Groovy służy do definiowania skryptów konfiguracji.
+- **Jenkins**: Serwer do automatyzacji procesów Continuous Integration/Delivery, z możliwością pisania wtyczek w Groovy.
+- **Spock**: Framework do testowania aplikacji, ceniony za prostą i czytelną składnię.
+- **SoapUI**: Narzędzie do testowania web serwisów.
 
-Groovy jest już coraz rzadziej używany do pisania pełnoprawnych aplikacji, ze względu na pojawienia się nowych języków
-na JVM takich jak [Kotlin](/technologie/kotlin) i [Scala](/technologie/scala).
+**Mniej popularne obecnie frameworki to:**
+- **Grails**: Framework do tworzenia aplikacji webowych, inspirowany Ruby on Rails.
+- **Griffon**: Framework do tworzenia aplikacji desktopowych.
 
-Najpopularniejsze narzędzia, które wykorzystują Grooviego to:
-
-- [SoapUI](https://www.soapui.org/) - narzędzie do testowania web serwisów korzystających m.in. z SOAP i REST
-- [Spock](http://spockframework.org/) - framework do testowania
-- [Jenkins](https://jenkins.io/) - serwer automatyzacji budowania projektów (*Continuous Integration* i *Continuous
-  Delivery*)
-- [Gradle](https://gradle.org/) - narzędzie służące do budowania projektów
-
-Kiedyś były popularne:
-
-- [Grails](https://grails.org/) - framework do tworzenia aplikacji webowych
-- [Griffon](http://griffon-framework.org/) - framework do tworzenia aplikacji desktopowych
-
-Można więc powiedzieć, że obecnie Grooviego najczęściej wykorzystuje się do:
-
-- pisania skryptów automatyzujących pracę
-- konfiguracji i pisania pluginów do Gradle
-- pisania testów
+Groovy, mimo że rzadziej wykorzystywany do budowania pełnoprawnych aplikacji w porównaniu z Kotlinem czy Scalą, wciąż znajduje swoje miejsce w niszach takich jak:
+- Automatyzacja procesów i pisanie skryptów.
+- Konfiguracja narzędzi, takich jak Gradle.
+- Pisanie testów jednostkowych i integracyjnych.
 
 {% include language/top10github.html %}
 
 # Poziom skomplikowania
 
-Groovy w porównaniu do Javy oferuję dużo bardziej zwięzłą i czytelniejszą składnię, która jest łatwa do nauki. To
-dlatego jest często wykorzystywany do pisania skryptów lub testów.
+Groovy jest przyjaznym językiem, szczególnie dla programistów znających Javę. Oferuje bardziej zwięzłą składnię i eliminuje wiele powtarzalnych elementów, które występują w Javie. Dzięki dynamicznemu typowaniu, Groovy może być używany zarówno do budowania aplikacji, jak i jako język skryptowy.
 
-Groovy posiada wszystkie funkcję wysokopoziomowego języka m.in. nie musimy się martwić zarządzaniem pamięcią.
+**Zalety dla początkujących:**
+- Prosta i intuicyjna składnia.
+- Możliwość rozpoczęcia nauki bez konieczności głębokiego zrozumienia zarządzania pamięcią czy bardziej skomplikowanych aspektów programowania obiektowego.
+- Łatwość w integracji z istniejącymi projektami w Javie.
 
-Ogólnie Groovy jest językiem relatywnie łatwym do nauki, szczególnie dla osoby, która jest już zaznajomiona z Javą -
-wtedy przejście jest naprawdę płynne.
+Groovy jest relatywnie łatwy do nauki i daje dużą swobodę programistom. Osoby zaznajomione z Javą mogą przejść na Groovy w sposób płynny i bezproblemowy, wykorzystując dotychczasową wiedzę.
 
 # Składnia
 
-{% include language/code-example.html lang=lang%}
+{% include language/code-example.html lang=lang %}
 
 # Statystyki
 
-<h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y"  }}</h4>
+<h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y" }}</h4>
 
 {% include language/popularity.html %}
 
@@ -78,14 +69,15 @@ wtedy przejście jest naprawdę płynne.
 
 {% assign groovy = site.data.statistics.languagesVersions.Groovy %}
 
-Groovy stracił nieco na swojej popularności, głównie ze względu na pojawienia się [Kotlina](/technologie/kotlin)
-i [Scali](/technologie/scala). Najbliższe lata raczej nie zapowiadają się dla niego obiecująco, mimo to jest
-stale rozwijany. Jego ostatnia wersja {{ groovy.version }} została wydana {{ groovy.releaseDate }}.
+Groovy stracił nieco na popularności w ostatnich latach, co wynika z rosnącej dominacji innych języków JVM, takich jak **Kotlin** i **Scala**. Mimo to, język ten wciąż jest aktywnie rozwijany i znajduje swoje zastosowanie w określonych niszach.
+
+**Dlaczego Groovy może przetrwać:**
+- Jego zastosowanie w popularnych narzędziach, takich jak Gradle czy Jenkins.
+- Wszechstronność jako język skryptowy.
+- Prosta integracja z ekosystemem Javy.
+
+Ostatnia wersja Groovy ({{ groovy.version }}) została wydana {{ groovy.releaseDate }}. Choć przyszłość języka nie jest tak obiecująca jak Kotlina, Groovy wciąż pozostaje istotnym narzędziem w wielu środowiskach programistycznych.
 
 {% include courses.html %}
 
 {% include books.html %}
-
-
-
-

@@ -11,15 +11,13 @@ image: ruby.png
 {% assign lang = "Ruby" %}
 {% assign stats = site.data.statistics.statistics[lang] %}
 
-**Ruby** to interpretowany, w pełni obiektowy język programowania. Jako język o bardzo prostej składni jest często
-stosowany do pisania tak zwanych jednolinijkowców, skryptów, przetwarzania tekstu oraz prototypowania nowych aplikacji.
+**Ruby** to interpretowany, w pełni obiektowy język programowania. Dzięki prostej i czytelnej składni, Ruby jest często wybierany do tworzenia skryptów, przetwarzania tekstu oraz prototypowania aplikacji. Jest także ceniony ze względu na swoją elastyczność i wszechstronność.
 
-Jego zaletą jest ogromna ilość frameworków webowych oraz aplikacji napisanych w tym języku. Warto wspomnieć tu
-o [Jekyllu](/technologie/jekyll) i [Ruby on Rails](/technologie/rubyonrails).
+Ruby jest kluczowym językiem w ekosystemie tworzenia aplikacji webowych, szczególnie dzięki popularnym frameworkom, takim jak [Ruby on Rails](/technologie/rubyonrails) i [Jekyll](/technologie/jekyll). Te narzędzia ułatwiają szybkie i efektywne budowanie dynamicznych stron internetowych oraz aplikacji.
 
-Dzięki nim tworzenie stron internetowych w tym języku jest proste i szybkie.
+Oprócz zastosowań webowych, Ruby jest wykorzystywany w automatyzacji zadań oraz analizie danych. Dzięki swojej elastyczności, język ten jest odpowiedni dla wielu różnych projektów, od małych skryptów po kompleksowe systemy.
 
-Jest wykorzystywany przez takie strony jak:
+Wiele znanych firm i platform używa Ruby, między innymi:
 
 - Twitch.tv
 - Starbucks
@@ -31,20 +29,17 @@ Jest wykorzystywany przez takie strony jak:
 
 # Poziom skomplikowania
 
-Ruby jest jednym z najprostszych języków. Posiada bardzo intuicyjną składnię, której nauka przychodzi bardzo szybko,
-nawet początkującym adeptom kodu, podobnie do Pythona.
+Ruby jest uważany za jeden z najprostszych języków programowania, co czyni go idealnym wyborem dla początkujących. Jego intuicyjna składnia pozwala na szybkie zrozumienie kodu, które jest niemal jak czytanie instrukcji w języku angielskim.
 
-Czytanie kodu Ruby jest praktycznie identyczne z czytaniem instrukcji po angielsku. Nie znajdziemy definicji typów, a
-składnia w porównaniu z językami takimi jak Java czy C++ jest maksymalnie uproszczona. Ruby to język wysokopoziomowy,
-więc nie musimy dbać o niskopoziomowe detale, takie jak zarządzanie pamięcią - robi to za nas garbage collector.
+Ruby eliminuje potrzebę definiowania typów, co wraz z zaawansowanymi mechanizmami, takimi jak garbage collector, pozwala programistom skupić się na logice aplikacji, zamiast na zarządzaniu zasobami.
 
 # Składnia
 
-{% include language/code-example.html lang=lang%}
+{% include language/code-example.html lang=lang %}
 
 # Statystyki
 
-<h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y"  }}</h4>
+<h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y" }}</h4>
 
 {% include language/popularity.html %}
 
@@ -60,10 +55,9 @@ więc nie musimy dbać o niskopoziomowe detale, takie jak zarządzanie pamięci�
 
 {% assign versions = site.data.statistics.languagesVersions %}
 
-Przez powstanie Node.js popularność platformy Ruby on Rails delikatnie spadła, również o samym Ruby coraz mniej słychać,
-co widać w rankingach popularności. Mimo to Ruby ma się nadal całkiem dobrze. Używa go wciąż masa ludzi i jest cały czas
-rozwijany, twórcy wypuszczają często aktualizacje, rozwiązujące wiele wcześniejszych problemów. Jego ostatnia wersja {{
-versions.Ruby.version }} została wydana {{ versions.Ruby.releaseDate }}.
+Mimo że popularność Ruby on Rails nieco spadła z powodu wzrostu popularności Node.js i innych technologii, Ruby wciąż ma się dobrze i jest aktywnie rozwijany. Społeczność Ruby regularnie wydaje aktualizacje, które poprawiają wydajność i funkcjonalność języka.
+
+Ostatnia wersja Ruby ({{ versions.Ruby.version }}) została wydana {{ versions.Ruby.releaseDate }}, co świadczy o ciągłym wsparciu i rozwoju języka.
 
 {% include courses.html %}
 

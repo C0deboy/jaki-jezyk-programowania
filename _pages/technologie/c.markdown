@@ -11,29 +11,31 @@ image: c.png
 
 # Zastosowanie
 
-**C** jest jednym z najstarszych i najszerzej używanych języków programowania. Jest on językiem strukturalnym i nie wspomaga programowania obiektowego — choć samo programowanie obiektowe jest w nim możliwe. Odbiega to jednak daleko od tego, jak to wygląda w językach typowo obiektowych. Co ciekawe, wiele innych języków, w tym i obiektowych, jak: C++, Java, JavaScript, C#, PHP, Python, Swift, Go, Rust, zawdzięcza językowi C wiele różnych cech i funkcjonalności.
+**C** jest jednym z najstarszych i najczęściej wykorzystywanych języków programowania. Jako język strukturalny, C nie oferuje wbudowanej obsługi programowania obiektowego – choć teoretycznie możliwe jest jego zastosowanie. Warto zaznaczyć, że wiele współczesnych języków, zarówno obiektowych (takich jak C++, Java, C#, Python, Go), jak i innych, czerpie z C szereg cech i funkcjonalności.
 
-Język C pozwala na swobodne zarządzanie alokowaną pamięcią, a także precyzyjne definiowanie działań i operacji. W odróżnieniu od wielu współczesnych języków jest on kompilowany bezpośrednio na kod maszynowy, podobnie jak asembler, który możemy również wykorzystać bezpośrednio w języku C. Ze względu na powyższe cechy C, wśród języków wysokiego poziomu, jest uznawany obecnie za &quot;najbliższy&quot; maszynie, to znaczy, że z jego poziomu można wykonać wiele operacji elementarnych na pamięci/procesorze. Nie jest on co prawda definicyjnym językiem niskopoziomowym, jednak na pewno jest on najniższym z języków bardziej przyjaznych człowiekowi.
+Język C daje programistom pełną kontrolę nad pamięcią oraz pozwala na precyzyjne operowanie danymi na poziomie sprzętowym. W odróżnieniu od wielu współczesnych języków jest on kompilowany bezpośrednio na kod maszynowy, podobnie jak asembler, który możemy również wykorzystać bezpośrednio w języku C. Mimo że nie jest uznawany za język niskopoziomowy, C jest często uważany za "najbliższy maszynie" z języków wysokopoziomowych, oferujący bardzo dużą kontrolę nad procesorem i pamięcią.
 
-Cecha ta pozwoliła na wykorzystanie, z powodzeniem, języka C w tworzeniu oprogramowania dla systemów oraz mikrokontrolerów. Język C jest również używany w kodzie bibliotek, jako język współdzielony, którego funkcje mogą wywoływać inne języki. Dzięki temu biblioteki napisane w C mogą być użyte w prawie dowolnym innym języku.
+C to także doskonały język do nauki programowania na poziomie niskopoziomowym. Jest idealny do nauki takich podstawowych zagadnień jak zarządzanie pamięcią, wskaźniki, struktury danych oraz zrozumienie, jak działa komputer od strony sprzętowej.
 
-Język C może działać praktycznie na każdej architekturze sprzętowej pod warunkiem opracowania odpowiedniego kompilatora. C został użyty do zrobienia m.in.: jąder (lub ich części) systemów operacyjnych takich jak Windows, Linux, Mac, iOS, Android Windows Phone, systemów bazodanowych, biblioteki programistycznej do tworzenia grafik OpenGL, czy popularnego programu graficznego Gimp.
+Dzięki tym cechom C znalazł szerokie zastosowanie w tworzeniu oprogramowania systemowego, w tym w systemach operacyjnych i mikrokontrolerach. Jest również powszechnie stosowany do pisania bibliotek, które mogą być wykorzystywane przez inne języki programowania. W rezultacie, biblioteki C mogą zostać zaadoptowane przez prawie każdy nowoczesny język.
 
-C jest lekki, wydajny, i przenośny (podobnie jak pochodny od niego język C++), co sprawia, że jest praktycznie w każdym systemie wbudowanym, od lodówek, mikrofalówek, zegarków do radia włącznie. Można go również znaleźć w elementach samochodu np. w oprogramowaniu wyświetlacza na desce rozdzielczej, czujników, automatycznej skrzyni biegów, systemu sterowania klimatyzacją, czy kontroli trakcji.
+C jest również niezwykle przenośny – działa na niemal każdej architekturze sprzętowej, pod warunkiem że istnieje odpowiedni kompilator. Używany był m.in. do tworzenia jąder systemów operacyjnych, takich jak Windows, Linux, czy MacOS, oraz w rozwoju takich technologii jak OpenGL czy popularne oprogramowanie graficzne GIMP.
+
+C jest wykorzystywany nie tylko w komputerach, ale także w systemach wbudowanych, od prostych urządzeń takich jak mikrofalówki i lodówki, po zaawansowane systemy w samochodach, w tym sterowanie klimatyzacją, czujnikami, czy systemami kontroli trakcji. Język C odgrywa również kluczową rolę w rozwoju Internetu Rzeczy (IoT), ponieważ pozwala na programowanie urządzeń wbudowanych, które są integralną częścią nowoczesnych technologii.
 
 {% include language/top10github.html %}
 
 # Poziom skomplikowania
 
-C nie należy do najłatwiejszych do nauczenia. Trzeba dbać o zarządzanie pamięcią (brak garbage collectora), które może przysporzyć masę błędów oraz trzeba zrozumieć, czym są wskaźniki — bez nich nie zdziałasz wiele. Większy nacisk trzeba kłaść też na debugowanie kodu, ponieważ niektóre błędy mogą powodować niewłaściwe nadpisanie niektórych bloków pamięci, przez co przyczyna problemu może być trudna do namierzenia.
+C jest jednym z bardziej wymagających języków do nauki, głównie ze względu na konieczność ręcznego zarządzania pamięcią, co wiąże się z dużą liczbą potencjalnych błędów. Brak automatycznego garbage collectora sprawia, że programista musi samodzielnie kontrolować alokację i dealokację pamięci, co może prowadzić do trudnych do zidentyfikowania problemów z pamięcią.
 
-W innych językach namierzenie takiego błędu znacznie ułatwia obsługa wyjątków, której C nie ma. To w twoim interesie jest zapobieganie powstawania błędów oraz sprawdzanie wartości, które zwracają funkcje.
+Również wskaźniki, które są kluczowe dla C, stanowią wyzwanie dla początkujących. Bez ich zrozumienia trudno pisać efektywny kod, a błędy związane z wskaźnikami mogą prowadzić do poważnych usterek.
 
-C jest statycznie typowany, co oznacza, że dla każdej zmiennej musimy nadać typ przechowywanych danych. Dzięki temu kod jest łatwiejszy w zrozumieniu i utrzymaniu, a błędy dotyczące typów zostaną wykryte już w czasie kompilacji.
+Ponadto C nie wspiera wyjątków, co utrudnia obsługę błędów w porównaniu do wielu innych współczesnych języków. Programista musi samodzielnie sprawdzać wyniki operacji i zapewniać, że wartości zwracane przez funkcje są prawidłowe, co dodatkowo zwiększa trudność pisania bezpiecznego kodu.
 
-Może się wydawać, że C zmusza nas do robienia rzeczy, które inne języki robią za nas — to prawda, ale to dlatego, że C stawia na wydajność. To ma też swoje plusy – taki wymóg pomoże nam lepiej zrozumieć jak program zarządza pamięcią i dlaczego jest to tak ważne.
+C jest językiem statycznie typowanym, co oznacza, że każdy typ danych musi być zdefiniowany w czasie kompilacji. To zapewnia większą stabilność kodu i pozwala na wykrycie błędów związanych z typami na etapie kompilacji.
 
-Chcąc pisać w C oprogramowanie systemowe, przydatna może się okazać dobra znajomość architektury komputera oraz podstaw systemów operacyjnych. Niewątpliwie przydatna jest również znajomość bibliotek systemowych, a także umiejętność czytania ich dokumentacji.
+Choć C zmusza programistę do samodzielnego wykonania wielu operacji, które inne języki wykonują automatycznie, ta kontrola pozwala lepiej zrozumieć działanie programów oraz procesów związanych z zarządzaniem pamięcią. Dzięki temu pisanie w C może być doskonałą okazją do nauki głębszych zagadnień informatycznych, takich jak architektura komputerów czy działanie systemów operacyjnych.
 
 # Składnia
 
@@ -43,7 +45,7 @@ Chcąc pisać w C oprogramowanie systemowe, przydatna może się okazać dobra z
 
 <h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y"  }}</h4>
 
-C jest jednym z najpopularniejszych języków programowania, głównie, ze względu na swój staż i dlatego, że znajdziemy go w większości urządzeń dookoła nas.
+C jest jednym z najpopularniejszych języków programowania, głównie dzięki swojej długiej historii i obecności w wielu urządzeniach, które nas otaczają.
 
 {% include language/popularity.html %}
 
@@ -55,13 +57,15 @@ C jest jednym z najpopularniejszych języków programowania, głównie, ze wzgl�
 
 {% include language/see_all_stats.html %}
 
-Meetupy C są kategoryzowane razem z językiem C++. Mimo to widać, że w porównaniu do innych języków, grup organizujących spotkania dla społeczności C/C++ jest dużo mniej, szczególnie w Polsce.
+Mimo że meetupy związane z C są często łączone z C++, zauważyć można, że w porównaniu do innych języków, grup organizujących spotkania dla społeczności C/C++ jest stosunkowo niewiele, szczególnie w Polsce.
 
 # Przyszłość języka
 
 {% assign versions = site.data.statistics.languagesVersions %}
 
-Język C nie wydaje się mieć daty przydatności do użycia. Język powstał ponad 40 lat temu, a w rankingach popularności nadal jest w czołówce. Jego ostatnia wersja {{ versions.C.version }} wyszła {{ versions.C.releaseDate }}. Fakt, że wiele nowszych języków jest lepszych od C w niektórych dziedzinach, nie oznacza, że szybko go wyprą i C pójdzie w zapomnienie. C nadal jest najpopularniejszym językiem niskopoziomowym. W dzisiejszych czasach stawia się na języki wspierające programowanie obiektowe i te, w których proces programowania jest szybszy, więc C nie jest dobrym wyborem dla ogólnego zastosowania. Jednak jeśli masz konkretny powód, warto uczyć się języka C, gdyż nadal jest on wykorzystywany w specyficznych obszarach, a wiedza, którą zdobędziesz ucząc się C, na pewno się nie zmarnuje, zwłaszcza jeśli planujesz naukę [C++](/technologie/c++).
+Język C, mimo że powstał ponad 40 lat temu, wciąż znajduje się w czołówce rankingów popularności. Jego ostatnia wersja {{ versions.C.version }} została wydana {{ versions.C.releaseDate }}. Choć wiele nowszych języków oferuje wyższy poziom abstrakcji i lepsze wsparcie dla programowania obiektowego, C nadal pozostaje niezwykle popularny w specyficznych dziedzinach, takich jak systemy operacyjne, mikrokontrolery i oprogramowanie niskopoziomowe.
+
+Zaczynanie nauki programowania od języka C nie jest może obecnie najpopularniejszym wyborem, jednak jest to nisza, w której warto się specjalizować, zwłaszcza jeśli planujesz naukę C++ lub pracę przy systemach wbudowanych.
 
 {% include courses.html %}
 

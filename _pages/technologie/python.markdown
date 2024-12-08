@@ -50,11 +50,11 @@ Python jest często polecany dla osób, które chcą rozpocząć przygodę z pro
 
 # Składnia
 
-{% include language/code-example.html lang=lang%}
+{% include language/code-example.html lang=lang %}
 
 # Statystyki
 
-<h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y"  }}</h4>
+<h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y" }}</h4>
 
 Popularność Pythona rośnie z każdym rokiem do tego stopnia, że jest niemal najpopularniejszym językiem. Na pewno
 przyczyniło się do tego wzrost zainteresowania tematami jak *machine learning* i *data science* w ostatnich latach.

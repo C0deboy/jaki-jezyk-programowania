@@ -45,7 +45,7 @@ to [Python](/technologie/python) może być dla Ciebie bardziej przyjazny.
 
 # Składnia
 
-{% include language/code-example.html lang=lang%}
+{% include language/code-example.html lang=lang %}
 
 # Statystyki
 

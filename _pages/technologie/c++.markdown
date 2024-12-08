@@ -11,35 +11,44 @@ image: c++.png
 
 # Zastosowanie
 
-C++ to obiektowy język ogólnego zastosowania. Programy w C++ mogą być napisane tak, aby były wieloplatformowe bez żadnych modyfikacji, ale tylko, gdy trzymamy się odpowiednich zasad. Trzeba pamiętać, że niektóre funkcje/biblioteki są dostępne tylko dla specyficznych systemów.
+C++ to wszechstronny język obiektowy, który umożliwia tworzenie wieloplatformowych aplikacji, pod warunkiem przestrzegania odpowiednich zasad. Jako rozszerzenie języka C, C++ wprowadza programowanie obiektowe oraz szereg usprawnień, takich jak obsługa wątków, wyrażenia lambda, szablony, typ **auto** czy pętle for-range. Co więcej, kod napisany w C zazwyczaj można bezproblemowo używać w C++, co zwiększa jego uniwersalność.
 
-Język C++ jest rozszerzeniem języka C. Główną, odróżniającą je cechą jest niewątpliwie **obiektowość**, której brak w języku C. Oczywiście C++ wprowadził na przestrzeni lat wiele różnych usprawnień, jak chociażby możliwość bezpośredniego tworzenia i obsługi wątków, interfejsu graficznego, wykorzystanie szablonów, w nowszych wersjach wyrażenia lambda, pętle for-range, typ **auto** i wiele innych. Ciekawym jest fakt, że w większości przypadków kod stworzony w C można dowolnie wykorzystać w języku C++, co rozszerza możliwości programisty o wykorzystanie niskopoziomowych bibliotek stworzonych w C. Uwaga – nie działa to w drugą stronę: kod C jest kompatybilny z C++, ale nie w drugą stronę.
+C++ znajduje szerokie zastosowanie w różnych dziedzinach, szczególnie tam, gdzie kluczowa jest wydajność i niskie zużycie zasobów. Przykłady zastosowań obejmują:
 
-C++ jest najczęściej stosowany w systemach wbudowanych oraz w tworzeniu gier. W języku C++ napisane zostały systemy operacyjne (lub ich części) takie jak Apple OS X,IBM OS/400, Windows NT, XP, Vista, 7. Warto jednak pamiętać, że zastosowanie C++ jest dużo szersze. Ogólnie rzecz biorąc C++ znajduje zastosowanie wszędzie tam, gdzie najważniejsza jest wydajność stworzonego kodu i niskie zużycie pamięci — od aplikacji desktopowych (m.in. produkty Adobe np. Photoshop, Acrobat czy pakiety biurowe Office) przez serwery (m.in. e-commerce np. Amazon, Ebay; wyszukiwarki np. Chrome; baz danych np. MongoDB) po silniki gier AAA lub ich części (np. CryEngine, Unity, Unreal Engine).
+- **Systemy operacyjne:** Lub ich części.
+- **Gry komputerowe:** Silniki gier AAA (lub ich części), np. Unreal Engine, Unity czy CryEngine.
+- **Oprogramowanie desktopowe:** Np. Programy Adobe (np. Photoshop, Acrobat) i pakiety biurowe.
+- **Systemy serwerowe:** Wyszukiwarki, bazy danych (np. MongoDB) oraz platformy e-commerce.
+- **Embedded systems:** Urządzenia IoT i elektronika użytkowa.
+- **Przemysł finansowy**: C++ jest używany w aplikacjach o wysokiej częstotliwości transakcji (HFT), gdzie kluczowe są wydajność i minimalne opóźnienia.
+- **Autonomiczne pojazdy**: Język ten odgrywa istotną rolę w oprogramowaniu związanym z przetwarzaniem danych w czasie rzeczywistym w pojazdach autonomicznych.
+- **Sztuczna inteligencja:** Biblioteki AI, takie jak TensorFlow czy PyTorch, bazują na kodzie napisanym w C++.
 
-C++ używany jest również w największych światowych korporacjach m.in.: Adobe, Facebook, Amazon, Ericsson, HP, IBM, Intel. Warto też tu wspomnieć o wielu pochodnych frameworkach, które bazują na języku C++, często rozszerzając jego możliwości – idealnym przykładem jest tu framework [Qt](/technologie/qt).
+C++ jest szeroko stosowany w największych światowych firmach, takich jak Adobe, Facebook, Amazon, IBM czy Intel. 
+
+Warto wspomnieć też o frameworku [Qt](/technologie/qt), który rozszerza język C++ i ułatwia z nim pracę.
 
 {% include language/top10github.html %}
 
 # Poziom skomplikowania
 
-C++ to język dużo bardziej złożony niż inne języki programowania. Jego semantyka może się wydawać nieco mniej przyjazna dla początkujących. Trzeba też zrozumieć dużo więcej aspektów niż w językach o wyższym poziomie abstrakcji. Należy do nich m.in. zarządzanie pamięcią. Jest on jednak dużo bardziej przyjazny niż jego język-ojciec [C](/technologie/c).
+**C++** uchodzi za język trudniejszy (na początek) od wielu nowoczesnych języków programowania. Jego semantyka, wskaźniki, zarządzania pamięcią może się wydawać mniej przyjazna dla początkujących, jednak w porównaniu do języka [C](/technologie/c), **C++** jest dużo bardziej przyjazny np. dzięki funkcjom takim jak inteligentne wskaźniki czy dedukcja typów.
 
-C++ zakłada statyczną kontrolę typów, ale pozwala także na ich automatyczną dedukcję. Dzięki temu wszelkie błędy w typowaniu zostaną wykryte już w fazie kompilacji – podobnie jak ma to miejsce w języku [C](/technologie/c).
+C++ jest szczególnie ceniony za:
 
-Dzięki tym właściwościom C++ daję większą kontrolę nad programem, jest bardziej jednoznaczny i umożliwia dostęp do bardziej niskopoziomowych funkcji, co jest szczególnie ważne w przypadku gdy chcemy w 100% wykorzystać potencjał systemu i jego funkcje.
+- **Statyczną kontrolę typów:** Zapobiega błędom typowania już na etapie kompilacji.
+- **Precyzyjną kontrolę nad programem:** Dostęp do niskopoziomowych funkcji umożliwia maksymalne wykorzystanie zasobów systemowych.
+- **Wsparcie dla programowania obiektowego:** Ułatwia projektowanie złożonych aplikacji.
 
-Często mówi się o wskaźnikach, że są trudne dla początkujących, jednak nie powinieneś się ich bać. To nie jest _rocket science_. W C++ też istnieją inteligentne wskaźniki (są zalecaną praktyką), które same usuwają się wraz z końcem swojego zasięgu, zapobiegając wyciekom pamięci. Surowe wskaźniki są używane tylko w specyficznych sytuacjach.
-
-Można zauważyć, że C++ jest często polecanym językiem na początek, z racji, że jak poznasz wszystkie koncepty programowania w C++, to wtedy żaden inny język nie sprawi Ci problemu. Jest to prawda, jednak jest to język dosyć złożony i dla nowicjuszy może być przytłaczający. Zaczynając z C++ można się sparzyć, dlatego, jeśli chcesz w krótkim czasie dowiedzieć się na czym polega samo programowanie, warto zacząć z językami bardziej przyjaznymi dla początkujących jak np. [Python](/technologie/python) — C++ to nieco trudniejsza i dłuższa droga na początek.
+Pomimo wysokiego poziomu trudności, znajomość C++ daje solidne podstawy w programowaniu i otwiera drogę do zrozumienia innych języków. Mimo to, dla osób rozpoczynających naukę programowania, bardziej odpowiednim wyborem może być język o wyższym poziomie abstrakcji, jak np. [Python](/technologie/python).
 
 # Składnia
 
-{% include language/code-example.html lang=lang%}
+{% include language/code-example.html lang=lang %}
 
 # Statystyki
 
-<h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y"  }}</h4>
+<h4>Dane aktualne na dzień: {{ site.data.statistics.statistics.date | date: "%d.%m.%Y" }}</h4>
 
 {% include language/popularity.html %}
 
@@ -51,14 +60,15 @@ Można zauważyć, że C++ jest często polecanym językiem na początek, z racj
 
 {% include language/see_all_stats.html %}
 
-Meetupy C++ są kategoryzowane razem z językiem C. Mimo to widać, że w porównaniu do innych języków, grup organizujących
-spotkania dla społeczności C/C++ jest bardzo mało.
+Meetupy C++ są kategoryzowane razem z językiem C. Mimo to widać, że grup organizujących spotkania dla społeczności C/C++ jest stosunkowo niewiele.
 
 # Przyszłość języka
 
 {% assign versions = site.data.statistics.languagesVersions %}
 
-Choć lata świetności C++ z 2003 roku przeminęły, można mimo to powiedzieć, że C++ z powrotem odzyskuje swoją popularność. Wraz z rozwojem technologii VR (Virtual Reality), w której C++ jest przodującym językiem, jest on coraz chętniej wykorzystywany. C++ jest co jakiś czas nadal ulepszany, mimo że powstał w 1985 roku. Choć C++ nie przoduje w rankingach popularności, to wszędzie tam, gdzie liczy się wydajność, jest często wybierany i nie zapowiada się, żeby się to zmieniło w najbliższym czasie. Warto tu również dodać, że na języku C++ bazuje wiele innych, wyższych języków programowania. Ostatnia jego wersja {{ versions.C.version }} wyszła {{ versions.C.releaseDate }}.
+C++ pozostaje jednym z najważniejszych języków programowania, mimo że lata jego największej popularności już minęły. Dzięki ciągłym ulepszeniom np. wprowadzeniu nowych standardów, jak C++11, C++17 czy C++20, język ten jest nadal aktywnie rozwijany. Jego ostatnia wersja {{ versions.Cpp.version }} została wydana {{ versions.Cpp.releaseDate }}.
+
+Rozwój technologii VR (Virtual Reality) i AR (Augmented Reality), w których wydajność jest kluczowa, przyczynia się do rosnącego znaczenia C++. Wysoka wydajność oraz kontrola nad zasobami sprawiają, że język ten pozostaje niezastąpiony w wielu zastosowaniach.
 
 {% include courses.html %}
 
