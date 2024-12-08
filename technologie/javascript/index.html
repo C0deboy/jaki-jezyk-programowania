@@ -123,29 +123,21 @@
 
 
     
-<p>Przy tworzeniu stron internetowych, oprócz samego języka Javascript, niezbędne
+<p>Przy tworzeniu stron internetowych, oprócz samego języka JavaScript, niezbędne
 jest <a href="/technologie/html&amp;css">zrozumienie kodu HTML oraz podstaw CSS-a</a>.</p>
 
 <h1 id="zastosowanie">Zastosowanie</h1>
 
 <p><strong>JavaScript</strong> to dynamicznie typowany język wysokiego poziomu. Najczęściej jest używany przy tworzeniu stron WWW,
-zapewniając interaktywność stron oraz obsługę zdarzeń, walidacji formularzy czy budowanie elementów nawigacyjnych. Takie
-wykorzystanie języka JavaScript ułatwia zastosowanie biblioteki, takiej jak <a href="https://jquery.com/">jQuery</a>. Warto przy
-tym zauważyć, że używanie biblioteki nie powinno zastępować sensownej znajomości samego języka.</p>
+zapewniając interaktywność stron oraz obsługę zdarzeń, walidacji formularzy czy budowanie elementów nawigacyjnych.</p>
 
-<p>W większych projektach warto korzystać z zalety statycznego typowania i przyjemniejszego programowania obiektowego
-w <a href="/technologie/typescript">TypeScript</a>, który jest swojego rodzaju nakładką na JavaScript. Ponadto, w takich
-przypadkach, warto też skorzystać z frameworków do budowania aplikacji jak np. <a href="/technologie/angular">Angular</a>
-, <a href="/technologie/react">React</a> czy <a href="/technologie/vue">Vue</a>, które znacznie ułatwiają pracę.</p>
+<p>W większych projektach warto korzystać z zalet statycznego typowania i przyjemniejszego programowania obiektowego
+w <a href="/technologie/typescript">TypeScript</a>. Do tworzenia aplikacji webowych popularne są frameworki, takie jak
+<a href="/technologie/react">React</a>, <a href="/technologie/angular">Angular</a> czy <a href="/technologie/vue">Vue</a>, które ułatwiają pracę z dużymi projektami.</p>
 
-<p>Javascript może też być wykorzystywany do tworzenia gier przeglądarkach, a jednym z popularnych frameworków do tych
-celów jest <a href="/technolgoie/phaser">Phaser</a>.</p>
-
-<p>Dzięki platformom, takim jak <a href="https://electron.atom.io/">Electron.js</a> czy <a href="https://nwjs.io/">nw.js</a>, możliwe jest
-tworzenie pełnoprawnych, wieloplatformowych aplikacji/gier przy użyciu wyłącznie technologii sieciowych (HTML, CSS,
-JS…) dzięki połączeniu platformy Node.js oraz silnika <a href="https://www.chromium.org/">przeglądarki Chromium</a>.</p>
-
-<p><strong>JavaScript</strong> można używać również po stronie serwera (backend) dzięki <a href="/technologie/node.js">Node.js</a></p>
+<p>JavaScript znajduje zastosowanie również w tworzeniu gier przeglądarkowych z użyciem frameworków takich jak <a href="/technologie/phaser">Phaser</a>.
+Dzięki platformom, takim jak <a href="https://electron.atom.io/">Electron.js</a> czy <a href="https://nwjs.io/">nw.js</a>, możliwe jest tworzenie pełnoprawnych
+aplikacji desktopowych. Co więcej, z pomocą <a href="/technologie/node.js">Node.js</a> można wykorzystywać JavaScript po stronie serwera (backend).</p>
 
 <h2>Top 10 projektów na Github wykorzystujących JavaScript</h2>
 
@@ -217,31 +209,19 @@ JS…) dzięki połączeniu platformy Node.js oraz silnika <a href="https://www.
 
 <h1 id="poziom-skomplikowania">Poziom skomplikowania</h1>
 
-<p>JavaScript jest bardzo łatwym językiem do rozpoczęcia nauki programowania, zwłaszcza że jest to język wysokiego poziomu,
-a do pisania kodu wystarczy tylko notatnik oraz przeglądarka - nie ma potrzeby kompilowania kodu. Problematyczne dla
-początkujących może być jednak fakt, że ten sam kod może działać inaczej w różnych przeglądarkach. Te różnice na
-szczęście powoli zanikają wraz z rozwojem przeglądarek oraz dzięki dynamicznemu procesowi standaryzacji.</p>
+<p>JavaScript jest bardzo łatwym językiem do rozpoczęcia nauki programowania, ponieważ do pisania kodu wystarczą jedynie przeglądarka i edytor tekstu.</p>
 
-<p>Język JavaScript jest językiem jednowątkowym, co w uproszczeniu oznacza tyle, że naraz może być wykonywana tylko jedna
-operacja. W przypadku większych aplikacji może stanowić to problem, gdyż kolejne operacje będą blokowane przez
-pozostałe. Stąd powstała potrzeba wprowadzenia do języka <em>asynchroniczności</em>, a zatem — w dużym skrócie — możliwości
-wykonywania operacji “w tle”, bez potrzeby czekania na ich wynik. To umożliwiło wypracowanie takich technik,
-jak <a href="https://developer.mozilla.org/en/docs/AJAX">Ajax</a> (nieblokująca komunikacja z serwerem w celu pobrania dodatkowych
-danych), niemniej wprowadziło całą nową klasę problemów związanych z faktem, że zaburzona została kolejność wykonywania
-kodu (nie wiadomo bowiem, kiedy operacje asynchroniczne zwrócą swój wynik).</p>
+<p>Problematyczne dla początkujących mogą być:</p>
+<ul>
+  <li><strong>Różnice między przeglądarkami:</strong> Choć zanikają dzięki standaryzacji, wciąż mogą sprawiać trudności.</li>
+  <li><strong>Asynchroniczność:</strong> Mechanizm umożliwiający wykonywanie operacji w tle może być trudny w debugowaniu i zarządzaniu.</li>
+</ul>
 
-<p>Debugowanie JavaScriptu nie jest jakoś specjalnie trudne. Tym bardziej że przeglądarki mają wbudowane narzędzia dla
-programistów, które pomagają rozwiązać większość problemów bez używania internetu czy dokumentacji. Jest to podstawowa
-umiejętność, którą należy poznać na samym początku. Smutne jest to, że spora część kursów kompletnie omija ten aspekt.</p>
+<p>Debugowanie JavaScriptu ułatwiają narzędzia wbudowane w przeglądarki, które warto poznać na początku nauki. Utrzymanie większych aplikacji wymaga organizacji kodu, stosowania wzorców projektowych i przestrzegania dobrych praktyk.</p>
 
-<p>Im większa aplikacja, tym trudniej jest ją poprawnie utrzymać. Pomogą w tym podzielenie kodu na moduły, stosowanie
-odpowiednich wzorców projektowych oraz trzymanie się dobrych praktyk.</p>
+<p>JavaScript to ogromny ekosystem z wieloma bibliotekami i frameworkami, co może być przytłaczające na początku, ale daje ogromne możliwości.</p>
 
-<p>JavaScript to ogromy i dynamiczny ekosystem, który ma wiele bibliotek i framworków na rozwiązanie podobnych problemów,
-więc na początku może to być przytłaczające.</p>
-
-<p>Podsumowując, nauka języka JavaScript sama w sobie jest dość łatwa, jednak pełne opanowanie tego języka i ekosystemu
-jest już wymagające.</p>
+<p>Podsumowując, nauka samego języka jest prosta, ale pełne opanowanie jego możliwości i ekosystemu może być wyzwaniem.</p>
 
 <h1 id="składnia">Składnia</h1>
 
@@ -311,219 +291,12 @@ console.log(&#39;Znaleziono &quot;&#39; + x + &#39;&quot; na pozycji &#39; + fou
 
 <h1 id="przyszłość-języka">Przyszłość języka</h1>
 
-<p>JavaScript to “must know” jeśli chodzi o programowanie webowe i raczej to się nie zmieni. Jest to bardzo dynamicznie
-rozwijający się język programowania, szczególnie ze względu na co chwilę pojawiające się nowe biblioteki i frameworki
-poszerzające jego możliwości i zastosowanie. Ciężko za nim nadążyć. 2 lata w przypadku JavaScript to wieki. Jego
-ostatnia wersja ECMAScript 2024 została wydana w czerwcu 2024. JavaScript to
-uniwersalny wybór i często jest nawet w stacku technologicznym backendowca.</p>
+<p>JavaScript to “must know” w programowaniu webowym i raczej się to nie zmieni. Język rozwija się dynamicznie dzięki
+nowym bibliotekom i frameworkom. Choć tempo zmian bywa przytłaczające, JavaScript pozostaje uniwersalnym wyborem,
+często obecnym także w backendzie.</p>
 
-<div class="courses">
-  <h1 id="najlepsze-kursy-video-do-nauki-javascript">
-    Najlepsze kursy video do nauki JavaScript</h1>
-  <h2>
-    na platformie <a href="https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com%2Fcourses%2Fdevelopment%2F">Udemy</a>:
-  </h2>
-  
-  <div class="text-center">
-    <img alt="Flaga angielska" class="course-lang" src="/img/other/en.png" />
-    Kursy w języku angielskim
-    <img alt="Flaga angielska" class="course-lang" src="/img/other/en.png" />
-    <p class="text-center text-muted"> (W języku polskim niżej)</p>
-  </div>
-  <hr />
-  <a class="course darker-overlay-on-hover" href="https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com/course/the-complete-javascript-course/" target="_blank">
-    <img alt="Język kursu - angielski" class="course-lang" src="/img/other/en.png" />
-    <img alt="Okładka kursu" src="https://img-c.udemycdn.com/course/240x135/851712_fc61_6.jpg" />
-    <div class="course-header">
-      <p class="course-title">The Complete JavaScript Course 2024: From Zero to Expert!</p>
-      <p class="course-headline">The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. Many courses in one!</p>
-      <span><i class="fa fa-clock-o"></i> Czas trwania: 68.5 total hours</span>
-      <span><i class="fa fa-user"></i> 956566 zapisanych uczestników</span><br />
-      <span><i class="fa fa-graduation-cap"></i> All Levels</span>
-      <span><i class="fa fa-calendar-check-o" data-created="2016-05-17T09:31:26Z"></i> Ostatnia aktualizacja: 2024-11-11</span>
-    </div><div class="details">
-
-      <span class="course-rating"><div class="stars" data-rating="4.7"></div>4.7 / 5</span>
-      <span class="course-reviews">Liczba ocen: 216511</span>
-    </div>
-  </a>
-  <hr /><a class="course darker-overlay-on-hover" href="https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank">
-    <img alt="Język kursu - angielski" class="course-lang" src="/img/other/en.png" />
-    <img alt="Okładka kursu" src="https://img-c.udemycdn.com/course/240x135/1565838_e54e_18.jpg" />
-    <div class="course-header">
-      <p class="course-title">The Complete 2024 Web Development Bootcamp</p>
-      <p class="course-headline">Become a Full-Stack Web Developer with just ONE course. HTML, CSS, Javascript, Node, React, PostgreSQL, Web3 and DApps</p>
-      <span><i class="fa fa-clock-o"></i> Czas trwania: 61.5 total hours</span>
-      <span><i class="fa fa-user"></i> 1380995 zapisanych uczestników</span><br />
-      <span><i class="fa fa-graduation-cap"></i> All Levels</span>
-      <span><i class="fa fa-calendar-check-o" data-created="2018-02-22T12:02:33Z"></i> Ostatnia aktualizacja: 2024-08-27</span>
-    </div><div class="details">
-
-      <span class="course-rating"><div class="stars" data-rating="4.69"></div>4.69 / 5</span>
-      <span class="course-reviews">Liczba ocen: 413912</span>
-    </div>
-  </a>
-  <hr /><a class="course darker-overlay-on-hover" href="https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/" target="_blank">
-    <img alt="Język kursu - angielski" class="course-lang" src="/img/other/en.png" />
-    <img alt="Okładka kursu" src="https://img-c.udemycdn.com/course/240x135/2508942_11d3_3.jpg" />
-    <div class="course-header">
-      <p class="course-title">JavaScript - The Complete Guide 2024 (Beginner + Advanced)</p>
-      <p class="course-headline">Modern JavaScript from the beginning - all the way up to JS expert level! THE must-have JavaScript resource in 2024.</p>
-      <span><i class="fa fa-clock-o"></i> Czas trwania: 52.5 total hours</span>
-      <span><i class="fa fa-user"></i> 162808 zapisanych uczestników</span><br />
-      <span><i class="fa fa-graduation-cap"></i> All Levels</span>
-      <span><i class="fa fa-calendar-check-o" data-created="2019-08-14T11:48:53Z"></i> Ostatnia aktualizacja: 2024-11-04</span>
-    </div><div class="details">
-
-      <span class="course-rating"><div class="stars" data-rating="4.62"></div>4.62 / 5</span>
-      <span class="course-reviews">Liczba ocen: 30746</span>
-    </div>
-  </a>
-  <hr /><a class="course darker-overlay-on-hover" href="https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com/course/modern-javascript-from-the-beginning/" target="_blank">
-    <img alt="Język kursu - angielski" class="course-lang" src="/img/other/en.png" />
-    <img alt="Okładka kursu" src="https://img-c.udemycdn.com/course/240x135/1463348_52a4_4.jpg" />
-    <div class="course-header">
-      <p class="course-title">Modern JavaScript From The Beginning 2.0 (2024)</p>
-      <p class="course-headline">A 36-hour master course to take you from beginner to advanced JavaScript</p>
-      <span><i class="fa fa-clock-o"></i> Czas trwania: 36.5 total hours</span>
-      <span><i class="fa fa-user"></i> 120713 zapisanych uczestników</span><br />
-      <span><i class="fa fa-graduation-cap"></i> All Levels</span>
-      <span><i class="fa fa-calendar-check-o" data-created="2017-12-08T20:33:44Z"></i> Ostatnia aktualizacja: 2024-04-02</span>
-    </div><div class="details">
-
-      <span class="course-rating"><div class="stars" data-rating="4.67"></div>4.67 / 5</span>
-      <span class="course-reviews">Liczba ocen: 34481</span>
-    </div>
-  </a>
-  <hr /><div class="text-center">
-    <img alt="Flaga polska" class="course-lang" src="/img/other/pl.png" />
-    Kursy w języku polskim
-    <img alt="Flaga polska" class="course-lang" src="/img/other/pl.png" />
-  </div>
-  <hr /><a class="course darker-overlay-on-hover" href="https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com/course/kurs-programowanie-w-javascript-od-zera-do-mastera/" target="_blank">
-    <img alt="Język kursu - polski" class="course-lang" src="/img/other/pl.png" />
-    <img alt="Okładka kursu" src="https://img-c.udemycdn.com/course/240x135/3616902_3ae1_6.jpg" />
-    <div class="course-header">
-      <p class="course-title">[2025] Programowanie w JavaScript od Zera do Mastera</p>
-      <p class="course-headline">FullStack Javascript od Podstaw + 100 omówionych pyt. rekrut., 24 projekty! Jedyny kurs, który potrzebujesz, ponad 60h!</p>
-      <span><i class="fa fa-clock-o"></i> Czas trwania: 61 total hours</span>
-      <span><i class="fa fa-user"></i> 8835 zapisanych uczestników</span><br />
-      <span><i class="fa fa-graduation-cap"></i> All Levels</span>
-      <span><i class="fa fa-calendar-check-o" data-created="2020-11-05T18:47:55Z"></i> Ostatnia aktualizacja: 2024-12-01</span>
-    </div><div class="details">
-
-      <span class="course-rating"><div class="stars" data-rating="4.67"></div>4.67 / 5</span>
-      <span class="course-reviews">Liczba ocen: 742</span>
-    </div>
-  </a>
-  <hr /><a class="course darker-overlay-on-hover" href="https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com/course/web-developer-bootcamp-tworzenie-stron-www-od-zera-do-mastera/" target="_blank">
-    <img alt="Język kursu - polski" class="course-lang" src="/img/other/pl.png" />
-    <img alt="Okładka kursu" src="https://img-c.udemycdn.com/course/240x135/3532134_bc20_4.jpg" />
-    <div class="course-header">
-      <p class="course-title">[2025] Kurs FullStack Web Developer od Podstaw do Mastera</p>
-      <p class="course-headline">Obszerny kurs  nauki web developmentu od podstaw! Html 5, CSS 3, JavaScript, DOM, Bootstrap 5, Node, + 200 pyt. rekrut.</p>
-      <span><i class="fa fa-clock-o"></i> Czas trwania: 73 total hours</span>
-      <span><i class="fa fa-user"></i> 7565 zapisanych uczestników</span><br />
-      <span><i class="fa fa-graduation-cap"></i> All Levels</span>
-      <span><i class="fa fa-calendar-check-o" data-created="2020-09-28T11:00:12Z"></i> Ostatnia aktualizacja: 2024-12-01</span>
-    </div><div class="details">
-
-      <span class="course-rating"><div class="stars" data-rating="4.66"></div>4.66 / 5</span>
-      <span class="course-reviews">Liczba ocen: 1111</span>
-    </div>
-  </a>
-  <hr /><a class="course darker-overlay-on-hover" href="https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com/course/praktyczny-kurs-javascript/" target="_blank">
-    <img alt="Język kursu - polski" class="course-lang" src="/img/other/pl.png" />
-    <img alt="Okładka kursu" src="https://img-c.udemycdn.com/course/240x135/5645058_a5dc.jpg" />
-    <div class="course-header">
-      <p class="course-title">Praktyczny kurs JavaScript od podstaw</p>
-      <p class="course-headline">Naucz się tworzyć interaktywne strony, które łączą się z REST API na praktycznych przykładach</p>
-      <span><i class="fa fa-clock-o"></i> Czas trwania: 10.5 total hours</span>
-      <span><i class="fa fa-user"></i> 344 zapisanych uczestników</span><br />
-      <span><i class="fa fa-graduation-cap"></i> Beginner Level</span>
-      <span><i class="fa fa-calendar-check-o" data-created="2023-11-05T15:37:07Z"></i> Ostatnia aktualizacja: 2024-07-30</span>
-    </div><div class="details">
-
-      <span class="course-rating"><div class="stars" data-rating="4.68"></div>4.68 / 5</span>
-      <span class="course-reviews">Liczba ocen: 51</span>
-    </div>
-  </a>
-  <hr /><a class="course darker-overlay-on-hover" href="https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com/course/javascript-od-podstaw/" target="_blank">
-    <img alt="Język kursu - polski" class="course-lang" src="/img/other/pl.png" />
-    <img alt="Okładka kursu" src="https://img-c.udemycdn.com/course/240x135/4676682_54c4_4.jpg" />
-    <div class="course-header">
-      <p class="course-title">Kurs JavaScript od podstaw 2024 (ES6)</p>
-      <p class="course-headline">JavaScript — opanuj podstawy w 8 godzin</p>
-      <span><i class="fa fa-clock-o"></i> Czas trwania: 8 total hours</span>
-      <span><i class="fa fa-user"></i> 747 zapisanych uczestników</span><br />
-      <span><i class="fa fa-graduation-cap"></i> All Levels</span>
-      <span><i class="fa fa-calendar-check-o" data-created="2022-05-07T16:18:20Z"></i> Ostatnia aktualizacja: 2022-05-29</span>
-    </div><div class="details">
-
-      <span class="course-rating"><div class="stars" data-rating="4.85"></div>4.85 / 5</span>
-      <span class="course-reviews">Liczba ocen: 139</span>
-    </div>
-  </a>
-  <hr /></div>
-
-<div>
-  <a class="other-books-link darker-overlay" href="https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&amp;mid=39197&amp;murl=https%3A%2F%2Fwww.udemy.com%2Fcourses%2Fdevelopment%2F">
-    <img alt="Inne kursy video na Udemy" src="/img/other/video-courses.png" />Zobacz inne kursy video na Udemy
-  </a>
-</div>
-
-<div class="books">
-  
-  
-  <h1 id="najlepsze-książki-do-nauki-javascript"> Najlepsze
-    książki do nauki JavaScript</h1>
-  <h2>od wydawnictwa <a href="https://helion.pl/view/9102Q">Helion</a>:</h2>
-  <div class="row justify-content-center">
-  <div class="col  promotion">
-    <h3 class="promotion-header"></h3>
-    <div class="promotion-content darker-overlay">
-      <a href="https://helion.pl/page/9102Q/promocje">
-        <img alt="Promocja" class="icon" src="/img/other/sale.png" />
-        <span>Zobacz aktualne promocje w księgarni Helion</span>
-        <img alt="Promocja" class="icon" src="/img/other/sale.png" />
-      </a>
-    </div>
-  </div>
-</div>
-
-  
-  <div class="book" data-book-id="jsppm7">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jsppm7&amp;nr=9102Q&amp;size=181&amp;utf8=1"></script>
-  </div>
-  
-  <div class="book" data-book-id="jsqwdv">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=jsqwdv&amp;nr=9102Q&amp;size=181&amp;utf8=1"></script>
-  </div>
-  
-  <div class="book" data-book-id="podjav">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=podjav&amp;nr=9102Q&amp;size=181&amp;utf8=1"></script>
-  </div>
-  
-  <div class="book" data-book-id="ecmasc">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=ecmasc&amp;nr=9102Q&amp;size=181&amp;utf8=1"></script>
-  </div>
-  
-  <div class="book" data-book-id="nojspo">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=nojspo&amp;nr=9102Q&amp;size=181&amp;utf8=1"></script>
-  </div>
-  
-  <div class="book" data-book-id="misjsp">
-    <script src="https://helion.pl/plugins/new/ksiazkasm.phi?id=misjsp&amp;nr=9102Q&amp;size=181&amp;utf8=1"></script>
-  </div>
-  
-  </div>
-
-<div>
-  <a class="other-books-link darker-overlay" href="https://helion.pl/page-new/9102Q/kategorie/webmasterstwo/javascript/druk,ebook">
-    <img src="/img/other/books.png" />Zobacz inne książki w kategorii JavaScript
-  </a>
-</div>
-
+<p>Jego ostatnia wersja ECMAScript 2024 została wydana w czerwcu 2024.
+To świetny wybór dla początkujących programistów chcących szybko zobaczyć efekty swojej pracy.</p>
 
 
   </div>
