@@ -1,5 +1,11 @@
 @use 'courses.scss';
 
+html,
+body {
+  color: white;
+  background: #00353e;
+}
+
 @media (max-width: 768px) {
   html,
   body {
@@ -14,7 +20,7 @@ section {
 
 @media (min-width: 1700px) {
   section {
-    padding: 0 20% 60px;
+    padding: 0 25% 60px;
   }
 }
 
