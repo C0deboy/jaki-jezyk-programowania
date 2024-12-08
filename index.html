@@ -11,8 +11,6 @@ description: "Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jak
 
   <link rel="stylesheet" href="/dist/home.bundle.css">
   <link rel="stylesheet" href="/dist/technologies-list.css">
-
-  <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
@@ -387,83 +385,15 @@ description: "Jaki jest najlepszy język programowania dla Ciebie? Nie wiesz jak
   </div>
 </section>
 
-<section id="o-projekcie" class="section about-project">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="section-heading">O projekcie</h2>
-        <p>Wybór języka programowania/technologii to częsty problem początkujących programistów.
-          Stworzyłem tę stronę, aby ułatwić to zadanie (przynajmniej te oczywiste przypadki)
-          i zredukować liczbę kolejnych, tych samych wątków na forach.</p>
-
-        <div class="author">
-          <span>Autor:</span>
-          <h3 class="name">
-            Marcin Lasota
-          </h3>
-
-          <ul class="list-inline social-buttons">
-            <li class="tip list-inline-item" data-tip="LinkedIn">
-              <a class="main-btn" href="https://www.linkedin.com/in/marcin-lasota/">
-                  <span class="visually-hidden">
-                    LinkedIn
-                  </span>
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12">
-        <!--144-->
-        <p>Przygotowałem ankietę dotyczącą wyboru języka / technologii do danego zastosowania.
-          Daj znać co ty zaproponowałbyś początkującym programistom!</p>
-
-        <button id="ankieta" class="main-btn mb-4" data-bs-toggle="modal" data-bs-target="#survey">
-          <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Ankieta
-        </button>
-
-        <div id="survey" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" aria-label="Ankieta">
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title text-dark">Ankieta</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij" title="Zamknij"></button>
-              </div>
-              <div class="modal-body">
-                <iframe class="survey" title="Ankieta" src="https://docs.google.com/forms/d/e/1FAIpQLScdtXZd_Y_4oQyOtlhYpmDID48ejeK2w-CEuO0IL53wC4dQxQ/viewform?embedded=true">
-                  Ładuję...
-                </iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <p>Masz jakieś uwagi czy zastrzeżenia? Masz sugestię, którą chciałbyś się ze mną podzielić? Cokolwiek by to było — pisz śmiało!</p>
-
-      <div class="col-md-12">
-        <a href="mailto:lasota.marcinm@gmail.com" class="main-btn">
-          <i class="fa fa-envelope-o" aria-hidden="true"></i>
-          lasota.marcinm@gmail.com
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <div class="cookies-info d-none fade">
   <p>Strona wykorzystuje pliki cookies (ciasteczka) w celu zbierania statystyk odwiedzin strony.
-    Korzystając ze strony zgadzasz się na ich wykorzystanie.</p>
+    Korzystając ze strony, zgadzasz się na ich wykorzystanie.</p>
   <button type="button" class="btn-close btn-close-white" aria-label="Zamknij informacje o plikach cookies"></button>
 </div>
 
 <pre hidden>
   {%- for example in site.data.code_examples -%}
-  <code class="language-{{ example.lang }}">{{ example.code | escape }}</code>
+  <code class="language-{{ example[0] }}">{{ example[1] | escape }}</code>
   {%- endfor -%}
 </pre>
 

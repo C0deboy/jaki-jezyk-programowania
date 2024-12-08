@@ -7,7 +7,8 @@ image: scala.png
 no-books: true
 ---
 
-{% assign stats = site.data.statistics.statistics.Scala %}
+{% assign lang = "Scala" %}
+{% assign stats = site.data.statistics.statistics[lang] %}
 
 # Zastosowanie
 
@@ -30,6 +31,10 @@ Scala jest wykorzystywana przez duże firmy takie jak:
 Scala w porównaniu do Kotlina czy Javy ma nieco większy próg wejścia. Również przejście z Javy na Scalę jest relatywnie trudniejsze w porównaniu z Kotlinem.
 
 Wpływa na to fakt, że Scala jest ekspresyjna - potrzeba dużo mniej kodu niż w Javie by wyrazić to samo - jednak co za tym idzie, trzeba więcej rozumieć co się dzieje pod spodem. Jest to zaleta języka, gdy mamy już doświadczenie, jednak na początku nauka jest przez to bardziej problematyczna.
+
+# Składnia
+
+{% include language/code-example.html lang=lang%}
 
 # Statystyki
 

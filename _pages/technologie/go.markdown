@@ -6,7 +6,8 @@ permalink: /technologie/go/
 image: go.png
 ---
 
-{% assign stats = site.data.statistics.statistics.Go %}
+{% assign lang = "Go" %}
+{% assign stats = site.data.statistics.statistics[lang] %}
 
 # Zastosowanie
 
@@ -53,6 +54,10 @@ Jak widać, nie ma w nim wielu aspektów programowania obiektowego, co dla niekt
 Go jest idiomatyczny, tzn. często jest tylko jeden sposób na wykonanie danej rzeczy, co może być zarówno plusem, jak i minusem. Go ma także wbudowanych wiele mechanizmów, które wymuszają na programistach stosowanie się do dobrych praktyk. Jest to na pewno plusem dla początkujących, bo trudniej sobie strzelić w stopę. Dzięki takim rozwiązaniom czytelność i porządek w kodzie przestają zależeć od kultury programisty, a przesuwają się w stronę zasad konstrukcji języka.
 
 Dzięki tzw. gorutynom (ang. *goroutines*) i kanałom wbudowanym w Go, programowanie współbieżne jest dużo prostsze.
+
+# Składnia
+
+{% include language/code-example.html lang=lang%}
 
 # Statystyki
 

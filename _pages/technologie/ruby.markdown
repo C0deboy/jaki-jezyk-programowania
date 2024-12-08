@@ -8,7 +8,8 @@ image: ruby.png
 
 # Zastosowanie
 
-{% assign stats = site.data.statistics.statistics.Ruby %}
+{% assign lang = "Ruby" %}
+{% assign stats = site.data.statistics.statistics[lang] %}
 
 **Ruby** to interpretowany, w pełni obiektowy język programowania. Jako język o bardzo prostej składni jest często
 stosowany do pisania tak zwanych jednolinijkowców, skryptów, przetwarzania tekstu oraz prototypowania nowych aplikacji.
@@ -36,6 +37,10 @@ nawet początkującym adeptom kodu, podobnie do Pythona.
 Czytanie kodu Ruby jest praktycznie identyczne z czytaniem instrukcji po angielsku. Nie znajdziemy definicji typów, a
 składnia w porównaniu z językami takimi jak Java czy C++ jest maksymalnie uproszczona. Ruby to język wysokopoziomowy,
 więc nie musimy dbać o niskopoziomowe detale, takie jak zarządzanie pamięcią - robi to za nas garbage collector.
+
+# Składnia
+
+{% include language/code-example.html lang=lang%}
 
 # Statystyki
 

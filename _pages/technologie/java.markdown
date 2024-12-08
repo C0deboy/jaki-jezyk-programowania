@@ -6,7 +6,8 @@ permalink: /technologie/java/
 image: java.png
 ---
 
-{% assign stats = site.data.statistics.statistics.Java %}
+{% assign lang = "Java" %}
+{% assign stats = site.data.statistics.statistics[lang] %}
 
 # Zastosowanie
 
@@ -47,6 +48,10 @@ Często można spotkać opinię, że **Java** jest rozwlekła, to znaczy, że tr
 Poza tym, od Javy 9 do takiego szybkiego prototypowania i robienia małych kawałków kodów (np. wykonujących jakieś obliczenia do zadania czy po prostu testowanie nowych funkcji) powstało narzędzie Jshell.
 
 Języki skryptowe i szybkie rozwiązania są dobre do prototypowania. Gdy tworzony jest duży projekt i ważne jest jego późniejsze utrzymywanie, "rozwlekłość" języka jest na plus.
+
+# Składnia
+
+{% include language/code-example.html lang=lang%}
 
 # Statystyki
 

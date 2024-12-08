@@ -6,7 +6,8 @@ permalink: /technologie/c++/
 image: c++.png
 ---
 
-{% assign stats = site.data.statistics.statistics.Cpp %}
+{% assign lang = "Cpp" %}
+{% assign stats = site.data.statistics.statistics[lang] %}
 
 # Zastosowanie
 
@@ -31,6 +32,10 @@ Dzięki tym właściwościom C++ daję większą kontrolę nad programem, jest b
 Często mówi się o wskaźnikach, że są trudne dla początkujących, jednak nie powinieneś się ich bać. To nie jest _rocket science_. W C++ też istnieją inteligentne wskaźniki (są zalecaną praktyką), które same usuwają się wraz z końcem swojego zasięgu, zapobiegając wyciekom pamięci. Surowe wskaźniki są używane tylko w specyficznych sytuacjach.
 
 Można zauważyć, że C++ jest często polecanym językiem na początek, z racji, że jak poznasz wszystkie koncepty programowania w C++, to wtedy żaden inny język nie sprawi Ci problemu. Jest to prawda, jednak jest to język dosyć złożony i dla nowicjuszy może być przytłaczający. Zaczynając z C++ można się sparzyć, dlatego, jeśli chcesz w krótkim czasie dowiedzieć się na czym polega samo programowanie, warto zacząć z językami bardziej przyjaznymi dla początkujących jak np. [Python](/technologie/python) — C++ to nieco trudniejsza i dłuższa droga na początek.
+
+# Składnia
+
+{% include language/code-example.html lang=lang%}
 
 # Statystyki
 

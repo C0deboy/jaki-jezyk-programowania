@@ -6,7 +6,8 @@ permalink: /technologie/javascript/
 image: javascript.png
 ---
 
-{% assign stats = site.data.statistics.statistics.JavaScript %}
+{% assign lang = "JavaScript" %}
+{% assign stats = site.data.statistics.statistics[lang] %}
 
 Przy tworzeniu stron internetowych, oprócz samego języka Javascript, niezbędne
 jest [zrozumienie kodu HTML oraz podstaw CSS-a](/technologie/html&css).
@@ -61,6 +62,10 @@ więc na początku może to być przytłaczające.
 
 Podsumowując, nauka języka JavaScript sama w sobie jest dość łatwa, jednak pełne opanowanie tego języka i ekosystemu
 jest już wymagające.
+
+# Składnia
+
+{% include language/code-example.html lang=lang%}
 
 # Statystyki
 

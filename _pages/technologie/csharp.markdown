@@ -6,7 +6,8 @@ permalink: /technologie/csharp/
 image: csharp.png
 ---
 
-{% assign stats = site.data.statistics.statistics.Csharp %}
+{% assign lang = "Csharp" %}
+{% assign stats = site.data.statistics.statistics[lang] %}
 
 # Zastosowanie
 
@@ -40,6 +41,10 @@ Jest także językiem silnie typowanym, co oznacza, że każda zmienna musi mie�
 program zwróci błąd i zapobiegnie kompilacji, jeżeli będzie się coś nie zgadzać, w przeciwieństwie do języka słabo
 typowanego, który nie wygeneruje błędu i zwróci nieprzewidywany wynik. Wadą tego rozwiązania jest tylko to, że musimy
 zadeklarować więcej informacji dla programu, ale dzięki temu jest bardziej jednoznaczny i łatwiej wychwycić błędy.
+
+# Składnia
+
+{% include language/code-example.html lang=lang%}
 
 # Statystyki
 

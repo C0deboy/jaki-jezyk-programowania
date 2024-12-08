@@ -7,7 +7,8 @@ image: rust.png
 no-books: true
 ---
 
-{% assign stats = site.data.statistics.statistics.Rust %}
+{% assign lang = "Rust" %}
+{% assign stats = site.data.statistics.statistics[lang] %}
 
 # Zastosowanie
 
@@ -30,6 +31,10 @@ Wykorzystują go między innymi:
 
 Rust podobnie jak inne bardziej niskopoziomowe języki takie jak C++, ma nieco większy próg wejścia od tych z wyższym poziomem abstrakcji.
 Nie jest to najłatwiejszy język na początek, ale też taka jest jego specyfika zastosowania.
+
+# Składnia
+
+{% include language/code-example.html lang=lang%}
 
 # Statystyki
 

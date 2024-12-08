@@ -4,10 +4,11 @@
   "description": "Website that helps choose a programming language for beginners.",
   "main": "",
   "scripts": {
-    "build:all:prod": "webpack --mode production && bundle exec jekyll build",
+    "serve:all": "start npm run jekyll:serve && npm run webpack:watch",
+    "build:all:prod": "npm run webpack:prod && npm run jekyll:build",
     "webpack:watch": "webpack --watch --mode development",
     "webpack:prod": "webpack --mode production",
-    "jekyll:build": "bundle exec jekyll build",
+    "jekyll:build": "bundle exec jekyll build --config _config.yml,_config-prod.yml",
     "jekyll:serve": "bundle exec jekyll serve --livereload"
   },
   "repository": {

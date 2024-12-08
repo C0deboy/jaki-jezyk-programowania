@@ -1,0 +1,46 @@
+{% case page.title %}
+    {% when "C++" %}
+    {% assign extension = ".cc lub .cpp" %}
+    {% when "Java" %}
+    {% assign extension = ".java" %}
+    {% when "JavaScript" %}
+    {% assign extension = ".js" %}
+    {% when "PHP" %}
+    {% assign extension = ".php" %}
+    {% when "Ruby" %}
+    {% assign extension = ".rb" %}
+    {% when "C" %}
+    {% assign extension = ".c" %}
+    {% when "R" %}
+    {% assign extension = ".R" %}
+    {% when "C#" %}
+    {% assign extension = ".cs" %}
+    {% when "Swift" %}
+    {% assign extension = ".swift" %}
+    {% when "Python" %}
+    {% assign extension = ".py" %}
+    {% when "Scala" %}
+    {% assign extension = ".sc lub .scala" %}
+    {% when "Kotlin" %}
+    {% assign extension = ".kt lub .kts" %}
+    {% when "Groovy" %}
+    {% assign extension = ".groovy" %}
+    {% when "Rust" %}
+    {% assign extension = ".rs lub .rlib" %}
+    {% when "Go" %}
+    {% assign extension = ".go" %}
+{% endcase %}
+
+
+<p class="text-center text-muted">
+    Przykładowa implementacja wyszukiwania binarnego:
+</p>
+
+{% assign lang = include.lang | downcase %}
+
+{% assign example = site.data.code_examples[lang] %}
+
+<div class="code-example">
+    <div class="code-example-header">BinarySearch{{ extension }}</div>
+    <pre><code class="language-{{ include.lang }}">{{ example | escape }}</code></pre>
+</div>

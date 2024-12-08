@@ -6,7 +6,8 @@ permalink: /technologie/c/
 image: c.png
 ---
 
-{% assign stats = site.data.statistics.statistics.C %}
+{% assign lang = "C" %}
+{% assign stats = site.data.statistics.statistics[lang] %}
 
 # Zastosowanie
 
@@ -33,6 +34,10 @@ C jest statycznie typowany, co oznacza, że dla każdej zmiennej musimy nadać t
 Może się wydawać, że C zmusza nas do robienia rzeczy, które inne języki robią za nas — to prawda, ale to dlatego, że C stawia na wydajność. To ma też swoje plusy – taki wymóg pomoże nam lepiej zrozumieć jak program zarządza pamięcią i dlaczego jest to tak ważne.
 
 Chcąc pisać w C oprogramowanie systemowe, przydatna może się okazać dobra znajomość architektury komputera oraz podstaw systemów operacyjnych. Niewątpliwie przydatna jest również znajomość bibliotek systemowych, a także umiejętność czytania ich dokumentacji.
+
+# Składnia
+
+{% include language/code-example.html lang=lang%}
 
 # Statystyki
 

@@ -7,7 +7,8 @@ image: groovy.png
 no-books: true
 ---
 
-{% assign stats = site.data.statistics.statistics.Groovy %}
+{% assign lang = "Groovy" %}
+{% assign stats = site.data.statistics.statistics[lang] %}
 
 # Zastosowanie
 
@@ -54,6 +55,10 @@ Groovy posiada wszystkie funkcję wysokopoziomowego języka m.in. nie musimy si�
 
 Ogólnie Groovy jest językiem relatywnie łatwym do nauki, szczególnie dla osoby, która jest już zaznajomiona z Javą -
 wtedy przejście jest naprawdę płynne.
+
+# Składnia
+
+{% include language/code-example.html lang=lang%}
 
 # Statystyki
 

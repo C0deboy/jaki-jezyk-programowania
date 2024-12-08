@@ -1,11 +1,5 @@
 @use 'courses.scss';
 
-html,
-body {
-  color: white;
-  background: #f8f8f8;
-}
-
 @media (max-width: 768px) {
   html,
   body {
@@ -26,7 +20,7 @@ section {
 
 .language-content {
   width: 100%;
-  background-color: #003e48;
+  background-color: #01292f;
   box-shadow: 0 2px 2px 0 black;
   padding: 60px 5% 40px;
 
@@ -63,7 +57,7 @@ section {
 
 .language-content {
   .language-logo {
-    background: linear-gradient(#f8f8f8, #c2c2c2);
+    background: linear-gradient(#d9d9d9, #c2c2c2);
     border: 1px solid black;
     border-radius: 50%;
     box-shadow: 1px 2px 4px 0 #000;
@@ -142,10 +136,10 @@ section {
   clear: both;
   box-shadow: 0 1px 2px 0 #000;
   color: #3b3b3b;
-  background: -webkit-linear-gradient(#f8f8f8,
+  background: -webkit-linear-gradient(#d9d9d9,
           #bbb);
   border-radius: 3px;
-  background: linear-gradient(#f8f8f8,
+  background: linear-gradient(#d9d9d9,
           #bbb);
   display: inline-block;
   padding: 2px 10px 0;
@@ -439,4 +433,26 @@ section {
   margin-right: 10px;
   display: inline;
   float: left;
+}
+
+.code-example {
+  text-align: left;
+  background: #30353a;
+  border-radius: 5px;
+
+  pre {
+    padding: 10px 20px;
+  }
+
+  .code-example-header {
+    padding: 5px 7px;
+    background: #d9d9d9;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #1e1e1e;
+  }
+
+  .hljs {
+    text-wrap: auto;
+  }
 }

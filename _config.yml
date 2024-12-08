@@ -16,7 +16,9 @@ exclude: [
   "package-lock.json",
   "src",
   ".idea",
-  ".gitattributes"
+  ".gitattributes",
+  "_data/statistics/old"
+
 ]
 include: [ "_pages" ]
 plugins: [ rouge, jekyll-last-modified-at ]

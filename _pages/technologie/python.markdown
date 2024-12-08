@@ -6,7 +6,8 @@ permalink: /technologie/python/
 image: python.png
 ---
 
-{% assign stats = site.data.statistics.statistics.Python %}
+{% assign lang = "Python" %}
+{% assign stats = site.data.statistics.statistics[lang] %}
 
 # Zastosowanie
 
@@ -46,6 +47,10 @@ początkujących, przez co mogą skupić się na nauce właściwego programowani
 mylący, gdyż czytający go programista i kompilator mogą go różnie zinterpretować.
 
 Python jest często polecany dla osób, które chcą rozpocząć przygodę z programowaniem ze względu na niski próg wejścia.
+
+# Składnia
+
+{% include language/code-example.html lang=lang%}
 
 # Statystyki
 

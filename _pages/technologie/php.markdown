@@ -6,7 +6,8 @@ permalink: /technologie/php/
 image: php.png
 ---
 
-{% assign stats = site.data.statistics.statistics.PHP %}
+{% assign lang = "PHP" %}
+{% assign stats = site.data.statistics.statistics[lang] %}
 
 # Zastosowanie
 
@@ -52,6 +53,10 @@ wiele niespójności i błędów, więc jest bardziej przyjazna dla początkują
 PHP wraz ze wzrostem aplikacji może być trudniejszy do utrzymania i namierzania błędów, jako że brak w nim statycznego
 typowania. Jednak jeśli nauczymy się jak prowadzić porządek w kodzie i pisać testy, to utrzymanie spójnego kodu stanie
 się łatwiejsze.
+
+# Składnia
+
+{% include language/code-example.html lang=lang%}
 
 # Statystyki
 

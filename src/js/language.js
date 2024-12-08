@@ -1,5 +1,7 @@
 require('../css/language.scss');
 require('./courses');
+import hljs from 'highlight.js';
+hljs.highlightAll();
 
 const books = document.querySelectorAll('.book');
 

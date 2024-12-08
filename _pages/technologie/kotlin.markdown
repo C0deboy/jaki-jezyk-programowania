@@ -7,7 +7,8 @@ image: kotlin.png
 no-books: false
 ---
 
-{% assign stats = site.data.statistics.statistics.Kotlin %}
+{% assign lang = "Kotlin" %}
+{% assign stats = site.data.statistics.statistics[lang] %}
 
 # Zastosowanie
 
@@ -40,6 +41,10 @@ Kotlin wprowadza wiele udogodnień i w porównaniu do Javy jest dużo bardziej p
 Dlatego warto znać Javę przed Kotlinem - jest to najlepsza droga. Wtedy przejście na Kotlin jest bardzo płynne, relatywnie łatwe i co najważniejsze — wiemy jak to wszystko działa pod spodem, więc nie jest to dla nas żadną magią. Jest to dobra ścieżka nauki, ale nie stoi nic na przeszkodzie, żeby zacząć od razu od Kotlina.
 
 Z drugiej strony w Kotlinie mamy wbudowane *null safety*, więc napotkamy na mniej ciężkich problemów związanych z NullPointerException, i kilka innych udogodnień, których z pewnością będzie nam brakowało w Javie.
+
+# Składnia
+
+{% include language/code-example.html lang=lang%}
 
 # Statystyki
 

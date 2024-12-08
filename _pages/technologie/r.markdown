@@ -6,7 +6,8 @@ permalink: /technologie/r/
 image: r.png
 ---
 
-{% assign stats = site.data.statistics.statistics.R %}
+{% assign lang = "R" %}
+{% assign stats = site.data.statistics.statistics[lang] %}
 
 # Zastosowanie
 
@@ -41,6 +42,10 @@ dużej mierze polega na zewnętrznych bibliotekach.
 
 Z drugiej strony, jeśli masz już trochę doświadczenia z innym językiem programowania,
 to [Python](/technologie/python) może być dla Ciebie bardziej przyjazny.
+
+# Składnia
+
+{% include language/code-example.html lang=lang%}
 
 # Statystyki
 

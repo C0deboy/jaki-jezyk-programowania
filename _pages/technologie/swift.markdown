@@ -6,7 +6,8 @@ permalink: /technologie/swift/
 image: swift.png
 ---
 
-{% assign stats = site.data.statistics.statistics.Swift %}
+{% assign lang = "Swift" %}
+{% assign stats = site.data.statistics.statistics[lang] %}
 
 # Zastosowanie
 
@@ -25,6 +26,10 @@ Nie musimy deklarować typów przy inicjalizacji zmiennych. Jest też elastyczny
 Swift zajmuje się za nas także zarządzaniem pamięcią.
 
 Ogólnie rzecz biorąc, Swift jest przyjazny dla początkujących programistów.
+
+# Składnia
+
+{% include language/code-example.html lang=lang%}
 
 # Statystyki
 

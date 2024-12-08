@@ -1,11 +1,12 @@
 // SCSS
-require('../../css/global/global.scss');
+import '../../css/global/global.scss';
 
 // POLYFILLS
-require('./forEachPolyfill');
-require('./parentElementAppendPolyfill');
+import './forEachPolyfill';
+import './parentElementAppendPolyfill';
 
 // CUSTOM
-require('./nav');
-require('./tooltips');
-require('../technologies-list');
+import './nav';
+import './tooltips';
+import '../technologies-list';
+import './highlight';
