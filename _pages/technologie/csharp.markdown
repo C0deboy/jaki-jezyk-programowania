@@ -11,36 +11,32 @@ image: csharp.png
 
 # Zastosowanie
 
-**C#** jest wysokopoziomowym, obiektowym językiem programowania ogólnego przeznaczenia, który jest odpowiedzią
-Microsoftu na Jave. **C#** jest ścisłe zintegrowany z platformą .NET, która jest zarówno frameworkiem jak i środowiskiem
-uruchomieniowym.
+**C#** (czytane jako "C-sharp") to wszechstronny, wysokopoziomowy język programowania ogólnego przeznaczenia opracowany przez Microsoft. Jest ściśle powiązany z platformą **.NET**, co czyni go idealnym wyborem do tworzenia aplikacji na różnorodne platformy, takie jak Windows, Linux, macOS, a nawet urządzenia mobilne.
 
-**C#** był stworzony i jest najczęściej stosowany do pisania aplikacji na systemy Windows, ale odkąd .NET framework
-trafił na systemy Linux i Mac możliwe jest tworzenie natywnego oprogramowania w tym języku praktycznie na każdą
-platformę.
+**C#** znajduje zastosowanie w:
+- **Tworzeniu aplikacji desktopowych** z użyciem bibliotek takich jak **Windows Forms** i **WPF**.
+- **Aplikacjach webowych** dzięki frameworkowi **ASP.NET**.
+- **Grach komputerowych i mobilnych** – jako główny język w silniku [Unity](/technologie/unity/), pozwalając na tworzenie gier na PC, konsole, urządzenia mobilne, a także platformy VR.
+- **Rozwiązaniach chmurowych** z wykorzystaniem Microsoft Azure.
+- **Automatyzacji zadań i aplikacjach IoT**.
 
-Ponadto, **C#** używany jest do tworzenia aplikacji webowych po stronie serwera za pomocą frameworka ASP.NET. Dzięki
-narzędziom takim jak Xamarin możliwe jest tworzenie wieloplatformowych aplikacji mobilnych. Co więcej, **C#**
-wykorzystywany jest w popularnym silniku [Unity](/technologie/unity/), za pomocą, którego można tworzyć gry na
-PC, konsole, urządzenia mobilne czy strony internetowe, a nawet platformy VR (Virtual Reality).
-
-Jest to zatem wieloplatformowy język programowania wykorzystywany w wielu dziedzinach.
-
-**C#** napędza m.in. stronę StackOverflow czy gry takie jak Terraria, Magicka, Bastion.
+Przykłady stron i aplikacji korzystających z **C#** to m.in.:
+- **Unity** – Najbardziej rozpoznawalny silnik do tworzenia gier, który używa C# jako głównego języka do skryptowania.
+- **Visual Studio** – Środowisko IDE od Microsoftu, opracowane w dużej mierze w C# i służące do tworzenia aplikacji w wielu językach, w tym także w samym C#
+- **StackOverflow** – Strona internetowa dla programistów.
+- **Bing** –  Wyszukiwarka Microsoftu
+- **Microsoft Teams** – Komunikator i platforma współpracy zespołowej 
 
 {% include language/top10github.html %}
 
 # Poziom skomplikowania
 
-**C#** jest relatywnie łatwy do nauki. Dla osób, które miały kontakt z takimi językami jak Java, składnia będzie bardzo
-znajoma. Semantyka jest nieco przyjaźniejsza od tej w C++.
+**C#** jest znany ze swojej przystępności, szczególnie dla programistów, którzy mieli wcześniej kontakt z językami takimi jak **Java** czy **C++**.
+- **Silne typowanie** w **C#** zapewnia jednoznaczność kodu i ułatwia debugowanie, ale wymaga deklaracji typów danych, co zwiększa dokładność kodu.
+- **Zaawansowane funkcje**, takie jak **async/await**, **pattern matching** czy **record types**, czynią język nowoczesnym i wydajnym.
+- **Proste zarządzanie pamięcią** dzięki garbage collectorowi pozwala skupić się na logice programu.
 
-Podobnie jak w Javie nie musimy też zarządzać pamięcią i proces tworzenia oprogramowania jest dużo szybszy.
-
-Jest także językiem silnie typowanym, co oznacza, że każda zmienna musi mieć zadeklarowany przechowywany typ danych, a
-program zwróci błąd i zapobiegnie kompilacji, jeżeli będzie się coś nie zgadzać, w przeciwieństwie do języka słabo
-typowanego, który nie wygeneruje błędu i zwróci nieprzewidywany wynik. Wadą tego rozwiązania jest tylko to, że musimy
-zadeklarować więcej informacji dla programu, ale dzięki temu jest bardziej jednoznaczny i łatwiej wychwycić błędy.
+Dla początkujących zaletą jest również dostępność darmowych narzędzi, takich jak **Visual Studio**, które oferuje intuicyjne środowisko do nauki.
 
 # Składnia
 
@@ -60,19 +56,15 @@ zadeklarować więcej informacji dla programu, ale dzięki temu jest bardziej je
 
 {% include language/see_all_stats.html %}
 
-Duża popularność silnika Unity (który może się pochwalić tym, że 34% najpopularniejszych gier mobilnych powstało w tym
-silniku) wpływa także pozytywnie na rozgłos **C#**.
+**C#** zawdzięcza swoją popularność m.in. sukcesowi Unity
 
 # Przyszłość języka
 
 {% assign versions = site.data.statistics.languagesVersions %}
 
-**C#** jest cały czas rozwijany przez Microsoft, który nie zamierza kończyć dla niego wsparcia. Jego ostatnia wersja {{
-versions.Csharp.version }} została wydana {{ versions.Csharp.releaseDate }}. Silnik [Unity](/technologie/unity)
-nadal jest rozwijany i ulepszany, więc jest to dobry wybór dla osób zainteresowanych tworzeniem gier. Dodatkowym plusem
-jest to, że umożliwia pisanie oprogramowania na platformy VR (Virtual Reality), a ta technologia staję się coraz
-bardziej popularna. Na stronie Unity można zobaczyć szacowane dane, które mówią, że 90% gier VR na Samsung Gear, a 53%
-na Oculus Rift zostało stworzonych w [Unity](/technologie/unity).
+**C#** to język przyszłościowy, dzięki ciągłemu wsparciu i rozwojowi prowadzonemu przez Microsoft. Platforma **.NET**, której częścią jest **C#**, stale się rozwija, a jej najnowsze wersje skupiają się na wieloplatformowości oraz wydajności.
+
+Ostatnia wersja **C#** ({{ versions.Csharp.version }}) została wydana {{ versions.Csharp.releaseDate }}. Przykładem dynamicznego rozwoju jest także sukces silnika [Unity](/technologie/unity), który wspiera technologię VR, co czyni **C#** kluczowym językiem w branży gier i aplikacji interaktywnych.
 
 {% include courses.html %}
 

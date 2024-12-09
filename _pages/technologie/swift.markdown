@@ -11,21 +11,35 @@ image: swift.png
 
 # Zastosowanie
 
-Swift jest językiem programowania ogólnego zastosowania stworzonym przez Apple w 2014 roku, więc jest całkiem świeży. Jest następcą Objective-C. Apple obniżyło barierę wejścia dla programistów. Nowy język jest tym, do czego przyzwyczajeni są młodsi programiści, z wysokopoziomowymi strukturami wbudowanymi w język i wieloma ułatwieniami.
+**Swift** to nowoczesny język programowania ogólnego przeznaczenia, stworzony przez Apple w 2014 roku jako następca **Objective-C**. Jego głównym celem było uproszczenie procesu tworzenia aplikacji oraz zwiększenie ich wydajności i bezpieczeństwa. Swift jest językiem open-source, co pozwala na jego rozwój również poza ekosystemem Apple.
 
-Służy głównie do tworzenia aplikacji na iOS i Mac OS.
+Swift jest szeroko stosowany do tworzenia aplikacji na platformy Apple, w tym **iOS**, **macOS**, **watchOS**, oraz **tvOS**. Dzięki swojej wysokiej wydajności oraz intuicyjnej składni znajduje również zastosowanie w projektach serwerowych, np. z wykorzystaniem frameworka **Vapor**.
+
+Najczęstsze zastosowania Swifta to:
+- **Aplikacje mobilne** na iPhone’y i iPady,
+- **Aplikacje desktopowe** dla macOS,
+- **Rozwiązania serwerowe**,
+- **Prototypy aplikacji** dzięki jego szybkiemu feedbackowi w czasie rzeczywistym (np. w Xcode).
+
+Kilka znanych aplikacji w wersjach na iOS zbudowanych w Swift:
+- **LinkedIn**,
+- **Airbnb**,
+- **Twitter**,
+- **WhatsApp**.
 
 {% include language/top10github.html %}
 
 # Poziom skomplikowania
 
-Swift został zaprojektowany tak, aby był bardziej odporny na błędy oraz bardziej zwięzły niż jego poprzednik Objective-C. Swift wzorował się na prostocie takich języków jak Python czy Ruby, więc jest przyjazny dla młodych programistów. Jego kod można czytać jak zwykły tekst po angielsku.
+**Swift** został zaprojektowany z myślą o prostocie, intuicyjności i bezpieczeństwie. Jego składnia przypomina języki takie jak **Python** czy **Ruby**, co czyni go łatwiejszym do nauki dla początkujących programistów.
 
-Nie musimy deklarować typów przy inicjalizacji zmiennych. Jest też elastyczny, jeśli chodzi o typy, np. metoda może zwracać wiele typów wartości równocześnie, co nie jest możliwe w takich językach jak Java, C# czy C++.
+Cechy upraszczające pracę z językiem Swift:
+- **Automatyczne zarządzanie pamięcią** – dzięki mechanizmowi ARC (Automatic Reference Counting).
+- **Bezpieczeństwo typów** – zmniejsza ryzyko błędów w czasie kompilacji.
+- **Optionals** – pozwalają unikać błędów związanych z pustymi wartościami (null).
+- **Zwięzłość kodu** – umożliwia tworzenie czytelnego kodu, który przypomina język naturalny.
 
-Swift zajmuje się za nas także zarządzaniem pamięcią.
-
-Ogólnie rzecz biorąc, Swift jest przyjazny dla początkujących programistów.
+Ogólnie, Swift jest językiem przyjaznym dla początkujących, a dzięki dobrze zaprojektowanemu środowisku **Xcode**, nauka tworzenia aplikacji na platformy Apple jest jeszcze łatwiejsza.
 
 # Składnia
 
@@ -49,7 +63,11 @@ Ogólnie rzecz biorąc, Swift jest przyjazny dla początkujących programistów.
 
 {% assign versions = site.data.statistics.languagesVersions %}
 
-Swift dopiero się rozwija, ale udaje mu się wyprzeć Objective-C. Dlatego zapotrzebowanie na programistów Swift będzie się z roku na rok zwiększać. Swift jest jednym z najszybciej rozwijającym się języków. Jego przyszłość głównie zależy od Apple, która wydaję się całkiem przejrzysta. Ma wszystko to, co nowoczesny język programowania powinien mieć i ma potencjał na konkurowanie z najlepszymi. Jego ostatnia wersja {{ versions.Swift.version }} została wydana {{ versions.Swift.releaseDate }}.
+**Swift** jest jednym z najszybciej rozwijających się języków programowania. Jego wprowadzenie pozwoliło Apple znacząco uprościć i unowocześnić proces tworzenia aplikacji. W miarę jak rozwijają się platformy Apple oraz technologie z nimi związane, Swift będzie zyskiwał na znaczeniu.
+
+Apple regularnie wspiera i rozwija Swifta. Jego ostatnia wersja ({{ versions.Swift.version }}) została wydana {{ versions.Swift.releaseDate }}, co świadczy o jego stabilnym rozwoju i długoterminowej przyszłości.
+
+W najbliższych latach zapotrzebowanie na programistów Swift będzie stale rosnąć, zwłaszcza w branży mobilnej i ekosystemie Apple.
 
 {% include courses.html %}
 
