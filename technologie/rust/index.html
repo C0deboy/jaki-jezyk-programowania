@@ -96,7 +96,7 @@
       <div class="col-sm-12 col-lg-6 col-header">
         <h2 class="lang-starter-heading">Rust</h2>
 
-        <div class="up-to-date">Aktualizacja: 08.12.2024</div>
+        <div class="up-to-date">Aktualizacja: 10.12.2024</div>
         
         <p style="margin: 25px 0 0 0; text-align: center">Zobacz polecane:</p>
         
@@ -115,19 +115,24 @@
     
 <h1 id="zastosowanie">Zastosowanie</h1>
 
-<p><strong>Rust</strong> jest relatywnie świeżym, wieloparadygmatowym językiem programowania obecnie rozwijanym przez Mozillę. Został zaprojektowany by być bezpiecznym, szczególnie pod względem współbieżności. Rust składniowo jest podobny do C++. Oferuje automatyczne zarządzanie pamięcią, jednak w odróżnieniu do typowych rozwiązań, robi to bez garbage collectora, co wpływa na utrzymanie wysokiej wydajności.</p>
+<p><strong>Rust</strong> jest relatywnie młodym, wieloparadygmatowym językiem programowania, rozwijanym przez społeczność z początkowym wsparciem Mozilli. Został zaprojektowany, aby zapewnić wysoki poziom bezpieczeństwa, szczególnie w kontekście zarządzania pamięcią i współbieżności, bez poświęcania wydajności.</p>
 
-<p>Rust jest porównywalny często do C/C++ zarówno pod względem zastosowania jak i wydajności. Jest on więc najczęściej wykorzystywany w obszarach, gdzie wydajność jest krytycznym aspektem.</p>
-
-<p>Rust ma już wiele zastosowań komercyjnych, całą listę można zobaczyć tu <a href="https://www.rust-lang.org/production/users">Rust - production users</a>.</p>
-
-<p>Wykorzystują go między innymi:</p>
+<p>Rust jest często wybierany w projektach, gdzie wydajność jest krytyczna, takich jak:</p>
 <ul>
-  <li>Mozilla</li>
-  <li>Dropbox</li>
-  <li>npm</li>
-  <li>Cloudflare</li>
-  <li>OVH</li>
+  <li>tworzenie systemów operacyjnych,</li>
+  <li>programowanie systemowe,</li>
+  <li>wysokowydajne aplikacje serwerowe,</li>
+  <li>aplikacje osadzone (<em>embedded</em>),</li>
+  <li>gry komputerowe.</li>
+</ul>
+
+<p><strong>Przykłady zastosowań:</strong></p>
+<ul>
+  <li>Mozilla (silnik przeglądarki Firefox – Servo),</li>
+  <li>Dropbox (zarządzanie infrastrukturą pamięci masowej),</li>
+  <li>npm (reimplementacja narzędzi CLI),</li>
+  <li>Cloudflare (optymalizacja usług serwerowych),</li>
+  <li>Discord (poprawa wydajności backendu).</li>
 </ul>
 
 <h2>Top 10 projektów na Github wykorzystujących Rust</h2>
@@ -200,8 +205,25 @@
 
 <h1 id="poziom-skomplikowania">Poziom skomplikowania</h1>
 
-<p>Rust podobnie jak inne bardziej niskopoziomowe języki takie jak C++, ma nieco większy próg wejścia od tych z wyższym poziomem abstrakcji.
-Nie jest to najłatwiejszy język na początek, ale też taka jest jego specyfika zastosowania.</p>
+<p>Rust jest językiem, który bywa uznawany za trudniejszy do nauki, głównie z powodu specyficznych wymagań związanych z zarządzaniem pamięcią i braku automatycznego garbage collectora. Kluczowymi aspektami są:</p>
+<ul>
+  <li>system ownership (własności danych),</li>
+  <li>mechanizmy borrowing i lending.</li>
+</ul>
+
+<p>Mimo to, narzędzia, takie jak zaawansowany kompilator Rust, oferują szczegółowe i pomocne komunikaty o błędach, które znacząco ułatwiają naukę i codzienną pracę z tym językiem.</p>
+
+<p>System zarządzania pamięcią w Rust nie opiera się na garbage collectorze, lecz na unikalnym mechanizmie, który zapewnia pełną kontrolę nad zasobami. Dzięki temu Rust jest idealnym wyborem do tworzenia aplikacji, w których wydajność jest kluczowa.</p>
+
+<p>Choć Rust może być trudny dla nowicjuszy, osoby mające doświadczenie w C lub C++ szybko odnajdą się w jego składni. Dodatkowo język oferuje mechanizmy, które pomagają minimalizować ryzyko błędów, takie jak:</p>
+
+<ul>
+  <li>ownership system, który eliminujący wycieki pamięci,</li>
+  <li>mechanizmy zapewniające bezpieczeństwo operacji współbieżnych,</li>
+  <li>wbudowane narzędzia wspierające dobre praktyki kodowania.</li>
+</ul>
+
+<p>Chociaż nauka Rust może być wyzwaniem na początku, język ten wynagradza wysiłek doskonałą wydajnością oraz zapewnieniem bezpieczeństwa kodu.</p>
 
 <h1 id="składnia">Składnia</h1>
 
@@ -271,9 +293,13 @@ fn main() {
     </a>
 </div>
 
+<p>Społeczność Rust jest jedną z najszybciej rozwijających się i najbardziej wspierających w branży. Dzięki aktywnym dyskusjom na forach, dokumentacji i otwartemu podejściu do rozwoju, użytkownicy mogą liczyć na szybkie wsparcie i łatwy dostęp do zasobów edukacyjnych.</p>
+
 <h1 id="przyszłość-języka">Przyszłość języka</h1>
 
-<p>Według ankiety przeprowadzonej przez StackOverflow Rust był najbardziej polubionym językiem wśród programistów <strong>3 lata z rzędu</strong> - w 2016, 2017 i 2018. Oznacza to, że ten język programowania ma naprawdę dobry potencjał. Dodatkowym plusem jest to, że jest rozwijany przez Mozillę. Jego popularność cały czas rośnie i jest całkiem możliwe, że Rust w ciągu kilku najbliższych lat będzie wysoce pożądany. Jest on stale rozwijany, a jego ostatnia wersja 1.83.0 została wydana 28 listopada 2024.</p>
+<p>Rust zdobywa popularność jako język o wysokiej wydajności i bezpieczeństwie, co czyni go atrakcyjnym dla programistów i firm. Według ankiety StackOverflow, Rust przez wiele lat (m.in. 2016–2021) był uznawany za najbardziej lubiany język przez programistów. Jego rozwój jest dynamiczny, a społeczność aktywnie pracuje nad ulepszaniem języka i jego ekosystemu.</p>
+
+<p>Ostatnia wersja Rust, 1.83.0, została wydana 28 listopada 2024 i przyniosła szereg ulepszeń zwiększających wydajność i wygodę programowania. Dzięki szerokiemu zastosowaniu w programowaniu systemowym i rosnącej adaptacji w innych dziedzinach (np. blockchain), Rust ma szansę na dalszy wzrost znaczenia w branży IT.</p>
 
 <div class="courses">
   <h1 id="najlepsze-kursy-video-do-nauki-rust">

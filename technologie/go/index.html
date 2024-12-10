@@ -102,7 +102,7 @@
       <div class="col-sm-12 col-lg-6 col-header">
         <h2 class="lang-starter-heading">Go</h2>
 
-        <div class="up-to-date">Aktualizacja: 08.12.2024</div>
+        <div class="up-to-date">Aktualizacja: 10.12.2024</div>
         
         <p style="margin: 25px 0 0 0; text-align: center">Zobacz polecane:</p>
         
@@ -125,26 +125,30 @@
     
 <h1 id="zastosowanie">Zastosowanie</h1>
 
-<p>Go to relatywnie nowy, statycznie typowany język programowania od Google. Go został zaprojektowany tak, by umożliwić wysokowydajne i łatwe programowanie współbieżne.</p>
+<p><strong>Go</strong> (często nazywany <strong>Golang</strong>) to stosunkowo nowy, statycznie typowany język programowania opracowany przez Google w 2009 roku. Został zaprojektowany z myślą o prostocie, wydajności oraz łatwości tworzenia współbieżnych aplikacji. Dzięki tym cechom <strong>Go</strong> idealnie nadaje się do:</p>
 
-<p>W przypadku mikrousług wąskim gardłem nie jest moc obliczeniowa, a przepustowość i komunikacja między komponentami. W Go zarządzanie komunikacją wbudowane jest w sam język, co powoduje, że tego typu projekty znacznie łatwiej jest skalować.</p>
-
-<p>Dzięki tym zaletom doskonale nadaję się do tworzenia aplikacji natywnych w chmurze (<em>native cloud application</em> (NCA)), mikroserwisów czy systemów rozproszonych (ang. <em>distributed systems</em>).</p>
-
-<p>Zaletą Go jest również szybka kompilacja, która zazwyczaj daję nam gotową do uruchomienia binarkę, więc deployowanie aplikacji czy pisanie skryptów w Go jest naprawdę proste i szybkie.</p>
-
-<p>Go jest wykorzystywany przez wiele dużych firm m.in.:</p>
 <ul>
-  <li>CloudFlare</li>
-  <li>Dropbox</li>
-  <li>Google</li>
-  <li>Netflix</li>
-  <li>SoundCloud</li>
-  <li>Twitch.tv</li>
-  <li>Uber</li>
+  <li>Budowy aplikacji natywnych w chmurze (<em>cloud-native applications</em>),</li>
+  <li>Tworzenia mikroserwisów,</li>
+  <li>Projektowania systemów rozproszonych,</li>
+  <li>Programowania narzędzi infrastrukturalnych (np. CLI, serwerów HTTP, narzędzi DevOps),</li>
+  <li>Pisania wysokowydajnych backendów dla aplikacji webowych.</li>
 </ul>
 
-<p>Większą listę aplikacji i firm wykorzystujących Go można zobaczyć tu <a href="https://en.wikipedia.org/wiki/Go_(programming_language)#Applications">Go - Aplikacje</a></p>
+<p>Jego architektura wspiera współbieżność poprzez lekkie wątki zwane gorutynami oraz mechanizm komunikacji poprzez kanały, co znacząco ułatwia skalowanie aplikacji. Dodatkowo, szybka kompilacja dostarczająca jednoplikowe binarki znacznie przyspiesza proces wdrażania.</p>
+
+<p><strong>Go</strong> znajduje zastosowanie w wielu globalnych firmach technologicznych, w tym:</p>
+<ul>
+  <li><strong>Cloudflare</strong>: narzędzia sieciowe,</li>
+  <li><strong>Dropbox</strong>: backendy przechowywania danych,</li>
+  <li><strong>Google</strong>: wewnętrzne narzędzia i systemy,</li>
+  <li><strong>Netflix</strong>: usługi strumieniowe,</li>
+  <li><strong>SoundCloud</strong>: zarządzanie zasobami muzycznymi,</li>
+  <li><strong>Twitch.tv</strong>: infrastruktura strumieniowa,</li>
+  <li><strong>Uber</strong>: usługi backendowe.</li>
+</ul>
+
+<p>Więcej przykładów i szczegółową listę zastosowań znajdziesz w artykule na <a href="https://en.wikipedia.org/wiki/Go_(programming_language)#Applications">Wikipedii</a>.</p>
 
 <h2>Top 10 projektów na Github wykorzystujących Go</h2>
 
@@ -216,28 +220,33 @@
 
 <h1 id="poziom-skomplikowania">Poziom skomplikowania</h1>
 
-<p>Go posiada wiele zautomatyzowanych rozwiązań, które w innych językach muszą zostać zaprogramowane ręcznie przez twórcę.</p>
-
-<p>Go łączy w sobie łatwość pisania aplikacji charakterystyczną dla języków dynamicznych (np. Python), jak również wydajność języków kompilowanych (np. C, C++).
-Go w przeciwieństwie do np. Pythona ma typowanie statyczne, które w przypadku projektów zawierających tysiące linii kodu ma duże znaczenie dla czytelności i dalszego utrzymania projektu.</p>
-
-<p>Jak większość wysokopoziomowych języków jest <em>memory safe</em> i posiada <em>garbage colector</em>, więc nie trzeba się martwić zarządzaniem pamięcią.</p>
-
-<p>Język Go jednak nieco różni się od innych języków obiektowych:</p>
+<p><strong>Go</strong> został stworzony z myślą o uproszczeniu procesu programowania. Jego cechy sprawiają, że nauka i codzienna praca są wyjątkowo efektywne:</p>
 <ul>
-  <li>Nie ma klas</li>
-  <li>Nie ma dziedziczenia</li>
-  <li>Nie ma konstruktorów</li>
-  <li>Nie ma adnotacji</li>
-  <li>Nie ma generyków</li>
-  <li>Nie ma wyjątków</li>
+  <li><strong>Statyczne typowanie</strong> zwiększa czytelność i ułatwia debugowanie w dużych projektach,</li>
+  <li><strong>Garbage collector</strong> eliminuje konieczność ręcznego zarządzania pamięcią,</li>
+  <li><strong>Idiomatykę</strong> języka wspierają narzędzia wymuszające stosowanie dobrych praktyk, co redukuje ryzyko popełniania błędów - gofmt (automatyczny formater kodu) i golint (analityk dobrych praktyk) pilnują, aby kod był zgodny ze standardami Go.</li>
 </ul>
 
-<p>Jak widać, nie ma w nim wielu aspektów programowania obiektowego, co dla niektórych może się wydawać minusem, jednak pod względem nauki jest to na pewno uproszczenie.</p>
+<p>Czym jest idiomatyka?
+Idiomatyką nazywamy zestaw zasad, konwencji i wzorców charakterystycznych dla danego języka programowania, które pozwalają pisać kod w sposób zgodny z jego “filozofią”. Idiomatyczny kod w Go jest prosty, spójny i czytelny.</p>
 
-<p>Go jest idiomatyczny, tzn. często jest tylko jeden sposób na wykonanie danej rzeczy, co może być zarówno plusem, jak i minusem. Go ma także wbudowanych wiele mechanizmów, które wymuszają na programistach stosowanie się do dobrych praktyk. Jest to na pewno plusem dla początkujących, bo trudniej sobie strzelić w stopę. Dzięki takim rozwiązaniom czytelność i porządek w kodzie przestają zależeć od kultury programisty, a przesuwają się w stronę zasad konstrukcji języka.</p>
+<p>Narzędzia takie jak gofmt (automatyczny formater kodu) i golint (analityk dobrych praktyk) pilnują, aby kod był zgodny ze standardami Go. Dzięki temu:</p>
 
-<p>Dzięki tzw. gorutynom (ang. <em>goroutines</em>) i kanałom wbudowanym w Go, programowanie współbieżne jest dużo prostsze.</p>
+<ul>
+  <li>Kod wszystkich programistów w projekcie wygląda podobnie, niezależnie od indywidualnych preferencji.</li>
+  <li>Łatwiej unikać błędów wynikających z nieczytelnego lub niespójnego formatowania.</li>
+  <li>Nowi członkowie zespołu mogą łatwiej zrozumieć projekt, ponieważ kod zawsze wygląda zgodnie z tymi samymi regułami.</li>
+</ul>
+
+<p>Mimo że <strong>Go</strong> różni się od tradycyjnych języków obiektowych (np. brak dziedziczenia, klas, wyjątków czy generyków), takie uproszczenia sprawiają, że język jest bardziej przystępny. Go kładzie nacisk na przejrzystość kodu i minimalizm.</p>
+
+<p>Programowanie współbieżne w <strong>Go</strong> jest znacznie łatwiejsze niż w większości innych języków, dzięki:</p>
+<ul>
+  <li><strong>Gorutynom</strong> – lekkim wątkom zarządzanym przez runtime języka,</li>
+  <li><strong>Kanałom</strong> – prostemu modelowi komunikacji między gorutynami.</li>
+</ul>
+
+<p>Dla początkujących programistów <strong>Go</strong> to świetny wybór ze względu na prostotę, wsparcie w budowaniu dobrych praktyk i dużą społeczność.</p>
 
 <h1 id="składnia">Składnia</h1>
 
@@ -310,8 +319,9 @@ func main() {
 
 <h1 id="przyszłość-języka">Przyszłość języka</h1>
 
-<p>Popularność Go w ostatnich latach cały czas rośnie, a fakt, że został stworzony i jest rozwijany przez pracowników Google dobrze mu wróży.
-Jego ostatnia wersja 1.23.3 została wydana 6 listopada 2024. Wydaje się, że to dobry kandydat do nauki na najbliższe lata.</p>
+<p>Popularność <strong>Go</strong> stale rośnie, co wynika z zapotrzebowania na wydajne rozwiązania chmurowe oraz mikroserwisy. Wsparcie i rozwój ze strony Google zapewniają językowi stabilność i dalsze innowacje.</p>
+
+<p>Jego ostatnia wersja <strong>1.23.3</strong> została wydana <strong>6 listopada 2024</strong>, co świadczy o aktywności społeczności oraz twórców w rozwijaniu ekosystemu. Coraz większa liczba narzędzi opartych na Go (np. Docker, Kubernetes) potwierdza, że język ten zyska jeszcze większe znaczenie w przyszłości. Dla osób planujących naukę nowoczesnego języka, Go to doskonały wybór.</p>
 
 <div class="courses">
   <h1 id="najlepsze-kursy-video-do-nauki-go">
