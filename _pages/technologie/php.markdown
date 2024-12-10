@@ -58,9 +58,13 @@ Wraz z rozwojem projektów brak statycznego typowania może powodować problemy 
 PHP jest jednym z najczęściej używanych języków programowania w sieci. Szacuje się, że 75% stron internetowych działa na PHP, a WordPress – najpopularniejszy system zarządzania treścią – obsługuje około 40% z nich.
 
 {% include language/popularity.html %}
+
 {% include language/stackOverflow.html %}
+
 {% include language/github.html %}
+
 {% include language/meetup.html %}
+
 {% include language/see_all_stats.html %}
 
 # Przyszłość języka
@@ -72,4 +76,5 @@ Mimo że PHP nieco odstaje na tle konkurencji (bardziej nowoczesnych języków),
 Ostatnia wersja języka ({{ versions.PHP.version }}) została wydana {{ versions.PHP.releaseDate }}, co świadczy o ciągłym rozwoju. Popularność PHP wciąż jest wysoka, więc jest to nadal dobry wybór na przyszłość.
 
 {% include courses.html %}
+
 {% include books.html %}

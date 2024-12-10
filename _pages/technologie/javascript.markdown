@@ -69,3 +69,7 @@ często obecnym także w backendzie.
 
 Jego ostatnia wersja {{ versions.JavaScript.version }} została wydana {{ versions.JavaScript.releaseDate }}.
 To świetny wybór dla początkujących programistów chcących szybko zobaczyć efekty swojej pracy.
+
+{% include courses.html %}
+
+{% include books.html %}
