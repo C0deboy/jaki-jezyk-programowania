@@ -9,28 +9,16 @@ no-books: false
 {: .official-page .darker-overlay }
 [Poczytaj o {{ page.title }} na oficjalnej stronie](https://facebook.github.io/react/)
 
-**React** jest biblioteką dla [JavaScript](/technologie/javascript), która wykorzystywana jest do tworzenia
-interfejsów graficznych aplikacji internetowych. Za React odpowiedzialny jest m.in Facebook i Instagram.
+**React** to popularna biblioteka [JavaScript](/technologie/javascript) opracowana przez Facebook, używana do tworzenia interfejsów użytkownika, szczególnie w aplikacjach internetowych. Jedną z kluczowych cech jest **wirtualny DOM**, który pozwala na wydajne aktualizacje interfejsu dzięki porównywaniu zmian w pamięci i modyfikowaniu tylko niezbędnych elementów w rzeczywistym DOM.
 
-Z głównych cech wyróżniających bibliotekę React jest wirtualny DOM. React przechowuje cały DOM aplikacji w pamięci, po
-zmianie stanu wyszukuje różnice między wirtualnym i prawdziwym DOM i aktualizuje zmiany bez przeładowania strony. Drugą
-z cech szczególnych React jest język JSX. Jest on nakładką na JavaScript, która dodaje możliwość wstawiania kodu html (
-lub komponentów React) bezpośrednio w kodzie, zamiast ciągu znaków.
+React wykorzystuje **JSX**, czyli składnię umożliwiającą wstawianie elementów HTML bezpośrednio w kodzie JavaScript, co zwiększa czytelność i ułatwia tworzenie komponentów — samodzielnych bloków kodu, które można wielokrotnie używać. Komponenty mogą zarządzać własnym stanem, a dzięki hookom wprowadzonym w wersji 16.8 programiści mogą pisać bardziej zwięzły kod w komponentach funkcyjnych.
 
-React odpowiedzialny jest tylko za interfejsy aplikacji. Czyli w modelu MVC (Model-View-Controller) odpowiada tylko za
-część V (View). Może być więc używany z innymi bibliotekami czy framworkami JavaScript w MVC
-np. [Angular](/technologie/angular).
+React odpowiada wyłącznie za warstwę widoku w modelu MVC, co oznacza, że zajmuje się tylko prezentacją danych i interakcją z użytkownikiem. 
+Można go łatwo łączyć z innymi technologiami w celu budowy pełniejszych rozwiązań.
 
-**React** jest używany na stronach internetowych firm takich jak:
-
-- Netflix
-- Imgur
-- PayPal
-- Archive.org
-- Gamepedia
-- SeatGeek
-- Walmart
+Biblioteka React jest idealna do tworzenia dynamicznych i responsywnych aplikacji, zwłaszcza typu SPA (Single Page Applications). Dzięki wsparciu społeczności, bogatej dokumentacji oraz licznym narzędziom, React jest jednym z najczęściej wybieranych narzędzi do budowy nowoczesnych aplikacji internetowych.
 
 {% include courses.html %}
 
 {% include books.html %}
+

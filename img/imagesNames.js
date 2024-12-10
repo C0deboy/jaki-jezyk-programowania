@@ -31,7 +31,7 @@ const imagesNames = [
   'technologies/symfony.png',
   'technologies/typescript.png',
   'technologies/unity.png',
-  'technologies/unrealengine4.png',
+  'technologies/unrealengine.png',
   'technologies/vue.png',
   'technologies/wordpress.png',
   'wizard/aaa.png',

@@ -39,7 +39,7 @@ Ruby jest uważany za jeden z najbardziej przystępnych języków dla początkuj
 - Ruby automatycznie zarządza pamięcią (garbage collector), co eliminuje konieczność ręcznego dbania o zasoby.
 - Bogaty ekosystem bibliotek i frameworków wspiera szybkie prototypowanie i rozwój projektów.
 
-Dzięki swojemu intuicyjnemu podejściu, Ruby jest szczególnie polecany dla osób rozpoczynających przygodę z programowaniem.
+Dzięki swojemu intuicyjnemu podejściu Ruby jest szczególnie polecany dla osób rozpoczynających przygodę z programowaniem.
 
 # Składnia
 

@@ -9,27 +9,12 @@ no-books: true
 {: .official-page .darker-overlay }
 [Poczytaj o {{ page.title }} na oficjalnej stronie](https://nodejs.org/en/about/)
 
-**Node.js** jest wieloplatformowym środowiskiem uruchomieniowym [JavaScript](/technologie/javascript). Oznacza
-to, że za jego pomocą można uruchomić kod JavaScript bezpośrednio na komputerze, bez wykorzystania przeglądarki. Node.js
-został oparty o popularny [silnik JS, V8](https://developers.google.com/v8/) - używany chociażby w Google Chrome i
-zapewniający szybkie wykonanie kodu. Node.js sam w sobie nie jest serwerem, umożliwia jednak stworzenie własnego serwera
-HTTP lub innych usług sieciowych. Node.js daje również dostęp do systemu plików, metod pracy z plikami oraz innych
-narzędzi, dzięki którym możliwe jest wykonywanie wielu operacji w systemie operacyjnym. Co więcej,
-dzięki [globalnej bibliotece modułów npm](https://npmjs.com/), każdy może łatwo zainstalować niestandardowe moduły, aby
-rozszerzyć jego funkcjonalność, jak i również podzielić się ze światem własnymi.
+Node.js to wieloplatformowe środowisko uruchomieniowe dla języka [JavaScript](/technologie/javascript), umożliwiające wykonywanie kodu poza przeglądarką. Zbudowany na silniku [V8](https://v8.dev/) (stosowanym w Google Chrome), Node.js charakteryzuje się wysoką wydajnością i obsługą asynchronicznego programowania.
 
-Istnieje wiele poradników oraz przykładowych projektów, które pozwalają na przyjemną naukę oraz pisanie swoich
-pierwszych aplikacji. Node.js który w ostatnich latach zyskał bardzo na popularności, obecnie jest używany przez wielu
-gigantów, takich jak:
+Node.js wykorzystuje mechanizm Single-threaded Event Loop, który umożliwia współbieżne przetwarzanie zapytań przy użyciu pojedynczego wątku. Dzięki asynchronicznej obsłudze wejścia/wyjścia (I/O) jest doskonałym wyborem dla aplikacji wymagających wysokiej skalowalności, takich jak serwisy streamingowe, czaty czy systemy kolejkowania.
 
-- Yahoo
-- Netflix
-- Trello
-- LinkedIn
-- Uber
-- PayPal
-- Walmart
-- Groupon
-- Ebay
+Node.js pozwala na tworzenie własnych serwerów HTTP oraz innych usług sieciowych, a także umożliwia dostęp do systemu plików i funkcji operacyjnych systemu. Dużą zaletą Node.js jest system pakietów [npm](https://npmjs.com/), który jest największym repozytorium bibliotek open-source na świecie. Programiści mogą szybko korzystać z gotowych modułów lub publikować własne rozwiązania.
+
+W ostatnich latach Node.js zdobył ogromną popularność i jest używany przez wiele dużych firm, takich jak Netflix, LinkedIn, Uber czy PayPal. Jego wszechstronność sprawia, że jest doskonałym narzędziem zarówno do tworzenia prostych aplikacji, jak i rozbudowanych systemów backendowych.
 
 {% include courses.html %}

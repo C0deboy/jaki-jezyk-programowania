@@ -60,7 +60,7 @@ const imagesNames = [
   'swift.png',
   'undecided.png',
   'unity.png',
-  'unrealengine4.png',
+  'unrealengine.png',
   'virtualreality.png',
   'webdev.png',
   'webdev2.png',

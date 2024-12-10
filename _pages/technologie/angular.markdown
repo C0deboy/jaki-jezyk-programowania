@@ -6,27 +6,16 @@ permalink: /technologie/angular/
 ---
 
 {: .official-page .darker-overlay }
-[Poczytaj o {{ page.title }} na oficjalnej stronie](https://angular.io/docs)
+[Poczytaj o {{ page.title }} na oficjalnej stronie](https://angular.dev/overview)
 
-**Angular** to framework [JavaScript](/technologie/javascript) stworzony przez Google. Służy on do szybkiego i
-łatwego budowania aplikacji internetowych. Idealny do tworzenia tak zwanych
-– [Single Page Applications](https://en.wikipedia.org/wiki/Single-page_application).
+**Angular** to framework [JavaScript](/technologie/javascript) stworzony przez Google, który umożliwia szybkie i efektywne tworzenie aplikacji internetowych, w szczególności **Single Page Applications ([SPA](https://en.wikipedia.org/wiki/Single-page_application))**. Dzięki Angularowi można budować dynamiczne i interaktywne aplikacje, które działają w przeglądarce bez konieczności przeładowywania strony.
 
-**Angular** jest oparty o model MVW (Model – View – Whatever) - pozwala pogodzić idee JavaScript i modelu MVC. Framework
-ten rozszerza możliwości trad~~~~ycyjnego HTML-a do lepszej obsługi dynamicznych treści, co umożliwia automatyczną
-synchronizację pomiędzy modelem i widokiem. W ten sposób Angular ogranicza manipulacje w DOMie i ułatwia testowanie.
+Framework opiera się na architekturze **MVW (Model-View-Whatever)**, co pozwala na rozszerzenie tradycyjnego HTML-a o dynamiczne możliwości. Angular zapewnia **Two-Way Data Binding**, który automatycznie synchronizuje dane między modelem a widokiem. Dzięki temu ogranicza potrzebę ręcznego manipulowania DOM i znacząco ułatwia testowanie aplikacji.
 
-Popularne aplikacje, które wykorzystują Angular:
+Angular bazuje na **komponentach**, które umożliwiają modularne budowanie aplikacji, co zwiększa jej czytelność i ułatwia utrzymanie. Język **[TypeScript](/technologie/typescript/)**, będący integralną częścią Angulara, zapewnia typowanie oraz obsługę zaawansowanych struktur danych, co zwiększa niezawodność kodu.
 
-- YouTube na PS3
-- weather.com
-- netflix.com
-- istockphoto.com
-- Udemy
-- ProtonMail
-- Virgin Mobile
-- MetroLyrics
-- Genius
+Framework ten jest szeroko stosowany w projektach, które wymagają dużej interakcji z użytkownikiem oraz skalowalności. Popularne aplikacje/strony wykorzystujące Angular to np. YouTube, weather.com,
+Netflix czy Udemy
 
 {% include courses.html %}
 
