@@ -11,22 +11,15 @@ image: r.png
 
 # Zastosowanie
 
-**R** (R Project for Statistical Computing) jest jednocześnie językiem programowania, środowiskiem obliczeniowym oraz
-graficznym. Celem twórców było stworzenie platformy do obliczeń statystycznych, służącej do prezentowania danych w nowy
-sposób, oraz tworzenia ciekawych wizualizacji np. w postaci wykresów 3D.
+**R** (R Project for Statistical Computing) to język programowania, środowisko obliczeniowe oraz graficzne. Został zaprojektowany z myślą o obliczeniach statystycznych, wizualizacji danych oraz tworzeniu wykresów, w tym 3D.
 
-R jest zatem wykorzystywany w dziedzinach jak analiza danych i statystyka. W tych dziedzinach mocno rywalizuje z
-Pythonem, jednak nie zapowiada się, by go doścignął. Python to też język ogólnego zastosowania, dlatego jest częstszym
-wyborem programistów. R w głównej mierze ogranicza się do wąskiej dziedziny, jaką jest *data science*.
+Język R jest powszechnie wykorzystywany w dziedzinach takich jak analiza danych i statystyka. W tej roli rywalizuje z [Pythonem](/technologie/python), choć R pozostaje głównie narzędziem do pracy w obszarze *data science*, podczas gdy Python jest bardziej uniwersalnym językiem ogólnego zastosowania.
 
-R może też być wykorzystywany do *machine learning*, jednak tu [Python](/technologie/python) jest dużo częstszym
-wyborem.
+R bywa także wykorzystywany w *machine learning*, jednak w tej dziedzinie [Python](/technologie/python) jest zdecydowanie częstszym wyborem.
 
-R jest również podstawowym językiem programowania w bioinformatyce i biostatystyce, spopularyzowanym głównie dzięki
-stworzonemu przez Roberta Gentlemana repozytorium Bioconductor.
+W biotechnologii, bioinformatyce i biostatystyce R jest standardem, a narzędzie Bioconductor, stworzone przez Roberta Gentlemana, stało się kluczowe w tej dziedzinie.
 
-Dzięki swojemu przystosowaniu do obliczeń statystycznych został zaadaptowany przez wiele firm m.in.:
-
+Przykłady firm korzystających z R:
 - Facebook
 - Google
 - Twitter
@@ -36,12 +29,9 @@ Dzięki swojemu przystosowaniu do obliczeń statystycznych został zaadaptowany 
 
 # Poziom skomplikowania
 
-R nie jest najłatwiejszym językiem do nauki, ale mimo wszystko wizualizowanie danych jest o wiele łatwiejsze niż
-chociażby w Pythonie. Głównie ze względu na ogrom już wbudowanych funkcji obsługujących operacje statystyczne. Python w
-dużej mierze polega na zewnętrznych bibliotekach.
+R nie należy do najłatwiejszych języków programowania, ale oferuje silne wsparcie w zakresie wizualizacji danych, co czyni go bardzo przyjaznym w kontekście analizy danych. Posiada szeroką gamę wbudowanych funkcji do obliczeń statystycznych, co stanowi przewagę nad Pythonem, który w tej dziedzinie polega głównie na zewnętrznych bibliotekach.
 
-Z drugiej strony, jeśli masz już trochę doświadczenia z innym językiem programowania,
-to [Python](/technologie/python) może być dla Ciebie bardziej przyjazny.
+Jeśli jednak masz już doświadczenie z innym językiem programowania, [Python](/technologie/python) może okazać się bardziej intuicyjny i przyjazny do nauki.
 
 # Składnia
 
@@ -49,10 +39,7 @@ to [Python](/technologie/python) może być dla Ciebie bardziej przyjazny.
 
 # Statystyki
 
-W rankingach popularności R jest całkiem daleko, a wiąże się z tym, że społeczność tego języka jest znacznie mniejsza w
-stosunku do innych języków programowania, głównie ze względu na fakt, że R jest niszowym językiem. Mimo to, w ostatnich
-latach sporo podskoczył w rankingach popularności, a związane jest to ze wzrostem zainteresowanie w obrębie *data
-science*.
+R znajduje się dość daleko w rankingach popularności, co wynika z faktu, że jest językiem niszowym, skoncentrowanym na konkretnej dziedzinie. Niemniej, w ostatnich latach jego popularność wzrosła, szczególnie w kontekście *data science*.
 
 {% include language/popularity.html %}
 
@@ -68,10 +55,11 @@ science*.
 
 {% assign versions = site.data.statistics.languagesVersions %}
 
-Rosnące zainteresowanie w dziedzinach takich jak *data science* czy *big data* dobrze wróży językowi R,
-jednak [Python](/technologie/python) jest dla niego mocnym rywalem i często jest językiem pierwszego wyboru.
-Język R jest stale rozwijany, jego ostatnia wersja {{ versions.R.version }} została wydana {{ versions.R.releaseDate }}.
+Zwiększone zainteresowanie w dziedzinach takich jak *data science* czy *big data* daje językowi R dobrą perspektywę na przyszłość. Niemniej, Python pozostaje mocnym konkurentem i często jest preferowanym językiem pierwszego wyboru.
+
+R jest wciąż rozwijany, a jego ostatnia wersja {{ versions.R.version }} została wydana {{ versions.R.releaseDate }}.
 
 {% include courses.html %}
 
 {% include books.html %}
+
