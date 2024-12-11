@@ -141,13 +141,25 @@ h4 {
   background: #262626;
   border-radius: 3px;
   color: #ffffff;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   margin: 10px auto 10px auto;
   text-align: center;
   border: 0;
   padding: 3px 10px 0;
   box-shadow: 0 1px 2px 0 black;
   cursor: pointer;
+
+  img {
+    height: 25px;
+    width: 30px;
+    margin: 5px 8px 5px 0;
+  }
+
+  .fa {
+    margin-right: 6px;
+  }
 
   &.on-white {
     box-shadow: 0 1px 2px 0 #000;

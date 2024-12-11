@@ -21,12 +21,14 @@
         {% if page.no-courses != true %}
         <a class="main-btn page-scroll courses-link me-2"
            href="#najlepsze-kursy-video-do-nauki-{{ page.title | downcase | replace: '#', 'sharp' | replace: ' ', '-'}}">
-          <i aria-hidden="true" class="fa fa-video-camera"></i> Kursy</a>
+          <img alt="Polecane kursy video" src="/img/other/video-courses.png"/> Kursy
+        </a>
         {% endif %}
         {% if page.no-books != true %}
         <a class="main-btn page-scroll"
-           href="#najlepsze-książki-do-nauki-{{ page.title | downcase | replace: '#', 'sharp' | replace: ' ', '-'}}"><i
-          aria-hidden="true" class="fa fa-book"></i> Książki</a>
+           href="#najlepsze-książki-do-nauki-{{ page.title | downcase | replace: '#', 'sharp' | replace: ' ', '-'}}">
+          <img alt="Polecane książki" src="/img/other/books.png"/> Książki
+        </a>
         {% endif %}
       </div>
     </div>
