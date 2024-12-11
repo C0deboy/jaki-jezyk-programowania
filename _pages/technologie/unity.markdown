@@ -8,45 +8,15 @@ permalink: /technologie/unity/
 {: .official-page .darker-overlay }
 [Poczytaj o {{ page.title }} na oficjalnej stronie](https://unity3d.com/)
 
-Unity – wieloplatformowy silnik gier do tworzenia gier komputerowych 2D i 3D lub innych materiałów interaktywnych,
-takich jak wizualizacje czy animacje.
+**Unity** to popularny silnik gier wieloplatformowych, umożliwiający tworzenie gier 2D, 3D, a także aplikacji VR i AR. Unity jest cenione za swoją wszechstronność, intuicyjny interfejs i możliwość eksportu projektów na różnorodne platformy, w tym komputery, konsole, urządzenia mobilne i przeglądarki internetowe.
 
-Silnik ten jest napisany w C, C++ (Runtime) i C# (Unity API).
+Silnik wykorzystuje **C#** jako główny język programowania, co czyni go przystępnym dla początkujących i jednocześnie potężnym narzędziem dla doświadczonych deweloperów. W Unity znajdziesz zintegrowane środowisko do tworzenia gier, w tym edytor scen, narzędzia do animacji, fizyki oraz systemy zarządzania dźwiękiem i oświetleniem.
 
-Gry stworzone na silniku Unity obsługują wiele platform sprzętowych, są to między innymi Windows, Linux, Android. Wśród
-nich znajdują się także konsole siódmej oraz ósmej generacji. Kompatybilne z Unity są również hełmy rzeczywistości
-wirtualnej takie jak Oculus Rift i Gear VR. Gry stworzone w Unity po zainstalowaniu wtyczki Unity Web Player mogą
-działać również w przeglądarce internetowej.
+Unity oferuje **Asset Store**, który pozwala na łatwy dostęp do gotowych zasobów, takich jak modele 3D, tekstury, dźwięki czy skrypty. Dzięki temu deweloperzy mogą znacznie przyspieszyć proces tworzenia swoich projektów. Silnik wspiera również rozszerzenia i integrację z narzędziami takimi jak Blender, Photoshop czy Visual Studio.
 
-W unity jest możliwość pisanie skryptów w UnityScript (podobieństwo składni
-do [JavaScript](/technologie/javascript) oraz [C#](/technologie/csharp).
+Silnik ten jest używany zarówno przez niezależnych twórców, jak i duże studia, co pozwoliło na stworzenie wielu znanych tytułów, takich jak *Hollow Knight*, *Cuphead* czy *Ori and the Blind Forest*. Unity jest też szeroko stosowane w innych branżach, takich jak edukacja, medycyna, architektura czy wizualizacje inżynierskie.
 
-Do wersji 4.6 silnik był udostępniany na licencji płatnej lub darmowej zawierającej ograniczoną funkcjonalność, ale wraz
-z premierą Unity 5 prawie wszystkie funkcje silnika udostępniono w wersji darmowej dla twórców nieprzekraczających 100
-tysięcy dolarów dochodów rocznie.
-
-Unity oferuje również tzw. Asset Store, który umożliwia skorzystanie z płatnych lub darmowych komponentów takich jak
-tekstury lub skrypty.
-
-W Unity powstały gry mobilne takie jak:
-
-- Dead Trigger 1, 2
-- Plague Inc., :Evolved
-- Angry Birds 2
-- Pokémon Go
-
-oraz desktopowe:
-
-- 7 Days to Die
-- Rust
-- The Forest
-- Hearthstone: Heroes of Warcraft
-- The Long Dark
-- Car Mechanic Simulator
-- Firewatch
-- Gwint: Wiedźmińska Gra Karciana
-- Life is Strange: Before the Storm
-- Syberia 3
+Dzięki darmowej wersji Unity, początkujący mogą szybko zacząć naukę i tworzyć swoje pierwsze gry, a zaawansowane funkcje dostępne w wersjach płatnych pozwalają na realizację większych i bardziej skomplikowanych projektów.
 
 {% include courses.html %}
 

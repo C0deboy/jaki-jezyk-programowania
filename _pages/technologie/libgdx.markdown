@@ -4,36 +4,19 @@ title-full: LibGDX - opis, najlepsze polecane kursy video
 title: LibGDX
 permalink: /technologie/libgdx/
 no-books: true
-no-courses: true
 ---
 
 {: .official-page .darker-overlay }
-[Poczytaj o {{ page.title }} na oficjalnej stronie](https://libgdx.badlogicgames.com/)
+[Poczytaj o {{ page.title }} na oficjalnej stronie](https://libgdx.com/)
 
-LibGDX – wieloplatformowy framework do tworzenia gier i wizualizacji w języku [Java](/technologie/java). Napisany
-został w Javie oraz C, C++ w miejscach, gdzie liczy się wydajność.
+**LibGDX** to otwartoźródłowy framework do tworzenia gier w języku [Java](/technologie/java), który umożliwia tworzenie wieloplatformowych aplikacji. Dzięki LibGDX można pisać gry, które działają na różnych systemach operacyjnych, takich jak Windows, macOS, Linux, Android, iOS, a także jako aplikacje przeglądarkowe dzięki technologii WebGL.
 
-Nasze gry możemy kierować na Windows, Linux, Mac OS X, Android, iOS oraz HTML5. Jedynym wymaganiem na trzech pierwszych
-systemach operacyjnych jest Java Runtime. LibGDX pozwala by ten sam kod mógł być skompilowany na wszystkich wyżej
-wymienione platformy.
+Framework oferuje szeroki zestaw narzędzi i bibliotek wspierających deweloperów w każdym aspekcie tworzenia gier, takich jak obsługa grafiki 2D i 3D, zarządzanie dźwiękiem, fizyką, animacjami, a także zaawansowane systemy wejścia (np. obsługa klawiatury, myszy i ekranów dotykowych). LibGDX pozwala również na integrację z narzędziami zewnętrznymi, co daje twórcom jeszcze większą elastyczność.
 
-Można korzystać z prawie wszystkich narzędzi Java, by wspomóc proces tworzenia aplikacji. LibGDX obsługuje zarówno
-grafikę 2D, 3D i obsługuje OpenGL ES (2.0 i 3.0). Dzięki LibGDX możliwy jest niskopoziomowy dostęp do sprzętu i systemu
-plików.
+Jednym z kluczowych atutów LibGDX jest możliwość napisania gry raz, a następnie uruchamiania jej na różnych platformach bez konieczności pisania odrębnego kodu dla każdej z nich. To oszczędza czas i pozwala skupić się na tworzeniu samej gry, a nie na problemach z kompatybilnością.
 
-Narzędzie skierowane jest do początkujących twórców gier, ale także do tych bardziej doświadczonych programistów.
-Framework wykorzystywany jest przez wielu niezależnych twórców gier, jak również przez duże firmy (np. gra Ingress
-stworzona przez Google).
+LibGDX wspiera także tworzenie zaawansowanych efektów wizualnych dzięki możliwości korzystania z OpenGL. W ramach frameworka dostępne są również gotowe narzędzia do zarządzania ekranami, systemami cząsteczkowymi czy tworzenia interfejsów użytkownika.
 
-Według statystyk liczba pobrań narzędzia wynosi ok. 250 tysięcy miesięcznie, co oznacza, że jest całkiem popularnym
-narzędziem.
-
-Popularne gry napisane w LibGDX to:
-
-- Five Nights at Freddy's 3
-- Gunslugs 2
-- Ingress
-- Moy 4, 5
-- Talking Tom Cat
+Dzięki otwartemu kodowi źródłowemu oraz dużej społeczności LibGDX oferuje bogatą dokumentację, tutoriale i przykłady, które pomagają początkującym programistom szybko zacząć tworzyć własne projekty. Framework jest szczególnie popularny wśród twórców gier niezależnych, którzy cenią jego prostotę, wszechstronność i brak opłat licencyjnych.
 
 {% include courses.html %}

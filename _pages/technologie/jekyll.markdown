@@ -5,7 +5,6 @@ title: Jekyll
 permalink: /technologie/jekyll/
 image: jekyll.png
 no-books: true
-no-courses: true
 ---
 
 {: .official-page .darker-overlay }
@@ -13,32 +12,16 @@ no-courses: true
 
 Aby efektywnie używać Jeykll i dowolnie modyfikować swojego bloga warto znać [HTML i CSS](/technologie/html&css)
 
-Jekyll jest to narzędzie napisane w języku Ruby (nie musimy znać Rubiego), które pozwala generować statyczne strony na
-podstawie plików-szablonów na które składają się:
+**Jekyll** to statyczny generator stron internetowych, który pozwala tworzyć szybkie i łatwe w utrzymaniu strony internetowe, blogi czy dokumentacje. Działa na zasadzie przetwarzania szablonów i plików tekstowych (np. Markdown, HTML) na statyczne strony internetowe, które są gotowe do hostowania na dowolnym serwerze, w tym na [GitHub Pages](https://pages.github.com/) — darmowy sposób na hostowanie strony.
 
-- Plik konfiguracyjny - jedno miejsce, gdzie zarządzimy całym procesem buildowania projektu
-- Szablony - pliki HTML z tagami Liquid, które definiują układ i kod strony. Zawierają one zmienne, pod które będą
-  podstawiane odpowiednie wartości np. tytuł strony, treść itd.
-- Pliki z treścią - wpisy (np. w formacie markdown) oraz normalne podstrony (w html), które później łączą się z
-  szablonami
-- Pliki nieparsowane - takie jak CSS czy obrazki
+Główne cechy Jekylla:
+- **Prostota**: Jekyll jest łatwy do skonfigurowania i używania, co czyni go popularnym wśród osób tworzących dokumentacje, blogi czy proste strony internetowe.
+- **Markdown**: Obsługuje język Markdown, który pozwala na szybkie i wygodne pisanie treści, bez konieczności martwienia się o HTML.
+- **Integracja z GitHub Pages**: Jekyll jest idealnym narzędziem do generowania stron, które mogą być hostowane na GitHub Pages bez dodatkowych kosztów.
+- **Szablony i motywy**: Jekyll oferuje dużą liczbę gotowych szablonów i motywów, które można łatwo dostosować do własnych potrzeb, a także umożliwia tworzenie własnych.
+- **Generowanie statycznych stron**: Jekyll generuje statyczne strony, które są szybkie, bezpieczne i łatwe w utrzymaniu, ponieważ nie wymagają bazy danych ani dynamicznego generowania treści.
 
-Jekyll rozwiązuję problem wielu podobnych statycznych stron - gdy chcemy wprowadzić zmianę musimy zrobić to manualnie na
-każdej z nich. Pisząc w Jekyllu tworzymy szablon raz i możemy go wykorzystywać na innych stronach nieskończoną ilość
-razy.
-
-Można o nim myśleć jak o opartym na plikach CMS (System zarządzania treścią). Nie potrzebujemy żadnej bazy danych.
-
-Jekyll sparsuje otrzymane pliki i wyrzuci nam całą strukturę statycznych plików, które są gotowe na wrzucenie na serwer.
-Jest to nieco odmienne podejście do tworzenia stron. Tu całość generujemy u siebie na komputerze, a na serwerze trzymamy
-gotowe, statyczne pliki.
-
-Warto wspomnieć, że wspiera go [GitHub Pages](https://pages.github.com/) - serwis Githuba pozwalający na darmowe
-hostowanie twojej strony/bloga. Na GH Pages twój projekt w Jekyllu zostanie automatycznie wykryty i zbuildowany, więc
-wystarczy, że wrzucisz pliki źródłowe Jekylla i włączysz GH Pages.
-
-Zarówno ta strona jak i [Mój blog](https://devcave.pl/) są oparte na Jekyllu. Napisałem
-również [wpis](https://devcave.pl/dajsiepoznac2017/instalacja-jekyll) oraz kilka kolejnych (zobacz
-tag [Jekyll](https://devcave.pl/archive/#jekyll)), które pomogą Ci ruszyć z własnym blogiem.
+Jekyll jest szczególnie przydatny dla programistów, którzy szukają lekkiego rozwiązania do tworzenia stron internetowych bez konieczności zarządzania bazą danych czy rozbudowanymi systemami zarządzania treścią.
 
 {% include courses.html %}
+

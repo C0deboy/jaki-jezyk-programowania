@@ -4,43 +4,29 @@ title-full: Programowanie dla dzieci - jaki język programowania
 title: Scratch
 permalink: /technologie/scratch/
 image: scratch.png
-no-courses: true
 ---
 
-# Co to jest Scratch?
+{: .official-page .darker-overlay }
+[Poczytaj o {{ page.title }} na oficjalnej stronie](https://scratch.mit.edu/)
 
-Scratch to edukacyjny język obiektowy, stworzony jako środek do nauczania dzieci i młodzieży (od 8 lat wzwyż) podstaw
-programowania pozwalający na tworzenie własnych animacji, gier, piosenek oraz rozmaitych skryptów - wszystko zależne
-tylko od wyobraźni.
+**Scratch** to wizualny język programowania stworzony z myślą o edukacji, zwłaszcza dla dzieci. Jego głównym celem jest ułatwienie nauki podstaw programowania i myślenia algorytmicznego w sposób intuicyjny i przyjazny.
+
+Programowanie w Scratchu odbywa się poprzez układanie kolorowych bloków, które reprezentują różne instrukcje. Dzięki temu użytkownicy mogą tworzyć animacje, gry, interaktywne historie i inne projekty multimedialne bez potrzeby znajomości tradycyjnej składni kodu. Scratch umożliwia łatwe eksperymentowanie i szybkie wprowadzanie zmian, co sprzyja nauce przez zabawę.
+
+Scratch jest dostępny za darmo i działa w przeglądarce internetowej, choć można go również pobrać jako aplikację offline. Posiada ogromną społeczność użytkowników, którzy dzielą się swoimi projektami w serwisie Scratch, co daje możliwość inspirowania się i nauki od innych.
+
+Kluczowe cechy Scratcha:
+- **Przyjazny interfejs**: Kolorowe bloki z podpowiedziami ułatwiają tworzenie kodu.
+- **Interaktywność**: Możliwość sterowania postaciami, dźwiękami i grafiką.
+- **Wieloplatformowość**: Działa na komputerach, tabletach i innych urządzeniach.
+- **Wsparcie edukacyjne**: Scratch jest szeroko stosowany w szkołach jako narzędzie do nauki programowania i rozwijania kreatywności.
+
+Dzięki Scratchowi młodzi użytkownicy uczą się logicznego myślenia, rozwiązywania problemów oraz podstaw programowania, co stanowi doskonałą bazę do dalszej nauki bardziej zaawansowanych technologii.
 
 Dla nieco starszych dzieci, można od razu zaproponować pełnoprawne języki programowania takie
 jak [Python](/technologie/python) lub [Javascript](/technologie/javascript).
 
-Język ten powstał, aby pokonać stereotyp, że programowanie jest trudnym i nudnym zajęciem, dlatego Scratch, dzięki
-przyjaznemu interfejsowi jest idealny dla dzieci, które mogą się przekonać, jak wciągającą zabawą jest tworzenie
-własnych programów.
-
-Jako alternatywa, można sprawdzić strony jak np. [code.org](https://studio.code.org/courses), gdzie znajdziemy proste,
-interaktywne gry w programowanie dla dzieci nawet od 4 lat!
-
-# Jak wygląda programowanie w Scratch?
-
-Programowanie odbywa się w sposób wizualny - elementy języka, które mogą reagować na zewnętrzne zdarzenia, mają kształt
-puzzli, a poprzez przeciąganie, mogą być układane w określonym porządku. W ten sposób tworzy się kod przypisany
-określonemu obiektowi. Żeby stworzyć program w Scratch, łączy się ze sobą bloki instrukcji, tworząc odpowiednie kroki
-programu. Błędy składni nie istnieją w tym języku, ponieważ bloki są tak zaprojektowane, by tworzyły sensowny ciąg
-instrukcji. Natomiast różne typy danych są reprezentowane przez bloki o różnych kształtach zapewniając ochronę przed
-złym dopasowaniem typów.
-
-Jeśli masz dziecko, które chcesz wprowadzić w świat programowania, Scratch będzie idealnym rozwiązaniem łączącym
-pożyteczną naukę z przyjemną zabawą!
-
-Ciekawostką jest, że Scratch jest na 20 pozycji rankingu popularności TIOBE index, stale zyskujący popularność od 2014
-roku. To odzwierciedlenie upowszechniania się nauki programowania w szkołach, gdzie głównie wykorzystuje się Scratcha.
-
-Jeśli uważasz, że twoje dziecko może już zacząć zabawę z pełnoprawnymi językami programowania, to możesz mu
-zaproponować [Python](/technologie/python) lub [Javascript](/technologie/javascript).
+{% include courses.html %}
 
 {% include books.html %}
 
-{% include courses.html %}
