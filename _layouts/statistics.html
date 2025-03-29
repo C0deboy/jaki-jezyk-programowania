@@ -13,7 +13,7 @@
 
 {% include nav.html %}
 
-{% assign years = "2018,2019,2020,2021,2022,2023" | split: ',' %}
+{% assign years = "2018,2019,2020,2021,2022,2023,2024" | split: ',' %}
 {% assign current_year = page.year | downcase %}
 {% assign filteredYears = years | reverse | where_exp:"year", "year != current_year" %}
 {% assign yearsSizeMinus2 = years.size | minus: 2 %}
@@ -22,12 +22,15 @@
 
   <div class="container">
     <h1>Statystyki języków programowania {{page.year}}</h1>
-    <p class="m-4">Wizualizacja wszystkich statystyk, które są zbierane co miesiąc na potrzebę tej strony w roku
-      {{page.year}}.</p>
-    <p>Zobacz także rok&nbsp;
-      {%- for year in filteredYears -%}
-      <a href="/statystyki-jezykow-programowania-{{year}}/">{{year}}</a> {% if forloop.last == false %}lub {% endif %}
-      {%- endfor -%}
+
+    <p class="mt-4">
+      Zobacz poprzednie lata:
+      <select onchange="if (this.value) window.location.href = this.value;">
+        <option value="">Wybierz rok</option>
+        {%- for year in filteredYears -%}
+        <option value="/statystyki-jezykow-programowania-{{ year }}/">{{ year }}</option>
+        {%- endfor -%}
+      </select>
     </p>
 
     <button class="main-btn" data-bs-target="#demo" data-bs-toggle="modal" type="button">Jak używać?</button>
@@ -38,10 +41,13 @@
       </div>
     </div>
 
-    <p>Zobacz także rok&nbsp;
-      {%- for year in filteredYears -%}
-      <a href="/statystyki-jezykow-programowania-{{year}}/">{{year}}</a> {% if forloop.last == false %}lub {% endif %}
-      {%- endfor -%}
+    <p>Zobacz poprzednie lata:
+      <select onchange="if (this.value) window.location.href = this.value;">
+        <option value="">Wybierz rok</option>
+        {%- for year in filteredYears -%}
+        <option value="/statystyki-jezykow-programowania-{{ year }}/">{{ year }}</option>
+        {%- endfor -%}
+      </select>
     </p>
 
   </div>

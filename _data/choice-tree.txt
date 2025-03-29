@@ -1,0 +1,59 @@
+Dlaczego chciałbyś się uczyć programowania?
+├── Chciałbym tym zainteresować moje dzieci → [Scratch -> Python lub Javascript]
+├── Chciałbym zostać programistą
+│   ├── W jakiej dziedzinie?
+│   │   ├── Aplikacje
+│   │   │   ├── Jaki rodzaj aplikacji?
+│   │   │   │   ├── Mobilne
+│   │   │   │   │   ├── Na jaką platformę?
+│   │   │   │   │   │   ├── iOS → [Swift]
+│   │   │   │   │   │   ├── Android → [Java, Kotlin]
+│   │   │   │   │   │   ├── Web
+│   │   │   │   │   │   │   ├── Frontend czy backend?
+│   │   │   │   │   │   │   │   ├── Frontend → [Javascript -> Angular lub React]
+│   │   │   │   │   │   │   │   ├── Backend
+│   │   │   │   │   │   │   │   │   ├── Jaka praca bardziej Ci odpowiada?
+│   │   │   │   │   │   │   │   │   │   ├── W korporacji
+│   │   │   │   │   │   │   │   │   │   │   ├── Lubisz Microsoft?
+│   │   │   │   │   │   │   │   │   │   │   │   ├── Tak → [C# -> ASP.NET]
+│   │   │   │   │   │   │   │   │   │   │   │   ├── Nie → [Java -> Spring]
+│   │   │   │   │   │   │   │   │   │   ├── Małe biznesy / Freelance
+│   │   │   │   │   │   │   │   │   │   │   ├── [PHP -> Symfony]
+│   │   │   │   │   │   │   │   │   │   │   ├── [Python -> Django]
+│   │   │   │   │   │   │   │   │   │   │   ├── [Ruby -> Ruby on Rails]
+│   │   │   │   │   │   │   │   │   │   │   ├── [Javascript -> Node.js]
+│   │   │   ├── Desktopowe
+│   │   │   │   ├── Na jaką platformę?
+│   │   │   │   │   ├── Mac → [Swift]
+│   │   │   │   │   ├── Linux → [Java]
+│   │   │   │   │   ├── Windows → [C#]
+│   │   │   │   │   ├── Wieloplatformowe → [Java]
+│   │   │   ├── Webowe → (przejście do "Frontend czy Backend?")
+│   │   ├── Gry
+│   │   │   ├── Jaki typ gier?
+│   │   │   │   ├── AAA → [C++ -> Unreal Engine 4]
+│   │   │   │   ├── Indie
+│   │   │   │   │   ├── [C# -> Unity]
+│   │   │   │   │   ├── [Java -> LibGDX]
+│   │   │   │   │   ├── [Kotlin -> LibGDX]
+│   │   │   │   ├── Wirtualna rzeczywistość
+│   │   │   │   │   ├── [C++ -> Unreal Engine 4]
+│   │   │   │   │   ├── [C# -> Unity]
+│   │   │   │   ├── Yyy co?
+│   │   │   │   │   ├── Łatwiejsza nauka → [C# -> Unity]
+│   │   │   │   │   ├── Wydajność → [C++ -> Unreal Engine 4]
+│   │   ├── Data science/Big Data → [R, Python, Scala]
+│   │   ├── Systemy wbudowane → [C, Rust]
+│   │   ├── Sztuczna inteligencja/Machine Learning → [Python, Scala]
+│   │   ├── Robotyka → [C, C++, Python, Rust]
+│   │   ├── Bioinformatyka → [R]
+│   │   ├── Bazy danych → [SQL]
+│   │   ├── Nie wiem, ja tylko chcę $$$ → [Java, C#, Python]
+├── Mam pomysł na projekt
+│   ├── Co chciałbyś zrobić?
+│   │   ├── Aplikację mobilną → (przejście do "Na jaką platformę?")
+│   │   ├── Grę → (przejście do "Na jaką platformę?")
+│   │   ├── Aplikację desktopową → (przejście do "Na jaką platformę?")
+│   │   ├── Prostą stronę internetową → [HTML-&-CSS -> Javascript]
+│   │   ├── Założyć bloga → [Jekyll, Wordpress]
+├── Nie wiem, słyszałem, że to fajne. Wybierz coś dla mnie → [Python, Javascript]
