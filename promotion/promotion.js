@@ -21,7 +21,7 @@ promotions.forEach((promotion, i) => {
   if (isPromotionActive(promotion)) {
     const helionUrl = `http://helion.pl/page/9102Q/kategorie/promocja-2za1`;
     // const helionUrl = `https://helion.pl/page/9102Q/promocja/${promotion.number}`;
-    const udemyUrl = 'https://click.linksynergy.com/deeplink?id=0Bz3A2CPbI4&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourses%2Fdevelopment%2F';
+    const udemyUrl = 'https://www.udemy.com/courses/development/';
 
     promotion.url = new URL(helionUrl);
 
